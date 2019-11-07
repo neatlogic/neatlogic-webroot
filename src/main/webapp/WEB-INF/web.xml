@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+　　　　　　　    　 　　　　http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+	<display-name>codedriver</display-name>
+	<description>Welcome to CodeDriver</description>
+	<welcome-file-list>
+		<welcome-file>/index.do</welcome-file>
+	</welcome-file-list>
+	<session-config>
+		<session-timeout>30</session-timeout>
+	</session-config>
+	<login-config>
+		<auth-method>FORM</auth-method>
+		<form-login-config>
+			<form-login-page>/resources/login/login.htm</form-login-page>
+			<form-error-page>/loginerror.jsp</form-error-page>
+		</form-login-config>
+	</login-config>
+	<error-page>
+		<exception-type>java.lang.Exception</exception-type>
+		<location>/WEB-INF/views/commons/error.jsp</location>
+	</error-page>
+	<context-param>
+		<param-name>webAppRootKey</param-name>
+		<param-value>webapp.codedriver</param-value>
+	</context-param>
+	<!-- <listener> <listener-class>org.springframework.web.util.Log4jConfigListener</listener-class> <listener-class>org.apache.logging.log4j.web.Log4jServletContextListener</listener-class> </listener> -->
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath:META-INF/root-context.xml</param-value>
+	</context-param>
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	<filter>
+		<filter-name>CharacterEncodingFilter</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+		<init-param>
+			<param-name>forceEncoding</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>CharacterEncodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<filter>
+		<filter-name>TenantContextFilter</filter-name>
+		<filter-class>codedriver.framework.filter.TenantContextFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>TenantContextFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>jsp</servlet-name>
+		<url-pattern>*.html</url-pattern>
+	</servlet-mapping>
+
+	<!-- <security-constraint>
+		<web-resource-collection>
+			<web-resource-name>ALL</web-resource-name>
+			<url-pattern>*.do</url-pattern>
+			<url-pattern>*.json</url-pattern>
+			<url-pattern>*.jsp</url-pattern>
+			<url-pattern>/</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>R_SYSTEM_USER</role-name>
+		</auth-constraint>
+		<user-data-constraint>
+			<transport-guarantee>NONE</transport-guarantee>
+		</user-data-constraint>
+	</security-constraint>
+	<security-role>
+		<role-name>R_SYSTEM_USER</role-name>
+	</security-role>
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>exclude resource</web-resource-name>
+			<url-pattern>/resources/*</url-pattern>
+			<url-pattern>/webservices/*</url-pattern>
+			<url-pattern>/restservices/*</url-pattern>
+			<url-pattern>*.anonymous</url-pattern>
+		</web-resource-collection>
+	</security-constraint> -->
+</web-app>
