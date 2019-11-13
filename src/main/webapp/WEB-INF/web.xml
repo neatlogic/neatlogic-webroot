@@ -50,18 +50,14 @@
 	</filter-mapping>
 
 	<filter>
-		<filter-name>TenantContextFilter</filter-name>
-		<filter-class>codedriver.framework.filter.TenantContextFilter</filter-class>
+		<filter-name>JsonWebTokenValidFilter</filter-name>
+		<filter-class>codedriver.framework.filter.JsonWebTokenValidFilter</filter-class>
 	</filter>
 	<filter-mapping>
-		<filter-name>TenantContextFilter</filter-name>
-		<url-pattern>/*</url-pattern>
+		<filter-name>JsonWebTokenValidFilter</filter-name>
+		<url-pattern>/api/*</url-pattern>
 	</filter-mapping>
 	
-	<servlet-mapping>
-		<servlet-name>jsp</servlet-name>
-		<url-pattern>*.html</url-pattern>
-	</servlet-mapping>
 
 	<!-- <security-constraint>
 		<web-resource-collection>
