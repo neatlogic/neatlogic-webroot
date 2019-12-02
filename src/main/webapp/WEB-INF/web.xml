@@ -24,7 +24,6 @@
 		<param-name>webAppRootKey</param-name>
 		<param-value>webapp.codedriver</param-value>
 	</context-param>
-	<!-- <listener> <listener-class>org.springframework.web.util.Log4jConfigListener</listener-class> <listener-class>org.apache.logging.log4j.web.Log4jServletContextListener</listener-class> </listener> -->
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>classpath:META-INF/root-context.xml</param-value>
@@ -57,45 +56,17 @@
 		<filter-name>JsonWebTokenValidFilter</filter-name>
 		<url-pattern>/api/*</url-pattern>
 	</filter-mapping>
-	
-	<filter>  
-	    <filter-name>TenantModuleFilter</filter-name>  
-	    <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class> 
-	    <init-param>  
-		    <param-name>targetFilterLifecycle</param-name>  
-		    <param-value>true</param-value>  
-	    </init-param>  
-	</filter>  
-  	<filter-mapping>
-    	<filter-name>TenantModuleFilter</filter-name>
-    	<url-pattern>/api/*</url-pattern>
-  	</filter-mapping>
-  	
-	<!-- <security-constraint>
-		<web-resource-collection>
-			<web-resource-name>ALL</web-resource-name>
-			<url-pattern>*.do</url-pattern>
-			<url-pattern>*.json</url-pattern>
-			<url-pattern>*.jsp</url-pattern>
-			<url-pattern>/</url-pattern>
-		</web-resource-collection>
-		<auth-constraint>
-			<role-name>R_SYSTEM_USER</role-name>
-		</auth-constraint>
-		<user-data-constraint>
-			<transport-guarantee>NONE</transport-guarantee>
-		</user-data-constraint>
-	</security-constraint>
-	<security-role>
-		<role-name>R_SYSTEM_USER</role-name>
-	</security-role>
-	<security-constraint>
-		<web-resource-collection>
-			<web-resource-name>exclude resource</web-resource-name>
-			<url-pattern>/resources/*</url-pattern>
-			<url-pattern>/webservices/*</url-pattern>
-			<url-pattern>/restservices/*</url-pattern>
-			<url-pattern>*.anonymous</url-pattern>
-		</web-resource-collection>
-	</security-constraint> -->
+
+	<filter>
+		<filter-name>TenantModuleFilter</filter-name>
+		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+		<init-param>
+			<param-name>targetFilterLifecycle</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>TenantModuleFilter</filter-name>
+		<url-pattern>/api/*</url-pattern>
+	</filter-mapping>
 </web-app>
