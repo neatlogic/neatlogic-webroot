@@ -58,7 +58,19 @@
 		<url-pattern>/api/*</url-pattern>
 	</filter-mapping>
 	
-
+	<filter>  
+	    <filter-name>TenantModuleFilter</filter-name>  
+	    <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class> 
+	    <init-param>  
+		    <param-name>targetFilterLifecycle</param-name>  
+		    <param-value>true</param-value>  
+	    </init-param>  
+	</filter>  
+  	<filter-mapping>
+    	<filter-name>TenantModuleFilter</filter-name>
+    	<url-pattern>/api/*</url-pattern>
+  	</filter-mapping>
+  	
 	<!-- <security-constraint>
 		<web-resource-collection>
 			<web-resource-name>ALL</web-resource-name>
