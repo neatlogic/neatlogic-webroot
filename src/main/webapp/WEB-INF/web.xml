@@ -73,4 +73,19 @@
 		<filter-name>TenantModuleFilter</filter-name>
 		<url-pattern>/api/*</url-pattern>
 	</filter-mapping>
+	
+	<!-- TODO 临时后端测试页面试用  start-->
+	<filter>
+		<filter-name>TestProcessFilter</filter-name>
+		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+		<init-param>
+			<param-name>targetFilterLifecycle</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>TestProcessFilter</filter-name>
+		<url-pattern>/module/process/*</url-pattern>
+	</filter-mapping>
+	<!-- TODO 临时后端测试页面试用  end-->
 </web-app>
