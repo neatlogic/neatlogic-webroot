@@ -75,7 +75,7 @@
 	</filter-mapping>
 	
 	<!-- TODO 临时后端测试页面试用  start-->
-	<filter>
+	<!--<filter>
 		<filter-name>TestProcessFilter</filter-name>
 		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
 		<init-param>
@@ -86,6 +86,6 @@
 	<filter-mapping>
 		<filter-name>TestProcessFilter</filter-name>
 		<url-pattern>/module/process/*</url-pattern>
-	</filter-mapping>
+	</filter-mapping>-->
 	<!-- TODO 临时后端测试页面试用  end-->
 </web-app>
