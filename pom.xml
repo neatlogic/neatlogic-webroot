@@ -40,10 +40,10 @@
 			<artifactId>codedriver-process</artifactId>
 			<version>0.1.0.0-SNAPSHOT</version>
 		</dependency>
-		<dependency>
+		<!-- <dependency>
 			<groupId>com.techsure</groupId>
 			<artifactId>codedriver-test</artifactId>
 			<version>0.1.0.0-SNAPSHOT</version>
-		</dependency>
+		</dependency> -->
 	</dependencies>
 </project>
