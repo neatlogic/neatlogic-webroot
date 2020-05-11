@@ -42,7 +42,12 @@
 		</dependency>
 		<dependency>
 			<groupId>com.techsure</groupId>
-			<artifactId>codedriver-test</artifactId>
+			<artifactId>codedriver-itro</artifactId>
+			<version>0.1.0.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.techsure</groupId>
+			<artifactId>codedriver-octopus</artifactId>
 			<version>0.1.0.0-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
