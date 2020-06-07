@@ -37,6 +37,11 @@
 		</dependency>
 		<dependency>
 			<groupId>com.techsure</groupId>
+			<artifactId>codedriver-dashboard</artifactId>
+			<version>0.1.0.0-SNAPSHOT</version>
+		</dependency> 
+		<dependency>
+			<groupId>com.techsure</groupId>
 			<artifactId>codedriver-process</artifactId>
 			<version>0.1.0.0-SNAPSHOT</version>
 		</dependency>
@@ -44,11 +49,11 @@
 			<groupId>com.techsure</groupId>
 			<artifactId>codedriver-itro</artifactId>
 			<version>0.1.0.0-SNAPSHOT</version>
-		</dependency>
+		</dependency>-->
 		<dependency>
 			<groupId>com.techsure</groupId>
 			<artifactId>codedriver-octopus</artifactId>
 			<version>0.1.0.0-SNAPSHOT</version>
-		</dependency> -->
+		</dependency> 
 	</dependencies>
 </project>
