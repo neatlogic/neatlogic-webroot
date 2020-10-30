@@ -9,7 +9,7 @@
 	<artifactId>codedriver-webroot</artifactId>
 	<packaging>war</packaging>
 	<name>codedriver-pack</name>
-	<version>1.0.0.1</version>
+	<version>1.0.0.2</version>
 
 	<build>
 		<finalName>codedriver</finalName>
@@ -68,6 +68,11 @@
 			<dependency>
 			<groupId>com.techsure</groupId>
 			<artifactId>codedriver-dgbank</artifactId>
+			<version>[1.0.0,)</version>
+		</dependency>
+		<dependency>
+			<groupId>com.techsure</groupId>
+			<artifactId>codedriver-knowledge</artifactId>
 			<version>[1.0.0,)</version>
 		</dependency>
 	</dependencies>
