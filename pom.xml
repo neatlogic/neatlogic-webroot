@@ -65,9 +65,9 @@
 			<artifactId>codedriver-event</artifactId>
 			<version>[1.0.0,)</version>
 		</dependency>
-			<dependency>
+		<dependency>
 			<groupId>com.techsure</groupId>
-			<artifactId>codedriver-dgbank</artifactId>
+			<artifactId>codedriver-cmdb</artifactId>
 			<version>[1.0.0,)</version>
 		</dependency>
 		<dependency>
