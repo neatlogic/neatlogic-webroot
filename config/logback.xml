@@ -170,9 +170,9 @@
 		<level value="${log4j.priority}" />
 		<appender-ref ref="STDOUT" />
 	</logger>
-	<logger name="org.mybatis" additivity="false">
+	<!-- <logger name="org.mybatis" additivity="false">
 		<level value="${log4j.priority}" />
 		<appender-ref ref="STDOUT" />
-	</logger>
+	</logger> -->
 
 </configuration>

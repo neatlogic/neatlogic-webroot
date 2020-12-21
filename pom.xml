@@ -5,7 +5,6 @@
 		<artifactId>codedriver-parent</artifactId>
 		<version>[1.0.0, 2.0.0]</version>
 	</parent>
-	<groupId>com.techsure</groupId>
 	<artifactId>codedriver-webroot</artifactId>
 	<packaging>war</packaging>
 	<name>codedriver-pack</name>
@@ -40,16 +39,12 @@
 			<artifactId>codedriver-process</artifactId>
 			<version>0.1.0.0-SNAPSHOT</version>
 		</dependency>
-		<!--<dependency>
+		<dependency>
 			<groupId>com.techsure</groupId>
 			<artifactId>codedriver-master</artifactId>
 			<version>0.1.0.0-SNAPSHOT</version>
 		</dependency>
-		 <dependency>
-			<groupId>com.techsure</groupId>
-			<artifactId>codedriver-octopus</artifactId>
-			<version>0.1.0.0-SNAPSHOT</version>
-		</dependency>-->
+		<!-- <dependency> <groupId>com.techsure</groupId> <artifactId>codedriver-octopus</artifactId> <version>0.1.0.0-SNAPSHOT</version> </dependency> -->
 		<dependency>
 			<groupId>com.techsure</groupId>
 			<artifactId>codedriver-change</artifactId>
@@ -57,7 +52,17 @@
 		</dependency>
 		<dependency>
 			<groupId>com.techsure</groupId>
+			<artifactId>codedriver-knowledge</artifactId>
+			<version>0.1.0.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.techsure</groupId>
 			<artifactId>codedriver-report</artifactId>
+			<version>0.1.0.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.techsure</groupId>
+			<artifactId>codedriver-cmdb</artifactId>
 			<version>0.1.0.0-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
