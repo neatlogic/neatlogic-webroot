@@ -75,6 +75,11 @@
             <artifactId>codedriver-knowledge</artifactId>
             <version>0.1.0.0-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>com.techsure</groupId>
+            <artifactId>codedriver-autoexec</artifactId>
+            <version>0.1.0.0-SNAPSHOT</version>
+        </dependency>
         <!--<dependency>
             <groupId>com.techsure</groupId>
             <artifactId>codedriver-cmdb</artifactId>
