@@ -1,4 +1,4 @@
-target
+/target
 *.iml
 bin
 .class
@@ -6,6 +6,8 @@ bin
 .settings
 .classpath
 .project
+.idea/
+.idea
 logs/
 /config2/config.properties
 /config2/logback.xml
