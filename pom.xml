@@ -40,17 +40,17 @@
             <artifactId>codedriver-process</artifactId>
             <version>0.1.0.0-SNAPSHOT</version>
         </dependency>
-   <!--     <dependency>
+        <dependency>
             <groupId>com.techsure</groupId>
             <artifactId>codedriver-master</artifactId>
             <version>0.1.0.0-SNAPSHOT</version>
-        </dependency>-->
-<!--        <dependency>
+        </dependency>
+        <!--<dependency>
            <groupId>com.techsure</groupId>
            <artifactId>codedriver-octopus</artifactId>
            <version>0.1.0.0-SNAPSHOT</version>
        </dependency>-->
-       <!--<dependency>
+        <dependency>
             <groupId>com.techsure</groupId>
             <artifactId>codedriver-change</artifactId>
             <version>0.1.0.0-SNAPSHOT</version>
@@ -64,17 +64,17 @@
             <groupId>com.techsure</groupId>
             <artifactId>codedriver-event</artifactId>
             <version>0.1.0.0-SNAPSHOT</version>
-        </dependency>-->
-        <!--<dependency>
+        </dependency>
+        <!-- <dependency>
              <groupId>com.techsure</groupId>
              <artifactId>codedriver-dgbank</artifactId>
              <version>0.1.0.0-SNAPSHOT</version>
          </dependency>-->
-        <!--<dependency>
+        <dependency>
             <groupId>com.techsure</groupId>
             <artifactId>codedriver-knowledge</artifactId>
             <version>0.1.0.0-SNAPSHOT</version>
-        </dependency>-->
+        </dependency>
         <dependency>
             <groupId>com.techsure</groupId>
             <artifactId>codedriver-autoexec</artifactId>
@@ -85,9 +85,9 @@
             <artifactId>codedriver-cmdb</artifactId>
             <version>0.1.0.0-SNAPSHOT</version>
         </dependency>
-        <dependency>
+        <!--<dependency>
             <groupId>com.techsure</groupId>
-            <artifactId>codedriver-suzhoubank</artifactId>
+            <artifactId>codedriver-msjy</artifactId>
             <version>0.1.0.0-SNAPSHOT</version>
         </dependency>-->
         <dependency>
