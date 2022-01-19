@@ -1,6 +1,7 @@
 <!-- Logback configuration. See http://logback.qos.ch/manual/index.html -->
 <configuration scan="true" scanPeriod="10 seconds" debug="false">
-
+	<conversionRule conversionWord="tenant" converterClass="codedriver.framework.logback.converter.TenantConverter"/>
+	<conversionRule conversionWord="requestUrl" converterClass="codedriver.framework.logback.converter.RequestUrlConverter"/>
 	<statusListener class="ch.qos.logback.core.status.NopStatusListener" />
 
 	<appender name="debugAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
@@ -19,7 +20,7 @@
 			<MaxFileSize>100MB</MaxFileSize>
 		</triggeringPolicy>
 		<layout class="ch.qos.logback.classic.PatternLayout">
-			<Pattern>[%-5level]%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %logger{36}[%line] - %msg%n</Pattern>
+			<Pattern>[%-5level]%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %logger{36}[%line] [%tenant] %requestUrl - %msg%n</Pattern>
 		</layout>
 	</appender>
 	<appender name="DEBUG" class="ch.qos.logback.classic.AsyncAppender">
@@ -45,7 +46,7 @@
 			<MaxFileSize>100MB</MaxFileSize>
 		</triggeringPolicy>
 		<layout class="ch.qos.logback.classic.PatternLayout">
-			<Pattern>[%-5level]%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %logger{36}[%line] - %msg%n</Pattern>
+			<Pattern>[%-5level]%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %logger{36}[%line] [%tenant] %requestUrl - %msg%n</Pattern>
 		</layout>
 	</appender>
 	<appender name="INFO" class="ch.qos.logback.classic.AsyncAppender">
@@ -71,7 +72,7 @@
 			<MaxFileSize>100MB</MaxFileSize>
 		</triggeringPolicy>
 		<layout class="ch.qos.logback.classic.PatternLayout">
-			<Pattern>[%-5level]%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %logger{36}[%line] - %msg%n</Pattern>
+			<Pattern>[%-5level]%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %logger{36}[%line] [%tenant] %requestUrl - %msg%n</Pattern>
 		</layout>
 	</appender>
 	<appender name="WARN" class="ch.qos.logback.classic.AsyncAppender">
@@ -97,7 +98,7 @@
 			<MaxFileSize>100MB</MaxFileSize>
 		</triggeringPolicy>
 		<layout class="ch.qos.logback.classic.PatternLayout">
-			<Pattern>[%-5level]%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %logger{36}[%line]- %msg%n</Pattern>
+			<Pattern>[%-5level]%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %logger{36}[%line] [%tenant] %requestUrl - %msg%n</Pattern>
 		</layout>
 	</appender>
 	<!--异步输出 -->
@@ -110,7 +111,7 @@
 
 	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
 		<encoder>
-			<Pattern>[%-5level]%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %logger{36}[%line] - %msg%n</Pattern>
+			<Pattern>[%-5level]%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %logger{36}[%line] [%tenant] %requestUrl - %msg%n</Pattern>
 			<charset>UTF-8</charset> <!-- 此处设置字符集 -->
 			<outputPatternAsPresentationHeader>false</outputPatternAsPresentationHeader>
 		</encoder>
