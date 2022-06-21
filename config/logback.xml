@@ -122,7 +122,7 @@
 
 	<!--FOR PRD -->
 
-	<root level="INFO">
+	<root level="${log4j.priority}">
 		<appender-ref ref="DEBUG" />
 		<appender-ref ref="INFO" />
 		<appender-ref ref="WARN" />
