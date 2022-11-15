@@ -106,7 +106,7 @@
 	<appender name="tagentNettyAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
 		<File>logs/tagent_netty.log</File>
 		<rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
-			<FileNamePattern>logs/error_tagent.%i</FileNamePattern>
+			<FileNamePattern>logs/tagent_netty.%i</FileNamePattern>
 			<MinIndex>1</MinIndex>
 			<MaxIndex>5</MaxIndex>
 		</rollingPolicy>
