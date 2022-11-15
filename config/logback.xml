@@ -104,9 +104,9 @@
 
 	<!--tagent心跳日志-->
 	<appender name="tagentNettyAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<File>/Users/longrf/logs/codedriver/codedriver/tagent_netty.log</File>
+		<File>logs/tagent_netty.log</File>
 		<rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
-			<FileNamePattern>error_tagent.%i</FileNamePattern>
+			<FileNamePattern>logs/error_tagent.%i</FileNamePattern>
 			<MinIndex>1</MinIndex>
 			<MaxIndex>5</MaxIndex>
 		</rollingPolicy>
