@@ -103,10 +103,10 @@
 	</appender>
 
 	<!--tagent心跳日志-->
-	<appender name="tagentNettyAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<File>logs/tagent_netty.log</File>
+	<appender name="tagentRegisterAndNettyAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<File>logs/tagentRegisterAndNetty.log</File>
 		<rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
-			<FileNamePattern>logs/tagent_netty.%i</FileNamePattern>
+			<FileNamePattern>logs/tagentRegisterAndNetty.%i</FileNamePattern>
 			<MinIndex>1</MinIndex>
 			<MaxIndex>5</MaxIndex>
 		</rollingPolicy>
@@ -201,11 +201,14 @@
 		<appender-ref ref="STDOUT" />
 	</logger> -->
 
-	<!--tagent心跳日志-->
+	<!--tagent注册、心跳日志-->
+	<logger name="codedriver.module.tagent.api.TagentRegisterApi" level="ERROR" additivity="false">
+		<appender-ref ref= "tagentRegisterAndNettyAppender"/>
+	</logger>
 	<logger name="codedriver.module.tagent.api.TagentInfoUpdateApi" level="ERROR" additivity="false">
-		<appender-ref ref= "tagentNettyAppender"/>
+		<appender-ref ref= "tagentRegisterAndNettyAppender"/>
 	</logger>
 	<logger name="codedriver.module.tagent.api.TagentStatusUpdateApi" level="ERROR" additivity="false">
-		<appender-ref ref= "tagentNettyAppender"/>
+		<appender-ref ref= "tagentRegisterAndNettyAppender"/>
 	</logger>
 </configuration>
