@@ -14,25 +14,25 @@
     <artifactId>codedriver-webroot</artifactId>
     <packaging>war</packaging>
     <name>codedriver-pack</name>
-    <version>1.0.0</version>
+    <version>1.0.1.0</version>
 
     <properties>
-        <framework.version>1.0.0</framework.version>
-        <tenant.version>1.0.0</tenant.version>
-        <globalsearch.version>1.0.0</globalsearch.version>
-        <dashboard.version>1.0.0</dashboard.version>
-        <process.version>1.0.0</process.version>
-        <master.version>1.0.0</master.version>
-        <change.version>1.0.0</change.version>
-        <report.version>1.0.0</report.version>
-        <event.version>1.0.0</event.version>
-        <knowledge.version>1.0.0</knowledge.version>
-        <cmdb.version>1.0.0</cmdb.version>
-        <autoexec.version>1.0.0</autoexec.version>
-        <tagent.version>1.0.0</tagent.version>
-        <inspect.version>1.0.0</inspect.version>
-        <pbc.version>1.0.0</pbc.version>
-        <deploy.version>1.0.0</deploy.version>
+        <framework.version>1.0.1.0</framework.version>
+        <tenant.version>1.0.1.0</tenant.version>
+        <globalsearch.version>1.0.1.0</globalsearch.version>
+        <dashboard.version>1.0.1.0</dashboard.version>
+        <process.version>1.0.1.0</process.version>
+        <master.version>1.0.1.0</master.version>
+        <change.version>1.0.1.0</change.version>
+        <report.version>1.0.1.0</report.version>
+        <event.version>1.0.1.0</event.version>
+        <knowledge.version>1.0.1.0</knowledge.version>
+        <cmdb.version>1.0.1.0</cmdb.version>
+        <autoexec.version>1.0.1.0</autoexec.version>
+        <tagent.version>1.0.1.0</tagent.version>
+        <inspect.version>1.0.1.0</inspect.version>
+        <pbc.version>1.0.1.0</pbc.version>
+        <deploy.version>1.0.1.0</deploy.version>
     </properties>
 
     <build>
