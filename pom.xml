@@ -27,7 +27,7 @@
         <report.version>1.0.1.0</report.version>
         <event.version>1.0.1.0</event.version>
         <knowledge.version>1.0.1.0</knowledge.version>
-        <cmdb.version>1.0.1.0</cmdb.version>
+        <cmdb.version>1.0.1.1</cmdb.version>
         <autoexec.version>1.0.1.0</autoexec.version>
         <tagent.version>1.0.1.0</tagent.version>
         <inspect.version>1.0.1.0</inspect.version>
