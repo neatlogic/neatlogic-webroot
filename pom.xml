@@ -14,7 +14,7 @@
     <artifactId>codedriver-webroot</artifactId>
     <packaging>war</packaging>
     <name>codedriver-pack</name>
-    <version>1.0.1.0</version>
+    <version>1.0.1.1</version>
 
     <properties>
         <framework.version>1.0.1.0</framework.version>
