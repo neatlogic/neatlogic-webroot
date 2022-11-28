@@ -32,7 +32,7 @@
         <tagent.version>1.0.1.0</tagent.version>
         <inspect.version>1.0.1.0</inspect.version>
         <pbc.version>1.0.1.0</pbc.version>
-        <deploy.version>1.0.1.0</deploy.version>
+        <deploy.version>1.0.1.1</deploy.version>
     </properties>
 
     <build>
