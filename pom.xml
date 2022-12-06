@@ -30,12 +30,10 @@
         <dependency>
             <groupId>com.techsure</groupId>
             <artifactId>codedriver-framework</artifactId>
-            <version>${codedriver.framework}</version>
         </dependency>
         <dependency>
             <groupId>com.techsure</groupId>
             <artifactId>codedriver-tenant</artifactId>
-            <version>${codedriver.tagent}</version>
         </dependency>
         <!--
         <dependency>
@@ -46,67 +44,54 @@
         <dependency>
             <groupId>com.techsure</groupId>
             <artifactId>codedriver-dashboard</artifactId>
-            <version>${codedriver.dashboard}</version>
         </dependency>
         <dependency>
             <groupId>com.techsure</groupId>
             <artifactId>codedriver-process</artifactId>
-            <version>${codedriver.process}</version>
         </dependency>
         <dependency>
             <groupId>com.techsure</groupId>
             <artifactId>codedriver-master</artifactId>
-            <version>${codedriver.master}</version>
         </dependency>
         <dependency>
             <groupId>com.techsure</groupId>
             <artifactId>codedriver-change</artifactId>
-            <version>${codedriver.change}</version>
         </dependency>
         <dependency>
             <groupId>com.techsure</groupId>
             <artifactId>codedriver-report</artifactId>
-            <version>${codedriver.report}</version>
         </dependency>
         <dependency>
             <groupId>com.techsure</groupId>
             <artifactId>codedriver-event</artifactId>
-            <version>${codedriver.event}</version>
         </dependency>
         <dependency>
             <groupId>com.techsure</groupId>
             <artifactId>codedriver-knowledge</artifactId>
-            <version>${codedriver.knowledge}</version>
         </dependency>
         <dependency>
             <groupId>com.techsure</groupId>
             <artifactId>codedriver-autoexec</artifactId>
-            <version>${codedriver.autoexec}</version>
         </dependency>
         <dependency>
             <groupId>com.techsure</groupId>
             <artifactId>codedriver-cmdb</artifactId>
-            <version>${codedriver.cmdb}</version>
         </dependency>
         <dependency>
             <groupId>com.techsure</groupId>
             <artifactId>codedriver-tagent</artifactId>
-            <version>${codedriver.tagent}</version>
         </dependency>
         <dependency>
             <groupId>com.techsure</groupId>
             <artifactId>codedriver-inspect</artifactId>
-            <version>${codedriver.inspect}</version>
         </dependency>
         <dependency>
             <groupId>com.techsure</groupId>
             <artifactId>codedriver-pbc</artifactId>
-            <version>${codedriver.pbc}</version>
         </dependency>
         <dependency>
             <groupId>com.techsure</groupId>
             <artifactId>codedriver-deploy</artifactId>
-            <version>${codedriver.deploy}</version>
         </dependency>
     </dependencies>
 </project>
