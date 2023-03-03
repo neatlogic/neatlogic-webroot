@@ -1,0 +1,10 @@
+# see https://docs.gitlab.com/ce/ci/yaml/README.html for all available options
+
+build1:
+  stage: build
+  only:
+    - /^release.*$/
+  script:
+    - echo "git clone success!"
+    - sh autotag.sh ${CI_PROJECT_ID} ${CI_COMMIT_SHA}
+

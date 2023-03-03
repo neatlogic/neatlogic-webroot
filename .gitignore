@@ -1,0 +1,13 @@
+/target
+*.iml
+bin
+.class
+.svn
+.settings
+.classpath
+.project
+.idea/
+.idea
+logs/
+/config2/config.properties
+/config2/logback.xml
