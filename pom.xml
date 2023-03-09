@@ -36,6 +36,14 @@
                 <version>3.2.2</version>
             </plugin>
         </plugins>
+        <resources>
+            <resource>
+                <directory>config</directory>
+                <includes>
+                    <include>i18n/**</include>
+                </includes>
+            </resource>
+        </resources>
     </build>
     <dependencies>
         <dependency>
