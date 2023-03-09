@@ -38,7 +38,7 @@
         </plugins>
         <resources>
             <resource>
-                <directory>config</directory>
+                <directory>localconfig</directory>
                 <includes>
                     <include>i18n/**</include>
                 </includes>
