@@ -60,7 +60,7 @@
         </dependency>
         <dependency>
             <groupId>com.neatlogic</groupId>
-            <artifactId>neatlogic-process</artifactId>
+            <artifactId>neatlogic-itsm</artifactId>
         </dependency>
         <dependency>
             <groupId>com.neatlogic</groupId>
