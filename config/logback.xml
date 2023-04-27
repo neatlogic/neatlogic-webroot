@@ -189,7 +189,7 @@
 		</filter>
 		<filter class="ch.qos.logback.core.filter.EvaluatorFilter">
 			<evaluator class="neatlogic.framework.logback.boolex.CustomEventEvaluator">
-				<expression>neatlogic.module.process.api.processtask.ProcessTaskStepActionListApi</expression>
+				<expression>neatlogic</expression>
 			</evaluator>
 			<OnMatch>NEUTRAL</OnMatch>
 			<OnMismatch>DENY</OnMismatch>
