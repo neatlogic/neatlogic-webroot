@@ -126,6 +126,48 @@
 			<Pattern>[%-5level]%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %logger{36}[%line] [%tenant] %requestUrl - %msg%n</Pattern>
 		</layout>
 	</appender>
+
+	<appender name="notifyAuditAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<File>logs/notifyAudit.log</File>
+		<rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+			<FileNamePattern>notifyAudit.log.%i</FileNamePattern>
+			<MinIndex>1</MinIndex>
+			<MaxIndex>5</MaxIndex>
+		</rollingPolicy>
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>INFO</level>
+			<onMatch>ACCEPT</onMatch>
+			<onMismatch>DENY</onMismatch>
+		</filter>
+		<triggeringPolicy
+				class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+			<MaxFileSize>100MB</MaxFileSize>
+		</triggeringPolicy>
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<Pattern>[%-5level]%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %logger{36}[%line] [%tenant] %requestUrl- %msg%n</Pattern>
+		</layout>
+	</appender>
+
+	<appender name="deadlockAuditAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<File>logs/deadlock.log</File>
+		<rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+			<FileNamePattern>deadlock.log.%i</FileNamePattern>
+			<MinIndex>1</MinIndex>
+			<MaxIndex>5</MaxIndex>
+		</rollingPolicy>
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>ERROR</level>
+			<onMatch>ACCEPT</onMatch>
+			<onMismatch>DENY</onMismatch>
+		</filter>
+		<triggeringPolicy
+				class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+			<MaxFileSize>100MB</MaxFileSize>
+		</triggeringPolicy>
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<Pattern>[%-5level]%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %logger{36}[%line] [%tenant] %requestUrl- %msg%n</Pattern>
+		</layout>
+	</appender>
 	<!--异步输出 -->
 	<appender name="ERROR" class="ch.qos.logback.classic.AsyncAppender">
 		<discardingThreshold>0</discardingThreshold>
@@ -140,6 +182,18 @@
 			<charset>UTF-8</charset> <!-- 此处设置字符集 -->
 			<outputPatternAsPresentationHeader>false</outputPatternAsPresentationHeader>
 		</encoder>
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>ERROR</level>
+			<onMatch>ACCEPT</onMatch>
+			<onMismatch>NEUTRAL</onMismatch>
+		</filter>
+		<filter class="ch.qos.logback.core.filter.EvaluatorFilter">
+			<evaluator class="neatlogic.framework.logback.boolex.CustomEventEvaluator">
+				<expression>neatlogic.module.process.api.processtask.ProcessTaskStepActionListApi</expression>
+			</evaluator>
+			<OnMatch>NEUTRAL</OnMatch>
+			<OnMismatch>DENY</OnMismatch>
+		</filter>
 		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
 			<level>DEBUG</level>
 		</filter>
@@ -201,6 +255,14 @@
 		<appender-ref ref="STDOUT" />
 	</logger> -->
 
+	<!-- 通知审计 -->
+	<logger name="notifyAudit" level="INFO" additivity="false">
+		<appender-ref ref="notifyAuditAppender"/>
+	</logger>
+	<!-- mysql死锁日志 -->
+	<logger name="deadlockAudit" level="ERROR" additivity="false">
+		<appender-ref ref="deadlockAuditAppender"/>
+	</logger>
 	<!--tagent注册、心跳日志-->
 	<logger name="neatlogic.module.tagent.api.TagentRegisterApi" level="ERROR" additivity="false">
 		<appender-ref ref= "tagentRegisterAndNettyAppender"/>
