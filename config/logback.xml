@@ -1,276 +1,286 @@
 <!-- Logback configuration. See http://logback.qos.ch/manual/index.html -->
 <configuration scan="true" scanPeriod="10 seconds" debug="false">
-	<conversionRule conversionWord="tenant" converterClass="neatlogic.framework.logback.converter.TenantConverter"/>
-	<conversionRule conversionWord="requestUrl" converterClass="neatlogic.framework.logback.converter.RequestUrlConverter"/>
-	<statusListener class="ch.qos.logback.core.status.NopStatusListener" />
+    <conversionRule conversionWord="tenant" converterClass="neatlogic.framework.logback.converter.TenantConverter"/>
+    <conversionRule conversionWord="requestUrl"
+                    converterClass="neatlogic.framework.logback.converter.RequestUrlConverter"/>
+    <statusListener class="ch.qos.logback.core.status.NopStatusListener"/>
 
-	<appender name="debugAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<File>logs/debug.log</File>
-		<rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
-			<FileNamePattern>logs/debug.log.%i</FileNamePattern>
-			<MinIndex>1</MinIndex>
-			<MaxIndex>5</MaxIndex>
-		</rollingPolicy>
-		<filter class="ch.qos.logback.classic.filter.LevelFilter">
-			<level>DEBUG</level>
-			<onMatch>ACCEPT</onMatch>
-			<onMismatch>DENY</onMismatch>
-		</filter>
-		<triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
-			<MaxFileSize>100MB</MaxFileSize>
-		</triggeringPolicy>
-		<layout class="ch.qos.logback.classic.PatternLayout">
-			<Pattern>[%-5level]%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %logger{36}[%line] [%tenant] %requestUrl - %msg%n</Pattern>
-		</layout>
-	</appender>
-	<appender name="DEBUG" class="ch.qos.logback.classic.AsyncAppender">
-		<discardingThreshold>0</discardingThreshold>
-		<queueSize>50</queueSize>
-		<appender-ref ref="debugAppender" />
-		<includeCallerData>true</includeCallerData>
-	</appender>
+    <appender name="debugAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>logs/debug.log</File>
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <FileNamePattern>logs/debug.log.%i</FileNamePattern>
+            <MinIndex>1</MinIndex>
+            <MaxIndex>5</MaxIndex>
+        </rollingPolicy>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>DEBUG</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <MaxFileSize>100MB</MaxFileSize>
+        </triggeringPolicy>
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>[%-5level]%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %logger{36}[%line] [%tenant] %requestUrl - %msg%n
+            </Pattern>
+        </layout>
+    </appender>
+    <appender name="DEBUG" class="ch.qos.logback.classic.AsyncAppender">
+        <discardingThreshold>0</discardingThreshold>
+        <queueSize>50</queueSize>
+        <appender-ref ref="debugAppender"/>
+        <includeCallerData>true</includeCallerData>
+    </appender>
 
-	<appender name="infoAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<File>logs/info.log</File>
-		<rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
-			<FileNamePattern>logs/info.log.%i</FileNamePattern>
-			<MinIndex>1</MinIndex>
-			<MaxIndex>5</MaxIndex>
-		</rollingPolicy>
-		<filter class="ch.qos.logback.classic.filter.LevelFilter">
-			<level>INFO</level>
-			<onMatch>ACCEPT</onMatch>
-			<onMismatch>DENY</onMismatch>
-		</filter>
-		<triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
-			<MaxFileSize>100MB</MaxFileSize>
-		</triggeringPolicy>
-		<layout class="ch.qos.logback.classic.PatternLayout">
-			<Pattern>[%-5level]%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %logger{36}[%line] [%tenant] %requestUrl - %msg%n</Pattern>
-		</layout>
-	</appender>
-	<appender name="INFO" class="ch.qos.logback.classic.AsyncAppender">
-		<discardingThreshold>0</discardingThreshold>
-		<queueSize>50</queueSize>
-		<appender-ref ref="infoAppender" />
-		<includeCallerData>true</includeCallerData>
-	</appender>
+    <appender name="infoAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>logs/info.log</File>
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <FileNamePattern>logs/info.log.%i</FileNamePattern>
+            <MinIndex>1</MinIndex>
+            <MaxIndex>5</MaxIndex>
+        </rollingPolicy>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>INFO</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <MaxFileSize>100MB</MaxFileSize>
+        </triggeringPolicy>
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>[%-5level]%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %logger{36}[%line] [%tenant] %requestUrl - %msg%n
+            </Pattern>
+        </layout>
+    </appender>
+    <appender name="INFO" class="ch.qos.logback.classic.AsyncAppender">
+        <discardingThreshold>0</discardingThreshold>
+        <queueSize>50</queueSize>
+        <appender-ref ref="infoAppender"/>
+        <includeCallerData>true</includeCallerData>
+    </appender>
 
-	<appender name="warnAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<File>logs/warn.log</File>
-		<rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
-			<FileNamePattern>logs/warn.log.%i</FileNamePattern>
-			<MinIndex>1</MinIndex>
-			<MaxIndex>5</MaxIndex>
-		</rollingPolicy>
-		<filter class="ch.qos.logback.classic.filter.LevelFilter">
-			<level>WARN</level>
-			<onMatch>ACCEPT</onMatch>
-			<onMismatch>DENY</onMismatch>
-		</filter>
-		<triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
-			<MaxFileSize>100MB</MaxFileSize>
-		</triggeringPolicy>
-		<layout class="ch.qos.logback.classic.PatternLayout">
-			<Pattern>[%-5level]%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %logger{36}[%line] [%tenant] %requestUrl - %msg%n</Pattern>
-		</layout>
-	</appender>
-	<appender name="WARN" class="ch.qos.logback.classic.AsyncAppender">
-		<discardingThreshold>0</discardingThreshold>
-		<queueSize>50</queueSize>
-		<appender-ref ref="warnAppender" />
-		<includeCallerData>true</includeCallerData>
-	</appender>
+    <appender name="warnAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>logs/warn.log</File>
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <FileNamePattern>logs/warn.log.%i</FileNamePattern>
+            <MinIndex>1</MinIndex>
+            <MaxIndex>5</MaxIndex>
+        </rollingPolicy>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>WARN</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <MaxFileSize>100MB</MaxFileSize>
+        </triggeringPolicy>
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>[%-5level]%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %logger{36}[%line] [%tenant] %requestUrl - %msg%n
+            </Pattern>
+        </layout>
+    </appender>
+    <appender name="WARN" class="ch.qos.logback.classic.AsyncAppender">
+        <discardingThreshold>0</discardingThreshold>
+        <queueSize>50</queueSize>
+        <appender-ref ref="warnAppender"/>
+        <includeCallerData>true</includeCallerData>
+    </appender>
 
-	<appender name="errorAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<File>logs/error.log</File>
-		<rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
-			<FileNamePattern>logs/error.log.%i</FileNamePattern>
-			<MinIndex>1</MinIndex>
-			<MaxIndex>5</MaxIndex>
-		</rollingPolicy>
-		<filter class="ch.qos.logback.classic.filter.LevelFilter">
-			<level>ERROR</level>
-			<onMatch>ACCEPT</onMatch>
-			<onMismatch>DENY</onMismatch>
-		</filter>
-		<triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
-			<MaxFileSize>100MB</MaxFileSize>
-		</triggeringPolicy>
-		<layout class="ch.qos.logback.classic.PatternLayout">
-			<Pattern>[%-5level]%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %logger{36}[%line] [%tenant] %requestUrl - %msg%n</Pattern>
-		</layout>
-	</appender>
+    <appender name="errorAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>logs/error.log</File>
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <FileNamePattern>logs/error.log.%i</FileNamePattern>
+            <MinIndex>1</MinIndex>
+            <MaxIndex>5</MaxIndex>
+        </rollingPolicy>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>ERROR</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <MaxFileSize>100MB</MaxFileSize>
+        </triggeringPolicy>
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>[%-5level]%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %logger{36}[%line] [%tenant] %requestUrl - %msg%n
+            </Pattern>
+        </layout>
+    </appender>
 
-	<!--tagent心跳日志-->
-	<appender name="tagentRegisterAndNettyAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<File>logs/tagentRegisterAndNetty.log</File>
-		<rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
-			<FileNamePattern>logs/tagentRegisterAndNetty.%i</FileNamePattern>
-			<MinIndex>1</MinIndex>
-			<MaxIndex>5</MaxIndex>
-		</rollingPolicy>
-		<filter class="ch.qos.logback.classic.filter.LevelFilter">
-			<level>ERROR</level>
-			<onMatch>ACCEPT</onMatch>
-			<onMismatch>DENY</onMismatch>
-		</filter>
-		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
-			<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n</pattern>
-			<charset>UTF-8</charset>
-		</encoder>
-		<triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
-			<MaxFileSize>100MB</MaxFileSize>
-		</triggeringPolicy>
-		<layout class="ch.qos.logback.classic.PatternLayout">
-			<Pattern>[%-5level]%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %logger{36}[%line] [%tenant] %requestUrl - %msg%n</Pattern>
-		</layout>
-	</appender>
+    <!--tagent心跳日志-->
+    <appender name="tagentRegisterAndNettyAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>logs/tagentRegisterAndNetty.log</File>
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <FileNamePattern>logs/tagentRegisterAndNetty.%i</FileNamePattern>
+            <MinIndex>1</MinIndex>
+            <MaxIndex>5</MaxIndex>
+        </rollingPolicy>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>ERROR</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <MaxFileSize>100MB</MaxFileSize>
+        </triggeringPolicy>
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>[%-5level]%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %logger{36}[%line] [%tenant] %requestUrl - %msg%n
+            </Pattern>
+        </layout>
+    </appender>
 
-	<appender name="notifyAuditAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<File>logs/notifyAudit.log</File>
-		<rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
-			<FileNamePattern>notifyAudit.log.%i</FileNamePattern>
-			<MinIndex>1</MinIndex>
-			<MaxIndex>5</MaxIndex>
-		</rollingPolicy>
-		<filter class="ch.qos.logback.classic.filter.LevelFilter">
-			<level>INFO</level>
-			<onMatch>ACCEPT</onMatch>
-			<onMismatch>DENY</onMismatch>
-		</filter>
-		<triggeringPolicy
-				class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
-			<MaxFileSize>100MB</MaxFileSize>
-		</triggeringPolicy>
-		<layout class="ch.qos.logback.classic.PatternLayout">
-			<Pattern>[%-5level]%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %logger{36}[%line] [%tenant] %requestUrl- %msg%n</Pattern>
-		</layout>
-	</appender>
+    <appender name="notifyAuditAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>logs/notifyAudit.log</File>
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <FileNamePattern>notifyAudit.log.%i</FileNamePattern>
+            <MinIndex>1</MinIndex>
+            <MaxIndex>5</MaxIndex>
+        </rollingPolicy>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>INFO</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <triggeringPolicy
+                class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <MaxFileSize>100MB</MaxFileSize>
+        </triggeringPolicy>
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>[%-5level]%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %logger{36}[%line] [%tenant] %requestUrl- %msg%n
+            </Pattern>
+        </layout>
+    </appender>
 
-	<appender name="deadlockAuditAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<File>logs/deadlock.log</File>
-		<rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
-			<FileNamePattern>deadlock.log.%i</FileNamePattern>
-			<MinIndex>1</MinIndex>
-			<MaxIndex>5</MaxIndex>
-		</rollingPolicy>
-		<filter class="ch.qos.logback.classic.filter.LevelFilter">
-			<level>ERROR</level>
-			<onMatch>ACCEPT</onMatch>
-			<onMismatch>DENY</onMismatch>
-		</filter>
-		<triggeringPolicy
-				class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
-			<MaxFileSize>100MB</MaxFileSize>
-		</triggeringPolicy>
-		<layout class="ch.qos.logback.classic.PatternLayout">
-			<Pattern>[%-5level]%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %logger{36}[%line] [%tenant] %requestUrl- %msg%n</Pattern>
-		</layout>
-	</appender>
-	<!--异步输出 -->
-	<appender name="ERROR" class="ch.qos.logback.classic.AsyncAppender">
-		<discardingThreshold>0</discardingThreshold>
-		<queueSize>50</queueSize>
-		<appender-ref ref="errorAppender" />
-		<includeCallerData>true</includeCallerData>
-	</appender>
+    <appender name="deadlockAuditAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>logs/deadlock.log</File>
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <FileNamePattern>deadlock.log.%i</FileNamePattern>
+            <MinIndex>1</MinIndex>
+            <MaxIndex>5</MaxIndex>
+        </rollingPolicy>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>ERROR</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <triggeringPolicy
+                class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <MaxFileSize>100MB</MaxFileSize>
+        </triggeringPolicy>
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>[%-5level]%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %logger{36}[%line] [%tenant] %requestUrl- %msg%n
+            </Pattern>
+        </layout>
+    </appender>
+    <!--异步输出 -->
+    <appender name="ERROR" class="ch.qos.logback.classic.AsyncAppender">
+        <discardingThreshold>0</discardingThreshold>
+        <queueSize>50</queueSize>
+        <appender-ref ref="errorAppender"/>
+        <includeCallerData>true</includeCallerData>
+    </appender>
 
-	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
-		<encoder>
-			<Pattern>[%-5level]%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %logger{36}[%line] [%tenant] %requestUrl - %msg%n</Pattern>
-			<charset>UTF-8</charset> <!-- 此处设置字符集 -->
-			<outputPatternAsPresentationHeader>false</outputPatternAsPresentationHeader>
-		</encoder>
-		<filter class="ch.qos.logback.classic.filter.LevelFilter">
-			<level>ERROR</level>
-			<onMatch>ACCEPT</onMatch>
-			<onMismatch>NEUTRAL</onMismatch>
-		</filter>
-		<filter class="ch.qos.logback.core.filter.EvaluatorFilter">
-			<evaluator class="neatlogic.framework.logback.boolex.CustomEventEvaluator">
-				<expression>neatlogic</expression>
-			</evaluator>
-			<OnMatch>NEUTRAL</OnMatch>
-			<OnMismatch>DENY</OnMismatch>
-		</filter>
-		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
-			<level>DEBUG</level>
-		</filter>
-	</appender>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <Pattern>[%-5level]%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %logger{36}[%line] [%tenant] %requestUrl - %msg%n
+            </Pattern>
+            <charset>UTF-8</charset> <!-- 此处设置字符集 -->
+            <outputPatternAsPresentationHeader>false</outputPatternAsPresentationHeader>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>ERROR</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>NEUTRAL</onMismatch>
+        </filter>
+        <filter class="ch.qos.logback.core.filter.EvaluatorFilter">
+            <evaluator class="neatlogic.framework.logback.boolex.CustomFilterEvaluator">
+                <blacklist>neatlogic.framework.filter|neatlogic.module.autoexec.api.TestApi
+                </blacklist>
+            </evaluator>
+            <OnMatch>NEUTRAL</OnMatch>
+            <OnMismatch>DENY</OnMismatch>
+        </filter>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>DEBUG</level>
+        </filter>
+    </appender>
 
-	<!--FOR PRD -->
+    <!--FOR PRD -->
 
-	<root level="${log4j.priority}">
-		<appender-ref ref="DEBUG" />
-		<appender-ref ref="INFO" />
-		<appender-ref ref="WARN" />
-		<appender-ref ref="ERROR" />
-	</root>
+    <root level="${log4j.priority}">
+        <appender-ref ref="DEBUG"/>
+        <appender-ref ref="INFO"/>
+        <appender-ref ref="WARN"/>
+        <appender-ref ref="ERROR"/>
+    </root>
 
 
-	<!--FOR DEV -->
-	<root level="${log4j.priority}">
-		<appender-ref ref="ERROR" />
-	</root>
+    <!--FOR DEV -->
+    <root level="${log4j.priority}">
+        <appender-ref ref="ERROR"/>
+    </root>
 
-	<logger name="org.mybatis" level="INFO" additivity="false" />
-	<logger name="ch.qos.logback" level="OFF" additivity="false" />
-	<logger name="java.sql.Connection" level="WARN" additivity="false" />
-	<logger name="java.sql.Statement" level="INFO" additivity="false" />
-	<logger name="java.sql.PreparedStatement" level="WARN" additivity="false" />
-	<logger name="jdbc.connection" level="INFO" additivity="false" />
-	<logger name="neatlogic" level="INFO" additivity="false" />
-	<logger name="org.mybatis" level="ERROR" additivity="false">
-		<appender-ref ref="STDOUT" />
-	</logger>
-	<logger name="ch.qos.logback" level="ERROR" additivity="false">
-		<appender-ref ref="STDOUT" />
-	</logger>
-	<logger name="java.sql.Connection" level="ERROR" additivity="false">
-		<appender-ref ref="STDOUT" />
-	</logger>
-	<logger name="java.sql.Statement" level="ERROR" additivity="false">
-		<appender-ref ref="STDOUT" />
-	</logger>
-	<logger name="java.sql.PreparedStatement" level="ERROR" additivity="false">
-		<appender-ref ref="STDOUT" />
-	</logger>
-	<logger name="jdbc.connection" level="ERROR" additivity="false">
-		<appender-ref ref="STDOUT" />
-	</logger>
-	<logger name="neatlogic" level="ERROR" additivity="false">
-		<appender-ref ref="STDOUT" />
-	</logger>
+    <logger name="org.mybatis" level="INFO" additivity="false"/>
+    <logger name="ch.qos.logback" level="OFF" additivity="false"/>
+    <logger name="java.sql.Connection" level="WARN" additivity="false"/>
+    <logger name="java.sql.Statement" level="INFO" additivity="false"/>
+    <logger name="java.sql.PreparedStatement" level="WARN" additivity="false"/>
+    <logger name="jdbc.connection" level="INFO" additivity="false"/>
+    <logger name="neatlogic" level="INFO" additivity="false"/>
+    <logger name="org.mybatis" level="ERROR" additivity="false">
+        <appender-ref ref="STDOUT"/>
+    </logger>
+    <logger name="ch.qos.logback" level="ERROR" additivity="false">
+        <appender-ref ref="STDOUT"/>
+    </logger>
+    <logger name="java.sql.Connection" level="ERROR" additivity="false">
+        <appender-ref ref="STDOUT"/>
+    </logger>
+    <logger name="java.sql.Statement" level="ERROR" additivity="false">
+        <appender-ref ref="STDOUT"/>
+    </logger>
+    <logger name="java.sql.PreparedStatement" level="ERROR" additivity="false">
+        <appender-ref ref="STDOUT"/>
+    </logger>
+    <logger name="jdbc.connection" level="ERROR" additivity="false">
+        <appender-ref ref="STDOUT"/>
+    </logger>
+    <logger name="neatlogic" level="ERROR" additivity="false">
+        <appender-ref ref="STDOUT"/>
+    </logger>
 
-	<logger name="jdbc.sqlonly" level="DEBUG" additivity="false">
-		<appender-ref ref="STDOUT" />
-	</logger>
-	<logger name="neatlogic">
-		<level value="${log4j.priority}" />
-		<appender-ref ref="STDOUT" />
-	</logger>
-	<!-- <logger name="org.mybatis" additivity="false">
-		<level value="${log4j.priority}" />
-		<appender-ref ref="STDOUT" />
-	</logger> -->
+    <logger name="jdbc.sqlonly" level="DEBUG" additivity="false">
+        <appender-ref ref="STDOUT"/>
+    </logger>
+    <logger name="neatlogic">
+        <level value="${log4j.priority}"/>
+        <appender-ref ref="STDOUT"/>
+    </logger>
+    <!-- <logger name="org.mybatis" additivity="false">
+        <level value="${log4j.priority}" />
+        <appender-ref ref="STDOUT" />
+    </logger> -->
 
-	<!-- 通知审计 -->
-	<logger name="notifyAudit" level="INFO" additivity="false">
-		<appender-ref ref="notifyAuditAppender"/>
-	</logger>
-	<!-- mysql死锁日志 -->
-	<logger name="deadlockAudit" level="ERROR" additivity="false">
-		<appender-ref ref="deadlockAuditAppender"/>
-	</logger>
-	<!--tagent注册、心跳日志-->
-	<logger name="neatlogic.module.tagent.api.TagentRegisterApi" level="ERROR" additivity="false">
-		<appender-ref ref= "tagentRegisterAndNettyAppender"/>
-	</logger>
-	<logger name="neatlogic.module.tagent.api.TagentInfoUpdateApi" level="ERROR" additivity="false">
-		<appender-ref ref= "tagentRegisterAndNettyAppender"/>
-	</logger>
-	<logger name="neatlogic.module.tagent.api.TagentStatusUpdateApi" level="ERROR" additivity="false">
-		<appender-ref ref= "tagentRegisterAndNettyAppender"/>
-	</logger>
+    <!-- 通知审计 -->
+    <logger name="notifyAudit" level="INFO" additivity="false">
+        <appender-ref ref="notifyAuditAppender"/>
+    </logger>
+    <!-- mysql死锁日志 -->
+    <logger name="deadlockAudit" level="ERROR" additivity="false">
+        <appender-ref ref="deadlockAuditAppender"/>
+    </logger>
+    <!--tagent注册、心跳日志-->
+    <logger name="neatlogic.module.tagent.api.TagentRegisterApi" level="ERROR" additivity="false">
+        <appender-ref ref="tagentRegisterAndNettyAppender"/>
+    </logger>
+    <logger name="neatlogic.module.tagent.api.TagentInfoUpdateApi" level="ERROR" additivity="false">
+        <appender-ref ref="tagentRegisterAndNettyAppender"/>
+    </logger>
+    <logger name="neatlogic.module.tagent.api.TagentStatusUpdateApi" level="ERROR" additivity="false">
+        <appender-ref ref="tagentRegisterAndNettyAppender"/>
+    </logger>
 </configuration>
