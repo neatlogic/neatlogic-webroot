@@ -112,7 +112,7 @@
         </dependency>
         <dependency>
             <groupId>com.neatlogic</groupId>
-            <artifactId>neatlogic-deploy</artifactId>
+            <artifactId>neatlogic-codehub</artifactId>
         </dependency>
     </dependencies>
 </project>
