@@ -62,10 +62,10 @@
             <groupId>com.neatlogic</groupId>
             <artifactId>neatlogic-itsm</artifactId>
         </dependency>
-        <!--<dependency>
+        <dependency>
             <groupId>com.neatlogic</groupId>
             <artifactId>neatlogic-master</artifactId>
-        </dependency>-->
+        </dependency>
         <dependency>
             <groupId>com.neatlogic</groupId>
             <artifactId>neatlogic-change</artifactId>
