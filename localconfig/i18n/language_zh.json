@@ -1,5 +1,552 @@
 {
   "exception":{
+    "currentversionisactivatedandcannotbedeleted":"当前版本已激活，不可删除",
+    "cmdb":{
+      "ciuniquerulenotfoundexception":"模型“{0}({1})”没有配置唯一规则",
+      "relentityisusedexception":{
+        "b":"关系“{0}”是唯一关系，它的值“{1}”已被其他配置项引用，请修改",
+        "c":"当前模型在关系“{0}”中是唯一引用，因此不能关联多个配置项，请修改"
+      },
+      "resourcecenteraccountnotfoundexception":{
+        "b":"账号：“{0}”不存在",
+        "c":"账号不存在"
+      },
+      "relnotfoundexception":"配置项模型关系“{0}”不存在",
+      "attrentityvalueemptyexception":"属性“{0}”值不能为空",
+      "civiewhasnoattrexception":"虚拟模型属性定义不能为空",
+      "civiewsqlfieldnotexistsexception":"虚拟模型SQL语句缺少字段：{0}",
+      "attrnotfoundexception":{
+        "a":"配置项模型属性“{0}”不存在",
+        "b":"配置项模型“{0}”不存在属性“{1}”",
+        "c":"配置项模型属性“{0}”不存在"
+      },
+      "attrisusedinexpressionexception":{
+        "a":"当前属性已被表达式属性“{0}({1}})”引用，请先删除。",
+        "b":"当前属性已被模型“{0}({1})”的表达式属性“{2}({3})”引用，请先删除。",
+        "c":"表达式属性“{0}”引用了父模型属性，请先删除。"
+      },
+      "groupnotfoundexception":"团体“{0}”不存在",
+      "ciuniquerulehasnotexistsattrexception":"唯一规则包含不存在的属性：{0}",
+      "cimultipleuniqueruleexception":"模型“{0}({1})”唯一规则包含了多个属性，引用属性关联单值不支持这种配置方式",
+      "resourcesearchgeneratesqltypeexception":"还不支持{0}类型数值，请补充逻辑",
+      "batchimportuuidlengthisinvalidexception":"uuid应该是一个由英文字母和数字组成的长度为32的字符串",
+      "resourcecentertagnamerepeatsexception":"标签：“{0}”已存在",
+      "ciwithoutattrrelexception":"配置项模型：{0}没有任何属性或关系。",
+      "initiativesynccicollectionnotfoundexception":"集合“{0}”还没有主动采集模式的映射配置，请先配置",
+      "resourcecentertaghasbeenreferredexception":"标签：“{0}”已被引用",
+      "appenvnotfoundexception":"环境：“{0}”不存在",
+      "transactionnotfoundexception":"事务：{0}不存在",
+      "reltypeisinusedexception":"当前关系类型正在使用中",
+      "discovernotfoundexception":"发现配置“{0}”不存在",
+      "nostartcustomviewciexception":"当前视图缺少起始模型",
+      "synccicollectionisexistsexception":{
+        "a":"集合“{0}”->模型“{1}”的映射配置已存在",
+        "b":"集合“{0}”->模型“{1}”在父属性“{2}”的映射配置已存在"
+      },
+      "customviewattrnameisexistsexception":"属性唯一标识“{0}”已存在",
+      "cientityislockedexception":"配置项：{0} 已被锁定编辑",
+      "ciauthinvalidexception":"授权信息不完整",
+      "cientityhasuncommittransactionexception":"配置项“{0}”存在未提交的{1}事务",
+      "customviewnameisexistsexception":"自定义视图名称“{0}”已被使用",
+      "resourcecenteraccountnotcreatetagentaccountexception":"使用tagent协议的账号不支持手动添加",
+      "transactionauthexception":"您没有权限处理当前事务",
+      "appsystemnotfoundexception":"应用：“{0}”不存在",
+      "civiewattrnotfoundexception":"SQL语句缺少属性：{0}",
+      "reltypenameisexistsexception":"关系类型：{0} 已存在",
+      "attrentitymultipleexception":"属性“{0}({1})”只能单选",
+      "cilabelisexistsexception":"模型名称：{0} 已存在",
+      "ciuniqueruleexception":"模型“{0}({1})”存在拥有相同唯一规则属性的配置项",
+      "resourcenotfoundexception":{
+        "b":"资源{0}不存在",
+        "c":"common.errorMessage.empty.resource"
+      },
+      "resourcecenteraccounthasbeenreferredexception":"账号：被 {0} 引用,无法删除",
+      "graphnotfoundexception":"拓扑视图“{0}”不存在",
+      "citypeisexistsexception":"模型类型：{0}已存在",
+      "attrentityduplicateexception":{
+        "a":"模型“{0}({1})“属性“{2}”值等于“{3}”的配置项已存在",
+        "b":"模型“{0}({1})“属性“{2}”值等于“{3}”的配置项已存在"
+      },
+      "ciisusedincustomviewexception":"模型“{0}({1})”已被自定义视图“{2}”引用，请先删除",
+      "cientitytransactionnotfoundexception":"事务：{0}没有修改任何配置项",
+      "batchimportfilefailedexception":"读取文件失败，{0}",
+      "Newcientitynotfoundexception":"找不到{0}的新配置项",
+      "cinameisexistsexception":"模型唯一标识：{0} 已存在",
+      "dslsyntaxirregulardecimalexception":"值“{0}”不是合法的小数类型",
+      "ciisnotemptyexception":"配置项模型：{0}及其子模型共拥有：{1}个配置项，请先删除",
+      "resourceentityviewnamenotfoundexception":"资源实体类缺少annotation ResourceType",
+      "propnotfoundexception":"属性定义：{0} 不存在",
+      "cihasrelexception":"当前模型已经被模型“{0}”引用，请先删除引用关系",
+      "virtualcisettingfilenotfoundexception":"虚拟模型配置文件不能为空",
+      "attrnamerepeatexception":"配置项模型属性：{0}已存在",
+      "dslsyntaxirregulararrayexception":"数组比较只能使用include或exclude运算符",
+      "cientityauthexception":{
+        "a":"您没有权限{0}配置项",
+        "b":"您没有权限{0}“{1}({2})”的配置项",
+        "c":"您没有权限{0}“{1}”的配置项",
+        "d":"您没有权限{0}配置项“{1}({2})”"
+      },
+      "customviewtypeirregularexception":"当前视图不是“{0}”",
+      "attrisusedinuniqueruleexception":"唯一规则使用了父模型属性，请先删除。",
+      "customviewprivilegereadexception":"您没有权限查看{0}公共数据视图",
+      "cihasattrexception":"当前模型已经被模型“{0}”的属性引用，请先删除引用关系",
+      "attrtypenotfoundexception":"属性类型：{0}不存在",
+      "dslsyntaxirregularintegerexception":"值“{0}”不是合法的整数类型",
+      "citypenameisblankexception":"模型类型名称不能为空",
+      "ciauthexception":{
+        "a":"您没有权限修改配置项模型",
+        "b":"您没有权限修改配置项模型：{0}"
+      },
+      "cihasbeenextendedexception":"配置项模型：{0}已被以下模型继承：{1}",
+      "attrisusedintargetexception":"当前属性已存在数据，不能更改目标模型",
+      "batchimportcannotgetresourceidexception":"无法获取到配置项id：{0}",
+      "ciisabstractedexception":"配置项模型：{0}是抽象模型，不能直接添加数据。",
+      "propnameisexistsexception":"属性定义：{0} 已被引用",
+      "customviewnotfoundexception":"自定义视图“{0}”不存在",
+      "synccicollectionnotfoundexception":"同步配置“{0}”不存在",
+      "graphprivilegedeleteexception":"您没有权限删除公共拓扑视图",
+      "batchimportmouldismustexception":"请正确填写模版与选择导入模式，【只添加】不需要填写ID；【只更新】必须填写ID",
+      "relgroupnameisexistsexception":"模型关系分组：{0} 已存在",
+      "ciparentcannotbechangedexception":"模型“{0}”及其子模型共包含{1}条配置项数据，删除后才能修改继承关系",
+      "cientityisinusedexception":{
+        "b":"当前配置项已经被以下属性引用：{0}",
+        "c":"配置项“{0}”已被以下属性引用：{1}"
+      },
+      "civiewciidemptyexception":"模型id不能为空",
+      "resourcecentertagnotfoundexception":"标签：“{0}”不存在",
+      "cisyncisdoingexception":"模型{0}({1})正在同步，请等待同步结束再发起新的同步作业。",
+      "attrdeletedeniedexception":"内部属性不允许删除",
+      "cientitynotfoundexception":"配置项：{0} 不存在",
+      "syncpolicynotfoundexception":"同步策略：“{0}”不存在",
+      "customviewisprivateexception":"自定义视图：{0}是私有视图",
+      "cinameexpressionhasnotexistsattrexception":"名字表达式包含不存在的属性：{0}",
+      "initiativesynccicollectionisexistsexception":"集合“{0}”已配置了主动采集配置项模型，不能重复配置",
+      "validatorisinusedexception":"当前校验规则已被{0}个属性使用，请先删除",
+      "ciuniqueruleattrtypeirregularexception":"模型“{0}({1})”的唯一规则属性“{2}({3})”不能是一个表达式属性或引用型属性",
+      "syncmappingnotfoundexception":"映射关系不能为空",
+      "resourcecenterresourcefoundexception":{
+        "b":"资源实体：{0}中没有定义{1}字段",
+        "c":"资源实体：{0}没定义"
+      },
+      "cicollectionisinusedexception":"当前采集映射已被策略“{0}”使用，请先删除",
+      "civiewsettingfileirregularexception":{
+        "b":"虚拟模型配置文件内容不合法：{0}",
+        "c":"虚拟模型配置文件缺少节点：{0}",
+        "d":"虚拟模型配置文件{0}节点缺少属性{1}"
+      },
+      "attrpropidisvalidedexception":"当前属性是属性定义类型，请选择有效的属性定义",
+      "discoverconfnotfoundexception":"发现配置“{0}”的配置信息不存在",
+      "attrexpressioninvalidedexception":"当前属性是表达式类型，表达式不能为空",
+      "customviewcinotfoundexception":"当前视图没有放置任何配置项模型",
+      "relisexistsexception":"关系“{0}”->“{1}”已存在",
+      "graphisinvokedexception":"当前视图已被其他视图引用，请先删除",
+      "batchimportanalyzeheaderfailedexception":"分析表头失败：{0}",
+      "civiewsqlirregularexception":{
+        "b":"虚拟模型SQL语句不是合法的SELECT语句：{0}",
+        "c":"配置文件不是合法的XML文件"
+      },
+      "errorstartcustomviewciexception":"“{0}”是起始模型，不能存在连入关系",
+      "relentitymultipleexception":"关系“{0}”不能存在多个",
+      "cientityisrecoveredexception":"配置项：{0} 已恢复",
+      "collectiondatairregularexception":"参数“{0}”不是合法的{1}类型",
+      "ciisvirtualexception":"配置项模型：{0}是虚拟模型，不能添加数据。",
+      "validatornotfoundexception":"验证规则“{0}”不存在",
+      "customviewprivilegesaveexception":"您没有权限保存{0}公共数据视图",
+      "ciattrisnotnullexception":"模型属性不能为空",
+      "resourcecenterresourcehasrepeataccountexception":"资源“{0}”存在多个 协议为“{2}”用户名为“{1}”的账号,请联系管理员",
+      "collectionnotfoundexception":"MongoDB集合“{0}”不存在",
+      "parentcinotfoundexception":"父模型：{0}不存在",
+      "propertyhandlernotfoundexception":"属性类型：{0} 不存在",
+      "resourcecenteraccountnamerepeatsexception":"账号：“{0}”已存在",
+      "attrvalueirregularexception":"属性“{0}({1})”的值“{2}”不是合法的{3}类型",
+      "dslsyntaxirregularexception":"行{0}，列{1}出现语法错误：{2}",
+      "transactionstatusirregularexception":"\"当前事务：{0}",
+      "resourcecenterconfigirregularexception":{
+        "b":"资源中心配置文件内容不合法：{0}",
+        "c":"资源节点：{0}缺少field为：{2}的{1}节点",
+        "d":"资源节点：{0}的{1}节点缺少：{2}属性",
+        "4":"资源节点：{0}中field为：{2}的{1}节点缺少属性：{3}",
+        "f":"资源节点：{0}缺少属性：{1}"
+      },
+      "customviewprivilegedeleteexception":"您没有权限删除{0}公共数据视图",
+      "ciuniqueattrnotfoundexception":{
+        "b":"配置项模型“{0}”缺少唯一属性，请设置",
+        "c":"模型“{0}({1})”的唯一规则属性“{2}({3})”没有配置匹配字段，请先配置",
+        "d":"唯一规则属性“{0}({1})”的值为空",
+        "4":"获取模型“{0}”的配置项事务hash失败，唯一属性“{1}”没有值",
+        "f":"配置“{0}->{1}({2})”的唯一键映射属性“{3}”的值不存在，原始数据：{4}"
+      },
+      "appmodulenotfoundexception":"应用模块：“{0}”不存在",
+      "nochangeexception":"配置项没有任何修改",
+      "customviewemptyexception":"请创建至少一个节点",
+      "onemorestartcustomviewciexception":"当前视图存在多个起始模型",
+      "createcustomviewfailedexception":"创建视图失败，异常：{0}",
+      "cinameexpressionattrtypenotsupportedexception":"名字表达式包含了非法类型属性：{0}",
+      "graphprivilegereadexception":"您没有权限查看公共拓扑视图",
+      "isolatedcustomviewciexception":"当前视图存在孤立模型（没有任何关系连入或连出的模型）",
+      "uniqueattrnotcertifyexception":"请确保配置“{0}->{1}({2})”中所有唯一规则属性都已经配置映射关系，并且集合中对应的属性值不能为空",
+      "relentitynotfoundexception":"关系“{0}”不能为空",
+      "cinameisblankexception":"模型唯一标识为空",
+      "datetimeattrformatirregularexception":"属性“{0}({1})”的值“{2}”不符合格式“{3}”",
+      "dslsyntaxirregularoperatorexception":"",
+      "deletecustomviewfailedexception":"删除视图失败，异常：{0}",
+      "targetcinotfoundexception":"属性“{0}”的关联模型“{1}”不存在",
+      "deleteattrfromschemaexception":"无法将属性：{0} 从数据表中删除，具体错误请查看系统日志",
+      "resourcecenteraccountprotocolrepeatexception":"协议：{0}已存在",
+      "resourcecenteraccountprotocolhasbeenreferredexception":"协议：{0}已被引用",
+      "attrisusedinnameattrexception":"名称属性使用了父模型属性，请先删除。",
+      "resourcecenterconfignotfoundexception":"找不到资源中心配置信息",
+      "graphprivilegesaveexception":"您没有权限保存公共拓扑视图",
+      "cientitymultipleexception":"配置项：{0} 存在多条数据",
+      "validatorhandlernotfoundexception":"验证组件“{0}”不存在",
+      "legalvalidnotfoundexception":"合规校验规则“{0}”不存在",
+      "attrtargetciidnotfoundexception":"配置项模型属性：{0} 没有关联目标模型",
+      "resourcecenteraccountnameisnotnullexception":"用户名不能为空",
+      "relcinotfoundexception":"关系“{0}”的关联模型“{1}”不存在",
+      "createcischemaexception":{
+        "b":"创建模型“{0}”数据表失败",
+        "c":"创建模型“{0}”数据视图失败"
+      },
+      "cientityduplicateexception":{
+        "b":"找到多个配置项，无法更新或添加",
+        "c":"唯一规则：{0} 在模型{1}({2})中找到多个配置项，无法更新或添加，原始数据：{3}"
+      },
+      "uniquemappingnotfoundexception":"配置项唯一属性：{0}没有配置同步映射规则",
+      "attrentitynotfoundexception":"属性：{0} 不存在",
+      "cinotfoundexception":"配置项模型“{0}”不存在"
+    },
+    "autoexec":{
+      "autoexecoperationhasnomodifyauthexception":"没有工具库维护权限,请联系管理员",
+      "autoexecriskhasbeenreferredexception":"操作级别：“{0}”被引用",
+      "autoexecscriptnameorukrepeatexception":"自定义工具：“{0}”已存在",
+      "autoexecjobupdatenodebypreoutputlistexception":{
+        "a":"作业“{0}”通过上游出参更新执行目标异常：配置错误，请确认配置后重试",
+        "b":"作业通过上游出参更新阶段({1})的执行目标异常：target阶段({0}) 只允许存在一个节点"
+      },
+      "autoexecjobcannotrefirejobnodeexception":"无法重跑作业: {0}，请确保作业存于'运行中（running）'状态",
+      "autoexecscriptversionisnotsubmittedexception":"当前版本不是待审批状态",
+      "autoexeccombopversionnotpassedexception":"组合工具版本：“{0}”未审核，不能激活",
+      "autoexecparamnotfoundexception":"阶段[{0}]工具[{1}]的参数：“{2}”不存在",
+      "autoexecjobcannotexecuteinadvanceexception":"禁止提前执行作业",
+      "autoexecjobphaseoperationnotfoundexception":"作业阶段工具“{0}”不存在",
+      "autoexecjobcannotexecuteexception":"无法执行作业: {0}，需同时满足：状态为'已就绪'且当前用户为'执行用户'",
+      "autoexecscriptjobcannotexecuteexception":"无法执行作业: {0}，当前用户没有'工具、自定义工具管理权限'",
+      "autoexecjobparamcannotbeemptyexception":"组合工具“{0}”的作业参数“{1}“不能为空",
+      "autoexecparametercontroltypeparamnotexistexception":"第：{0}个参数“{1}”的控件类型不能为空",
+      "autoexecjobnodepreparamvaluenotinvalidexception":"作业“{0}”-阶段“{1}” 根据上游参数初始化执行目标失败，上游出参的值不存在或不合法",
+      "autoexecservicehasbeenreferredexception":"目录：“{0}”或其子目录中还有服务，不可删除",
+      "autoexecprofilenamerepeatsexception":"profile名称：“{0}”已存在",
+      "autoexeccomboprejectedversionnotfoundexception":"组合工具：“{0}”没有待审核版本",
+      "autoexecjobcannotrevokeexception":"无法撤销作业: {0}，执行用户才有权限撤销，且作业需要处于'已就绪'状态",
+      "autoexecprofilenotreferencedbyoperationexception":"profile：“{0}”未关联工具：{1}",
+      "autoexecparammappingincorrectexception":"阶段[{0}]工具[{1}]的参数：“{2}”映射不正确",
+      "autoexecparamvalueirregularexception":{
+        "a":"阶段[{0}]工具[{1}]的参数：{2}（{3}）的值：“{4}”不符合格式要求",
+        "b":"{0}的参数：{1}（{2}）的值：“{3}”不符合格式要求",
+        "c":"参数“{0}（{1}）”的值“{2}”不符合格式要求"
+      },
+      "autoexecglobalparamtypenotfoundexception":"参数：{0}的参数映射不正确，不存在“{1}”类型的全局参数",
+      "autoexecglobalparamvalueemptyexception":"参数：{0}的全局参数值为空",
+      "autoexecjobparamnotfoundexception":"组合工具“{0}”的作业参数中没有“{1}”的参数",
+      "autoexecscriptversioncannotdeleteexception":"当前自定义工具仅有一个版本，删除此版本将导致删除当前自定义工具。",
+      "autoexecjobsourceinvalidexception":"作业来源：“{0}”不合法",
+      "autoexecjobhostportrunnernotfoundexception":"{0} 没有分配 Runner",
+      "autoexecparammappingnotfoundexception":"参数：“{0}”的映射模式：{1}不存在",
+      "autoexecschedulenamerepeatexception":"定时作业名: “{0}”已存在",
+      "autoexecscripthassubmittedversionexception":"当前自定义工具已经有其他待审核版本",
+      "autoexecjobphasenodenotfoundexception":{
+        "a":"作业剧本：“{0}” 节点“{1}” 资产id不存在",
+        "b":"作业阶段：“{0}” 节点“{1}”不存在",
+        "c":"作业阶段“{0}”： 缺少可执行节点.请确认所选择的执行目标是否在资产清单，重试"
+      },
+      "autoexecparameterrequiredparamnotexistexception":"第：{0}个参数“{1}”的是否必填不能为空",
+      "autoexecjobsqldetailnotfoundexception":"sql详情不存在",
+      "autoexeccombopnamerepeatexception":"组合工具：“{0}”已存在",
+      "autoexecjobnotfoundexception":"作业：“{0}”不存在",
+      "autoexecexecuteuserisrequiredexception":"执行用户必须设置",
+      "autoexectoolparamdatasourceemptyexception":"参数：“{0}”未配置数据源",
+      "autoexeccombopexecuteusercannotbeemptyexception":"选择'现在指定执行目标'时，执行用户不能为空",
+      "autoexectoolnotfoundexception":"工具：“{0}”不存在",
+      "autoexecparammappingtargetnotfoundexception":{
+        "a":"阶段[{0}]工具[{1}]的参数：“{2}”映射目标“{3}”不存在",
+        "b":"阶段[{0}]的执行用户映射作业参数“{1}”不存在",
+        "c":"阶段组[{0}]的执行用户映射作业参数“{1}”不存在",
+        "d":"执行目标的执行用户映射作业参数“{0}”不存在"
+      },
+      "autoexeccombopphasenamerepeatexception":"组合工具阶段名称“{0}”已存在",
+      "autoexectoolparamvalidatefieldlostexception":{
+        "a":"参数“{0}”的validate配置中，名称为“{1}”的规则缺少“{2}”字段",
+        "b":"参数“{0}”的validate配置中，第：{1} 个的规则缺少“{2}”字段"
+      },
+      "autoexecprofilehasbeenreferredexception":"当前profile“{0}”已被引用，无法删除",
+      "autoexeccombopdraftversionnotfoundexception":"组合工具：“{0}”没有草稿版本",
+      "autoexecparammappingargumentcountmismatchexception":"阶段[{0}]工具[{1}]的自由参数：“{2}”映射个数不匹配，设置数量为{3}",
+      "autoexecscripthasnotanyversionexception":"当前脚本没有任何版本",
+      "autoexecexecutenodeisrequiredexception":"执行目标必须设置",
+      "autoexecjobgroupnotfoundexception":"作业({0}) 组（{1}）不存在",
+      "autoexecjobcheckedexception":"作业 “{0}” 已验证",
+      "autoexecjobparamnotexistexception":"参数：“作业参数[{0}]（{1}）”不能为空",
+      "customtemplatenotfoundexception":"自定义模板“{0}”不存在",
+      "autoexeccombopatleastonephaseexception":"\"组合工具至少要有一个阶段\"",
+      "autoexecjobinteractexception":{
+        "a":"interact is null",
+        "b":"interact failed! {0}"
+      },
+      "autoexecscripthasreferenceexception":"当前自定义工具已经被引用，不可删除或无激活版本，如需切换激活版本，请激活其他版本",
+      "autoexecjobcannottestexception":"无法测试工具库: {0}，存在正在测试该工具库的作业",
+      "autoexecprotocolisrequiredexception":"连接协议必须设置",
+      "autoexecscriptversioncannotreviewexception":"当前版本不可审核",
+      "autoexecscenariorepeatexception":"场景名称：“{0}”已存在",
+      "autoexecparamirregularexception":"第：\"{0}\"个参数“{1}”的“{2}”不符合格式要求",
+      "autoexecscripthasnoactiveversionexception":"工具：“{0}”不存在激活版本",
+      "autoexectoolexportnotfoundtoolexception":"没有找到需要导出的工具",
+      "autoexeccombopoperationnotfoundexception":"阶段[{0}]工具[{1}]已被删除，请在组合工具中清理该工具并保存",
+      "autoexecparameterchinesenameparamnotexistexception":"第：{0}个参数“{1}”的中文名不能为空",
+      "autoexecjobphasenotfoundexception":{
+        "a":"作业剧本：“{0}”不存在",
+        "b":"作业“{0}” 组：“{1}” 的phase不存在"
+      },
+      "autoexecscripthasnorejectedversionexception":"当前自定义工具没有已驳回版本",
+      "autoexecservicenameisrepeatexception":"服务目录名称“{0}”重复",
+      "autoexectypeisfactoryexception":"工具分类:“{1}”（id:“{0}”）是出厂默认分类，不可删除",
+      "autoexecjoboperationparamvalueinvalidexception":"阶段“{0}” 工具“{1}” 参数“{2}” 的值 “{3}” 不合法",
+      "autoexecjobparamisrequiredexception":"组合工具“{0}”的作业参数“{1}“必须设置",
+      "autoexecscripthasnodraftversionexception":"当前自定义工具没有草稿",
+      "autoexecjobphaserunnernotfoundexception":{
+        "a":"作业（{0}）阶段{1}（{2}） 找不到runner",
+        "b":"匹配不到可执行runner,执行phaseName :{0}"
+      },
+      "autoexecparamcannotbeemptyexception":"阶段[{0}]工具[{1}]的参数：“{2}”不能为空",
+      "autoexecroundcountisrequiredexception":"分批数量必须设置",
+      "autoexecjobparamvalueinvalidexception":"参数“{0}”值 “{1}” 不合法",
+      "autoexeccombopcannotexecuteexception":"组合工具：“{0}”没执行权限",
+      "autoexecscriptversioncannotactiveexception":"当前版本不可激活",
+      "autoexectoolparamdatasourceillegalexception":"参数：“{0}”的数据源格式不正确，正确格式为：{\"dataList\":[{\"text\":\"是\",\"value\":\"1\"},{\"text\":\"否\",\"value\":\"0\"}]}，其中(text的key和value)与(value的key)不能为空",
+      "autoexecscriptnotfoundexception":"自定义工具：“{0}”不存在",
+      "autoexecscriptcheckhandlernotfoundexception":"脚本校验器：“{0}”不存在",
+      "autoexectoolparamvalidatefieldformatillegalexception":"参数“{0}”的validate配置中，“{1}”的格式不正确，应该为JSON对象",
+      "autoexeccombopactiveversionnotfoundexception":"组合工具：“{0}”没有激活版本",
+      "autoexeccombopphaseatleastoneoperationexception":"组合工具的每一个阶段至少要有一个操作工具",
+      "autoexecjoblogencodingillegalexception":"非法的字符编码：{0}",
+      "autoexecjobconfignotfoundexception":"作业：“{0}” 配置快照不存在",
+      "autoexecscriptversioncannotsubmitexception":"当前版本不可提交审核",
+      "autoexeccombopsubmittedversionnotfoundexception":"组合工具：“{0}”没有已驳回版本",
+      "autoexecscenarioisrequiredexception":"场景必须设置",
+      "autoexecjobrunnernotfoundexception":"Runner map id:{0}不存在",
+      "autoexecjobexecutepermissiondeniedexception":"无作业 “{0}” 的执行权限,请刷新页面，重新接管作业",
+      "autoexeccataloghasbeenreferredexception":"目录：“{0}”或其子目录中还有工具，不可删除",
+      "autoexeccombopphasegroupidisnullexception":"阶段：“{0}” GroupId 为 null",
+      "autoexecprofileishasreferenceexception":"profile：{0}”已被引用，无法删除",
+      "autoexectoolinactivatedexception":"工具：“{0}”未激活",
+      "autoexecscriptversioncannoteditexception":"当前版本处于不可编辑状态",
+      "autoexecglobalparamhasbeenreferredexception":"全局参数: “{0}”被引用,无法删除",
+      "autoexecparammappingnotmappedexception":{
+        "a":"阶段[{0}]工具[{1}]的新增必填参数：“{2}”没有默认值",
+        "b":"作业参数：“{0}”未映射"
+      },
+      "autoexeccombopprotocolcannotbeemptyexception":"选择'现在指定执行目标'时，协议不能为空",
+      "autoexectypehasbeenreferredexception":"工具类型：“{0}”已经被工具、自定义工具或组合工具引用",
+      "autoexecscriptversionnotfoundexception":"版本：“{0}”不存在",
+      "autoexecserviceisnotcatalogexception":"服务：“{0}”不不是目录",
+      "autoexeccombopexecuteparamcannotbeemptyexception":"选择运行参数作为执行目标时，运行参数不能为空",
+      "autoexecglobalparamkeyrepeatexception":"全局参数名：“{0}”已存在",
+      "autoexecrisknamerepeatexception":"操作级别：“{0}”已存在",
+      "autoexecusernamenotfoundexception":"执行用户不能为空",
+      "autoexeccombopatleastonegroupexception":"\"组合工具至少要有一个组\"",
+      "autoexectypenamerepeatexception":"插件类型：“{0}”已存在",
+      "autoexeccombopnotfoundexception":"组合工具：“{0}”不存在",
+      "autoexecscriptversionhasnoactivedexception":{
+        "a":"自定义工具“{0}”未设置激活版本",
+        "b":"当前自定义工具没有激活版本"
+      },
+      "autoexecparametermodeparamnotexistexception":"第：{0}个参数“{1}”的参数模式不能为空",
+      "autoexecjobcannotfireexception":"无法激活作业: {0}，请确保作业以及作业所有阶段处于'未开始（pending）'状态",
+      "autoexecjobnotsupportedexecuteandrevokeexception":"只有从组合工具保存的作业才支持执行与撤销",
+      "autoexecserviceconfigexpiredexception":"服务：“{0}”配置已失效",
+      "autoexecrisknotfoundexception":"操作级别：“{0}”不存在",
+      "autoexecglobalparamnamerepeatexception":"全局参数显示名：“{0}”已存在",
+      "autoexeccatalogrepeatexception":"工具目录：“{0}”已存在",
+      "autoexeccombopversionnotfoundexception":"组合工具版本：“{0}”不存在",
+      "processtaskautoexechandlernotenableoperateexception":"自动化节点不支持“{0}”操作",
+      "autoexecservicenotreferencedformexception":"服务目录未引用表单，不能映射表单属性",
+      "autoexecjobcannotcreateexception":"无法创建作业，没有组合工具: “{0}” 执行权限",
+      "autoexecprofileisnotfoundexception":"profile id“{0}”不存在",
+      "autoexecglobalparamisnotfoundexception":"全局参数: “{0}”不存在",
+      "autoexecjobphaseoperationmustbecombopexception":"此操作仅支持'组合工具'",
+      "autoexecjobparamtypechangedexception":"组合工具“{0}”的作业参数“{1}“类型发生变化，由“{2}”变成“{3}”类型",
+      "autoexecparameterenglishnameparamnotexistexception":"第：{0}个参数英文名不能为空",
+      "autoexeccatalognotfoundexception":"工具目录：“{0}”不存在",
+      "autoexectypenotfoundexception":"工具类型：“{0}”不存在",
+      "autoexecjobactioninvalidexception":"作业执行策略不能为null，执行所有节点：refireResetAll；跳过所有已完成、已忽略的节点：refireAll",
+      "autoexeccombopexecutenodecannotbeemptyexception":"选择'现在指定执行目标'时，执行目标不能为空",
+      "autoexecparammappingtargettypemismatchexception":"阶段[{0}]工具[{1}]的参数：“{2}”映射目标“{3}”类型不匹配",
+      "autoexeccombopcannotberepeatreleaseexcepiton":"“{0}”不能重复发布为组合工具",
+      "autoexecjobcannotupdateexception":"无法修改作业计划时间与触发方式: {0}，作业处于'已就绪'状态且执行用户才能修改",
+      "autoexecscenarioisnotfoundexception":"场景 “{0}”不存在"
+    },
+    "schedulenotfound":"定时作业：“{0}”不存在",
+    "deploy":{
+      "deploycigitlabwebhooksavefailedexception":"gitlab webhook设置失败，错误：{0}",
+      "deploysqljobphasenotfoundexception":"该作业找不到对应阶段“{0}”的sql详情",
+      "deployversionredirecturlcredentialusernotfoundexception":"发布跳转url对应验权用户 “{0}” 不存在",
+      "deployversionisrepeatexception":"当前模块存在重复版本号“{0}”，请修改版本号后重新保存",
+      "deployversionenvnotfoundexception":{
+        "b":"版本“{0}”的{1}环境不存在",
+        "c":"环境id:{0}不存在",
+        "d":"{0}/{1}/{3} 环境:{2} 不存在"
+      },
+      "deployappoperationauthexception":"您没有系统：{0}({1})下的：{2}的【操作权限】",
+      "deploypackagenotfoundexception":"依赖包：{0}->{1}->{2}不存在",
+      "movefilefailedexception":"文件移动或重命名失败，错误：{0}",
+      "deployciisrepeatexception":"持续集成配置：{0}已存在",
+      "deletefilefailedexception":"删除文件失败，错误：{0}",
+      "deploybatchjobfirewithrevokedandcheckedexception":"无法执行，批量执行的作业都是'已撤销'或'已验证'的作业",
+      "deployjobparamirregularexception":"参数“{0}”不能为空",
+      "deployinstanceversionwhichcanrollbacknotfoundexception":"没有找到实例：{0}的可回退版本",
+      "deployjoblanenotfoundexception":"批量发布 {0}({1}) 不存在泳道",
+      "changefilepermissionfailedexception":"修改权限失败，错误：{0}",
+      "deploygitlabwebhookcallbackhostlostexception":"缺失初始化配置“gitlabWebHookCallbackHost“，请联系管理员处理",
+      "deployappconfigscenarionotfoundexception":"当前流水线没有配置场景",
+      "deployappconfigdbconfignotfoundexception":"db配置id（{0}）不存在",
+      "deployversionbuildnostatusisnotreleasedexception":"{0}/{1}/{2} 版本:{3} buildNo:{4} 状态不是released,而是{5}",
+      "deployinstanceversionnotfoundexception":"没有找到实例：{0}的当前版本",
+      "deploywebhooknamerepeatexception":"触发器名称 “{0}” 已存在",
+      "deployappconfigdbschemaactionirregularexception":"以下schema输入格式不规范，请输入：dbname.username。不规范schema：{0}",
+      "deployjobhasparentexception":"作业“{0}”已存在父作业",
+      "deployversionresourcehasbeenlockedexception":"HOME已被锁定，请稍后再试",
+      "deploybatchjobcannotcheckexception":"无法验证，请联系管理员",
+      "deploybatchjobgroupnotfoundexception":"批量发布分组：{0}不存在",
+      "deploybatchjobgroupfirewithinvalidstatusexception":"不能执行状态为：{0}的分组",
+      "deploygitlabhookreponameunknownactionexception":"{0}未知的action：{1}",
+      "deploycigitlabcallbackcommitidlostexception":"Gitlab回调参数缺少commitId",
+      "uploadfilefailedexception":"上传文件失败，错误：{0}",
+      "deploybatchjobnotfoundexception":{
+        "b":"批量发布作业：“{0}” 不存在",
+        "c":"该组的批量发布作业不存在"
+      },
+      "deployjobnotfoundexception":"{0}下的{1}模块尚未执行过任何作业",
+      "deployenvversionnotfoundexception":"没有找到环境：{0}的当前版本",
+      "deployversionbuildnonotfoundexception":{
+        "b":"版本“{0}”的buildNo“{1}”不存在",
+        "c":"buildNo“{0}”不存在"
+      },
+      "deployappscenarioauthexception":"您没有系统：{0}({1})下的场景：{2}({3})的【场景权限】",
+      "deployinstanceinenvnotfoundexception":"{0}->{1}->{2}下的实例：{3}不存在",
+      "deployversionparentdependencynotfoundexception":"父依赖：{0}->{1}->{2}不存在",
+      "deploycitriggertimelostexception":"持续集成配置缺少触发时间配置",
+      "copyfilefailedexception":"复制文件失败，错误：{0}",
+      "deploycijobnamelostexception":"持续集成配置缺少作业名称配置",
+      "deploycitriggertypelostexception":"持续集成配置缺少触发类型配置",
+      "deployciscenarioidlostexception":"持续集成配置缺少场景配置",
+      "downloadfilefailedexception":"下载文件失败，错误：{0}",
+      "deployappauthactionirregularexception":"校验数据权限的入参({0})不合法",
+      "deployappconfigenvdbschemanamerepeatexception":"数据库schema“{0}”已存在",
+      "createdirectoryfailedexception":"新建目录失败，错误：{0}",
+      "deployappconfignotfoundexception":"应用“{0}”的流水线不存在",
+      "deployschedulenamerepeatexception":"定时作业名称 “{0}” 已存在",
+      "deploywebhooknotfoundexception":"触发器id “{0}” 不存在",
+      "deploycigitlabwebhookdeletefailedexception":"{0}/{1}的gitlab webhook删除失败",
+      "deploycipipelineidlostexception":"持续集成配置缺少超级流水线配置",
+      "copyormovefiletosubdirectoryexception":"禁止复制或移动到自身的子目录",
+      "deployversionnotfoundexception":{
+        "a":"发布版本“{0}”不存在",
+        "b":"发布 “{0}/{1}/{2}” 不存在"
+      },
+      "deployciversionregexillegalexception":"持续集成配置的版本号截取规则格式不正确",
+      "deployappconfigmodulerunnergroupnotfoundexception":"应用系统 “{0}”,模块“{1}”没有配置runner组",
+      "deploycinotfoundexception":"持续集成配置：{0}不存在",
+      "deployappmoduleenvinstancenotfoundexception":"发布 “{0}/{1}/{2}” 找不到节点",
+      "deployversionrunnernotfoundexception":{
+        "a":"未找到版本“{0}”对应的runnner",
+        "b":"未找到版本“{0}”(buildNo为{1})对应的runnner",
+        "c":"未找到版本“{0}”({1}环境)对应的runnner"
+      },
+      "deploybatchjobcannottakeoverexception":"无法接管，请联系管理员",
+      "deploybatchjobcannotexecuteexception":"非当前批量发布执行人，无法执行，请先保存或接管",
+      "getdirectoryfailedexception":"获取目录失败，错误：{0}",
+      "deployappconfigscenariophasenamelistnotfoundexception":"当前流水线的场景没有绑定阶段",
+      "deploycigitlabaccountlostexception":"{0}/{1}的gitlab账号用户名与密码不能为空",
+      "deploycigitlabcallbackbranchnamelostexception":"Gitlab回调参数缺少分支名称",
+      "deploycienvidlostexception":"持续集成配置缺少环境配置",
+      "deploypipelineconfignotfoundexception":"该应用系统的流水线不存在",
+      "deploygitlabhookreponamelessparamexception":"{0}缺少{1}",
+      "deploypackagerequiredattributelostexception":"第：{0}个依赖缺少groupId|artifactIDeployInstanceInEnvNotFoundExceptiond|version属性",
+      "deploybatchjobcannoteditexception":"当批量发布作业状态为：“{0}” 时，无法编辑保存",
+      "deploypipelinenotfoundexception":"id为“{0}”的流水线不存在",
+      "deploygitlabhooklessreponameexception":"第：{0}个缺少repoName",
+      "deploybuildnonotfoundexception":"{0}/{1}/{2} buildNo 不存在",
+      "deployversionresourcetypenotfoundexception":"制品类型“{0}”不存在",
+      "deployappenvauthexception":"您没有系统：{0}({1})下的环境：{2}({3})的【环境权限】",
+      "deployjobcannotexecuteexception":"无法执行，当前用户没有当前应用系统/环境/场景 {0}({1})/{2}({3})/{4}({5}) 权限",
+      "deployenvversionwhichcanrollbacknotfoundexception":"没有找到环境：{0}的可回退版本",
+      "deploygitlabwebhookcallbackhostilegalexception":"初始化配置“gitlabWebHookCallbackHost“格式非法，请联系管理员处理"
+    },
+    "attrentityduplicateexception":"模型“{0}({1})“属性“{2}”值等于“{3}”的配置项已存在",
+    "event":{
+      "eventtypenamerepeatexception":"同一个层级下不能出现重名的类型",
+      "eventtypenotfoundexception":"事件类型：{0}不存在",
+      "eventsolutionrepeatexception":"解决方案：“{0}”已存在",
+      "eventnotfoundexception":"事件：“{0}”不存在",
+      "eventsolutionnotfoundexception":"解决方案：{0}不存在"
+    },
+    "nodatatoreport":"没有数据可以上报",
+    "dashboard":{
+      "dashboardauthenticationmanageexception":"您没有管理当前仪表板的权限",
+      "dashboardauthenticationreadexception":"您没有查看当前仪表板的权限",
+      "dashboardnameexistsexception":"仪表板：“{0}”已存在",
+      "dashboardauthenticationdeleteexception":"您没有删除当前仪表板的权限",
+      "dashboardnotfoundexception":"仪表板“{0}”不存在",
+      "dashboardnotfounddefaultexception":"暂无默认首页，请设置默认首页",
+      "dashboardstatisticsparamexception":"格式展示 -> 聚合方式 不能为空，请检查后重试",
+      "dashboardlimitcountparamexception":"格式展示 -> 最大组数量 不能为空，请检查后重试",
+      "dashboardexportnotfoundexception":"暂无可导出的仪表板",
+      "dashboardfieldnotfoundexception":"找不到分组条件为：{0}的数据",
+      "dashboardwidgetnotfoundexception":"仪表板组件：{0}不存在",
+      "dashboardgroupfieldparamexception":"格式展示 -> 分组条件 不能为空，请检查后重试",
+      "dashboardauthenticationsaveexception":"您没有修改当前仪表板的权限"
+    },
+    "tenant":{
+      "integrationurlillegalexception":"地址：{0}可能是集成调用地址，不允许配置",
+      "enumnotfoundexception":"枚举：{0}不存在",
+      "mailservernotfoundexception":"邮件服务器：“{0}”不存在",
+      "menusaveexception":"菜单id不合法，不能与父菜单id相同",
+      "mailservernamerepeatexception":"邮件服务器名称：“{0}”已存在",
+      "menudeleteexception":"当前菜单含有{0}个子菜单，请先移除。",
+      "userprofilemodulenotfoundexception":"用户个性化 “{0}” 不存在",
+      "usercurrentpasswordexception":"用户当前密码输入错误,请确认后重新输入",
+      "apinotallowedtodeleteexception":"token为：“{0}”的接口不允许删除"
+    },
+    "knowledge":{
+      "knowledgedocumentcurrentusernotreviewerexception":"当前用户不是审核人，无权限执行此操作",
+      "knowledgedocumentdraftsubmittedcannotbemodifiedexception":"该文档草稿已提交，不能再修改，请在文档的当前版本上修改",
+      "knowledgedocumentdraftsubmitfailedexecption":"该文档已有其他待审核草稿，暂时不能提交",
+      "knowledgedocumentrepeatinvokeexception":"一个引用方只能引用一个知识文档",
+      "knowledgedocumenthasbeendeletedexception":"文档：“{0}”已被删除",
+      "knowledgedocumentversionswitchfailedexecption":"该文档已有其他待审核草稿，暂时不能切换",
+      "knowledgedocumentdraftexpiredcannotbemodifiedexception":"该文档草稿已过期，不能再修改，请在文档的当前版本上修改",
+      "knowledgedocumenttitlerepeatexception":"知识标题：“{0}”已存在",
+      "knowledgedocumentnothistoricalversionexception":"文档草稿：“{0}”不是文档的历史版本，不能回退",
+      "knowledgecirclehasknowledgeexception":"知识圈：“{0}”中已存在文档，不可删除",
+      "knowledgedocumentnotfoundexception":"知识库文档：“{0}”不存在",
+      "knowledgedocumenthasbeencollectedexception":"您已收藏文档：{0}",
+      "knowledgedocumentdraftpublishedcannotbemodifiedexception":"该文档草稿已发布，不能再修改，请在文档的当前版本上修改",
+      "knowledgecirclenotfoundexception":"知识圈：{0}不存在",
+      "knowledgedocumenthasbeenfavoredexception":"您已点赞文档：{0}",
+      "knowledgedocumentdraftunsubmittedcannotbereviewedexception":"该文档草稿未提交，不能审核",
+      "knowledgetemplatenamerepeatexception":"知识模版：“{0}”已存在",
+      "knowledgedocumentdraftreviewedexception":"该草稿已审核，不能再审核",
+      "knowledgedocumentunmodifiedcannotbesavedexception":"文档未经修改",
+      "knowledgedocumentversionnotfoundexception":"知识库文档版本：“{0}”不存在",
+      "knowledgetemplatenotfoundexception":"知识模版：{0}不存在",
+      "knowledgedocumenttypenotfoundexception":"知识类型：{0}不存在",
+      "knowledgedocumentcurrentusernotownerexception":"当前用户不是该草稿的所有者，无权限执行此操作",
+      "knowledgedocumentdraftsubmittedexception":"该文档草稿已经提交过，不能重复提交，请在该文档的当前版本上修改后保存草稿再提交",
+      "knowledgecirclenamerepeatexception":"知识圈：“{0}”已存在",
+      "knowledgedocumentdraftsubmittedcannotbedeletedexception":"该文档草稿已提交，不能删除",
+      "knowledgedocumentcurrentversioncannotbedeletedexception":"文档当前版本不允许删除",
+      "knowledgedocumentcurrentusernotmemberexception":"当前用户不是成员，无权限执行此操作",
+      "knowledgedocumentdraftexpiredcannotsubmitexception":"文档草稿：“{0}”已过期不能提交"
+    },
     "process":{
       "processtasknoretreatablestepsexception":"工单里没有您可以撤回的步骤",
       "processtaskstepcannotretreatexception":"该步骤已经不能撤回",
@@ -101,15 +648,12 @@
       "catalognamerepeatexception":"服务目录名称：“{0}”已存在",
       "processtasksteptaskconfigillegalexception":"流程步骤任务策略: “{0}” 非法",
       "processtasksteptaskusercountillegalexception":"当前 “{0}” 需选择{1}位处理人",
-      "notifynoreceiverexception":"没有收件人",
       "channelnamerepeatexception":"服务：“{0}”已存在",
       "processtaskserialnumberupdateinprocessexception":"正在批量更新工单号，请稍后...",
-      "workcenterhandlernotfoundexception":"找不到类型为：{0}的工单中心处理器",
       "processtaskstepcontentisemptyexception":"描述不能为空",
       "processtaskstepunrunningexception":"当前步骤不是‘处理中’状态",
       "taskconfigexception":"流程步骤: “{0}” 任务Config异常,请联系管理员",
       "processtaskserialnumberpolicynotfoundexception":"服务类型：“{0}”没有配置工单生成策略",
-      "catalognotfoundexception":"服务目录：“{0}”不存在",
       "processtaskstepreapprovalnotenabledexception":"该步骤未启用重审功能",
       "processtaskshownexception":"工单已显示",
       "prioritynamerepeatexception":"优先级：“{0}”已存在",
@@ -126,14 +670,11 @@
       "handlerdispatchcomponenttypenotfoundexception":"找不到类型为：{0}的处理人分派组件",
       "processtaskabortedexception":"工单已取消",
       "processtaskfindmultiplenextstepexception":"找到多个后续节点",
-      "notifytemplatenamerepeatexception":"通知模板名称：“{0}”已存在",
       "scoretemplatenamerepeatexception":"评分模版：“{0}”已存在",
-      "notifypolicynotfoundexception":"通知策略：“{0}”不存在",
       "processtaskoperationunauthorizedexception":"您的“{0}”操作未获得授权",
       "processtaskstepisnotmanualexception":"工单：{0}的{1}步骤无需人工处理",
       "taskconfignotfoundexception":"子任务：“{0}”不存在",
       "processtaskhiddenexception":"工单已隐藏",
-      "processtasknopermissionexception":"您没有执行“{0}”操作权限",
       "processtaskautomaticnotallownextstepsexception":"自动化处理步骤只允许存在一个流转/回退步骤",
       "notifytemplatenotfoundexception":"找不到uuid为：{0}的通知模板",
       "processtaskstepnotmajoruserexception":"您不是步骤处理人",
@@ -145,231 +686,10 @@
       "catalogillegalparameterexception":"服务目录：“{0}”还存在子服务",
       "processtaskserialnumberpolicyhandlernotfoundexception":"工单号生成策略：“{0}”不存在",
       "processtaskstepuserunassignexception":"流程步骤缺少处理人，请指定处理人",
-      "workcenterparamexception":"过滤条件参数 “{0}”非法",
       "processorallocationpolicytypenotfoundexception":"找不到类型为：{0}的处理人分配策略"
     },
-    "cmdb":{
-      "ciuniquerulenotfoundexception":"模型“{0}({1})”没有配置唯一规则",
-      "relentityisusedexception":{
-        "b":"关系“{0}”是唯一关系，它的值“{1}”已被其他配置项引用，请修改",
-        "c":"当前模型在关系“{0}”中是唯一引用，因此不能关联多个配置项，请修改"
-      },
-      "resourcecenteraccountnotfoundexception":{
-        "b":"账号：“{0}”不存在",
-        "c":"账号不存在"
-      },
-      "relnotfoundexception":"配置项模型关系“{0}”不存在",
-      "attrentityvalueemptyexception":"属性“{0}”值不能为空",
-      "civiewhasnoattrexception":"虚拟模型属性定义不能为空",
-      "civiewsqlfieldnotexistsexception":"虚拟模型SQL语句缺少字段：{0}",
-      "attrnotfoundexception":{
-        "a":"配置项模型属性“{0}”不存在",
-        "b":"配置项模型“{0}”不存在属性“{1}”",
-        "c":"配置项模型属性“{0}”不存在"
-      },
-      "attrisusedinexpressionexception":{
-        "a":"当前属性已被表达式属性“{0}({1}})”引用，请先删除。",
-        "b":"当前属性已被模型“{0}({1})”的表达式属性“{2}({3})”引用，请先删除。",
-        "c":"表达式属性“{0}”引用了父模型属性，请先删除。"
-      },
-      "groupnotfoundexception":"团体“{0}”不存在",
-      "ciuniquerulehasnotexistsattrexception":"唯一规则包含不存在的属性：{0}",
-      "cimultipleuniqueruleexception":"模型“{0}({1})”唯一规则包含了多个属性，引用属性关联单值不支持这种配置方式",
-      "resourcesearchgeneratesqltypeexception":"还不支持{0}类型数值，请补充逻辑",
-      "batchimportuuidlengthisinvalidexception":"uuid应该是一个由英文字母和数字组成的长度为32的字符串",
-      "resourcecentertagnamerepeatsexception":"标签：“{0}”已存在",
-      "ciwithoutattrrelexception":"配置项模型：{0}没有任何属性或关系。",
-      "initiativesynccicollectionnotfoundexception":"集合“{0}”还没有主动采集模式的映射配置，请先配置",
-      "resourcecentertaghasbeenreferredexception":"标签：“{0}”已被引用",
-      "appenvnotfoundexception":"环境：“{0}”不存在",
-      "transactionnotfoundexception":"事务：{0}不存在",
-      "reltypeisinusedexception":"当前关系类型正在使用中",
-      "discovernotfoundexception":"发现配置“{0}”不存在",
-      "nostartcustomviewciexception":"当前视图缺少起始模型",
-      "synccicollectionisexistsexception":{
-        "a":"集合“{0}”->模型“{1}”的映射配置已存在",
-        "b":"集合“{0}”->模型“{1}”在父属性“{2}”的映射配置已存在"
-      },
-      "customviewattrnameisexistsexception":"属性唯一标识“{0}”已存在",
-      "cientityislockedexception":"配置项：{0} 已被锁定编辑",
-      "ciauthinvalidexception":"授权信息不完整",
-      "cientityhasuncommittransactionexception":"配置项“{0}”存在未提交的{1}事务",
-      "customviewnameisexistsexception":"自定义视图名称“{0}”已被使用",
-      "resourcecenteraccountnotcreatetagentaccountexception":"使用tagent协议的账号不支持手动添加",
-      "transactionauthexception":"您没有权限处理当前事务",
-      "appsystemnotfoundexception":"应用：“{0}”不存在",
-      "civiewattrnotfoundexception":"SQL语句缺少属性：{0}",
-      "resourcecenteraccountprotocolnotfoundbynameexception":"协议：{0}不存在",
-      "reltypenameisexistsexception":"关系类型：{0} 已存在",
-      "attrentitymultipleexception":"属性“{0}({1})”只能单选",
-      "cilabelisexistsexception":"模型名称：{0} 已存在",
-      "ciuniqueruleexception":"模型“{0}({1})”存在拥有相同唯一规则属性的配置项",
-      "resourcenotfoundexception":{
-        "b":"资源{0}不存在",
-        "c":"common.errorMessage.empty.resource"
-      },
-      "resourcecenteraccounthasbeenreferredexception":"账号：被 {0} 引用,无法删除",
-      "graphnotfoundexception":"拓扑视图“{0}”不存在",
-      "citypeisexistsexception":"模型类型：{0}已存在",
-      "attrentityduplicateexception":{
-        "a":"模型“{0}({1})“属性“{2}”值等于“{3}”的配置项已存在",
-        "b":"模型“{0}({1})“属性“{2}”值等于“{3}”的配置项已存在"
-      },
-      "ciisusedincustomviewexception":"模型“{0}({1})”已被自定义视图“{2}”引用，请先删除",
-      "cientitytransactionnotfoundexception":"事务：{0}没有修改任何配置项",
-      "batchimportfilefailedexception":"读取文件失败，{0}",
-      "Newcientitynotfoundexception":"找不到{0}的新配置项",
-      "resourcecenteraccountprotocolnotfoundexception":"协议：{0}不存在",
-      "cinameisexistsexception":"模型唯一标识：{0} 已存在",
-      "dslsyntaxirregulardecimalexception":"值“{0}”不是合法的小数类型",
-      "ciisnotemptyexception":"配置项模型：{0}及其子模型共拥有：{1}个配置项，请先删除",
-      "resourceentityviewnamenotfoundexception":"资源实体类缺少annotation ResourceType",
-      "propnotfoundexception":"属性定义：{0} 不存在",
-      "cihasrelexception":"当前模型已经被模型“{0}”引用，请先删除引用关系",
-      "virtualcisettingfilenotfoundexception":"虚拟模型配置文件不能为空",
-      "attrnamerepeatexception":"配置项模型属性：{0}已存在",
-      "dslsyntaxirregulararrayexception":"数组比较只能使用include或exclude运算符",
-      "cientityauthexception":{
-        "a":"您没有权限{0}配置项",
-        "b":"您没有权限{0}“{1}({2})”的配置项",
-        "c":"您没有权限{0}“{1}”的配置项",
-        "d":"您没有权限{0}配置项“{1}({2})”"
-      },
-      "customviewtypeirregularexception":"当前视图不是“{0}”",
-      "attrisusedinuniqueruleexception":"唯一规则使用了父模型属性，请先删除。",
-      "customviewprivilegereadexception":"您没有权限查看{0}公共数据视图",
-      "cihasattrexception":"当前模型已经被模型“{0}”的属性引用，请先删除引用关系",
-      "attrtypenotfoundexception":"属性类型：{0}不存在",
-      "dslsyntaxirregularintegerexception":"值“{0}”不是合法的整数类型",
-      "citypenameisblankexception":"模型类型名称不能为空",
-      "ciauthexception":{
-        "a":"您没有权限修改配置项模型",
-        "b":"您没有权限修改配置项模型：{0}"
-      },
-      "cihasbeenextendedexception":"配置项模型：{0}已被以下模型继承：{1}",
-      "attrisusedintargetexception":"当前属性已存在数据，不能更改目标模型",
-      "batchimportcannotgetresourceidexception":"无法获取到配置项id：{0}",
-      "ciisabstractedexception":"配置项模型：{0}是抽象模型，不能直接添加数据。",
-      "propnameisexistsexception":"属性定义：{0} 已被引用",
-      "customviewnotfoundexception":"自定义视图“{0}”不存在",
-      "synccicollectionnotfoundexception":"同步配置“{0}”不存在",
-      "graphprivilegedeleteexception":"您没有权限删除公共拓扑视图",
-      "batchimportmouldismustexception":"请正确填写模版与选择导入模式，【只添加】不需要填写ID；【只更新】必须填写ID",
-      "relgroupnameisexistsexception":"模型关系分组：{0} 已存在",
-      "insertattrtoschemaexception":"无法将属性“{0}”添加到数据表，具体错误请查看系统日志",
-      "ciparentcannotbechangedexception":"模型“{0}”及其子模型共包含{1}条配置项数据，删除后才能修改继承关系",
-      "cientityisinusedexception":{
-        "b":"当前配置项已经被以下属性引用：{0}",
-        "c":"配置项“{0}”已被以下属性引用：{1}"
-      },
-      "civiewciidemptyexception":"模型id不能为空",
-      "resourcecentertagnotfoundexception":"标签：“{0}”不存在",
-      "cisyncisdoingexception":"模型{0}({1})正在同步，请等待同步结束再发起新的同步作业。",
-      "attrdeletedeniedexception":"内部属性不允许删除",
-      "civiewattridmapemptyexception":"属性名称和id映射表不能为空",
-      "cientitynotfoundexception":"配置项：{0} 不存在",
-      "syncpolicynotfoundexception":"同步策略：“{0}”不存在",
-      "customviewisprivateexception":"自定义视图：{0}是私有视图",
-      "cinameexpressionhasnotexistsattrexception":"名字表达式包含不存在的属性：{0}",
-      "initiativesynccicollectionisexistsexception":"集合“{0}”已配置了主动采集配置项模型，不能重复配置",
-      "validatorisinusedexception":"当前校验规则已被{0}个属性使用，请先删除",
-      "ciuniqueruleattrtypeirregularexception":"模型“{0}({1})”的唯一规则属性“{2}({3})”不能是一个表达式属性或引用型属性",
-      "syncmappingnotfoundexception":"映射关系不能为空",
-      "resourcecenterresourcefoundexception":{
-        "b":"资源实体：{0}中没有定义{1}字段",
-        "c":"资源实体：{0}没定义"
-      },
-      "cicollectionisinusedexception":"当前采集映射已被策略“{0}”使用，请先删除",
-      "civiewsettingfileirregularexception":{
-        "b":"虚拟模型配置文件内容不合法：{0}",
-        "c":"虚拟模型配置文件缺少节点：{0}",
-        "d":"虚拟模型配置文件{0}节点缺少属性{1}"
-      },
-      "attrpropidisvalidedexception":"当前属性是属性定义类型，请选择有效的属性定义",
-      "discoverconfnotfoundexception":"发现配置“{0}”的配置信息不存在",
-      "attrexpressioninvalidedexception":"当前属性是表达式类型，表达式不能为空",
-      "customviewcinotfoundexception":"当前视图没有放置任何配置项模型",
-      "relisexistsexception":"关系“{0}”->“{1}”已存在",
-      "graphisinvokedexception":"当前视图已被其他视图引用，请先删除",
-      "batchimportanalyzeheaderfailedexception":"分析表头失败：{0}",
-      "civiewsqlirregularexception":{
-        "b":"虚拟模型SQL语句不是合法的SELECT语句：{0}",
-        "c":"配置文件不是合法的XML文件"
-      },
-      "errorstartcustomviewciexception":"“{0}”是起始模型，不能存在连入关系",
-      "relentitymultipleexception":"关系“{0}”不能存在多个",
-      "cientityisrecoveredexception":"配置项：{0} 已恢复",
-      "collectiondatairregularexception":"参数“{0}”不是合法的{1}类型",
-      "ciisvirtualexception":"配置项模型：{0}是虚拟模型，不能添加数据。",
-      "validatornotfoundexception":"验证规则“{0}”不存在",
-      "customviewprivilegesaveexception":"您没有权限保存{0}公共数据视图",
-      "ciattrisnotnullexception":"模型属性不能为空",
-      "resourcecenterresourcehasrepeataccountexception":"资源“{0}”存在多个 协议为“{2}”用户名为“{1}”的账号,请联系管理员",
-      "collectionnotfoundexception":"MongoDB集合“{0}”不存在",
-      "parentcinotfoundexception":"父模型：{0}不存在",
-      "propertyhandlernotfoundexception":"属性类型：{0} 不存在",
-      "resourcecenteraccountnamerepeatsexception":"账号：“{0}”已存在",
-      "attrvalueirregularexception":"属性“{0}({1})”的值“{2}”不是合法的{3}类型",
-      "dslsyntaxirregularexception":"行{0}，列{1}出现语法错误：{2}",
-      "transactionstatusirregularexception":"\"当前事务：{0}",
-      "resourcecenterconfigirregularexception":{
-        "b":"资源中心配置文件内容不合法：{0}",
-        "c":"资源节点：{0}缺少field为：{2}的{1}节点",
-        "d":"资源节点：{0}的{1}节点缺少：{2}属性",
-        "4":"资源节点：{0}中field为：{2}的{1}节点缺少属性：{3}",
-        "f":"资源节点：{0}缺少属性：{1}"
-      },
-      "customviewprivilegedeleteexception":"您没有权限删除{0}公共数据视图",
-      "ciuniqueattrnotfoundexception":{
-        "b":"配置项模型“{0}”缺少唯一属性，请设置",
-        "c":"模型“{0}({1})”的唯一规则属性“{2}({3})”没有配置匹配字段，请先配置",
-        "d":"唯一规则属性“{0}({1})”的值为空",
-        "4":"获取模型“{0}”的配置项事务hash失败，唯一属性“{1}”没有值",
-        "f":"配置“{0}->{1}({2})”的唯一键映射属性“{3}”的值不存在，原始数据：{4}"
-      },
-      "appmodulenotfoundexception":"应用模块：“{0}”不存在",
-      "nochangeexception":"配置项没有任何修改",
-      "customviewemptyexception":"请创建至少一个节点",
-      "onemorestartcustomviewciexception":"当前视图存在多个起始模型",
-      "createcustomviewfailedexception":"创建视图失败，异常：{0}",
-      "cinameexpressionattrtypenotsupportedexception":"名字表达式包含了非法类型属性：{0}",
-      "graphprivilegereadexception":"您没有权限查看公共拓扑视图",
-      "isolatedcustomviewciexception":"当前视图存在孤立模型（没有任何关系连入或连出的模型）",
-      "uniqueattrnotcertifyexception":"请确保配置“{0}->{1}({2})”中所有唯一规则属性都已经配置映射关系，并且集合中对应的属性值不能为空",
-      "relentitynotfoundexception":"关系“{0}”不能为空",
-      "cinameisblankexception":"模型唯一标识为空",
-      "datetimeattrformatirregularexception":"属性“{0}({1})”的值“{2}”不符合格式“{3}”",
-      "dslsyntaxirregularoperatorexception":"",
-      "deletecustomviewfailedexception":"删除视图失败，异常：{0}",
-      "attrinvalidatedexception":"{0}",
-      "propisinusedexception":"属性定义：{0} 已存在",
-      "targetcinotfoundexception":"属性“{0}”的关联模型“{1}”不存在",
-      "deleteattrfromschemaexception":"无法将属性：{0} 从数据表中删除，具体错误请查看系统日志",
-      "resourcecenteraccountprotocolrepeatexception":"协议：{0}已存在",
-      "resourcecenteraccountprotocolhasbeenreferredexception":"协议：{0}已被引用",
-      "attrisusedinnameattrexception":"名称属性使用了父模型属性，请先删除。",
-      "resourcecenterconfignotfoundexception":"找不到资源中心配置信息",
-      "graphprivilegesaveexception":"您没有权限保存公共拓扑视图",
-      "cientitymultipleexception":"配置项：{0} 存在多条数据",
-      "validatorhandlernotfoundexception":"验证组件“{0}”不存在",
-      "legalvalidnotfoundexception":"合规校验规则“{0}”不存在",
-      "attrtargetciidnotfoundexception":"配置项模型属性：{0} 没有关联目标模型",
-      "resourcecenteraccountnameisnotnullexception":"用户名不能为空",
-      "relcinotfoundexception":"关系“{0}”的关联模型“{1}”不存在",
-      "createcischemaexception":{
-        "b":"创建模型“{0}”数据表失败",
-        "c":"创建模型“{0}”数据视图失败"
-      },
-      "resourceaccountaccesstestexception":"{0}",
-      "cientityduplicateexception":{
-        "b":"找到多个配置项，无法更新或添加",
-        "c":"唯一规则：{0} 在模型{1}({2})中找到多个配置项，无法更新或添加，原始数据：{3}"
-      },
-      "uniquemappingnotfoundexception":"配置项唯一属性：{0}没有配置同步映射规则",
-      "proplabelisexistsexception":"属性定义：{0} 已存在",
-      "attrentitynotfoundexception":"属性：{0} 不存在",
-      "cinotfoundexception":"配置项模型“{0}”不存在"
-    },
+    "paramexception":"过滤条件参数 “{0}”非法",
+    "propisexistsexception":"属性定义：{0} 已存在",
     "change":{
       "changetemplatenamerepeatexception":"变更模板：“{0}”已存在",
       "changestepcommentnotfoundexception":"变更步骤回复：“{0}”不存在",
@@ -383,9 +703,9 @@
       "changesopnotfoundexception":"变更sop模板：“{0}”不存在",
       "processtaskchangestepundoneexception":"有变更步骤未完成",
       "changesopnamerepeatexception":"变更sop模板：“{0}”已存在",
-      "changenotfoundexception":"变更：“{0}”不存在",
-      "changenopermissionexception":"您没有执行“{0}”操作权限"
+      "changenotfoundexception":"变更：“{0}”不存在"
     },
+    "configurationfileisnotavalidxmlfile":"配置文件不是合法的XML文件",
     "tagent":{
       "tagentaccountnotfoundexception":"tagent账号id(“{1}”)不存在",
       "tagentpkgnotfoundexception":{
@@ -409,315 +729,40 @@
       "tagentidnotfoundexception":"tagent id:{0}不存在",
       "tagentactionnotfoundexception":"没有找到该操作对应的处理方法, 操作类型：{0}"
     },
-    "autoexec":{
-      "autoexecoperationhasnomodifyauthexception":"没有工具库维护权限,请联系管理员",
-      "autoexecriskhasbeenreferredexception":"操作级别：“{0}”被引用",
-      "autoexecscriptnameorukrepeatexception":"自定义工具：“{0}”已存在",
-      "autoexecjobupdatenodebypreoutputlistexception":{
-        "a":"作业“{0}”通过上游出参更新执行目标异常：配置错误，请确认配置后重试",
-        "b":"作业通过上游出参更新阶段({1})的执行目标异常：target阶段({0}) 只允许存在一个节点"
-      },
-      "autoexecjobcannotrefirejobnodeexception":"无法重跑作业: {0}，请确保作业存于'运行中（running）'状态",
-      "autoexecscriptversionisnotsubmittedexception":"当前版本不是待审批状态",
-      "autoexeccombopversionnotpassedexception":"组合工具版本：“{0}”未审核，不能激活",
-      "autoexecparamnotfoundexception":"阶段[{0}]工具[{1}]的参数：“{2}”不存在",
-      "autoexecjobcannotexecuteinadvanceexception":"禁止提前执行作业",
-      "autoexecjobphaseoperationnotfoundexception":"作业阶段工具“{0}”不存在",
-      "autoexecjobcannotexecuteexception":"无法执行作业: {0}，需同时满足：状态为'已就绪'且当前用户为'执行用户'",
-      "autoexecscriptjobcannotexecuteexception":"无法执行作业: {0}，当前用户没有'工具、自定义工具管理权限'",
-      "autoexecjobparamcannotbeemptyexception":"组合工具“{0}”的作业参数“{1}“不能为空",
-      "autoexecparametercontroltypeparamnotexistexception":"第：{0}个参数“{1}”的控件类型不能为空",
-      "autoexecjobnodepreparamvaluenotinvalidexception":"作业“{0}”-阶段“{1}” 根据上游参数初始化执行目标失败，上游出参的值不存在或不合法",
-      "autoexecservicehasbeenreferredexception":"目录：“{0}”或其子目录中还有服务，不可删除",
-      "autoexecprofilenamerepeatsexception":"profile名称：“{0}”已存在",
-      "autoexeccomboprejectedversionnotfoundexception":"组合工具：“{0}”没有待审核版本",
-      "autoexecjobcannotrevokeexception":"无法撤销作业: {0}，执行用户才有权限撤销，且作业需要处于'已就绪'状态",
-      "autoexecprofilenotreferencedbyoperationexception":"profile：“{0}”未关联工具：{1}",
-      "autoexecparammappingincorrectexception":"阶段[{0}]工具[{1}]的参数：“{2}”映射不正确",
-      "autoexecparamvalueirregularexception":{
-        "a":"阶段[{0}]工具[{1}]的参数：{2}（{3}）的值：“{4}”不符合格式要求",
-        "b":"{0}的参数：{1}（{2}）的值：“{3}”不符合格式要求",
-        "c":"参数“{0}（{1}）”的值“{2}”不符合格式要求"
-      },
-      "autoexecglobalparamtypenotfoundexception":"参数：{0}的参数映射不正确，不存在“{1}”类型的全局参数",
-      "autoexecglobalparamvalueemptyexception":"参数：{0}的全局参数值为空",
-      "autoexecjobparamnotfoundexception":"组合工具“{0}”的作业参数中没有“{1}”的参数",
-      "autoexecscriptversioncannotdeleteexception":"当前自定义工具仅有一个版本，删除此版本将导致删除当前自定义工具。",
-      "autoexecjobsourceinvalidexception":"作业来源：“{0}”不合法",
-      "autoexecjobhostportrunnernotfoundexception":"{0} 没有分配 Runner",
-      "autoexecparammappingnotfoundexception":"参数：“{0}”的映射模式：{1}不存在",
-      "autoexecschedulenamerepeatexception":"定时作业名: “{0}”已存在",
-      "autoexecscripthassubmittedversionexception":"当前自定义工具已经有其他待审核版本",
-      "autoexecjobphasenodenotfoundexception":{
-        "a":"作业剧本：“{0}” 节点“{1}” 资产id不存在",
-        "b":"作业阶段：“{0}” 节点“{1}”不存在",
-        "c":"作业阶段“{0}”： 缺少可执行节点.请确认所选择的执行目标是否在资产清单，重试"
-      },
-      "autoexecparameterrequiredparamnotexistexception":"第：{0}个参数“{1}”的是否必填不能为空",
-      "autoexecjobsqldetailnotfoundexception":"sql详情不存在",
-      "autoexeccombopnamerepeatexception":"组合工具：“{0}”已存在",
-      "autoexecscriptversionhasbeenactivedexception":"当前版本已激活，不可删除",
-      "autoexecjobnotfoundexception":"作业：“{0}”不存在",
-      "autoexecexecuteuserisrequiredexception":"执行用户必须设置",
-      "autoexectoolparamdatasourceemptyexception":"参数：“{0}”未配置数据源",
-      "autoexeccombopexecuteusercannotbeemptyexception":"选择'现在指定执行目标'时，执行用户不能为空",
-      "autoexectoolnotfoundexception":"工具：“{0}”不存在",
-      "autoexecparammappingtargetnotfoundexception":{
-        "a":"阶段[{0}]工具[{1}]的参数：“{2}”映射目标“{3}”不存在",
-        "b":"阶段[{0}]的执行用户映射作业参数“{1}”不存在",
-        "c":"阶段组[{0}]的执行用户映射作业参数“{1}”不存在",
-        "d":"执行目标的执行用户映射作业参数“{0}”不存在"
-      },
-      "autoexeccombopphasenamerepeatexception":"组合工具阶段名称“{0}”已存在",
-      "autoexectoolparamvalidatefieldlostexception":{
-        "a":"参数“{0}”的validate配置中，名称为“{1}”的规则缺少“{2}”字段",
-        "b":"参数“{0}”的validate配置中，第：{1} 个的规则缺少“{2}”字段"
-      },
-      "autoexecprofilehasbeenreferredexception":"当前profile“{0}”已被引用，无法删除",
-      "autoexeccombopdraftversionnotfoundexception":"组合工具：“{0}”没有草稿版本",
-      "autoexecparammappingargumentcountmismatchexception":"阶段[{0}]工具[{1}]的自由参数：“{2}”映射个数不匹配，设置数量为{3}",
-      "autoexecscripthasnotanyversionexception":"当前脚本没有任何版本",
-      "autoexecexecutenodeisrequiredexception":"执行目标必须设置",
-      "autoexecjobgroupnotfoundexception":"作业({0}) 组（{1}）不存在",
-      "autoexecjobcheckedexception":"作业 “{0}” 已验证",
-      "autoexecjobparamnotexistexception":"参数：“作业参数[{0}]（{1}）”不能为空",
-      "customtemplatenotfoundexception":"自定义模板“{0}”不存在",
-      "autoexeccombopatleastonephaseexception":"\"组合工具至少要有一个阶段\"",
-      "autoexecjobinteractexception":{
-        "a":"interact is null",
-        "b":"interact failed! {0}"
-      },
-      "autoexecscripthasreferenceexception":"当前自定义工具已经被引用，不可删除或无激活版本，如需切换激活版本，请激活其他版本",
-      "autoexecjobcannottestexception":"无法测试工具库: {0}，存在正在测试该工具库的作业",
-      "autoexecprotocolisrequiredexception":"连接协议必须设置",
-      "autoexecscriptversioncannotreviewexception":"当前版本不可审核",
-      "autoexecscenariorepeatexception":"场景名称：“{0}”已存在",
-      "autoexecparamirregularexception":"第：\"{0}\"个参数“{1}”的“{2}”不符合格式要求",
-      "autoexecscripthasnoactiveversionexception":"工具：“{0}”不存在激活版本",
-      "autoexectoolexportnotfoundtoolexception":"没有找到需要导出的工具",
-      "autoexeccombopoperationnotfoundexception":"阶段[{0}]工具[{1}]已被删除，请在组合工具中清理该工具并保存",
-      "autoexecparameterchinesenameparamnotexistexception":"第：{0}个参数“{1}”的中文名不能为空",
-      "autoexecjobphasenotfoundexception":{
-        "a":"作业剧本：“{0}”不存在",
-        "b":"作业“{0}” 组：“{1}” 的phase不存在"
-      },
-      "autoexecscripthasnorejectedversionexception":"当前自定义工具没有已驳回版本",
-      "autoexecservicenameisrepeatexception":"服务目录名称“{0}”重复",
-      "autoexectypeisfactoryexception":"工具分类:“{1}”（id:“{0}”）是出厂默认分类，不可删除",
-      "autoexecjoboperationparamvalueinvalidexception":"阶段“{0}” 工具“{1}” 参数“{2}” 的值 “{3}” 不合法",
-      "autoexecschedulenotfoundexception":"定时作业：“{0}”不存在",
-      "autoexecjobparamisrequiredexception":"组合工具“{0}”的作业参数“{1}“必须设置",
-      "autoexecscripthasnodraftversionexception":"当前自定义工具没有草稿",
-      "autoexecjobphaserunnernotfoundexception":{
-        "a":"作业（{0}）阶段{1}（{2}） 找不到runner",
-        "b":"匹配不到可执行runner,执行phaseName :{0}"
-      },
-      "autoexecparamcannotbeemptyexception":"阶段[{0}]工具[{1}]的参数：“{2}”不能为空",
-      "autoexecroundcountisrequiredexception":"分批数量必须设置",
-      "autoexecjobparamvalueinvalidexception":"参数“{0}”值 “{1}” 不合法",
-      "autoexeccombopcannotexecuteexception":"组合工具：“{0}”没执行权限",
-      "autoexecscriptversioncannotactiveexception":"当前版本不可激活",
-      "autoexectoolparamdatasourceillegalexception":"参数：“{0}”的数据源格式不正确，正确格式为：{\"dataList\":[{\"text\":\"是\",\"value\":\"1\"},{\"text\":\"否\",\"value\":\"0\"}]}，其中(text的key和value)与(value的key)不能为空",
-      "autoexecscriptnotfoundexception":"自定义工具：“{0}”不存在",
-      "autoexecscriptcheckhandlernotfoundexception":"脚本校验器：“{0}”不存在",
-      "autoexectoolparamvalidatefieldformatillegalexception":"参数“{0}”的validate配置中，“{1}”的格式不正确，应该为JSON对象",
-      "autoexeccombopactiveversionnotfoundexception":"组合工具：“{0}”没有激活版本",
-      "autoexeccombopphaseatleastoneoperationexception":"组合工具的每一个阶段至少要有一个操作工具",
-      "autoexecjoblogencodingillegalexception":"非法的字符编码：{0}",
-      "autoexecjobconfignotfoundexception":"作业：“{0}” 配置快照不存在",
-      "autoexecscriptversioncannotsubmitexception":"当前版本不可提交审核",
-      "autoexeccombopsubmittedversionnotfoundexception":"组合工具：“{0}”没有已驳回版本",
-      "autoexecscenarioisrequiredexception":"场景必须设置",
-      "autoexecjobcannotignorejobnodeexception":"无法暂停作业: {0}，请确保作业存于'运行中（running）'状态",
-      "autoexecjobrunnernotfoundexception":"Runner map id:{0}不存在",
-      "autoexecjobexecutepermissiondeniedexception":"无作业 “{0}” 的执行权限,请刷新页面，重新接管作业",
-      "autoexeccataloghasbeenreferredexception":"目录：“{0}”或其子目录中还有工具，不可删除",
-      "autoexecservicenotfoundexception":"服务目录：“{0}”不存在",
-      "autoexeccombopphasegroupidisnullexception":"阶段：“{0}” GroupId 为 null",
-      "autoexecprofileishasreferenceexception":"profile：{0}”已被引用，无法删除",
-      "autoexectoolinactivatedexception":"工具：“{0}”未激活",
-      "autoexecscriptversioncannoteditexception":"当前版本处于不可编辑状态",
-      "autoexecjobcannotpauseexception":"无法暂停作业: {0}，请确保作业存于'运行中（running）'状态",
-      "autoexecglobalparamhasbeenreferredexception":"全局参数: “{0}”被引用,无法删除",
-      "autoexecparammappingnotmappedexception":{
-        "a":"阶段[{0}]工具[{1}]的新增必填参数：“{2}”没有默认值",
-        "b":"作业参数：“{0}”未映射"
-      },
-      "autoexeccombopprotocolcannotbeemptyexception":"选择'现在指定执行目标'时，协议不能为空",
-      "autoexectypehasbeenreferredexception":"工具类型：“{0}”已经被工具、自定义工具或组合工具引用",
-      "autoexecscriptversionnotfoundexception":"版本：“{0}”不存在",
-      "autoexecserviceisnotcatalogexception":"服务：“{0}”不不是目录",
-      "autoexeccombopexecuteparamcannotbeemptyexception":"选择运行参数作为执行目标时，运行参数不能为空",
-      "autoexecglobalparamkeyrepeatexception":"全局参数名：“{0}”已存在",
-      "autoexecrisknamerepeatexception":"操作级别：“{0}”已存在",
-      "autoexecusernamenotfoundexception":"执行用户不能为空",
-      "autoexeccombopatleastonegroupexception":"\"组合工具至少要有一个组\"",
-      "autoexectypenamerepeatexception":"插件类型：“{0}”已存在",
-      "autoexeccombopnotfoundexception":"组合工具：“{0}”不存在",
-      "autoexecscriptversionhasnoactivedexception":{
-        "a":"自定义工具“{0}”未设置激活版本",
-        "b":"当前自定义工具没有激活版本"
-      },
-      "autoexecparametermodeparamnotexistexception":"第：{0}个参数“{1}”的参数模式不能为空",
-      "autoexecjobcannotfireexception":"无法激活作业: {0}，请确保作业以及作业所有阶段处于'未开始（pending）'状态",
-      "autoexecjobnotsupportedexecuteandrevokeexception":"只有从组合工具保存的作业才支持执行与撤销",
-      "autoexecserviceconfigexpiredexception":"服务：“{0}”配置已失效",
-      "autoexecrisknotfoundexception":"操作级别：“{0}”不存在",
-      "autoexecglobalparamnamerepeatexception":"全局参数显示名：“{0}”已存在",
-      "autoexeccatalogrepeatexception":"工具目录：“{0}”已存在",
-      "autoexeccombopversionnotfoundexception":"组合工具版本：“{0}”不存在",
-      "autoexeccombopversionhasbeenactiveexception":"当前版本已激活，不可删除",
-      "processtaskautoexechandlernotenableoperateexception":"自动化节点不支持“{0}”操作",
-      "autoexecservicenotreferencedformexception":"服务目录未引用表单，不能映射表单属性",
-      "autoexecjobcannotcreateexception":"无法创建作业，没有组合工具: “{0}” 执行权限",
-      "autoexecprofileisnotfoundexception":"profile id“{0}”不存在",
-      "autoexecglobalparamisnotfoundexception":"全局参数: “{0}”不存在",
-      "autoexecjobphaseoperationmustbecombopexception":"此操作仅支持'组合工具'",
-      "autoexecjobparamtypechangedexception":"组合工具“{0}”的作业参数“{1}“类型发生变化，由“{2}”变成“{3}”类型",
-      "autoexecparameterenglishnameparamnotexistexception":"第：{0}个参数英文名不能为空",
-      "autoexeccatalognotfoundexception":"工具目录：“{0}”不存在",
-      "autoexectypenotfoundexception":"工具类型：“{0}”不存在",
-      "autoexecjobactioninvalidexception":"作业执行策略不能为null，执行所有节点：refireResetAll；跳过所有已完成、已忽略的节点：refireAll",
-      "autoexeccombopexecutenodecannotbeemptyexception":"选择'现在指定执行目标'时，执行目标不能为空",
-      "autoexecparammappingtargettypemismatchexception":"阶段[{0}]工具[{1}]的参数：“{2}”映射目标“{3}”类型不匹配",
-      "autoexeccombopcannotberepeatreleaseexcepiton":"“{0}”不能重复发布为组合工具",
-      "autoexecjobcannotupdateexception":"无法修改作业计划时间与触发方式: {0}，作业处于'已就绪'状态且执行用户才能修改",
-      "autoexecscenarioisnotfoundexception":"场景 “{0}”不存在"
-    },
-    "deploy":{
-      "deploycigitlabwebhooksavefailedexception":"gitlab webhook设置失败，错误：{0}",
-      "deploysqljobphasenotfoundexception":"该作业找不到对应阶段“{0}”的sql详情",
-      "deployversionredirecturlcredentialusernotfoundexception":"发布跳转url对应验权用户 “{0}” 不存在",
-      "deployversionisrepeatexception":"当前模块存在重复版本号“{0}”，请修改版本号后重新保存",
-      "deployversionenvnotfoundexception":{
-        "b":"版本“{0}”的{1}环境不存在",
-        "c":"环境id:{0}不存在",
-        "d":"{0}/{1}/{3} 环境:{2} 不存在"
-      },
-      "deployappoperationauthexception":"您没有系统：{0}({1})下的：{2}的【操作权限】",
-      "deploypackagenotfoundexception":"依赖包：{0}->{1}->{2}不存在",
-      "movefilefailedexception":"文件移动或重命名失败，错误：{0}",
-      "deployciisrepeatexception":"持续集成配置：{0}已存在",
-      "deletefilefailedexception":"删除文件失败，错误：{0}",
-      "deploybatchjobfirewithrevokedandcheckedexception":"无法执行，批量执行的作业都是'已撤销'或'已验证'的作业",
-      "deployjobparamirregularexception":"参数“{0}”不能为空",
-      "deployinstanceversionwhichcanrollbacknotfoundexception":"没有找到实例：{0}的可回退版本",
-      "deployjoblanenotfoundexception":"批量发布 {0}({1}) 不存在泳道",
-      "changefilepermissionfailedexception":"修改权限失败，错误：{0}",
-      "deploygitlabwebhookcallbackhostlostexception":"缺失初始化配置“gitlabWebHookCallbackHost“，请联系管理员处理",
-      "deployappconfigscenarionotfoundexception":"当前流水线没有配置场景",
-      "deployappconfigdbconfignotfoundexception":"db配置id（{0}）不存在",
-      "deployversionbuildnostatusisnotreleasedexception":"{0}/{1}/{2} 版本:{3} buildNo:{4} 状态不是released,而是{5}",
-      "deployinstanceversionnotfoundexception":"没有找到实例：{0}的当前版本",
-      "deploywebhooknamerepeatexception":"触发器名称 “{0}” 已存在",
-      "deployappconfigdbschemaactionirregularexception":"以下schema输入格式不规范，请输入：dbname.username。不规范schema：{0}",
-      "deployjobhasparentexception":"作业“{0}”已存在父作业",
-      "deployversionresourcehasbeenlockedexception":"HOME已被锁定，请稍后再试",
-      "deploybatchjobcannotcheckexception":"无法验证，请联系管理员",
-      "deploybatchjobgroupnotfoundexception":"批量发布分组：{0}不存在",
-      "deploybatchjobgroupfirewithinvalidstatusexception":"不能执行状态为：{0}的分组",
-      "deploygitlabhookreponameunknownactionexception":"{0}未知的action：{1}",
-      "deploycigitlabcallbackcommitidlostexception":"Gitlab回调参数缺少commitId",
-      "uploadfilefailedexception":"上传文件失败，错误：{0}",
-      "deploybatchjobnotfoundexception":{
-        "b":"批量发布作业：“{0}” 不存在",
-        "c":"该组的批量发布作业不存在"
-      },
-      "deployjobnotfoundexception":"{0}下的{1}模块尚未执行过任何作业",
-      "deployenvversionnotfoundexception":"没有找到环境：{0}的当前版本",
-      "deployversionbuildnonotfoundexception":{
-        "b":"版本“{0}”的buildNo“{1}”不存在",
-        "c":"buildNo“{0}”不存在"
-      },
-      "deployappscenarioauthexception":"您没有系统：{0}({1})下的场景：{2}({3})的【场景权限】",
-      "deployinstanceinenvnotfoundexception":"{0}->{1}->{2}下的实例：{3}不存在",
-      "deployversionparentdependencynotfoundexception":"父依赖：{0}->{1}->{2}不存在",
-      "deploycitriggertimelostexception":"持续集成配置缺少触发时间配置",
-      "copyfilefailedexception":"复制文件失败，错误：{0}",
-      "deploycijobnamelostexception":"持续集成配置缺少作业名称配置",
-      "deploycitriggertypelostexception":"持续集成配置缺少触发类型配置",
-      "deployciscenarioidlostexception":"持续集成配置缺少场景配置",
-      "downloadfilefailedexception":"下载文件失败，错误：{0}",
-      "deployappauthactionirregularexception":"校验数据权限的入参({0})不合法",
-      "deployappconfigenvdbschemanamerepeatexception":"数据库schema“{0}”已存在",
-      "createdirectoryfailedexception":"新建目录失败，错误：{0}",
-      "deployappconfignotfoundexception":"应用“{0}”的流水线不存在",
-      "deployschedulenamerepeatexception":"定时作业名称 “{0}” 已存在",
-      "deploywebhooknotfoundexception":"触发器id “{0}” 不存在",
-      "deploycigitlabwebhookdeletefailedexception":"{0}/{1}的gitlab webhook删除失败",
-      "deploycipipelineidlostexception":"持续集成配置缺少超级流水线配置",
-      "deployschedulenotfoundexception":"定时作业：“{0}”不存在",
-      "copyormovefiletosubdirectoryexception":"禁止复制或移动到自身的子目录",
-      "deployversionnotfoundexception":{
-        "a":"发布版本“{0}”不存在",
-        "b":"发布 “{0}/{1}/{2}” 不存在"
-      },
-      "deployciversionregexillegalexception":"持续集成配置的版本号截取规则格式不正确",
-      "deployappconfigmodulerunnergroupnotfoundexception":"应用系统 “{0}”,模块“{1}”没有配置runner组",
-      "deploycinotfoundexception":"持续集成配置：{0}不存在",
-      "deployappmoduleenvinstancenotfoundexception":"发布 “{0}/{1}/{2}” 找不到节点",
-      "deployversionrunnernotfoundexception":{
-        "a":"未找到版本“{0}”对应的runnner",
-        "b":"未找到版本“{0}”(buildNo为{1})对应的runnner",
-        "c":"未找到版本“{0}”({1}环境)对应的runnner"
-      },
-      "deploybatchjobcannottakeoverexception":"无法接管，请联系管理员",
-      "deploybatchjobcannotexecuteexception":"非当前批量发布执行人，无法执行，请先保存或接管",
-      "getdirectoryfailedexception":"获取目录失败，错误：{0}",
-      "deployappconfigscenariophasenamelistnotfoundexception":"当前流水线的场景没有绑定阶段",
-      "deploycigitlabaccountlostexception":"{0}/{1}的gitlab账号用户名与密码不能为空",
-      "deploycigitlabcallbackbranchnamelostexception":"Gitlab回调参数缺少分支名称",
-      "deploycienvidlostexception":"持续集成配置缺少环境配置",
-      "deploypipelineconfignotfoundexception":"该应用系统的流水线不存在",
-      "deploygitlabhookreponamelessparamexception":"{0}缺少{1}",
-      "deploypackagerequiredattributelostexception":"第：{0}个依赖缺少groupId|artifactIDeployInstanceInEnvNotFoundExceptiond|version属性",
-      "deploybatchjobcannoteditexception":"当批量发布作业状态为：“{0}” 时，无法编辑保存",
-      "deploypipelinenotfoundexception":"id为“{0}”的流水线不存在",
-      "deploygitlabhooklessreponameexception":"第：{0}个缺少repoName",
-      "deploybuildnonotfoundexception":"{0}/{1}/{2} buildNo 不存在",
-      "deployversionresourcetypenotfoundexception":"制品类型“{0}”不存在",
-      "deployappenvauthexception":"您没有系统：{0}({1})下的环境：{2}({3})的【环境权限】",
-      "deployjobcannotexecuteexception":"无法执行，当前用户没有当前应用系统/环境/场景 {0}({1})/{2}({3})/{4}({5}) 权限",
-      "deployenvversionwhichcanrollbacknotfoundexception":"没有找到环境：{0}的可回退版本",
-      "deploygitlabwebhookcallbackhostilegalexception":"初始化配置“gitlabWebHookCallbackHost“格式非法，请联系管理员处理"
-    },
+    "matrixisexist":"矩阵:“{0}”已存在",
+    "catalognotfound":"服务目录：“{0}”不存在",
     "master":{
       "sqlscriptfileinvalidatedexception":"模块：{0}存在不合规的数据库升级脚本:{1}"
     },
     "pbc":{
       "interfaceitemcannotdeleteexception":"人行上报接口数据“{0}”已经导入，不能直接删除。",
-      "policyphasenotfoundexception":"阶段“{0}”不存在",
-      "propertyisexistsexception":"属性“{1}-{0}”已存在",
-      "interfaceitemnotfoundexception":"人行上报接口数据“{0}”不存在",
-      "policynotfoundexception":"策略为空",
-      "interfaceprocessingexception":"人行上报接口“{0}”正在校验数据中，请等待。",
-      "corporationhasitemexception":"当前机构包含{0}条上报数据，清先删除",
       "confignotfoundexception":"请先设置机构配置再上报",
       "reportresultlackparamexception":"上报反馈结果缺少参数：{0}",
       "interfaceitemirregularexception":"上报数据在本地校验时发现 {0} 条数据有异常，请修改数据再重新同步",
       "interfaceidisemptyexception":"接口id不能为空",
+      "policyphasenotfoundexception":"阶段“{0}”不存在",
+      "propertyisexistsexception":"属性“{1}-{0}”已存在",
       "reportresultnotfoundexception":"没有找到上报批次信息",
+      "interfaceitemnotfoundexception":"人行上报接口数据“{0}”不存在",
       "policyauditnotfoundexception":"执行记录{0}不存在",
       "propertyrelisexistsexception":"当前属性到接口“{0}”的关系已存在，请勿重复添加",
       "createfileexception":"创建上报文件失败，异常信息：{0}",
       "policyhasnophaseexception":"当前策略没有任何执行阶段，请先配置",
       "categoryparentloopexception":"父类型存在循环引用",
+      "policynotfoundexception":"策略为空",
       "categoryhaschildexception":"当前类型存在子类型，请先删除",
-      "interfacepropertynotfoundexception":"人行上报接口“{0}”不存在",
-      "nodatatocreateexception":"没有数据可以上报",
       "categoryisinusedexception":"当前类型正在被接口使用，无法删除",
       "loginfailedexception":"登录失败",
       "cannotcreatedirexception":"创建目录“{0}失败”",
       "phasehandlernotfoundexception":"同步阶段处理器“{0}”不存在",
-      "nodatatoreportexception":"没有数据可以上报",
-      "interfacemappingnotfoundexception":"人行上报接口“{0}”还没有配置属性映射",
-      "interfacenotfoundexception":"人行上报接口“{0}”不存在"
+      "interfaceprocessingexception":"人行上报接口“{0}”正在校验数据中，请等待。",
+      "corporationhasitemexception":"当前机构包含{0}条上报数据，清先删除",
+      "interfacemappingnotfoundexception":"人行上报接口“{0}”还没有配置属性映射"
     },
     "framework":{
       "datasourceconditionrequiredvalueisemptyexception":"",
       "matrixfilenotfoundexception":"矩阵导入文件不存在",
       "integrationrequestresultisemptyexception":"集成请求结果为空",
-      "elatsticsearchhandlernotfoundexception":"找不到类型为：{0}的工单中心处理器",
       "valueisnotequalexception":"{0}值{1}不等于{2}",
       "matrixexternaleditrowdataexception":"外部数据源矩阵不能编辑一行数据",
       "valueisirregularexception":"{0}值不符合格式要求",
@@ -735,7 +780,6 @@
       "paramvaluetooshortexception":"参数：“{0}”允许最小长度是{2}个字符",
       "matrixviewsettingfilenotfoundexception":"矩阵视图配置文件不能为空",
       "valuenotbeforeexception":"{0}值{1}不在{2}之前",
-      "paramjsonirregularexception":"参数“{0}”不符合格式要求，{1}",
       "httpmethodirregularexception":"只支持GET和POST两种请求方法",
       "filestoragemediumhandlernotfoundexception":"存储介质类型：{0}找不到相应的控制器，请通知管理员或厂商解决",
       "valueisnotcontainexception":"{0}值{1}不包含{2}",
@@ -748,7 +792,6 @@
       "useragentloopexception":"用户：{1}已代理{0}，不可循环代理",
       "notifytemplatenotifyhandlernotmatchexception":"通知模板：“{0}”不是“{1}”类型",
       "apinotfoundexception":"token为“{0}”的接口不存在或已被禁用",
-      "wechatgetaccesstokenfailedexception":"{0}",
       "runnergroupnotfoundexception":"runnerGroup: {0} 不存在",
       "worktimestarttimegreaterthanorequaltoendtimeexception":"开始时间不能大于或等于结束时间",
       "movetargetnodeillegalexception":"移动到的目标节点不可以是当前节点及其后代节点",
@@ -766,7 +809,6 @@
       },
       "httpmethodnotfoundexception":"不存在的请求方式：{0}",
       "formcustomitemnameexistsexception":"表单自定义组件“{0}”已存在",
-      "foundrepeatnameroleexception":"存在多个名为：{0}的分组",
       "integrationnotfoundexception":"找不到集成配置：{0}",
       "subscribenotfoundexception":"订阅：{0}不存在",
       "matrixexternalcopyexception":"外部数据源矩阵不能复制",
@@ -775,7 +817,6 @@
       "integrationtableprimarykeycolumnnotfoundexception":"在{0}集成配置输出转换theadList列表中找不到主键列",
       "notifypolicymorethanoneexception":"{0}只允许存在一个策略",
       "useridrepeatexception":"用户ID“{0}”已存在",
-      "matrixviewattridmapemptyexception":"属性名称和id映射表不能为空",
       "matrixexternaldatanotformattedexception":"集成配置接口返回结果不符合格式，缺少：{0}",
       "matrixexternalimportexception":"外部数据源矩阵不支持导入",
       "fulltextindexhandlernotfoundexception":"索引类型处理器“{0}”不存在",
@@ -788,7 +829,6 @@
       },
       "fulltextindextypenotfoundexception":"索引类型“{0}”不存在",
       "notifypolicyhandlernotfoundexception":"通知策略类型：“{0}”不存在",
-      "wechatgetcodefailedexception":"{0}",
       "starttimeandendtimecannotfoundexception":"请设定好开始时间和结束时间，使用参数startTime（开始时间）与endTime（结束时间）组合查询，或者使用timeRange（时间范围）与timeUnit（时间范围参数）组合查询",
       "filenotuploadexception":"没有上传文件",
       "integrationsendrequestexception":"集成配置：“{0}”发送请求异常",
@@ -810,11 +850,9 @@
       "emptyexcelexception":"Excel文件无内容",
       "datasourceisnotfoundexception":"数据源：“{0}”不存在",
       "valuenumberisnotequalexception":"{0}值个数和条件值个数不一致",
-      "notifynoreceiverexception":"没有收件人",
       "notenantexception":"没有找到任何租户信息",
       "worktimeconfigillegalexception":"config参数中\"{0}\"不合法,正确的config参数格式是{\"monday\":[{\"startTime\":\"9:00\",\"endTime\":\"12:00\"},{\"startTime\":\"14:00\",\"endTime\":\"18:00\"}],\"tuesday\":[{\"startTime\":\"9:00\",\"endTime\":\"12:00\"},{\"startTime\":\"14:00\",\"endTime\":\"18:00\"}],\"wednesday\":[{\"startTime\":\"9:00\",\"endTime\":\"12:00\"},{\"startTime\":\"14:00\",\"endTime\":\"18:00\"}],\"thursday\":[{\"startTime\":\"9:00\",\"endTime\":\"12:00\"},{\"startTime\":\"14:00\",\"endTime\":\"18:00\"}],\"friday\":[{\"startTime\":\"9:00\",\"endTime\":\"12:00\"},{\"startTime\":\"14:00\",\"endTime\":\"18:00\"}],\"saturday\":[{\"startTime\":\"9:00\",\"endTime\":\"12:00\"},{\"startTime\":\"14:00\",\"endTime\":\"18:00\"}],\"sunday\":[{\"startTime\":\"9:00\",\"endTime\":\"12:00\"},{\"startTime\":\"14:00\",\"endTime\":\"18:00\"}]}",
       "matrixnamedifferentimportfilenameexception":"矩阵名称与导入文件名不同，不能导入",
-      "matrixlabelrepeatexception":"矩阵:“{0}”已存在",
       "emailservernotfoundexception":"没有激活的邮件服务器",
       "matrixviewcopyexception":"视图矩阵不能复制",
       "notifyjobnotfoundexception":"通知定时任务：“{0}”不存在",
@@ -832,13 +870,11 @@
       "paramformatinvalidexception":"参数不符合JSON格式",
       "matrixattributenotfoundexception":"在{0}矩阵中属性：“{1}”不存在",
       "componentnotfoundexception":"接口组件:{0}不存在",
-      "notifytemplatenamerepeatexception":"通知模板名称：“{0}”已存在",
       "excelnameillegalexception":"Excel文件名称不合法，正确的格式为：{0}",
       "fileaccessdeniedexception":"您没有权限{0}文件：{1}",
       "runnernotfoundbyrunnermapIdexception":"未找到{0}对应的runner",
       "apimustbepublicexception":"不存在 “{0}” 的自定义接口",
       "linehandlernotfoundexception":"知识插件：“{0}”不存在",
-      "notifypolicynotfoundexception":"通知策略：“{0}”不存在",
       "valueneednullexception":"{0}值要求是空值",
       "agentisuserselfexception":"请不要授权给自己",
       "tenantnotfoundexception":"租户：{0}不存在",
@@ -862,7 +898,6 @@
       "runnermapnotmatchrunnerexception":"runnerMapId: {0}没有匹配的runner",
       "emptyfileexception":"请唔上传空白附件",
       "filetypenotsupporttoexportexception":"不支持导出{0}格式的文件",
-      "apirepeatexception":"{0}",
       "deletedatasourceschemaexception":"",
       "runnernotmatchexception":{
         "b":"ip: {0}找不到匹配的runner，请核对runner组配置",
@@ -890,21 +925,17 @@
       "runneridnotfoundexception":"runner id：{0}不存在",
       "unabletocreateworkbookexception":"无法使用{0}创建工作簿:{1}",
       "usertokennotfoundexception":"用户“{0}”的令牌不存在，请在页面重新生成",
-      "schedulejobnotfoundexception":"定时作业：“{0}”不存在",
       "worktimenotfoundexception":"服务窗口:“{0}”不存在",
       "matrixviewnameemptyexception":"矩阵视图名称不能为空",
       "wechatconfigexception":"没有找到配置企业微信息",
       "treenodenotfoundexception":"“{0}”表中树节点：“{1}”不存在",
-      "wechatgetuseridfailedexception":"{0}",
       "formnotfoundexception":"表单：“{0}”不存在",
       "messagehandlernotfoundexception":"消息类型处理器：‘{0}’不存在",
-      "groupsearchhandlernotfoundexception":"找不到类型为：{0}的仪表板组件",
       "ipsubnetmaskexception":"请检查ip网端/子网掩码配置后，重试:{0}",
       "notifyhandlernotfoundexception":"通知处理器：“{0}”不存在",
       "licenseauthfailedwithoutmodulegroupexception":"当前租户没有“{0}”模块权限",
       "matrixnotfoundexception":"矩阵{0}不存在",
       "matrixdatanotfoundexception":"矩阵{0}数据不存在",
-      "authenticateexception":"{0}",
       "matrixviewsettingfileirregularexception":{
         "b":"矩阵视图配置文件内容不合法：{0}",
         "c":"矩阵视图配置文件缺少节点：{0}",
@@ -936,10 +967,8 @@
       "systemnoticehasbeenissuedexception":"系统公告：“{0}”已下发，不可操作，请刷新系统公告管理页后查看公告状态",
       "notifypolicyreferencedcannotbedeletedexception":"通知策略：“{0}”有被引用，不能删除",
       "tenantunactiveexception":"租户：{0}已禁用",
-      "matrixexternalexporttemplateexception":"外部数据源矩阵不能导出模板",
       "databasenotfoundexception":"租户：{0}缺少DATA数据库，请补充创建。",
       "teamusertitlenotfoundexception":"组用户头衔：“{0}”不存在",
-      "matrixviewexporttemplateexception":"外部数据源矩阵不能导出模板",
       "filetoolargeexception":"附件最大支持：{1}字节，当前文件：{0}字节",
       "tableisnotemptyexception":"表“{0}”不为空，初始化失败",
       "filepathillegalexception":"文件路径：{0}不合法",
@@ -952,13 +981,11 @@
       "matrixviewhasnoattrexception":"矩阵视图配置信息属性定义不能为空",
       "loginauthnotfoundexception":"登录认证：“{0}”不存在",
       "teamlevelnotfoundexception":"组层级：“{0}”不存在",
-      "runnerhttprequestexception":"{0}",
       "elatsticsearchdocumentidnotfoundexception":"找不到documentId",
       "userauthfailedexception":"用户验证失败",
       "nouserexception":"没有找到任何用户信息",
       "filenotfoundexception":"附件：{0}不存在",
       "notifytemplatereferencedcannotbedeletedexception":"通知模板：“{0}”有被引用，不能删除",
-      "foundrepeatnameteamexception":"存在多个名为：{0}的分组",
       "innerapinotfoundexception":"内部接口“{0}”不存在",
       "paraminvalidexception":"参数“{0}” ，参数值“{1}”不合法",
       "createdatasourceschemaexception":"",
@@ -971,7 +998,6 @@
       "schedulejobauditnotfoundexception":"定时作业执行记录：{0}不存在",
       "valuenotafterexception":"{0}值{1}不在{2}之后",
       "requestexpiredexception":"请求已超时",
-      "matrixnamerepeatexception":"矩阵:“{0}”已存在",
       "userhasagentexception":"请删除当前授权用户再进行新的授权",
       "schedulejobnamerepeatexception":"定时作业：“{0}”已存在",
       "datasourcenameisexistsexception":"数据源“{0}”已存在",
@@ -981,7 +1007,6 @@
         "c":"配置文件不是合法的XML文件"
       },
       "matrixviewcreateschemaexception":"创建矩阵：{0}数据表失败。",
-      "datasourcexmlirregularexception":"{0}",
       "sqlscriptfileinvalidatedexception":"模块：{0}存在不合规的数据库升级脚本",
       "logincaptchanotinvalidexception":"验证码不正确，请重新输入",
       "notifytemplatenotfoundexception":"找不到id为：{0}的通知模板",
@@ -1041,6 +1066,10 @@
       "reportparamnamerepeatsexception":"第：{0}个参数的名称重复",
       "reportinstancenotfoundexception":"报表实例：{0}不存在"
     },
+    "workcenterhandlernotfound":"找不到类型为：{0}的工单中心处理器",
+    "paraminvalid":"参数“{0}”不符合格式要求，{1}",
+    "dashboardhandlernotfound":"找不到类型为：{0}的仪表板组件",
+    "lackauth":"当前用户缺少“{0}”权限，请联系管理员",
     "rdm":{
       "projectnotauthexception":"您没有修改项目“{0}”的权限",
       "projectnameisexistsexception":"项目名称“{0}”已存在",
@@ -1052,103 +1081,22 @@
       "issuenotfoundexception":"任务“{0}”不存在",
       "appattrdeleteexception":"属性“{0}”是系统属性，不能删除",
       "appattrnameisexistsexception":"属性“{0}”已存在，请修改唯一标识",
-      "projectnotfoundexception":"项目“{0}”不存在",
-      "insertattrtoschemaexception":"无法将属性“{0}”添加到数据表，具体错误请查看系统日志"
-    },
-    "event":{
-      "eventtypenamerepeatexception":"同一个层级下不能出现重名的类型",
-      "eventtypenotfoundexception":"事件类型：{0}不存在",
-      "eventsolutionrepeatexception":"解决方案：“{0}”已存在",
-      "eventnotfoundexception":"事件：“{0}”不存在",
-      "eventsolutionnotfoundexception":"解决方案：{0}不存在"
-    },
-    "dashboard":{
-      "dashboardauthenticationmanageexception":"您没有管理当前仪表板的权限",
-      "dashboardauthenticationreadexception":"您没有查看当前仪表板的权限",
-      "dashboardnameexistsexception":"仪表板：“{0}”已存在",
-      "dashboardauthenticationdeleteexception":"您没有删除当前仪表板的权限",
-      "dashboardnotfoundexception":"仪表板“{0}”不存在",
-      "dashboardnotfounddefaultexception":"暂无默认首页，请设置默认首页",
-      "dashboardstatisticsparamexception":"格式展示 -> 聚合方式 不能为空，请检查后重试",
-      "dashboardlimitcountparamexception":"格式展示 -> 最大组数量 不能为空，请检查后重试",
-      "dashboardexportnotfoundexception":"暂无可导出的仪表板",
-      "dashboardfieldnotfoundexception":"找不到分组条件为：{0}的数据",
-      "dashboardwidgetnotfoundexception":"仪表板组件：{0}不存在",
-      "dashboardhandlernotfoundexception":"找不到类型为：{0}的仪表板组件",
-      "dashboardgroupfieldparamexception":"格式展示 -> 分组条件 不能为空，请检查后重试",
-      "dashboardauthenticationsaveexception":"您没有修改当前仪表板的权限",
-      "dashboardparamexception":"过滤条件参数 “{0}”非法"
-    },
-    "tenant":{
-      "integrationurlillegalexception":"地址：{0}可能是集成调用地址，不允许配置",
-      "enumnotfoundexception":"枚举：{0}不存在",
-      "mailservernotfoundexception":"邮件服务器：“{0}”不存在",
-      "menusaveexception":"菜单id不合法，不能与父菜单id相同",
-      "mailservernamerepeatexception":"邮件服务器名称：“{0}”已存在",
-      "menudeleteexception":"当前菜单含有{0}个子菜单，请先移除。",
-      "userprofilemodulenotfoundexception":"用户个性化 “{0}” 不存在",
-      "usercurrentpasswordexception":"用户当前密码输入错误,请确认后重新输入",
-      "apinotallowedtodeleteexception":"token为：“{0}”的接口不允许删除"
-    },
-    "knowledge":{
-      "knowledgedocumentcurrentusernotreviewerexception":"当前用户不是审核人，无权限执行此操作",
-      "knowledgedocumentdraftsubmittedcannotbemodifiedexception":"该文档草稿已提交，不能再修改，请在文档的当前版本上修改",
-      "knowledgedocumentdraftsubmitfailedexecption":"该文档已有其他待审核草稿，暂时不能提交",
-      "knowledgedocumentrepeatinvokeexception":"一个引用方只能引用一个知识文档",
-      "knowledgedocumenthasbeendeletedexception":"文档：“{0}”已被删除",
-      "knowledgedocumentversionswitchfailedexecption":"该文档已有其他待审核草稿，暂时不能切换",
-      "knowledgedocumentdraftexpiredcannotbemodifiedexception":"该文档草稿已过期，不能再修改，请在文档的当前版本上修改",
-      "knowledgedocumenttitlerepeatexception":"知识标题：“{0}”已存在",
-      "knowledgedocumentnothistoricalversionexception":"文档草稿：“{0}”不是文档的历史版本，不能回退",
-      "knowledgecirclehasknowledgeexception":"知识圈：“{0}”中已存在文档，不可删除",
-      "knowledgedocumentnotfoundexception":"知识库文档：“{0}”不存在",
-      "knowledgedocumenthasbeencollectedexception":"您已收藏文档：{0}",
-      "knowledgedocumentdraftpublishedcannotbemodifiedexception":"该文档草稿已发布，不能再修改，请在文档的当前版本上修改",
-      "knowledgecirclenotfoundexception":"知识圈：{0}不存在",
-      "knowledgedocumenthasbeenfavoredexception":"您已点赞文档：{0}",
-      "knowledgedocumentdraftunsubmittedcannotbereviewedexception":"该文档草稿未提交，不能审核",
-      "knowledgetemplatenamerepeatexception":"知识模版：“{0}”已存在",
-      "knowledgedocumentdraftreviewedexception":"该草稿已审核，不能再审核",
-      "knowledgedocumentunmodifiedcannotbesavedexception":"文档未经修改",
-      "knowledgedocumentversionnotfoundexception":"知识库文档版本：“{0}”不存在",
-      "knowledgetemplatenotfoundexception":"知识模版：{0}不存在",
-      "knowledgedocumenttypenotfoundexception":"知识类型：{0}不存在",
-      "knowledgedocumentcurrentusernotownerexception":"当前用户不是该草稿的所有者，无权限执行此操作",
-      "knowledgedocumentdraftsubmittedexception":"该文档草稿已经提交过，不能重复提交，请在该文档的当前版本上修改后保存草稿再提交",
-      "knowledgecirclenamerepeatexception":"知识圈：“{0}”已存在",
-      "knowledgedocumentdraftsubmittedcannotbedeletedexception":"该文档草稿已提交，不能删除",
-      "knowledgedocumentcurrentversioncannotbedeletedexception":"文档当前版本不允许删除",
-      "knowledgedocumentcurrentusernotmemberexception":"当前用户不是成员，无权限执行此操作",
-      "knowledgedocumentdraftexpiredcannotsubmitexception":"文档草稿：“{0}”已过期不能提交"
+      "projectnotfoundexception":"项目“{0}”不存在"
     }
   },
   "handler":{
     "processtask":{
       "column":{
-        "stepstatus":"步骤状态",
-        "owner":"上报人",
         "currentstep":{
           "a":"当前步骤"
         },
-        "expiretime":"剩余时间",
-        "stepuser":"步骤处理人",
-        "serialnumber":"工单号",
-        "stepname":"步骤名",
-        "catalog":"服务目录",
+        "currentstepname":"当前步骤名",
         "channel":{
           "a":"服务"
         },
-        "endtime":"结束时间",
-        "reporter":"代报人",
         "starttime":"上报时间",
-        "currentstepworker":"当前步骤处理人",
-        "title":"标题",
-        "priority":"优先级",
-        "currentstepname":"当前步骤名",
-        "channeltype":"服务类型",
         "id":"工单id",
-        "worktime":"时间窗口",
-        "status":"工单状态"
+        "currentstepworker":"当前步骤处理人"
       }
     },
     "message":{
@@ -1172,31 +1120,308 @@
     },
     "notify":{
       "exception":"通知异常",
-      "processtask":"工单",
-      "cmdb":{
-        "ci":"模型"
-      },
-      "timedtask":"定时任务",
-      "autoexec":{
-        "combop":"组合工具"
-      },
       "deploy":{
         "job":"发布作业"
       }
     }
   },
-  "const":{
-    "schedule":"定时任务",
-    "timeconsuming":"耗时",
-    "seconds":"秒",
-    "paused":"已暂停",
-    "hours":"小时",
-    "systemautoscore":"系统自动评价",
-    "minutes":"分钟",
-    "timeremaining":"剩余",
-    "days":"天",
-    "overtime":"超时",
+  "common":{
+    "modifyworkorderfocus":"修改工单关注人",
+    "exception":"异常",
+    "cancel":"取消",
+    "reason":"原因",
+    "basictool":"基础工具",
+    "textbox":"文本框",
+    "jobstatus":"作业状态",
+    "multiselectform":"多选下拉器",
+    "formproperty":"表单属性",
+    "scene":"场景",
+    "score":"评分",
+    "password":"密码",
+    "sceneview":"场景视图",
+    "ongoing":"进行中",
+    "notempty":"不为空",
+    "reporterlevel":"上报人级别",
+    "synchronizing":"同步中",
+    "timewindowuuid":"时间窗口UUID",
+    "draft":"草稿",
+    "autoexecaccount":"服务的连接协议、帐号，用户连接主机上的数据库，中间件等服务",
+    "worker":"处理人",
+    "released":"已释放",
+    "app":"应用",
+    "currentstep":"当前步骤",
+    "edit":"编辑",
+    "sqlfile":"SQL处理",
+    "stepid":"步骤ID",
+    "active":"激活",
+    "textparameter,caninputstrings,numbers":"文本参数，可输入字符串、数字",
+    "useruuid":"用户UUID",
     "completed":"已完成",
+    "passe":"通过",
+    "execute":"执行",
+    "runnerarget":"runner->target执行",
+    "sqlscript":"SQL脚本",
+    "barchart":"柱状图",
+    "canceled":"已取消",
+    "channeltypeuuid":"服务类型UUID",
+    "submitted":"待审核",
+    "releasedfailed":"释放失败",
+    "datetimeform":"日期时间选择器",
+    "deletereply":"删除回复",
+    "phaselist":"阶段列表",
+    "personalview":"个人视图",
+    "role":"角色",
+    "reporterrole":"上报人角色",
+    "startstop":"启停操作",
+    "default":"默认",
+    "releasing":"释放中",
+    "needtospec":"需指定执行目标，工具在runner上执行，适用于网络设备、存储设备、软件系统等的信息采集或命令下发",
+    "automaticdiscovery":"自动发现",
+    "checkbox":"复选框",
+    "addcientity":"配置项添加",
+    "cancelworkorder":"取消工单",
+    "email":"邮箱",
+    "curvechart":"曲线图",
+    "stepname":"步骤名",
+    "ci":"模型",
+    "compileandpackage":"编译打包",
+    "black":"黑色",
+    "basicauth":"Basic认证",
+    "endtime":"结束时间",
+    "reporter":"代报人",
+    "steprollback":"步骤回退",
+    "everyday":"每天",
+    "restfulaction":"RESTFUL动作",
+    "urgetrigger":"工单完成前，用户对工单进行催办时触发通知",
+    "blue":"蓝色",
+    "confirmsuccess":"确认成功",
+    "operation":"操作",
+    "sqlfileexecution":"sql文件执行",
+    "passworddesc":"可输入数字或字符串，页面显示为密文",
+    "transferreport":"转报",
+    "unequal":"不等于",
+    "jobfailed":"作业失败",
+    "deploy":{
+      "a":"发布"
+    },
+    "red":"红色",
+    "view":"查看",
+    "canoutputfilepathparameter":"可输出文件路径参数",
+    "white":"白色",
+    "selectform":"单选下拉选择器",
+    "exclude":"不包含",
+    "reply":"回复",
+    "outputnode":"将节点的相关信息生成脚本变量，但不会分派到该节点执行",
+    "export":"导出",
+    "ignored":"已忽略",
+    "static":"静态",
+    "test":"测试",
+    "costtime":"耗时",
+    "notificat":"通知模板名称：“{0}”已存在",
+    "count":"计数",
+    "globalparameter":"全局参数",
+    "processingpunctualityrate":"处理准时率",
+    "pro":"协议：{0}不存在",
+    "stepreply":"步骤回复",
+    "retreat":"撤回",
+    "single-selectselector":"单选选择器",
+    "success":"成功",
+    "propnameandidcannotbenull":"属性名称和id映射表不能为空",
+    "remainingtime":"剩余时间",
+    "flowforward":"向后流转",
+    "automaticprocessing":"自动处理",
+    "doing":"处理中",
+    "hidden":"隐藏",
+    "knowledgebase":"知识库",
+    "submit":"提交",
+    "color":"颜色",
+    "string":"字符串",
+    "pending":"待运行",
+    "back":"回退",
+    "update":"更新",
+    "title":"标题",
+    "directory":"目录",
+    "timeout":"超时",
+    "channeltype":"服务类型",
+    "undirectedlayout2":"无向布局2",
+    "end":"结束",
+    "passed":"已通过",
+    "contend":"上报内容",
+    "owner":"上报人",
+    "stepstatus":"步骤状态",
+    "normal":"正常",
+    "deleteconfigurationitem":"配置项删除",
+    "backtips":"回退提醒",
+    "nodeinformation":"节点信息",
+    "custom":"自定义",
+    "start":"开始",
+    "aborting":"中止中",
+    "cientity":"配置项",
+    "editreply":"编辑回复",
+    "associatedworkorder":"关联工单",
+    "modify":"修改",
+    "environment":"环境",
+    "itsm":{
+      "starttriggernotify":"开始【${DATA.processTaskStepName}】",
+      "processtask":"工单",
+      "pausetriggernotify":"暂停【${DATA.processTaskStepName}】",
+      "processtaskstatus":"工单状态",
+      "editnotify":"编辑${DATA.replaceable_task}【${DATA.processTaskStepName}】",
+      "createtask":"创建子任务",
+      "createtasktriggernotify":"创建${DATA.replaceable_task}【${DATA.processTaskStepName}】",
+      "recovertips":"恢复【${DATA.processTaskStepName}】",
+      "completedtips":"完成${DATA.replaceable_task}【${DATA.processTaskStepName}】"
+    },
+    "form":"表单",
+    "confirmationfailed":"确认失败",
+    "service":"服务",
+    "getnodeoutputparameters":"获取节点出参",
+    "succeed":"已成功",
+    "there":"存在多个名为：{0}的分组",
+    "step":"步骤",
+    "time":"时间",
+    "deletesubtask":"删除子任务",
+    "window":"时间窗口",
+    "jobfailedtriggernotify":"作业失败时触发通知",
+    "humanr":"人行上报接口“{0}”不存在",
+    "tasknumber":"工单号",
+    "select":"下拉框",
+    "everyquarter":"每季度",
+    "edittask":"编辑子任务",
+    "re-executenode":"重新执行节点",
+    "aborted":"已中止",
+    "responsepunctualityrate":"响应准时率",
+    "waitinput":"待输入",
+    "configurationi":"配置项模型属性“{0}”不存在",
+    "textarea":"文本域",
+    "autoexec":"自动化",
+    "textdesc":"可输出字符串、数字",
+    "starttime":"开始时间",
+    "type":"类型",
+    "number":"数字",
+    "review":"重审",
+    "apiauditviewauth":"查看操作审计权限",
+    "schedulerbuiltintools":"调度器内置工具",
+    "text":"文本",
+    "sqltarget":"需选定DB执行目标，工具在runner上执行，适用于SQL文件的检查、执行等操作",
+    "tenantmanagersuperadminauth":"租户管理超级管理员权限",
+    "publicview":"公共视图",
+    "flow":"流转",
+    "inspection":"巡检",
+    "phase":"阶段",
+    "inthisrange":"在此区间",
+    "youdonothavepe":"您没有执行“{0}”操作权限",
+    "timeform":"时间选择器",
+    "handle":"处理",
+    "priority":"优先级",
+    "suspended":"已挂起",
+    "cannotad":"无法将属性“{0}”添加到数据表，具体错误请查看系统日志",
+    "script":"脚本",
+    "multiselect":"多选下拉",
+    "activetime":"激活时间",
+    "restoreworkorder":"恢复工单",
+    "fail":"失败",
+    "system":"系统",
+    "deletetriggernotify":"删除${DATA.replaceable_task}【${DATA.processTaskStepName}】",
+    "manualprocessing":"人工处理",
+    "piechart":"饼图",
+    "status":"状态",
+    "areachart":"面积图",
+    "deleteversion":"删除版本",
+    "switchversion":"切换版本",
+    "cataloguuid":"服务目录UUID",
+    "file":"文件",
+    "configurationmanagement":"配置管理",
+    "replytask":"回复子任务",
+    "urgent":"催办",
+    "read-only":"只读",
+    "event":"事件",
+    "table":"表格",
+    "include":"包含",
+    "targetexecution":"target执行",
+    "forward":"转交",
+    "draftdesc":"未提交",
+    "workorderid":"工单ID",
+    "runnerexecution":"runner执行",
+    "itservice":"IT服务",
+    "equals":"等于",
+    "char":"字符型",
+    "report":"上报",
+    "complete":"完成",
+    "reporterdepartment":"上报人部门",
+    "date":"日期",
+    "paused":"已暂停",
+    "constant":"常量",
+    "averageresponsetime":"平均响应耗时",
+    "norecipient":"没有收件人",
+    "replace":"替换",
+    "rebuilding":"重建中",
+    "jsonobject":"json对象",
+    "dateform":"日期选择器",
+    "jobid":"作业ID",
+    "customprop":"自定义属性",
+    "filepath":"文件路径",
+    "radiobutton":"单选框",
+    "single-select":"单选",
+    "unabl":"无法暂停作业: {0}，请确保作业存于'运行中（running）'状态",
+    "presetparameterset":"预置参数集",
+    "tag":"标签",
+    "day":"天",
+    "combop":"组合工具",
+    "jobname":"作业名称",
+    "group":"组",
+    "customtemplate":"自定义模版",
+    "all":"所有",
+    "servicecatalog":"服务目录",
+    "new":"新增",
+    "stepuser":"步骤处理人",
+    "rebuildingcompleted":"重建完毕",
+    "usertype":"用户类型",
+    "failed":"已失败",
+    "pause":"暂停",
+    "tool":"工具",
+    "condition":"条件",
+    "task":"任务",
+    "null":"为空",
+    "valuemap":"值图",
+    "notificati":"通知策略：“{0}”不存在",
+    "tobeprocessed":"待处理",
+    "autoexecfile":"支持多个文件同时上传，执行时，自动上传文件到目标主机特定目录下，保留原文件名",
+    "ownercompany":"上报人公司",
+    "needtospecifyexecu":"需指定执行目标，工具在指定的远程主机上执行，只适用于主机信息采集或命令下发",
+    "automaticcollection":"自动采集",
+    "datatime":"日期时间",
+    "regularscript":"楷体",
+    "link":"链接",
+    "redo":"重做",
+    "delete":"删除",
+    "userselector":"用户选择器",
+    "running":"运行中",
+    "database":"数据库",
+    "noneed":"无需指定执行目标，工具在runner执行，适用于数据汇总处理等",
+    "checkboxselector":"复选选择器",
+    "hour":"小时",
+    "attachment":"附件",
+    "pausing":"暂停中",
+    "everymonth":"每月",
+    "ready":"已就绪",
+    "reject":"驳回",
+    "single-selectdropdown":"单选下拉",
+    "batcheditprocessor":"批量编辑处理人",
+    "jsonarray":"json数组",
+    "recover":"恢复",
+    "automaticrelease":"自动发布",
+    "int":"整型",
+    "minute":"分钟",
+    "scheduledtask":"定时任务",
+    "assetid":"资产id",
+    "user":"用户",
+    "account":"帐号"
+  },
+  "const":{
+    "seconds":"秒",
+    "systemautoscore":"系统自动评价",
+    "timeremaining":"剩余",
     "deadline":"截止"
   },
   "auth":{
@@ -1340,10 +1565,6 @@
       "datawarehousebase":{
         "name":"数据仓库默认权限",
         "introduction":"对数据仓库数据源进行访问"
-      },
-      "apiauditview":{
-        "name":"查看操作审计权限",
-        "introduction":"查看操作审计权限"
       },
       "worktimemodify":{
         "name":"服务窗口管理权限",
@@ -1578,11 +1799,9 @@
     },
     "master":{
       "mastermanager":{
-        "name":"租户管理超级管理员权限",
         "introduction":"对节点管理进行有限操作"
       },
       "masteradmin":{
-        "name":"租户管理超级管理员权限",
         "introduction":"对租户管理进行任何操作"
       },
       "masterbase":{
@@ -1604,6 +1823,9 @@
         "introduction":"对知识模版进行添加、修改和删除"
       }
     }
+  },
+  "exeception":{
+    "matrixviewexportexception":"外部数据源矩阵不能导出模板"
   },
   "term":{
     "cmdb":{
@@ -1665,14 +1887,9 @@
     "process":{
       "processfieldtype":{
         "constant":"常量属性",
-        "form":"表单属性",
-        "common":"工单固有属性",
-        "custom":"自定义属性"
+        "common":"工单固有属性"
       },
       "processtaskdashboardstatistics":{
-        "handle_punctuality":"处理准时率",
-        "avg_response_cost_time":"平均响应耗时",
-        "response_punctuality":"响应准时率",
         "avg_handle_cost_time":"平均耗时"
       },
       "processtaskstepautomaticnotifytriggertype":{
@@ -1696,69 +1913,33 @@
       },
       "fieldenum":{
         "handler":"步骤处理器",
-        "color":"颜色",
-        "user_name":"用户名",
-        "type":"用户/组/角色 类型",
-        "title":"标题",
-        "uuid":"服务目录UUID",
-        "sla_id":"工单ID",
-        "is_timeout":"耗时",
-        "score":"评分",
-        "processtask_id":"工单ID",
-        "priority_uuid":"工单状态",
-        "user_uuid":"用户UUID",
-        "time_left":"剩余时间",
-        "user_type":"处理人类型",
-        "channel_type_uuid":"服务类型UUID",
-        "worktime_uuid":"时间窗口UUID",
-        "user_info":"用户信息",
-        "time_cost":"耗时",
-        "need_score":"工单是否需要评分",
-        "id":"工单ID",
-        "channel_uuid":"工单状态",
-        "realexpire_time":"自然超时时间点",
-        "owner":"上报人",
         "calculation_time":"上次耗时计算时间点",
-        "is_active":"步骤状态",
         "realtime_left":"自然剩余时间",
-        "end_time":"结束时间",
+        "user_name":"用户名",
         "expire_time":"超时时间点",
-        "serial_number":"工单号",
-        "reporter":"上报人",
         "sort":"排序",
+        "type":"用户/组/角色 类型",
         "config_hash":"配置hash",
         "is_show":"工单是否隐藏",
-        "active_time":"激活时间",
         "start_time":"创建时间",
+        "user_type":"处理人类型",
         "pinyin":"拼音",
-        "parent_uuid":"服务目录UUID",
         "processtask_step_id":"工单步骤ID",
         "user_id":"用户ID",
+        "user_info":"用户信息",
         "name":"服务目录名",
+        "need_score":"工单是否需要评分",
         "vip_level":"vip等级",
         "config":{
           "a":"sla 配置"
         },
-        "status":"工单状态"
-      },
-      "processtaskstepslasqltable":{
-        "fieldenum":{
-          "processtask_step_id":"工单ID"
-        }
+        "realexpire_time":"自然超时时间点"
       },
       "processusertype":{
-        "owner":"上报人",
         "default_worker":"异常处理人",
-        "major":"处理人",
         "minor":"协助处理人",
         "focus_user":"关注人",
-        "reporter":"代报人",
         "worker":"待处理人"
-      },
-      "processtaskstepdashboardgroupfield":{
-        "every_month":"每月",
-        "every_quarter":"每季度",
-        "every_day":"每天"
       },
       "processtaskstepremindtype":{
         "transfer":{
@@ -1779,29 +1960,15 @@
         }
       },
       "conditionconfigtype":{
-        "default":"默认",
         "workcenter":"工单中心"
       },
       "datacubetype":{
-        "rest":"RESTFul接口",
-        "static":"静态",
-        "sql":"数据库"
+        "rest":"RESTFul接口"
       },
       "conditionprocesstaskoptions":{
         "owner":{
           "a":"上报人"
-        },
-        "ownerdepartment":"上报人部门",
-        "ownerrole":"上报人角色",
-        "channeltype":"服务类型",
-        "stepid":"步骤ID",
-        "ownerlevel":"上报人级别",
-        "ownercompany":"上报人公司",
-        "starttime":"开始时间",
-        "priority":"优先级",
-        "title":"标题",
-        "content":"上报内容",
-        "taskid":"工单ID"
+        }
       },
       "processtaskslasqltable":{
         "fieldenum":{
@@ -1810,62 +1977,37 @@
       },
       "operationauthhandlertype":{
         "timer":"定时组件",
-        "task":"工单",
         "omnipotent":"普通组件",
-        "automatic":"自动组件",
-        "step":"步骤"
+        "automatic":"自动组件"
       },
       "processsteptype":{
-        "process":"处理节点",
-        "start":"开始",
-        "end":"结束"
+        "process":"处理节点"
       },
       "processtaskslatimesqltable":{
         "fieldenum":{
-          "sla_id":"sla ID",
-          "status":"状态"
+          "sla_id":"sla ID"
         }
       },
       "processworkcenterfield":{
-        "step_status":"步骤状态",
-        "catalog":"服务目录",
+        "process":"流程",
+        "focus_users":"关注此工单的用户",
         "confighash":"工单配置hash",
         "channel":{
           "a":"服务"
         },
-        "expired_time":"剩余时间",
-        "starttime":"开始时间",
-        "title":"标题",
+        "action":"操作栏",
+        "step":{
+          "a":"步骤"
+        },
+        "step_team":"步骤处理组",
         "transfer_from_user":"转交人",
         "content":{
           "a":"上报内容"
         },
-        "channeltype":"服务类型",
-        "action":"操作栏",
-        "step_team":"步骤处理组",
-        "id":"工单id",
-        "wokrtime":"时间窗口",
-        "current_step":"当前步骤",
-        "owner":"上报人",
-        "process":"流程",
-        "focus_users":"关注此工单的用户",
-        "endtime":"结束时间",
-        "serial_number":"工单号",
-        "reporter":"代报人",
-        "priority":"优先级",
         "is_show":"是否显示，0隐藏，1显示",
-        "aboutme":"与我相关",
-        "activetime":"激活时间",
-        "step_user":"步骤处理人",
-        "step_name":"步骤名",
-        "step":{
-          "a":"步骤"
-        },
-        "content_include_html":"上报内容",
-        "status":"工单状态"
+        "aboutme":"与我相关"
       },
       "processtasksource":{
-        "system":"系统",
         "pc":"PC端",
         "import":"导入",
         "mobile":"移动端"
@@ -1874,17 +2016,10 @@
         "actionfailedcontent":"动作执行失败原因"
       },
       "slatype":{
-        "response":"响应",
-        "handle":"处理"
+        "response":"响应"
       },
       "processtaskstatus":{
-        "running":"处理中",
-        "hang":"已挂起",
-        "aborted":"已取消",
-        "scored":"已评分",
-        "draft":"未提交",
-        "succeed":"已完成",
-        "failed":"异常"
+        "scored":"已评分"
       },
       "processtaskaudittype":{
         "edittask":{
@@ -1980,7 +2115,6 @@
           "a":"撤回",
           "b":"撤回【${DATA.processTaskStepName}】"
         },
-        "updatefocususer":"修改工单关注人",
         "reportrelation":{
           "a":"上报关联",
           "b":"上报并关联工单"
@@ -2032,34 +2166,21 @@
         "taskworker":"任务处理人",
         "taskusercontent":"任务用户内容"
       },
-      "eshandler":{
-        "processtask":"工单"
-      },
-      "autoexecprocessstephandlertype":{
-        "autoexec":"自动化"
-      },
       "worktimesqltable":{
         "fieldenum":{
-          "name":"时间窗口名",
-          "uuid":"时间窗口UUID"
+          "name":"时间窗口名"
         }
       },
       "replaceabletext":{
         "contentdetails":"内容详情",
         "timeline":"时间线",
-        "steplist":"步骤日志",
-        "relationlist":"关联工单"
+        "steplist":"步骤日志"
       },
       "workerdispatcherform":{
         "select":"下拉框组件",
         "form_select":"选择表单组件",
         "user_select":"选择用户组件",
         "text":"文本框组件"
-      },
-      "usertable":{
-        "fieldenum":{
-          "uuid":"用户UUID"
-        }
       },
       "channelworktimesqltable":{
         "fieldenum":{
@@ -2078,14 +2199,11 @@
         "field":"选择字段",
         "group_count":"分组计数",
         "group_avg_cost_time":"平均处理耗时",
-        "group_handle_punctuality":"处理准时率",
         "total_count":"总个数",
         "distinct_id":"去重工单ID",
         "full_text":"全文检索",
-        "group_avg_response_cost_time":"平均响应耗时",
         "limit_count":"部分个数",
         "group_sum":"分组累积总数",
-        "group_response_punctuality":"响应准时率",
         "sub_group_count":"二级分组计数"
       },
       "taskconfigpolicy":{
@@ -2179,11 +2297,9 @@
         }
       },
       "processtaskstepnotifyparam":{
-        "reason":"原因",
         "processtasksteprecovercontent":"步骤恢复原因",
         "stepstaytime":"步骤停留时间",
         "processtaskstepsla":"步骤时效",
-        "stepname":"步骤名",
         "stepid":"步骤id",
         "processtaskstepretreatcontent":"步骤撤回原因",
         "processtaskstepactivetime":"步骤激活时间",
@@ -2193,7 +2309,6 @@
         "stepcommentuser":"步骤回复用户",
         "stepcommentlist":"步骤回复列表",
         "processtaskcurrentstepbackcontent":"步骤回退原因",
-        "stepworker":"步骤处理人",
         "processtasksteptransfertime":"步骤转交时间",
         "processtaskstepstarttime":"步骤开始时间",
         "processtasksteptransferworker":"步骤转交对象",
@@ -2201,34 +2316,12 @@
           "a":"步骤回复"
         }
       },
-      "processtaskstepslatimesqltable":{
-        "fieldenum":{
-          "processtask_step_id":"步骤ID",
-          "type":"类型"
-        }
-      },
       "processtaskstepdatatype":{
         "stepdraftsave":"步骤草稿暂存",
         "automatic":"auto节点数据"
       },
-      "processtasksteptaskuserstatus":{
-        "pending":"待处理",
-        "succeed":"已完成"
-      },
       "processtaskstepuserstatus":{
-        "doing":"处理中",
         "done":"处理完毕"
-      },
-      "processtaskdashboardgroupfield":{
-        "every_month":"每月",
-        "every_quarter":"每季度",
-        "every_day":"每天"
-      },
-      "failpolicy":{
-        "cancel":"取消工单",
-        "hang":"人工处理",
-        "back":"步骤回退",
-        "keep_on":"向后流转"
       },
       "callbacktype":{
         "wait":"等待回调",
@@ -2239,65 +2332,37 @@
         "owner":{
           "a":"上报人"
         },
-        "ownerdepartment":"上报人部门",
         "steptask":{
           "a":"子任务"
         },
         "steptaskid":"子任务ID",
-        "stepid":"步骤ID",
-        "actiontriggeruser":"动作触发人",
-        "starttime":"开始时间",
-        "priority":"优先级",
-        "title":"标题",
-        "content":"上报内容",
-        "ownerrole":"上报人角色",
-        "channeltype":"服务类型",
-        "ownerlevel":"上报人级别",
-        "ownercompany":"上报人公司",
-        "taskid":"工单ID"
+        "actiontriggeruser":"动作触发人"
       },
       "processtaskstepsqltable":{
         "fieldenum":{
-          "name":"步骤名称",
-          "id":"步骤ID"
+          "name":"步骤名称"
         }
       },
       "processtaskgroupsearch":{
         "processusertype":"工单干系人类型"
       },
       "processtaskstepusersqltablefieldenum":{
-        "user_type":"用户类型",
         "status":"处理状态"
       },
-      "autoexecjobprocesssource":{
-        "itsm":"IT服务"
-      },
       "processtasknotifyparam":{
-        "statustext":"工单状态",
-        "channelpath":"服务路径",
-        "starttime":"开始时间",
-        "title":"标题",
-        "startdate":"开始日期",
-        "departmentandownername":"部门/上报人",
-        "content":"上报内容",
-        "channeltypename":"服务类型",
-        "approvalcommentlist":"审批意见",
-        "id":"工单ID",
-        "ownercompanylist":"上报人公司列表",
-        "serialnumber":"工单号",
-        "ownername":"上报人",
         "process_task_abort_content":"工单取消原因",
         "process_task_urge_user":"工单催办用户",
-        "endtime":"结束时间",
+        "channelpath":"服务路径",
+        "startdate":"开始日期",
         "channelname":"服务名称",
+        "departmentandownername":"部门/上报人",
         "process_task_score_content":"工单评分内容",
         "process_task_urge_count":"工单催办次数",
-        "priorityname":"优先级",
-        "form":"表单",
+        "approvalcommentlist":"审批意见",
         "process_task_score":{
           "a":"工单评分"
         },
-        "reportername":"代报人",
+        "ownercompanylist":"上报人公司列表",
         "process_task_redo_content":"工单重新打开原因",
         "process_task_recover_content":"工单恢复原因"
       },
@@ -2310,24 +2375,11 @@
         "fieldenum":{
           "color":"服务类型颜色",
           "name":"服务类型名",
-          "type":"节点类型",
-          "status":"步骤状态"
+          "type":"节点类型"
         }
       },
       "processtaskauditdetailtype":{
-        "processtasklist":"工单",
         "focususer":"工单关注人",
-        "rule":"流转规则",
-        "cause":"原因",
-        "formattributelist":"表单属性列表",
-        "priority":"优先级",
-        "title":"标题",
-        "content":"内容",
-        "taglist":"标签",
-        "restfulaction":"RESTFUL动作",
-        "score":"评分",
-        "file":"文件",
-        "task":"任务",
         "form":{
           "a":"表单"
         },
@@ -2335,17 +2387,15 @@
         "processtask":{
           "a":"原工单"
         },
-        "workerlist":"处理人"
+        "rule":"流转规则",
+        "formattributelist":"表单属性列表",
+        "content":"内容"
       },
       "workerpolicy":{
         "form":"表单值",
         "prestepassign":"由前置步骤处理人指定",
         "automatic":"分派器",
-        "copy":"复制前置步骤处理人",
-        "assign":"自定义"
-      },
-      "processfulltextindextype":{
-        "processtask":"工单"
+        "copy":"复制前置步骤处理人"
       },
       "timedtasktriggertype":{
         "pendingprocesstask":{
@@ -2354,68 +2404,33 @@
         }
       },
       "processtaskevent":{
-        "abort":"终止",
-        "succeed":"成功",
-        "active":"激活",
-        "handle":"处理",
-        "failed":"失败",
-        "redo":"重做",
-        "timeout":"超时"
+        "abort":"终止"
       },
       "channelsqltable":{
         "fieldenum":{
-          "name":"服务名",
-          "uuid":"服务类型UUID"
+          "name":"服务名"
         }
       },
       "tempaltetype":{
-        "system":"系统模版",
-        "custom":"自定义模版"
+        "system":"系统模版"
       },
       "processtaskoperationtype":{
-        "step_handle":"自动处理",
-        "processtask_hide":"隐藏",
-        "task_delete":"删除任务",
-        "processtask_abort":"取消",
-        "task_edit":"编辑任务",
-        "step_accept":"开始",
-        "step_pause":"暂停",
-        "step_work":"处理当前步骤",
-        "processtask_work":"处理",
-        "step_transfer":"转交",
-        "step_retreat":"撤回",
-        "processtask_update":"修改上报内容",
-        "task_create":"创建任务",
-        "processtask_markrepeat":"标记重复",
-        "processtask_urge":"催办",
-        "step_view":"查看节点信息",
-        "processtask_score":"评分",
-        "step_start":"开始",
-        "step_back":"回退",
-        "processtask_retreat":"撤回",
-        "processtask_focususer_update":"修改工单关注人",
-        "processtask_show":"取消隐藏",
-        "processtask_redo":"回退",
-        "step_recover":"恢复",
         "step_hang":"挂起",
-        "step_comment":"回复",
-        "step_restfulaction":"RESTFUL动作",
+        "task_delete":"删除任务",
+        "task_edit":"编辑任务",
         "processtask_view":"工单查看",
-        "processtask_recover":"恢复",
-        "step_complete":"流转",
-        "processtask_transferreport":"转报",
+        "step_work":"处理当前步骤",
+        "processtask_update":"修改上报内容",
         "processtask_transfer":{
           "a":"转交"
         },
-        "processtask_start":"上报",
-        "step_deletecomment":"删除回复",
+        "task_create":"创建任务",
+        "processtask_markrepeat":"标记重复",
         "task_complete":"完成任务",
+        "step_view":"查看节点信息",
         "processtask_copyprocesstask":"复制上报",
-        "processtask_delete":"删除",
-        "step_reapproval":"重审",
         "step_save":"暂存",
-        "step_active":"激活",
-        "step_editcomment":"编辑回复"
+        "processtask_show":"取消隐藏"
       },
       "processflowdirection":{
         "forward":"流转至：",
@@ -2423,24 +2438,8 @@
       },
       "processstephandlertype":{
         "timer":"定时节点",
-        "condition":"条件",
         "omnipotent":"通用节点",
-        "octopus":"自动化",
-        "start":"开始",
-        "automatic":"自动处理",
-        "end":"结束",
         "distributary":"分流"
-      },
-      "knowledgesyncsource":{
-        "processtask":"工单"
-      },
-      "processtaskstepstatus":{
-        "running":"处理中",
-        "hang":"已挂起",
-        "pending":"待处理",
-        "draft":"未提交",
-        "succeed":"已完成",
-        "failed":"异常"
       },
       "processtasksteptasknotifytriggertype":{
         "completetask":{
@@ -2473,7 +2472,6 @@
         "cientitysync":"配置项同步"
       },
       "inputtype":{
-        "at":"自动发现",
         "mt":"人工录入"
       },
       "accounttype":{
@@ -2497,37 +2495,25 @@
         "vendor_id":"厂商id",
         "app_system_id":"应用系统id",
         "name":"资产名",
-        "resource_id":"资产id",
         "tag_id":"标签id",
         "app_module_id":"应用模块id",
         "type_label":"资产类型名",
-        "id":"资产id",
         "state_id":"资产状态id"
-      },
-      "transactionactiontype":{
-        "view":"查看",
-        "recover":"恢复",
-        "insert":"新增",
-        "update":"修改",
-        "delete":"删除"
       },
       "editmodetype":{
         "global":"全局模式",
         "partial":"局部模式"
       },
+      "collectmode":{
+        "initiative":"主动采集",
+        "passive":"被动采集"
+      },
       "fieldtype":{
-        "datetime":"日期",
-        "string":"字符串",
         "document":"文档",
-        "integer":"整型",
         "float":"单精度",
         "int":{
           "a":"整型"
         }
-      },
-      "collectmode":{
-        "initiative":"主动采集",
-        "passive":"被动采集"
       },
       "matchmode":{
         "level":"层次关系",
@@ -2546,55 +2532,21 @@
         "n":"多个",
         "o":"一个"
       },
-      "graphtype":{
-        "private":"个人视图",
-        "public":"公共视图",
-        "scene":"场景视图"
-      },
-      "searchexpression":{
-        "bt":"在此区间",
-        "null":"为空",
-        "ne":"不等于",
-        "notnull":"不为空",
-        "eq":"等于",
-        "li":"包含",
-        "nl":"不包含"
-      },
       "protocol":{
-        "database":"数据库",
-        "application":"应用",
         "tagent":"代理",
         "ssh":"ssh"
       },
-      "relactiontype":{
-        "replace":"替换",
-        "insert":"新增",
-        "delete":"删除"
-      },
       "grouptype":{
-        "readonly":"只读",
         "maintain":"维护"
-      },
-      "conditionconfigtype":{
-        "default":"默认"
       },
       "cmdbfromtype":{
         "resource_account":"资产帐号"
       },
       "prophandlertype":{
-        "date":"日期",
-        "password":"密码",
-        "select":"下拉框",
-        "file":"附件",
-        "checkbox":"复选框",
-        "textarea":"文本域",
         "text":{
           "a":"文本框"
         },
-        "mtext":"多文本框",
-        "table":"表格",
-        "url":"链接",
-        "radio":"单选框"
+        "mtext":"多文本框"
       },
       "formhandler":{
         "formcientityselector":"配置项选择组件",
@@ -2604,7 +2556,6 @@
         "formprotocol":"连接协议"
       },
       "reltype":{
-        "ci":"模型",
         "const_attr":"内部属性",
         "rel":"关系",
         "attr":"属性"
@@ -2632,7 +2583,6 @@
         }
       },
       "ciattrtype":{
-        "custom":"自定义属性",
         "complex":"复杂属性",
         "simple":"简单属性"
       },
@@ -2643,15 +2593,7 @@
       "transactionstatus":{
         "expired":"已失效",
         "recover":"已恢复",
-        "uncommit":"未提交",
         "commited":"已提交"
-      },
-      "syncstatus":{
-        "doing":"同步中",
-        "done":"已完成"
-      },
-      "cmdbnotifygroup":{
-        "cmdb":"配置管理"
       },
       "jointype":{
         "rightjoin":"右连接",
@@ -2659,26 +2601,17 @@
         "join":"全连接"
       },
       "expressiontype":{
-        "in":"包含",
-        "ne":"不等于",
         "lt":{
           "a":"小于"
         },
         "gte":"大于等于",
-        "is":"等于",
-        "notin":"不包含",
         "lte":"小于等于",
         "gt":{
           "a":"大于"
         }
       },
-      "cmdbfulltextindextype":{
-        "cientity":"配置项"
-      },
       "importstatus":{
-        "running":"导入中",
-        "success":"成功",
-        "failed":"失败"
+        "running":"导入中"
       },
       "uniquetype":{
         "global":"全局唯一",
@@ -2691,8 +2624,6 @@
         "list":"仅列表"
       },
       "ciauthtype":{
-        "cientityinsert":"配置项添加",
-        "cientitydelete":"配置项删除",
         "cientityupdate":"配置项更新",
         "cientityquery":"配置项查询",
         "cimanage":"模型管理",
@@ -2735,53 +2666,26 @@
         "scence_appsystem_productiontimeperiod":"应用系统投产时段场景",
         "scence_appmodule_appsystem":"模块和应用场景"
       },
-      "jobsource":{
-        "discovery":"自动发现"
-      },
-      "autoexectype":{
-        "cmdb":"自动采集"
-      },
-      "customviewtype":{
-        "private":"个人视图",
-        "public":"公共视图",
-        "scene":"场景视图"
-      },
       "savemodetype":{
         "merge":"合并模式",
         "replace":"替换模式"
       },
       "batchimportstatus":{
         "running":"执行中",
-        "stopped":"已停止",
-        "succeed":"已成功",
-        "failed":"已失败"
+        "stopped":"已停止"
       },
       "searchmode":{
         "normal":"正常模式",
         "data":"数据模式",
         "group":"分组模式"
       },
-      "matrixtype":{
-        "cmdbci":"配置项"
-      },
       "status":{
         "running":"订阅中",
         "doing":"应用中",
-        "ready":"可使用",
-        "pending":"已就绪",
-        "error":"异常",
-        "done":"已完成"
+        "ready":"可使用"
       }
     },
     "change":{
-      "changestatus":{
-        "running":"进行中",
-        "paused":"已暂停",
-        "aborted":"已取消",
-        "succeed":"已成功",
-        "pending":"待处理",
-        "failed":"已失败"
-      },
       "changeparammappingmethod":{
         "manualinput":"手动输入"
       },
@@ -2793,32 +2697,17 @@
         "editchange":{
           "a":"编辑"
         },
-        "recoverchange":"恢复",
-        "deletecommentchangestep":"删除回复",
-        "failedchange":"确认失败",
-        "editcommentchangestep":"编辑回复",
-        "editchangestep":"编辑",
-        "restartchange":"重做",
-        "succeedchange":"确认成功",
         "startchange":{
           "a":"开始"
-        },
-        "startchangestep":"开始",
-        "commentchangestep":"回复",
-        "batcheditchangestepworker":"批量编辑处理人",
-        "completechangestep":"完成",
-        "pausechange":"暂停",
-        "abortchangestep":"取消"
+        }
       },
       "changehandlenotifyparam":{
         "changestepworker":"变更步骤处理人",
         "changestepname":"变更步骤步骤名"
       },
       "changeauditdetailtype":{
-        "task":"任务",
         "changestepinfo":"变更步骤",
-        "changeinfo":"变更",
-        "worker":"处理人"
+        "changeinfo":"变更"
       },
       "changeoperationauthhandlertype":{
         "changecreate":"变更创建组件",
@@ -2974,11 +2863,6 @@
           "a":"X86"
         }
       },
-      "tagentupgradestatus":{
-        "succeed":"成功",
-        "working":"进行中",
-        "failed":"失败"
-      },
       "tagentfromtype":{
         "tagent_account":"tagent帐号"
       }
@@ -3055,30 +2939,10 @@
           "b":"服务的连接协议、帐号，用户连接主机上的数据库，中间件等服务"
         }
       },
-      "serviceparammappingmode":{
-        "constant":"常量",
-        "formattr":"表单属性"
-      },
       "jobstatus":{
-        "paused":"已暂停",
         "saved":"待提交",
-        "aborted":"已中止",
-        "pending":"待运行",
-        "aborting":"中止中",
-        "failed":"已失败",
-        "completed":"已完成",
-        "revoked":"已撤销",
-        "running":"运行中",
-        "pausing":"暂停中",
-        "ready":"已就绪",
-        "wait_input":"待输入",
-        "checked":"已验证"
-      },
-      "autoexecjobnotifyparam":{
-        "name":"作业名称",
-        "id":"作业ID",
-        "phaselist":"阶段列表",
-        "status":"作业状态"
+        "checked":"已验证",
+        "revoked":"已撤销"
       },
       "scriptaction":{
         "submit":{
@@ -3111,10 +2975,8 @@
         }
       },
       "failpolicy":{
-        "hang":"人工处理",
         "stop":"失败停止",
-        "goon":"失败继续",
-        "keep_on":"向后流转"
+        "goon":"失败继续"
       },
       "jobtriggertype":{
         "auto":"自动",
@@ -3142,8 +3004,8 @@
           "b":"单选选择器"
         },
         "multiselect":{
-          "a":"多选下拉",
-          "b":"多选下拉选择器"
+          "a":"多选下拉器",
+          "b":"多选下拉"
         },
         "node":{
           "a":"节点信息",
@@ -3166,7 +3028,7 @@
           "b":"可输出文件路径参数"
         },
         "checkbox":{
-          "a":"复选",
+          "a":"复选框",
           "b":"复选选择器"
         },
         "json":{
@@ -3189,19 +3051,10 @@
       "scriptandtooloperate":{
         "compare":"对比",
         "submit":"提交审核",
-        "test":"测试",
-        "edit":"编辑",
-        "pass":"通过",
+        "generatetocombop":"发布为组合工具",
         "save":"存为草稿",
         "active":"启用/禁用",
-        "revoke":"撤回",
-        "switch_version":"回退",
-        "delete":"删除",
-        "version_delete":"删除",
-        "reject":"驳回",
-        "generatetocombop":"发布为组合工具",
         "copy":"复制",
-        "export":"导出",
         "validate":"校验"
       },
       "paramdatasource":{
@@ -3209,44 +3062,12 @@
         "matrix":"矩阵数据源"
       },
       "autoexecfromtype":{
-        "scenario":"场景",
         "autoexec_profile_operation":"profile自动化工具库工具和自定义工具",
-        "global_param":"全局参数",
-        "profile":"预置参数集",
-        "custom_template":"自定义模版",
-        "combop":"组合工具",
-        "tool":"工具",
         "script":"自定义工具",
         "autoexec_catalog":"自动化工具目录"
       },
-      "autoexecservicetype":{
-        "service":"服务",
-        "catalog":"目录"
-      },
       "jobphasestatus":{
-        "running":"运行中",
-        "ignored":"已忽略",
-        "paused":"已暂停",
-        "waiting":"排队中",
-        "pausing":"暂停中",
-        "aborted":"已中止",
-        "pending":"待运行",
-        "wait_input":"待输入",
-        "aborting":"中止中",
-        "failed":"已失败",
-        "completed":"已完成"
-      },
-      "jobnodestatus":{
-        "running":"运行中",
-        "ignored":"已忽略",
-        "paused":"已暂停",
-        "pausing":"暂停中",
-        "aborted":"已中止",
-        "wait_input":"待输入",
-        "pending":"待运行",
-        "succeed":"已成功",
-        "aborting":"中止中",
-        "failed":"已失败"
+        "waiting":"排队中"
       },
       "autoexecjobnotifytriggertype":{
         "failed":{
@@ -3254,14 +3075,11 @@
           "b":"作业失败时触发通知"
         }
       },
-      "reviewstatus":{
-        "waiting":"待审核",
-        "passed":"已通过",
-        "failed":"审批未通过"
-      },
       "autoexectypetype":{
-        "factory":"默认出厂",
-        "custom":"自定义"
+        "factory":"默认出厂"
+      },
+      "reviewstatus":{
+        "failed":"审批未通过"
       },
       "scriptexecmode":{
         "runner_target":{
@@ -3282,40 +3100,20 @@
           "b":"需选定DB执行目标，工具在runner上执行，适用于SQL文件的检查、执行等操作"
         }
       },
-      "combopauthorityaction":{
-        "view":"查看",
-        "edit":"编辑",
-        "execute":"执行"
-      },
       "nodestatus":{
         "user_not_found":"执行用户不存在",
-        "normal":"正常",
         "node_not_found":"执行目标不存在"
-      },
-      "autoexecoperationauthhandlertype":{
-        "autoexec":"自动化"
       },
       "autoexectypeauthorityaction":{
         "add":"添加分类下的自定义工具或工具库工具",
         "review":"审核分类下的组合工具"
       },
       "parammappingmode":{
-        "constant":"常量",
         "pre_node_output_param_key":"上游节点输出参数名",
         "runtime_param":"作业参数",
-        "global_param":"全局参数",
-        "profile":"预置参数集",
-        "is_empty":"为空",
         "pre_node_output_param":{
           "a":"上游节点输出参数值"
         }
-      },
-      "autoexecprofileparaminvoketype":{
-        "constant":"常量",
-        "global_param":"全局参数"
-      },
-      "jobsourcetype":{
-        "autoexec":"自动化"
       },
       "parammode":{
         "output":"出参",
@@ -3323,8 +3121,6 @@
       },
       "jobsource":{
         "script_test":"自定义工具测试",
-        "test":"测试",
-        "autoexec_schedule":"定时任务",
         "service":"快捷服务",
         "combop_test":"组合工具测试",
         "human":"人工",
@@ -3334,24 +3130,16 @@
         "tool_test":"工具测试"
       },
       "autoexectype":{
-        "sql_file":"SQL处理",
         "temp":"临时使用",
         "backup":"备份",
         "test":"测试用工具",
-        "start_stop":"启停操作",
-        "native":"调度器内置工具",
         "install":"软件安装配置",
         "dr_switch":"灾备切换",
-        "basic":"基础工具",
         "biz_jobs":"作业调度"
       },
       "scriptversionstatus":{
-        "current":"激活",
-        "submitted":"待审核",
         "rejected":"已驳回",
-        "draft":"草稿",
-        "history":"历史",
-        "passed":"已通过"
+        "history":"历史"
       },
       "execmode":{
         "runner_target":{
@@ -3373,7 +3161,6 @@
       },
       "jobaction":{
         "inform_phase_round":"通知下一个phase round",
-        "get_node_output_param":"获取节点出参",
         "download_console_log_audit":"下载控制台日志记录",
         "get_node_sql_content":"获取节点sql内容",
         "get_node_sql_list":"获取节点sql列表",
@@ -3384,21 +3171,16 @@
         },
         "console_log_tail":"获取控制台日志",
         "get_node_operation_list":"获取节点操作列表",
-        "refire_phase":"重新执行节点",
-        "fire":"执行",
         "take_over":"接管",
         "get_node_operation_input_param":"获取节点工具入参",
         "download_node_out_put":"下载节点输出参数",
         "console_log_audit_list":"获取控制台日志记录列表",
         "ignore_phase":"忽略阶段",
-        "submit_node_wait_input":"获取节点出参",
         "reset_node":"重置节点",
         "get_operation_custom_data":"获取工具个性化数据",
         "download_node_in_put":"下载节点输入参数",
-        "refire_node":"重新执行节点",
         "check":"验证",
         "node_audit_list":"获取节点记录",
-        "pause":"暂停",
         "refire":{
           "a":"重新执行"
         },
@@ -3413,14 +3195,7 @@
         "script_document_version":"自定义工具版本"
       },
       "autoexecjobphasenodefrom":{
-        "phase":"阶段",
-        "job":"作业全局",
-        "group":"组"
-      },
-      "combopoperationtype":{
-        "combop":"组合",
-        "tool":"工具",
-        "script":"脚本"
+        "job":"作业全局"
       },
       "autoexecglobalparamtype":{
         "date":{
@@ -3435,7 +3210,6 @@
           "a":"密码",
           "b":"可输入数字或字符串，页面显示为密文"
         },
-        "textarea":"文本域",
         "text":{
           "a":"文本",
           "b":"文本参数，可输入字符串、数字"
@@ -3445,9 +3219,8 @@
           "b":"时间选择器"
         }
       },
-      "tooltype":{
-        "tool":"工具",
-        "script":"脚本"
+      "combopoperationtype":{
+        "combop":"组合"
       },
       "combopnodespecify":{
         "runtimeparam":"作业参数作为执行目标",
@@ -3460,12 +3233,9 @@
     "deploy":{
       "buildnostatus":{
         "compiled":"已编译",
-        "releasing":"释放中",
-        "release_failed":"释放失败",
         "pending":"待编译",
         "compile_failed":"编译失败",
-        "compiling":"编译中",
-        "released":"已释放"
+        "compiling":"编译中"
       },
       "scheduletype":{
         "pipeline":"超级流水线",
@@ -3476,11 +3246,6 @@
           "a":"作业失败",
           "b":"作业失败时触发通知"
         }
-      },
-      "deployciauditstatus":{
-        "ignored":"已忽略",
-        "succeed":"成功",
-        "failed":"失败"
       },
       "deploywebhookbuildnopolicy":{
         "new":"新建buildNo",
@@ -3510,8 +3275,6 @@
         "workspace":"工程目录",
         "build_product":"版本制品",
         "env_diff_directory":"差异目录",
-        "build_sql_script":"SQL脚本",
-        "env_sql_script":"SQL脚本",
         "env_product":"环境制品"
       },
       "jobsourcetype":{
@@ -3540,47 +3303,20 @@
         "appsystem":"应用流水线",
         "global":"全局流水线"
       },
-      "autoexectype":{
-        "build":"编译打包",
-        "deploy":"自动发布"
-      },
-      "deploywhitetype":{
-        "sql_file":"SQL处理",
-        "start_stop":"启停操作",
-        "native":"调度器内置工具",
-        "build":"编译打包",
-        "basic":"基础工具",
-        "deploy":"自动发布"
-      },
       "deployciactiontype":{
         "create_batch_job":"创建批量作业",
         "create_job":"创建作业"
       },
-      "deployappconfigactiontype":{
-        "scenario":"场景",
-        "env":"环境",
-        "operation":"操作"
-      },
       "versionenvstatus":{
-        "releasing":"释放中",
-        "release_failed":"释放失败",
-        "pending":"待构建",
-        "released":"已释放"
+        "pending":"待构建"
       },
       "combopoperationtype":{
         "pipeline":"发布流水线"
       },
       "deployjobnotifyparam":{
-        "jobid":"作业ID",
         "triggertypename":"触发方式",
-        "envname":"环境",
-        "jobstatus":"作业状态",
-        "jobphaselist":"阶段列表",
-        "appsystemnameandabbrname":"应用",
         "version":"版本号",
-        "appmodulenameandabbrname":"模块",
-        "jobname":"作业名称",
-        "scenarioname":"场景"
+        "appmodulenameandabbrname":"模块"
       },
       "deployversionchart":{
         "unit_test":"单元测试",
@@ -3591,8 +3327,6 @@
       "tenantvo":{
         "status":{
           "dml":"执行dml",
-          "built":"已完成",
-          "error":"异常",
           "ddl":"执行ddl",
           "building":"创建中"
         }
@@ -3603,36 +3337,19 @@
         "date":{
           "a":"日期"
         },
-        "datetime":"时间",
-        "select":"下拉框",
         "boolean":"布尔选择",
         "relselect":"关联关系",
-        "text":"文本框",
         "category":"设施分类编码",
         "uuid":"全局唯一标识"
       },
-      "action":{
-        "new":"新增",
-        "update":"更新",
-        "delete":"删除"
-      },
       "priority":{
-        "view":"视图",
-        "ci":"模型"
+        "view":"视图"
       },
       "status":{
-        "handler_failed":"处理失败",
-        "mapping":"同步中",
-        "pending":"已就绪",
-        "failed":{
-          "a":"上报失败",
-          "b":"已失败"
-        },
-        "handler_doing":"处理中",
         "valid":{
           "a":"核验通过"
         },
-        "running":"进行中",
+        "handler_failed":"处理失败",
         "part_handler_failed":"部分处理失败",
         "validating":{
           "a":"校验中",
@@ -3643,14 +3360,17 @@
           "b":"已成功"
         },
         "invalid":"核验不通过",
+        "failed":{
+          "a":"上报失败",
+          "b":"已失败"
+        },
         "reporting":"上报中",
         "handler_success":"处理成功"
       }
     },
     "framework":{
       "actiontype":{
-        "create":"创建",
-        "update":"修改"
+        "create":"创建"
       },
       "formattributeauthtype":{
         "component":"组件",
@@ -3686,22 +3406,15 @@
         "keep_on_create":"继续创建"
       },
       "schematype":{
-        "data":"数据库",
         "main":"核心库"
       },
       "authenticatetype":{
         "buildin":"内部验证",
         "noauth":"无需认证",
-        "bearer":"Bearer Token",
-        "basic":"Basic认证"
+        "bearer":"Bearer Token"
       },
       "type":{
-        "static":"静态",
         "dynamic":"动态"
-      },
-      "integrationauditstatus":{
-        "succeed":"成功",
-        "failed":"失败"
       },
       "apitype":{
         "stream":"json流模式",
@@ -3709,7 +3422,6 @@
         "object":"对象模式"
       },
       "devicetype":{
-        "all":"所有",
         "pc":"电脑端",
         "mobile":"手机端"
       },
@@ -3717,20 +3429,14 @@
         "fdp":"无向布局",
         "neato":"张力布局",
         "dot":"分层布局",
-        "sfdp":"无向布局2",
         "osage":"阵列布局",
         "circo":"环形布局",
-        "twopi":"星形布局",
-        "patchwork":"无向布局2"
+        "twopi":"星形布局"
       },
       "authtype":{
-        "role":"角色",
-        "common":"内置",
-        "team":"组",
-        "user":"用户"
+        "common":"内置"
       },
       "mode":{
-        "replace":"替换",
         "append":"追加"
       },
       "formconditionmodel":{
@@ -3739,10 +3445,7 @@
       },
       "operationtypeenum":{
         "search":"查询",
-        "operate":"操作",
-        "create":"增加",
-        "update":"更新",
-        "delete":"删除"
+        "create":"增加"
       },
       "changetype":{
         "fillblank":"",
@@ -3750,47 +3453,23 @@
         "insert":"",
         "delete":""
       },
-      "fulltextindex":{
-        "status":{
-          "doing":"重建中",
-          "done":"重建完毕"
-        }
-      },
-      "fontcolor":{
-        "red":"红色",
-        "blue":"蓝色",
-        "white":"白色",
-        "black":"黑色"
-      },
       "audittype":{
         "integration_audit":"",
         "api_audit":""
       },
       "formhandler":{
         "formtableinputer":"表格输入组件",
-        "formtextarea":"文本域",
-        "formcheckbox":"复选框",
+        "formcascader":"级联下拉框",
         "formupload":"附件上传",
         "formtableselector":"表格选择组件",
         "formdivider":"分割线",
-        "formtreeselect":"下拉树组件",
-        "formrate":"评分",
-        "formpassword":"密码",
-        "formdate":"日期",
-        "formcascader":"级联下拉框",
-        "formradio":"单选框",
-        "formlink":"链接",
-        "formnumber":"数字",
         "formpriority":"修改优先级",
         "formtext":{
           "a":"文本框"
         },
-        "formtime":"时间",
+        "formtreeselect":"下拉树组件",
         "formcube":"矩阵选择",
-        "formselect":"下拉框",
-        "formlabel":"标签",
-        "formckeditor":"富文本框",
-        "formuserselect":"用户选择器"
+        "formckeditor":"富文本框"
       },
       "roletype":{
         "manager":"普通管理员",
@@ -3798,11 +3477,9 @@
         "user":"普通用户"
       },
       "systemuser":{
-        "system":"系统",
         "anonymous":"匿名用户"
       },
       "aggregatetype":{
-        "count":"计数",
         "sum":"求和"
       },
       "frameworkrequestfrom":{
@@ -3811,7 +3488,6 @@
         "api":""
       },
       "inspectstatus":{
-        "normal":"正常",
         "warn":"告警",
         "critical":"严重",
         "fatal":"致命"
@@ -3830,13 +3506,6 @@
           "b":"用于测试消息缓存"
         }
       },
-      "jobauditvo":{
-        "status":{
-          "running":"进行中",
-          "succeed":"成功",
-          "failed":"失败"
-        }
-      },
       "userprofile":{
         "user_create_sucess":"用户创建成功",
         "team_create_sucess":"用户组创建成功",
@@ -3850,9 +3519,6 @@
         "login_team":"当前登录人所在组",
         "login_center":"当前登录人所在中心"
       },
-      "databaseversion":{
-        "mysql8":"文本框"
-      },
       "requestfrom":{
         "matrix":""
       },
@@ -3862,15 +3528,10 @@
         },
         "https":"https"
       },
-      "publicapiauthtype":{
-        "basic":"Basic认证"
-      },
       "inputfrom":{
-        "cron":"定时任务",
         "restful":"接口调用",
         "itsm":"流程修改",
         "import":"excel导入",
-        "autoexec":"自动采集",
         "page":"页面操作",
         "unknown":"未知",
         "relative":"级联更新"
@@ -3884,7 +3545,6 @@
         "cmdbci":{
           "a":"cmdb模型"
         },
-        "formattr":"表单属性",
         "form":{
           "a":"表单"
         },
@@ -3898,10 +3558,6 @@
         },
         "worktime":"服务窗口"
       },
-      "apiinvokedstatus":{
-        "succeed":"成功",
-        "failed":"失败"
-      },
       "matrixtype":{
         "external":"外部数据源",
         "private":"私有数据源",
@@ -3909,8 +3565,7 @@
         "custom":"自定义数据源"
       },
       "fileoperationtype":{
-        "download":"下载",
-        "delete":"删除"
+        "download":"下载"
       },
       "recipienttype":{
         "cc":"抄送人",
@@ -3921,10 +3576,8 @@
         "exceptioncaller":"发起方信息"
       },
       "status":{
-        "running":"进行中",
         "stopped":"已停用",
         "doing":"同步数据中",
-        "succeed":"成功",
         "notissued":"未下发",
         "failed":"同步失败",
         "issued":"已下发",
@@ -3933,9 +3586,6 @@
         "builded":""
       },
       "paramtype":{
-        "date":"日期",
-        "number":"数字",
-        "string":"字符串",
         "array":"数组",
         "enum":"枚举"
       },
@@ -3956,52 +3606,27 @@
         "anonymous_access_without_encryption":""
       },
       "dashboardshowconfig":{
-        "color":"颜色",
         "groupfield":"分组条件",
         "refreshtime":"刷新时间",
         "maxgroup":"最大组数量",
-        "type":"类型",
         "subgroupfield":"二级分组条件",
         "aggregate":"聚合方式"
-      },
-      "fieldtype":{
-        "date":{
-          "a":"日期"
-        },
-        "number":"数字",
-        "datetime":"日期时间",
-        "time":"时间",
-        "text":"文本"
       },
       "rejectsource":{
         "api":"",
         "tenant":""
       },
-      "formattributeaction":{
-        "hide":"隐藏",
-        "read":"只读",
-        "edit":"编辑"
-      },
-      "searchexpression":{
-        "bt":"在此区间",
-        "null":"为空",
-        "ne":"不等于",
-        "notnull":"不为空",
-        "eq":"等于",
-        "li":"包含",
-        "nl":"不包含"
-      },
-      "matrixattributetype":{
-        "date":"日期",
-        "input":"文本框",
-        "select":"下拉框",
-        "role":"角色",
-        "team":"分组",
-        "user":"用户"
+      "fieldtype":{
+        "date":{
+          "a":"日期"
+        }
       },
       "exportfiletype":{
         "excel":"",
         "csv":""
+      },
+      "matrixattributetype":{
+        "team":"分组"
       },
       "titletype":{
         "tile":{
@@ -4009,8 +3634,7 @@
         },
         "h1":"标题 1",
         "h2":"标题 2",
-        "h3":"标题 3",
-        "tilefont":"楷体"
+        "h3":"标题 3"
       },
       "treemenutype":{
         "system":"系统接口目录",
@@ -4026,27 +3650,17 @@
       },
       "charttype":{
         "donutchart":"环形图",
-        "barchart":"柱状图",
-        "areachart":"面积图",
-        "tablechart":"表格",
-        "numberchart":"值图",
         "columnchart":"条形图",
         "stackcolumnchart":"堆叠条形图",
-        "stackbarchart":"堆叠柱状图",
-        "piechart":"饼图",
-        "linechart":"曲线图"
+        "stackbarchart":"堆叠柱状图"
       },
       "bodytype":{
         "x-www-form-urlencoded":"",
         "raw":""
       },
       "notifyrecipienttype":{
-        "role":"角色",
         "processusertype":"工单干系人",
-        "custom":"组件自定义的对象",
-        "team":"组",
-        "user":"用户",
-        "email":"邮箱"
+        "custom":"组件自定义的对象"
       },
       "conversiontype":{
         "totext":"value转换成text",
@@ -4062,24 +3676,7 @@
         "inner":"移动到目标节点里面"
       },
       "tablecolor":{
-        "red":"红色",
-        "blue":"蓝色",
-        "white":"白色",
-        "black":"黑色",
         "grey":"灰色"
-      },
-      "rebuildauditvo":{
-        "status":{
-          "doing":"重建中",
-          "done":"重建完毕"
-        }
-      },
-      "fieldinputtype":{
-        "datetime":"日期时间",
-        "select":"下拉框",
-        "checkbox":"复选框",
-        "text":"文本框",
-        "radio":"单选框"
       },
       "commonnotifyparam":{
         "homeurl":"域名",
@@ -4096,16 +3693,10 @@
         "last_half_month":"最近半个月"
       },
       "expression":{
-        "equal":"等于",
         "include":"包括",
-        "isnull":"为空",
-        "like":"包含",
         "lessthan":"早于",
-        "isnotnull":"不为空",
-        "notlike":"不包含",
         "match":"包含(分词)",
         "greaterthan":"晚于",
-        "unequal":"不等于",
         "exclude":"不包括",
         "between":"属于"
       },
@@ -4132,25 +3723,12 @@
       "groupsearch":{
         "role":"角色类型",
         "common":"公共类型",
-        "team":"组类型",
-        "user":"用户类型"
+        "team":"组类型"
       },
       "fontfamily":{
         "song":"宋体",
-        "regular_script":"楷体",
         "fang_song":"仿宋",
         "black":"黑体"
-      },
-      "integrationparamtype":{
-        "jsonobject":"json对象",
-        "number":"数字",
-        "jsonarray":"json数组",
-        "string":"字符型"
-      },
-      "expireunit":{
-        "hour":"小时",
-        "day":"天",
-        "minute":"分钟"
       },
       "contenttype":{
         "content_type_text_html":"",
@@ -4162,19 +3740,13 @@
         "content_type_application_form":""
       },
       "apiparamtype":{
-        "jsonarray":"json数组",
-        "string":"字符型",
-        "double":"双精度浮点数",
-        "ip":"ip",
-        "integer":"整型",
-        "long":"长整型",
-        "enum":"枚举型",
-        "jsonobject":"json对象",
         "regex":"正则表达式",
         "boolean":"布尔型",
-        "file":"附件",
         "noauth":"任意对象，无需校验",
-        "email":"邮箱"
+        "double":"双精度浮点数",
+        "ip":"ip",
+        "long":"长整型",
+        "enum":"枚举型"
       },
       "doctype":{
         "excel":"",
@@ -4184,7 +3756,6 @@
       "teamlevel":{
         "center":"中心",
         "company":"公司",
-        "team":"组",
         "department":"部门",
         "group":"集团"
       },
@@ -4215,20 +3786,9 @@
         },
         "docx":""
       },
-      "formattributeauthrange":{
-        "all":"所有"
-      },
       "apikind":{
         "system":"内部接口",
         "custom":"外部接口"
-      },
-      "chart":{
-        "barchart":"柱状图",
-        "areachart":"面积图",
-        "tablechart":"表格",
-        "numberchart":"值图",
-        "piechart":"饼图",
-        "linechart":"曲线图"
       },
       "viplevel":{
         "a":"",
@@ -4265,10 +3825,6 @@
         "color10":"颜色10",
         "tick_label_color":"刻度数字"
       },
-      "actiontype":{
-        "view":"查看",
-        "export":"导出"
-      },
       "blackwhitetype":{
         "white":"白名单",
         "black":"黑名单"
@@ -4290,16 +3846,12 @@
           "a":"资产巡检"
         },
         "schedule_inspect_app":"应用定时巡检"
-      },
-      "autoexectype":{
-        "inspect":"巡检"
       }
     },
     "rdm":{
       "issueusertype":"任务干系人类型",
       "objecttype":{
         "request":"需求",
-        "task":"任务",
         "bug":"缺陷",
         "testplan":"测试计划",
         "testcase":"测试用例"
@@ -4307,10 +3859,7 @@
       "privateattr":{
         "name":"名称",
         "create_user":"创建人",
-        "tag":"标签",
-        "worker":"责任人",
-        "priority":"优先级",
-        "status":"状态"
+        "worker":"责任人"
       },
       "projectusertype":{
         "leader":"项目负责人",
@@ -4320,46 +3869,22 @@
         "date":{
           "a":"日期"
         },
-        "select":"下拉选择",
-        "catalog":"目录",
-        "datetimerange":"日期范围",
-        "textarea":"文本框",
-        "priority":"优先级",
-        "number":"数字",
         "datetime":{
           "a":"日期时间"
         },
-        "file":"附件",
-        "tag":"标签",
+        "select":"下拉选择",
+        "datetimerange":"日期范围",
         "text":{
           "a":"文本"
-        },
-        "time":"时间",
-        "worker":"处理人",
-        "user":"用户",
-        "status":"状态"
-      }
-    },
-    "event":{
-      "eventauditdetailtype":{
-        "eventinfo":"事件",
-        "task":"任务"
-      },
-      "eventoperationauthhandlertype":{
-        "event":"事件"
-      },
-      "eventprocessstephandlertype":{
-        "event":"事件"
+        }
       }
     },
     "dashboard":{
       "dashboardstatistics":{
-        "count":"计数",
         "sum":"总数"
       },
       "dashboardtype":{
-        "system":"系统分类",
-        "custom":"自定义"
+        "system":"系统分类"
       }
     },
     "knowledge":{
@@ -4385,45 +3910,29 @@
           "b":"切换【版本${DATA.oldVersion}】至【版本${DATA.newVersion}】"
         }
       },
-      "knowledgefulltextindextype":{
-        "know_document_version":"知识库"
-      },
       "knowledgedocumentversionstatus":{
         "all":"全部",
         "submitted":"待审批",
-        "rejected":"不通过",
-        "draft":"未提交",
-        "passed":"已通过"
+        "rejected":"不通过"
       },
       "knowledgedocumentlinehandler":{
         "p":"段落",
         "editor":"编辑器",
         "img":"图片",
         "code":"代码块",
-        "formtable":"表单",
         "ul":"无序列表",
         "h1":"一级标题",
         "h2":"二级标题",
-        "ol":"有序列表",
-        "table":"表格"
+        "ol":"有序列表"
       },
       "knowledgetype":{
-        "all":"所有",
         "waitingforreview":"待我审批",
-        "draft":"草稿",
         "share":"我提交的",
         "collect":"我的收藏"
       },
       "authtype":{
         "approver":"审批人",
         "member":"成员"
-      }
-    }
-  },
-  "deploy":{
-    "appconfig":{
-      "displayname":{
-        "user":"用户"
       }
     }
   }
