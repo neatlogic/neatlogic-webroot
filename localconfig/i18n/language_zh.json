@@ -188,7 +188,6 @@
       "relentitynotfoundexception":"关系“{0}”不能为空",
       "cinameisblankexception":"模型唯一标识为空",
       "datetimeattrformatirregularexception":"属性“{0}({1})”的值“{2}”不符合格式“{3}”",
-      "dslsyntaxirregularoperatorexception":"",
       "deletecustomviewfailedexception":"删除视图失败，异常：{0}",
       "targetcinotfoundexception":"属性“{0}”的关联模型“{1}”不存在",
       "deleteattrfromschemaexception":"无法将属性：{0} 从数据表中删除，具体错误请查看系统日志",
@@ -760,7 +759,6 @@
       "interfacemappingnotfoundexception":"人行上报接口“{0}”还没有配置属性映射"
     },
     "framework":{
-      "datasourceconditionrequiredvalueisemptyexception":"",
       "matrixfilenotfoundexception":"矩阵导入文件不存在",
       "integrationrequestresultisemptyexception":"集成请求结果为空",
       "valueisnotequalexception":"{0}值{1}不等于{2}",
@@ -772,7 +770,6 @@
       "runnernotfoundingroupexception":"在id为：{0}的runner组里找不到runner",
       "formversionnotfoundexception":"表单版本：“{0}”不存在",
       "scheduleparamnotexistsexception":"定时作业组件：{0}的{1}是必填参数",
-      "runnergrouprunnerlistemptyexception":"",
       "schedulehandlernotfoundexception":"定时作业组件：{0} 不存在",
       "matrixheadermismatchexception":"矩阵{0}头信息不匹配",
       "matrixexternalsaveattributeexception":"外部数据源矩阵不能保存属性",
@@ -783,7 +780,6 @@
       "httpmethodirregularexception":"只支持GET和POST两种请求方法",
       "filestoragemediumhandlernotfoundexception":"存储介质类型：{0}找不到相应的控制器，请通知管理员或厂商解决",
       "valueisnotcontainexception":"{0}值{1}不包含{2}",
-      "reportdatasourceissyncingexception":"",
       "formattributenotfoundexception":{
         "a":"表单属性：“{0}”不存在",
         "b":"表单”{0}“中找不到“{1}”属性"
@@ -898,7 +894,6 @@
       "runnermapnotmatchrunnerexception":"runnerMapId: {0}没有匹配的runner",
       "emptyfileexception":"请唔上传空白附件",
       "filetypenotsupporttoexportexception":"不支持导出{0}格式的文件",
-      "deletedatasourceschemaexception":"",
       "runnernotmatchexception":{
         "b":"ip: {0}找不到匹配的runner，请核对runner组配置",
         "c":"找不到匹配的runner，请核对runner组配置 或者 没有配置runner map"
@@ -914,7 +909,6 @@
       "formactiveversioncannotbedeletedexception":"表单版本：{0}为当前激活版本，不能删除",
       "fulltextindexcomponentoftypenotfoundexception":"找不到类型为：{0}的全文索引组件",
       "runnergroupnetworknamerepeatsexception":"runner组名:{0}已经存在",
-      "reportdatasourcesyncexception":"",
       "subscribenameisexistsexception":"订阅：{0}已存在，请使用新的唯一标识",
       "runnergroupisemptyexception":"runner组id为：的runner组为空，请添加一个新的runner",
       "maskisincorrectexception":"ip为：{0}对应的掩码不合法",
@@ -988,7 +982,6 @@
       "notifytemplatereferencedcannotbedeletedexception":"通知模板：“{0}”有被引用，不能删除",
       "innerapinotfoundexception":"内部接口“{0}”不存在",
       "paraminvalidexception":"参数“{0}” ，参数值“{1}”不合法",
-      "createdatasourceschemaexception":"",
       "notifycontenthandlernotfoundexception":"通知内容处理器：“{0}”不存在",
       "paramirregularexception":{
         "a":"参数“{0}”不符合格式要求",
@@ -2124,8 +2117,7 @@
           "b":"${DATA.replaceable_task}【${DATA.processTaskStepName}】 删除附件"
         },
         "condition":{
-          "a":"条件",
-          "b":""
+          "a":"条件"
         },
         "transfer":{
           "a":"转交",
@@ -2189,11 +2181,6 @@
       },
       "conditionoptions":{
         "stepteam":"处理组"
-      },
-      "processworkcentertype":{
-        "factory":"",
-        "system":"",
-        "custom":""
       },
       "processsqltypeenum":{
         "field":"选择字段",
@@ -2365,11 +2352,6 @@
         "ownercompanylist":"上报人公司列表",
         "process_task_redo_content":"工单重新打开原因",
         "process_task_recover_content":"工单恢复原因"
-      },
-      "slastatus":{
-        "doing":"",
-        "done":"",
-        "pause":""
       },
       "channeltypesqltable":{
         "fieldenum":{
@@ -3392,10 +3374,6 @@
           "b":"邮件通知发生异常时触发通知"
         }
       },
-      "httpmethod":{
-        "post":"",
-        "get":""
-      },
       "userprofileoperate":{
         "back_team_list":"返回用户组列表",
         "edit_team":"编辑用户组",
@@ -3447,16 +3425,6 @@
         "search":"查询",
         "create":"增加"
       },
-      "changetype":{
-        "fillblank":"",
-        "update":"",
-        "insert":"",
-        "delete":""
-      },
-      "audittype":{
-        "integration_audit":"",
-        "api_audit":""
-      },
       "formhandler":{
         "formtableinputer":"表格输入组件",
         "formcascader":"级联下拉框",
@@ -3481,11 +3449,6 @@
       },
       "aggregatetype":{
         "sum":"求和"
-      },
-      "frameworkrequestfrom":{
-        "form":"",
-        "test":"",
-        "api":""
       },
       "inspectstatus":{
         "warn":"告警",
@@ -3518,9 +3481,6 @@
         "vip_user":"vip用户",
         "login_team":"当前登录人所在组",
         "login_center":"当前登录人所在中心"
-      },
-      "requestfrom":{
-        "matrix":""
       },
       "httpprotocol":{
         "http":{
@@ -3581,9 +3541,7 @@
         "notissued":"未下发",
         "failed":"同步失败",
         "issued":"已下发",
-        "done":"同步完成",
-        "building":"",
-        "builded":""
+        "done":"同步完成"
       },
       "paramtype":{
         "array":"数组",
@@ -3600,11 +3558,6 @@
         "right":"right",
         "both":"both"
       },
-      "apianonymousaccesssupportenum":{
-        "anonymous_access_forbidden":"",
-        "anonymous_access_with_encryption":"",
-        "anonymous_access_without_encryption":""
-      },
       "dashboardshowconfig":{
         "groupfield":"分组条件",
         "refreshtime":"刷新时间",
@@ -3612,18 +3565,10 @@
         "subgroupfield":"二级分组条件",
         "aggregate":"聚合方式"
       },
-      "rejectsource":{
-        "api":"",
-        "tenant":""
-      },
       "fieldtype":{
         "date":{
           "a":"日期"
         }
-      },
-      "exportfiletype":{
-        "excel":"",
-        "csv":""
       },
       "matrixattributetype":{
         "team":"分组"
@@ -3641,22 +3586,11 @@
         "audit":"操作审计目录",
         "custom":"自定义接口目录"
       },
-      "chinesefont":{
-        "simfang":"",
-        "stfangso":"",
-        "simkai":"",
-        "simsum":"",
-        "simhei":""
-      },
       "charttype":{
         "donutchart":"环形图",
         "columnchart":"条形图",
         "stackcolumnchart":"堆叠条形图",
         "stackbarchart":"堆叠柱状图"
-      },
-      "bodytype":{
-        "x-www-form-urlencoded":"",
-        "raw":""
       },
       "notifyrecipienttype":{
         "processusertype":"工单干系人",
@@ -3665,10 +3599,6 @@
       "conversiontype":{
         "totext":"value转换成text",
         "tovalue":"text转换成value"
-      },
-      "event":{
-        "committed":"",
-        "completed":""
       },
       "movetype":{
         "next":"移动到目标节点后面",
@@ -3700,26 +3630,6 @@
         "exclude":"不包括",
         "between":"属于"
       },
-      "formhandlertype":{
-        "date":{
-          "a":""
-        },
-        "editor":"",
-        "select":"",
-        "timeselect":"",
-        "teamselect":"",
-        "cascadelist":"",
-        "tree":"",
-        "textarea":"",
-        "userselect":"",
-        "radio":"",
-        "input":"",
-        "datetime":"",
-        "checkbox":"",
-        "time":{
-          "a":""
-        }
-      },
       "groupsearch":{
         "role":"角色类型",
         "common":"公共类型",
@@ -3730,15 +3640,6 @@
         "fang_song":"仿宋",
         "black":"黑体"
       },
-      "contenttype":{
-        "content_type_text_html":"",
-        "content_type_application_json":"",
-        "content_type_multipart_form_data":{
-          "a":""
-        },
-        "content_type_multipart_form_data_file_stream":"",
-        "content_type_application_form":""
-      },
       "apiparamtype":{
         "regex":"正则表达式",
         "boolean":"布尔型",
@@ -3747,11 +3648,6 @@
         "ip":"ip",
         "long":"长整型",
         "enum":"枚举型"
-      },
-      "doctype":{
-        "excel":"",
-        "pdf":"",
-        "word":""
       },
       "teamlevel":{
         "center":"中心",
@@ -3769,34 +3665,9 @@
       "linehandler":{
         "text":"纯文本"
       },
-      "mimetype":{
-        "jpg":"",
-        "xlsx":"",
-        "txt":"",
-        "pdf":"",
-        "stream":"",
-        "ppt":"",
-        "gif":"",
-        "doc":{
-          "a":""
-        },
-        "html":"",
-        "xls":{
-          "a":""
-        },
-        "docx":""
-      },
       "apikind":{
         "system":"内部接口",
         "custom":"外部接口"
-      },
-      "viplevel":{
-        "a":"",
-        "b":"",
-        "c":"",
-        "d":"",
-        "e":"",
-        "f":""
       }
     },
     "report":{
