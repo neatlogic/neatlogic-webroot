@@ -16,12 +16,27 @@
       "input": {
         "param": {
           "desc": {
-            "conditionconfig": "Condition settings, if left blank, use the conditions saved in the database"
+            "conditionconfig": "Condition settings, if left blank, use the conditions saved in the database",
+            "headerlist": "Displayed Fields"
           }
         }
       },
       "description": {
         "desc": "Work Order Center Search Interface"
+      }
+    }
+  },
+  "nmrap": {
+    "savepriorityapi": {
+      "input": {
+        "param": {
+          "desc": {
+            "id": "Priority ID, does not provide a representative for adding"
+          }
+        }
+      },
+      "description": {
+        "desc": "Save Priority"
       }
     }
   }

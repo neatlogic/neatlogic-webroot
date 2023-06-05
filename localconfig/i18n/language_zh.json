@@ -16,12 +16,27 @@
       "input": {
         "param": {
           "desc": {
-            "conditionconfig": "条件设置，为空则使用数据库中保存的条件"
+            "conditionconfig": "条件设置，为空则使用数据库中保存的条件",
+            "headerlist": "显示的字段"
           }
         }
       },
       "description": {
         "desc": "工单中心搜索接口"
+      }
+    }
+  },
+  "nmrap": {
+    "savepriorityapi": {
+      "input": {
+        "param": {
+          "desc": {
+            "id": "优先级id，不提供代表新增"
+          }
+        }
+      },
+      "description": {
+        "desc": "保存优先级"
       }
     }
   }
