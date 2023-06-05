@@ -1,1 +1,28 @@
-{}
+{
+  "common": {
+    "int": "int",
+    "sort": "sort",
+    "currentpage": "current page",
+    "pagesize": "page size",
+    "pagecount": "page count",
+    "theadlist": "thead list",
+    "tbodylist": "tbody list",
+    "typeuuid": "type uuid"
+  },
+  "term": {},
+  "nmpaw": {
+    "searchworkcenterapi": {
+      "getname": "Work Order Center Search Interface",
+      "input": {
+        "param": {
+          "desc": {
+            "conditionconfig": "Condition settings, if left blank, use the conditions saved in the database"
+          }
+        }
+      },
+      "description": {
+        "desc": "Work Order Center Search Interface"
+      }
+    }
+  }
+}

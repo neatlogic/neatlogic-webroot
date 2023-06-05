@@ -1,1 +1,28 @@
-{}
+{
+  "common": {
+    "int": "整形",
+    "sort": "排序",
+    "currentpage": "当前页数",
+    "pagesize": "每页数据条目",
+    "pagecount": "总页数",
+    "theadlist": "展示的字段",
+    "tbodylist": "展示的值",
+    "typeuuid": "分类uuid"
+  },
+  "term": {},
+  "nmpaw": {
+    "searchworkcenterapi": {
+      "getname": "工单中心搜索",
+      "input": {
+        "param": {
+          "desc": {
+            "conditionconfig": "条件设置，为空则使用数据库中保存的条件"
+          }
+        }
+      },
+      "description": {
+        "desc": "工单中心搜索接口"
+      }
+    }
+  }
+}
