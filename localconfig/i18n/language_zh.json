@@ -39,5 +39,11 @@
         "desc": "保存优先级"
       }
     }
+  },
+  "nfral": {
+    "priority_manage": {
+      "getauthdisplayname": "优先级管理权限",
+      "getauthintroduction": "对优先级进行新增、编辑和删除"
+    }
   }
 }

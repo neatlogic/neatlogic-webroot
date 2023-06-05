@@ -39,5 +39,11 @@
         "desc": "Save Priority"
       }
     }
+  },
+  "nfral": {
+    "priority_manage": {
+      "getauthdisplayname": "Priority management permissions",
+      "getauthintroduction": "Adding, editing, and deleting priorities"
+    }
   }
 }
