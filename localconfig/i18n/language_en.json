@@ -1,17 +1,25 @@
 {
   "common": {
-    "int": "int",
-    "sort": "sort",
     "currentpage": "current page",
-    "pagesize": "page size",
+    "int": "int",
     "pagecount": "page count",
-    "theadlist": "thead list",
+    "pagesize": "page size",
+    "sort": "sort",
     "tbodylist": "tbody list",
+    "theadlist": "thead list",
     "typeuuid": "type uuid"
   },
-  "term": {},
+  "nfral": {
+    "priority_manage": {
+      "getauthdisplayname": "Priority management permissions",
+      "getauthintroduction": "Adding, editing, and deleting priorities"
+    }
+  },
   "nmpaw": {
     "searchworkcenterapi": {
+      "description": {
+        "desc": "Work Order Center Search Interface"
+      },
       "getname": "Work Order Center Search Interface",
       "input": {
         "param": {
@@ -20,30 +28,32 @@
             "headerlist": "Displayed Fields"
           }
         }
-      },
-      "description": {
-        "desc": "Work Order Center Search Interface"
       }
+    }
+  },
+  "nmraa": {
+    "getappapi": {
+      "getname": "Obtain application information"
+    }
+  },
+  "nmrai": {
+    "clearparentissueapi": {
+      "getname": "Clear Parent Task Relationship"
     }
   },
   "nmrap": {
     "savepriorityapi": {
+      "description": {
+        "desc": "Save Priority"
+      },
       "input": {
         "param": {
           "desc": {
             "id": "Priority ID, does not provide a representative for adding"
           }
         }
-      },
-      "description": {
-        "desc": "Save Priority"
       }
     }
   },
-  "nfral": {
-    "priority_manage": {
-      "getauthdisplayname": "Priority management permissions",
-      "getauthintroduction": "Adding, editing, and deleting priorities"
-    }
-  }
+  "term": {}
 }

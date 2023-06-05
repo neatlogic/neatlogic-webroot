@@ -1,17 +1,25 @@
 {
   "common": {
-    "int": "整形",
-    "sort": "排序",
     "currentpage": "当前页数",
-    "pagesize": "每页数据条目",
+    "int": "整形",
     "pagecount": "总页数",
-    "theadlist": "展示的字段",
+    "pagesize": "每页数据条目",
+    "sort": "排序",
     "tbodylist": "展示的值",
+    "theadlist": "展示的字段",
     "typeuuid": "分类uuid"
   },
-  "term": {},
+  "nfral": {
+    "priority_manage": {
+      "getauthdisplayname": "优先级管理权限",
+      "getauthintroduction": "对优先级进行新增、编辑和删除"
+    }
+  },
   "nmpaw": {
     "searchworkcenterapi": {
+      "description": {
+        "desc": "工单中心搜索接口"
+      },
       "getname": "工单中心搜索",
       "input": {
         "param": {
@@ -20,30 +28,32 @@
             "headerlist": "显示的字段"
           }
         }
-      },
-      "description": {
-        "desc": "工单中心搜索接口"
       }
+    }
+  },
+  "nmraa": {
+    "getappapi": {
+      "getname": "获取应用信息"
+    }
+  },
+  "nmrai": {
+    "clearparentissueapi": {
+      "getname": "清除父任务关系"
     }
   },
   "nmrap": {
     "savepriorityapi": {
+      "description": {
+        "desc": "保存优先级"
+      },
       "input": {
         "param": {
           "desc": {
             "id": "优先级id，不提供代表新增"
           }
         }
-      },
-      "description": {
-        "desc": "保存优先级"
       }
     }
   },
-  "nfral": {
-    "priority_manage": {
-      "getauthdisplayname": "优先级管理权限",
-      "getauthintroduction": "对优先级进行新增、编辑和删除"
-    }
-  }
+  "term": {}
 }
