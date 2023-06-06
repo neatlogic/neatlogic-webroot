@@ -2,6 +2,8 @@
   "common": {
     "color": "colour",
     "currentpage": "current page",
+    "email": "mailbox",
+    "failedcount": "Number of errors",
     "int": "int",
     "name": "name",
     "pagecount": "page count",
@@ -9,7 +11,8 @@
     "sort": "sort",
     "tbodylist": "tbody list",
     "theadlist": "thead list",
-    "typeuuid": "type uuid"
+    "typeuuid": "type uuid",
+    "validcode": "Verification code"
   },
   "nfral": {
     "priority_manage": {
