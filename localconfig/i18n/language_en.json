@@ -1,13 +1,16 @@
 {
   "common": {
     "currentpage": "current page",
+    "email": "mailbox",
+    "failedcount": "Number of errors",
     "int": "int",
     "pagecount": "page count",
     "pagesize": "page size",
     "sort": "sort",
     "tbodylist": "tbody list",
     "theadlist": "thead list",
-    "typeuuid": "type uuid"
+    "typeuuid": "type uuid",
+    "validcode": "Verification code"
   },
   "nfral": {
     "priority_manage": {
