@@ -1,7 +1,9 @@
 {
   "common": {
+    "color": "colour",
     "currentpage": "current page",
     "int": "int",
+    "name": "name",
     "pagecount": "page count",
     "pagesize": "page size",
     "sort": "sort",
@@ -13,6 +15,11 @@
     "priority_manage": {
       "getauthdisplayname": "Priority management permissions",
       "getauthintroduction": "Adding, editing, and deleting priorities"
+    }
+  },
+  "nfre": {
+    "priorityisinusedexception": {
+      "priorityisinusedexception": "Priority \u0027{0}\u0027 is currently in use"
     }
   },
   "nmpaw": {
@@ -33,7 +40,12 @@
   },
   "nmraa": {
     "getappapi": {
-      "getname": "Obtain application information"
+      "getname": "Obtain application information",
+      "input": {
+        "param": {
+          "desc": "Application ID"
+        }
+      }
     }
   },
   "nmrai": {
@@ -42,6 +54,14 @@
     }
   },
   "nmrap": {
+    "deletepriorityapi": {
+      "getname": "Delete Priority",
+      "input": {
+        "param": {
+          "desc": "Priority ID"
+        }
+      }
+    },
     "savepriorityapi": {
       "description": {
         "desc": "Save Priority"
@@ -50,6 +70,16 @@
         "param": {
           "desc": {
             "id": "Priority ID, does not provide a representative for adding"
+          }
+        }
+      }
+    },
+    "updateprioritysortapi": {
+      "getname": "Update priority sorting",
+      "input": {
+        "param": {
+          "desc": {
+            "prioritylist": "Priority List "
           }
         }
       }

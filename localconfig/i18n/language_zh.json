@@ -1,7 +1,9 @@
 {
   "common": {
+    "color": "颜色",
     "currentpage": "当前页数",
     "int": "整形",
+    "name": "名称",
     "pagecount": "总页数",
     "pagesize": "每页数据条目",
     "sort": "排序",
@@ -13,6 +15,11 @@
     "priority_manage": {
       "getauthdisplayname": "优先级管理权限",
       "getauthintroduction": "对优先级进行新增、编辑和删除"
+    }
+  },
+  "nfre": {
+    "priorityisinusedexception": {
+      "priorityisinusedexception": "优先级“{0}”正在使用中"
     }
   },
   "nmpaw": {
@@ -33,7 +40,12 @@
   },
   "nmraa": {
     "getappapi": {
-      "getname": "获取应用信息"
+      "getname": "获取应用信息",
+      "input": {
+        "param": {
+          "desc": "应用id"
+        }
+      }
     }
   },
   "nmrai": {
@@ -42,6 +54,14 @@
     }
   },
   "nmrap": {
+    "deletepriorityapi": {
+      "getname": "删除优先级",
+      "input": {
+        "param": {
+          "desc": "优先级id"
+        }
+      }
+    },
     "savepriorityapi": {
       "description": {
         "desc": "保存优先级"
@@ -50,6 +70,16 @@
         "param": {
           "desc": {
             "id": "优先级id，不提供代表新增"
+          }
+        }
+      }
+    },
+    "updateprioritysortapi": {
+      "getname": "更新优先级排序",
+      "input": {
+        "param": {
+          "desc": {
+            "prioritylist": "优先级列表"
           }
         }
       }
