@@ -2,17 +2,24 @@
   "common": {
     "color": "colour",
     "currentpage": "current page",
-    "email": "mailbox",
+    "email": "mail",
     "failedcount": "Number of errors",
     "int": "int",
     "name": "name",
+    "isactive": "Activate or not",
+    "isregister": "Register or not",
     "pagecount": "page count",
     "pagesize": "page size",
+    "password": "password",
     "sort": "sort",
     "tbodylist": "tbody list",
+    "tel": "Mobile phone number",
     "theadlist": "thead list",
     "typeuuid": "type uuid",
-    "validcode": "Verification code"
+    "userid": "User ID",
+    "username": "User Name",
+    "useruuid": "User uuid",
+    "validcode": "Registration verification code"
   },
   "nfral": {
     "priority_manage": {
@@ -23,6 +30,22 @@
   "nfre": {
     "priorityisinusedexception": {
       "priorityisinusedexception": "Priority \u0027{0}\u0027 is currently in use"
+    }
+  },
+  "nmmam": {
+    "masterusersaveapi": {
+      "description": {
+        "desc": "System User Save Interface"
+      },
+      "getname": "System User Save"
+    }
+  },
+  "nmmar": {
+    "sendvalidcodeapi": {
+      "description": {
+        "desc": "Send the registration verification code to the corresponding email address"
+      },
+      "getname": "Send registration verification code"
     }
   },
   "nmpaw": {
