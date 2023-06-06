@@ -1,21 +1,44 @@
 {
   "common": {
     "currentpage": "当前页数",
-    "email": "邮箱",
+    "email": "邮件",
     "failedcount": "错误次数",
     "int": "整形",
+    "isactive": "是否激活",
+    "isregister": "是否注册",
     "pagecount": "总页数",
     "pagesize": "每页数据条目",
+    "password": "密码",
     "sort": "排序",
     "tbodylist": "展示的值",
+    "tel": "手机号",
     "theadlist": "展示的字段",
     "typeuuid": "分类uuid",
-    "validcode": "验证码"
+    "userid": "用户ID",
+    "username": "用户名称",
+    "useruuid": "用户uuid",
+    "validcode": "注册验证码"
   },
   "nfral": {
     "priority_manage": {
       "getauthdisplayname": "优先级管理权限",
       "getauthintroduction": "对优先级进行新增、编辑和删除"
+    }
+  },
+  "nmmam": {
+    "masterusersaveapi": {
+      "description": {
+        "desc": "系统用户保存接口"
+      },
+      "getname": "系统用户保存"
+    }
+  },
+  "nmmar": {
+    "sendvalidcodeapi": {
+      "description": {
+        "desc": "发送注册验证码到对应邮箱"
+      },
+      "getname": "发送注册验证码"
     }
   },
   "nmpaw": {
