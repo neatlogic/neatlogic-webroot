@@ -1,17 +1,26 @@
 {
   "common": {
+    "catalog": "catalogue",
     "color": "colour",
     "currentpage": "current page",
+    "customattribute": "Custom Properties",
+    "displaymode": "display mode",
     "email": "mail",
     "failedcount": "Number of errors",
     "int": "int",
-    "name": "name",
     "isactive": "Activate or not",
+    "isend": "Completed or not",
     "isregister": "Register or not",
+    "iteration": "iteration",
+    "keyword": "keyword",
+    "name": "name",
     "pagecount": "page count",
     "pagesize": "page size",
     "password": "password",
+    "priority": "priority",
     "sort": "sort",
+    "status": "state",
+    "tag": "label",
     "tbodylist": "tbody list",
     "tel": "Mobile phone number",
     "theadlist": "thead list",
@@ -19,7 +28,8 @@
     "userid": "User ID",
     "username": "User Name",
     "useruuid": "User uuid",
-    "validcode": "Registration verification code"
+    "validcode": "Registration verification code",
+    "worker": "Processed by"
   },
   "nfral": {
     "priority_manage": {
@@ -30,6 +40,9 @@
   "nfre": {
     "priorityisinusedexception": {
       "priorityisinusedexception": "Priority \u0027{0}\u0027 is currently in use"
+    },
+    "prioritynameisexistsexception": {
+      "prioritynameisexistsexception": "Priority \u0027{0}\u0027 already exists"
     }
   },
   "nmmam": {
@@ -77,6 +90,17 @@
   "nmrai": {
     "clearparentissueapi": {
       "getname": "Clear Parent Task Relationship"
+    },
+    "searchissueapi": {
+      "getname": "Search Task",
+      "input": {
+        "param": {
+          "desc": {
+            "fromid": "Source Task ID",
+            "toid": "Target Task ID"
+          }
+        }
+      }
     }
   },
   "nmrap": {
