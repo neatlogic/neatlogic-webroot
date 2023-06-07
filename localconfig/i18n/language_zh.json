@@ -1,14 +1,24 @@
 {
   "common": {
+    "attributelist": "属性列表",
     "catalog": "目录",
+    "catalogid": "目录id",
+    "catalogname": "目录名称",
     "cnname": "中文名称",
     "color": "颜色",
+    "comment": "评论",
+    "commentcount": "评论数量",
+    "content": "内容",
+    "createdate": "创建日期",
+    "createuser": "创建者",
+    "createusername": "创建者名称",
     "currentpage": "当前页数",
     "customattribute": "自定义属性",
     "displaymode": "显示模式",
     "displaytype": "显示类型",
     "email": "邮件",
     "failedcount": "错误次数",
+    "filelist": "附件列表",
     "group": "分组",
     "int": "整形",
     "isactive": "是否激活",
@@ -24,15 +34,23 @@
     "pagesize": "每页数据条目",
     "password": "密码",
     "priority": "优先级",
+    "prioritycolor": "优先级颜色",
+    "priorityname": "优先级名称",
     "sort": "排序",
     "status": "状态",
+    "statuscolor": "状态颜色",
+    "statusname": "状态名称",
+    "statusuniquename": "状态唯一标识",
     "tag": "标签",
+    "taglist": "标签列表",
     "tbodylist": "展示的值",
     "tel": "手机号",
     "theadlist": "展示的字段",
     "typeuuid": "分类uuid",
     "uniquename": "唯一标识",
     "userid": "用户ID",
+    "useridlist": "用户id列表",
+    "userinfolist": "用户信息列表",
     "username": "用户名称",
     "useruuid": "用户uuid",
     "validcode": "注册验证码",
@@ -135,6 +153,9 @@
           "desc": "应用id"
         }
       }
+    },
+    "listprivateattrapi": {
+      "getname": "获取所有内部属性"
     }
   },
   "nmrai": {
@@ -202,7 +223,20 @@
       "validatorid": "验证规则id"
     },
     "rdm": {
-      "commonid": "评论id"
+      "appcolor": "应用颜色",
+      "apptype": "应用类型",
+      "auditcount": "修改历史数量",
+      "childrentaskcount": "子任务数量",
+      "commonid": "评论id",
+      "enddate": "预计结束",
+      "isend": "是否结束",
+      "ismytask": "是否我的任务",
+      "iterationid": "迭代id",
+      "iterationname": "迭代名称",
+      "parenttaskid": "父任务id",
+      "projectid": "项目id",
+      "relativetasklist": "关联任务列表",
+      "startdate": "预计开始"
     }
   }
 }

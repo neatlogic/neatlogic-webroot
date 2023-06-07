@@ -1,14 +1,24 @@
 {
   "common": {
+    "attributelist": "Attribute List",
     "catalog": "catalogue",
+    "catalogid": "Directory ID",
+    "catalogname": "Directory Name",
     "cnname": "Chinese name",
     "color": "colour",
+    "comment": "comment",
+    "commentcount": "Number of comments",
+    "content": "content",
+    "createdate": "Created on",
+    "createuser": "creator",
+    "createusername": "Creator Name",
     "currentpage": "current page",
     "customattribute": "Custom Properties",
     "displaymode": "display mode",
     "displaytype": "Display Type",
     "email": "mail",
     "failedcount": "Number of errors",
+    "filelist": "Attachment List",
     "group": "grouping",
     "int": "int",
     "isactive": "Activate or not",
@@ -24,15 +34,23 @@
     "pagesize": "page size",
     "password": "password",
     "priority": "priority",
+    "prioritycolor": "Priority Color",
+    "priorityname": "Priority Name",
     "sort": "sort",
     "status": "state",
+    "statuscolor": "Status Color",
+    "statusname": "Status Name",
+    "statusuniquename": "State Unique Identification",
     "tag": "label",
+    "taglist": "Label List",
     "tbodylist": "tbody list",
     "tel": "Mobile phone number",
     "theadlist": "thead list",
     "typeuuid": "type uuid",
     "uniquename": "Unique identification",
     "userid": "User ID",
+    "useridlist": "User ID List",
+    "userinfolist": "User Information List",
     "username": "User Name",
     "useruuid": "User uuid",
     "validcode": "Registration verification code",
@@ -135,6 +153,9 @@
           "desc": "Application ID"
         }
       }
+    },
+    "listprivateattrapi": {
+      "getname": "Get all internal properties"
     }
   },
   "nmrai": {
@@ -202,7 +223,20 @@
       "validatorid": "Validation Rule ID"
     },
     "rdm": {
-      "commonid": "Comment ID"
+      "appcolor": "Apply Color",
+      "apptype": "Application Type",
+      "auditcount": "Modify Historical Quantity",
+      "childrentaskcount": "Number of subtasks",
+      "commonid": "Comment ID",
+      "enddate": "Expected end",
+      "isend": "Is it over",
+      "ismytask": "Is it my task",
+      "iterationid": "Iteration ID",
+      "iterationname": "Iteration Name",
+      "parenttaskid": "Parent Task ID",
+      "projectid": "Project ID",
+      "relativetasklist": "Associated Task List",
+      "startdate": "Expected start"
     }
   }
 }
