@@ -1,18 +1,24 @@
 {
   "common": {
     "catalog": "catalogue",
+    "cnname": "Chinese name",
     "color": "colour",
     "currentpage": "current page",
     "customattribute": "Custom Properties",
     "displaymode": "display mode",
+    "displaytype": "Display Type",
     "email": "mail",
     "failedcount": "Number of errors",
+    "group": "grouping",
     "int": "int",
     "isactive": "Activate or not",
     "isend": "Completed or not",
     "isregister": "Register or not",
+    "isrequired": "Is it mandatory",
+    "isunique": "Is it unique",
     "iteration": "iteration",
     "keyword": "keyword",
+    "memo": "Remarks",
     "name": "name",
     "pagecount": "page count",
     "pagesize": "page size",
@@ -25,6 +31,7 @@
     "tel": "Mobile phone number",
     "theadlist": "thead list",
     "typeuuid": "type uuid",
+    "uniquename": "Unique identification",
     "userid": "User ID",
     "username": "User Name",
     "useruuid": "User uuid",
@@ -43,6 +50,49 @@
     },
     "prioritynameisexistsexception": {
       "prioritynameisexistsexception": "Priority \u0027{0}\u0027 already exists"
+    }
+  },
+  "nmcaa": {
+    "deleteattrapi": {
+      "getname": "Delete Model Properties"
+    },
+    "getattrapi": {
+      "getname": "Get attribute details",
+      "input": {
+        "param": {
+          "desc": {
+            "id": "Attribute ID"
+          }
+        }
+      }
+    },
+    "getattrlistapi": {
+      "input": {
+        "param": {
+          "desc": {
+            "idlist": "Attribute ID List"
+          }
+        }
+      }
+    },
+    "getciattrlistapi": {
+      "getname": "Obtain a list of model properties"
+    },
+    "listattrtypeapi": {
+      "getname": "Get Property Type"
+    },
+    "saveattrapi": {
+      "getname": "Save Model Properties",
+      "input": {
+        "param": {
+          "desc": {
+            "inputtype": "Input type, manual input | automatic discovery"
+          }
+        }
+      }
+    },
+    "searchattrapi": {
+      "getname": "Query Properties"
     }
   },
   "nmmam": {
@@ -91,6 +141,9 @@
     "clearparentissueapi": {
       "getname": "Clear Parent Task Relationship"
     },
+    "deletecommentapi": {
+      "getname": "Delete Comment"
+    },
     "searchissueapi": {
       "getname": "Search Task",
       "input": {
@@ -135,5 +188,21 @@
       }
     }
   },
-  "term": {}
+  "term": {
+    "cmdb": {
+      "addid": "ID, do not provide a representative to add",
+      "allowedit": "Allow editing",
+      "attrconfig": "Attribute Configuration",
+      "attrtype": "Attribute Type",
+      "ciid": "Model ID",
+      "issimpleattribute": "Is it a simple attribute",
+      "targetciid": "Target Model ID",
+      "validateconfig": "proof setup ",
+      "validatehandler": "Verification component",
+      "validatorid": "Validation Rule ID"
+    },
+    "rdm": {
+      "commonid": "Comment ID"
+    }
+  }
 }

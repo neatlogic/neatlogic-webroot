@@ -1,18 +1,24 @@
 {
   "common": {
     "catalog": "目录",
+    "cnname": "中文名称",
     "color": "颜色",
     "currentpage": "当前页数",
     "customattribute": "自定义属性",
     "displaymode": "显示模式",
+    "displaytype": "显示类型",
     "email": "邮件",
     "failedcount": "错误次数",
+    "group": "分组",
     "int": "整形",
     "isactive": "是否激活",
     "isend": "是否完结",
     "isregister": "是否注册",
+    "isrequired": "是否必填",
+    "isunique": "是否唯一",
     "iteration": "迭代",
     "keyword": "关键字",
+    "memo": "备注",
     "name": "名称",
     "pagecount": "总页数",
     "pagesize": "每页数据条目",
@@ -25,6 +31,7 @@
     "tel": "手机号",
     "theadlist": "展示的字段",
     "typeuuid": "分类uuid",
+    "uniquename": "唯一标识",
     "userid": "用户ID",
     "username": "用户名称",
     "useruuid": "用户uuid",
@@ -43,6 +50,49 @@
     },
     "prioritynameisexistsexception": {
       "prioritynameisexistsexception": "优先级“{0}”已存在"
+    }
+  },
+  "nmcaa": {
+    "deleteattrapi": {
+      "getname": "删除模型属性"
+    },
+    "getattrapi": {
+      "getname": "获取属性详细信息",
+      "input": {
+        "param": {
+          "desc": {
+            "id": "属性id"
+          }
+        }
+      }
+    },
+    "getattrlistapi": {
+      "input": {
+        "param": {
+          "desc": {
+            "idlist": "属性id列表"
+          }
+        }
+      }
+    },
+    "getciattrlistapi": {
+      "getname": "获取模型属性列表"
+    },
+    "listattrtypeapi": {
+      "getname": "获取属性类型"
+    },
+    "saveattrapi": {
+      "getname": "保存模型属性",
+      "input": {
+        "param": {
+          "desc": {
+            "inputtype": "输入类型，人工录入|自动发现"
+          }
+        }
+      }
+    },
+    "searchattrapi": {
+      "getname": "查询属性"
     }
   },
   "nmmam": {
@@ -91,6 +141,9 @@
     "clearparentissueapi": {
       "getname": "清除父任务关系"
     },
+    "deletecommentapi": {
+      "getname": "删除评论"
+    },
     "searchissueapi": {
       "getname": "搜索任务",
       "input": {
@@ -135,5 +188,21 @@
       }
     }
   },
-  "term": {}
+  "term": {
+    "cmdb": {
+      "addid": "id，不提供代表添加",
+      "allowedit": "是否允许编辑",
+      "attrconfig": "属性配置",
+      "attrtype": "属性类型",
+      "ciid": "模型id",
+      "issimpleattribute": "是否简单属性",
+      "targetciid": "目标模型id",
+      "validateconfig": "校验设置",
+      "validatehandler": "校验组件",
+      "validatorid": "验证规则id"
+    },
+    "rdm": {
+      "commonid": "评论id"
+    }
+  }
 }
