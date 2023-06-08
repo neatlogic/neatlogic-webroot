@@ -256,6 +256,17 @@
         }
       }
     },
+    "saveprojectapi": {
+      "getname": "Save Project",
+      "input": {
+        "param": {
+          "desc": {
+            "id": "ID, does not provide a representative for adding new projects",
+            "memberidlist": "List of project member IDs"
+          }
+        }
+      }
+    },
     "searchprojectapi": {
       "getname": "Query items"
     },
@@ -313,11 +324,12 @@
       "projectid": "Project ID",
       "projectleader": "Project leader",
       "projectmember": "Project members",
+      "projectname": "entry name",
       "projectowner": "Project Owner",
       "projecttype": "Project Type",
       "relativetasklist": "Associated Task List",
       "startdate": "Expected start",
-      "startenddate": "Start Date - End Date"
+      "startenddate": "Starting and ending dates"
     }
   }
 }
