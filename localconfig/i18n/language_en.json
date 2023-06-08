@@ -1,5 +1,9 @@
 {
+  "commom": {
+    "progress": "schedule"
+  },
   "common": {
+    "actiontype": "Operation type",
     "attributelist": "Attribute List",
     "catalog": "catalogue",
     "catalogid": "Directory ID",
@@ -9,26 +13,42 @@
     "comment": "comment",
     "commentcount": "Number of comments",
     "content": "content",
+    "create": "establish",
     "createdate": "Created on",
+    "createrobject": "Creator Object",
     "createuser": "creator",
     "createusername": "Creator Name",
     "currentpage": "current page",
     "customattribute": "Custom Properties",
+    "description": "explain",
     "displaymode": "display mode",
     "displaytype": "Display Type",
+    "edit": "modify",
+    "editdate": "modification date",
+    "editmode": "Editing mode",
+    "editor": "Modified by",
+    "editorname": "Modifier Name",
+    "editorobject": "Modifier Object",
     "email": "mail",
+    "enddate": "End date",
     "failedcount": "Number of errors",
+    "fileid": "File ID",
     "filelist": "Attachment List",
+    "fileparamname": "Attachment parameter name",
+    "filetype": "Attachment Type",
     "group": "grouping",
     "int": "int",
     "isactive": "Activate or not",
     "isend": "Completed or not",
+    "isexpired": "Expired or not",
     "isregister": "Register or not",
     "isrequired": "Is it mandatory",
     "isunique": "Is it unique",
     "iteration": "iteration",
     "keyword": "keyword",
+    "loglist": "Log List",
     "memo": "Remarks",
+    "mustinput": "Required",
     "name": "name",
     "pagecount": "page count",
     "pagesize": "page size",
@@ -37,6 +57,7 @@
     "prioritycolor": "Priority Color",
     "priorityname": "Priority Name",
     "sort": "sort",
+    "startdate": "Start date",
     "status": "state",
     "statuscolor": "Status Color",
     "statusname": "Status Name",
@@ -45,12 +66,16 @@
     "taglist": "Label List",
     "tbodylist": "tbody list",
     "tel": "Mobile phone number",
+    "templateid": "Template ID",
     "theadlist": "thead list",
+    "toomanyoption": "Too many options, other options will not be displayed",
     "typeuuid": "type uuid",
+    "unique": "only",
     "uniquename": "Unique identification",
     "userid": "User ID",
     "useridlist": "User ID List",
     "userinfolist": "User Information List",
+    "userlist": "User List",
     "username": "User Name",
     "useruuid": "User uuid",
     "validcode": "Registration verification code",
@@ -111,6 +136,39 @@
     },
     "searchattrapi": {
       "getname": "Query Properties"
+    }
+  },
+  "nmcab": {
+    "deletebatchimportfileapi": {
+      "getname": "Delete bulk import files"
+    },
+    "firebatchimportapi": {
+      "getname": "Initiate bulk import",
+      "input": {
+        "param": {
+          "desc": {
+            "action": "Append: only add; Update: only update; All: Add\u0026Update"
+          }
+        }
+      }
+    },
+    "getbatchimportauditapi": {
+      "getname": "Obtain individual configuration item import logs"
+    },
+    "getbatchimportfilelistapi": {
+      "getname": "Obtain batch import files"
+    },
+    "getimporttemplateapi": {
+      "getname": "Download Configuration Item Import Template"
+    },
+    "searchbatchimportauditapi": {
+      "getname": "Query batch import logs"
+    },
+    "stopbatchimportapi": {
+      "getname": "Stop bulk import"
+    },
+    "uploadbatchimportfileapi": {
+      "getname": "Upload batch import files"
     }
   },
   "nmmam": {
@@ -198,6 +256,9 @@
         }
       }
     },
+    "searchprojectapi": {
+      "getname": "Query items"
+    },
     "updateprioritysortapi": {
       "getname": "Update priority sorting",
       "input": {
@@ -209,14 +270,24 @@
       }
     }
   },
+  "ocommn": {
+    "isneedpage": "Do you need pagination"
+  },
+  "page": {
+    "isclose": "Whether to close",
+    "ismine": "Is it mine"
+  },
   "term": {
     "cmdb": {
       "addid": "ID, do not provide a representative to add",
       "allowedit": "Allow editing",
       "attrconfig": "Attribute Configuration",
+      "attridlist": "Model Attribute ID List",
       "attrtype": "Attribute Type",
       "ciid": "Model ID",
+      "importauditid": "Import Record ID",
       "issimpleattribute": "Is it a simple attribute",
+      "relidlist": "Model Relationship ID List",
       "targetciid": "Target Model ID",
       "validateconfig": "proof setup ",
       "validatehandler": "Verification component",
@@ -224,6 +295,7 @@
     },
     "rdm": {
       "appcolor": "Apply Color",
+      "applist": "Application List",
       "apptype": "Application Type",
       "auditcount": "Modify Historical Quantity",
       "childrentaskcount": "Number of subtasks",
@@ -234,9 +306,18 @@
       "iterationid": "Iteration ID",
       "iterationname": "Iteration Name",
       "parenttaskid": "Parent Task ID",
+      "project": {
+        "manageridlist": "List of project leader IDs",
+        "useridlist": "List of project member user IDs"
+      },
       "projectid": "Project ID",
+      "projectleader": "Project leader",
+      "projectmember": "Project members",
+      "projectowner": "Project Owner",
+      "projecttype": "Project Type",
       "relativetasklist": "Associated Task List",
-      "startdate": "Expected start"
+      "startdate": "Expected start",
+      "startenddate": "Start Date - End Date"
     }
   }
 }

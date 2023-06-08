@@ -1,5 +1,9 @@
 {
+  "commom": {
+    "progress": "进度"
+  },
   "common": {
+    "actiontype": "操作类型",
     "attributelist": "属性列表",
     "catalog": "目录",
     "catalogid": "目录id",
@@ -9,26 +13,42 @@
     "comment": "评论",
     "commentcount": "评论数量",
     "content": "内容",
+    "create": "创建",
     "createdate": "创建日期",
+    "createrobject": "创建者对象",
     "createuser": "创建者",
-    "createusername": "创建者名称",
+    "createusername": "创建者名字",
     "currentpage": "当前页数",
     "customattribute": "自定义属性",
+    "description": "说明",
     "displaymode": "显示模式",
     "displaytype": "显示类型",
+    "edit": "修改",
+    "editdate": "修改日期",
+    "editmode": "编辑模式",
+    "editor": "修改者",
+    "editorname": "修改者名字",
+    "editorobject": "修改者对象",
     "email": "邮件",
+    "enddate": "结束日期",
     "failedcount": "错误次数",
+    "fileid": "文件ID",
     "filelist": "附件列表",
+    "fileparamname": "附件参数名称",
+    "filetype": "附件类型",
     "group": "分组",
     "int": "整形",
     "isactive": "是否激活",
     "isend": "是否完结",
+    "isexpired": "是否过期",
     "isregister": "是否注册",
     "isrequired": "是否必填",
     "isunique": "是否唯一",
     "iteration": "迭代",
     "keyword": "关键字",
+    "loglist": "日志列表",
     "memo": "备注",
+    "mustinput": "必填",
     "name": "名称",
     "pagecount": "总页数",
     "pagesize": "每页数据条目",
@@ -37,6 +57,7 @@
     "prioritycolor": "优先级颜色",
     "priorityname": "优先级名称",
     "sort": "排序",
+    "startdate": "开始日期",
     "status": "状态",
     "statuscolor": "状态颜色",
     "statusname": "状态名称",
@@ -45,12 +66,16 @@
     "taglist": "标签列表",
     "tbodylist": "展示的值",
     "tel": "手机号",
+    "templateid": "模板id",
     "theadlist": "展示的字段",
+    "toomanyoption": "选项过多，其余选项不予展示",
     "typeuuid": "分类uuid",
+    "unique": "唯一",
     "uniquename": "唯一标识",
     "userid": "用户ID",
     "useridlist": "用户id列表",
     "userinfolist": "用户信息列表",
+    "userlist": "用户列表",
     "username": "用户名称",
     "useruuid": "用户uuid",
     "validcode": "注册验证码",
@@ -111,6 +136,39 @@
     },
     "searchattrapi": {
       "getname": "查询属性"
+    }
+  },
+  "nmcab": {
+    "deletebatchimportfileapi": {
+      "getname": "删除批量导入文件"
+    },
+    "firebatchimportapi": {
+      "getname": "发起批量导入",
+      "input": {
+        "param": {
+          "desc": {
+            "action": "append:只添加;update:只更新;all:添加\u0026更新"
+          }
+        }
+      }
+    },
+    "getbatchimportauditapi": {
+      "getname": "获取单个配置项导入日志"
+    },
+    "getbatchimportfilelistapi": {
+      "getname": "获取批量导入文件"
+    },
+    "getimporttemplateapi": {
+      "getname": "下载配置项导入模板"
+    },
+    "searchbatchimportauditapi": {
+      "getname": "查询批量导入日志"
+    },
+    "stopbatchimportapi": {
+      "getname": "停止批量导入"
+    },
+    "uploadbatchimportfileapi": {
+      "getname": "上传批量导入文件"
     }
   },
   "nmmam": {
@@ -198,6 +256,9 @@
         }
       }
     },
+    "searchprojectapi": {
+      "getname": "查询项目"
+    },
     "updateprioritysortapi": {
       "getname": "更新优先级排序",
       "input": {
@@ -209,14 +270,24 @@
       }
     }
   },
+  "ocommn": {
+    "isneedpage": "是否需要分页"
+  },
+  "page": {
+    "isclose": "是否关闭",
+    "ismine": "是否我的"
+  },
   "term": {
     "cmdb": {
       "addid": "id，不提供代表添加",
       "allowedit": "是否允许编辑",
       "attrconfig": "属性配置",
+      "attridlist": "模型属性ID列表",
       "attrtype": "属性类型",
       "ciid": "模型id",
+      "importauditid": "导入记录ID",
       "issimpleattribute": "是否简单属性",
+      "relidlist": "模型关系ID列表",
       "targetciid": "目标模型id",
       "validateconfig": "校验设置",
       "validatehandler": "校验组件",
@@ -224,6 +295,7 @@
     },
     "rdm": {
       "appcolor": "应用颜色",
+      "applist": "应用列表",
       "apptype": "应用类型",
       "auditcount": "修改历史数量",
       "childrentaskcount": "子任务数量",
@@ -234,9 +306,18 @@
       "iterationid": "迭代id",
       "iterationname": "迭代名称",
       "parenttaskid": "父任务id",
+      "project": {
+        "manageridlist": "项目负责人id列表",
+        "useridlist": "项目成员用户id列表"
+      },
       "projectid": "项目id",
+      "projectleader": "项目负责人",
+      "projectmember": "项目成员",
+      "projectowner": "项目所有人",
+      "projecttype": "项目类型",
       "relativetasklist": "关联任务列表",
-      "startdate": "预计开始"
+      "startdate": "预计开始",
+      "startenddate": "开始日期-结束日期"
     }
   }
 }
