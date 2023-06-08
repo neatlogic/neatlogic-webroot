@@ -114,5 +114,9 @@
             <groupId>com.neatlogic</groupId>
             <artifactId>neatlogic-codehub</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.neatlogic</groupId>
+            <artifactId>neatlogic-document-online</artifactId>
+        </dependency>
     </dependencies>
 </project>
