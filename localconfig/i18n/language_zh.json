@@ -278,6 +278,14 @@
     "ismine": "是否我的"
   },
   "term": {
+    "autoexec": {
+      "groupdesc": "自动化平台",
+      "groupname": "自动化",
+      "name": "自动化模块"
+    },
+    "change": {
+      "name": "变更模块"
+    },
     "cmdb": {
       "addid": "id，不提供代表添加",
       "allowedit": "是否允许编辑",
@@ -285,13 +293,58 @@
       "attridlist": "模型属性ID列表",
       "attrtype": "属性类型",
       "ciid": "模型id",
+      "groupdesc": "配置管理平台",
+      "groupname": "配置管理",
       "importauditid": "导入记录ID",
       "issimpleattribute": "是否简单属性",
+      "name": "配置管理模块",
       "relidlist": "模型关系ID列表",
       "targetciid": "目标模型id",
       "validateconfig": "校验设置",
       "validatehandler": "校验组件",
       "validatorid": "验证规则id"
+    },
+    "dashboard": {
+      "groupdesc": "灵活高效的数据可视化平台",
+      "groupname": "仪表板",
+      "name": "仪表板模块"
+    },
+    "deploy": {
+      "groupdesc": "规范快捷的持续集成-部署平台",
+      "groupname": "集成与发布",
+      "name": "自动发布"
+    },
+    "event": {
+      "name": "事件模块"
+    },
+    "framework": {
+      "groupname": "系统配置",
+      "name": "基础框架"
+    },
+    "inspect": {
+      "groupdesc": "巡检平台",
+      "groupname": "巡检",
+      "name": "巡检模块"
+    },
+    "itsm": {
+      "groupdesc": "一站式服务上报-跟踪-处理平台",
+      "groupname": "IT服务",
+      "name": "工作流引擎模块"
+    },
+    "knowledge": {
+      "groupdesc": "知识库平台",
+      "groupname": "知识库",
+      "name": "知识库模块"
+    },
+    "master": {
+      "groupname": "超级管理模块",
+      "name": "管理员模块"
+    },
+    "pbc": {
+      "groupdesc": "金融信息基础设施管理平台报送模块"
+    },
+    "pdb": {
+      "name": "监管报送"
     },
     "rdm": {
       "appcolor": "应用颜色",
@@ -301,10 +354,13 @@
       "childrentaskcount": "子任务数量",
       "commonid": "评论id",
       "enddate": "预计结束",
+      "groupdesc": "研发管理平台",
+      "groupname": "研发管理",
       "isend": "是否结束",
       "ismytask": "是否我的任务",
       "iterationid": "迭代id",
       "iterationname": "迭代名称",
+      "name": "研发管理模块",
       "parenttaskid": "父任务id",
       "project": {
         "manageridlist": "项目负责人id列表",
@@ -318,6 +374,17 @@
       "relativetasklist": "关联任务列表",
       "startdate": "预计开始",
       "startenddate": "开始日期-结束日期"
+    },
+    "report": {
+      "groupdesc": "智能数据分析平台",
+      "groupname": "报表",
+      "name": "报表模块"
+    },
+    "tagent": {
+      "name": "tagent模块"
+    },
+    "tenant": {
+      "name": "租户基础功能模块"
     }
   }
 }

@@ -278,6 +278,14 @@
     "ismine": "Is it mine"
   },
   "term": {
+    "autoexec": {
+      "groupdesc": "Automation platform",
+      "groupname": "Autoexec",
+      "name": "Autoexec"
+    },
+    "change": {
+      "name": "Change"
+    },
     "cmdb": {
       "addid": "ID, do not provide a representative to add",
       "allowedit": "Allow editing",
@@ -285,13 +293,58 @@
       "attridlist": "Model Attribute ID List",
       "attrtype": "Attribute Type",
       "ciid": "Model ID",
+      "groupdesc": "Configuration Management Platform",
+      "groupname": "CMDB",
       "importauditid": "Import Record ID",
       "issimpleattribute": "Is it a simple attribute",
+      "name": "CMDB",
       "relidlist": "Model Relationship ID List",
       "targetciid": "Target Model ID",
       "validateconfig": "proof setup ",
       "validatehandler": "Verification component",
       "validatorid": "Validation Rule ID"
+    },
+    "dashboard": {
+      "groupdesc": "Flexible and efficient Data and information visualization platform",
+      "groupname": "Dashboard",
+      "name": "Dashboard"
+    },
+    "deploy": {
+      "groupdesc": "Standardized and fast continuous integration deployment platform",
+      "groupname": "DevOps",
+      "name": "DevOps"
+    },
+    "event": {
+      "name": "Event"
+    },
+    "framework": {
+      "groupname": "Framework",
+      "name": "Framework"
+    },
+    "inspect": {
+      "groupdesc": "Inspection platform",
+      "groupname": "Inspection",
+      "name": "Inspection"
+    },
+    "itsm": {
+      "groupdesc": "One stop service reporting tracking processing platform",
+      "groupname": "ITSM",
+      "name": "ITSM"
+    },
+    "knowledge": {
+      "groupdesc": "Knowledge Base Platform",
+      "groupname": "Knowledge",
+      "name": "Knowledge"
+    },
+    "master": {
+      "groupname": "Master",
+      "name": "Master"
+    },
+    "pbc": {
+      "groupdesc": "Submission module of financial Information infrastructure management platform"
+    },
+    "pdb": {
+      "name": "PBC"
     },
     "rdm": {
       "appcolor": "Apply Color",
@@ -301,10 +354,13 @@
       "childrentaskcount": "Number of subtasks",
       "commonid": "Comment ID",
       "enddate": "Expected end",
+      "groupdesc": "R\u0026D management platform",
+      "groupname": "R\u0026D management",
       "isend": "Is it over",
       "ismytask": "Is it my task",
       "iterationid": "Iteration ID",
       "iterationname": "Iteration Name",
+      "name": "RDM",
       "parenttaskid": "Parent Task ID",
       "project": {
         "manageridlist": "List of project leader IDs",
@@ -318,6 +374,17 @@
       "relativetasklist": "Associated Task List",
       "startdate": "Expected start",
       "startenddate": "Start Date - End Date"
+    },
+    "report": {
+      "groupdesc": "Intelligent data analysis platform",
+      "groupname": "Report",
+      "name": "Report"
+    },
+    "tagent": {
+      "name": "Tagent"
+    },
+    "tenant": {
+      "name": "Tenant"
     }
   }
 }
