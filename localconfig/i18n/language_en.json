@@ -291,7 +291,7 @@
   "term": {
     "autoexec": {
       "groupdesc": "Automation platform",
-      "groupname": "Autoexec",
+      "groupname": "Automation",
       "name": "Autoexec"
     },
     "change": {
@@ -316,7 +316,7 @@
       "validatorid": "Validation Rule ID"
     },
     "codehub": {
-      "groupdesc": "Codehub",
+      "groupdesc": "Codehub platform",
       "name": "Codehub"
     },
     "dashboard": {
@@ -347,7 +347,7 @@
       "name": "ITSM"
     },
     "knowledge": {
-      "groupdesc": "Knowledge Base Platform",
+      "groupdesc": "Knowledge platform",
       "groupname": "Knowledge",
       "name": "Knowledge"
     },
