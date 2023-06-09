@@ -315,6 +315,10 @@
       "validatehandler": "校验组件",
       "validatorid": "验证规则id"
     },
+    "codehub": {
+      "groupdesc": "代码中心平台",
+      "name": "代码中心"
+    },
     "dashboard": {
       "groupdesc": "灵活高效的数据可视化平台",
       "groupname": "仪表板",

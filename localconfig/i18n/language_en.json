@@ -315,6 +315,10 @@
       "validatehandler": "Verification component",
       "validatorid": "Validation Rule ID"
     },
+    "codehub": {
+      "groupdesc": "Codehub",
+      "name": "Codehub"
+    },
     "dashboard": {
       "groupdesc": "Flexible and efficient Data and information visualization platform",
       "groupname": "Dashboard",
