@@ -1,7 +1,4 @@
 {
-  "commom": {
-    "progress": "schedule"
-  },
   "common": {
     "actiontype": "Operation type",
     "attributelist": "Attribute List",
@@ -31,12 +28,15 @@
     "editorobject": "Modifier Object",
     "email": "mail",
     "enddate": "End date",
+    "expireddays": "Number of timeout days",
     "failedcount": "Number of errors",
+    "file": "file",
     "fileid": "File ID",
     "filelist": "Attachment List",
     "fileparamname": "Attachment parameter name",
     "filetype": "Attachment Type",
     "group": "grouping",
+    "icon": "icon",
     "int": "int",
     "isactive": "Activate or not",
     "isend": "Completed or not",
@@ -56,6 +56,7 @@
     "priority": "priority",
     "prioritycolor": "Priority Color",
     "priorityname": "Priority Name",
+    "progress": "schedule",
     "sort": "sort",
     "startdate": "Start date",
     "status": "state",
@@ -69,6 +70,7 @@
     "templateid": "Template ID",
     "theadlist": "thead list",
     "toomanyoption": "Too many options, other options will not be displayed",
+    "typeid": "Type ID",
     "typeuuid": "type uuid",
     "unique": "only",
     "uniquename": "Unique identification",
@@ -169,6 +171,98 @@
     },
     "uploadbatchimportfileapi": {
       "getname": "Upload batch import files"
+    }
+  },
+  "nmcac": {
+    "deleteciapi": {
+      "getname": "Delete Model"
+    },
+    "exportciapi": {
+      "getname": "Export Configuration Item Model"
+    },
+    "exportciforexcelapi": {
+      "getname": "Export configuration item model and Property list"
+    },
+    "getciapi": {
+      "getname": "Obtain model information",
+      "input": {
+        "param": {
+          "desc": {
+            "needaction": "Do you need to operate? If necessary, permission verification will be performed"
+          }
+        }
+      }
+    },
+    "getciattrrellistapi": {
+      "description": {
+        "desc": "Obtain model information interface, which is mainly used for linking with ITSM forms"
+      }
+    },
+    "getciauthapi": {
+      "getname": "Obtain model authorization information"
+    },
+    "getciuniqueapi": {
+      "getname": "Returns a list of unique attribute IDs"
+    },
+    "getdownwardcilistapi": {
+      "getname": "Obtain downstream model list"
+    },
+    "getimportfieldlistapi": {
+      "getname": "Obtain a list of importable attributes and relationships"
+    },
+    "importciapi": {
+      "getname": "Import Configuration Item Model"
+    },
+    "listciapi": {
+      "getname": "Return model list information (for dropdown boxes)"
+    },
+    "listcifortreeapi": {
+      "description": {
+        "desc": "Return the model tree list"
+      },
+      "getname": "Obtain a model tree list"
+    },
+    "listexpressionattrrelapi": {
+      "getname": "Returns a list of model expression properties and relationships"
+    },
+    "saveciapi": {
+      "getname": "Save Model",
+      "input": {
+        "param": {
+          "desc": {
+            "id": "ID, does not provide a representative for adding a new model"
+          }
+        }
+      }
+    },
+    "saveciauthapi": {
+      "getname": "Save Model Authorization",
+      "input": {
+        "param": {
+          "desc": {
+            "authlist": "Authorization list, empty means clearing all authorizations. Example: {authType: \u0027user\u0027, authUuid: \u0027xxxx\u0027, action: \u0027cimaange\u0027}"
+          }
+        }
+      }
+    },
+    "savecinameattridapi": {
+      "getname": "Save Model Name Properties"
+    },
+    "saveciuniqueruleapi": {
+      "getname": "Save Model Unique Rules"
+    },
+    "searchciattrrellistapi": {
+      "description": {
+        "desc": "Search model properties and relationship information interface, mainly used for DSL input controls to search for properties and relationships"
+      },
+      "getname": "Search for model attributes and relationship information",
+      "input": {
+        "param": {
+          "desc": {
+            "keyword": "Keywords that only match unique identifiers of attributes and relationships"
+          }
+        }
+      }
     }
   },
   "nmmam": {
@@ -304,16 +398,23 @@
       "attridlist": "Model Attribute ID List",
       "attrtype": "Attribute Type",
       "ciid": "Model ID",
+      "ciidlist": "Model ID List",
       "groupdesc": "Configuration Management Platform",
       "groupname": "CMDB",
       "importauditid": "Import Record ID",
+      "isabstractci": "Is it an abstract model",
+      "isprivateci": "Private model or not",
+      "isshowinmenu": "Is it displayed in the menu",
       "issimpleattribute": "Is it a simple attribute",
+      "isvirtualci": "Is it a virtual model",
       "name": "CMDB",
+      "parentcientityid": "Parent Configuration Item ID",
       "relidlist": "Model Relationship ID List",
       "targetciid": "Target Model ID",
       "validateconfig": "proof setup ",
       "validatehandler": "Verification component",
-      "validatorid": "Validation Rule ID"
+      "validatorid": "Validation Rule ID",
+      "virtualcifileid": "Virtual model configuration file id"
     },
     "codehub": {
       "groupdesc": "Codehub platform",

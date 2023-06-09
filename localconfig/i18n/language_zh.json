@@ -1,7 +1,4 @@
 {
-  "commom": {
-    "progress": "进度"
-  },
   "common": {
     "actiontype": "操作类型",
     "attributelist": "属性列表",
@@ -31,12 +28,15 @@
     "editorobject": "修改者对象",
     "email": "邮件",
     "enddate": "结束日期",
+    "expireddays": "超时天数",
     "failedcount": "错误次数",
+    "file": "文件",
     "fileid": "文件ID",
     "filelist": "附件列表",
     "fileparamname": "附件参数名称",
     "filetype": "附件类型",
     "group": "分组",
+    "icon": "图标",
     "int": "整形",
     "isactive": "是否激活",
     "isend": "是否完结",
@@ -56,6 +56,7 @@
     "priority": "优先级",
     "prioritycolor": "优先级颜色",
     "priorityname": "优先级名称",
+    "progress": "进度",
     "sort": "排序",
     "startdate": "开始日期",
     "status": "状态",
@@ -69,6 +70,7 @@
     "templateid": "模板id",
     "theadlist": "展示的字段",
     "toomanyoption": "选项过多，其余选项不予展示",
+    "typeid": "类型id",
     "typeuuid": "分类uuid",
     "unique": "唯一",
     "uniquename": "唯一标识",
@@ -169,6 +171,98 @@
     },
     "uploadbatchimportfileapi": {
       "getname": "上传批量导入文件"
+    }
+  },
+  "nmcac": {
+    "deleteciapi": {
+      "getname": "删除模型"
+    },
+    "exportciapi": {
+      "getname": "导出配置项模型"
+    },
+    "exportciforexcelapi": {
+      "getname": "导出配置项模型及属性列表"
+    },
+    "getciapi": {
+      "getname": "获取模型信息",
+      "input": {
+        "param": {
+          "desc": {
+            "needaction": "是否需要操作，需要的话会进行权限校验"
+          }
+        }
+      }
+    },
+    "getciattrrellistapi": {
+      "description": {
+        "desc": "获取模型信息接口，此接口主要用在和ITSM表单联动"
+      }
+    },
+    "getciauthapi": {
+      "getname": "获取模型授权信息"
+    },
+    "getciuniqueapi": {
+      "getname": "返回唯一属性id列表"
+    },
+    "getdownwardcilistapi": {
+      "getname": "获取下游模型列表"
+    },
+    "getimportfieldlistapi": {
+      "getname": "获取可导入的属性和关系列表"
+    },
+    "importciapi": {
+      "getname": "导入配置项模型"
+    },
+    "listciapi": {
+      "getname": "返回模型列表信息（下拉框用）"
+    },
+    "listcifortreeapi": {
+      "description": {
+        "desc": "返回模型树型列表"
+      },
+      "getname": "获取模型树型列表"
+    },
+    "listexpressionattrrelapi": {
+      "getname": "返回模型表达式属性和关系列表"
+    },
+    "saveciapi": {
+      "getname": "保存模型",
+      "input": {
+        "param": {
+          "desc": {
+            "id": "id，不提供代表新增模型"
+          }
+        }
+      }
+    },
+    "saveciauthapi": {
+      "getname": "保存模型授权",
+      "input": {
+        "param": {
+          "desc": {
+            "authlist": "授权列表，为空代表清空所有授权，范例：{authType:\u0027user\u0027,authUuid:\u0027xxxx\u0027,action:\u0027cimaange\u0027}"
+          }
+        }
+      }
+    },
+    "savecinameattridapi": {
+      "getname": "保存模型名称属性"
+    },
+    "saveciuniqueruleapi": {
+      "getname": "保存模型唯一规则"
+    },
+    "searchciattrrellistapi": {
+      "description": {
+        "desc": "搜索模型属性和关系信息接口，此接口主要用在DSL输入控件搜索属性和关系"
+      },
+      "getname": "搜索模型属性和关系信息",
+      "input": {
+        "param": {
+          "desc": {
+            "keyword": "关键字，只匹配属性和关系的唯一标识"
+          }
+        }
+      }
     }
   },
   "nmmam": {
@@ -304,16 +398,23 @@
       "attridlist": "模型属性ID列表",
       "attrtype": "属性类型",
       "ciid": "模型id",
+      "ciidlist": "模型ID列表",
       "groupdesc": "配置管理平台",
       "groupname": "配置管理",
       "importauditid": "导入记录ID",
+      "isabstractci": "是否抽象模型",
+      "isprivateci": "是否私有模型",
+      "isshowinmenu": "是否在菜单显示",
       "issimpleattribute": "是否简单属性",
+      "isvirtualci": "是否虚拟模型",
       "name": "配置管理模块",
+      "parentcientityid": "父配置项id",
       "relidlist": "模型关系ID列表",
       "targetciid": "目标模型id",
       "validateconfig": "校验设置",
       "validatehandler": "校验组件",
-      "validatorid": "验证规则id"
+      "validatorid": "验证规则id",
+      "virtualcifileid": "虚拟模型配置文件id"
     },
     "codehub": {
       "groupdesc": "代码中心平台",
