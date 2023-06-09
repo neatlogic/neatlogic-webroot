@@ -256,6 +256,17 @@
         }
       }
     },
+    "saveprojectapi": {
+      "getname": "保存项目",
+      "input": {
+        "param": {
+          "desc": {
+            "id": "id，不提供代表新增项目",
+            "memberidlist": "项目成员id列表"
+          }
+        }
+      }
+    },
     "searchprojectapi": {
       "getname": "查询项目"
     },
@@ -369,11 +380,12 @@
       "projectid": "项目id",
       "projectleader": "项目负责人",
       "projectmember": "项目成员",
+      "projectname": "项目名称",
       "projectowner": "项目所有人",
       "projecttype": "项目类型",
       "relativetasklist": "关联任务列表",
       "startdate": "预计开始",
-      "startenddate": "开始日期-结束日期"
+      "startenddate": "起止日期"
     },
     "report": {
       "groupdesc": "智能数据分析平台",

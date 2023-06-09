@@ -256,6 +256,17 @@
         }
       }
     },
+    "saveprojectapi": {
+      "getname": "Save Project",
+      "input": {
+        "param": {
+          "desc": {
+            "id": "ID, does not provide a representative for adding new projects",
+            "memberidlist": "List of project member IDs"
+          }
+        }
+      }
+    },
     "searchprojectapi": {
       "getname": "Query items"
     },
@@ -354,8 +365,8 @@
       "childrentaskcount": "Number of subtasks",
       "commonid": "Comment ID",
       "enddate": "Expected end",
-      "groupdesc": "R\u0026D management platform",
-      "groupname": "R\u0026D management",
+      "groupdesc": "RDM platform",
+      "groupname": "RDM",
       "isend": "Is it over",
       "ismytask": "Is it my task",
       "iterationid": "Iteration ID",
@@ -369,11 +380,12 @@
       "projectid": "Project ID",
       "projectleader": "Project leader",
       "projectmember": "Project members",
+      "projectname": "entry name",
       "projectowner": "Project Owner",
       "projecttype": "Project Type",
       "relativetasklist": "Associated Task List",
       "startdate": "Expected start",
-      "startenddate": "Start Date - End Date"
+      "startenddate": "Starting and ending dates"
     },
     "report": {
       "groupdesc": "Intelligent data analysis platform",
