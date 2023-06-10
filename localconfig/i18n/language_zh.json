@@ -41,6 +41,7 @@
     "isactive": "是否激活",
     "isend": "是否完结",
     "isexpired": "是否过期",
+    "ismycreated": "是否我创建",
     "isregister": "是否注册",
     "isrequired": "是否必填",
     "isunique": "是否唯一",
@@ -308,6 +309,18 @@
     },
     "listprivateattrapi": {
       "getname": "获取所有内部属性"
+    },
+    "listprojectappapi": {
+      "getname": "获取项目应用列表",
+      "input": {
+        "param": {
+          "desc": {
+            "ismine": "是否只查询包含当前用户任务的应用列表",
+            "ismyreported": "是否只查询当前用户上报的应用列表",
+            "needissuecount": "是否需要返回任务数量"
+          }
+        }
+      }
     }
   },
   "nmrai": {
@@ -474,6 +487,7 @@
       "groupname": "研发管理",
       "isend": "是否结束",
       "ismytask": "是否我的任务",
+      "issuecount": "任务数量",
       "iterationid": "迭代id",
       "iterationname": "迭代名称",
       "name": "研发管理模块",

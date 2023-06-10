@@ -41,6 +41,7 @@
     "isactive": "Activate or not",
     "isend": "Completed or not",
     "isexpired": "Expired or not",
+    "ismycreated": "Do I create",
     "isregister": "Register or not",
     "isrequired": "Is it mandatory",
     "isunique": "Is it unique",
@@ -308,6 +309,18 @@
     },
     "listprivateattrapi": {
       "getname": "Get all internal properties"
+    },
+    "listprojectappapi": {
+      "getname": "Obtain project application list",
+      "input": {
+        "param": {
+          "desc": {
+            "ismine": "Do you want to only query the application list containing the current user\u0027s tasks",
+            "ismyreported": "Whether to only query the application list reported by the current user",
+            "needissuecount": "Do you need to return the number of tasks"
+          }
+        }
+      }
     }
   },
   "nmrai": {
@@ -474,6 +487,7 @@
       "groupname": "RDM",
       "isend": "Is it over",
       "ismytask": "Is it my task",
+      "issuecount": "Number of tasks",
       "iterationid": "Iteration ID",
       "iterationname": "Iteration Name",
       "name": "RDM",
