@@ -1,6 +1,13 @@
 {
   "common": {
     "actiontype": "操作类型",
+    "alertattr": "告警属性",
+    "alertdetail": "告警详情",
+    "alertlevel": "告警级别",
+    "alertlink": "告警外部链接",
+    "alertlist": "告警列表",
+    "alerttime": "告警时间",
+    "alertvalue": "告警值",
     "attributelist": "属性列表",
     "catalog": "目录",
     "catalogid": "目录id",
@@ -28,6 +35,7 @@
     "editorobject": "修改者对象",
     "email": "邮件",
     "enddate": "结束日期",
+    "example": "范例",
     "expireddays": "超时天数",
     "failedcount": "错误次数",
     "file": "文件",
@@ -47,6 +55,7 @@
     "isunique": "是否唯一",
     "iteration": "迭代",
     "keyword": "关键字",
+    "level": "级别",
     "loglist": "日志列表",
     "memo": "备注",
     "mustinput": "必填",
@@ -69,6 +78,7 @@
     "tbodylist": "展示的值",
     "tel": "手机号",
     "templateid": "模板id",
+    "testenv": "测试环境",
     "theadlist": "展示的字段",
     "toomanyoption": "选项过多，其余选项不予展示",
     "typeid": "类型id",
@@ -175,14 +185,77 @@
     }
   },
   "nmcac": {
+    "batchdeletecientityapi": {
+      "getname": "批量删除配置项",
+      "input": {
+        "param": {
+          "desc": {
+            "cientitylist": "删除列表，包含ciId、ciEntityId和ciEntityName三个属性",
+            "needcommit": "是否需要提交"
+          }
+        }
+      }
+    },
+    "batchsavecientityapi": {
+      "getname": "保存配置项",
+      "input": {
+        "param": {
+          "desc": {
+            "issimple": "数据是否简易模式"
+          },
+          "help": {
+            "issimple": "简易模式主要给第三方系统使用，true：简易模式，false：正常模式"
+          }
+        }
+      }
+    },
+    "batchsavecientitysimpleapi": {
+      "getname": "批量保存配置项（简化版本）"
+    },
+    "batchupdatecientityapi": {
+      "getname": "批量修改配置项",
+      "input": {
+        "param": {
+          "desc": {
+            "attrentitydata": "需要修改的属性",
+            "cientityidlist": "被修改配置项id",
+            "relentitydata": "需要修改的关系"
+          }
+        }
+      }
+    },
+    "deletealertlevelapi": {
+      "getname": "删除告警级别"
+    },
     "deleteciapi": {
       "getname": "删除模型"
+    },
+    "deletecientityapi": {
+      "getname": "删除配置项"
     },
     "exportciapi": {
       "getname": "导出配置项模型"
     },
+    "exportcientityapi": {
+      "getname": "导出配置项",
+      "input": {
+        "param": {
+          "desc": {
+            "attrfilterlist": "属性过滤条件",
+            "relfilterlist": "关系过滤条件",
+            "showattrrellist": "需要导出的字段列表，包括属性和关系"
+          }
+        }
+      }
+    },
     "exportciforexcelapi": {
       "getname": "导出配置项模型及属性列表"
+    },
+    "exportillegalcientityapi": {
+      "getname": "导出不合规配置项"
+    },
+    "getalertlevelapi": {
+      "getname": "获取告警级别"
     },
     "getciapi": {
       "getname": "获取模型信息",
@@ -202,20 +275,94 @@
     "getciauthapi": {
       "getname": "获取模型授权信息"
     },
+    "getcientityapi": {
+      "getname": "获取配置项详细信息",
+      "input": {
+        "param": {
+          "desc": {
+            "limitattrentity": "是否限制引用属性数量，默认值是:true",
+            "limitrelentity": "是否限制关系数量，默认值是:true",
+            "needaction": "是否需要操作列，如果需要检查操作权限，会根据结果返回action列",
+            "showattrrellist": "需要显示的字段列表，包括属性关系和常量，格式：attr_xxx,relfrom_xxx或relto_xxx，xxx是对应id"
+          }
+        }
+      }
+    },
+    "getcientityauthapi": {
+      "getname": "获取配置项权限信息",
+      "input": {
+        "param": {
+          "desc": {
+            "authlist": "需要判断的权限列表"
+          }
+        }
+      }
+    },
+    "getcientitybaseinfolistapi": {
+      "description": {
+        "desc": "根据id列表获取多个配置项基础信息"
+      },
+      "getname": "获取多个配置项基础信息",
+      "input": {
+        "param": {
+          "desc": {
+            "idlist": "配置项id列表"
+          }
+        }
+      }
+    },
+    "getcientitylistapi": {
+      "description": {
+        "desc": "根据id列表获取多个配置项详细信息接口"
+      },
+      "getname": "获取多个配置项详细信息"
+    },
     "getciuniqueapi": {
       "getname": "返回唯一属性id列表"
     },
     "getdownwardcilistapi": {
       "getname": "获取下游模型列表"
     },
+    "getillegalcientitycountapi": {
+      "getname": "获取不合规配置项数量"
+    },
     "getimportfieldlistapi": {
       "getname": "获取可导入的属性和关系列表"
+    },
+    "getpasswordattrplaintextapi": {
+      "getname": "获取密码属性明文",
+      "output": {
+        "param": {
+          "desc": "密码明文"
+        }
+      }
     },
     "importciapi": {
       "getname": "导入配置项模型"
     },
     "listciapi": {
       "getname": "返回模型列表信息（下拉框用）"
+    },
+    "listcientityforselectapi": {
+      "description": {
+        "desc": "查询资源中心状态列表"
+      },
+      "getname": "查询模型数据列表（下拉框）",
+      "input": {
+        "param": {
+          "desc": {
+            "defaultvalue": "默认值列表"
+          }
+        }
+      },
+      "output": {
+        "param": {
+          "desc": "模型数据列表"
+        }
+      }
+    },
+    "listcientitystatusapi": {
+      "getname": "获取配置项告警信息"
     },
     "listcifortreeapi": {
       "description": {
@@ -225,6 +372,21 @@
     },
     "listexpressionattrrelapi": {
       "getname": "返回模型表达式属性和关系列表"
+    },
+    "resetattrentityindexapi": {
+      "description": {
+        "desc": "重建引用属性索引接口，用于优化查询性能"
+      },
+      "getname": "重建引用属性索引"
+    },
+    "resetrelentityindexapi": {
+      "description": {
+        "desc": "重建关系索引接口，用于优化查询性能"
+      },
+      "getname": "重建关系索引"
+    },
+    "savealertlevelapi": {
+      "getname": "保存告警级别"
     },
     "saveciapi": {
       "getname": "保存模型",
@@ -246,11 +408,49 @@
         }
       }
     },
+    "savecientityalertapi": {
+      "getname": "保存配置项告警",
+      "input": {
+        "param": {
+          "help": {
+            "alertattr": "每个配置项对应一个告警属性只能有一条告警信息",
+            "alertlevel": "必须是大于等于0的整数，数字越大级别越高，如果等于0代表消除告警",
+            "alerttime": "需要提供时间戳，精确到毫秒，如果不提供则使用保存时间",
+            "cientityid": "如果提供了，会优先使用，找不到配置项才会使用ciEntityUuid",
+            "uniquename": "如果是32字符的散列，系统会直接保存，否则，系统会先做散列处理"
+          }
+        }
+      }
+    },
+    "savecientityalertbatchapi": {
+      "getname": "批量保存配置项告警",
+      "input": {
+        "param": {
+          "help": "批量保存数据时使用此参数，参数格式和单个告警要求一致"
+        }
+      }
+    },
     "savecinameattridapi": {
       "getname": "保存模型名称属性"
     },
     "saveciuniqueruleapi": {
       "getname": "保存模型唯一规则"
+    },
+    "searchalertlevelapi": {
+      "getname": "搜索告警级别"
+    },
+    "searchattrtargetcientityapi": {
+      "getname": "查询属性目标配置项",
+      "input": {
+        "param": {
+          "desc": "选中值列表"
+        }
+      },
+      "output": {
+        "param": {
+          "desc": "表头信息"
+        }
+      }
     },
     "searchciattrrellistapi": {
       "description": {
@@ -261,6 +461,94 @@
         "param": {
           "desc": {
             "keyword": "关键字，只匹配属性和关系的唯一标识"
+          }
+        }
+      }
+    },
+    "searchcientityalertapi": {
+      "getname": "搜索配置项告警信息",
+      "input": {
+        "param": {
+          "desc": {
+            "groupidlist": "视图id列表"
+          },
+          "help": {
+            "groupidlist": "不能和配置项id列表同时为空",
+            "idlist": "不能和视图id列表同时为空"
+          }
+        }
+      }
+    },
+    "searchcientityapi": {
+      "getname": "查询配置项",
+      "input": {
+        "param": {
+          "desc": {
+            "attrid": "关系id（通过引用配置项查询引用属性时使用）",
+            "cientitylist": "配置项结果集，如果提供则不会进行搜索，补充头部信息后直接返回",
+            "condition": "需要显示的字段列表，包括属性关系和常量，范例：[\\\"attr_xxx\\\":\\\"keyword\\\",\\\"relfrom_xxx\\\":\\\"keyword\\\",\\\"relto_xxx\\\":\\\"keyword\\\",\\\"const_ciid\\\":\\\"keyword\\\"]，xxx代表对应属性或关系id",
+            "direction": "当前模型在关系中的位置",
+            "dsl": "DSL语句",
+            "fromcientityid": "引用配置项id（通过引用配置项查询引用属性时使用）",
+            "groupid": "团体id",
+            "idlist": "需要查询的配置项id列表",
+            "isall": "是否返回所有列数据",
+            "islimitattr": "是否限制返回的引用属性数据",
+            "islimitrel": "是否限制返回的关系数据",
+            "mode": "dialog模式不会显示详情连接",
+            "needaction": "是否需要操作列，如果需要则根据用户权限返回操作列",
+            "needactiontype": "是否需要操作类型列，一般在表单控件中使用，用于标记数据是新增还是修改还是删除",
+            "needcheck": "是否需要复选列",
+            "needexpand": "是否需要显示展开控制列",
+            "relcientityid": "关系配置项id",
+            "relid": "关系id",
+            "sort": "排序规则，范例：{\\\"attr_xxxxx\\\":\\\"DESC\\\",\\\"attr_yyyyy\\\":\\\"ASC\\\"}"
+          }
+        }
+      }
+    },
+    "searchcientitybydslapi": {
+      "getname": "使用dsl查询配置项",
+      "input": {
+        "param": {
+          "desc": {
+            "attr": "需要返回的属性，不定义则返回所有属性，空数组代表不返回任何属性",
+            "dsl": "查询表达式，逻辑运算符支持\u0026\u0026、||，关系运算符支持：\u003d\u003d、\u003e\u003d、\u003c\u003d、\u003e、\u003c、!\u003d、include、exclude。如果需要搜索关系或引用属性字段，可以使用a.b表示，例如env.name \u003d\u003d \\\"STG\\\" \u0026\u0026 (port \u003d\u003d 80 || port \u003d\u003d 443 )",
+            "rel": "需要返回的关系，不定义则返回所有关系，空数组代表不返回任何关系"
+          }
+        }
+      }
+    },
+    "searchdeletecientityapi": {
+      "getname": "查询已删除配置项"
+    },
+    "searchillegalcientityapi": {
+      "getname": "查询不合规配置项"
+    },
+    "updaterelentityvaliddayapi": {
+      "getname": "更新关系有效天数",
+      "input": {
+        "param": {
+          "desc": "有效天数，0代表永远有效"
+        }
+      }
+    },
+    "validatecientityapi": {
+      "getname": "校验配置项完整性",
+      "input": {
+        "param": {
+          "desc": {
+            "attr": "属性数据",
+            "id": "配置项id，不存在代表添加",
+            "rel": "关系数据",
+            "uuid": "配置项uuid"
+          }
+        }
+      },
+      "output": {
+        "param": {
+          "desc": {
+            "needchange": "是否有变化"
           }
         }
       }
@@ -410,12 +698,18 @@
       "attrconfig": "属性配置",
       "attridlist": "模型属性ID列表",
       "attrtype": "属性类型",
+      "cientitydata": "配置项数据",
+      "cientityid": "配置项id",
+      "cientityuniquename": "配置项唯一标识",
       "ciid": "模型id",
       "ciidlist": "模型ID列表",
+      "ciname": "模型名称",
+      "ciuniquename": "模型唯一标识",
       "groupdesc": "配置管理平台",
       "groupname": "配置管理",
       "importauditid": "导入记录ID",
       "isabstractci": "是否抽象模型",
+      "iscommit": "是否提交",
       "isprivateci": "是否私有模型",
       "isshowinmenu": "是否在菜单显示",
       "issimpleattribute": "是否简单属性",
@@ -423,7 +717,10 @@
       "name": "配置管理模块",
       "parentcientityid": "父配置项id",
       "relidlist": "模型关系ID列表",
+      "ruleid": "规则id",
       "targetciid": "目标模型id",
+      "transactiongroupid": "事务组id",
+      "transactionid": "事务id",
       "validateconfig": "校验设置",
       "validatehandler": "校验组件",
       "validatorid": "验证规则id",

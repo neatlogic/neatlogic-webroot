@@ -1,6 +1,13 @@
 {
   "common": {
     "actiontype": "Operation type",
+    "alertattr": "Alarm Properties",
+    "alertdetail": "Alarm details",
+    "alertlevel": "Alarm level",
+    "alertlink": "Alarm External Link",
+    "alertlist": "Alarm List",
+    "alerttime": "Alarm time",
+    "alertvalue": "Alarm value",
     "attributelist": "Attribute List",
     "catalog": "catalogue",
     "catalogid": "Directory ID",
@@ -28,6 +35,7 @@
     "editorobject": "Modifier Object",
     "email": "mail",
     "enddate": "End date",
+    "example": "example",
     "expireddays": "Number of timeout days",
     "failedcount": "Number of errors",
     "file": "file",
@@ -47,6 +55,7 @@
     "isunique": "Is it unique",
     "iteration": "iteration",
     "keyword": "keyword",
+    "level": "level",
     "loglist": "Log List",
     "memo": "Remarks",
     "mustinput": "Required",
@@ -69,6 +78,7 @@
     "tbodylist": "tbody list",
     "tel": "Mobile phone number",
     "templateid": "Template ID",
+    "testenv": "testing environment",
     "theadlist": "thead list",
     "toomanyoption": "Too many options, other options will not be displayed",
     "typeid": "Type ID",
@@ -175,14 +185,77 @@
     }
   },
   "nmcac": {
+    "batchdeletecientityapi": {
+      "getname": "Batch Delete Configuration Items",
+      "input": {
+        "param": {
+          "desc": {
+            "cientitylist": "Delete the list, including three attributes: ciId, ciEntityId, and ciEntityName",
+            "needcommit": "Do you need to submit"
+          }
+        }
+      }
+    },
+    "batchsavecientityapi": {
+      "getname": "Save Configuration Item",
+      "input": {
+        "param": {
+          "desc": {
+            "issimple": "Is the data in a simple mode"
+          },
+          "help": {
+            "issimple": "Simple mode is mainly used by third-party systems, true: Simple mode, false: Normal mode"
+          }
+        }
+      }
+    },
+    "batchsavecientitysimpleapi": {
+      "getname": "Batch Save Configuration Items (Simplified Version)"
+    },
+    "batchupdatecientityapi": {
+      "getname": "Batch Modify Configuration Items",
+      "input": {
+        "param": {
+          "desc": {
+            "attrentitydata": "Properties that need to be modified",
+            "cientityidlist": "Modified configuration item ID",
+            "relentitydata": "Relationships that need to be modified"
+          }
+        }
+      }
+    },
+    "deletealertlevelapi": {
+      "getname": "Delete alarm level"
+    },
     "deleteciapi": {
       "getname": "Delete Model"
+    },
+    "deletecientityapi": {
+      "getname": "Delete Configuration Item"
     },
     "exportciapi": {
       "getname": "Export Configuration Item Model"
     },
+    "exportcientityapi": {
+      "getname": "Export Configuration Items",
+      "input": {
+        "param": {
+          "desc": {
+            "attrfilterlist": "Attribute filtering criteria",
+            "relfilterlist": "Relationship filtering criteria",
+            "showattrrellist": "List of fields to be exported, including attributes and relationships"
+          }
+        }
+      }
+    },
     "exportciforexcelapi": {
       "getname": "Export configuration item model and Property list"
+    },
+    "exportillegalcientityapi": {
+      "getname": "Export non compliant configuration items"
+    },
+    "getalertlevelapi": {
+      "getname": "Obtain alarm level"
     },
     "getciapi": {
       "getname": "Obtain model information",
@@ -202,20 +275,94 @@
     "getciauthapi": {
       "getname": "Obtain model authorization information"
     },
+    "getcientityapi": {
+      "getname": "Obtain configuration item details",
+      "input": {
+        "param": {
+          "desc": {
+            "limitattrentity": "Whether to limit the number of referenced attributes, default value is: true",
+            "limitrelentity": "Whether to limit the number of relationships, default value is: true",
+            "needaction": "Do you need an action column? If you need to check the operation permissions, the action column will be returned based on the results",
+            "showattrrellist": "List of fields to be displayed, including attribute relationships and constants, format: attr_ Xxx, relfrom_ Xxx or relto_ Xxx, xxx is the corresponding ID"
+          }
+        }
+      }
+    },
+    "getcientityauthapi": {
+      "getname": "Obtain configuration item permission information",
+      "input": {
+        "param": {
+          "desc": {
+            "authlist": "List of permissions that need to be determined"
+          }
+        }
+      }
+    },
+    "getcientitybaseinfolistapi": {
+      "description": {
+        "desc": "Obtain basic information of multiple configuration items based on the ID list"
+      },
+      "getname": "Obtain basic information for multiple configuration items",
+      "input": {
+        "param": {
+          "desc": {
+            "idlist": "Configuration Item ID List"
+          }
+        }
+      }
+    },
+    "getcientitylistapi": {
+      "description": {
+        "desc": "Obtain detailed information of multiple configuration items based on the ID list interface"
+      },
+      "getname": "Obtain detailed information of multiple configuration items"
+    },
     "getciuniqueapi": {
       "getname": "Returns a list of unique attribute IDs"
     },
     "getdownwardcilistapi": {
       "getname": "Obtain downstream model list"
     },
+    "getillegalcientitycountapi": {
+      "getname": "Obtain the number of non compliant configuration items"
+    },
     "getimportfieldlistapi": {
       "getname": "Obtain a list of importable attributes and relationships"
+    },
+    "getpasswordattrplaintextapi": {
+      "getname": "Obtain password attribute plaintext",
+      "output": {
+        "param": {
+          "desc": "Password plaintext"
+        }
+      }
     },
     "importciapi": {
       "getname": "Import Configuration Item Model"
     },
     "listciapi": {
       "getname": "Return model list information (for dropdown boxes)"
+    },
+    "listcientityforselectapi": {
+      "description": {
+        "desc": "Query Content Center Status List"
+      },
+      "getname": "Query Model Data List (Dropdown Box)",
+      "input": {
+        "param": {
+          "desc": {
+            "defaultvalue": "Default Value List"
+          }
+        }
+      },
+      "output": {
+        "param": {
+          "desc": "Model Data List"
+        }
+      }
+    },
+    "listcientitystatusapi": {
+      "getname": "Obtain configuration item alarm information"
     },
     "listcifortreeapi": {
       "description": {
@@ -225,6 +372,21 @@
     },
     "listexpressionattrrelapi": {
       "getname": "Returns a list of model expression properties and relationships"
+    },
+    "resetattrentityindexapi": {
+      "description": {
+        "desc": "Rebuild the reference attribute index interface to optimize query performance"
+      },
+      "getname": "Rebuild Reference Attribute Index"
+    },
+    "resetrelentityindexapi": {
+      "description": {
+        "desc": "Rebuild the relational index interface to optimize query performance"
+      },
+      "getname": "Rebuild Relationship Index"
+    },
+    "savealertlevelapi": {
+      "getname": "Save alarm level"
     },
     "saveciapi": {
       "getname": "Save Model",
@@ -246,11 +408,49 @@
         }
       }
     },
+    "savecientityalertapi": {
+      "getname": "Save Configuration Item Alert",
+      "input": {
+        "param": {
+          "help": {
+            "alertattr": "Each configuration item corresponds to an alarm attribute and can only have one alarm message",
+            "alertlevel": "It must be an integer greater than or equal to 0. The higher the number, the higher the level. If it is equal to 0, it means the alarm is eliminated",
+            "alerttime": "A timestamp needs to be provided, accurate to milliseconds. If not provided, the save time will be used",
+            "cientityid": "If provided, it will be used first, and ciEntityUuid will only be used if the configuration item cannot be found",
+            "uniquename": "If it is a 32 character hash, the system will directly save it. Otherwise, the system will perform hash processing first"
+          }
+        }
+      }
+    },
+    "savecientityalertbatchapi": {
+      "getname": "Batch save configuration item alarm",
+      "input": {
+        "param": {
+          "help": "Use this parameter when saving data in bulk, and the parameter format is consistent with the requirements for a single alarm"
+        }
+      }
+    },
     "savecinameattridapi": {
       "getname": "Save Model Name Properties"
     },
     "saveciuniqueruleapi": {
       "getname": "Save Model Unique Rules"
+    },
+    "searchalertlevelapi": {
+      "getname": "Search alarm level"
+    },
+    "searchattrtargetcientityapi": {
+      "getname": "Query Property Target Configuration Item",
+      "input": {
+        "param": {
+          "desc": "Selected Value List"
+        }
+      },
+      "output": {
+        "param": {
+          "desc": "Header information "
+        }
+      }
     },
     "searchciattrrellistapi": {
       "description": {
@@ -261,6 +461,94 @@
         "param": {
           "desc": {
             "keyword": "Keywords that only match unique identifiers of attributes and relationships"
+          }
+        }
+      }
+    },
+    "searchcientityalertapi": {
+      "getname": "Search for configuration item alarm information",
+      "input": {
+        "param": {
+          "desc": {
+            "groupidlist": "View ID List"
+          },
+          "help": {
+            "groupidlist": "Cannot be empty at the same time as the configuration item id list",
+            "idlist": "Cannot be empty at the same time as the view id list"
+          }
+        }
+      }
+    },
+    "searchcientityapi": {
+      "getname": "Query Configuration Items",
+      "input": {
+        "param": {
+          "desc": {
+            "attrid": "Relationship ID (used when querying reference properties through reference configuration items)",
+            "cientitylist": "The configuration item result set, if provided, will not be searched, and will be returned directly after supplementing the header information",
+            "condition": "A list of fields that need to be displayed, including attribute relationships and constants. For example, [ \"attr_xxx \":  \"keyword \",  \"relfrom_xxx \":  \"keyword \",  \"relto_xxx \":  \"keyword \",  \"const_ciid \":  \"keyword \"], where xxx represents the corresponding attribute or relationship ID",
+            "direction": "The position of the current model in the relationship",
+            "dsl": "DSL statement",
+            "fromcientityid": "Reference configuration item ID (used when querying reference properties through reference configuration items)",
+            "groupid": "Group ID",
+            "idlist": "List of configuration item IDs that need to be queried",
+            "isall": "Do you want to return all column data",
+            "islimitattr": "Whether to restrict the returned reference attribute data",
+            "islimitrel": "Whether to restrict the returned relationship data",
+            "mode": "The dialog mode will not display detailed connections",
+            "needaction": "Do you need an action column? If so, return the action column based on user permissions",
+            "needactiontype": "Do you need an action type column, usually used in form controls to mark whether data is added, modified, or deleted",
+            "needcheck": "Do you need a check column",
+            "needexpand": "Do you need to display the expanded control column",
+            "relcientityid": "Relationship configuration item ID",
+            "relid": "Relationship ID",
+            "sort": "Sort rules, example: { \"attr_xxxxx \":  \"DESC \",  \"attr_yyyyy \":  \"ASC \"}"
+          }
+        }
+      }
+    },
+    "searchcientitybydslapi": {
+      "getname": "Using DSL to query configuration items",
+      "input": {
+        "param": {
+          "desc": {
+            "attr": "The attributes that need to be returned. If not defined, all attributes will be returned. An empty array represents that no attributes will be returned",
+            "dsl": "Query expression, Logical connective supports\u0026\u0026, | |, and relational operator supports:\u003d\u003d,\u003e\u003d,\u003c\u003d,\u003e,\u003c,!\u003d Include, exclude. If you need to search for relationship or reference attribute fields, you can use a.b representation, such as env. name\u003d\u003d \"STG \"\u0026\u0026(port\u003d\u003d80 | | port\u003d\u003d443)",
+            "rel": "The relationships that need to be returned. If not defined, all relationships will be returned. An empty array represents that no relationships will be returned"
+          }
+        }
+      }
+    },
+    "searchdeletecientityapi": {
+      "getname": "Query deleted configuration items"
+    },
+    "searchillegalcientityapi": {
+      "getname": "Query non compliant configuration items"
+    },
+    "updaterelentityvaliddayapi": {
+      "getname": "Update relationship validity days",
+      "input": {
+        "param": {
+          "desc": "Valid days, 0 represents forever valid"
+        }
+      }
+    },
+    "validatecientityapi": {
+      "getname": "Verify the integrity of configuration items",
+      "input": {
+        "param": {
+          "desc": {
+            "attr": "attribute data ",
+            "id": "Configuration item ID, does not exist to represent adding",
+            "rel": "Relationship data",
+            "uuid": "Configuration item uuid"
+          }
+        }
+      },
+      "output": {
+        "param": {
+          "desc": {
+            "needchange": "Is there any change"
           }
         }
       }
@@ -410,12 +698,18 @@
       "attrconfig": "Attribute Configuration",
       "attridlist": "Model Attribute ID List",
       "attrtype": "Attribute Type",
+      "cientitydata": "Configuration Item Data",
+      "cientityid": "Configuration Item ID",
+      "cientityuniquename": "Unique identification of configuration items",
       "ciid": "Model ID",
       "ciidlist": "Model ID List",
+      "ciname": "Model Name",
+      "ciuniquename": "Model Unique Identification",
       "groupdesc": "Configuration Management Platform",
       "groupname": "CMDB",
       "importauditid": "Import Record ID",
       "isabstractci": "Is it an abstract model",
+      "iscommit": "Submit or not",
       "isprivateci": "Private model or not",
       "isshowinmenu": "Is it displayed in the menu",
       "issimpleattribute": "Is it a simple attribute",
@@ -423,7 +717,10 @@
       "name": "CMDB",
       "parentcientityid": "Parent Configuration Item ID",
       "relidlist": "Model Relationship ID List",
+      "ruleid": "Rule ID",
       "targetciid": "Target Model ID",
+      "transactiongroupid": "Transaction group ID",
+      "transactionid": "Transaction ID",
       "validateconfig": "proof setup ",
       "validatehandler": "Verification component",
       "validatorid": "Validation Rule ID",
