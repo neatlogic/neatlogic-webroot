@@ -41,7 +41,7 @@
     "email": "mailbox",
     "embed": "built-in",
     "enddate": "End date",
-    "enum": "enum ",
+    "enum": "enumeration",
     "example": "example",
     "expired": "overdue",
     "expireddays": "Number of timeout days",
@@ -67,7 +67,8 @@
     "keyword": "keyword",
     "level": "level",
     "loglist": "Log List",
-    "long": "Long integer type",
+    "long": "long integer",
+    "mailaddress": "Email address",
     "memo": "Remarks",
     "mobile": "Mobile terminal",
     "mustinput": "Required",
@@ -86,13 +87,14 @@
     "publiccache": "Public cache",
     "regex": "regular expression ",
     "role": "role",
+    "rownum": "Data Entry",
     "sort": "sort",
     "startdate": "Start date",
     "status": "state",
     "statuscolor": "Status Color",
     "statusname": "Status Name",
     "statusuniquename": "State Unique Identification",
-    "string": "Character type",
+    "string": "character string",
     "tag": "label",
     "taglist": "Label List",
     "tbodylist": "tbody list",
@@ -582,6 +584,25 @@
         }
       }
     },
+    "searchcustomviewdataapi": {
+      "getname": "Query custom view data",
+      "input": {
+        "param": {
+          "desc": {
+            "groupby": "Uuid of grouping attributes",
+            "mode": "Search mode, supporting both page and API, mainly affecting the returned data structure. Page is the default mode used for page display, and the API will return field names for API calls",
+            "searchmode": "Normal: view list mode, group: view list group mode, data: data mode"
+          }
+        }
+      },
+      "output": {
+        "param": {
+          "desc": {
+            "datalist": "Result Set"
+          }
+        }
+      }
+    },
     "searchdeletecientityapi": {
       "getname": "Query deleted configuration items"
     },
@@ -675,6 +696,14 @@
     }
   },
   "nmrai": {
+    "checkissueisfavoriteapi": {
+      "getname": "Check if the task is being followed",
+      "output": {
+        "param": {
+          "desc": "Whether to be followed, 0: No, 1: Yes"
+        }
+      }
+    },
     "clearparentissueapi": {
       "getname": "Clear Parent Task Relationship"
     },
@@ -688,6 +717,16 @@
           "desc": {
             "fromid": "Source Task ID",
             "toid": "Target Task ID"
+          }
+        }
+      }
+    },
+    "toggleissueisfavoriteapi": {
+      "getname": "Switching task attention status",
+      "input": {
+        "param": {
+          "desc": {
+            "isfavorite": "Whether to follow"
           }
         }
       }
@@ -787,6 +826,8 @@
       "validateconfig": "proof setup ",
       "validatehandler": "Verification component",
       "validatorid": "Validation Rule ID",
+      "viewid": "View ID",
+      "viewname": "View Name",
       "virtualcifileid": "Virtual model configuration file id"
     },
     "codehub": {
@@ -848,6 +889,7 @@
       "isend": "Is it over",
       "ismytask": "Is it my task",
       "issuecount": "Number of tasks",
+      "issueid": "Task ID",
       "iterationid": "Iteration ID",
       "iterationname": "Iteration Name",
       "name": "RDM",

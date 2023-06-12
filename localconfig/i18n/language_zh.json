@@ -41,7 +41,7 @@
     "email": "邮箱",
     "embed": "内置",
     "enddate": "结束日期",
-    "enum": "枚举型",
+    "enum": "枚举",
     "example": "范例",
     "expired": "过期",
     "expireddays": "超时天数",
@@ -67,7 +67,8 @@
     "keyword": "关键字",
     "level": "级别",
     "loglist": "日志列表",
-    "long": "长整型",
+    "long": "长整数",
+    "mailaddress": "邮箱地址",
     "memo": "备注",
     "mobile": "手机端",
     "mustinput": "必填",
@@ -86,13 +87,14 @@
     "publiccache": "公共缓存",
     "regex": "正则表达式",
     "role": "角色",
+    "rownum": "数据条目",
     "sort": "排序",
     "startdate": "开始日期",
     "status": "状态",
     "statuscolor": "状态颜色",
     "statusname": "状态名称",
     "statusuniquename": "状态唯一标识",
-    "string": "字符型",
+    "string": "字符串",
     "tag": "标签",
     "taglist": "标签列表",
     "tbodylist": "展示的值",
@@ -582,6 +584,25 @@
         }
       }
     },
+    "searchcustomviewdataapi": {
+      "getname": "查询自定义视图数据",
+      "input": {
+        "param": {
+          "desc": {
+            "groupby": "分组属性的uuid",
+            "mode": "搜索模式，支持page和api两种，主要影响返回的数据结构，page是默认模式，用于页面展示，api会返回字段名，用于api调用",
+            "searchmode": "normal:视图列表模式、group:视图列表分组模式、data:数据模式"
+          }
+        }
+      },
+      "output": {
+        "param": {
+          "desc": {
+            "datalist": "结果集"
+          }
+        }
+      }
+    },
     "searchdeletecientityapi": {
       "getname": "查询已删除配置项"
     },
@@ -675,6 +696,14 @@
     }
   },
   "nmrai": {
+    "checkissueisfavoriteapi": {
+      "getname": "检查任务是否被关注",
+      "output": {
+        "param": {
+          "desc": "是否被关注，0:否，1:是"
+        }
+      }
+    },
     "clearparentissueapi": {
       "getname": "清除父任务关系"
     },
@@ -688,6 +717,16 @@
           "desc": {
             "fromid": "来源任务id",
             "toid": "目标任务id"
+          }
+        }
+      }
+    },
+    "toggleissueisfavoriteapi": {
+      "getname": "切换任务关注状态",
+      "input": {
+        "param": {
+          "desc": {
+            "isfavorite": "是否关注"
           }
         }
       }
@@ -787,6 +826,8 @@
       "validateconfig": "校验设置",
       "validatehandler": "校验组件",
       "validatorid": "验证规则id",
+      "viewid": "视图id",
+      "viewname": "视图名称",
       "virtualcifileid": "虚拟模型配置文件id"
     },
     "codehub": {
@@ -848,6 +889,7 @@
       "isend": "是否结束",
       "ismytask": "是否我的任务",
       "issuecount": "任务数量",
+      "issueid": "任务id",
       "iterationid": "迭代id",
       "iterationname": "迭代名称",
       "name": "研发管理模块",
