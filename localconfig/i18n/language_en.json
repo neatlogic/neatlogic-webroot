@@ -8,7 +8,11 @@
     "alertlist": "Alarm List",
     "alerttime": "Alarm time",
     "alertvalue": "Alarm value",
+    "all": "All",
+    "attachment": "attachment",
     "attributelist": "Attribute List",
+    "boolean": "Boolean type",
+    "cacheandvalid": "Cache but revalidate",
     "catalog": "catalogue",
     "catalogid": "Directory ID",
     "catalogname": "Directory Name",
@@ -27,15 +31,19 @@
     "description": "explain",
     "displaymode": "display mode",
     "displaytype": "Display Type",
+    "double": "Double-precision floating-point format",
     "edit": "modify",
     "editdate": "modification date",
     "editmode": "Editing mode",
     "editor": "Modified by",
     "editorname": "Modifier Name",
     "editorobject": "Modifier Object",
-    "email": "mail",
+    "email": "mailbox",
+    "embed": "built-in",
     "enddate": "End date",
+    "enum": "enum ",
     "example": "example",
+    "expired": "overdue",
     "expireddays": "Number of timeout days",
     "failedcount": "Number of errors",
     "file": "file",
@@ -54,28 +62,41 @@
     "isrequired": "Is it mandatory",
     "isunique": "Is it unique",
     "iteration": "iteration",
+    "jsonarray": "JSON array",
+    "jsonobject": "JSON object",
     "keyword": "keyword",
     "level": "level",
     "loglist": "Log List",
+    "long": "Long integer type",
     "memo": "Remarks",
+    "mobile": "Mobile terminal",
     "mustinput": "Required",
     "name": "name",
+    "nocache": "No cache",
+    "object": "Any object",
     "pagecount": "page count",
     "pagesize": "page size",
     "password": "password",
+    "pc": "Computer side",
     "priority": "priority",
     "prioritycolor": "Priority Color",
     "priorityname": "Priority Name",
+    "privatecache": "Private cache",
     "progress": "schedule",
+    "publiccache": "Public cache",
+    "regex": "regular expression ",
+    "role": "role",
     "sort": "sort",
     "startdate": "Start date",
     "status": "state",
     "statuscolor": "Status Color",
     "statusname": "Status Name",
     "statusuniquename": "State Unique Identification",
+    "string": "Character type",
     "tag": "label",
     "taglist": "Label List",
     "tbodylist": "tbody list",
+    "team": "group",
     "tel": "Mobile phone number",
     "templateid": "Template ID",
     "testenv": "testing environment",
@@ -85,6 +106,7 @@
     "typeuuid": "type uuid",
     "unique": "only",
     "uniquename": "Unique identification",
+    "user": "user",
     "userid": "User ID",
     "useridlist": "User ID List",
     "userinfolist": "User Information List",
@@ -92,6 +114,7 @@
     "username": "User Name",
     "useruuid": "User uuid",
     "validcode": "Registration verification code",
+    "validtype": "Verification method",
     "worker": "Processed by"
   },
   "nfral": {
@@ -317,6 +340,9 @@
       },
       "getname": "Obtain detailed information of multiple configuration items"
     },
+    "getcitypeapi": {
+      "getname": "Obtain model type information"
+    },
     "getciuniqueapi": {
       "getname": "Returns a list of unique attribute IDs"
     },
@@ -370,6 +396,9 @@
       },
       "getname": "Obtain a model tree list"
     },
+    "listcitypeapi": {
+      "getname": "Obtain a list of model types"
+    },
     "listexpressionattrrelapi": {
       "getname": "Returns a list of model expression properties and relationships"
     },
@@ -387,6 +416,16 @@
     },
     "savealertlevelapi": {
       "getname": "Save alarm level"
+    },
+    "saveallcitypeapi": {
+      "getname": "Batch Save Model Types",
+      "input": {
+        "param": {
+          "desc": {
+            "citypelist": "Model Type List"
+          }
+        }
+      }
     },
     "saveciapi": {
       "getname": "Save Model",
@@ -432,6 +471,17 @@
     },
     "savecinameattridapi": {
       "getname": "Save Model Name Properties"
+    },
+    "savecitypeapi": {
+      "getname": "Save Model Type",
+      "input": {
+        "param": {
+          "desc": {
+            "id": "ID, does not exist to represent adding",
+            "ismenu": "Is it displayed in the menu"
+          }
+        }
+      }
     },
     "saveciuniqueruleapi": {
       "getname": "Save Model Unique Rules"
@@ -515,6 +565,19 @@
             "attr": "The attributes that need to be returned. If not defined, all attributes will be returned. An empty array represents that no attributes will be returned",
             "dsl": "Query expression, Logical connective supports\u0026\u0026, | |, and relational operator supports:\u003d\u003d,\u003e\u003d,\u003c\u003d,\u003e,\u003c,!\u003d Include, exclude. If you need to search for relationship or reference attribute fields, you can use a.b representation, such as env. name\u003d\u003d \"STG \"\u0026\u0026(port\u003d\u003d80 | | port\u003d\u003d443)",
             "rel": "The relationships that need to be returned. If not defined, all relationships will be returned. An empty array represents that no relationships will be returned"
+          }
+        }
+      }
+    },
+    "searchcitypeciapi": {
+      "getname": "Obtain model types and model lists",
+      "input": {
+        "param": {
+          "desc": {
+            "cinamelist": "Model Name List",
+            "isabstract": "Abstract model, 0: No, 1: Yes",
+            "isvirtual": "Virtual model, 0: No, 1: Yes",
+            "typeidlist": "Type ID List"
           }
         }
       }

@@ -8,7 +8,11 @@
     "alertlist": "告警列表",
     "alerttime": "告警时间",
     "alertvalue": "告警值",
+    "all": "所有",
+    "attachment": "附件",
     "attributelist": "属性列表",
+    "boolean": "布尔型",
+    "cacheandvalid": "缓存但重新验证",
     "catalog": "目录",
     "catalogid": "目录id",
     "catalogname": "目录名称",
@@ -27,15 +31,19 @@
     "description": "说明",
     "displaymode": "显示模式",
     "displaytype": "显示类型",
+    "double": "双精度浮点数",
     "edit": "修改",
     "editdate": "修改日期",
     "editmode": "编辑模式",
     "editor": "修改者",
     "editorname": "修改者名字",
     "editorobject": "修改者对象",
-    "email": "邮件",
+    "email": "邮箱",
+    "embed": "内置",
     "enddate": "结束日期",
+    "enum": "枚举型",
     "example": "范例",
+    "expired": "过期",
     "expireddays": "超时天数",
     "failedcount": "错误次数",
     "file": "文件",
@@ -54,28 +62,41 @@
     "isrequired": "是否必填",
     "isunique": "是否唯一",
     "iteration": "迭代",
+    "jsonarray": "json数组",
+    "jsonobject": "json对象",
     "keyword": "关键字",
     "level": "级别",
     "loglist": "日志列表",
+    "long": "长整型",
     "memo": "备注",
+    "mobile": "手机端",
     "mustinput": "必填",
     "name": "名称",
+    "nocache": "没有缓存",
+    "object": "任意对象",
     "pagecount": "总页数",
     "pagesize": "每页数据条目",
     "password": "密码",
+    "pc": "电脑端",
     "priority": "优先级",
     "prioritycolor": "优先级颜色",
     "priorityname": "优先级名称",
+    "privatecache": "私有缓存",
     "progress": "进度",
+    "publiccache": "公共缓存",
+    "regex": "正则表达式",
+    "role": "角色",
     "sort": "排序",
     "startdate": "开始日期",
     "status": "状态",
     "statuscolor": "状态颜色",
     "statusname": "状态名称",
     "statusuniquename": "状态唯一标识",
+    "string": "字符型",
     "tag": "标签",
     "taglist": "标签列表",
     "tbodylist": "展示的值",
+    "team": "组",
     "tel": "手机号",
     "templateid": "模板id",
     "testenv": "测试环境",
@@ -85,6 +106,7 @@
     "typeuuid": "分类uuid",
     "unique": "唯一",
     "uniquename": "唯一标识",
+    "user": "用户",
     "userid": "用户ID",
     "useridlist": "用户id列表",
     "userinfolist": "用户信息列表",
@@ -92,6 +114,7 @@
     "username": "用户名称",
     "useruuid": "用户uuid",
     "validcode": "注册验证码",
+    "validtype": "验证方式",
     "worker": "处理人"
   },
   "nfral": {
@@ -317,6 +340,9 @@
       },
       "getname": "获取多个配置项详细信息"
     },
+    "getcitypeapi": {
+      "getname": "获取模型类型信息"
+    },
     "getciuniqueapi": {
       "getname": "返回唯一属性id列表"
     },
@@ -370,6 +396,9 @@
       },
       "getname": "获取模型树型列表"
     },
+    "listcitypeapi": {
+      "getname": "获取模型类型列表"
+    },
     "listexpressionattrrelapi": {
       "getname": "返回模型表达式属性和关系列表"
     },
@@ -387,6 +416,16 @@
     },
     "savealertlevelapi": {
       "getname": "保存告警级别"
+    },
+    "saveallcitypeapi": {
+      "getname": "批量保存模型类型",
+      "input": {
+        "param": {
+          "desc": {
+            "citypelist": "模型类型列表"
+          }
+        }
+      }
     },
     "saveciapi": {
       "getname": "保存模型",
@@ -432,6 +471,17 @@
     },
     "savecinameattridapi": {
       "getname": "保存模型名称属性"
+    },
+    "savecitypeapi": {
+      "getname": "保存模型类型",
+      "input": {
+        "param": {
+          "desc": {
+            "id": "id，不存在代表添加",
+            "ismenu": "是否在菜单中显示"
+          }
+        }
+      }
     },
     "saveciuniqueruleapi": {
       "getname": "保存模型唯一规则"
@@ -515,6 +565,19 @@
             "attr": "需要返回的属性，不定义则返回所有属性，空数组代表不返回任何属性",
             "dsl": "查询表达式，逻辑运算符支持\u0026\u0026、||，关系运算符支持：\u003d\u003d、\u003e\u003d、\u003c\u003d、\u003e、\u003c、!\u003d、include、exclude。如果需要搜索关系或引用属性字段，可以使用a.b表示，例如env.name \u003d\u003d \\\"STG\\\" \u0026\u0026 (port \u003d\u003d 80 || port \u003d\u003d 443 )",
             "rel": "需要返回的关系，不定义则返回所有关系，空数组代表不返回任何关系"
+          }
+        }
+      }
+    },
+    "searchcitypeciapi": {
+      "getname": "获取模型类型和模型列表",
+      "input": {
+        "param": {
+          "desc": {
+            "cinamelist": "模型名称列表",
+            "isabstract": "是否抽象模型，0：否，1：是",
+            "isvirtual": "是否虚拟模型，0：否，1：是",
+            "typeidlist": "类型id列表"
           }
         }
       }
