@@ -12,6 +12,7 @@
     "attachment": "attachment",
     "attributelist": "Attribute List",
     "boolean": "Boolean type",
+    "bug": "defect",
     "cacheandvalid": "Cache but revalidate",
     "catalog": "catalogue",
     "catalogid": "Directory ID",
@@ -28,10 +29,13 @@
     "createusername": "Creator Name",
     "currentpage": "current page",
     "customattribute": "Custom Properties",
+    "date": "date",
+    "datetime": "Date Time",
     "description": "explain",
     "displaymode": "display mode",
     "displaytype": "Display Type",
     "double": "Double-precision floating-point format",
+    "dropdownlist": "Dropdown selection",
     "edit": "modify",
     "editdate": "modification date",
     "editmode": "Editing mode",
@@ -74,6 +78,7 @@
     "mustinput": "Required",
     "name": "name",
     "nocache": "No cache",
+    "number": "number",
     "object": "Any object",
     "pagecount": "page count",
     "pagesize": "page size",
@@ -86,6 +91,7 @@
     "progress": "schedule",
     "publiccache": "Public cache",
     "regex": "regular expression ",
+    "request": "demand",
     "role": "role",
     "rownum": "Data Entry",
     "sort": "sort",
@@ -97,13 +103,20 @@
     "string": "character string",
     "tag": "label",
     "taglist": "Label List",
+    "task": "task",
     "tbodylist": "tbody list",
     "team": "group",
     "tel": "Mobile phone number",
     "templateid": "Template ID",
+    "testcase": "test case",
     "testenv": "testing environment",
+    "testplan": "test plan",
+    "text": "text",
+    "textbox": "Text Box",
     "theadlist": "thead list",
+    "time": "time",
     "toomanyoption": "Too many options, other options will not be displayed",
+    "type": "type",
     "typeid": "Type ID",
     "typeuuid": "type uuid",
     "unique": "only",
@@ -690,6 +703,16 @@
             "ismine": "Do you want to only query the application list containing the current user\u0027s tasks",
             "ismyreported": "Whether to only query the application list reported by the current user",
             "needissuecount": "Do you need to return the number of tasks"
+          }
+        }
+      }
+    },
+    "saveattrapi": {
+      "getname": "Save Application Properties",
+      "input": {
+        "param": {
+          "desc": {
+            "id": "Attribute ID, does not provide a new representation"
           }
         }
       }

@@ -12,6 +12,7 @@
     "attachment": "附件",
     "attributelist": "属性列表",
     "boolean": "布尔型",
+    "bug": "缺陷",
     "cacheandvalid": "缓存但重新验证",
     "catalog": "目录",
     "catalogid": "目录id",
@@ -28,10 +29,13 @@
     "createusername": "创建者名字",
     "currentpage": "当前页数",
     "customattribute": "自定义属性",
+    "date": "日期",
+    "datetime": "日期时间",
     "description": "说明",
     "displaymode": "显示模式",
     "displaytype": "显示类型",
     "double": "双精度浮点数",
+    "dropdownlist": "下拉选择",
     "edit": "修改",
     "editdate": "修改日期",
     "editmode": "编辑模式",
@@ -74,6 +78,7 @@
     "mustinput": "必填",
     "name": "名称",
     "nocache": "没有缓存",
+    "number": "数字",
     "object": "任意对象",
     "pagecount": "总页数",
     "pagesize": "每页数据条目",
@@ -86,6 +91,7 @@
     "progress": "进度",
     "publiccache": "公共缓存",
     "regex": "正则表达式",
+    "request": "需求",
     "role": "角色",
     "rownum": "数据条目",
     "sort": "排序",
@@ -97,13 +103,20 @@
     "string": "字符串",
     "tag": "标签",
     "taglist": "标签列表",
+    "task": "任务",
     "tbodylist": "展示的值",
     "team": "组",
     "tel": "手机号",
     "templateid": "模板id",
+    "testcase": "测试用例",
     "testenv": "测试环境",
+    "testplan": "测试计划",
+    "text": "文本",
+    "textbox": "文本框",
     "theadlist": "展示的字段",
+    "time": "时间",
     "toomanyoption": "选项过多，其余选项不予展示",
+    "type": "类型",
     "typeid": "类型id",
     "typeuuid": "分类uuid",
     "unique": "唯一",
@@ -690,6 +703,16 @@
             "ismine": "是否只查询包含当前用户任务的应用列表",
             "ismyreported": "是否只查询当前用户上报的应用列表",
             "needissuecount": "是否需要返回任务数量"
+          }
+        }
+      }
+    },
+    "saveattrapi": {
+      "getname": "保存应用属性",
+      "input": {
+        "param": {
+          "desc": {
+            "id": "属性id，不提供代表新增"
           }
         }
       }
