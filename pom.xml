@@ -38,6 +38,10 @@
                     <groupId>com.neatlogic</groupId>
                     <artifactId>neatlogic-codehub</artifactId>
                 </dependency>
+                <dependency>
+                    <groupId>com.neatlogic</groupId>
+                    <artifactId>neatlogic-codehub-base</artifactId>
+                </dependency>
             </dependencies>
         </profile>
     </profiles>
@@ -121,6 +125,5 @@
             <groupId>com.neatlogic</groupId>
             <artifactId>neatlogic-rdm</artifactId>
         </dependency>
-
     </dependencies>
 </project>
