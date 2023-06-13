@@ -26,7 +26,21 @@
     <packaging>war</packaging>
     <name>neatlogic-pack</name>
     <version>3.0.0</version>
-
+    <profiles>
+        <profile>
+            <id>commercial</id>
+            <dependencies>
+                <dependency>
+                    <groupId>com.neatlogic</groupId>
+                    <artifactId>neatlogic-master</artifactId>
+                </dependency>
+                <dependency>
+                    <groupId>com.neatlogic</groupId>
+                    <artifactId>neatlogic-codehub</artifactId>
+                </dependency>
+            </dependencies>
+        </profile>
+    </profiles>
     <build>
         <finalName>neatlogic</finalName>
         <plugins>
@@ -62,10 +76,7 @@
             <groupId>com.neatlogic</groupId>
             <artifactId>neatlogic-itsm</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.neatlogic</groupId>
-            <artifactId>neatlogic-master</artifactId>
-        </dependency>
+
         <dependency>
             <groupId>com.neatlogic</groupId>
             <artifactId>neatlogic-change</artifactId>
@@ -110,9 +121,6 @@
             <groupId>com.neatlogic</groupId>
             <artifactId>neatlogic-rdm</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.neatlogic</groupId>
-            <artifactId>neatlogic-codehub</artifactId>
-        </dependency>
+
     </dependencies>
 </project>
