@@ -91,6 +91,7 @@
     "progress": "schedule",
     "publiccache": "Public cache",
     "regex": "regular expression ",
+    "reltype": "Relationship Type",
     "request": "demand",
     "role": "role",
     "rownum": "Data Entry",
@@ -733,6 +734,18 @@
     "deletecommentapi": {
       "getname": "Delete Comment"
     },
+    "saveissueapi": {
+      "getname": "Save Task",
+      "input": {
+        "param": {
+          "desc": {
+            "attrlist": "Custom Property list",
+            "id": "ID, does not provide a representative for adding a task",
+            "name": "Task Name"
+          }
+        }
+      }
+    },
     "searchissueapi": {
       "getname": "Search Task",
       "input": {
@@ -905,6 +918,7 @@
       "apptype": "Application Type",
       "auditcount": "Modify Historical Quantity",
       "childrentaskcount": "Number of subtasks",
+      "childtaskid": "Subtask ID",
       "commonid": "Comment ID",
       "enddate": "Expected end",
       "groupdesc": "RDM platform",

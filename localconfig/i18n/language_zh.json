@@ -91,6 +91,7 @@
     "progress": "进度",
     "publiccache": "公共缓存",
     "regex": "正则表达式",
+    "reltype": "关系类型",
     "request": "需求",
     "role": "角色",
     "rownum": "数据条目",
@@ -733,6 +734,18 @@
     "deletecommentapi": {
       "getname": "删除评论"
     },
+    "saveissueapi": {
+      "getname": "保存任务",
+      "input": {
+        "param": {
+          "desc": {
+            "attrlist": "自定义属性列表",
+            "id": "id，不提供代表新增任务",
+            "name": "任务名称"
+          }
+        }
+      }
+    },
     "searchissueapi": {
       "getname": "搜索任务",
       "input": {
@@ -905,6 +918,7 @@
       "apptype": "应用类型",
       "auditcount": "修改历史数量",
       "childrentaskcount": "子任务数量",
+      "childtaskid": "子任务id",
       "commonid": "评论id",
       "enddate": "预计结束",
       "groupdesc": "研发管理平台",
