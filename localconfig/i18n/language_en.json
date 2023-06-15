@@ -145,7 +145,8 @@
     },
     "prioritynameisexistsexception": {
       "prioritynameisexistsexception": "Priority \u0027{0}\u0027 already exists"
-    }
+    },
+    "systemattrtype": "System Properties"
   },
   "nmcaa": {
     "deleteattrapi": {
@@ -714,6 +715,16 @@
         "param": {
           "desc": {
             "id": "Attribute ID, does not provide a new representation"
+          }
+        }
+      }
+    },
+    "searchprivateattrapi": {
+      "getname": "Query application properties",
+      "input": {
+        "param": {
+          "desc": {
+            "needsystemattr": "Do you need system attributes"
           }
         }
       }
