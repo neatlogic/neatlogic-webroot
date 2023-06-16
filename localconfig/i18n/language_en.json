@@ -8,7 +8,12 @@
     "alertlist": "Alarm List",
     "alerttime": "Alarm time",
     "alertvalue": "Alarm value",
+    "all": "All",
+    "attachment": "attachment",
     "attributelist": "Attribute List",
+    "boolean": "Boolean type",
+    "bug": "defect",
+    "cacheandvalid": "Cache but revalidate",
     "catalog": "catalogue",
     "catalogid": "Directory ID",
     "catalogname": "Directory Name",
@@ -24,18 +29,25 @@
     "createusername": "Creator Name",
     "currentpage": "current page",
     "customattribute": "Custom Properties",
+    "date": "date",
+    "datetime": "Date Time",
     "description": "explain",
     "displaymode": "display mode",
     "displaytype": "Display Type",
+    "double": "Double-precision floating-point format",
+    "dropdownlist": "Dropdown selection",
     "edit": "modify",
     "editdate": "modification date",
     "editmode": "Editing mode",
     "editor": "Modified by",
     "editorname": "Modifier Name",
     "editorobject": "Modifier Object",
-    "email": "mail",
+    "email": "mailbox",
+    "embed": "built-in",
     "enddate": "End date",
+    "enum": "enumeration",
     "example": "example",
+    "expired": "overdue",
     "expireddays": "Number of timeout days",
     "failedcount": "Number of errors",
     "file": "file",
@@ -54,37 +66,63 @@
     "isrequired": "Is it mandatory",
     "isunique": "Is it unique",
     "iteration": "iteration",
+    "jsonarray": "JSON array",
+    "jsonobject": "JSON object",
     "keyword": "keyword",
     "level": "level",
     "loglist": "Log List",
+    "long": "long integer",
+    "mailaddress": "Email address",
     "memo": "Remarks",
+    "mobile": "Mobile terminal",
     "mustinput": "Required",
     "name": "name",
+    "nocache": "No cache",
+    "number": "number",
+    "object": "Any object",
     "pagecount": "page count",
     "pagesize": "page size",
     "password": "password",
+    "pc": "Computer side",
     "priority": "priority",
     "prioritycolor": "Priority Color",
     "priorityname": "Priority Name",
+    "privatecache": "Private cache",
     "progress": "schedule",
+    "publiccache": "Public cache",
+    "regex": "regular expression ",
+    "reltype": "Relationship Type",
+    "request": "demand",
+    "role": "role",
+    "rownum": "Data Entry",
     "sort": "sort",
     "startdate": "Start date",
     "status": "state",
     "statuscolor": "Status Color",
     "statusname": "Status Name",
     "statusuniquename": "State Unique Identification",
+    "string": "character string",
     "tag": "label",
     "taglist": "Label List",
+    "task": "task",
     "tbodylist": "tbody list",
+    "team": "group",
     "tel": "Mobile phone number",
     "templateid": "Template ID",
+    "testcase": "test case",
     "testenv": "testing environment",
+    "testplan": "test plan",
+    "text": "text",
+    "textbox": "Text Box",
     "theadlist": "thead list",
+    "time": "time",
     "toomanyoption": "Too many options, other options will not be displayed",
+    "type": "type",
     "typeid": "Type ID",
     "typeuuid": "type uuid",
     "unique": "only",
     "uniquename": "Unique identification",
+    "user": "user",
     "userid": "User ID",
     "useridlist": "User ID List",
     "userinfolist": "User Information List",
@@ -92,6 +130,7 @@
     "username": "User Name",
     "useruuid": "User uuid",
     "validcode": "Registration verification code",
+    "validtype": "Verification method",
     "worker": "Processed by"
   },
   "nfde": {
@@ -114,7 +153,8 @@
     },
     "prioritynameisexistsexception": {
       "prioritynameisexistsexception": "Priority \u0027{0}\u0027 already exists"
-    }
+    },
+    "systemattrtype": "System Properties"
   },
   "nmcaa": {
     "deleteattrapi": {
@@ -325,6 +365,9 @@
       },
       "getname": "Obtain detailed information of multiple configuration items"
     },
+    "getcitypeapi": {
+      "getname": "Obtain model type information"
+    },
     "getciuniqueapi": {
       "getname": "Returns a list of unique attribute IDs"
     },
@@ -378,6 +421,9 @@
       },
       "getname": "Obtain a model tree list"
     },
+    "listcitypeapi": {
+      "getname": "Obtain a list of model types"
+    },
     "listexpressionattrrelapi": {
       "getname": "Returns a list of model expression properties and relationships"
     },
@@ -395,6 +441,16 @@
     },
     "savealertlevelapi": {
       "getname": "Save alarm level"
+    },
+    "saveallcitypeapi": {
+      "getname": "Batch Save Model Types",
+      "input": {
+        "param": {
+          "desc": {
+            "citypelist": "Model Type List"
+          }
+        }
+      }
     },
     "saveciapi": {
       "getname": "Save Model",
@@ -440,6 +496,17 @@
     },
     "savecinameattridapi": {
       "getname": "Save Model Name Properties"
+    },
+    "savecitypeapi": {
+      "getname": "Save Model Type",
+      "input": {
+        "param": {
+          "desc": {
+            "id": "ID, does not exist to represent adding",
+            "ismenu": "Is it displayed in the menu"
+          }
+        }
+      }
     },
     "saveciuniqueruleapi": {
       "getname": "Save Model Unique Rules"
@@ -523,6 +590,38 @@
             "attr": "The attributes that need to be returned. If not defined, all attributes will be returned. An empty array represents that no attributes will be returned",
             "dsl": "Query expression, Logical connective supports\u0026\u0026, | |, and relational operator supports:\u003d\u003d,\u003e\u003d,\u003c\u003d,\u003e,\u003c,!\u003d Include, exclude. If you need to search for relationship or reference attribute fields, you can use a.b representation, such as env. name\u003d\u003d \"STG \"\u0026\u0026(port\u003d\u003d80 | | port\u003d\u003d443)",
             "rel": "The relationships that need to be returned. If not defined, all relationships will be returned. An empty array represents that no relationships will be returned"
+          }
+        }
+      }
+    },
+    "searchcitypeciapi": {
+      "getname": "Obtain model types and model lists",
+      "input": {
+        "param": {
+          "desc": {
+            "cinamelist": "Model Name List",
+            "isabstract": "Abstract model, 0: No, 1: Yes",
+            "isvirtual": "Virtual model, 0: No, 1: Yes",
+            "typeidlist": "Type ID List"
+          }
+        }
+      }
+    },
+    "searchcustomviewdataapi": {
+      "getname": "Query custom view data",
+      "input": {
+        "param": {
+          "desc": {
+            "groupby": "Uuid of grouping attributes",
+            "mode": "Search mode, supporting both page and API, mainly affecting the returned data structure. Page is the default mode used for page display, and the API will return field names for API calls",
+            "searchmode": "Normal: view list mode, group: view list group mode, data: data mode"
+          }
+        }
+      },
+      "output": {
+        "param": {
+          "desc": {
+            "datalist": "Result Set"
           }
         }
       }
@@ -617,14 +716,54 @@
           }
         }
       }
+    },
+    "saveattrapi": {
+      "getname": "Save Application Properties",
+      "input": {
+        "param": {
+          "desc": {
+            "id": "Attribute ID, does not provide a new representation"
+          }
+        }
+      }
+    },
+    "searchprivateattrapi": {
+      "getname": "Query application properties",
+      "input": {
+        "param": {
+          "desc": {
+            "needsystemattr": "Do you need system attributes"
+          }
+        }
+      }
     }
   },
   "nmrai": {
+    "checkissueisfavoriteapi": {
+      "getname": "Check if the task is being followed",
+      "output": {
+        "param": {
+          "desc": "Whether to be followed, 0: No, 1: Yes"
+        }
+      }
+    },
     "clearparentissueapi": {
       "getname": "Clear Parent Task Relationship"
     },
     "deletecommentapi": {
       "getname": "Delete Comment"
+    },
+    "saveissueapi": {
+      "getname": "Save Task",
+      "input": {
+        "param": {
+          "desc": {
+            "attrlist": "Custom Property list",
+            "id": "ID, does not provide a representative for adding a task",
+            "name": "Task Name"
+          }
+        }
+      }
     },
     "searchissueapi": {
       "getname": "Search Task",
@@ -633,6 +772,16 @@
           "desc": {
             "fromid": "Source Task ID",
             "toid": "Target Task ID"
+          }
+        }
+      }
+    },
+    "toggleissueisfavoriteapi": {
+      "getname": "Switching task attention status",
+      "input": {
+        "param": {
+          "desc": {
+            "isfavorite": "Whether to follow"
           }
         }
       }
@@ -732,6 +881,8 @@
       "validateconfig": "proof setup ",
       "validatehandler": "Verification component",
       "validatorid": "Validation Rule ID",
+      "viewid": "View ID",
+      "viewname": "View Name",
       "virtualcifileid": "Virtual model configuration file id"
     },
     "codehub": {
@@ -786,6 +937,7 @@
       "apptype": "Application Type",
       "auditcount": "Modify Historical Quantity",
       "childrentaskcount": "Number of subtasks",
+      "childtaskid": "Subtask ID",
       "commonid": "Comment ID",
       "enddate": "Expected end",
       "groupdesc": "RDM platform",
@@ -793,6 +945,7 @@
       "isend": "Is it over",
       "ismytask": "Is it my task",
       "issuecount": "Number of tasks",
+      "issueid": "Task ID",
       "iterationid": "Iteration ID",
       "iterationname": "Iteration Name",
       "name": "RDM",

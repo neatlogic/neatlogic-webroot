@@ -8,7 +8,12 @@
     "alertlist": "告警列表",
     "alerttime": "告警时间",
     "alertvalue": "告警值",
+    "all": "所有",
+    "attachment": "附件",
     "attributelist": "属性列表",
+    "boolean": "布尔型",
+    "bug": "缺陷",
+    "cacheandvalid": "缓存但重新验证",
     "catalog": "目录",
     "catalogid": "目录id",
     "catalogname": "目录名称",
@@ -24,18 +29,25 @@
     "createusername": "创建者名字",
     "currentpage": "当前页数",
     "customattribute": "自定义属性",
+    "date": "日期",
+    "datetime": "日期时间",
     "description": "说明",
     "displaymode": "显示模式",
     "displaytype": "显示类型",
+    "double": "双精度浮点数",
+    "dropdownlist": "下拉选择",
     "edit": "修改",
     "editdate": "修改日期",
     "editmode": "编辑模式",
     "editor": "修改者",
     "editorname": "修改者名字",
     "editorobject": "修改者对象",
-    "email": "邮件",
+    "email": "邮箱",
+    "embed": "内置",
     "enddate": "结束日期",
+    "enum": "枚举",
     "example": "范例",
+    "expired": "过期",
     "expireddays": "超时天数",
     "failedcount": "错误次数",
     "file": "文件",
@@ -54,37 +66,63 @@
     "isrequired": "是否必填",
     "isunique": "是否唯一",
     "iteration": "迭代",
+    "jsonarray": "json数组",
+    "jsonobject": "json对象",
     "keyword": "关键字",
     "level": "级别",
     "loglist": "日志列表",
+    "long": "长整数",
+    "mailaddress": "邮箱地址",
     "memo": "备注",
+    "mobile": "手机端",
     "mustinput": "必填",
     "name": "名称",
+    "nocache": "没有缓存",
+    "number": "数字",
+    "object": "任意对象",
     "pagecount": "总页数",
     "pagesize": "每页数据条目",
     "password": "密码",
+    "pc": "电脑端",
     "priority": "优先级",
     "prioritycolor": "优先级颜色",
     "priorityname": "优先级名称",
+    "privatecache": "私有缓存",
     "progress": "进度",
+    "publiccache": "公共缓存",
+    "regex": "正则表达式",
+    "reltype": "关系类型",
+    "request": "需求",
+    "role": "角色",
+    "rownum": "数据条目",
     "sort": "排序",
     "startdate": "开始日期",
     "status": "状态",
     "statuscolor": "状态颜色",
     "statusname": "状态名称",
     "statusuniquename": "状态唯一标识",
+    "string": "字符串",
     "tag": "标签",
     "taglist": "标签列表",
+    "task": "任务",
     "tbodylist": "展示的值",
+    "team": "组",
     "tel": "手机号",
     "templateid": "模板id",
+    "testcase": "测试用例",
     "testenv": "测试环境",
+    "testplan": "测试计划",
+    "text": "文本",
+    "textbox": "文本框",
     "theadlist": "展示的字段",
+    "time": "时间",
     "toomanyoption": "选项过多，其余选项不予展示",
+    "type": "类型",
     "typeid": "类型id",
     "typeuuid": "分类uuid",
     "unique": "唯一",
     "uniquename": "唯一标识",
+    "user": "用户",
     "userid": "用户ID",
     "useridlist": "用户id列表",
     "userinfolist": "用户信息列表",
@@ -92,6 +130,7 @@
     "username": "用户名称",
     "useruuid": "用户uuid",
     "validcode": "注册验证码",
+    "validtype": "验证方式",
     "worker": "处理人"
   },
   "nfde": {
@@ -114,7 +153,8 @@
     },
     "prioritynameisexistsexception": {
       "prioritynameisexistsexception": "优先级“{0}”已存在"
-    }
+    },
+    "systemattrtype": "系统属性"
   },
   "nmcaa": {
     "deleteattrapi": {
@@ -325,6 +365,9 @@
       },
       "getname": "获取多个配置项详细信息"
     },
+    "getcitypeapi": {
+      "getname": "获取模型类型信息"
+    },
     "getciuniqueapi": {
       "getname": "返回唯一属性id列表"
     },
@@ -378,6 +421,9 @@
       },
       "getname": "获取模型树型列表"
     },
+    "listcitypeapi": {
+      "getname": "获取模型类型列表"
+    },
     "listexpressionattrrelapi": {
       "getname": "返回模型表达式属性和关系列表"
     },
@@ -395,6 +441,16 @@
     },
     "savealertlevelapi": {
       "getname": "保存告警级别"
+    },
+    "saveallcitypeapi": {
+      "getname": "批量保存模型类型",
+      "input": {
+        "param": {
+          "desc": {
+            "citypelist": "模型类型列表"
+          }
+        }
+      }
     },
     "saveciapi": {
       "getname": "保存模型",
@@ -440,6 +496,17 @@
     },
     "savecinameattridapi": {
       "getname": "保存模型名称属性"
+    },
+    "savecitypeapi": {
+      "getname": "保存模型类型",
+      "input": {
+        "param": {
+          "desc": {
+            "id": "id，不存在代表添加",
+            "ismenu": "是否在菜单中显示"
+          }
+        }
+      }
     },
     "saveciuniqueruleapi": {
       "getname": "保存模型唯一规则"
@@ -523,6 +590,38 @@
             "attr": "需要返回的属性，不定义则返回所有属性，空数组代表不返回任何属性",
             "dsl": "查询表达式，逻辑运算符支持\u0026\u0026、||，关系运算符支持：\u003d\u003d、\u003e\u003d、\u003c\u003d、\u003e、\u003c、!\u003d、include、exclude。如果需要搜索关系或引用属性字段，可以使用a.b表示，例如env.name \u003d\u003d \\\"STG\\\" \u0026\u0026 (port \u003d\u003d 80 || port \u003d\u003d 443 )",
             "rel": "需要返回的关系，不定义则返回所有关系，空数组代表不返回任何关系"
+          }
+        }
+      }
+    },
+    "searchcitypeciapi": {
+      "getname": "获取模型类型和模型列表",
+      "input": {
+        "param": {
+          "desc": {
+            "cinamelist": "模型名称列表",
+            "isabstract": "是否抽象模型，0：否，1：是",
+            "isvirtual": "是否虚拟模型，0：否，1：是",
+            "typeidlist": "类型id列表"
+          }
+        }
+      }
+    },
+    "searchcustomviewdataapi": {
+      "getname": "查询自定义视图数据",
+      "input": {
+        "param": {
+          "desc": {
+            "groupby": "分组属性的uuid",
+            "mode": "搜索模式，支持page和api两种，主要影响返回的数据结构，page是默认模式，用于页面展示，api会返回字段名，用于api调用",
+            "searchmode": "normal:视图列表模式、group:视图列表分组模式、data:数据模式"
+          }
+        }
+      },
+      "output": {
+        "param": {
+          "desc": {
+            "datalist": "结果集"
           }
         }
       }
@@ -617,14 +716,54 @@
           }
         }
       }
+    },
+    "saveattrapi": {
+      "getname": "保存应用属性",
+      "input": {
+        "param": {
+          "desc": {
+            "id": "属性id，不提供代表新增"
+          }
+        }
+      }
+    },
+    "searchprivateattrapi": {
+      "getname": "查询应用属性",
+      "input": {
+        "param": {
+          "desc": {
+            "needsystemattr": "是否需要系统属性"
+          }
+        }
+      }
     }
   },
   "nmrai": {
+    "checkissueisfavoriteapi": {
+      "getname": "检查任务是否被关注",
+      "output": {
+        "param": {
+          "desc": "是否被关注，0:否，1:是"
+        }
+      }
+    },
     "clearparentissueapi": {
       "getname": "清除父任务关系"
     },
     "deletecommentapi": {
       "getname": "删除评论"
+    },
+    "saveissueapi": {
+      "getname": "保存任务",
+      "input": {
+        "param": {
+          "desc": {
+            "attrlist": "自定义属性列表",
+            "id": "id，不提供代表新增任务",
+            "name": "任务名称"
+          }
+        }
+      }
     },
     "searchissueapi": {
       "getname": "搜索任务",
@@ -633,6 +772,16 @@
           "desc": {
             "fromid": "来源任务id",
             "toid": "目标任务id"
+          }
+        }
+      }
+    },
+    "toggleissueisfavoriteapi": {
+      "getname": "切换任务关注状态",
+      "input": {
+        "param": {
+          "desc": {
+            "isfavorite": "是否关注"
           }
         }
       }
@@ -732,6 +881,8 @@
       "validateconfig": "校验设置",
       "validatehandler": "校验组件",
       "validatorid": "验证规则id",
+      "viewid": "视图id",
+      "viewname": "视图名称",
       "virtualcifileid": "虚拟模型配置文件id"
     },
     "codehub": {
@@ -786,6 +937,7 @@
       "apptype": "应用类型",
       "auditcount": "修改历史数量",
       "childrentaskcount": "子任务数量",
+      "childtaskid": "子任务id",
       "commonid": "评论id",
       "enddate": "预计结束",
       "groupdesc": "研发管理平台",
@@ -793,6 +945,7 @@
       "isend": "是否结束",
       "ismytask": "是否我的任务",
       "issuecount": "任务数量",
+      "issueid": "任务id",
       "iterationid": "迭代id",
       "iterationname": "迭代名称",
       "name": "研发管理模块",
