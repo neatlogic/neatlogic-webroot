@@ -42,6 +42,10 @@
                     <groupId>com.neatlogic</groupId>
                     <artifactId>neatlogic-codehub-base</artifactId>
                 </dependency>
+                <dependency>
+                    <groupId>com.neatlogic</groupId>
+                    <artifactId>neatlogic-document-online</artifactId>
+                </dependency>
             </dependencies>
         </profile>
     </profiles>

@@ -133,6 +133,14 @@
     "validtype": "Verification method",
     "worker": "Processed by"
   },
+  "nfde": {
+    "documentonlineindexdirnotsetexception": {
+      "documentonlineindexdirnotsetexception": "The document. online. index. dir property of the online help document index directory is not set"
+    },
+    "documentonlinenotfoundexception": {
+      "documentonlinenotfoundexception": "Online help document: \u0027{0}\u0027 does not exist"
+    }
+  },
   "nfral": {
     "priority_manage": {
       "getauthdisplayname": "Priority management permissions",
