@@ -754,6 +754,9 @@
     "deletecommentapi": {
       "getname": "Delete Comment"
     },
+    "listrelissueidapi": {
+      "getname": "Obtain a list of relationship task IDs"
+    },
     "saveissueapi": {
       "getname": "Save Task",
       "input": {
@@ -945,6 +948,7 @@
       "groupname": "RDM",
       "isend": "Is it over",
       "ismytask": "Is it my task",
+      "isopen": "Is it enabled",
       "issuecount": "Number of tasks",
       "issueid": "Task ID",
       "iterationid": "Iteration ID",
@@ -962,6 +966,7 @@
       "projectowner": "Project Owner",
       "projecttype": "Project Type",
       "relativetasklist": "Associated Task List",
+      "reldirection": "Relationship direction",
       "startdate": "Expected start",
       "startenddate": "Starting and ending dates"
     },

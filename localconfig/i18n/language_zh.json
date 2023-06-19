@@ -754,6 +754,9 @@
     "deletecommentapi": {
       "getname": "删除评论"
     },
+    "listrelissueidapi": {
+      "getname": "获取关系任务id列表"
+    },
     "saveissueapi": {
       "getname": "保存任务",
       "input": {
@@ -945,6 +948,7 @@
       "groupname": "研发管理",
       "isend": "是否结束",
       "ismytask": "是否我的任务",
+      "isopen": "是否开启",
       "issuecount": "任务数量",
       "issueid": "任务id",
       "iterationid": "迭代id",
@@ -962,6 +966,7 @@
       "projectowner": "项目所有人",
       "projecttype": "项目类型",
       "relativetasklist": "关联任务列表",
+      "reldirection": "关系方向",
       "startdate": "预计开始",
       "startenddate": "起止日期"
     },
