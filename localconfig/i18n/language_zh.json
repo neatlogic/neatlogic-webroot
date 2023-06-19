@@ -138,9 +138,6 @@
     "worker": "处理人"
   },
   "nfde": {
-    "documentonlineindexdirnotsetexception": {
-      "documentonlineindexdirnotsetexception": "在线帮助文档索引目录document.online.index.dir属性没有设置"
-    },
     "documentonlinenotfoundexception": {
       "documentonlinenotfoundexception": "在线帮助文档：“{0}”不存在"
     }
