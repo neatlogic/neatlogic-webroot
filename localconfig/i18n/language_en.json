@@ -149,6 +149,9 @@
     }
   },
   "nfre": {
+    "apptype": {
+      "getenumname": "Project Object Type"
+    },
     "priorityisinusedexception": {
       "priorityisinusedexception": "Priority \u0027{0}\u0027 is currently in use"
     },
@@ -695,6 +698,9 @@
     }
   },
   "nmraa": {
+    "getallappapi": {
+      "getname": "Get all application types"
+    },
     "getappapi": {
       "getname": "Obtain application information",
       "input": {
@@ -737,6 +743,9 @@
           }
         }
       }
+    },
+    "unactiveappapi": {
+      "getname": "Disable Application "
     }
   },
   "nmrai": {

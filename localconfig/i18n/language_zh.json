@@ -149,6 +149,9 @@
     }
   },
   "nfre": {
+    "apptype": {
+      "getenumname": "项目对象类型"
+    },
     "priorityisinusedexception": {
       "priorityisinusedexception": "优先级“{0}”正在使用中"
     },
@@ -695,6 +698,9 @@
     }
   },
   "nmraa": {
+    "getallappapi": {
+      "getname": "获取所有应用类型"
+    },
     "getappapi": {
       "getname": "获取应用信息",
       "input": {
@@ -737,6 +743,9 @@
           }
         }
       }
+    },
+    "unactiveappapi": {
+      "getname": "禁用应用"
     }
   },
   "nmrai": {
