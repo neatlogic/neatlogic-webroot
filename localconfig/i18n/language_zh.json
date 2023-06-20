@@ -678,6 +678,11 @@
       "getname": "发送注册验证码"
     }
   },
+  "nmme": {
+    "illegalactiveurlexception": {
+      "illegalactiveurlexception": "激活账号失败,链接非法,请联系管理员"
+    }
+  },
   "nmpaw": {
     "searchworkcenterapi": {
       "description": {
