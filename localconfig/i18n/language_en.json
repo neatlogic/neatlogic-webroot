@@ -681,6 +681,11 @@
       "getname": "Send registration verification code"
     }
   },
+  "nmme": {
+    "illegalactiveurlexception": {
+      "illegalactiveurlexception": "Activation of account failed. The link is illegal. Please contact the administrator"
+    }
+  },
   "nmpaw": {
     "searchworkcenterapi": {
       "description": {
