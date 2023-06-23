@@ -24,6 +24,7 @@
     "color": "colour",
     "comment": "comment",
     "commentcount": "Number of comments",
+    "config": "allocation",
     "content": "content",
     "create": "establish",
     "createdate": "Created on",
@@ -729,6 +730,9 @@
         }
       }
     },
+    "saveappconfigapi": {
+      "getname": "Save application configuration"
+    },
     "saveattrapi": {
       "getname": "Save Application Properties",
       "input": {
@@ -849,6 +853,14 @@
           }
         }
       }
+    }
+  },
+  "nmraw": {
+    "getwebhookconfigapi": {
+      "getname": "Obtain Webhook configuration"
+    },
+    "savewebhookconfigapi": {
+      "getname": "Save webhook configuration"
     }
   },
   "ocommn": {

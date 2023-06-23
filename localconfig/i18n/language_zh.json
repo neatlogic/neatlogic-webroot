@@ -24,6 +24,7 @@
     "color": "颜色",
     "comment": "评论",
     "commentcount": "评论数量",
+    "config": "配置",
     "content": "内容",
     "create": "创建",
     "createdate": "创建日期",
@@ -729,6 +730,9 @@
         }
       }
     },
+    "saveappconfigapi": {
+      "getname": "保存应用配置"
+    },
     "saveattrapi": {
       "getname": "保存应用属性",
       "input": {
@@ -849,6 +853,14 @@
           }
         }
       }
+    }
+  },
+  "nmraw": {
+    "getwebhookconfigapi": {
+      "getname": "获取Webhook配置"
+    },
+    "savewebhookconfigapi": {
+      "getname": "保存webhook配置"
     }
   },
   "ocommn": {
