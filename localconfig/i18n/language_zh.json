@@ -149,6 +149,13 @@
       "getauthintroduction": "对优先级进行新增、编辑和删除"
     }
   },
+  "nfrd": {
+    "webhookdatavo": {
+      "entityfield": {
+        "name": "邮件"
+      }
+    }
+  },
   "nfre": {
     "apptype": {
       "getenumname": "项目对象类型"
@@ -699,6 +706,16 @@
             "conditionconfig": "条件设置，为空则使用数据库中保存的条件",
             "headerlist": "显示的字段"
           }
+        }
+      }
+    }
+  },
+  "nmra": {
+    "savewebhookdataapi": {
+      "getname": "接受Webhook推送数据",
+      "input": {
+        "param": {
+          "desc": "令牌"
         }
       }
     }

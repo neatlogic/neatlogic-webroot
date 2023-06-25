@@ -149,6 +149,13 @@
       "getauthintroduction": "Adding, editing, and deleting priorities"
     }
   },
+  "nfrd": {
+    "webhookdatavo": {
+      "entityfield": {
+        "name": "mail"
+      }
+    }
+  },
   "nfre": {
     "apptype": {
       "getenumname": "Project Object Type"
@@ -699,6 +706,16 @@
             "conditionconfig": "Condition settings, if left blank, use the conditions saved in the database",
             "headerlist": "Displayed Fields"
           }
+        }
+      }
+    }
+  },
+  "nmra": {
+    "savewebhookdataapi": {
+      "getname": "Accept Webhook push data",
+      "input": {
+        "param": {
+          "desc": "token"
         }
       }
     }
