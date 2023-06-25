@@ -138,9 +138,51 @@
     "validtype": "验证方式",
     "worker": "处理人"
   },
+  "nfac": {
+    "autoexectenantconfig": {
+      "autoexecjoblogencoding": "自动化作业日志字符编码集合",
+      "maxnumofcombopversion": "组合工具版本数量上限，例如设置最多10个版本，创建保存第11个版本时，自动删除掉最老的一个，非激活状态的版本。"
+    }
+  },
+  "nfal": {
+    "matrix_modify": {
+      "getauthdisplayname": "矩阵管理权限",
+      "getauthintroduction": "对矩阵进行添加、修改和删除"
+    },
+    "tenant_config_base": {
+      "getauthdisplayname": "配置信息基础权限",
+      "getauthintroduction": "对配置信息查看"
+    },
+    "tenant_config_modify": {
+      "getauthdisplayname": "配置信息管理权限",
+      "getauthintroduction": "对配置信息修改"
+    }
+  },
+  "nfc": {
+    "frameworktenantconfig": {
+      "apiqps": "每秒向服务器发送的请求数量峰值（不分接口）"
+    }
+  },
+  "nfdc": {
+    "deploytenantconfig": {
+      "gitlabwebhookcallbackhost": "gitlab webhook回调主机地址"
+    }
+  },
   "nfde": {
     "documentonlinenotfoundexception": {
       "documentonlinenotfoundexception": "在线帮助文档：“{0}”不存在"
+    }
+  },
+  "nfet": {
+    "tenantconfignotfoundexception": {
+      "tenantconfignotfoundexception": "配置信息：“{0}”不存在"
+    }
+  },
+  "nfpc": {
+    "itsmtenantconfig": {
+      "displaymodeaftertimeout": "工单时效超时后显示方式，可选值naturalTime|workTime",
+      "processtaskbaseinfoisshow": "工单详情页工单基本信息是否默认显示",
+      "processtaskstepenablecomment": "是否工单步骤回复功能"
     }
   },
   "nfral": {

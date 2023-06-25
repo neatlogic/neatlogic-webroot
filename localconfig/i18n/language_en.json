@@ -138,9 +138,51 @@
     "validtype": "Verification method",
     "worker": "Processed by"
   },
+  "nfac": {
+    "autoexectenantconfig": {
+      "autoexecjoblogencoding": "Automation job log Character encoding set",
+      "maxnumofcombopversion": "The maximum number of versions of the combination tool, such as setting a maximum of 10 versions, will automatically delete the oldest and inactive version when creating and saving the 11th version."
+    }
+  },
+  "nfal": {
+    "matrix_modify": {
+      "getauthdisplayname": "Matrix Management Permissions",
+      "getauthintroduction": "Adding, modifying, and deleting matrices"
+    },
+    "tenant_config_base": {
+      "getauthdisplayname": "Configure Information Basic Permissions",
+      "getauthintroduction": "View configuration information"
+    },
+    "tenant_config_modify": {
+      "getauthdisplayname": "Configure Information Management Permissions",
+      "getauthintroduction": "Modifying configuration information"
+    }
+  },
+  "nfc": {
+    "frameworktenantconfig": {
+      "apiqps": "Peak number of requests sent to the server per second (regardless of interface)"
+    }
+  },
+  "nfdc": {
+    "deploytenantconfig": {
+      "gitlabwebhookcallbackhost": "Gitlab webhook callback host address"
+    }
+  },
   "nfde": {
     "documentonlinenotfoundexception": {
-      "documentonlinenotfoundexception": "Online help document: \u0027{0}\u0027 does not exist"
+      "documentonlinenotfoundexception": "Online help document: {0} does not exist"
+    }
+  },
+  "nfet": {
+    "tenantconfignotfoundexception": {
+      "tenantconfignotfoundexception": "Configuration information: {0} does not exist"
+    }
+  },
+  "nfpc": {
+    "itsmtenantconfig": {
+      "displaymodeaftertimeout": "Display method after work order timeout, optional values naturalTime | workTime",
+      "processtaskbaseinfoisshow": "Is the basic information of the work order displayed by default on the work order details page",
+      "processtaskstepenablecomment": "Work order step reply function"
     }
   },
   "nfral": {
@@ -154,10 +196,10 @@
       "getenumname": "Project Object Type"
     },
     "priorityisinusedexception": {
-      "priorityisinusedexception": "Priority \u0027{0}\u0027 is currently in use"
+      "priorityisinusedexception": "Priority {0} is currently in use"
     },
     "prioritynameisexistsexception": {
-      "prioritynameisexistsexception": "Priority \u0027{0}\u0027 already exists"
+      "prioritynameisexistsexception": "Priority {0} already exists"
     },
     "systemattrtype": "System Properties"
   },
