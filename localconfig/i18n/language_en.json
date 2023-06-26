@@ -1,5 +1,6 @@
 {
   "common": {
+    "action": "Action type",
     "actiontype": "Operation type",
     "alertattr": "Alarm Properties",
     "alertdetail": "Alarm details",
@@ -14,6 +15,7 @@
     "basicauth": "Basic authentication",
     "bearerauth": "Bearer Token",
     "boolean": "Boolean type",
+    "branch": "branch",
     "bug": "defect",
     "buildinauth": "Internal verification",
     "cacheandvalid": "Cache but revalidate",
@@ -31,11 +33,12 @@
     "createrobject": "Creator Object",
     "createuser": "creator",
     "createusername": "Creator Name",
-    "currentpage": "current page",
+    "currentpage": "Current Page",
     "customattribute": "Custom Properties",
     "date": "date",
     "datetime": "Date Time",
-    "description": "explain",
+    "delaytime": "delay time ",
+    "description": "describe",
     "displaymode": "display mode",
     "displaytype": "Display Type",
     "double": "Double-precision floating-point format",
@@ -50,6 +53,7 @@
     "embed": "built-in",
     "enddate": "End date",
     "enum": "enumeration",
+    "event": "event",
     "example": "example",
     "expired": "overdue",
     "expireddays": "Number of timeout days",
@@ -61,6 +65,7 @@
     "filetype": "Attachment Type",
     "group": "grouping",
     "icon": "icon",
+    "id": "id",
     "int": "int",
     "isactive": "Activate or not",
     "isend": "Completed or not",
@@ -72,6 +77,7 @@
     "iteration": "iteration",
     "jsonarray": "JSON array",
     "jsonobject": "JSON object",
+    "key": "key",
     "keyword": "keyword",
     "level": "level",
     "loglist": "Log List",
@@ -122,6 +128,8 @@
     "theadlist": "thead list",
     "time": "time",
     "toomanyoption": "Too many options, other options will not be displayed",
+    "triggertime": "Trigger time",
+    "triggertype": "Trigger type",
     "type": "type",
     "typeid": "Type ID",
     "typeuuid": "type uuid",
@@ -136,6 +144,7 @@
     "useruuid": "User uuid",
     "validcode": "Registration verification code",
     "validtype": "Verification method",
+    "value": "value",
     "worker": "Processed by"
   },
   "nfac": {
@@ -148,14 +157,6 @@
     "matrix_modify": {
       "getauthdisplayname": "Matrix Management Permissions",
       "getauthintroduction": "Adding, modifying, and deleting matrices"
-    },
-    "tenant_config_base": {
-      "getauthdisplayname": "Configure Information Basic Permissions",
-      "getauthintroduction": "View configuration information"
-    },
-    "tenant_config_modify": {
-      "getauthdisplayname": "Configure Information Management Permissions",
-      "getauthintroduction": "Modifying configuration information"
     }
   },
   "nfc": {
@@ -202,6 +203,19 @@
       "prioritynameisexistsexception": "Priority {0} already exists"
     },
     "systemattrtype": "System Properties"
+  },
+  "nmaac": {
+    "autoexeccombopversionsaveapi": {
+      "getname": "Save the version information of the combination tool"
+    }
+  },
+  "nmaaj": {
+    "listautoexecjoblogencodingapi": {
+      "getname": "Get automatic job log Character encoding set",
+      "mydoservice": {
+        "error": "Autoexec. job. log. encoding format is not JsonArray"
+      }
+    }
   },
   "nmcaa": {
     "deleteattrapi": {
@@ -708,6 +722,21 @@
       }
     }
   },
+  "nmdac": {
+    "savedeployciapi": {
+      "getname": "Save Continuous Integration Configuration",
+      "input": {
+        "param": {
+          "desc": {
+            "reponame": "Warehouse name",
+            "reposerveraddress": "Warehouse server address",
+            "repotype": "Warehouse type",
+            "versionrule": "Version number rules"
+          }
+        }
+      }
+    }
+  },
   "nmmam": {
     "masterusersaveapi": {
       "description": {
@@ -727,6 +756,14 @@
   "nmme": {
     "illegalactiveurlexception": {
       "illegalactiveurlexception": "Activation of account failed. The link is illegal. Please contact the administrator"
+    }
+  },
+  "nmpap": {
+    "processtaskstepgetapi": {
+      "description": {
+        "desc": "Interface for obtaining basic information of work order steps, including current step name, activation time, status, handler, assistance handler, processing time, form attribute display control, etc"
+      },
+      "getname": "Interface for obtaining basic information of work order steps"
     }
   },
   "nmpaw": {
@@ -905,6 +942,17 @@
       "getname": "Save webhook configuration"
     }
   },
+  "nmtat": {
+    "gettenantconfigapi": {
+      "getname": "Obtain current tenant configuration information"
+    },
+    "listtenantconfigapi": {
+      "getname": "List of current tenant configuration information"
+    },
+    "savetenantconfigapi": {
+      "getname": "Save current tenant configuration information"
+    }
+  },
   "ocommn": {
     "isneedpage": "Do you need pagination"
   },
@@ -914,6 +962,7 @@
   },
   "term": {
     "autoexec": {
+      "combopid": "Combination tool ID",
       "groupdesc": "Automation platform",
       "groupname": "Automation",
       "name": "Autoexec"
@@ -924,6 +973,7 @@
     "cmdb": {
       "addid": "ID, do not provide a representative to add",
       "allowedit": "Allow editing",
+      "appsystemid": "Application system ID",
       "attrconfig": "Attribute Configuration",
       "attridlist": "Model Attribute ID List",
       "attrtype": "Attribute Type",
@@ -943,6 +993,7 @@
       "isshowinmenu": "Is it displayed in the menu",
       "issimpleattribute": "Is it a simple attribute",
       "isvirtualci": "Is it a virtual model",
+      "moduleid": "Module ID",
       "name": "CMDB",
       "parentcientityid": "Parent Configuration Item ID",
       "relidlist": "Model Relationship ID List",
@@ -986,7 +1037,10 @@
     "itsm": {
       "groupdesc": "One stop service reporting tracking processing platform",
       "groupname": "ITSM",
-      "name": "ITSM"
+      "name": "ITSM",
+      "processtaskid": "Work Order ID",
+      "processtaskinfo": "Work Order Information",
+      "processtaskstepid": "Work Order Step ID"
     },
     "knowledge": {
       "groupdesc": "Knowledge platform",
