@@ -12,6 +12,7 @@
     "all": "所有",
     "attachment": "附件",
     "attributelist": "属性列表",
+    "authlist": "授权列表",
     "basicauth": "Basic认证",
     "bearerauth": "Bearer Token",
     "boolean": "布尔型",
@@ -26,6 +27,7 @@
     "color": "颜色",
     "comment": "评论",
     "commentcount": "评论数量",
+    "condition": "条件配置",
     "config": "配置",
     "content": "内容",
     "create": "创建",
@@ -37,6 +39,7 @@
     "customattribute": "自定义属性",
     "date": "日期",
     "datetime": "日期时间",
+    "defaultvalue": "默认值列表",
     "delaytime": "延迟时间",
     "description": "描述",
     "displaymode": "显示模式",
@@ -71,6 +74,7 @@
     "isend": "是否完结",
     "isexpired": "是否过期",
     "ismycreated": "是否我创建",
+    "isneedpage": "是否需要分页",
     "isregister": "是否注册",
     "isrequired": "是否必填",
     "isunique": "是否唯一",
@@ -790,6 +794,28 @@
     }
   },
   "nmra": {
+    "deletereportapi": {
+      "getname": "删除报表"
+    },
+    "getreporttypeapi": {
+      "getname": "获取报表分类"
+    },
+    "reportlistapi": {
+      "description": {
+        "desc": "获取报表定义列表(用于报表实例编辑面板的模版选择下拉框)"
+      },
+      "getname": "获取报表定义列表"
+    },
+    "savereportapi": {
+      "getname": "保存报表定义",
+      "input": {
+        "param": {
+          "desc": {
+            "sql": "报表定义数据源配置"
+          }
+        }
+      }
+    },
     "savewebhookdataapi": {
       "getname": "接受Webhook推送数据",
       "input": {
@@ -797,6 +823,12 @@
           "desc": "令牌"
         }
       }
+    },
+    "searchreportapi": {
+      "getname": "查询报表定义"
+    },
+    "updatereportactiveapi": {
+      "getname": "更改报表定义激活状态"
     }
   },
   "nmraa": {
