@@ -44,6 +44,10 @@
                 </dependency>
                 <dependency>
                     <groupId>com.neatlogic</groupId>
+                    <artifactId>neatlogic-rdm-commercial</artifactId>
+                </dependency>
+                <dependency>
+                    <groupId>com.neatlogic</groupId>
                     <artifactId>neatlogic-document-online</artifactId>
                 </dependency>
             </dependencies>
