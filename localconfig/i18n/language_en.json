@@ -93,6 +93,7 @@
     "object": "Any object",
     "pagecount": "page count",
     "pagesize": "page size",
+    "parentid": "Parent ID",
     "password": "password",
     "pc": "Computer side",
     "priority": "priority",
@@ -744,6 +745,18 @@
       }
     }
   },
+  "nmeat": {
+    "eventtypesaveapi": {
+      "getname": "Save event type information",
+      "input": {
+        "param": {
+          "desc": {
+            "authoritylist": "Authorization object, multiple choices allowed, format [ \"common # alluser \",  \"user # userUuid \",  \"team # teamUuid \",  \"role # roleUuid \"]"
+          }
+        }
+      }
+    }
+  },
   "nmmam": {
     "masterusersaveapi": {
       "description": {
@@ -1040,6 +1053,7 @@
       "name": "DevOps"
     },
     "event": {
+      "eventtypeid": "Saved Event Type ID",
       "name": "Event"
     },
     "framework": {

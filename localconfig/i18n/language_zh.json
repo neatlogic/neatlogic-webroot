@@ -93,6 +93,7 @@
     "object": "任意对象",
     "pagecount": "总页数",
     "pagesize": "每页数据条目",
+    "parentid": "父id",
     "password": "密码",
     "pc": "电脑端",
     "priority": "优先级",
@@ -744,6 +745,18 @@
       }
     }
   },
+  "nmeat": {
+    "eventtypesaveapi": {
+      "getname": "保存事件类型信息",
+      "input": {
+        "param": {
+          "desc": {
+            "authoritylist": "授权对象，可多选，格式[\\\"common#alluser\\\",\\\"user#userUuid\\\",\\\"team#teamUuid\\\",\\\"role#roleUuid\\\"]"
+          }
+        }
+      }
+    }
+  },
   "nmmam": {
     "masterusersaveapi": {
       "description": {
@@ -1040,6 +1053,7 @@
       "name": "自动发布"
     },
     "event": {
+      "eventtypeid": "保存的事件类型ID",
       "name": "事件模块"
     },
     "framework": {
