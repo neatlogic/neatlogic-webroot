@@ -12,6 +12,7 @@
     "all": "All",
     "attachment": "attachment",
     "attributelist": "Attribute List",
+    "authlist": "Authorization List",
     "basicauth": "Basic authentication",
     "bearerauth": "Bearer Token",
     "boolean": "Boolean type",
@@ -26,6 +27,7 @@
     "color": "colour",
     "comment": "comment",
     "commentcount": "Number of comments",
+    "condition": "Condition configuration",
     "config": "allocation",
     "content": "content",
     "create": "establish",
@@ -37,6 +39,7 @@
     "customattribute": "Custom Properties",
     "date": "date",
     "datetime": "Date Time",
+    "defaultvalue": "Default Value List",
     "delaytime": "delay time ",
     "description": "describe",
     "displaymode": "display mode",
@@ -71,6 +74,7 @@
     "isend": "Completed or not",
     "isexpired": "Expired or not",
     "ismycreated": "Do I create",
+    "isneedpage": "Do you need pagination",
     "isregister": "Register or not",
     "isrequired": "Is it mandatory",
     "isunique": "Is it unique",
@@ -790,6 +794,28 @@
     }
   },
   "nmra": {
+    "deletereportapi": {
+      "getname": "Delete Report"
+    },
+    "getreporttypeapi": {
+      "getname": "Obtain Report Classification"
+    },
+    "reportlistapi": {
+      "description": {
+        "desc": "Obtain a list of report definitions (template selection drop-down box for report instance editing panel)"
+      },
+      "getname": "Obtain a list of report definitions"
+    },
+    "savereportapi": {
+      "getname": "Save Report Definition",
+      "input": {
+        "param": {
+          "desc": {
+            "sql": "Report Definition Data Source Configuration"
+          }
+        }
+      }
+    },
     "savewebhookdataapi": {
       "getname": "Accept Webhook push data",
       "input": {
@@ -797,6 +823,12 @@
           "desc": "token"
         }
       }
+    },
+    "searchreportapi": {
+      "getname": "Query Report Definition"
+    },
+    "updatereportactiveapi": {
+      "getname": "Change Report Definition Activation Status"
     }
   },
   "nmraa": {
