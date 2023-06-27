@@ -30,6 +30,7 @@
     "condition": "条件配置",
     "config": "配置",
     "content": "内容",
+    "count": "数量",
     "create": "创建",
     "createdate": "创建日期",
     "createrobject": "创建者对象",
@@ -198,6 +199,16 @@
     }
   },
   "nfrd": {
+    "issuevo": {
+      "entityfield": {
+        "name": "webhook列表"
+      }
+    },
+    "issuewebhookvo": {
+      "entityfield": {
+        "name": "数据id"
+      }
+    },
     "webhookdatavo": {
       "entityfield": {
         "name": "邮件"
@@ -1002,6 +1013,11 @@
     },
     "savewebhookconfigapi": {
       "getname": "保存webhook配置"
+    }
+  },
+  "nmrcaw": {
+    "searchwebhookdataapi": {
+      "getname": "搜索webhook数据"
     }
   },
   "nmtat": {

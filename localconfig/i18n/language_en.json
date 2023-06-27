@@ -30,6 +30,7 @@
     "condition": "Condition configuration",
     "config": "allocation",
     "content": "content",
+    "count": "quantity",
     "create": "establish",
     "createdate": "Created on",
     "createrobject": "Creator Object",
@@ -198,6 +199,16 @@
     }
   },
   "nfrd": {
+    "issuevo": {
+      "entityfield": {
+        "name": "Webhook List"
+      }
+    },
+    "issuewebhookvo": {
+      "entityfield": {
+        "name": "Data ID"
+      }
+    },
     "webhookdatavo": {
       "entityfield": {
         "name": "mail"
@@ -1002,6 +1013,11 @@
     },
     "savewebhookconfigapi": {
       "getname": "Save webhook configuration"
+    }
+  },
+  "nmrcaw": {
+    "searchwebhookdataapi": {
+      "getname": "Search for webhook data"
     }
   },
   "nmtat": {
