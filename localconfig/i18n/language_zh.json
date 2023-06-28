@@ -1,7 +1,9 @@
 {
   "common": {
     "action": "动作类型",
+    "actiontime": "操作时间",
     "actiontype": "操作类型",
+    "actionuser": "操作人",
     "alertattr": "告警属性",
     "alertdetail": "告警详情",
     "alertlevel": "告警级别",
@@ -12,6 +14,7 @@
     "all": "所有",
     "attachment": "附件",
     "attributelist": "属性列表",
+    "attrname": "属性名",
     "authlist": "授权列表",
     "basicauth": "Basic认证",
     "bearerauth": "Bearer Token",
@@ -73,6 +76,8 @@
     "group": "分组",
     "icon": "图标",
     "id": "id",
+    "inputfrom": "更新方式",
+    "inputfromname": "变更方式名称",
     "int": "整形",
     "isactive": "是否激活",
     "isdeleted": "是否已删除",
@@ -100,10 +105,12 @@
     "mustinput": "必填",
     "name": "名称",
     "needscore": "是否需要评分",
+    "newvalue": "新值",
     "noauth": "无需认证",
     "nocache": "没有缓存",
     "number": "数字",
     "object": "任意对象",
+    "oldvalue": "旧值",
     "pagecount": "总页数",
     "pagesize": "每页数据条目",
     "parentid": "父id",
@@ -117,6 +124,7 @@
     "progress": "进度",
     "publiccache": "公共缓存",
     "regex": "正则表达式",
+    "relname": "关系名称",
     "reltype": "关系类型",
     "request": "需求",
     "role": "角色",
@@ -942,6 +950,9 @@
     "deletecommentapi": {
       "getname": "删除评论"
     },
+    "deleteissuerelapi": {
+      "getname": "删除任务关联关系"
+    },
     "listrelissueidapi": {
       "getname": "获取关系任务id列表"
     },
@@ -1192,6 +1203,7 @@
       "name": "监管报送"
     },
     "rdm": {
+      "appattr": "应用属性",
       "appcolor": "应用颜色",
       "applist": "应用列表",
       "apptype": "应用类型",
@@ -1221,6 +1233,7 @@
       "projectname": "项目名称",
       "projectowner": "项目所有人",
       "projecttype": "项目类型",
+      "relapp": "关联应用",
       "relativetasklist": "关联任务列表",
       "reldirection": "关系方向",
       "startdate": "预计开始",

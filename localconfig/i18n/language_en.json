@@ -1,7 +1,9 @@
 {
   "common": {
     "action": "Action type",
+    "actiontime": "Operation time",
     "actiontype": "Operation type",
+    "actionuser": "Operator",
     "alertattr": "Alarm Properties",
     "alertdetail": "Alarm details",
     "alertlevel": "Alarm level",
@@ -12,6 +14,7 @@
     "all": "All",
     "attachment": "attachment",
     "attributelist": "Attribute List",
+    "attrname": "Attribute Name",
     "authlist": "Authorization List",
     "basicauth": "Basic authentication",
     "bearerauth": "Bearer Token",
@@ -73,6 +76,8 @@
     "group": "grouping",
     "icon": "icon",
     "id": "id",
+    "inputfrom": "Update method",
+    "inputfromname": "Change method name",
     "int": "int",
     "isactive": "Activate or not",
     "isdeleted": "Has it been deleted",
@@ -100,10 +105,12 @@
     "mustinput": "Required",
     "name": "name",
     "needscore": "Do you need to score",
+    "newvalue": "New value",
     "noauth": "No certification required",
     "nocache": "No cache",
     "number": "number",
     "object": "Any object",
+    "oldvalue": "Old value",
     "pagecount": "page count",
     "pagesize": "page size",
     "parentid": "Parent ID",
@@ -117,6 +124,7 @@
     "progress": "schedule",
     "publiccache": "Public cache",
     "regex": "regular expression ",
+    "relname": "Relationship Name",
     "reltype": "Relationship Type",
     "request": "demand",
     "role": "role",
@@ -942,6 +950,9 @@
     "deletecommentapi": {
       "getname": "Delete Comment"
     },
+    "deleteissuerelapi": {
+      "getname": "Delete task association relationship"
+    },
     "listrelissueidapi": {
       "getname": "Obtain a list of relationship task IDs"
     },
@@ -1192,6 +1203,7 @@
       "name": "PBC"
     },
     "rdm": {
+      "appattr": "apply property",
       "appcolor": "Apply Color",
       "applist": "Application List",
       "apptype": "Application Type",
@@ -1221,6 +1233,7 @@
       "projectname": "entry name",
       "projectowner": "Project Owner",
       "projecttype": "Project Type",
+      "relapp": "Related applications",
       "relativetasklist": "Associated Task List",
       "reldirection": "Relationship direction",
       "startdate": "Expected start",
