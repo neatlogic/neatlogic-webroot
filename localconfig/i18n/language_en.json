@@ -208,6 +208,9 @@
     }
   },
   "nfet": {
+    "paramjsonirregularexception": {
+      "paramjsonirregularexception": "The parameter is not in a valid JSON format"
+    },
     "tenantconfignotfoundexception": {
       "tenantconfignotfoundexception": "Configuration information: {0} does not exist"
     }

@@ -208,6 +208,9 @@
     }
   },
   "nfet": {
+    "paramjsonirregularexception": {
+      "paramjsonirregularexception": "参数不是合法的JSON格式"
+    },
     "tenantconfignotfoundexception": {
       "tenantconfignotfoundexception": "配置信息：“{0}”不存在"
     }
