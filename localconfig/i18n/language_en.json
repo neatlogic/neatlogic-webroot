@@ -37,6 +37,7 @@
     "create": "establish",
     "createdate": "Created on",
     "createrobject": "Creator Object",
+    "createtime": "Creation time",
     "createuser": "creator",
     "createusername": "Creator Name",
     "currentpage": "Current Page",
