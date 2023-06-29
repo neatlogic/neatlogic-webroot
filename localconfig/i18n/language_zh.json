@@ -404,6 +404,7 @@
         "param": {
           "desc": {
             "attrfilterlist": "属性过滤条件",
+            "idlist": "id列表",
             "relfilterlist": "关系过滤条件",
             "showattrrellist": "需要导出的字段列表，包括属性和关系"
           }

@@ -404,6 +404,7 @@
         "param": {
           "desc": {
             "attrfilterlist": "Attribute filtering criteria",
+            "idlist": "ID List",
             "relfilterlist": "Relationship filtering criteria",
             "showattrrellist": "List of fields to be exported, including attributes and relationships"
           }
