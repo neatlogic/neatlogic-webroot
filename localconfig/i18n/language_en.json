@@ -125,6 +125,7 @@
     "parentid": "Parent ID",
     "password": "password",
     "pc": "Computer side",
+    "phone": "Telephone number",
     "priority": "priority",
     "prioritycolor": "Priority Color",
     "priorityname": "Priority Name",
@@ -137,6 +138,7 @@
     "reltype": "Relationship Type",
     "request": "demand",
     "role": "role",
+    "roleuuidlist": "Role uuid List",
     "rownum": "Data Entry",
     "scoreinfo": "Rating information",
     "sort": "sort",
@@ -156,6 +158,7 @@
     "task": "task",
     "tbodylist": "tbody list",
     "team": "group",
+    "teamuuidlist": "User group uuid list",
     "tel": "Mobile phone number",
     "templateid": "Template ID",
     "testcase": "test case",
@@ -184,6 +187,8 @@
     "userlist": "User List",
     "username": "User Name",
     "useruuid": "User uuid",
+    "useruuidlist": "User uuid list",
+    "uuid": "Uuid",
     "validcode": "Registration verification code",
     "validtype": "Verification method",
     "value": "value",
@@ -1124,6 +1129,14 @@
       "getname": "Save current tenant configuration information"
     }
   },
+  "nmtau": {
+    "userdeleteapi": {
+      "getname": "Delete User Interface"
+    },
+    "usersaveapi": {
+      "getname": "Save User Interface"
+    }
+  },
   "ocommn": {
     "isneedpage": "Do you need pagination"
   },
@@ -1200,7 +1213,9 @@
     "framework": {
       "documentonlineinfo": "Online Help Document Information",
       "groupname": "Framework",
-      "name": "Framework"
+      "name": "Framework",
+      "userotherinfo": "Other user information",
+      "viplevel": "User level"
     },
     "inspect": {
       "groupdesc": "Inspection platform",
