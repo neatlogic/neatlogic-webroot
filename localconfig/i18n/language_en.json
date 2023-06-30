@@ -12,6 +12,7 @@
     "alerttime": "Alarm time",
     "alertvalue": "Alarm value",
     "all": "All",
+    "anchorpoint": "Anchor point",
     "attachment": "attachment",
     "attributelist": "Attribute List",
     "attrname": "Attribute Name",
@@ -26,12 +27,14 @@
     "catalog": "catalogue",
     "catalogid": "Directory ID",
     "catalogname": "Directory Name",
+    "children": "subset",
     "cnname": "Chinese name",
     "color": "colour",
     "comment": "comment",
     "commentcount": "Number of comments",
     "condition": "Condition configuration",
     "config": "allocation",
+    "configlist": "Configuration List",
     "content": "content",
     "count": "quantity",
     "create": "establish",
@@ -70,7 +73,9 @@
     "file": "file",
     "fileid": "File ID",
     "filelist": "Attachment List",
+    "filename": "file name",
     "fileparamname": "Attachment parameter name",
+    "filepath": "File Path",
     "filetype": "Attachment Type",
     "focususerlist": "List of followers",
     "focususeruuidlist": "List of followers\u0027 uuids",
@@ -84,6 +89,7 @@
     "isdeleted": "Has it been deleted",
     "isend": "Completed or not",
     "isexpired": "Expired or not",
+    "isfile": "Is it a file",
     "isfocus": "Have you followed",
     "ismycreated": "Do I create",
     "isneedpage": "Do you need pagination",
@@ -102,7 +108,9 @@
     "long": "long integer",
     "mailaddress": "Email address",
     "memo": "Remarks",
+    "menu": "menu",
     "mobile": "Mobile terminal",
+    "modulegroup": "Module group",
     "mustinput": "Required",
     "name": "name",
     "needscore": "Do you need to score",
@@ -142,6 +150,7 @@
     "statusname": "Status Name",
     "statusuniquename": "State Unique Identification",
     "string": "character string",
+    "tablelist": "Table List",
     "tag": "label",
     "taglist": "Label List",
     "task": "task",
@@ -167,6 +176,7 @@
     "typeuuid": "type uuid",
     "unique": "only",
     "uniquename": "Unique identification",
+    "upwardnamelist": "Upper level name list",
     "user": "user",
     "userid": "User ID",
     "useridlist": "User ID List",
@@ -803,6 +813,17 @@
       }
     }
   },
+  "nmfs": {
+    "documentonlineinitializeindexhandler": {
+      "executeforalltenant": {
+        "error": "There are two files with the same path: {0}. Please rename one of the files or move it to a different path",
+        "system_out_println": "The location of the online document index library is {0}",
+        "warn_a": "The filePath field in the {1st} element of the {0} file has no value set",
+        "warn_b": "The moduleGroup field in the {1st} element of the {0} file has no value set"
+      },
+      "getname": "Initialize online help document index"
+    }
+  },
   "nmmam": {
     "masterusersaveapi": {
       "description": {
@@ -1054,6 +1075,41 @@
       "getname": "Search for webhook data"
     }
   },
+  "nmtad": {
+    "adddocumentonlineconfigapi": {
+      "getname": "Add mapping relationship between online help documents and module menus"
+    },
+    "deletedocumentonlineconfigapi": {
+      "getname": "Delete the mapping relationship between online help documents and module menus"
+    },
+    "exportdocumentonlineconfigapi": {
+      "getname": "Export online help document configuration file"
+    },
+    "getdocumentonlineapi": {
+      "getname": "Obtain a single online help document"
+    },
+    "getdocumentonlinedirectoryapi": {
+      "getname": "Online Help Document Directory"
+    },
+    "getdocumentonlinelistapi": {
+      "getname": "Query the list of online help documents"
+    },
+    "getdocumentonlinetablelistapi": {
+      "getname": "Display document list grouped by first level directory"
+    },
+    "getdocumentonlineunclassifiedlistapi": {
+      "getname": "Query the list of unclassified online help documents"
+    },
+    "savedocumentonlineconfigapi": {
+      "getname": "Save the mapping relationship between online help documents and module menus"
+    },
+    "searchdocumentonlineapi": {
+      "getname": "Keyword search for online help documents",
+      "mydoservice": {
+        "error": "Unable to find document with docID {0}"
+      }
+    }
+  },
   "nmtat": {
     "gettenantconfigapi": {
       "getname": "Obtain current tenant configuration information"
@@ -1139,6 +1195,7 @@
       "name": "Event"
     },
     "framework": {
+      "documentonlineinfo": "Online Help Document Information",
       "groupname": "Framework",
       "name": "Framework"
     },

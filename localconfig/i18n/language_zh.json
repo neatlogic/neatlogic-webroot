@@ -12,6 +12,7 @@
     "alerttime": "告警时间",
     "alertvalue": "告警值",
     "all": "所有",
+    "anchorpoint": "锚点",
     "attachment": "附件",
     "attributelist": "属性列表",
     "attrname": "属性名",
@@ -26,12 +27,14 @@
     "catalog": "目录",
     "catalogid": "目录id",
     "catalogname": "目录名称",
+    "children": "子集合",
     "cnname": "中文名称",
     "color": "颜色",
     "comment": "评论",
     "commentcount": "评论数量",
     "condition": "条件配置",
     "config": "配置",
+    "configlist": "配置列表",
     "content": "内容",
     "count": "数量",
     "create": "创建",
@@ -70,7 +73,9 @@
     "file": "文件",
     "fileid": "文件ID",
     "filelist": "附件列表",
+    "filename": "文件名",
     "fileparamname": "附件参数名称",
+    "filepath": "文件路径",
     "filetype": "附件类型",
     "focususerlist": "关注人列表",
     "focususeruuidlist": "关注人uuid列表",
@@ -84,6 +89,7 @@
     "isdeleted": "是否已删除",
     "isend": "是否完结",
     "isexpired": "是否过期",
+    "isfile": "是否是文件",
     "isfocus": "是否已关注",
     "ismycreated": "是否我创建",
     "isneedpage": "是否需要分页",
@@ -102,7 +108,9 @@
     "long": "长整数",
     "mailaddress": "邮箱地址",
     "memo": "备注",
+    "menu": "菜单",
     "mobile": "手机端",
+    "modulegroup": "模块组",
     "mustinput": "必填",
     "name": "名称",
     "needscore": "是否需要评分",
@@ -142,6 +150,7 @@
     "statusname": "状态名称",
     "statusuniquename": "状态唯一标识",
     "string": "字符串",
+    "tablelist": "表格列表",
     "tag": "标签",
     "taglist": "标签列表",
     "task": "任务",
@@ -167,6 +176,7 @@
     "typeuuid": "分类uuid",
     "unique": "唯一",
     "uniquename": "唯一标识",
+    "upwardnamelist": "上层名称列表",
     "user": "用户",
     "userid": "用户ID",
     "useridlist": "用户id列表",
@@ -803,6 +813,17 @@
       }
     }
   },
+  "nmfs": {
+    "documentonlineinitializeindexhandler": {
+      "executeforalltenant": {
+        "error": "有两个文件路径相同，路径为：{0}，请将其中一个文件重命名文件或移动到不同路径中",
+        "system_out_println": "在线文档索引库位置为{0}",
+        "warn_a": "{0}文件中第{1}个元素中的filePath字段没有设置值",
+        "warn_b": "{0}文件中第{1}个元素中的moduleGroup字段没有设置值"
+      },
+      "getname": "初始化在线帮助文档索引"
+    }
+  },
   "nmmam": {
     "masterusersaveapi": {
       "description": {
@@ -1054,6 +1075,41 @@
       "getname": "搜索webhook数据"
     }
   },
+  "nmtad": {
+    "adddocumentonlineconfigapi": {
+      "getname": "添加在线帮助文档与模块菜单的映射关系"
+    },
+    "deletedocumentonlineconfigapi": {
+      "getname": "删除在线帮助文档与模块菜单的映射关系"
+    },
+    "exportdocumentonlineconfigapi": {
+      "getname": "导出在线帮助文档配置文件"
+    },
+    "getdocumentonlineapi": {
+      "getname": "获取单个在线帮助文档"
+    },
+    "getdocumentonlinedirectoryapi": {
+      "getname": "在线帮助文档目录"
+    },
+    "getdocumentonlinelistapi": {
+      "getname": "查询在线帮助文档列表"
+    },
+    "getdocumentonlinetablelistapi": {
+      "getname": "按第一层目录分组显示文档列表"
+    },
+    "getdocumentonlineunclassifiedlistapi": {
+      "getname": "查询未分类的在线帮助文档列表"
+    },
+    "savedocumentonlineconfigapi": {
+      "getname": "保存在线帮助文档与模块菜单的映射关系"
+    },
+    "searchdocumentonlineapi": {
+      "getname": "关键字搜索在线帮助文档",
+      "mydoservice": {
+        "error": "找不到docID为{0}的文档"
+      }
+    }
+  },
   "nmtat": {
     "gettenantconfigapi": {
       "getname": "获取当前租户配置信息"
@@ -1139,6 +1195,7 @@
       "name": "事件模块"
     },
     "framework": {
+      "documentonlineinfo": "在线帮助文档信息",
       "groupname": "系统配置",
       "name": "基础框架"
     },
