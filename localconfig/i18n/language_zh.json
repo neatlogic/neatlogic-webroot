@@ -841,6 +841,9 @@
     }
   },
   "nmme": {
+    "emailnotsupportexception": {
+      "emailnotsupportexception": "不支持此类型邮箱,请使用企业邮箱"
+    },
     "illegalactiveurlexception": {
       "illegalactiveurlexception": "激活账号失败,链接非法,请联系管理员"
     }

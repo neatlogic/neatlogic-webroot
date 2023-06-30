@@ -841,6 +841,9 @@
     }
   },
   "nmme": {
+    "emailnotsupportexception": {
+      "emailnotsupportexception": "This type of mailbox is not supported, please use Email hosting service"
+    },
     "illegalactiveurlexception": {
       "illegalactiveurlexception": "Activation of account failed. The link is illegal. Please contact the administrator"
     }
