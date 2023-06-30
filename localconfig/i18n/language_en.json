@@ -186,6 +186,7 @@
     "userinfolist": "User Information List",
     "userlist": "User List",
     "username": "User Name",
+    "usertype": "customer type",
     "useruuid": "User uuid",
     "useruuidlist": "User uuid list",
     "uuid": "Uuid",
@@ -254,6 +255,11 @@
         "name": "Data ID"
       }
     },
+    "projectuservo": {
+      "entityfield": {
+        "name": "User Type List"
+      }
+    },
     "webhookdatavo": {
       "entityfield": {
         "name": "mail"
@@ -269,6 +275,9 @@
     },
     "prioritynameisexistsexception": {
       "prioritynameisexistsexception": "Priority {0} already exists"
+    },
+    "projectusertype": {
+      "getenumname": "Project User Type"
     },
     "systemattrtype": "System Properties"
   },
@@ -1055,6 +1064,9 @@
           }
         }
       }
+    },
+    "saveprojectuserapi": {
+      "getname": "Add Project User"
     },
     "searchprojectapi": {
       "getname": "Query items"
