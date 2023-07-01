@@ -260,6 +260,15 @@
         "name": "用户类型列表"
       }
     },
+    "projectvo": {
+      "entityfield": {
+        "name": {
+          "isleader": "当前用户是否项目管理员",
+          "ismember": "当前用户是否项目成员",
+          "isowner": "当前用户是否项目拥有人"
+        }
+      }
+    },
     "webhookdatavo": {
       "entityfield": {
         "name": "邮件"
@@ -1041,6 +1050,9 @@
           "desc": "优先级id"
         }
       }
+    },
+    "listprojectuserapi": {
+      "getname": "获取项目用户列表"
     },
     "savepriorityapi": {
       "description": {

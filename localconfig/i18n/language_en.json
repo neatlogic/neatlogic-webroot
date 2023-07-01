@@ -260,6 +260,15 @@
         "name": "User Type List"
       }
     },
+    "projectvo": {
+      "entityfield": {
+        "name": {
+          "isleader": "Is the current user a project administrator",
+          "ismember": "Is the current user a project member",
+          "isowner": "Is the current user the project owner"
+        }
+      }
+    },
     "webhookdatavo": {
       "entityfield": {
         "name": "mail"
@@ -1041,6 +1050,9 @@
           "desc": "Priority ID"
         }
       }
+    },
+    "listprojectuserapi": {
+      "getname": "Obtain project user list"
     },
     "savepriorityapi": {
       "description": {
