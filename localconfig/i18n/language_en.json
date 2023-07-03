@@ -245,6 +245,14 @@
     }
   },
   "nfrd": {
+    "appvo": {
+      "entityfield": {
+        "name": {
+          "hasissue": "Does it include tasks",
+          "hasiteration": "Is it associated with iteration"
+        }
+      }
+    },
     "issuevo": {
       "entityfield": {
         "name": "Webhook List"

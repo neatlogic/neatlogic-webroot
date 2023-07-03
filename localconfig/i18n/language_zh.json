@@ -245,6 +245,14 @@
     }
   },
   "nfrd": {
+    "appvo": {
+      "entityfield": {
+        "name": {
+          "hasissue": "是否包含任务",
+          "hasiteration": "是否关联迭代"
+        }
+      }
+    },
     "issuevo": {
       "entityfield": {
         "name": "webhook列表"
