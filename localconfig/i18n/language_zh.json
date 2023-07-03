@@ -214,6 +214,22 @@
       "apiqps": "每秒向服务器发送的请求数量峰值（不分接口）"
     }
   },
+  "nfd": {
+    "licensevo": {
+      "entityfield": {
+        "name": {
+          "dburl": "数据库URL",
+          "enddate": "服务终止日期",
+          "expirationdate": "过期日期",
+          "graceperiod": "宽限天数",
+          "isend": "是否终止服务",
+          "isvalid": "是否合法",
+          "modules": "模块列表",
+          "purchaser": "客户名称"
+        }
+      }
+    }
+  },
   "nfdc": {
     "deploytenantconfig": {
       "gitlabwebhookcallbackhost": "gitlab webhook回调主机地址"
@@ -1148,6 +1164,11 @@
       "mydoservice": {
         "error": "找不到docID为{0}的文档"
       }
+    }
+  },
+  "nmtal": {
+    "getlicenseapi": {
+      "getname": "获取许可信息"
     }
   },
   "nmtat": {

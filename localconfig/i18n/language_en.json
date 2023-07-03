@@ -214,6 +214,22 @@
       "apiqps": "Peak number of requests sent to the server per second (regardless of interface)"
     }
   },
+  "nfd": {
+    "licensevo": {
+      "entityfield": {
+        "name": {
+          "dburl": "Database URL",
+          "enddate": "Service Termination Date",
+          "expirationdate": "expiration date ",
+          "graceperiod": "Grace days",
+          "isend": "Whether to terminate the service",
+          "isvalid": "Is it legal",
+          "modules": "Module List",
+          "purchaser": "Customer Name"
+        }
+      }
+    }
+  },
   "nfdc": {
     "deploytenantconfig": {
       "gitlabwebhookcallbackhost": "Gitlab webhook callback host address"
@@ -1148,6 +1164,11 @@
       "mydoservice": {
         "error": "Unable to find document with docID {0}"
       }
+    }
+  },
+  "nmtal": {
+    "getlicenseapi": {
+      "getname": "Obtaining License Information"
     }
   },
   "nmtat": {
