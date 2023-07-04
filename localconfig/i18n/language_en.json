@@ -89,6 +89,7 @@
     "isdeleted": "Has it been deleted",
     "isend": "Completed or not",
     "isexpired": "Expired or not",
+    "isfavoried": "Favorite or not",
     "isfile": "Is it a file",
     "isfocus": "Have you followed",
     "ismycreated": "Do I create",
@@ -271,7 +272,12 @@
     },
     "issuevo": {
       "entityfield": {
-        "name": "Webhook List"
+        "name": {
+          "isleader": "Is it the project leader",
+          "ismember": "Is it a project member",
+          "isowner": "Project owner or not",
+          "webhooklist": "Webhook List"
+        }
       }
     },
     "issuewebhookvo": {
@@ -308,6 +314,12 @@
     },
     "prioritynameisexistsexception": {
       "prioritynameisexistsexception": "Priority {0} already exists"
+    },
+    "projectnotauthexception": {
+      "projectnotauthexception": "You do not have permission to modify project \u0027{0}\u0027"
+    },
+    "projectnotfoundexception": {
+      "projectnotfoundexception": "Project \u0027{0}\u0027 does not exist"
     },
     "projectusertype": {
       "getenumname": "Project User Type"
@@ -958,6 +970,9 @@
     }
   },
   "nmraa": {
+    "activeappapi": {
+      "getname": "Activate application"
+    },
     "getallappapi": {
       "getname": "Get all application types"
     },
@@ -1009,6 +1024,9 @@
     },
     "unactiveappapi": {
       "getname": "Disable Application "
+    },
+    "updateappsortapi": {
+      "getname": "Update app sorting"
     }
   },
   "nmrai": {
@@ -1074,6 +1092,9 @@
           "desc": "Priority ID"
         }
       }
+    },
+    "deleteprojectapi": {
+      "getname": "delete item"
     },
     "listprojectuserapi": {
       "getname": "Obtain project user list"

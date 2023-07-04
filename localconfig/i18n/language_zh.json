@@ -89,6 +89,7 @@
     "isdeleted": "是否已删除",
     "isend": "是否完结",
     "isexpired": "是否过期",
+    "isfavoried": "是否收藏",
     "isfile": "是否是文件",
     "isfocus": "是否已关注",
     "ismycreated": "是否我创建",
@@ -271,7 +272,12 @@
     },
     "issuevo": {
       "entityfield": {
-        "name": "webhook列表"
+        "name": {
+          "isleader": "是否项目负责人",
+          "ismember": "是否项目成员",
+          "isowner": "是否项目所有人",
+          "webhooklist": "webhook列表"
+        }
       }
     },
     "issuewebhookvo": {
@@ -308,6 +314,12 @@
     },
     "prioritynameisexistsexception": {
       "prioritynameisexistsexception": "优先级“{0}”已存在"
+    },
+    "projectnotauthexception": {
+      "projectnotauthexception": "您没有修改项目“{0}”的权限"
+    },
+    "projectnotfoundexception": {
+      "projectnotfoundexception": "项目“{0}”不存在"
     },
     "projectusertype": {
       "getenumname": "项目用户类型"
@@ -958,6 +970,9 @@
     }
   },
   "nmraa": {
+    "activeappapi": {
+      "getname": "激活应用"
+    },
     "getallappapi": {
       "getname": "获取所有应用类型"
     },
@@ -1009,6 +1024,9 @@
     },
     "unactiveappapi": {
       "getname": "禁用应用"
+    },
+    "updateappsortapi": {
+      "getname": "更新应用排序"
     }
   },
   "nmrai": {
@@ -1074,6 +1092,9 @@
           "desc": "优先级id"
         }
       }
+    },
+    "deleteprojectapi": {
+      "getname": "删除项目"
     },
     "listprojectuserapi": {
       "getname": "获取项目用户列表"
