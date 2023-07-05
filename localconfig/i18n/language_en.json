@@ -76,7 +76,7 @@
     "filename": "file name",
     "fileparamname": "Attachment parameter name",
     "filepath": "File Path",
-    "filetype": "Attachment Type",
+    "filetype": "file type",
     "focususerlist": "List of followers",
     "focususeruuidlist": "List of followers\u0027 uuids",
     "group": "grouping",
@@ -95,6 +95,7 @@
     "ismycreated": "Do I create",
     "isneedpage": "Do you need pagination",
     "isneedpriority": "Display priority",
+    "isoverride": "Overwrite or not",
     "isregister": "Register or not",
     "isrequired": "Is it mandatory",
     "isshow": "Display or not",
@@ -108,6 +109,7 @@
     "loglist": "Log List",
     "long": "long integer",
     "mailaddress": "Email address",
+    "matrix": "matrix",
     "memo": "Remarks",
     "menu": "menu",
     "mobile": "Mobile terminal",
@@ -1192,6 +1194,29 @@
       "getname": "Obtaining License Information"
     }
   },
+  "nmtam": {
+    "exportmatrixapi": {
+      "getname": "Export Matrix"
+    },
+    "importmatrixapi": {
+      "getname": "Import Matrix",
+      "output": {
+        "param": {
+          "desc": {
+            "labelduplication": "Label already exists",
+            "nameduplication": "Name already exists",
+            "uuidduplication": "Same matrix exists"
+          }
+        }
+      }
+    },
+    "matrixexportapi": {
+      "getname": "Export matrix data"
+    },
+    "matriximportapi": {
+      "getname": "Import matrix data"
+    }
+  },
   "nmtat": {
     "gettenantconfigapi": {
       "getname": "Obtain current tenant configuration information"
@@ -1287,6 +1312,7 @@
     "framework": {
       "documentonlineinfo": "Online Help Document Information",
       "groupname": "Framework",
+      "matrixuuid": "Matrix uuid",
       "name": "Framework",
       "userotherinfo": "Other user information",
       "viplevel": "User level"
