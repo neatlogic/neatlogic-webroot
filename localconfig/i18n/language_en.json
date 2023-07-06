@@ -319,7 +319,8 @@
       "projectnotauthexception": "You do not have permission to modify project \u0027{0}\u0027"
     },
     "projectnotfoundexception": {
-      "projectnotfoundexception": "Project \u0027{0}\u0027 does not exist"
+      "projectnotfoundexception": "Project \u0027{0}\u0027 does not exist",
+      "theprojectnotfoundexception": "Project does not exist"
     },
     "projectusertype": {
       "getenumname": "Project User Type"

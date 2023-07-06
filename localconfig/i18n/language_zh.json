@@ -319,7 +319,8 @@
       "projectnotauthexception": "您没有修改项目“{0}”的权限"
     },
     "projectnotfoundexception": {
-      "projectnotfoundexception": "项目“{0}”不存在"
+      "projectnotfoundexception": "项目“{0}”不存在",
+      "theprojectnotfoundexception": "项目不存在"
     },
     "projectusertype": {
       "getenumname": "项目用户类型"
