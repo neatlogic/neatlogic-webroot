@@ -900,6 +900,9 @@
     }
   },
   "nmme": {
+    "activeurlexpiredtimeexception": {
+      "activeurlexpiredtimeexception": "The activation connection has expired"
+    },
     "emailnotsupportexception": {
       "emailnotsupportexception": "This type of mailbox is not supported, please use corporate email"
     },

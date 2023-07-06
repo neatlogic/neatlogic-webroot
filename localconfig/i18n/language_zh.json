@@ -900,6 +900,9 @@
     }
   },
   "nmme": {
+    "activeurlexpiredtimeexception": {
+      "activeurlexpiredtimeexception": "激活连接已失效"
+    },
     "emailnotsupportexception": {
       "emailnotsupportexception": "不支持此类型邮箱,请使用企业邮箱"
     },
