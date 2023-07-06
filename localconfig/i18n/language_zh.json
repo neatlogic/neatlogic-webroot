@@ -287,6 +287,13 @@
         "name": "数据id"
       }
     },
+    "projecttemplatevo": {
+      "entityfield": {
+        "name": {
+          "apptypelist": "应用类型列表"
+        }
+      }
+    },
     "projectuservo": {
       "entityfield": {
         "name": "用户类型列表"

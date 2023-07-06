@@ -287,6 +287,13 @@
         "name": "Data ID"
       }
     },
+    "projecttemplatevo": {
+      "entityfield": {
+        "name": {
+          "apptypelist": "Application Type List"
+        }
+      }
+    },
     "projectuservo": {
       "entityfield": {
         "name": "User Type List"
