@@ -95,6 +95,7 @@
     "ismycreated": "是否我创建",
     "isneedpage": "是否需要分页",
     "isneedpriority": "是否显示优先级",
+    "isoverride": "是否覆盖",
     "isregister": "是否注册",
     "isrequired": "是否必填",
     "isshow": "是否显示",
@@ -108,6 +109,7 @@
     "loglist": "日志列表",
     "long": "长整数",
     "mailaddress": "邮箱地址",
+    "matrix": "矩阵",
     "memo": "备注",
     "menu": "菜单",
     "mobile": "手机端",
@@ -1196,6 +1198,29 @@
       "getname": "获取许可信息"
     }
   },
+  "nmtam": {
+    "exportmatrixapi": {
+      "getname": "导出矩阵"
+    },
+    "importmatrixapi": {
+      "getname": "导入矩阵",
+      "output": {
+        "param": {
+          "desc": {
+            "labelduplication": "标签已存在",
+            "nameduplication": "名称已存在",
+            "uuidduplication": "存在相同的矩阵"
+          }
+        }
+      }
+    },
+    "matrixexportapi": {
+      "getname": "导出矩阵数据"
+    },
+    "matriximportapi": {
+      "getname": "导入矩阵数据"
+    }
+  },
   "nmtat": {
     "gettenantconfigapi": {
       "getname": "获取当前租户配置信息"
@@ -1291,6 +1316,7 @@
     "framework": {
       "documentonlineinfo": "在线帮助文档信息",
       "groupname": "系统配置",
+      "matrixuuid": "矩阵uuid",
       "name": "基础框架",
       "userotherinfo": "用户其他信息",
       "viplevel": "用户等级"
