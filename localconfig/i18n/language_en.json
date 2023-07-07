@@ -61,6 +61,7 @@
     "editorname": "Modifier Name",
     "editorobject": "Modifier Object",
     "email": "mailbox",
+    "emailnotify": "Email notification",
     "embed": "built-in",
     "enddate": "End date",
     "endtime": "End time",
@@ -112,6 +113,7 @@
     "matrix": "matrix",
     "memo": "Remarks",
     "menu": "menu",
+    "messagenotify": "Message notification",
     "mobile": "Mobile terminal",
     "modulegroup": "Module group",
     "mustinput": "Required",
@@ -120,6 +122,7 @@
     "newvalue": "New value",
     "noauth": "No certification required",
     "nocache": "No cache",
+    "notifytype": "Notification Type",
     "number": "number",
     "object": "Any object",
     "oldvalue": "Old value",
@@ -175,6 +178,7 @@
     "timeoutpoint": "Time out point",
     "title": "title",
     "toomanyoption": "Too many options, other options will not be displayed",
+    "trigger": "Trigger point",
     "triggertime": "Trigger time",
     "triggertype": "Trigger type",
     "type": "type",
@@ -196,6 +200,7 @@
     "validcode": "Registration verification code",
     "validtype": "Verification method",
     "value": "value",
+    "wechatnotify": "WeChat notification",
     "worker": "Processed by",
     "worktimename": "Working Time Window Name",
     "worktimeuuid": "Working Time Window Uuid"
@@ -1233,6 +1238,11 @@
       "getname": "Import matrix data"
     }
   },
+  "nmtan": {
+    "getnotifypolicydefaulttemplateapi": {
+      "getname": "Obtain default template for notification policy trigger points"
+    }
+  },
   "nmtat": {
     "gettenantconfigapi": {
       "getname": "Obtain current tenant configuration information"
@@ -1330,6 +1340,8 @@
       "groupname": "Framework",
       "matrixuuid": "Matrix uuid",
       "name": "Framework",
+      "notifypolicydefaulttemplateinfo": "Notification default template information",
+      "policyid": "Notification Policy ID",
       "userotherinfo": "Other user information",
       "viplevel": "User level"
     },

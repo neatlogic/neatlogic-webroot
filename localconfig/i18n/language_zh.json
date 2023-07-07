@@ -61,6 +61,7 @@
     "editorname": "修改者名字",
     "editorobject": "修改者对象",
     "email": "邮箱",
+    "emailnotify": "邮件通知",
     "embed": "内置",
     "enddate": "结束日期",
     "endtime": "结束时间",
@@ -112,6 +113,7 @@
     "matrix": "矩阵",
     "memo": "备注",
     "menu": "菜单",
+    "messagenotify": "消息通知",
     "mobile": "手机端",
     "modulegroup": "模块组",
     "mustinput": "必填",
@@ -120,6 +122,7 @@
     "newvalue": "新值",
     "noauth": "无需认证",
     "nocache": "没有缓存",
+    "notifytype": "通知类型",
     "number": "数字",
     "object": "任意对象",
     "oldvalue": "旧值",
@@ -175,6 +178,7 @@
     "timeoutpoint": "超时时间点",
     "title": "标题",
     "toomanyoption": "选项过多，其余选项不予展示",
+    "trigger": "触发点",
     "triggertime": "触发时间",
     "triggertype": "触发类型",
     "type": "类型",
@@ -196,6 +200,7 @@
     "validcode": "注册验证码",
     "validtype": "验证方式",
     "value": "值",
+    "wechatnotify": "微信通知",
     "worker": "处理人",
     "worktimename": "工作时间窗口名称",
     "worktimeuuid": "工作时间窗口uuid"
@@ -1233,6 +1238,11 @@
       "getname": "导入矩阵数据"
     }
   },
+  "nmtan": {
+    "getnotifypolicydefaulttemplateapi": {
+      "getname": "获取通知策略触发点默认模板"
+    }
+  },
   "nmtat": {
     "gettenantconfigapi": {
       "getname": "获取当前租户配置信息"
@@ -1330,6 +1340,8 @@
       "groupname": "系统配置",
       "matrixuuid": "矩阵uuid",
       "name": "基础框架",
+      "notifypolicydefaulttemplateinfo": "通知默认模板信息",
+      "policyid": "通知策略id",
       "userotherinfo": "用户其他信息",
       "viplevel": "用户等级"
     },
