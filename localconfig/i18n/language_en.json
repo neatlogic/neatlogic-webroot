@@ -893,6 +893,11 @@
       "getname": "Initialize online help document index"
     }
   },
+  "nmft": {
+    "createdatawarehousetableinithandler": {
+      "getname": "Create a data warehouse dynamic table"
+    }
+  },
   "nmmam": {
     "masterusersaveapi": {
       "description": {

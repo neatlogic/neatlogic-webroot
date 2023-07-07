@@ -893,6 +893,11 @@
       "getname": "初始化在线帮助文档索引"
     }
   },
+  "nmft": {
+    "createdatawarehousetableinithandler": {
+      "getname": "创建数据仓库动态表"
+    }
+  },
   "nmmam": {
     "masterusersaveapi": {
       "description": {
