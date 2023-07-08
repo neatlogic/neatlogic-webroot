@@ -292,6 +292,13 @@
         "name": "数据id"
       }
     },
+    "projecttemplateapptypevo": {
+      "entityfield": {
+        "name": {
+          "apptypename": "应用类型名称"
+        }
+      }
+    },
     "projecttemplatevo": {
       "entityfield": {
         "name": {
@@ -1119,6 +1126,9 @@
     "deleteprojectapi": {
       "getname": "删除项目"
     },
+    "listprojecttemplateapi": {
+      "getname": "获取项目模板列表"
+    },
     "listprojectuserapi": {
       "getname": "获取项目用户列表"
     },
@@ -1144,6 +1154,9 @@
           }
         }
       }
+    },
+    "saveprojecttemplatefromprojectapi": {
+      "getname": "项目另存为模板"
     },
     "saveprojectuserapi": {
       "getname": "添加项目用户"

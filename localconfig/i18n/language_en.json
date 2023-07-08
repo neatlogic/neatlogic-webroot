@@ -292,6 +292,13 @@
         "name": "Data ID"
       }
     },
+    "projecttemplateapptypevo": {
+      "entityfield": {
+        "name": {
+          "apptypename": "Application Type Name"
+        }
+      }
+    },
     "projecttemplatevo": {
       "entityfield": {
         "name": {
@@ -1119,6 +1126,9 @@
     "deleteprojectapi": {
       "getname": "delete item"
     },
+    "listprojecttemplateapi": {
+      "getname": "Obtain a list of project templates"
+    },
     "listprojectuserapi": {
       "getname": "Obtain project user list"
     },
@@ -1144,6 +1154,9 @@
           }
         }
       }
+    },
+    "saveprojecttemplatefromprojectapi": {
+      "getname": "Save Project as Template"
     },
     "saveprojectuserapi": {
       "getname": "Add Project User"
