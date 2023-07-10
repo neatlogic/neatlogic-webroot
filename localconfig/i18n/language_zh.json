@@ -266,6 +266,10 @@
     "priority_manage": {
       "getauthdisplayname": "优先级管理权限",
       "getauthintroduction": "对优先级进行新增、编辑和删除"
+    },
+    "template_manage": {
+      "getauthdisplayname": "项目模板管理权限",
+      "getauthintroduction": "对项目模板进行编辑和删除，可以把已有项目另存为模板。"
     }
   },
   "nfrd": {
@@ -1173,6 +1177,17 @@
           }
         }
       }
+    }
+  },
+  "nmrat": {
+    "deleteprojecttemplateapi": {
+      "getname": "删除项目模板"
+    },
+    "getprojecttemplateapi": {
+      "getname": "获取项目模板详情"
+    },
+    "saveprojecttemplateapi": {
+      "getname": "保存项目模板"
     }
   },
   "nmraw": {

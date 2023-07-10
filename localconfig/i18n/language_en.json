@@ -266,6 +266,10 @@
     "priority_manage": {
       "getauthdisplayname": "Priority management permissions",
       "getauthintroduction": "Adding, editing, and deleting priorities"
+    },
+    "template_manage": {
+      "getauthdisplayname": "Project Template Management Permissions",
+      "getauthintroduction": "Editing and deleting project templates allows you to save existing projects as templates."
     }
   },
   "nfrd": {
@@ -1173,6 +1177,17 @@
           }
         }
       }
+    }
+  },
+  "nmrat": {
+    "deleteprojecttemplateapi": {
+      "getname": "Delete Project Template"
+    },
+    "getprojecttemplateapi": {
+      "getname": "Obtain project template details"
+    },
+    "saveprojecttemplateapi": {
+      "getname": "Save Project Template"
     }
   },
   "nmraw": {
