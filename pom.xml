@@ -50,6 +50,10 @@
                     <groupId>com.neatlogic</groupId>
                     <artifactId>neatlogic-document-online</artifactId>
                 </dependency>
+                <dependency>
+                    <groupId>com.neatlogic</groupId>
+                    <artifactId>neatlogic-document-online-commercial</artifactId>
+                </dependency>
             </dependencies>
         </profile>
     </profiles>
