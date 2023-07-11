@@ -256,6 +256,11 @@
       "tenantconfignotfoundexception": "Configuration information: {0} does not exist"
     }
   },
+  "nfne": {
+    "emailsendexception": {
+      "emailsendexception": "Email sending failed, please try again"
+    }
+  },
   "nfpc": {
     "itsmtenantconfig": {
       "displaymodeaftertimeout": "Display method after work order timeout, optional values naturalTime | workTime",
