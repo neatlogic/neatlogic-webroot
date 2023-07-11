@@ -272,6 +272,10 @@
       "getauthdisplayname": "Priority management permissions",
       "getauthintroduction": "Adding, editing, and deleting priorities"
     },
+    "project_manage": {
+      "getauthdisplayname": "Project management permissions",
+      "getauthintroduction": "Reopen Project"
+    },
     "template_manage": {
       "getauthdisplayname": "Project Template Management Permissions",
       "getauthintroduction": "Editing and deleting project templates allows you to save existing projects as templates."
@@ -344,6 +348,12 @@
     },
     "prioritynameisexistsexception": {
       "prioritynameisexistsexception": "Priority {0} already exists"
+    },
+    "projectnotauthcloseexception": {
+      "projectnotauthcloseexception": "You do not have permission to close project {0}"
+    },
+    "projectnotauthdeleteexception": {
+      "projectnotauthdeleteexception": "You do not have permission to delete project {0}"
     },
     "projectnotauthexception": {
       "projectnotauthexception": "You do not have permission to modify project \u0027{0}\u0027"
@@ -1124,6 +1134,9 @@
     }
   },
   "nmrap": {
+    "closeprojectapi": {
+      "getname": "Close Project"
+    },
     "deletepriorityapi": {
       "getname": "Delete Priority",
       "input": {
@@ -1140,6 +1153,9 @@
     },
     "listprojectuserapi": {
       "getname": "Obtain project user list"
+    },
+    "openprojectapi": {
+      "getname": "Open Project"
     },
     "savepriorityapi": {
       "description": {

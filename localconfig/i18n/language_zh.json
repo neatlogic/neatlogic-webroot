@@ -272,6 +272,10 @@
       "getauthdisplayname": "优先级管理权限",
       "getauthintroduction": "对优先级进行新增、编辑和删除"
     },
+    "project_manage": {
+      "getauthdisplayname": "项目管理权限",
+      "getauthintroduction": "重新打开项目"
+    },
     "template_manage": {
       "getauthdisplayname": "项目模板管理权限",
       "getauthintroduction": "对项目模板进行编辑和删除，可以把已有项目另存为模板。"
@@ -344,6 +348,12 @@
     },
     "prioritynameisexistsexception": {
       "prioritynameisexistsexception": "优先级“{0}”已存在"
+    },
+    "projectnotauthcloseexception": {
+      "projectnotauthcloseexception": "您没有关闭项目 {0} 的权限"
+    },
+    "projectnotauthdeleteexception": {
+      "projectnotauthdeleteexception": "您没有删除项目 {0} 的权限"
     },
     "projectnotauthexception": {
       "projectnotauthexception": "您没有修改项目“{0}”的权限"
@@ -1124,6 +1134,9 @@
     }
   },
   "nmrap": {
+    "closeprojectapi": {
+      "getname": "关闭项目"
+    },
     "deletepriorityapi": {
       "getname": "删除优先级",
       "input": {
@@ -1140,6 +1153,9 @@
     },
     "listprojectuserapi": {
       "getname": "获取项目用户列表"
+    },
+    "openprojectapi": {
+      "getname": "打开项目"
     },
     "savepriorityapi": {
       "description": {
