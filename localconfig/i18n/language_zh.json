@@ -118,6 +118,7 @@
     "menu": "菜单",
     "messagenotify": "消息通知",
     "mobile": "手机端",
+    "modifytimemilliseconds": "修改时间的毫秒数",
     "modulegroup": "模块组",
     "mustinput": "必填",
     "name": "名称",
@@ -393,7 +394,7 @@
   },
   "nmaat": {
     "batchdeleteautoexectoolapi": {
-      "getname": "批量删除内置工具，删除lcd不等于传入参数值的工具"
+      "getname": "批量删除内置工具，删除modifyTimeMilliseconds不等于传入参数值的工具"
     },
     "registerautoexectoolapi": {
       "getname": "注册内置工具"

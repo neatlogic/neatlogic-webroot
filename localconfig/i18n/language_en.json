@@ -118,6 +118,7 @@
     "menu": "menu",
     "messagenotify": "Message notification",
     "mobile": "Mobile terminal",
+    "modifytimemilliseconds": "Number of milliseconds to modify time",
     "modulegroup": "Module group",
     "mustinput": "Required",
     "name": "name",
@@ -393,7 +394,7 @@
   },
   "nmaat": {
     "batchdeleteautoexectoolapi": {
-      "getname": "Batch delete built-in tools, delete tools whose LCD does not equal the passed in parameter values"
+      "getname": "Batch delete built-in tools, delete tools whose modifyTimeMilliseconds does not equal the passed in parameter values"
     },
     "registerautoexectoolapi": {
       "getname": "Register built-in tools"
