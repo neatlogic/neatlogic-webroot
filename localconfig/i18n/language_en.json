@@ -56,6 +56,7 @@
     "double": "Double-precision floating-point format",
     "dropdownlist": "Dropdown selection",
     "edit": "modify",
+    "editauthoritylist": "Edit Permission List",
     "editdate": "modification date",
     "editmode": "Editing mode",
     "editor": "Modified by",
@@ -69,6 +70,7 @@
     "enum": "enumeration",
     "event": "event",
     "example": "example",
+    "executeauthoritylist": "Execution permission list",
     "expired": "overdue",
     "expireddays": "Number of timeout days",
     "failedcount": "Number of errors",
@@ -127,6 +129,7 @@
     "number": "number",
     "object": "Any object",
     "oldvalue": "Old value",
+    "owneruuid": "Maintainer",
     "packagename": "Package Name",
     "pagecount": "page count",
     "pagesize": "page size",
@@ -185,6 +188,7 @@
     "triggertype": "Trigger type",
     "type": "type",
     "typeid": "Type ID",
+    "typename": "Classification name",
     "typeuuid": "type uuid",
     "unique": "only",
     "uniquename": "Unique identification",
@@ -203,6 +207,7 @@
     "validtype": "Verification method",
     "value": "value",
     "versionid": "Version ID",
+    "viewauthoritylist": "View permission list",
     "wechatnotify": "WeChat notification",
     "worker": "Processed by",
     "worktimename": "Working Time Window Name",
@@ -371,6 +376,9 @@
     "systemattrtype": "System Properties"
   },
   "nmaac": {
+    "autoexeccombopbasicinfosaveapi": {
+      "getname": "Save basic information of the combination tool"
+    },
     "autoexeccombopversionsaveapi": {
       "getname": "Save the version information of the combination tool"
     }
@@ -381,6 +389,14 @@
       "mydoservice": {
         "error": "Autoexec. job. log. encoding format is not JsonArray"
       }
+    }
+  },
+  "nmaat": {
+    "batchdeleteautoexectoolapi": {
+      "getname": "Batch delete built-in tools, delete tools whose LCD does not equal the passed in parameter values"
+    },
+    "registerautoexectoolapi": {
+      "getname": "Register built-in tools"
     }
   },
   "nmcaa": {
@@ -1332,9 +1348,15 @@
   "term": {
     "autoexec": {
       "combopid": "Combination tool ID",
+      "execmode": "Execution method",
+      "freeparam": "Free parameter",
       "groupdesc": "Automation platform",
       "groupname": "Automation",
-      "name": "Autoexec"
+      "inputparamlist": "Input parameter list",
+      "name": "Autoexec",
+      "outputparamlist": "Output parameter list",
+      "riskname": "Operation level name",
+      "scriptparser": "Script Parser"
     },
     "change": {
       "name": "Change"
