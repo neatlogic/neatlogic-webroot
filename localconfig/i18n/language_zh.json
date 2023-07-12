@@ -291,6 +291,13 @@
     }
   },
   "nfrd": {
+    "appstatusvo": {
+      "entityfield": {
+        "name": {
+          "isstart": "是否开始"
+        }
+      }
+    },
     "appvo": {
       "entityfield": {
         "name": {
@@ -1061,6 +1068,9 @@
         }
       }
     },
+    "getappcompleterateapi": {
+      "getname": "获取应用完成率"
+    },
     "listprivateattrapi": {
       "getname": "获取所有内部属性"
     },
@@ -1223,6 +1233,29 @@
         "param": {
           "desc": {
             "prioritylist": "优先级列表"
+          }
+        }
+      }
+    }
+  },
+  "nmras": {
+    "liststatusapi": {
+      "getname": "获取应用状态列表",
+      "input": {
+        "param": {
+          "desc": {
+            "needissuecount": "是否统计任务数量",
+            "status": "当前状态，如果提供则只会列出可到达状态列表，如果是0，代表获取开始状态以及开始状态能到达的状态列表"
+          }
+        }
+      }
+    },
+    "savestatusapi": {
+      "getname": "保存应用状态",
+      "input": {
+        "param": {
+          "desc": {
+            "id": "状态id，不提供代表添加"
           }
         }
       }

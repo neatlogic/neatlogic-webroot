@@ -291,6 +291,13 @@
     }
   },
   "nfrd": {
+    "appstatusvo": {
+      "entityfield": {
+        "name": {
+          "isstart": "Start or not"
+        }
+      }
+    },
     "appvo": {
       "entityfield": {
         "name": {
@@ -1061,6 +1068,9 @@
         }
       }
     },
+    "getappcompleterateapi": {
+      "getname": "Obtain application completion rate"
+    },
     "listprivateattrapi": {
       "getname": "Get all internal properties"
     },
@@ -1223,6 +1233,29 @@
         "param": {
           "desc": {
             "prioritylist": "Priority List "
+          }
+        }
+      }
+    }
+  },
+  "nmras": {
+    "liststatusapi": {
+      "getname": "Get application status list",
+      "input": {
+        "param": {
+          "desc": {
+            "needissuecount": "Whether to count the number of tasks",
+            "status": "The current status, if provided, will only list the reachable status list. If 0, it represents obtaining the start status and the reachable status list of the start status"
+          }
+        }
+      }
+    },
+    "savestatusapi": {
+      "getname": "Save application status",
+      "input": {
+        "param": {
+          "desc": {
+            "id": "Status ID, do not provide a representative to add"
           }
         }
       }
