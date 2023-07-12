@@ -49,6 +49,7 @@
     "datetime": "Date Time",
     "defaultvalue": "Default Value List",
     "delaytime": "delay time ",
+    "dependency": "rely on",
     "description": "describe",
     "displaymode": "display mode",
     "displaytype": "Display Type",
@@ -126,6 +127,7 @@
     "number": "number",
     "object": "Any object",
     "oldvalue": "Old value",
+    "packagename": "Package Name",
     "pagecount": "page count",
     "pagesize": "page size",
     "parentid": "Parent ID",
@@ -200,6 +202,7 @@
     "validcode": "Registration verification code",
     "validtype": "Verification method",
     "value": "value",
+    "versionid": "Version ID",
     "wechatnotify": "WeChat notification",
     "worker": "Processed by",
     "worktimename": "Working Time Window Name",
@@ -901,6 +904,14 @@
       }
     }
   },
+  "nmdav": {
+    "getdeployversioncvelistapi": {
+      "getname": "Obtain version CVE vulnerability list"
+    },
+    "savedeployversioncvelistapi": {
+      "getname": "Save version CVE vulnerability list"
+    }
+  },
   "nmeat": {
     "eventtypesaveapi": {
       "getname": "Save event type information",
@@ -1376,9 +1387,15 @@
       "name": "Dashboard"
     },
     "deploy": {
+      "confidence": "confidence",
+      "cvecount": "CVE Count",
+      "cvelist": "CVE vulnerability list",
+      "evidencecount": "Evidence count",
       "groupdesc": "Standardized and fast continuous integration deployment platform",
       "groupname": "DevOps",
-      "name": "DevOps"
+      "highestseverity": "Maximum Severity",
+      "name": "DevOps",
+      "vulnerabilityids": "Vulnerability ID"
     },
     "event": {
       "eventtypeid": "Saved Event Type ID",

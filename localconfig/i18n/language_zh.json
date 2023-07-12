@@ -49,6 +49,7 @@
     "datetime": "日期时间",
     "defaultvalue": "默认值列表",
     "delaytime": "延迟时间",
+    "dependency": "依赖",
     "description": "描述",
     "displaymode": "显示模式",
     "displaytype": "显示类型",
@@ -126,6 +127,7 @@
     "number": "数字",
     "object": "任意对象",
     "oldvalue": "旧值",
+    "packagename": "包名",
     "pagecount": "总页数",
     "pagesize": "每页数据条目",
     "parentid": "父id",
@@ -200,6 +202,7 @@
     "validcode": "注册验证码",
     "validtype": "验证方式",
     "value": "值",
+    "versionid": "版本id",
     "wechatnotify": "微信通知",
     "worker": "处理人",
     "worktimename": "工作时间窗口名称",
@@ -901,6 +904,14 @@
       }
     }
   },
+  "nmdav": {
+    "getdeployversioncvelistapi": {
+      "getname": "获取版本CVE漏洞列表"
+    },
+    "savedeployversioncvelistapi": {
+      "getname": "保存版本CVE漏洞列表"
+    }
+  },
   "nmeat": {
     "eventtypesaveapi": {
       "getname": "保存事件类型信息",
@@ -1376,9 +1387,15 @@
       "name": "仪表板模块"
     },
     "deploy": {
+      "confidence": "信心",
+      "cvecount": "CVE计数",
+      "cvelist": "CVE漏洞列表",
+      "evidencecount": "证据计数",
       "groupdesc": "规范快捷的持续集成-部署平台",
       "groupname": "集成与发布",
-      "name": "自动发布"
+      "highestseverity": "最高严重程度",
+      "name": "自动发布",
+      "vulnerabilityids": "脆弱性id"
     },
     "event": {
       "eventtypeid": "保存的事件类型ID",
