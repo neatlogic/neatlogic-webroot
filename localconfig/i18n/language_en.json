@@ -964,6 +964,11 @@
       "getname": "Create a data warehouse dynamic table"
     }
   },
+  "nmkat": {
+    "knowledgedocumenttypetreeapi": {
+      "getname": "Obtain a knowledge circle knowledge classification tree"
+    }
+  },
   "nmmam": {
     "masterusersaveapi": {
       "description": {

@@ -964,6 +964,11 @@
       "getname": "创建数据仓库动态表"
     }
   },
+  "nmkat": {
+    "knowledgedocumenttypetreeapi": {
+      "getname": "获取知识圈知识分类树"
+    }
+  },
   "nmmam": {
     "masterusersaveapi": {
       "description": {
