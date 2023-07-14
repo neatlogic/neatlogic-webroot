@@ -913,6 +913,14 @@
       }
     }
   },
+  "nmda": {
+    "exportdashboardapi": {
+      "getname": "Export Dashboard"
+    },
+    "searchdashboardapi": {
+      "getname": "Query Dashboard"
+    }
+  },
   "nmdac": {
     "savedeployciapi": {
       "getname": "Save Continuous Integration Configuration",

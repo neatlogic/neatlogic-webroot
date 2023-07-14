@@ -913,6 +913,14 @@
       }
     }
   },
+  "nmda": {
+    "exportdashboardapi": {
+      "getname": "导出仪表板"
+    },
+    "searchdashboardapi": {
+      "getname": "查询仪表板"
+    }
+  },
   "nmdac": {
     "savedeployciapi": {
       "getname": "保存持续集成配置",
