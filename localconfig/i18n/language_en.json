@@ -29,6 +29,8 @@
     "catalogname": "Directory Name",
     "children": "subset",
     "cnname": "Chinese name",
+    "collectcount": "Collection volume",
+    "collector": "Collector",
     "color": "colour",
     "comment": "comment",
     "commentcount": "Number of comments",
@@ -60,6 +62,7 @@
     "editdate": "modification date",
     "editmode": "Editing mode",
     "editor": "Modified by",
+    "editorlist": "Modified by List",
     "editorname": "Modifier Name",
     "editorobject": "Modifier Object",
     "email": "mailbox",
@@ -70,10 +73,12 @@
     "enum": "enumeration",
     "event": "event",
     "example": "example",
+    "excludeid": "Exclude ID",
     "executeauthoritylist": "Execution permission list",
     "expired": "overdue",
     "expireddays": "Number of timeout days",
     "failedcount": "Number of errors",
+    "favorcount": "Likes",
     "file": "file",
     "fileid": "File ID",
     "filelist": "Attachment List",
@@ -84,12 +89,14 @@
     "focususerlist": "List of followers",
     "focususeruuidlist": "List of followers\u0027 uuids",
     "group": "grouping",
+    "hasparent": "Do you have a parent",
     "icon": "icon",
     "id": "id",
     "inputfrom": "Update method",
     "inputfromname": "Change method name",
     "int": "int",
     "isactive": "Activate or not",
+    "isauthenticate": "Do you need authentication",
     "isdeleted": "Has it been deleted",
     "isend": "Completed or not",
     "isexpired": "Expired or not",
@@ -137,6 +144,7 @@
     "password": "password",
     "pc": "Computer side",
     "phone": "Telephone number",
+    "planstarttime": "Planned time",
     "priority": "priority",
     "prioritycolor": "Priority Color",
     "priorityname": "Priority Name",
@@ -148,23 +156,27 @@
     "relname": "Relationship Name",
     "reltype": "Relationship Type",
     "request": "demand",
+    "reviewerlist": "List of approvers",
     "role": "role",
     "roleuuidlist": "Role uuid List",
     "rownum": "Data Entry",
     "scoreinfo": "Rating information",
     "sort": "sort",
     "source": "source",
+    "sourcelist": "Source List",
     "sourcename": "Source Chinese Name",
     "startdate": "Start date",
     "starttime": "start time",
     "status": "state",
     "statuscolor": "Status Color",
     "statusinfo": "status information ",
+    "statuslist": "Status List",
     "statusname": "Status Name",
     "statusuniquename": "State Unique Identification",
     "string": "character string",
     "tablelist": "Table List",
     "tag": "label",
+    "tagid": "Tag ID",
     "taglist": "Label List",
     "task": "task",
     "tbodylist": "tbody list",
@@ -207,7 +219,10 @@
     "validtype": "Verification method",
     "value": "value",
     "versionid": "Version ID",
+    "versionname": "Version name",
+    "versionnum": "Version number",
     "viewauthoritylist": "View permission list",
+    "viewcount": "View volume",
     "wechatnotify": "WeChat notification",
     "worker": "Processed by",
     "worktimename": "Working Time Window Name",
@@ -391,8 +406,14 @@
     "autoexeccombopbasicinfosaveapi": {
       "getname": "Save basic information of the combination tool"
     },
+    "autoexeccombopexecutablelistapi": {
+      "getname": "Query the list of combination tools that the current user can execute"
+    },
     "autoexeccombopversionsaveapi": {
       "getname": "Save the version information of the combination tool"
+    },
+    "listautoexeccomboptypeexecutableapi": {
+      "getname": "Query the classification list of the combination tools that the current user can execute"
     }
   },
   "nmaaj": {
@@ -401,6 +422,19 @@
       "mydoservice": {
         "error": "Autoexec. job. log. encoding format is not JsonArray"
       }
+    }
+  },
+  "nmaaja": {
+    "downloadautoexecjoboutputfilebatchapi": {
+      "getname": "Batch download of job output files"
+    }
+  },
+  "nmaaje": {
+    "updateautoexecjobphasestatusapi": {
+      "getname": "Callback Update Job Stage Status"
+    },
+    "updateautoexecjobstatusapi": {
+      "getname": "Callback update job status"
     }
   },
   "nmaat": {
@@ -863,6 +897,16 @@
         }
       }
     },
+    "searchcustomviewapi": {
+      "getname": "Query Custom View",
+      "input": {
+        "param": {
+          "help": {
+            "ciid": "Only required when querying custom views of the scene"
+          }
+        }
+      }
+    },
     "searchcustomviewdataapi": {
       "getname": "Query custom view data",
       "input": {
@@ -917,7 +961,56 @@
       }
     }
   },
+  "nmcag": {
+    "getuseractivegroupapi": {
+      "getname": "Obtain the list of active groups for the current user“"
+    },
+    "searchgraphapi": {
+      "getname": "Search Topology View"
+    }
+  },
+  "nmda": {
+    "exportdashboardapi": {
+      "getname": "Export Dashboard"
+    },
+    "searchdashboardapi": {
+      "getname": "Query Dashboard"
+    }
+  },
+  "nmdaa": {
+    "downloaddeployappbuildapi": {
+      "getname": "Download appbuild",
+      "input": {
+        "param": {
+          "desc": {
+            "subdirs": "Subdirectory"
+          }
+        }
+      }
+    }
+  },
   "nmdac": {
+    "callbackdeploycigitlabeventapi": {
+      "getname": "Gitlab webhook callback API"
+    },
+    "callbackdeploycisvneventapi": {
+      "getname": "SVN hook callback API",
+      "input": {
+        "param": {
+          "desc": {
+            "added": "The newly added documents submitted this time",
+            "author": "Submitted by",
+            "date": "Submission date",
+            "deleted": "The files submitted for deletion this time",
+            "dirschanged": "Affected directories",
+            "ip": "SVN server IP",
+            "message": "Submit Information",
+            "modified": "Documents submitted for modification this time",
+            "revision": "Submission ID"
+          }
+        }
+      }
+    },
     "savedeployciapi": {
       "getname": "Save Continuous Integration Configuration",
       "input": {
@@ -932,9 +1025,17 @@
       }
     }
   },
+  "nmdaj": {
+    "createmultideployjobapi": {
+      "getname": "Create and execute publishing jobs"
+    }
+  },
   "nmdav": {
     "getdeployversioncvelistapi": {
       "getname": "Obtain version CVE vulnerability list"
+    },
+    "getdeployversionenvforautoexecapi": {
+      "getname": "Obtain release version environment information"
     },
     "savedeployversioncvelistapi": {
       "getname": "Save version CVE vulnerability list"
@@ -950,6 +1051,9 @@
           }
         }
       }
+    },
+    "eventtypetreesearchapi": {
+      "getname": "Retrieve event type schema"
     }
   },
   "nmfs": {
@@ -968,9 +1072,35 @@
       "getname": "Create a data warehouse dynamic table"
     }
   },
+  "nmkad": {
+    "knowledgedocumentlistapi": {
+      "getname": "Query Document List"
+    },
+    "knowledgedocumentsearchapi": {
+      "getname": "Search for Documents"
+    }
+  },
   "nmkat": {
     "knowledgedocumenttypetreeapi": {
       "getname": "Obtain a knowledge circle knowledge classification tree"
+    },
+    "knowledgedocumenttypetreeforselectapi": {
+      "getname": "Obtain a knowledge circle knowledge classification tree_ Dropdown box"
+    },
+    "knowledgetypelistapi": {
+      "getname": "Query knowledge classification list"
+    }
+  },
+  "nmmaa": {
+    "masterauthlistapi": {
+      "getname": "Obtain a list of tenant management user permissions",
+      "output": {
+        "param": {
+          "desc": {
+            "return": "Permission List"
+          }
+        }
+      }
     }
   },
   "nmmam": {
@@ -1000,7 +1130,36 @@
       "illegalactiveurlexception": "Activation of account failed. The link is illegal. Please contact the administrator"
     }
   },
+  "nmpac": {
+    "channelsearchapi": {
+      "getname": "Service channel search interface",
+      "input": {
+        "param": {
+          "desc": {
+            "isfavorite": "Do you want to only query the collected data"
+          }
+        }
+      }
+    }
+  },
+  "nmpacr": {
+    "calalogbreadcrumbapi": {
+      "getname": "Obtain all service directory path interfaces under a certain service directory"
+    },
+    "catalogtreeapi": {
+      "getname": "Obtain all service directories (including hierarchical relationships) interfaces"
+    },
+    "channeltyperelationlistforselectapi": {
+      "getname": "Query service type relationship list (dedicated to dropdown box)"
+    }
+  },
   "nmpap": {
+    "processtaskcurrentusertasklistapi": {
+      "getname": "Current User Task List Interface"
+    },
+    "processtaskrepeatsaveapi": {
+      "getname": "Mark duplicate work order interface"
+    },
     "processtaskstepgetapi": {
       "description": {
         "desc": "Interface for obtaining basic information of work order steps, including current step name, activation time, status, handler, assistance handler, processing time, form attribute display control, etc"
@@ -1362,6 +1521,25 @@
       "getname": "Obtain default template for notification policy trigger points"
     }
   },
+  "nmtas": {
+    "systemnoticepullapi": {
+      "getname": "Pull system announcement",
+      "input": {
+        "param": {
+          "desc": {
+            "direction": "Before: Find the announcement before issueTime"
+          }
+        }
+      },
+      "output": {
+        "param": {
+          "desc": {
+            "popupnoticeidlist": "List of announcement IDs that need to pop up"
+          }
+        }
+      }
+    }
+  },
   "nmtat": {
     "gettenantconfigapi": {
       "getname": "Obtain current tenant configuration information"
@@ -1390,15 +1568,24 @@
   },
   "term": {
     "autoexec": {
+      "assignexecuser": "Specify Execution User",
       "combopid": "Combination tool ID",
       "execmode": "Execution method",
+      "executeconfig": "Execution Objectives",
+      "executeparam": "Execution parameters",
       "freeparam": "Free parameter",
       "groupdesc": "Automation platform",
       "groupname": "Automation",
       "inputparamlist": "Input parameter list",
+      "jobid": "Job ID",
       "name": "Autoexec",
       "outputparamlist": "Output parameter list",
+      "passthroughenv": "Return parameters",
+      "phase": "Assignment Script Name",
       "riskname": "Operation level name",
+      "roundcount": "Batch quantity",
+      "scenarioid": "Scenario ID",
+      "scenarioname": "Scene Name",
       "scriptparser": "Script Parser"
     },
     "change": {
@@ -1408,6 +1595,7 @@
       "addid": "ID, do not provide a representative to add",
       "allowedit": "Allow editing",
       "appsystemid": "Application system ID",
+      "appsystemname": "Application system name",
       "attrconfig": "Attribute Configuration",
       "attridlist": "Model Attribute ID List",
       "attrtype": "Attribute Type",
@@ -1418,6 +1606,8 @@
       "ciidlist": "Model ID List",
       "ciname": "Model Name",
       "ciuniquename": "Model Unique Identification",
+      "envid": "Environment ID",
+      "envname": "Environment name",
       "groupdesc": "Configuration Management Platform",
       "groupname": "CMDB",
       "importauditid": "Import Record ID",
@@ -1428,10 +1618,13 @@
       "issimpleattribute": "Is it a simple attribute",
       "isvirtualci": "Is it a virtual model",
       "moduleid": "Module ID",
+      "modulename": "Module abbreviation",
       "name": "CMDB",
       "parentcientityid": "Parent Configuration Item ID",
       "relidlist": "Model Relationship ID List",
       "ruleid": "Rule ID",
+      "startciid": "Starting Model ID",
+      "sysname": "System abbreviation",
       "targetciid": "Target Model ID",
       "transactiongroupid": "Transaction group ID",
       "transactionid": "Transaction ID",
@@ -1452,6 +1645,7 @@
       "name": "Dashboard"
     },
     "deploy": {
+      "ciid": "Continuous Integration Configuration ID",
       "confidence": "confidence",
       "cvecount": "CVE Count",
       "cvelist": "CVE vulnerability list",
@@ -1460,6 +1654,8 @@
       "groupname": "DevOps",
       "highestseverity": "Maximum Severity",
       "name": "DevOps",
+      "proxytourl": "Proxy address",
+      "runnerid": "Executor ID",
       "vulnerabilityids": "Vulnerability ID"
     },
     "event": {
@@ -1469,6 +1665,7 @@
     "framework": {
       "documentonlineinfo": "Online Help Document Information",
       "groupname": "Framework",
+      "issuetime": "Issuance time",
       "matrixuuid": "Matrix uuid",
       "name": "Framework",
       "notifypolicydefaulttemplateinfo": "Notification default template information",
@@ -1484,15 +1681,18 @@
     "itsm": {
       "caneditfocususer": "Do you have permission to modify the work order followers",
       "catalogname": "Directory name where the service is located",
+      "cataloguuid": "Service directory uuid",
       "channelinfo": "Service Information",
       "channelname": "Service Name",
       "channelpath": "Service Path",
       "channeltypeinfo": "Service Type Information",
       "channeltypename": "Service Type Name",
+      "channeltyperelationid": "Service Type Relationship ID",
       "channeltyperelationname": "Transfer/Association Type",
       "channeltypeuuid": "Service type uuid",
       "channeluuid": "Service uuid",
       "commentlist": "Comment Attachment List",
+      "currentprocesstaskid": "Current job ID",
       "currentprocesstaskstep": "Current step information of the work order",
       "formattributehidelist": "Form Configuration Authorization Hidden Attribute uuid List",
       "formconfigauthoritylist": "Authorization List for Work Order Form Information",
@@ -1516,8 +1716,11 @@
       "processtaskstepid": "Work Order Step ID",
       "processuuid": "Process uuid",
       "redosteplist": "Redo Step List",
+      "repeatprocesstaskidlist": "List of duplicate job IDs",
       "scoretemplate": "Scoring template",
       "serialnumber": "Work order number",
+      "sourcechanneltypeuuid": "Source Service Type uuid",
+      "sourcechanneluuid": "Source service uuid",
       "startprocesstaskstep": "Work order start step information",
       "submitterinfo": "Work order submitter information",
       "submittername": "Work order submitter name",
@@ -1529,7 +1732,9 @@
     "knowledge": {
       "groupdesc": "Knowledge platform",
       "groupname": "Knowledge",
-      "name": "Knowledge"
+      "name": "Knowledge",
+      "reviewdate": "Approval time",
+      "typepath": "Knowledge Circle Classification Path"
     },
     "master": {
       "groupname": "Master",

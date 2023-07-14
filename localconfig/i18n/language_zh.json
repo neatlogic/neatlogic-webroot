@@ -29,6 +29,8 @@
     "catalogname": "目录名称",
     "children": "子集合",
     "cnname": "中文名称",
+    "collectcount": "收藏量",
+    "collector": "收藏人",
     "color": "颜色",
     "comment": "评论",
     "commentcount": "评论数量",
@@ -60,6 +62,7 @@
     "editdate": "修改日期",
     "editmode": "编辑模式",
     "editor": "修改者",
+    "editorlist": "修改人列表",
     "editorname": "修改者名字",
     "editorobject": "修改者对象",
     "email": "邮箱",
@@ -70,10 +73,12 @@
     "enum": "枚举",
     "event": "事件",
     "example": "范例",
+    "excludeid": "排除id",
     "executeauthoritylist": "执行权限列表",
     "expired": "过期",
     "expireddays": "超时天数",
     "failedcount": "错误次数",
+    "favorcount": "点赞量",
     "file": "文件",
     "fileid": "文件ID",
     "filelist": "附件列表",
@@ -84,12 +89,14 @@
     "focususerlist": "关注人列表",
     "focususeruuidlist": "关注人uuid列表",
     "group": "分组",
+    "hasparent": "是否拥有父级",
     "icon": "图标",
     "id": "id",
     "inputfrom": "更新方式",
     "inputfromname": "变更方式名称",
     "int": "整形",
     "isactive": "是否激活",
+    "isauthenticate": "是否需要鉴权",
     "isdeleted": "是否已删除",
     "isend": "是否完结",
     "isexpired": "是否过期",
@@ -137,6 +144,7 @@
     "password": "密码",
     "pc": "电脑端",
     "phone": "电话号码",
+    "planstarttime": "计划时间",
     "priority": "优先级",
     "prioritycolor": "优先级颜色",
     "priorityname": "优先级名称",
@@ -148,23 +156,27 @@
     "relname": "关系名称",
     "reltype": "关系类型",
     "request": "需求",
+    "reviewerlist": "审批人列表",
     "role": "角色",
     "roleuuidlist": "角色uuid列表",
     "rownum": "数据条目",
     "scoreinfo": "评分信息",
     "sort": "排序",
     "source": "来源",
+    "sourcelist": "来源列表",
     "sourcename": "来源中文名",
     "startdate": "开始日期",
     "starttime": "开始时间",
     "status": "状态",
     "statuscolor": "状态颜色",
     "statusinfo": "状态信息",
+    "statuslist": "状态列表",
     "statusname": "状态名称",
     "statusuniquename": "状态唯一标识",
     "string": "字符串",
     "tablelist": "表格列表",
     "tag": "标签",
+    "tagid": "标签id",
     "taglist": "标签列表",
     "task": "任务",
     "tbodylist": "展示的值",
@@ -207,7 +219,10 @@
     "validtype": "验证方式",
     "value": "值",
     "versionid": "版本id",
+    "versionname": "版本名称",
+    "versionnum": "版本号",
     "viewauthoritylist": "查看权限列表",
+    "viewcount": "浏览量",
     "wechatnotify": "微信通知",
     "worker": "处理人",
     "worktimename": "工作时间窗口名称",
@@ -391,8 +406,14 @@
     "autoexeccombopbasicinfosaveapi": {
       "getname": "保存组合工具基本信息"
     },
+    "autoexeccombopexecutablelistapi": {
+      "getname": "查询当前用户可执行的组合工具列表"
+    },
     "autoexeccombopversionsaveapi": {
       "getname": "保存组合工具版本信息"
+    },
+    "listautoexeccomboptypeexecutableapi": {
+      "getname": "查询当前用户可执行的组合工具所属分类列表"
     }
   },
   "nmaaj": {
@@ -401,6 +422,19 @@
       "mydoservice": {
         "error": "autoexec.job.log.encoding格式非JsonArray"
       }
+    }
+  },
+  "nmaaja": {
+    "downloadautoexecjoboutputfilebatchapi": {
+      "getname": "批量下载作业输出文件"
+    }
+  },
+  "nmaaje": {
+    "updateautoexecjobphasestatusapi": {
+      "getname": "回调更新作业阶段状态"
+    },
+    "updateautoexecjobstatusapi": {
+      "getname": "回调更新作业状态"
     }
   },
   "nmaat": {
@@ -863,6 +897,16 @@
         }
       }
     },
+    "searchcustomviewapi": {
+      "getname": "查询自定义视图",
+      "input": {
+        "param": {
+          "help": {
+            "ciid": "查询场景自定义视图时才需要提供"
+          }
+        }
+      }
+    },
     "searchcustomviewdataapi": {
       "getname": "查询自定义视图数据",
       "input": {
@@ -917,7 +961,56 @@
       }
     }
   },
+  "nmcag": {
+    "getuseractivegroupapi": {
+      "getname": "获取当前用户激活团体列表\""
+    },
+    "searchgraphapi": {
+      "getname": "搜索拓扑视图"
+    }
+  },
+  "nmda": {
+    "exportdashboardapi": {
+      "getname": "导出仪表板"
+    },
+    "searchdashboardapi": {
+      "getname": "查询仪表板"
+    }
+  },
+  "nmdaa": {
+    "downloaddeployappbuildapi": {
+      "getname": "下载 appbuild",
+      "input": {
+        "param": {
+          "desc": {
+            "subdirs": "子目录"
+          }
+        }
+      }
+    }
+  },
   "nmdac": {
+    "callbackdeploycigitlabeventapi": {
+      "getname": "gitlab webhook回调api"
+    },
+    "callbackdeploycisvneventapi": {
+      "getname": "svn hook回调api",
+      "input": {
+        "param": {
+          "desc": {
+            "added": "本次提交新增的文件",
+            "author": "提交者",
+            "date": "提交日期",
+            "deleted": "本次提交删除的文件",
+            "dirschanged": "受影响的目录",
+            "ip": "svn服务器ip",
+            "message": "提交信息",
+            "modified": "本次提交修改的文件",
+            "revision": "提交id"
+          }
+        }
+      }
+    },
     "savedeployciapi": {
       "getname": "保存持续集成配置",
       "input": {
@@ -932,9 +1025,17 @@
       }
     }
   },
+  "nmdaj": {
+    "createmultideployjobapi": {
+      "getname": "创建并执行发布作业"
+    }
+  },
   "nmdav": {
     "getdeployversioncvelistapi": {
       "getname": "获取版本CVE漏洞列表"
+    },
+    "getdeployversionenvforautoexecapi": {
+      "getname": "获取发布版本环境信息"
     },
     "savedeployversioncvelistapi": {
       "getname": "保存版本CVE漏洞列表"
@@ -950,6 +1051,9 @@
           }
         }
       }
+    },
+    "eventtypetreesearchapi": {
+      "getname": "检索事件类型架构"
     }
   },
   "nmfs": {
@@ -968,9 +1072,35 @@
       "getname": "创建数据仓库动态表"
     }
   },
+  "nmkad": {
+    "knowledgedocumentlistapi": {
+      "getname": "查询文档列表"
+    },
+    "knowledgedocumentsearchapi": {
+      "getname": "搜索文档"
+    }
+  },
   "nmkat": {
     "knowledgedocumenttypetreeapi": {
       "getname": "获取知识圈知识分类树"
+    },
+    "knowledgedocumenttypetreeforselectapi": {
+      "getname": "获取知识圈知识分类树_下拉框"
+    },
+    "knowledgetypelistapi": {
+      "getname": "查询知识分类列表"
+    }
+  },
+  "nmmaa": {
+    "masterauthlistapi": {
+      "getname": "获取租户管理用户权限列表",
+      "output": {
+        "param": {
+          "desc": {
+            "return": "权限列表"
+          }
+        }
+      }
     }
   },
   "nmmam": {
@@ -1000,7 +1130,36 @@
       "illegalactiveurlexception": "激活账号失败,链接非法,请联系管理员"
     }
   },
+  "nmpac": {
+    "channelsearchapi": {
+      "getname": "服务通道搜索接口",
+      "input": {
+        "param": {
+          "desc": {
+            "isfavorite": "是否只查询已收藏的数据"
+          }
+        }
+      }
+    }
+  },
+  "nmpacr": {
+    "calalogbreadcrumbapi": {
+      "getname": "获取某个服务目录下的所有服务目录路径接口"
+    },
+    "catalogtreeapi": {
+      "getname": "获取所有服务目录（包含层级关系）接口"
+    },
+    "channeltyperelationlistforselectapi": {
+      "getname": "查询服务类型关系列表（下拉框专用）"
+    }
+  },
   "nmpap": {
+    "processtaskcurrentusertasklistapi": {
+      "getname": "当前用户任务列表接口"
+    },
+    "processtaskrepeatsaveapi": {
+      "getname": "标记重复工单接口"
+    },
     "processtaskstepgetapi": {
       "description": {
         "desc": "工单步骤基本信息获取接口，当前步骤名称、激活时间、状态、处理人、协助处理人、处理时效、表单属性显示控制等"
@@ -1362,6 +1521,25 @@
       "getname": "获取通知策略触发点默认模板"
     }
   },
+  "nmtas": {
+    "systemnoticepullapi": {
+      "getname": "拉取系统公告",
+      "input": {
+        "param": {
+          "desc": {
+            "direction": "before:找issueTime之前的公告"
+          }
+        }
+      },
+      "output": {
+        "param": {
+          "desc": {
+            "popupnoticeidlist": "需要弹窗的公告ID列表"
+          }
+        }
+      }
+    }
+  },
   "nmtat": {
     "gettenantconfigapi": {
       "getname": "获取当前租户配置信息"
@@ -1390,15 +1568,24 @@
   },
   "term": {
     "autoexec": {
+      "assignexecuser": "指定执行用户",
       "combopid": "组合工具ID",
       "execmode": "执行方式",
+      "executeconfig": "执行目标",
+      "executeparam": "执行参数",
       "freeparam": "自由参数",
       "groupdesc": "自动化平台",
       "groupname": "自动化",
       "inputparamlist": "输入参数列表",
+      "jobid": "作业id",
       "name": "自动化模块",
       "outputparamlist": "输出参数列表",
+      "passthroughenv": "返回参数",
+      "phase": "作业剧本Name",
       "riskname": "操作级别名称",
+      "roundcount": "分批数量",
+      "scenarioid": "场景id",
+      "scenarioname": "场景名",
       "scriptparser": "脚本解析器"
     },
     "change": {
@@ -1408,6 +1595,7 @@
       "addid": "id，不提供代表添加",
       "allowedit": "是否允许编辑",
       "appsystemid": "应用系统id",
+      "appsystemname": "应用系统名",
       "attrconfig": "属性配置",
       "attridlist": "模型属性ID列表",
       "attrtype": "属性类型",
@@ -1418,6 +1606,8 @@
       "ciidlist": "模型ID列表",
       "ciname": "模型名称",
       "ciuniquename": "模型唯一标识",
+      "envid": "环境id",
+      "envname": "环境名称",
       "groupdesc": "配置管理平台",
       "groupname": "配置管理",
       "importauditid": "导入记录ID",
@@ -1428,10 +1618,13 @@
       "issimpleattribute": "是否简单属性",
       "isvirtualci": "是否虚拟模型",
       "moduleid": "模块ID",
+      "modulename": "模块简称",
       "name": "配置管理模块",
       "parentcientityid": "父配置项id",
       "relidlist": "模型关系ID列表",
       "ruleid": "规则id",
+      "startciid": "起始模型id",
+      "sysname": "系统简称",
       "targetciid": "目标模型id",
       "transactiongroupid": "事务组id",
       "transactionid": "事务id",
@@ -1452,6 +1645,7 @@
       "name": "仪表板模块"
     },
     "deploy": {
+      "ciid": "持续集成配置id",
       "confidence": "信心",
       "cvecount": "CVE计数",
       "cvelist": "CVE漏洞列表",
@@ -1460,6 +1654,8 @@
       "groupname": "集成与发布",
       "highestseverity": "最高严重程度",
       "name": "自动发布",
+      "proxytourl": "代理地址",
+      "runnerid": "执行器id",
       "vulnerabilityids": "脆弱性id"
     },
     "event": {
@@ -1469,6 +1665,7 @@
     "framework": {
       "documentonlineinfo": "在线帮助文档信息",
       "groupname": "系统配置",
+      "issuetime": "下发时间",
       "matrixuuid": "矩阵uuid",
       "name": "基础框架",
       "notifypolicydefaulttemplateinfo": "通知默认模板信息",
@@ -1484,15 +1681,18 @@
     "itsm": {
       "caneditfocususer": "是否有权限修改工单关注人",
       "catalogname": "服务所在目录名称",
+      "cataloguuid": "服务目录uuid",
       "channelinfo": "服务信息",
       "channelname": "服务名称",
       "channelpath": "服务路径",
       "channeltypeinfo": "服务类型信息",
       "channeltypename": "服务类型名称",
+      "channeltyperelationid": "服务类型关系id",
       "channeltyperelationname": "转报/关联类型",
       "channeltypeuuid": "服务类型uuid",
       "channeluuid": "服务uuid",
       "commentlist": "评论附件列表",
+      "currentprocesstaskid": "当前工单id",
       "currentprocesstaskstep": "工单当前步骤信息",
       "formattributehidelist": "表单配置授权隐藏属性uuid列表",
       "formconfigauthoritylist": "工单表单信息授权列表",
@@ -1516,8 +1716,11 @@
       "processtaskstepid": "工单步骤id",
       "processuuid": "流程uuid",
       "redosteplist": "重做步骤列表",
+      "repeatprocesstaskidlist": "重复工单id列表",
       "scoretemplate": "评分模板",
       "serialnumber": "工单号",
+      "sourcechanneltypeuuid": "来源服务类型uuid",
+      "sourcechanneluuid": "来源服务uuid",
       "startprocesstaskstep": "工单开始步骤信息",
       "submitterinfo": "工单提交人信息",
       "submittername": "工单提交人名称",
@@ -1529,7 +1732,9 @@
     "knowledge": {
       "groupdesc": "知识库平台",
       "groupname": "知识库",
-      "name": "知识库模块"
+      "name": "知识库模块",
+      "reviewdate": "审批时间",
+      "typepath": "知识圈分类路径"
     },
     "master": {
       "groupname": "超级管理模块",
