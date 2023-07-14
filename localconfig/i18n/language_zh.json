@@ -90,6 +90,7 @@
     "inputfromname": "变更方式名称",
     "int": "整形",
     "isactive": "是否激活",
+    "isauthenticate": "是否需要鉴权",
     "isdeleted": "是否已删除",
     "isend": "是否完结",
     "isexpired": "是否过期",
@@ -945,6 +946,9 @@
           }
         }
       }
+    },
+    "eventtypetreesearchapi": {
+      "getname": "检索事件类型架构"
     }
   },
   "nmfs": {

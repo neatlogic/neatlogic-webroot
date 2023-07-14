@@ -90,6 +90,7 @@
     "inputfromname": "Change method name",
     "int": "int",
     "isactive": "Activate or not",
+    "isauthenticate": "Do you need authentication",
     "isdeleted": "Has it been deleted",
     "isend": "Completed or not",
     "isexpired": "Expired or not",
@@ -945,6 +946,9 @@
           }
         }
       }
+    },
+    "eventtypetreesearchapi": {
+      "getname": "Retrieve event type schema"
     }
   },
   "nmfs": {
