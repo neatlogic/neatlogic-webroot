@@ -29,6 +29,8 @@
     "catalogname": "Directory Name",
     "children": "subset",
     "cnname": "Chinese name",
+    "collectcount": "Collection volume",
+    "collector": "Collector",
     "color": "colour",
     "comment": "comment",
     "commentcount": "Number of comments",
@@ -60,6 +62,7 @@
     "editdate": "modification date",
     "editmode": "Editing mode",
     "editor": "Modified by",
+    "editorlist": "Modified by List",
     "editorname": "Modifier Name",
     "editorobject": "Modifier Object",
     "email": "mailbox",
@@ -75,6 +78,7 @@
     "expired": "overdue",
     "expireddays": "Number of timeout days",
     "failedcount": "Number of errors",
+    "favorcount": "Likes",
     "file": "file",
     "fileid": "File ID",
     "filelist": "Attachment List",
@@ -152,18 +156,21 @@
     "relname": "Relationship Name",
     "reltype": "Relationship Type",
     "request": "demand",
+    "reviewerlist": "List of approvers",
     "role": "role",
     "roleuuidlist": "Role uuid List",
     "rownum": "Data Entry",
     "scoreinfo": "Rating information",
     "sort": "sort",
     "source": "source",
+    "sourcelist": "Source List",
     "sourcename": "Source Chinese Name",
     "startdate": "Start date",
     "starttime": "start time",
     "status": "state",
     "statuscolor": "Status Color",
     "statusinfo": "status information ",
+    "statuslist": "Status List",
     "statusname": "Status Name",
     "statusuniquename": "State Unique Identification",
     "string": "character string",
@@ -215,6 +222,7 @@
     "versionname": "Version name",
     "versionnum": "Version number",
     "viewauthoritylist": "View permission list",
+    "viewcount": "View volume",
     "wechatnotify": "WeChat notification",
     "worker": "Processed by",
     "worktimename": "Working Time Window Name",
@@ -1059,9 +1067,23 @@
       "getname": "Create a data warehouse dynamic table"
     }
   },
+  "nmkad": {
+    "knowledgedocumentlistapi": {
+      "getname": "Query Document List"
+    },
+    "knowledgedocumentsearchapi": {
+      "getname": "Search for Documents"
+    }
+  },
   "nmkat": {
     "knowledgedocumenttypetreeapi": {
       "getname": "Obtain a knowledge circle knowledge classification tree"
+    },
+    "knowledgedocumenttypetreeforselectapi": {
+      "getname": "Obtain a knowledge circle knowledge classification tree_ Dropdown box"
+    },
+    "knowledgetypelistapi": {
+      "getname": "Query knowledge classification list"
     }
   },
   "nmmaa": {
@@ -1103,7 +1125,36 @@
       "illegalactiveurlexception": "Activation of account failed. The link is illegal. Please contact the administrator"
     }
   },
+  "nmpac": {
+    "channelsearchapi": {
+      "getname": "Service channel search interface",
+      "input": {
+        "param": {
+          "desc": {
+            "isfavorite": "Do you want to only query the collected data"
+          }
+        }
+      }
+    }
+  },
+  "nmpacr": {
+    "calalogbreadcrumbapi": {
+      "getname": "Obtain all service directory path interfaces under a certain service directory"
+    },
+    "catalogtreeapi": {
+      "getname": "Obtain all service directories (including hierarchical relationships) interfaces"
+    },
+    "channeltyperelationlistforselectapi": {
+      "getname": "Query service type relationship list (dedicated to dropdown box)"
+    }
+  },
   "nmpap": {
+    "processtaskcurrentusertasklistapi": {
+      "getname": "Current User Task List Interface"
+    },
+    "processtaskrepeatsaveapi": {
+      "getname": "Mark duplicate work order interface"
+    },
     "processtaskstepgetapi": {
       "description": {
         "desc": "Interface for obtaining basic information of work order steps, including current step name, activation time, status, handler, assistance handler, processing time, form attribute display control, etc"
@@ -1625,15 +1676,18 @@
     "itsm": {
       "caneditfocususer": "Do you have permission to modify the work order followers",
       "catalogname": "Directory name where the service is located",
+      "cataloguuid": "Service directory uuid",
       "channelinfo": "Service Information",
       "channelname": "Service Name",
       "channelpath": "Service Path",
       "channeltypeinfo": "Service Type Information",
       "channeltypename": "Service Type Name",
+      "channeltyperelationid": "Service Type Relationship ID",
       "channeltyperelationname": "Transfer/Association Type",
       "channeltypeuuid": "Service type uuid",
       "channeluuid": "Service uuid",
       "commentlist": "Comment Attachment List",
+      "currentprocesstaskid": "Current job ID",
       "currentprocesstaskstep": "Current step information of the work order",
       "formattributehidelist": "Form Configuration Authorization Hidden Attribute uuid List",
       "formconfigauthoritylist": "Authorization List for Work Order Form Information",
@@ -1657,8 +1711,11 @@
       "processtaskstepid": "Work Order Step ID",
       "processuuid": "Process uuid",
       "redosteplist": "Redo Step List",
+      "repeatprocesstaskidlist": "List of duplicate job IDs",
       "scoretemplate": "Scoring template",
       "serialnumber": "Work order number",
+      "sourcechanneltypeuuid": "Source Service Type uuid",
+      "sourcechanneluuid": "Source service uuid",
       "startprocesstaskstep": "Work order start step information",
       "submitterinfo": "Work order submitter information",
       "submittername": "Work order submitter name",
@@ -1670,7 +1727,9 @@
     "knowledge": {
       "groupdesc": "Knowledge platform",
       "groupname": "Knowledge",
-      "name": "Knowledge"
+      "name": "Knowledge",
+      "reviewdate": "Approval time",
+      "typepath": "Knowledge Circle Classification Path"
     },
     "master": {
       "groupname": "Master",
