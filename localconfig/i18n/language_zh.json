@@ -70,6 +70,7 @@
     "enum": "枚举",
     "event": "事件",
     "example": "范例",
+    "excludeid": "排除id",
     "executeauthoritylist": "执行权限列表",
     "expired": "过期",
     "expireddays": "超时天数",
@@ -84,6 +85,7 @@
     "focususerlist": "关注人列表",
     "focususeruuidlist": "关注人uuid列表",
     "group": "分组",
+    "hasparent": "是否拥有父级",
     "icon": "图标",
     "id": "id",
     "inputfrom": "更新方式",
@@ -166,6 +168,7 @@
     "string": "字符串",
     "tablelist": "表格列表",
     "tag": "标签",
+    "tagid": "标签id",
     "taglist": "标签列表",
     "task": "任务",
     "tbodylist": "展示的值",
@@ -878,6 +881,16 @@
         }
       }
     },
+    "searchcustomviewapi": {
+      "getname": "查询自定义视图",
+      "input": {
+        "param": {
+          "help": {
+            "ciid": "查询场景自定义视图时才需要提供"
+          }
+        }
+      }
+    },
     "searchcustomviewdataapi": {
       "getname": "查询自定义视图数据",
       "input": {
@@ -930,6 +943,14 @@
           }
         }
       }
+    }
+  },
+  "nmcag": {
+    "getuseractivegroupapi": {
+      "getname": "获取当前用户激活团体列表\""
+    },
+    "searchgraphapi": {
+      "getname": "搜索拓扑视图"
     }
   },
   "nmda": {
@@ -1492,6 +1513,7 @@
       "parentcientityid": "父配置项id",
       "relidlist": "模型关系ID列表",
       "ruleid": "规则id",
+      "startciid": "起始模型id",
       "targetciid": "目标模型id",
       "transactiongroupid": "事务组id",
       "transactionid": "事务id",

@@ -70,6 +70,7 @@
     "enum": "enumeration",
     "event": "event",
     "example": "example",
+    "excludeid": "Exclude ID",
     "executeauthoritylist": "Execution permission list",
     "expired": "overdue",
     "expireddays": "Number of timeout days",
@@ -84,6 +85,7 @@
     "focususerlist": "List of followers",
     "focususeruuidlist": "List of followers\u0027 uuids",
     "group": "grouping",
+    "hasparent": "Do you have a parent",
     "icon": "icon",
     "id": "id",
     "inputfrom": "Update method",
@@ -166,6 +168,7 @@
     "string": "character string",
     "tablelist": "Table List",
     "tag": "label",
+    "tagid": "Tag ID",
     "taglist": "Label List",
     "task": "task",
     "tbodylist": "tbody list",
@@ -878,6 +881,16 @@
         }
       }
     },
+    "searchcustomviewapi": {
+      "getname": "Query Custom View",
+      "input": {
+        "param": {
+          "help": {
+            "ciid": "Only required when querying custom views of the scene"
+          }
+        }
+      }
+    },
     "searchcustomviewdataapi": {
       "getname": "Query custom view data",
       "input": {
@@ -930,6 +943,14 @@
           }
         }
       }
+    }
+  },
+  "nmcag": {
+    "getuseractivegroupapi": {
+      "getname": "Obtain the list of active groups for the current user“"
+    },
+    "searchgraphapi": {
+      "getname": "Search Topology View"
     }
   },
   "nmda": {
@@ -1492,6 +1513,7 @@
       "parentcientityid": "Parent Configuration Item ID",
       "relidlist": "Model Relationship ID List",
       "ruleid": "Rule ID",
+      "startciid": "Starting Model ID",
       "targetciid": "Target Model ID",
       "transactiongroupid": "Transaction group ID",
       "transactionid": "Transaction ID",
