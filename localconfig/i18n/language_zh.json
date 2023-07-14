@@ -140,6 +140,7 @@
     "password": "密码",
     "pc": "电脑端",
     "phone": "电话号码",
+    "planstarttime": "计划时间",
     "priority": "优先级",
     "prioritycolor": "优先级颜色",
     "priorityname": "优先级名称",
@@ -211,6 +212,8 @@
     "validtype": "验证方式",
     "value": "值",
     "versionid": "版本id",
+    "versionname": "版本名称",
+    "versionnum": "版本号",
     "viewauthoritylist": "查看权限列表",
     "wechatnotify": "微信通知",
     "worker": "处理人",
@@ -961,7 +964,40 @@
       "getname": "查询仪表板"
     }
   },
+  "nmdaa": {
+    "downloaddeployappbuildapi": {
+      "getname": "下载 appbuild",
+      "input": {
+        "param": {
+          "desc": {
+            "subdirs": "子目录"
+          }
+        }
+      }
+    }
+  },
   "nmdac": {
+    "callbackdeploycigitlabeventapi": {
+      "getname": "gitlab webhook回调api"
+    },
+    "callbackdeploycisvneventapi": {
+      "getname": "svn hook回调api",
+      "input": {
+        "param": {
+          "desc": {
+            "added": "本次提交新增的文件",
+            "author": "提交者",
+            "date": "提交日期",
+            "deleted": "本次提交删除的文件",
+            "dirschanged": "受影响的目录",
+            "ip": "svn服务器ip",
+            "message": "提交信息",
+            "modified": "本次提交修改的文件",
+            "revision": "提交id"
+          }
+        }
+      }
+    },
     "savedeployciapi": {
       "getname": "保存持续集成配置",
       "input": {
@@ -976,9 +1012,17 @@
       }
     }
   },
+  "nmdaj": {
+    "createmultideployjobapi": {
+      "getname": "创建并执行发布作业"
+    }
+  },
   "nmdav": {
     "getdeployversioncvelistapi": {
       "getname": "获取版本CVE漏洞列表"
+    },
+    "getdeployversionenvforautoexecapi": {
+      "getname": "获取发布版本环境信息"
     },
     "savedeployversioncvelistapi": {
       "getname": "保存版本CVE漏洞列表"
@@ -1468,8 +1512,11 @@
   },
   "term": {
     "autoexec": {
+      "assignexecuser": "指定执行用户",
       "combopid": "组合工具ID",
       "execmode": "执行方式",
+      "executeconfig": "执行目标",
+      "executeparam": "执行参数",
       "freeparam": "自由参数",
       "groupdesc": "自动化平台",
       "groupname": "自动化",
@@ -1480,6 +1527,9 @@
       "passthroughenv": "返回参数",
       "phase": "作业剧本Name",
       "riskname": "操作级别名称",
+      "roundcount": "分批数量",
+      "scenarioid": "场景id",
+      "scenarioname": "场景名",
       "scriptparser": "脚本解析器"
     },
     "change": {
@@ -1489,6 +1539,7 @@
       "addid": "id，不提供代表添加",
       "allowedit": "是否允许编辑",
       "appsystemid": "应用系统id",
+      "appsystemname": "应用系统名",
       "attrconfig": "属性配置",
       "attridlist": "模型属性ID列表",
       "attrtype": "属性类型",
@@ -1499,6 +1550,8 @@
       "ciidlist": "模型ID列表",
       "ciname": "模型名称",
       "ciuniquename": "模型唯一标识",
+      "envid": "环境id",
+      "envname": "环境名称",
       "groupdesc": "配置管理平台",
       "groupname": "配置管理",
       "importauditid": "导入记录ID",
@@ -1509,11 +1562,13 @@
       "issimpleattribute": "是否简单属性",
       "isvirtualci": "是否虚拟模型",
       "moduleid": "模块ID",
+      "modulename": "模块简称",
       "name": "配置管理模块",
       "parentcientityid": "父配置项id",
       "relidlist": "模型关系ID列表",
       "ruleid": "规则id",
       "startciid": "起始模型id",
+      "sysname": "系统简称",
       "targetciid": "目标模型id",
       "transactiongroupid": "事务组id",
       "transactionid": "事务id",
@@ -1534,6 +1589,7 @@
       "name": "仪表板模块"
     },
     "deploy": {
+      "ciid": "持续集成配置id",
       "confidence": "信心",
       "cvecount": "CVE计数",
       "cvelist": "CVE漏洞列表",
@@ -1542,6 +1598,8 @@
       "groupname": "集成与发布",
       "highestseverity": "最高严重程度",
       "name": "自动发布",
+      "proxytourl": "代理地址",
+      "runnerid": "执行器id",
       "vulnerabilityids": "脆弱性id"
     },
     "event": {
