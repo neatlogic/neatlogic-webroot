@@ -387,8 +387,14 @@
     "autoexeccombopbasicinfosaveapi": {
       "getname": "保存组合工具基本信息"
     },
+    "autoexeccombopexecutablelistapi": {
+      "getname": "查询当前用户可执行的组合工具列表"
+    },
     "autoexeccombopversionsaveapi": {
       "getname": "保存组合工具版本信息"
+    },
+    "listautoexeccomboptypeexecutableapi": {
+      "getname": "查询当前用户可执行的组合工具所属分类列表"
     }
   },
   "nmaaj": {
@@ -397,6 +403,19 @@
       "mydoservice": {
         "error": "autoexec.job.log.encoding格式非JsonArray"
       }
+    }
+  },
+  "nmaaja": {
+    "downloadautoexecjoboutputfilebatchapi": {
+      "getname": "批量下载作业输出文件"
+    }
+  },
+  "nmaaje": {
+    "updateautoexecjobphasestatusapi": {
+      "getname": "回调更新作业阶段状态"
+    },
+    "updateautoexecjobstatusapi": {
+      "getname": "回调更新作业状态"
     }
   },
   "nmaat": {
@@ -1434,8 +1453,11 @@
       "groupdesc": "自动化平台",
       "groupname": "自动化",
       "inputparamlist": "输入参数列表",
+      "jobid": "作业id",
       "name": "自动化模块",
       "outputparamlist": "输出参数列表",
+      "passthroughenv": "返回参数",
+      "phase": "作业剧本Name",
       "riskname": "操作级别名称",
       "scriptparser": "脚本解析器"
     },

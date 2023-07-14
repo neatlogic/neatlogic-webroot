@@ -387,8 +387,14 @@
     "autoexeccombopbasicinfosaveapi": {
       "getname": "Save basic information of the combination tool"
     },
+    "autoexeccombopexecutablelistapi": {
+      "getname": "Query the list of combination tools that the current user can execute"
+    },
     "autoexeccombopversionsaveapi": {
       "getname": "Save the version information of the combination tool"
+    },
+    "listautoexeccomboptypeexecutableapi": {
+      "getname": "Query the classification list of the combination tools that the current user can execute"
     }
   },
   "nmaaj": {
@@ -397,6 +403,19 @@
       "mydoservice": {
         "error": "Autoexec. job. log. encoding format is not JsonArray"
       }
+    }
+  },
+  "nmaaja": {
+    "downloadautoexecjoboutputfilebatchapi": {
+      "getname": "Batch download of job output files"
+    }
+  },
+  "nmaaje": {
+    "updateautoexecjobphasestatusapi": {
+      "getname": "Callback Update Job Stage Status"
+    },
+    "updateautoexecjobstatusapi": {
+      "getname": "Callback update job status"
     }
   },
   "nmaat": {
@@ -1434,8 +1453,11 @@
       "groupdesc": "Automation platform",
       "groupname": "Automation",
       "inputparamlist": "Input parameter list",
+      "jobid": "Job ID",
       "name": "Autoexec",
       "outputparamlist": "Output parameter list",
+      "passthroughenv": "Return parameters",
+      "phase": "Assignment Script Name",
       "riskname": "Operation level name",
       "scriptparser": "Script Parser"
     },
