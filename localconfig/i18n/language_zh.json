@@ -1357,6 +1357,25 @@
       "getname": "获取通知策略触发点默认模板"
     }
   },
+  "nmtas": {
+    "systemnoticepullapi": {
+      "getname": "拉取系统公告",
+      "input": {
+        "param": {
+          "desc": {
+            "direction": "before:找issueTime之前的公告"
+          }
+        }
+      },
+      "output": {
+        "param": {
+          "desc": {
+            "popupnoticeidlist": "需要弹窗的公告ID列表"
+          }
+        }
+      }
+    }
+  },
   "nmtat": {
     "gettenantconfigapi": {
       "getname": "获取当前租户配置信息"
@@ -1464,6 +1483,7 @@
     "framework": {
       "documentonlineinfo": "在线帮助文档信息",
       "groupname": "系统配置",
+      "issuetime": "下发时间",
       "matrixuuid": "矩阵uuid",
       "name": "基础框架",
       "notifypolicydefaulttemplateinfo": "通知默认模板信息",

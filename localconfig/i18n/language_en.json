@@ -1357,6 +1357,25 @@
       "getname": "Obtain default template for notification policy trigger points"
     }
   },
+  "nmtas": {
+    "systemnoticepullapi": {
+      "getname": "Pull system announcement",
+      "input": {
+        "param": {
+          "desc": {
+            "direction": "Before: Find the announcement before issueTime"
+          }
+        }
+      },
+      "output": {
+        "param": {
+          "desc": {
+            "popupnoticeidlist": "List of announcement IDs that need to pop up"
+          }
+        }
+      }
+    }
+  },
   "nmtat": {
     "gettenantconfigapi": {
       "getname": "Obtain current tenant configuration information"
@@ -1464,6 +1483,7 @@
     "framework": {
       "documentonlineinfo": "Online Help Document Information",
       "groupname": "Framework",
+      "issuetime": "Issuance time",
       "matrixuuid": "Matrix uuid",
       "name": "Framework",
       "notifypolicydefaulttemplateinfo": "Notification default template information",
