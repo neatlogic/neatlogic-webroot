@@ -264,6 +264,11 @@
       "tenantconfignotfoundexception": "Configuration information: {0} does not exist"
     }
   },
+  "nfke": {
+    "knowledgedocumentdraftreviewedexception": {
+      "knowledgedocumentdraftreviewedexception": "The draft has been approved and does not require repeated approval"
+    }
+  },
   "nfne": {
     "emailsendexception": {
       "emailsendexception": "Email sending failed, please try again"

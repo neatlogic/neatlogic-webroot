@@ -264,6 +264,11 @@
       "tenantconfignotfoundexception": "配置信息：“{0}”不存在"
     }
   },
+  "nfke": {
+    "knowledgedocumentdraftreviewedexception": {
+      "knowledgedocumentdraftreviewedexception": "草稿已经审批通过,无需重复审批"
+    }
+  },
   "nfne": {
     "emailsendexception": {
       "emailsendexception": "邮件发送失败,请重试"
