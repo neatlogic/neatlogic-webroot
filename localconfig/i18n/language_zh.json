@@ -968,6 +968,18 @@
       "getname": "获取知识圈知识分类树"
     }
   },
+  "nmmaa": {
+    "masterauthlistapi": {
+      "getname": "获取租户管理用户权限列表",
+      "output": {
+        "param": {
+          "desc": {
+            "return": "权限列表"
+          }
+        }
+      }
+    }
+  },
   "nmmam": {
     "masterusersaveapi": {
       "description": {

@@ -968,6 +968,18 @@
       "getname": "Obtain a knowledge circle knowledge classification tree"
     }
   },
+  "nmmaa": {
+    "masterauthlistapi": {
+      "getname": "Obtain a list of tenant management user permissions",
+      "output": {
+        "param": {
+          "desc": {
+            "return": "Permission List"
+          }
+        }
+      }
+    }
+  },
   "nmmam": {
     "masterusersaveapi": {
       "description": {
