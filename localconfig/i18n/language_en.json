@@ -439,7 +439,7 @@
   },
   "nmaat": {
     "batchdeleteautoexectoolapi": {
-      "getname": "Batch delete built-in tools, delete tools whose epochTime does not equal the passed in parameter values"
+      "getname": "Batch delete built-in tools, delete tools whose importTime does not equal the passed in parameter values"
     },
     "registerautoexectoolapi": {
       "getname": "Register built-in tools"
