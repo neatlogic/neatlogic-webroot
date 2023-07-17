@@ -439,7 +439,7 @@
   },
   "nmaat": {
     "batchdeleteautoexectoolapi": {
-      "getname": "批量删除内置工具，删除epochTime不等于传入参数值的工具"
+      "getname": "批量删除内置工具，删除importTime不等于传入参数值的工具"
     },
     "registerautoexectoolapi": {
       "getname": "注册内置工具"
@@ -963,7 +963,7 @@
   },
   "nmcag": {
     "getuseractivegroupapi": {
-      "getname": "获取当前用户激活团体列表\""
+      "getname": "获取当前用户激活团体列表"
     },
     "searchgraphapi": {
       "getname": "搜索拓扑视图"
@@ -1427,6 +1427,9 @@
           }
         }
       }
+    },
+    "updatestatussortapi": {
+      "getname": "更新状态排序"
     }
   },
   "nmrat": {
