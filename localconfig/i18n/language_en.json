@@ -1427,6 +1427,9 @@
           }
         }
       }
+    },
+    "updatestatussortapi": {
+      "getname": "Update status sorting"
     }
   },
   "nmrat": {

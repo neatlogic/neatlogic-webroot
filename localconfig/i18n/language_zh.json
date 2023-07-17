@@ -1427,6 +1427,9 @@
           }
         }
       }
+    },
+    "updatestatussortapi": {
+      "getname": "更新状态排序"
     }
   },
   "nmrat": {
