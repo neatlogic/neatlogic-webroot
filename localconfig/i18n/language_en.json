@@ -1083,6 +1083,9 @@
     },
     "knowledgedocumentsearchapi": {
       "getname": "Search for Documents"
+    },
+    "knowledgedocumentversiondeleteapi": {
+      "getname": "Delete Document Version"
     }
   },
   "nmkat": {
