@@ -1083,6 +1083,9 @@
     },
     "knowledgedocumentsearchapi": {
       "getname": "搜索文档"
+    },
+    "knowledgedocumentversiondeleteapi": {
+      "getname": "删除文档版本"
     }
   },
   "nmkat": {
