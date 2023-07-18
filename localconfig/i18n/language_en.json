@@ -245,6 +245,11 @@
       "apiqps": "Peak number of requests sent to the server per second (regardless of interface)"
     }
   },
+  "nfce": {
+    "changetemplatenotfoundedittargetexception": {
+      "changetemplatenotfoundedittargetexception": "Change template: {0} does not exist"
+    }
+  },
   "nfd": {
     "licensevo": {
       "entityfield": {
@@ -271,6 +276,11 @@
       "documentonlinenotfoundexception": "Online help document: {0} does not exist"
     }
   },
+  "nfeec": {
+    "eventsolutionnotfoundedittargetexception": {
+      "eventsolutionnotfoundedittargetexception": "Solution: {0} does not exist"
+    }
+  },
   "nfet": {
     "paramjsonirregularexception": {
       "paramjsonirregularexception": "The parameter is not in a valid JSON format"
@@ -295,7 +305,18 @@
       "processtaskstepenablecomment": "Work order step reply function"
     }
   },
+  "nfpec": {
+    "catalognotfoundedittargetexception": {
+      "catalognotfoundedittargetexception": "Service directory: {0} does not exist"
+    },
+    "channelnotfoundedittargetexception": {
+      "channelnotfoundedittargetexception": "Service: {0} does not exist"
+    }
+  },
   "nfpep": {
+    "processnotfoundedittargetexception": {
+      "processnotfoundedittargetexception": "Process: {0} does not exist"
+    },
     "processtasknotfoundedittargetexception": {
       "processtasknotfoundedittargetexception": "Work order: {0} does not exist"
     }
@@ -1046,6 +1067,11 @@
       "getname": "Save version CVE vulnerability list"
     }
   },
+  "nmeas": {
+    "eventsolutiongetapi": {
+      "getname": "Obtain a single solution"
+    }
+  },
   "nmeat": {
     "eventtypesaveapi": {
       "getname": "Save event type information",
@@ -1136,6 +1162,12 @@
     }
   },
   "nmpac": {
+    "cataloggetapi": {
+      "getname": "Service directory information acquisition interface"
+    },
+    "channelgetapi": {
+      "getname": "Service channel obtaining information"
+    },
     "channelsearchapi": {
       "getname": "Service channel search interface",
       "input": {
@@ -1159,8 +1191,14 @@
     }
   },
   "nmpap": {
+    "processgetapi": {
+      "getname": "Obtain a single flowchart data interface"
+    },
     "processtaskcurrentusertasklistapi": {
       "getname": "Current User Task List Interface"
+    },
+    "processtaskdraftgetapi": {
+      "getname": "Work order draft data acquisition interface"
     },
     "processtaskrepeatsaveapi": {
       "getname": "Mark duplicate work order interface"
@@ -1668,6 +1706,7 @@
     },
     "event": {
       "eventtypeid": "Saved Event Type ID",
+      "eventtypelist": "Associated event types",
       "name": "Event"
     },
     "framework": {
@@ -1688,6 +1727,7 @@
     },
     "itsm": {
       "caneditfocususer": "Do you have permission to modify the work order followers",
+      "cataloginfo": "Service Catalog Information",
       "catalogname": "Directory name where the service is located",
       "cataloguuid": "Service directory uuid",
       "channelinfo": "Service Information",
@@ -1700,10 +1740,12 @@
       "channeltypeuuid": "Service type uuid",
       "channeluuid": "Service uuid",
       "commentlist": "Comment Attachment List",
+      "copyprocesstaskid": "Copy job ID",
       "currentprocesstaskid": "Current job ID",
       "currentprocesstaskstep": "Current step information of the work order",
       "formattributehidelist": "Form Configuration Authorization Hidden Attribute uuid List",
       "formconfigauthoritylist": "Authorization List for Work Order Form Information",
+      "fromprocesstaskid": "Source work order ID",
       "groupdesc": "One stop service reporting tracking processing platform",
       "groupname": "ITSM",
       "ishasoldformprop": "Is there any old work order form information",

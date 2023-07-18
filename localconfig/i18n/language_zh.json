@@ -245,6 +245,11 @@
       "apiqps": "每秒向服务器发送的请求数量峰值（不分接口）"
     }
   },
+  "nfce": {
+    "changetemplatenotfoundedittargetexception": {
+      "changetemplatenotfoundedittargetexception": "变更模板：{0}不存在"
+    }
+  },
   "nfd": {
     "licensevo": {
       "entityfield": {
@@ -271,6 +276,11 @@
       "documentonlinenotfoundexception": "在线帮助文档：“{0}”不存在"
     }
   },
+  "nfeec": {
+    "eventsolutionnotfoundedittargetexception": {
+      "eventsolutionnotfoundedittargetexception": "解决方案：{0}不存在"
+    }
+  },
   "nfet": {
     "paramjsonirregularexception": {
       "paramjsonirregularexception": "参数不是合法的JSON格式"
@@ -295,7 +305,18 @@
       "processtaskstepenablecomment": "是否工单步骤回复功能"
     }
   },
+  "nfpec": {
+    "catalognotfoundedittargetexception": {
+      "catalognotfoundedittargetexception": "服务目录：{0}不存在"
+    },
+    "channelnotfoundedittargetexception": {
+      "channelnotfoundedittargetexception": "服务：{0}不存在"
+    }
+  },
   "nfpep": {
+    "processnotfoundedittargetexception": {
+      "processnotfoundedittargetexception": "流程：{0}不存在"
+    },
     "processtasknotfoundedittargetexception": {
       "processtasknotfoundedittargetexception": "工单：{0}不存在"
     }
@@ -1046,6 +1067,11 @@
       "getname": "保存版本CVE漏洞列表"
     }
   },
+  "nmeas": {
+    "eventsolutiongetapi": {
+      "getname": "获取单个解决方案"
+    }
+  },
   "nmeat": {
     "eventtypesaveapi": {
       "getname": "保存事件类型信息",
@@ -1136,6 +1162,12 @@
     }
   },
   "nmpac": {
+    "cataloggetapi": {
+      "getname": "获取服务目录信息"
+    },
+    "channelgetapi": {
+      "getname": "获取服务通道信息"
+    },
     "channelsearchapi": {
       "getname": "服务通道搜索接口",
       "input": {
@@ -1159,8 +1191,14 @@
     }
   },
   "nmpap": {
+    "processgetapi": {
+      "getname": "获取单个流程图数据接口"
+    },
     "processtaskcurrentusertasklistapi": {
       "getname": "当前用户任务列表接口"
+    },
+    "processtaskdraftgetapi": {
+      "getname": "工单草稿数据获取接口"
     },
     "processtaskrepeatsaveapi": {
       "getname": "标记重复工单接口"
@@ -1668,6 +1706,7 @@
     },
     "event": {
       "eventtypeid": "保存的事件类型ID",
+      "eventtypelist": "关联的事件类型",
       "name": "事件模块"
     },
     "framework": {
@@ -1688,6 +1727,7 @@
     },
     "itsm": {
       "caneditfocususer": "是否有权限修改工单关注人",
+      "cataloginfo": "服务目录信息",
       "catalogname": "服务所在目录名称",
       "cataloguuid": "服务目录uuid",
       "channelinfo": "服务信息",
@@ -1700,10 +1740,12 @@
       "channeltypeuuid": "服务类型uuid",
       "channeluuid": "服务uuid",
       "commentlist": "评论附件列表",
+      "copyprocesstaskid": "复制工单id",
       "currentprocesstaskid": "当前工单id",
       "currentprocesstaskstep": "工单当前步骤信息",
       "formattributehidelist": "表单配置授权隐藏属性uuid列表",
       "formconfigauthoritylist": "工单表单信息授权列表",
+      "fromprocesstaskid": "来源工单id",
       "groupdesc": "一站式服务上报-跟踪-处理平台",
       "groupname": "IT服务",
       "ishasoldformprop": "是否存在旧工单表单信息",
