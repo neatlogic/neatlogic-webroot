@@ -353,12 +353,7 @@
     },
     "issuevo": {
       "entityfield": {
-        "name": {
-          "isleader": "Is it the project leader",
-          "ismember": "Is it a project member",
-          "isowner": "Project owner or not",
-          "webhooklist": "Webhook List"
-        }
+        "name": "apply name"
       }
     },
     "issuewebhookvo": {

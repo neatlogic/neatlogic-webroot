@@ -353,12 +353,7 @@
     },
     "issuevo": {
       "entityfield": {
-        "name": {
-          "isleader": "是否项目负责人",
-          "ismember": "是否项目成员",
-          "isowner": "是否项目所有人",
-          "webhooklist": "webhook列表"
-        }
+        "name": "应用名称"
       }
     },
     "issuewebhookvo": {
