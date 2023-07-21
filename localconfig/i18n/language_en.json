@@ -177,6 +177,7 @@
     "tablelist": "Table List",
     "tag": "label",
     "tagid": "Tag ID",
+    "tagidlist": "Tag ID List",
     "taglist": "Label List",
     "task": "task",
     "tbodylist": "tbody list",
@@ -287,6 +288,14 @@
     },
     "tenantconfignotfoundexception": {
       "tenantconfignotfoundexception": "Configuration information: {0} does not exist"
+    }
+  },
+  "nfie": {
+    "inspectdefinitionnotfoundedittargetexception": {
+      "inspectdefinitionnotfoundedittargetexception": "Inspection definition: {0} does not exist"
+    },
+    "inspectnewproblemcustomviewnotfoundedittargetexception": {
+      "inspectnewproblemcustomviewnotfoundedittargetexception": "The latest issue in the inspection is that the personal view classification {0} does not exist"
     }
   },
   "nfke": {
@@ -1098,6 +1107,21 @@
       "getname": "Create a data warehouse dynamic table"
     }
   },
+  "nmiad": {
+    "getinspectcollectapi": {
+      "getname": "Obtain the inspection definition corresponding to the model"
+    }
+  },
+  "nmiaj": {
+    "inspectautoexecjobnodesearchapi": {
+      "getname": "Querying patrol job node assets"
+    }
+  },
+  "nmian": {
+    "getinspectnewproblemcustomviewapi": {
+      "getname": "Obtain personal view classification of the latest inspection issues"
+    }
+  },
   "nmkad": {
     "knowledgedocumentlistapi": {
       "getname": "Query Document List"
@@ -1611,6 +1635,7 @@
     "ismine": "Is it mine"
   },
   "term": {
+    "appsystemidlist": "Application System ID List",
     "autoexec": {
       "assignexecuser": "Specify Execution User",
       "combopid": "Combination tool ID",
@@ -1638,6 +1663,7 @@
     "cmdb": {
       "addid": "ID, do not provide a representative to add",
       "allowedit": "Allow editing",
+      "appmoduleidlist": "Application module ID list",
       "appsystemid": "Application system ID",
       "appsystemname": "Application system name",
       "attrconfig": "Attribute Configuration",
@@ -1651,6 +1677,7 @@
       "ciname": "Model Name",
       "ciuniquename": "Model Unique Identification",
       "envid": "Environment ID",
+      "envidlist": "Environment ID List",
       "envname": "Environment name",
       "groupdesc": "Configuration Management Platform",
       "groupname": "CMDB",
@@ -1665,16 +1692,20 @@
       "modulename": "Module abbreviation",
       "name": "CMDB",
       "parentcientityid": "Parent Configuration Item ID",
+      "protocolidlist": "Protocol ID List",
       "relidlist": "Model Relationship ID List",
       "ruleid": "Rule ID",
       "startciid": "Starting Model ID",
+      "stateidlist": "Status ID List",
       "sysname": "System abbreviation",
       "targetciid": "Target Model ID",
       "transactiongroupid": "Transaction group ID",
       "transactionid": "Transaction ID",
+      "typeidlist": "Resource Type ID List",
       "validateconfig": "proof setup ",
       "validatehandler": "Verification component",
       "validatorid": "Validation Rule ID",
+      "vendoridlist": "List of vendor IDs",
       "viewid": "View ID",
       "viewname": "View Name",
       "virtualcifileid": "Virtual model configuration file id"
@@ -1719,9 +1750,13 @@
       "viplevel": "User level"
     },
     "inspect": {
+      "fields": "Data Structure List",
       "groupdesc": "Inspection platform",
       "groupname": "Inspection",
-      "name": "Inspection"
+      "inspectjobphasenodestatuslist": "Inspection job status list",
+      "inspectstatuslist": "Inspection status list",
+      "name": "Inspection",
+      "thresholds": "Threshold Rule List"
     },
     "itsm": {
       "caneditfocususer": "Do you have permission to modify the work order followers",
