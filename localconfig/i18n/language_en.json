@@ -421,6 +421,18 @@
     "projectusertype": {
       "getenumname": "Project User Type"
     },
+    "reportinstancenotfoundedittargetexception": {
+      "reportinstancenotfoundedittargetexception": "Report instance: {0} does not exist"
+    },
+    "reportnotfoundedittargetexception": {
+      "reportnotfoundedittargetexception": "Report: {0} does not exist"
+    },
+    "reportsendjobnotfoundedittargetexception": {
+      "reportsendjobnotfoundedittargetexception": "Report sending plan: {0} does not exist"
+    },
+    "reportstatementnotfoundedittargetexception": {
+      "reportstatementnotfoundedittargetexception": "Large screen report: {0} does not exist"
+    },
     "systemattrtype": "System Properties"
   },
   "nmaac": {
@@ -1228,6 +1240,9 @@
     "deletereportapi": {
       "getname": "Delete Report"
     },
+    "getreportinstanceapi": {
+      "getname": "Obtain report details"
+    },
     "getreporttypeapi": {
       "getname": "Obtain Report Classification"
     },
@@ -1257,6 +1272,9 @@
     },
     "searchreportapi": {
       "getname": "Query Report Definition"
+    },
+    "showreportdetailapi": {
+      "getname": "Display Report"
     },
     "updatereportactiveapi": {
       "getname": "Change Report Definition Activation Status"
@@ -1448,6 +1466,9 @@
     }
   },
   "nmras": {
+    "getreportstatementapi": {
+      "getname": "Obtain a single report"
+    },
     "liststatusapi": {
       "getname": "Get application status list",
       "input": {
@@ -1458,6 +1479,9 @@
           }
         }
       }
+    },
+    "reportsendjobgetapi": {
+      "getname": "Obtain report sending plan"
     },
     "savestatusapi": {
       "getname": "Save application status",
@@ -1834,7 +1858,9 @@
     "report": {
       "groupdesc": "Intelligent data analysis platform",
       "groupname": "Report",
-      "name": "Report"
+      "name": "Report",
+      "reportinstanceid": "Report instance ID",
+      "sendplaninfo": "Send Plan Information"
     },
     "tagent": {
       "name": "Tagent"
