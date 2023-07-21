@@ -120,6 +120,7 @@
     "loglist": "Log List",
     "long": "long integer",
     "mailaddress": "Email address",
+    "maintenanceman": "Maintainer",
     "matrix": "matrix",
     "memo": "Remarks",
     "menu": "menu",
@@ -264,6 +265,16 @@
           "purchaser": "Customer Name"
         }
       }
+    }
+  },
+  "nfda": {
+    "app_config_modify": {
+      "getauthdisplayname": "Application Configuration Maintenance Permissions",
+      "getauthintroduction": "View application configuration, add applications, modify application configurations with data permission and edit configuration permission"
+    },
+    "deploy_modify": {
+      "getauthdisplayname": "Auto Release management Permissions",
+      "getauthintroduction": "Automatically publish global parameter management and scenario definition"
     }
   },
   "nfdc": {
@@ -1010,6 +1021,11 @@
       }
     }
   },
+  "nmdaas": {
+    "savedeployappconfigappsystemapi": {
+      "getname": "Application system for saving and publishing application configurations"
+    }
+  },
   "nmdac": {
     "callbackdeploycigitlabeventapi": {
       "getname": "Gitlab webhook callback API"
@@ -1661,6 +1677,7 @@
       "isshowinmenu": "Is it displayed in the menu",
       "issimpleattribute": "Is it a simple attribute",
       "isvirtualci": "Is it a virtual model",
+      "maintenancewindow": "Maintenance Window",
       "moduleid": "Module ID",
       "modulename": "Module abbreviation",
       "name": "CMDB",

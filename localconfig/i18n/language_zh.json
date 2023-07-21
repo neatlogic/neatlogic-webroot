@@ -120,6 +120,7 @@
     "loglist": "日志列表",
     "long": "长整数",
     "mailaddress": "邮箱地址",
+    "maintenanceman": "维护者",
     "matrix": "矩阵",
     "memo": "备注",
     "menu": "菜单",
@@ -264,6 +265,16 @@
           "purchaser": "客户名称"
         }
       }
+    }
+  },
+  "nfda": {
+    "app_config_modify": {
+      "getauthdisplayname": "应用配置维护权限",
+      "getauthintroduction": "查看应用配置、添加应用、修改有数据权限中编辑配置权限的应用配置"
+    },
+    "deploy_modify": {
+      "getauthdisplayname": "自动发布管理权限",
+      "getauthintroduction": "自动发布全局参数管理、场景定义"
     }
   },
   "nfdc": {
@@ -1010,6 +1021,11 @@
       }
     }
   },
+  "nmdaas": {
+    "savedeployappconfigappsystemapi": {
+      "getname": "保存发布应用配置的应用系统"
+    }
+  },
   "nmdac": {
     "callbackdeploycigitlabeventapi": {
       "getname": "gitlab webhook回调api"
@@ -1661,6 +1677,7 @@
       "isshowinmenu": "是否在菜单显示",
       "issimpleattribute": "是否简单属性",
       "isvirtualci": "是否虚拟模型",
+      "maintenancewindow": "维护窗口",
       "moduleid": "模块ID",
       "modulename": "模块简称",
       "name": "配置管理模块",
