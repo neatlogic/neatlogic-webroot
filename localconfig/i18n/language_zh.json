@@ -1240,6 +1240,9 @@
     "deletereportapi": {
       "getname": "删除报表"
     },
+    "getreportapi": {
+      "getname": "获取报表定义详细信息"
+    },
     "getreportinstanceapi": {
       "getname": "获取报表详细信息"
     },

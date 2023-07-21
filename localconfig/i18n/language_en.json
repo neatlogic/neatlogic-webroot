@@ -1240,6 +1240,9 @@
     "deletereportapi": {
       "getname": "Delete Report"
     },
+    "getreportapi": {
+      "getname": "Obtain report definition details"
+    },
     "getreportinstanceapi": {
       "getname": "Obtain report details"
     },
