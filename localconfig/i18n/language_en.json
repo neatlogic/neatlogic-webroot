@@ -290,8 +290,20 @@
     }
   },
   "nfke": {
+    "knowledgecirclenotfoundedittargetexception": {
+      "knowledgecirclenotfoundedittargetexception": "Knowledge Circle: {0} does not exist"
+    },
     "knowledgedocumentdraftreviewedexception": {
       "knowledgedocumentdraftreviewedexception": "The draft has been approved and does not require repeated approval"
+    },
+    "knowledgedocumentnotfoundedittargetexception": {
+      "knowledgedocumentnotfoundedittargetexception": "Knowledge base document: {0} does not exist"
+    },
+    "knowledgedocumentversionnotfoundedittargetexception": {
+      "knowledgedocumentversionnotfoundedittargetexception": "Knowledge base document version: {0} does not exist"
+    },
+    "knowledgetemplatenotfoundedittargetexception": {
+      "knowledgetemplatenotfoundedittargetexception": "Knowledge template: {0} does not exist"
     }
   },
   "nfne": {
@@ -1098,7 +1110,22 @@
       "getname": "Create a data warehouse dynamic table"
     }
   },
+  "nmkac": {
+    "knowledgecirclegetapi": {
+      "getname": "Obtaining a Single Knowledge Circle"
+    }
+  },
   "nmkad": {
+    "knowledgedocumentgetapi": {
+      "getname": "Query Document Content",
+      "input": {
+        "param": {
+          "desc": {
+            "isreadonly": "Whether to increase browsing volume"
+          }
+        }
+      }
+    },
     "knowledgedocumentlistapi": {
       "getname": "Query Document List"
     },
@@ -1115,6 +1142,9 @@
     },
     "knowledgedocumenttypetreeforselectapi": {
       "getname": "Obtain a knowledge circle knowledge classification tree_ Dropdown box"
+    },
+    "knowledgetemplategetapi": {
+      "getname": "Obtain a single knowledge template"
     },
     "knowledgetypelistapi": {
       "getname": "Query knowledge classification list"
@@ -1778,10 +1808,15 @@
       "workcenterprocesstasksortindex": "Work Order Center Work Order Sorting Index"
     },
     "knowledge": {
+      "documentid": "Document ID",
+      "documentinfo": "Document content",
+      "documentversionid": "Document version ID",
       "groupdesc": "Knowledge platform",
       "groupname": "Knowledge",
+      "circleinfo": "Knowledge Circle Information",
       "name": "Knowledge",
       "reviewdate": "Approval time",
+      "templateinfo": "Knowledge template information",
       "typepath": "Knowledge Circle Classification Path"
     },
     "master": {
