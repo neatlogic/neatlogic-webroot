@@ -178,6 +178,7 @@
     "tablelist": "表格列表",
     "tag": "标签",
     "tagid": "标签id",
+    "tagidlist": "标签id列表",
     "taglist": "标签列表",
     "task": "任务",
     "tbodylist": "展示的值",
@@ -288,6 +289,14 @@
     },
     "tenantconfignotfoundexception": {
       "tenantconfignotfoundexception": "配置信息：“{0}”不存在"
+    }
+  },
+  "nfie": {
+    "inspectdefinitionnotfoundedittargetexception": {
+      "inspectdefinitionnotfoundedittargetexception": "巡检定义：{0}不存在"
+    },
+    "inspectnewproblemcustomviewnotfoundedittargetexception": {
+      "inspectnewproblemcustomviewnotfoundedittargetexception": "巡检最新问题个人视图分类{0}不存在"
     }
   },
   "nfke": {
@@ -1099,6 +1108,21 @@
       "getname": "创建数据仓库动态表"
     }
   },
+  "nmiad": {
+    "getinspectcollectapi": {
+      "getname": "获取模型对应的巡检定义"
+    }
+  },
+  "nmiaj": {
+    "inspectautoexecjobnodesearchapi": {
+      "getname": "查询巡检作业节点资产"
+    }
+  },
+  "nmian": {
+    "getinspectnewproblemcustomviewapi": {
+      "getname": "获取巡检最新问题个人视图分类"
+    }
+  },
   "nmkad": {
     "knowledgedocumentlistapi": {
       "getname": "查询文档列表"
@@ -1622,6 +1646,7 @@
     "ismine": "是否我的"
   },
   "term": {
+    "appsystemidlist": "应用系统id列表",
     "autoexec": {
       "assignexecuser": "指定执行用户",
       "combopid": "组合工具ID",
@@ -1649,6 +1674,7 @@
     "cmdb": {
       "addid": "id，不提供代表添加",
       "allowedit": "是否允许编辑",
+      "appmoduleidlist": "应用模块id列表",
       "appsystemid": "应用系统id",
       "appsystemname": "应用系统名",
       "attrconfig": "属性配置",
@@ -1662,6 +1688,7 @@
       "ciname": "模型名称",
       "ciuniquename": "模型唯一标识",
       "envid": "环境id",
+      "envidlist": "环境id列表",
       "envname": "环境名称",
       "groupdesc": "配置管理平台",
       "groupname": "配置管理",
@@ -1676,16 +1703,20 @@
       "modulename": "模块简称",
       "name": "配置管理模块",
       "parentcientityid": "父配置项id",
+      "protocolidlist": "协议id列表",
       "relidlist": "模型关系ID列表",
       "ruleid": "规则id",
       "startciid": "起始模型id",
+      "stateidlist": "状态id列表",
       "sysname": "系统简称",
       "targetciid": "目标模型id",
       "transactiongroupid": "事务组id",
       "transactionid": "事务id",
+      "typeidlist": "资源类型id列表",
       "validateconfig": "校验设置",
       "validatehandler": "校验组件",
       "validatorid": "验证规则id",
+      "vendoridlist": "厂商id列表",
       "viewid": "视图id",
       "viewname": "视图名称",
       "virtualcifileid": "虚拟模型配置文件id"
@@ -1730,9 +1761,13 @@
       "viplevel": "用户等级"
     },
     "inspect": {
+      "fields": "数据结构列表",
       "groupdesc": "巡检平台",
       "groupname": "巡检",
-      "name": "巡检模块"
+      "inspectjobphasenodestatuslist": "巡检作业状态列表",
+      "inspectstatuslist": "巡检状态列表",
+      "name": "巡检模块",
+      "thresholds": "阈值规则列表"
     },
     "itsm": {
       "caneditfocususer": "是否有权限修改工单关注人",
