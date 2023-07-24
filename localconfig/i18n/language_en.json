@@ -120,6 +120,7 @@
     "loglist": "Log List",
     "long": "long integer",
     "mailaddress": "Email address",
+    "maintenanceman": "Maintainer",
     "matrix": "matrix",
     "memo": "Remarks",
     "menu": "menu",
@@ -152,6 +153,7 @@
     "privatecache": "Private cache",
     "progress": "schedule",
     "publiccache": "Public cache",
+    "referencecount": "Number of references",
     "regex": "regular expression ",
     "relname": "Relationship Name",
     "reltype": "Relationship Type",
@@ -177,6 +179,7 @@
     "tablelist": "Table List",
     "tag": "label",
     "tagid": "Tag ID",
+    "tagidlist": "Tag ID List",
     "taglist": "Label List",
     "task": "task",
     "tbodylist": "tbody list",
@@ -234,6 +237,35 @@
       "maxnumofcombopversion": "The maximum number of versions of the combination tool, such as setting a maximum of 10 versions, will automatically delete the oldest and inactive version when creating and saving the 11th version."
     }
   },
+  "nfaec": {
+    "autoexeccombopnotfoundedittargetexception": {
+      "autoexeccombopnotfoundedittargetexception": "Combination tool: {0} does not exist"
+    },
+    "autoexeccombopversionnotfoundedittargetexception": {
+      "autoexeccombopversionnotfoundedittargetexception": "Combination tool version: {0} does not exist"
+    }
+  },
+  "nfaej": {
+    "autoexecjobnotfoundedittargetexception": {
+      "autoexecjobnotfoundedittargetexception": "Assignment: {0} does not exist"
+    }
+  },
+  "nfaes": {
+    "autoexecschedulenotfoundedittargetexception": {
+      "autoexecschedulenotfoundedittargetexception": "Timed assignment: {0} does not exist"
+    },
+    "autoexecscriptnotfoundedittargetexception": {
+      "autoexecscriptnotfoundedittargetexception": "Custom tool: {0} does not exist"
+    },
+    "autoexecscriptversionnotfoundedittargetexception": {
+      "autoexecscriptversionnotfoundedittargetexception": "Version: {0} does not exist"
+    }
+  },
+  "nfaet": {
+    "autoexectoolnotfoundedittargetexception": {
+      "autoexectoolnotfoundedittargetexception": "Tool: {0} does not exist"
+    }
+  },
   "nfal": {
     "matrix_modify": {
       "getauthdisplayname": "Matrix Management Permissions",
@@ -266,6 +298,16 @@
       }
     }
   },
+  "nfda": {
+    "app_config_modify": {
+      "getauthdisplayname": "Application Configuration Maintenance Permissions",
+      "getauthintroduction": "View application configuration, add applications, modify application configurations with data permission and edit configuration permission"
+    },
+    "deploy_modify": {
+      "getauthdisplayname": "Auto Release management Permissions",
+      "getauthintroduction": "Automatically publish global parameter management and scenario definition"
+    }
+  },
   "nfdc": {
     "deploytenantconfig": {
       "gitlabwebhookcallbackhost": "Gitlab webhook callback host address"
@@ -287,6 +329,14 @@
     },
     "tenantconfignotfoundexception": {
       "tenantconfignotfoundexception": "Configuration information: {0} does not exist"
+    }
+  },
+  "nfie": {
+    "inspectdefinitionnotfoundedittargetexception": {
+      "inspectdefinitionnotfoundedittargetexception": "Inspection definition: {0} does not exist"
+    },
+    "inspectnewproblemcustomviewnotfoundedittargetexception": {
+      "inspectnewproblemcustomviewnotfoundedittargetexception": "The latest issue in the inspection is that the personal view classification {0} does not exist"
     }
   },
   "nfke": {
@@ -433,11 +483,29 @@
     "projectusertype": {
       "getenumname": "Project User Type"
     },
+    "reportinstancenotfoundedittargetexception": {
+      "reportinstancenotfoundedittargetexception": "Report instance: {0} does not exist"
+    },
+    "reportnotfoundedittargetexception": {
+      "reportnotfoundedittargetexception": "Report: {0} does not exist"
+    },
+    "reportsendjobnotfoundedittargetexception": {
+      "reportsendjobnotfoundedittargetexception": "Report sending plan: {0} does not exist"
+    },
+    "reportstatementnotfoundedittargetexception": {
+      "reportstatementnotfoundedittargetexception": "Large screen report: {0} does not exist"
+    },
     "systemattrtype": "System Properties"
   },
   "nmaac": {
+    "autoexeccombopbasicinfogetapi": {
+      "getname": "Basic information of query combination tool"
+    },
     "autoexeccombopbasicinfosaveapi": {
       "getname": "Save basic information of the combination tool"
+    },
+    "autoexeccombopdetailgetapi": {
+      "getname": "Obtain detailed information on combination tools and activation versions"
     },
     "autoexeccombopexecutablelistapi": {
       "getname": "Query the list of combination tools that the current user can execute"
@@ -450,6 +518,9 @@
     }
   },
   "nmaaj": {
+    "autoexecjobinfogetapi": {
+      "getname": "Obtain automation job details"
+    },
     "listautoexecjoblogencodingapi": {
       "getname": "Get automatic job log Character encoding set",
       "mydoservice": {
@@ -470,7 +541,18 @@
       "getname": "Callback update job status"
     }
   },
+  "nmaas": {
+    "autoexecschedulegetapi": {
+      "getname": "Obtain scheduled job information"
+    },
+    "autoexecscriptgetapi": {
+      "getname": "View Script"
+    }
+  },
   "nmaat": {
+    "autoexectoolgetapi": {
+      "getname": "Get Tools"
+    },
     "batchdeleteautoexectoolapi": {
       "getname": "Batch delete built-in tools, delete tools whose importTime does not equal the passed in parameter values"
     },
@@ -1022,6 +1104,11 @@
       }
     }
   },
+  "nmdaas": {
+    "savedeployappconfigappsystemapi": {
+      "getname": "Application system for saving and publishing application configurations"
+    }
+  },
   "nmdac": {
     "callbackdeploycigitlabeventapi": {
       "getname": "Gitlab webhook callback API"
@@ -1108,6 +1195,21 @@
   "nmft": {
     "createdatawarehousetableinithandler": {
       "getname": "Create a data warehouse dynamic table"
+    }
+  },
+  "nmiad": {
+    "getinspectcollectapi": {
+      "getname": "Obtain the inspection definition corresponding to the model"
+    }
+  },
+  "nmiaj": {
+    "inspectautoexecjobnodesearchapi": {
+      "getname": "Querying patrol job node assets"
+    }
+  },
+  "nmian": {
+    "getinspectnewproblemcustomviewapi": {
+      "getname": "Obtain personal view classification of the latest inspection issues"
     }
   },
   "nmkac": {
@@ -1222,6 +1324,16 @@
     "processgetapi": {
       "getname": "Obtain a single flowchart data interface"
     },
+    "processsearchapi": {
+      "getname": "Process List Search Interface",
+      "input": {
+        "param": {
+          "desc": {
+            "isicreated": "Do you want to only query the ones I created"
+          }
+        }
+      }
+    },
     "processtaskcurrentusertasklistapi": {
       "getname": "Current User Task List Interface"
     },
@@ -1258,6 +1370,12 @@
     "deletereportapi": {
       "getname": "Delete Report"
     },
+    "getreportapi": {
+      "getname": "Obtain report definition details"
+    },
+    "getreportinstanceapi": {
+      "getname": "Obtain report details"
+    },
     "getreporttypeapi": {
       "getname": "Obtain Report Classification"
     },
@@ -1287,6 +1405,9 @@
     },
     "searchreportapi": {
       "getname": "Query Report Definition"
+    },
+    "showreportdetailapi": {
+      "getname": "Display Report"
     },
     "updatereportactiveapi": {
       "getname": "Change Report Definition Activation Status"
@@ -1478,6 +1599,9 @@
     }
   },
   "nmras": {
+    "getreportstatementapi": {
+      "getname": "Obtain a single report"
+    },
     "liststatusapi": {
       "getname": "Get application status list",
       "input": {
@@ -1488,6 +1612,9 @@
           }
         }
       }
+    },
+    "reportsendjobgetapi": {
+      "getname": "Obtain report sending plan"
     },
     "savestatusapi": {
       "getname": "Save application status",
@@ -1641,8 +1768,11 @@
     "ismine": "Is it mine"
   },
   "term": {
+    "appsystemidlist": "Application System ID List",
     "autoexec": {
       "assignexecuser": "Specify Execution User",
+      "combopbaseinfo": "Basic information of combination tools",
+      "combopdetailsinfo": "Combination Tool Details",
       "combopid": "Combination tool ID",
       "execmode": "Execution method",
       "executeconfig": "Execution Objectives",
@@ -1652,6 +1782,7 @@
       "groupname": "Automation",
       "inputparamlist": "Input parameter list",
       "jobid": "Job ID",
+      "jobinfo": "Automated job information",
       "name": "Autoexec",
       "outputparamlist": "Output parameter list",
       "passthroughenv": "Return parameters",
@@ -1660,7 +1791,10 @@
       "roundcount": "Batch quantity",
       "scenarioid": "Scenario ID",
       "scenarioname": "Scene Name",
-      "scriptparser": "Script Parser"
+      "scheduleinfo": "Automated scheduled job information",
+      "scriptinfo": "Script Content",
+      "scriptparser": "Script Parser",
+      "serviceinfo": "Automation Service Catalog Information"
     },
     "change": {
       "name": "Change"
@@ -1668,6 +1802,7 @@
     "cmdb": {
       "addid": "ID, do not provide a representative to add",
       "allowedit": "Allow editing",
+      "appmoduleidlist": "Application module ID list",
       "appsystemid": "Application system ID",
       "appsystemname": "Application system name",
       "attrconfig": "Attribute Configuration",
@@ -1681,6 +1816,7 @@
       "ciname": "Model Name",
       "ciuniquename": "Model Unique Identification",
       "envid": "Environment ID",
+      "envidlist": "Environment ID List",
       "envname": "Environment name",
       "groupdesc": "Configuration Management Platform",
       "groupname": "CMDB",
@@ -1691,20 +1827,25 @@
       "isshowinmenu": "Is it displayed in the menu",
       "issimpleattribute": "Is it a simple attribute",
       "isvirtualci": "Is it a virtual model",
+      "maintenancewindow": "Maintenance Window",
       "moduleid": "Module ID",
       "modulename": "Module abbreviation",
       "name": "CMDB",
       "parentcientityid": "Parent Configuration Item ID",
+      "protocolidlist": "Protocol ID List",
       "relidlist": "Model Relationship ID List",
       "ruleid": "Rule ID",
       "startciid": "Starting Model ID",
+      "stateidlist": "Status ID List",
       "sysname": "System abbreviation",
       "targetciid": "Target Model ID",
       "transactiongroupid": "Transaction group ID",
       "transactionid": "Transaction ID",
+      "typeidlist": "Resource Type ID List",
       "validateconfig": "proof setup ",
       "validatehandler": "Verification component",
       "validatorid": "Validation Rule ID",
+      "vendoridlist": "List of vendor IDs",
       "viewid": "View ID",
       "viewname": "View Name",
       "virtualcifileid": "Virtual model configuration file id"
@@ -1749,9 +1890,13 @@
       "viplevel": "User level"
     },
     "inspect": {
+      "fields": "Data Structure List",
       "groupdesc": "Inspection platform",
       "groupname": "Inspection",
-      "name": "Inspection"
+      "inspectjobphasenodestatuslist": "Inspection job status list",
+      "inspectstatuslist": "Inspection status list",
+      "name": "Inspection",
+      "thresholds": "Threshold Rule List"
     },
     "itsm": {
       "caneditfocususer": "Do you have permission to modify the work order followers",
@@ -1869,7 +2014,9 @@
     "report": {
       "groupdesc": "Intelligent data analysis platform",
       "groupname": "Report",
-      "name": "Report"
+      "name": "Report",
+      "reportinstanceid": "Report instance ID",
+      "sendplaninfo": "Send Plan Information"
     },
     "tagent": {
       "name": "Tagent"

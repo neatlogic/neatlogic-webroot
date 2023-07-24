@@ -43,8 +43,8 @@
     "createdate": "创建日期",
     "createrobject": "创建者对象",
     "createtime": "创建时间",
-    "createuser": "创建者",
-    "createusername": "创建者名字",
+    "createuser": "创建人",
+    "createusername": "创建人名字",
     "currentpage": "当前页",
     "customattribute": "自定义属性",
     "date": "日期",
@@ -120,6 +120,7 @@
     "loglist": "日志列表",
     "long": "长整数",
     "mailaddress": "邮箱地址",
+    "maintenanceman": "维护者",
     "matrix": "矩阵",
     "memo": "备注",
     "menu": "菜单",
@@ -152,6 +153,7 @@
     "privatecache": "私有缓存",
     "progress": "进度",
     "publiccache": "公共缓存",
+    "referencecount": "引用数量",
     "regex": "正则表达式",
     "relname": "关系名称",
     "reltype": "关系类型",
@@ -177,6 +179,7 @@
     "tablelist": "表格列表",
     "tag": "标签",
     "tagid": "标签id",
+    "tagidlist": "标签id列表",
     "taglist": "标签列表",
     "task": "任务",
     "tbodylist": "展示的值",
@@ -234,6 +237,35 @@
       "maxnumofcombopversion": "组合工具版本数量上限，例如设置最多10个版本，创建保存第11个版本时，自动删除掉最老的一个，非激活状态的版本。"
     }
   },
+  "nfaec": {
+    "autoexeccombopnotfoundedittargetexception": {
+      "autoexeccombopnotfoundedittargetexception": "组合工具：{0}不存在"
+    },
+    "autoexeccombopversionnotfoundedittargetexception": {
+      "autoexeccombopversionnotfoundedittargetexception": "组合工具版本：{0}不存在"
+    }
+  },
+  "nfaej": {
+    "autoexecjobnotfoundedittargetexception": {
+      "autoexecjobnotfoundedittargetexception": "作业：{0}不存在"
+    }
+  },
+  "nfaes": {
+    "autoexecschedulenotfoundedittargetexception": {
+      "autoexecschedulenotfoundedittargetexception": "定时作业：{0}不存在"
+    },
+    "autoexecscriptnotfoundedittargetexception": {
+      "autoexecscriptnotfoundedittargetexception": "自定义工具：{0}不存在"
+    },
+    "autoexecscriptversionnotfoundedittargetexception": {
+      "autoexecscriptversionnotfoundedittargetexception": "版本：{0}不存在"
+    }
+  },
+  "nfaet": {
+    "autoexectoolnotfoundedittargetexception": {
+      "autoexectoolnotfoundedittargetexception": "工具：{0}不存在"
+    }
+  },
   "nfal": {
     "matrix_modify": {
       "getauthdisplayname": "矩阵管理权限",
@@ -266,6 +298,16 @@
       }
     }
   },
+  "nfda": {
+    "app_config_modify": {
+      "getauthdisplayname": "应用配置维护权限",
+      "getauthintroduction": "查看应用配置、添加应用、修改有数据权限中编辑配置权限的应用配置"
+    },
+    "deploy_modify": {
+      "getauthdisplayname": "自动发布管理权限",
+      "getauthintroduction": "自动发布全局参数管理、场景定义"
+    }
+  },
   "nfdc": {
     "deploytenantconfig": {
       "gitlabwebhookcallbackhost": "gitlab webhook回调主机地址"
@@ -287,6 +329,14 @@
     },
     "tenantconfignotfoundexception": {
       "tenantconfignotfoundexception": "配置信息：“{0}”不存在"
+    }
+  },
+  "nfie": {
+    "inspectdefinitionnotfoundedittargetexception": {
+      "inspectdefinitionnotfoundedittargetexception": "巡检定义：{0}不存在"
+    },
+    "inspectnewproblemcustomviewnotfoundedittargetexception": {
+      "inspectnewproblemcustomviewnotfoundedittargetexception": "巡检最新问题个人视图分类{0}不存在"
     }
   },
   "nfke": {
@@ -433,11 +483,29 @@
     "projectusertype": {
       "getenumname": "项目用户类型"
     },
+    "reportinstancenotfoundedittargetexception": {
+      "reportinstancenotfoundedittargetexception": "报表实例：{0}不存在"
+    },
+    "reportnotfoundedittargetexception": {
+      "reportnotfoundedittargetexception": "报表：{0}不存在"
+    },
+    "reportsendjobnotfoundedittargetexception": {
+      "reportsendjobnotfoundedittargetexception": "报表发送计划：{0}不存在"
+    },
+    "reportstatementnotfoundedittargetexception": {
+      "reportstatementnotfoundedittargetexception": "大屏报表：{0}不存在"
+    },
     "systemattrtype": "系统属性"
   },
   "nmaac": {
+    "autoexeccombopbasicinfogetapi": {
+      "getname": "查询组合工具基本信息"
+    },
     "autoexeccombopbasicinfosaveapi": {
       "getname": "保存组合工具基本信息"
+    },
+    "autoexeccombopdetailgetapi": {
+      "getname": "获取组合工具及激活版本详细信息"
     },
     "autoexeccombopexecutablelistapi": {
       "getname": "查询当前用户可执行的组合工具列表"
@@ -450,6 +518,9 @@
     }
   },
   "nmaaj": {
+    "autoexecjobinfogetapi": {
+      "getname": "获取自动化作业详情"
+    },
     "listautoexecjoblogencodingapi": {
       "getname": "获取自动化作业日志字符编码集合",
       "mydoservice": {
@@ -470,7 +541,18 @@
       "getname": "回调更新作业状态"
     }
   },
+  "nmaas": {
+    "autoexecschedulegetapi": {
+      "getname": "获取定时作业信息"
+    },
+    "autoexecscriptgetapi": {
+      "getname": "查看脚本"
+    }
+  },
   "nmaat": {
+    "autoexectoolgetapi": {
+      "getname": "获取工具"
+    },
     "batchdeleteautoexectoolapi": {
       "getname": "批量删除内置工具，删除importTime不等于传入参数值的工具"
     },
@@ -1022,6 +1104,11 @@
       }
     }
   },
+  "nmdaas": {
+    "savedeployappconfigappsystemapi": {
+      "getname": "保存发布应用配置的应用系统"
+    }
+  },
   "nmdac": {
     "callbackdeploycigitlabeventapi": {
       "getname": "gitlab webhook回调api"
@@ -1032,7 +1119,7 @@
         "param": {
           "desc": {
             "added": "本次提交新增的文件",
-            "author": "提交者",
+            "author": "提交人",
             "date": "提交日期",
             "deleted": "本次提交删除的文件",
             "dirschanged": "受影响的目录",
@@ -1108,6 +1195,21 @@
   "nmft": {
     "createdatawarehousetableinithandler": {
       "getname": "创建数据仓库动态表"
+    }
+  },
+  "nmiad": {
+    "getinspectcollectapi": {
+      "getname": "获取模型对应的巡检定义"
+    }
+  },
+  "nmiaj": {
+    "inspectautoexecjobnodesearchapi": {
+      "getname": "查询巡检作业节点资产"
+    }
+  },
+  "nmian": {
+    "getinspectnewproblemcustomviewapi": {
+      "getname": "获取巡检最新问题个人视图分类"
     }
   },
   "nmkac": {
@@ -1222,6 +1324,16 @@
     "processgetapi": {
       "getname": "获取单个流程图数据接口"
     },
+    "processsearchapi": {
+      "getname": "流程列表搜索接口",
+      "input": {
+        "param": {
+          "desc": {
+            "isicreated": "是否只查询我创建的"
+          }
+        }
+      }
+    },
     "processtaskcurrentusertasklistapi": {
       "getname": "当前用户任务列表接口"
     },
@@ -1258,6 +1370,12 @@
     "deletereportapi": {
       "getname": "删除报表"
     },
+    "getreportapi": {
+      "getname": "获取报表定义详细信息"
+    },
+    "getreportinstanceapi": {
+      "getname": "获取报表详细信息"
+    },
     "getreporttypeapi": {
       "getname": "获取报表分类"
     },
@@ -1287,6 +1405,9 @@
     },
     "searchreportapi": {
       "getname": "查询报表定义"
+    },
+    "showreportdetailapi": {
+      "getname": "展示报表"
     },
     "updatereportactiveapi": {
       "getname": "更改报表定义激活状态"
@@ -1478,6 +1599,9 @@
     }
   },
   "nmras": {
+    "getreportstatementapi": {
+      "getname": "获取单个报表"
+    },
     "liststatusapi": {
       "getname": "获取应用状态列表",
       "input": {
@@ -1488,6 +1612,9 @@
           }
         }
       }
+    },
+    "reportsendjobgetapi": {
+      "getname": "获取报表发送计划"
     },
     "savestatusapi": {
       "getname": "保存应用状态",
@@ -1641,8 +1768,11 @@
     "ismine": "是否我的"
   },
   "term": {
+    "appsystemidlist": "应用系统id列表",
     "autoexec": {
       "assignexecuser": "指定执行用户",
+      "combopbaseinfo": "组合工具基本信息",
+      "combopdetailsinfo": "组合工具详细信息",
       "combopid": "组合工具ID",
       "execmode": "执行方式",
       "executeconfig": "执行目标",
@@ -1652,6 +1782,7 @@
       "groupname": "自动化",
       "inputparamlist": "输入参数列表",
       "jobid": "作业id",
+      "jobinfo": "自动化作业信息",
       "name": "自动化模块",
       "outputparamlist": "输出参数列表",
       "passthroughenv": "返回参数",
@@ -1660,7 +1791,10 @@
       "roundcount": "分批数量",
       "scenarioid": "场景id",
       "scenarioname": "场景名",
-      "scriptparser": "脚本解析器"
+      "scheduleinfo": "自动化定时作业信息",
+      "scriptinfo": "脚本内容",
+      "scriptparser": "脚本解析器",
+      "serviceinfo": "自动化服务目录信息"
     },
     "change": {
       "name": "变更模块"
@@ -1668,6 +1802,7 @@
     "cmdb": {
       "addid": "id，不提供代表添加",
       "allowedit": "是否允许编辑",
+      "appmoduleidlist": "应用模块id列表",
       "appsystemid": "应用系统id",
       "appsystemname": "应用系统名",
       "attrconfig": "属性配置",
@@ -1681,6 +1816,7 @@
       "ciname": "模型名称",
       "ciuniquename": "模型唯一标识",
       "envid": "环境id",
+      "envidlist": "环境id列表",
       "envname": "环境名称",
       "groupdesc": "配置管理平台",
       "groupname": "配置管理",
@@ -1691,20 +1827,25 @@
       "isshowinmenu": "是否在菜单显示",
       "issimpleattribute": "是否简单属性",
       "isvirtualci": "是否虚拟模型",
+      "maintenancewindow": "维护窗口",
       "moduleid": "模块ID",
       "modulename": "模块简称",
       "name": "配置管理模块",
       "parentcientityid": "父配置项id",
+      "protocolidlist": "协议id列表",
       "relidlist": "模型关系ID列表",
       "ruleid": "规则id",
       "startciid": "起始模型id",
+      "stateidlist": "状态id列表",
       "sysname": "系统简称",
       "targetciid": "目标模型id",
       "transactiongroupid": "事务组id",
       "transactionid": "事务id",
+      "typeidlist": "资源类型id列表",
       "validateconfig": "校验设置",
       "validatehandler": "校验组件",
       "validatorid": "验证规则id",
+      "vendoridlist": "厂商id列表",
       "viewid": "视图id",
       "viewname": "视图名称",
       "virtualcifileid": "虚拟模型配置文件id"
@@ -1749,9 +1890,13 @@
       "viplevel": "用户等级"
     },
     "inspect": {
+      "fields": "数据结构列表",
       "groupdesc": "巡检平台",
       "groupname": "巡检",
-      "name": "巡检模块"
+      "inspectjobphasenodestatuslist": "巡检作业状态列表",
+      "inspectstatuslist": "巡检状态列表",
+      "name": "巡检模块",
+      "thresholds": "阈值规则列表"
     },
     "itsm": {
       "caneditfocususer": "是否有权限修改工单关注人",
@@ -1781,11 +1926,11 @@
       "isshowprocesstaskstepcommenteditortoolbar": "是否显示工单步骤回复富文本编辑器工具栏",
       "mobileformuitype": "移动端表单交互类型，1：下探页面；0：当前页",
       "name": "工作流引擎模块",
-      "ownercompanylist": "工单所有者的公司列表",
-      "ownerdepartmentlist": "工单所有者的部门列表",
-      "ownerinfo": "工单所有者信息",
-      "ownername": "工单所有者名称",
-      "owneruuid": "工单所有者uuid",
+      "ownercompanylist": "工单所有人的公司列表",
+      "ownerdepartmentlist": "工单所有人的部门列表",
+      "ownerinfo": "工单所有人信息",
+      "ownername": "工单所有人名称",
+      "owneruuid": "工单所有人uuid",
       "processtaskformattributedata": "工单表单属性值",
       "processtaskformconfig": "工单表单信息",
       "processtaskid": "工单id",
@@ -1869,7 +2014,9 @@
     "report": {
       "groupdesc": "智能数据分析平台",
       "groupname": "报表",
-      "name": "报表模块"
+      "name": "报表模块",
+      "reportinstanceid": "报表实例id",
+      "sendplaninfo": "发送计划信息"
     },
     "tagent": {
       "name": "tagent模块"
