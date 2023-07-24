@@ -152,6 +152,7 @@
     "privatecache": "私有缓存",
     "progress": "进度",
     "publiccache": "公共缓存",
+    "referencecount": "引用数量",
     "regex": "正则表达式",
     "relname": "关系名称",
     "reltype": "关系类型",
@@ -1191,6 +1192,16 @@
   "nmpap": {
     "processgetapi": {
       "getname": "获取单个流程图数据接口"
+    },
+    "processsearchapi": {
+      "getname": "流程列表搜索接口",
+      "input": {
+        "param": {
+          "desc": {
+            "isicreated": "是否只查询我创建的"
+          }
+        }
+      }
     },
     "processtaskcurrentusertasklistapi": {
       "getname": "当前用户任务列表接口"
