@@ -152,6 +152,7 @@
     "privatecache": "Private cache",
     "progress": "schedule",
     "publiccache": "Public cache",
+    "referencecount": "Number of references",
     "regex": "regular expression ",
     "relname": "Relationship Name",
     "reltype": "Relationship Type",
@@ -1191,6 +1192,16 @@
   "nmpap": {
     "processgetapi": {
       "getname": "Obtain a single flowchart data interface"
+    },
+    "processsearchapi": {
+      "getname": "Process List Search Interface",
+      "input": {
+        "param": {
+          "desc": {
+            "isicreated": "Do you want to only query the ones I created"
+          }
+        }
+      }
     },
     "processtaskcurrentusertasklistapi": {
       "getname": "Current User Task List Interface"
