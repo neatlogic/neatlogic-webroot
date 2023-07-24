@@ -460,6 +460,18 @@
     "projectusertype": {
       "getenumname": "项目用户类型"
     },
+    "reportinstancenotfoundedittargetexception": {
+      "reportinstancenotfoundedittargetexception": "报表实例：{0}不存在"
+    },
+    "reportnotfoundedittargetexception": {
+      "reportnotfoundedittargetexception": "报表：{0}不存在"
+    },
+    "reportsendjobnotfoundedittargetexception": {
+      "reportsendjobnotfoundedittargetexception": "报表发送计划：{0}不存在"
+    },
+    "reportstatementnotfoundedittargetexception": {
+      "reportstatementnotfoundedittargetexception": "大屏报表：{0}不存在"
+    },
     "systemattrtype": "系统属性"
   },
   "nmaac": {
@@ -1312,6 +1324,12 @@
     "deletereportapi": {
       "getname": "删除报表"
     },
+    "getreportapi": {
+      "getname": "获取报表定义详细信息"
+    },
+    "getreportinstanceapi": {
+      "getname": "获取报表详细信息"
+    },
     "getreporttypeapi": {
       "getname": "获取报表分类"
     },
@@ -1341,6 +1359,9 @@
     },
     "searchreportapi": {
       "getname": "查询报表定义"
+    },
+    "showreportdetailapi": {
+      "getname": "展示报表"
     },
     "updatereportactiveapi": {
       "getname": "更改报表定义激活状态"
@@ -1532,6 +1553,9 @@
     }
   },
   "nmras": {
+    "getreportstatementapi": {
+      "getname": "获取单个报表"
+    },
     "liststatusapi": {
       "getname": "获取应用状态列表",
       "input": {
@@ -1542,6 +1566,9 @@
           }
         }
       }
+    },
+    "reportsendjobgetapi": {
+      "getname": "获取报表发送计划"
     },
     "savestatusapi": {
       "getname": "保存应用状态",
@@ -1935,7 +1962,9 @@
     "report": {
       "groupdesc": "智能数据分析平台",
       "groupname": "报表",
-      "name": "报表模块"
+      "name": "报表模块",
+      "reportinstanceid": "报表实例id",
+      "sendplaninfo": "发送计划信息"
     },
     "tagent": {
       "name": "tagent模块"
