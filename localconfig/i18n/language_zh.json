@@ -340,8 +340,20 @@
     }
   },
   "nfke": {
+    "knowledgecirclenotfoundedittargetexception": {
+      "knowledgecirclenotfoundedittargetexception": "知识圈：{0}不存在"
+    },
     "knowledgedocumentdraftreviewedexception": {
       "knowledgedocumentdraftreviewedexception": "草稿已经审批通过,无需重复审批"
+    },
+    "knowledgedocumentnotfoundedittargetexception": {
+      "knowledgedocumentnotfoundedittargetexception": "知识库文档：{0}不存在"
+    },
+    "knowledgedocumentversionnotfoundedittargetexception": {
+      "knowledgedocumentversionnotfoundedittargetexception": "知识库文档版本：{0}不存在"
+    },
+    "knowledgetemplatenotfoundedittargetexception": {
+      "knowledgetemplatenotfoundedittargetexception": "知识模版：{0}不存在"
     }
   },
   "nfne": {
@@ -1200,7 +1212,22 @@
       "getname": "获取巡检最新问题个人视图分类"
     }
   },
+  "nmkac": {
+    "knowledgecirclegetapi": {
+      "getname": "获取单个知识圈"
+    }
+  },
   "nmkad": {
+    "knowledgedocumentgetapi": {
+      "getname": "查询文档内容",
+      "input": {
+        "param": {
+          "desc": {
+            "isreadonly": "是否增加浏览量"
+          }
+        }
+      }
+    },
     "knowledgedocumentlistapi": {
       "getname": "查询文档列表"
     },
@@ -1217,6 +1244,9 @@
     },
     "knowledgedocumenttypetreeforselectapi": {
       "getname": "获取知识圈知识分类树_下拉框"
+    },
+    "knowledgetemplategetapi": {
+      "getname": "获取单个知识模版"
     },
     "knowledgetypelistapi": {
       "getname": "查询知识分类列表"
@@ -1923,10 +1953,15 @@
       "workcenterprocesstasksortindex": "工单中心工单排序下标"
     },
     "knowledge": {
+      "documentid": "文档id",
+      "documentinfo": "文档内容",
+      "documentversionid": "文档版本id",
       "groupdesc": "知识库平台",
       "groupname": "知识库",
+      "circleinfo": "知识圈信息",
       "name": "知识库模块",
       "reviewdate": "审批时间",
+      "templateinfo": "知识模版信息",
       "typepath": "知识圈分类路径"
     },
     "master": {
