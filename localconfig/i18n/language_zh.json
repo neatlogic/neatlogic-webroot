@@ -236,6 +236,35 @@
       "maxnumofcombopversion": "组合工具版本数量上限，例如设置最多10个版本，创建保存第11个版本时，自动删除掉最老的一个，非激活状态的版本。"
     }
   },
+  "nfaec": {
+    "autoexeccombopnotfoundedittargetexception": {
+      "autoexeccombopnotfoundedittargetexception": "组合工具：{0}不存在"
+    },
+    "autoexeccombopversionnotfoundedittargetexception": {
+      "autoexeccombopversionnotfoundedittargetexception": "组合工具版本：{0}不存在"
+    }
+  },
+  "nfaej": {
+    "autoexecjobnotfoundedittargetexception": {
+      "autoexecjobnotfoundedittargetexception": "作业：{0}不存在"
+    }
+  },
+  "nfaes": {
+    "autoexecschedulenotfoundedittargetexception": {
+      "autoexecschedulenotfoundedittargetexception": "定时作业：{0}不存在"
+    },
+    "autoexecscriptnotfoundedittargetexception": {
+      "autoexecscriptnotfoundedittargetexception": "自定义工具：{0}不存在"
+    },
+    "autoexecscriptversionnotfoundedittargetexception": {
+      "autoexecscriptversionnotfoundedittargetexception": "版本：{0}不存在"
+    }
+  },
+  "nfaet": {
+    "autoexectoolnotfoundedittargetexception": {
+      "autoexectoolnotfoundedittargetexception": "工具：{0}不存在"
+    }
+  },
   "nfal": {
     "matrix_modify": {
       "getauthdisplayname": "矩阵管理权限",
@@ -434,8 +463,14 @@
     "systemattrtype": "系统属性"
   },
   "nmaac": {
+    "autoexeccombopbasicinfogetapi": {
+      "getname": "查询组合工具基本信息"
+    },
     "autoexeccombopbasicinfosaveapi": {
       "getname": "保存组合工具基本信息"
+    },
+    "autoexeccombopdetailgetapi": {
+      "getname": "获取组合工具及激活版本详细信息"
     },
     "autoexeccombopexecutablelistapi": {
       "getname": "查询当前用户可执行的组合工具列表"
@@ -448,6 +483,9 @@
     }
   },
   "nmaaj": {
+    "autoexecjobinfogetapi": {
+      "getname": "获取自动化作业详情"
+    },
     "listautoexecjoblogencodingapi": {
       "getname": "获取自动化作业日志字符编码集合",
       "mydoservice": {
@@ -468,7 +506,18 @@
       "getname": "回调更新作业状态"
     }
   },
+  "nmaas": {
+    "autoexecschedulegetapi": {
+      "getname": "获取定时作业信息"
+    },
+    "autoexecscriptgetapi": {
+      "getname": "查看脚本"
+    }
+  },
   "nmaat": {
+    "autoexectoolgetapi": {
+      "getname": "获取工具"
+    },
     "batchdeleteautoexectoolapi": {
       "getname": "批量删除内置工具，删除importTime不等于传入参数值的工具"
     },
@@ -1649,6 +1698,8 @@
     "appsystemidlist": "应用系统id列表",
     "autoexec": {
       "assignexecuser": "指定执行用户",
+      "combopbaseinfo": "组合工具基本信息",
+      "combopdetailsinfo": "组合工具详细信息",
       "combopid": "组合工具ID",
       "execmode": "执行方式",
       "executeconfig": "执行目标",
@@ -1658,6 +1709,7 @@
       "groupname": "自动化",
       "inputparamlist": "输入参数列表",
       "jobid": "作业id",
+      "jobinfo": "自动化作业信息",
       "name": "自动化模块",
       "outputparamlist": "输出参数列表",
       "passthroughenv": "返回参数",
@@ -1666,7 +1718,10 @@
       "roundcount": "分批数量",
       "scenarioid": "场景id",
       "scenarioname": "场景名",
-      "scriptparser": "脚本解析器"
+      "scheduleinfo": "自动化定时作业信息",
+      "scriptinfo": "脚本内容",
+      "scriptparser": "脚本解析器",
+      "serviceinfo": "自动化服务目录信息"
     },
     "change": {
       "name": "变更模块"

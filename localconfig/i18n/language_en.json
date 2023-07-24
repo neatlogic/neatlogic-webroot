@@ -236,6 +236,35 @@
       "maxnumofcombopversion": "The maximum number of versions of the combination tool, such as setting a maximum of 10 versions, will automatically delete the oldest and inactive version when creating and saving the 11th version."
     }
   },
+  "nfaec": {
+    "autoexeccombopnotfoundedittargetexception": {
+      "autoexeccombopnotfoundedittargetexception": "Combination tool: {0} does not exist"
+    },
+    "autoexeccombopversionnotfoundedittargetexception": {
+      "autoexeccombopversionnotfoundedittargetexception": "Combination tool version: {0} does not exist"
+    }
+  },
+  "nfaej": {
+    "autoexecjobnotfoundedittargetexception": {
+      "autoexecjobnotfoundedittargetexception": "Assignment: {0} does not exist"
+    }
+  },
+  "nfaes": {
+    "autoexecschedulenotfoundedittargetexception": {
+      "autoexecschedulenotfoundedittargetexception": "Timed assignment: {0} does not exist"
+    },
+    "autoexecscriptnotfoundedittargetexception": {
+      "autoexecscriptnotfoundedittargetexception": "Custom tool: {0} does not exist"
+    },
+    "autoexecscriptversionnotfoundedittargetexception": {
+      "autoexecscriptversionnotfoundedittargetexception": "Version: {0} does not exist"
+    }
+  },
+  "nfaet": {
+    "autoexectoolnotfoundedittargetexception": {
+      "autoexectoolnotfoundedittargetexception": "Tool: {0} does not exist"
+    }
+  },
   "nfal": {
     "matrix_modify": {
       "getauthdisplayname": "Matrix Management Permissions",
@@ -434,8 +463,14 @@
     "systemattrtype": "System Properties"
   },
   "nmaac": {
+    "autoexeccombopbasicinfogetapi": {
+      "getname": "Basic information of query combination tool"
+    },
     "autoexeccombopbasicinfosaveapi": {
       "getname": "Save basic information of the combination tool"
+    },
+    "autoexeccombopdetailgetapi": {
+      "getname": "Obtain detailed information on combination tools and activation versions"
     },
     "autoexeccombopexecutablelistapi": {
       "getname": "Query the list of combination tools that the current user can execute"
@@ -448,6 +483,9 @@
     }
   },
   "nmaaj": {
+    "autoexecjobinfogetapi": {
+      "getname": "Obtain automation job details"
+    },
     "listautoexecjoblogencodingapi": {
       "getname": "Get automatic job log Character encoding set",
       "mydoservice": {
@@ -468,7 +506,18 @@
       "getname": "Callback update job status"
     }
   },
+  "nmaas": {
+    "autoexecschedulegetapi": {
+      "getname": "Obtain scheduled job information"
+    },
+    "autoexecscriptgetapi": {
+      "getname": "View Script"
+    }
+  },
   "nmaat": {
+    "autoexectoolgetapi": {
+      "getname": "Get Tools"
+    },
     "batchdeleteautoexectoolapi": {
       "getname": "Batch delete built-in tools, delete tools whose importTime does not equal the passed in parameter values"
     },
@@ -1649,6 +1698,8 @@
     "appsystemidlist": "Application System ID List",
     "autoexec": {
       "assignexecuser": "Specify Execution User",
+      "combopbaseinfo": "Basic information of combination tools",
+      "combopdetailsinfo": "Combination Tool Details",
       "combopid": "Combination tool ID",
       "execmode": "Execution method",
       "executeconfig": "Execution Objectives",
@@ -1658,6 +1709,7 @@
       "groupname": "Automation",
       "inputparamlist": "Input parameter list",
       "jobid": "Job ID",
+      "jobinfo": "Automated job information",
       "name": "Autoexec",
       "outputparamlist": "Output parameter list",
       "passthroughenv": "Return parameters",
@@ -1666,7 +1718,10 @@
       "roundcount": "Batch quantity",
       "scenarioid": "Scenario ID",
       "scenarioname": "Scene Name",
-      "scriptparser": "Script Parser"
+      "scheduleinfo": "Automated scheduled job information",
+      "scriptinfo": "Script Content",
+      "scriptparser": "Script Parser",
+      "serviceinfo": "Automation Service Catalog Information"
     },
     "change": {
       "name": "Change"
