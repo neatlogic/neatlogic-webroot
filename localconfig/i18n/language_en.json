@@ -1148,6 +1148,9 @@
   "nmdaj": {
     "createmultideployjobapi": {
       "getname": "Create and execute publishing jobs"
+    },
+    "getdeployjobcreateinfoapi": {
+      "getname": "Obtain initialization information for creating and publishing jobs"
     }
   },
   "nmdav": {
@@ -1803,6 +1806,7 @@
       "addid": "ID, do not provide a representative to add",
       "allowedit": "Allow editing",
       "appmoduleidlist": "Application module ID list",
+      "appmoduleid": "Application module ID",
       "appsystemid": "Application system ID",
       "appsystemname": "Application system name",
       "attrconfig": "Attribute Configuration",

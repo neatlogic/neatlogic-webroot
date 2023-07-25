@@ -1148,6 +1148,9 @@
   "nmdaj": {
     "createmultideployjobapi": {
       "getname": "创建并执行发布作业"
+    },
+    "getdeployjobcreateinfoapi": {
+      "getname": "获取创建发布作业初始化信息"
     }
   },
   "nmdav": {
@@ -1803,6 +1806,7 @@
       "addid": "id，不提供代表添加",
       "allowedit": "是否允许编辑",
       "appmoduleidlist": "应用模块id列表",
+      "appmoduleid": "应用模块id",
       "appsystemid": "应用系统id",
       "appsystemname": "应用系统名",
       "attrconfig": "属性配置",
