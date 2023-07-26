@@ -1756,6 +1756,9 @@
     }
   },
   "nmtau": {
+    "getusertokenapi": {
+      "getname": "Obtain the user\u0027s own token"
+    },
     "userdeleteapi": {
       "getname": "Delete User Interface"
     },
@@ -1805,8 +1808,8 @@
     "cmdb": {
       "addid": "ID, do not provide a representative to add",
       "allowedit": "Allow editing",
-      "appmoduleidlist": "Application module ID list",
       "appmoduleid": "Application module ID",
+      "appmoduleidlist": "Application module ID list",
       "appsystemid": "Application system ID",
       "appsystemname": "Application system name",
       "attrconfig": "Attribute Configuration",
@@ -1957,12 +1960,12 @@
       "workcenterprocesstasksortindex": "Work Order Center Work Order Sorting Index"
     },
     "knowledge": {
+      "circleinfo": "Knowledge Circle Information",
       "documentid": "Document ID",
       "documentinfo": "Document content",
       "documentversionid": "Document version ID",
       "groupdesc": "Knowledge platform",
       "groupname": "Knowledge",
-      "circleinfo": "Knowledge Circle Information",
       "name": "Knowledge",
       "reviewdate": "Approval time",
       "templateinfo": "Knowledge template information",

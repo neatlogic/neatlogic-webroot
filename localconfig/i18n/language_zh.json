@@ -1756,6 +1756,9 @@
     }
   },
   "nmtau": {
+    "getusertokenapi": {
+      "getname": "获取用户自己的令牌"
+    },
     "userdeleteapi": {
       "getname": "删除用户接口"
     },
@@ -1805,8 +1808,8 @@
     "cmdb": {
       "addid": "id，不提供代表添加",
       "allowedit": "是否允许编辑",
-      "appmoduleidlist": "应用模块id列表",
       "appmoduleid": "应用模块id",
+      "appmoduleidlist": "应用模块id列表",
       "appsystemid": "应用系统id",
       "appsystemname": "应用系统名",
       "attrconfig": "属性配置",
@@ -1957,12 +1960,12 @@
       "workcenterprocesstasksortindex": "工单中心工单排序下标"
     },
     "knowledge": {
+      "circleinfo": "知识圈信息",
       "documentid": "文档id",
       "documentinfo": "文档内容",
       "documentversionid": "文档版本id",
       "groupdesc": "知识库平台",
       "groupname": "知识库",
-      "circleinfo": "知识圈信息",
       "name": "知识库模块",
       "reviewdate": "审批时间",
       "templateinfo": "知识模版信息",
