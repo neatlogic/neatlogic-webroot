@@ -282,6 +282,17 @@
       "changetemplatenotfoundedittargetexception": "Change template: {0} does not exist"
     }
   },
+  "nfcer": {
+    "appenvnotfoundedittargetexception": {
+      "appenvnotfoundedittargetexception": "Environment: {0} does not exist"
+    },
+    "appmodulenotfoundedittargetexception": {
+      "appmodulenotfoundedittargetexception": "Application module: {0} does not exist"
+    },
+    "appsystemnotfoundedittargetexception": {
+      "appsystemnotfoundedittargetexception": "Application: {0} does not exist"
+    }
+  },
   "nfd": {
     "licensevo": {
       "entityfield": {
@@ -316,6 +327,21 @@
   "nfde": {
     "documentonlinenotfoundexception": {
       "documentonlinenotfoundexception": "Online help document: {0} does not exist"
+    }
+  },
+  "nfdej": {
+    "deploybatchjobnotfoundedittargetexception": {
+      "deploybatchjobnotfoundedittargetexception": "Batch publish job: {0} does not exist"
+    }
+  },
+  "nfdep": {
+    "deploypipelinenotfoundedittargetexception": {
+      "deploypipelinenotfoundedittargetexception": "The pipeline with id {0} does not exist"
+    }
+  },
+  "nfdev": {
+    "deployversionnotfoundedittargetexception": {
+      "deployversionnotfoundedittargetexception": "Release version: {0} does not exist"
     }
   },
   "nfeec": {
@@ -1102,6 +1128,16 @@
           }
         }
       }
+    },
+    "getdeployapppipelineapi": {
+      "getname": "Obtain application pipeline",
+      "input": {
+        "param": {
+          "desc": {
+            "isdeletedisabledphase": "Do you want to delete the disabled stage"
+          }
+        }
+      }
     }
   },
   "nmdaas": {
@@ -1151,6 +1187,16 @@
     },
     "getdeployjobcreateinfoapi": {
       "getname": "Obtain initialization information for creating and publishing jobs"
+    }
+  },
+  "nmdajb": {
+    "getbatchdeployjobapi": {
+      "getname": "Obtain individual batch job information"
+    }
+  },
+  "nmdap": {
+    "getpipelineapi": {
+      "getname": "Obtain detailed information about the super assembly line"
     }
   },
   "nmdav": {
@@ -1805,8 +1851,8 @@
     "cmdb": {
       "addid": "ID, do not provide a representative to add",
       "allowedit": "Allow editing",
-      "appmoduleidlist": "Application module ID list",
       "appmoduleid": "Application module ID",
+      "appmoduleidlist": "Application module ID list",
       "appsystemid": "Application system ID",
       "appsystemname": "Application system name",
       "attrconfig": "Attribute Configuration",
@@ -1864,6 +1910,7 @@
       "name": "Dashboard"
     },
     "deploy": {
+      "apppipelineinfo": "Application pipeline configuration information",
       "ciid": "Continuous Integration Configuration ID",
       "confidence": "confidence",
       "cvecount": "CVE Count",
@@ -1875,6 +1922,7 @@
       "name": "DevOps",
       "proxytourl": "Proxy address",
       "runnerid": "Executor ID",
+      "scheduleinfo": "Publish scheduled job information",
       "vulnerabilityids": "Vulnerability ID"
     },
     "event": {
@@ -1957,12 +2005,12 @@
       "workcenterprocesstasksortindex": "Work Order Center Work Order Sorting Index"
     },
     "knowledge": {
+      "circleinfo": "Knowledge Circle Information",
       "documentid": "Document ID",
       "documentinfo": "Document content",
       "documentversionid": "Document version ID",
       "groupdesc": "Knowledge platform",
       "groupname": "Knowledge",
-      "circleinfo": "Knowledge Circle Information",
       "name": "Knowledge",
       "reviewdate": "Approval time",
       "templateinfo": "Knowledge template information",
