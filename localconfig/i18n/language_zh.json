@@ -282,6 +282,17 @@
       "changetemplatenotfoundedittargetexception": "变更模板：{0}不存在"
     }
   },
+  "nfcer": {
+    "appenvnotfoundedittargetexception": {
+      "appenvnotfoundedittargetexception": "环境：{0}不存在"
+    },
+    "appmodulenotfoundedittargetexception": {
+      "appmodulenotfoundedittargetexception": "应用模块：{0}不存在"
+    },
+    "appsystemnotfoundedittargetexception": {
+      "appsystemnotfoundedittargetexception": "应用：{0}不存在"
+    }
+  },
   "nfd": {
     "licensevo": {
       "entityfield": {
@@ -316,6 +327,21 @@
   "nfde": {
     "documentonlinenotfoundexception": {
       "documentonlinenotfoundexception": "在线帮助文档：“{0}”不存在"
+    }
+  },
+  "nfdej": {
+    "deploybatchjobnotfoundedittargetexception": {
+      "deploybatchjobnotfoundedittargetexception": "批量发布作业：{0}不存在"
+    }
+  },
+  "nfdep": {
+    "deploypipelinenotfoundedittargetexception": {
+      "deploypipelinenotfoundedittargetexception": "id为{0}的流水线不存在"
+    }
+  },
+  "nfdev": {
+    "deployversionnotfoundedittargetexception": {
+      "deployversionnotfoundedittargetexception": "发布版本：{0}不存在"
     }
   },
   "nfeec": {
@@ -1102,6 +1128,16 @@
           }
         }
       }
+    },
+    "getdeployapppipelineapi": {
+      "getname": "获取应用流水线",
+      "input": {
+        "param": {
+          "desc": {
+            "isdeletedisabledphase": "是否删除禁用阶段"
+          }
+        }
+      }
     }
   },
   "nmdaas": {
@@ -1151,6 +1187,16 @@
     },
     "getdeployjobcreateinfoapi": {
       "getname": "获取创建发布作业初始化信息"
+    }
+  },
+  "nmdajb": {
+    "getbatchdeployjobapi": {
+      "getname": "获取单个批量作业信息"
+    }
+  },
+  "nmdap": {
+    "getpipelineapi": {
+      "getname": "获取超级流水线详细信息"
     }
   },
   "nmdav": {
@@ -1805,8 +1851,8 @@
     "cmdb": {
       "addid": "id，不提供代表添加",
       "allowedit": "是否允许编辑",
-      "appmoduleidlist": "应用模块id列表",
       "appmoduleid": "应用模块id",
+      "appmoduleidlist": "应用模块id列表",
       "appsystemid": "应用系统id",
       "appsystemname": "应用系统名",
       "attrconfig": "属性配置",
@@ -1864,6 +1910,7 @@
       "name": "仪表板模块"
     },
     "deploy": {
+      "apppipelineinfo": "应用流水线配置信息",
       "ciid": "持续集成配置id",
       "confidence": "信心",
       "cvecount": "CVE计数",
@@ -1875,6 +1922,7 @@
       "name": "自动发布",
       "proxytourl": "代理地址",
       "runnerid": "执行器id",
+      "scheduleinfo": "发布定时作业信息",
       "vulnerabilityids": "脆弱性id"
     },
     "event": {
@@ -1957,12 +2005,12 @@
       "workcenterprocesstasksortindex": "工单中心工单排序下标"
     },
     "knowledge": {
+      "circleinfo": "知识圈信息",
       "documentid": "文档id",
       "documentinfo": "文档内容",
       "documentversionid": "文档版本id",
       "groupdesc": "知识库平台",
       "groupname": "知识库",
-      "circleinfo": "知识圈信息",
       "name": "知识库模块",
       "reviewdate": "审批时间",
       "templateinfo": "知识模版信息",
