@@ -1814,6 +1814,9 @@
     }
   },
   "nmtau": {
+    "getusertokenapi": {
+      "getname": "Obtain the user\u0027s own token"
+    },
     "userdeleteapi": {
       "getname": "Delete User Interface"
     },

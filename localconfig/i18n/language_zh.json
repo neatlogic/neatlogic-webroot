@@ -1814,6 +1814,9 @@
     }
   },
   "nmtau": {
+    "getusertokenapi": {
+      "getname": "获取用户自己的令牌"
+    },
     "userdeleteapi": {
       "getname": "删除用户接口"
     },
