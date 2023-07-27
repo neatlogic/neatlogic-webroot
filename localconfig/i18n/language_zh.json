@@ -169,6 +169,9 @@
     "sourcelist": "来源列表",
     "sourcename": "来源中文名",
     "startdate": "开始日期",
+    "startloadconfig": "开始从 {0} 加载配置...",
+    "startloadmodule": "开始初始化模块 {0}...",
+    "startloadschedulejob": "开始加载模块 {0} 的定时作业...",
     "starttime": "开始时间",
     "startupjob": "启动作业",
     "status": "状态",
@@ -179,9 +182,6 @@
     "statusuniquename": "状态唯一标识",
     "string": "字符串",
     "successload": "执行完毕",
-    "startloadschedulejob": "开始加载模块 {0} 的定时作业...",
-    "startloadmodule": "开始初始化模块 {0}...",
-    "startloadconfig": "开始从 {0} 加载配置...",
     "tablelist": "表格列表",
     "tag": "标签",
     "tagid": "标签id",
@@ -492,6 +492,9 @@
   "nfre": {
     "apptype": {
       "getenumname": "项目对象类型"
+    },
+    "issuenotdeleteauthexception": {
+      "issuenotdeleteauthexception": "您没有删除当前任务的权限"
     },
     "priorityisinusedexception": {
       "priorityisinusedexception": "优先级“{0}”正在使用中"
@@ -1545,6 +1548,9 @@
     },
     "deletecommentapi": {
       "getname": "删除评论"
+    },
+    "deleteissueapi": {
+      "getname": "删除任务"
     },
     "deleteissuerelapi": {
       "getname": "删除任务关联关系"
