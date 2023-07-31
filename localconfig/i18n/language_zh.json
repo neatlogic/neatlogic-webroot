@@ -90,6 +90,7 @@
     "focususerlist": "关注人列表",
     "focususeruuidlist": "关注人uuid列表",
     "group": "分组",
+    "hasmore": "是否有更多内容尚未读取",
     "hasparent": "是否拥有父级",
     "icon": "图标",
     "id": "id",
@@ -161,6 +162,7 @@
     "request": "需求",
     "reviewerlist": "审批人列表",
     "role": "角色",
+    "roleuuid": "角色uuid",
     "roleuuidlist": "角色uuid列表",
     "rownum": "数据条目",
     "scoreinfo": "评分信息",
@@ -190,6 +192,7 @@
     "task": "任务",
     "tbodylist": "展示的值",
     "team": "组",
+    "teamuuid": "用户组uuid",
     "teamuuidlist": "用户组uuid列表",
     "tel": "手机号",
     "templateid": "模板id",
@@ -1176,6 +1179,12 @@
         }
       }
     },
+    "downloaddeployciauditdetailapi": {
+      "getname": "下载持续集成回调接口调用日志"
+    },
+    "getdeployciauditdetailapi": {
+      "getname": "获取持续集成回调接口调用日志"
+    },
     "savedeployciapi": {
       "getname": "保存持续集成配置",
       "input": {
@@ -1715,6 +1724,14 @@
       "getname": "搜索webhook数据"
     }
   },
+  "nmtaa": {
+    "apiauditdetaildownloadapi": {
+      "getname": "下载接口调用记录"
+    },
+    "apiauditdetailgetapi": {
+      "getname": "获取接口调用记录"
+    }
+  },
   "nmtad": {
     "adddocumentonlineconfigapi": {
       "getname": "添加在线帮助文档与模块菜单的映射关系"
@@ -1748,6 +1765,14 @@
       "mydoservice": {
         "error": "找不到docID为{0}的文档"
       }
+    }
+  },
+  "nmtai": {
+    "integrationauditdetaildownloadapi": {
+      "getname": "下载集成管理调用记录"
+    },
+    "integrationauditdetailgetapi": {
+      "getname": "获取集成管理审计内容"
     }
   },
   "nmtal": {
@@ -1822,6 +1847,16 @@
     },
     "usersaveapi": {
       "getname": "保存用户接口"
+    },
+    "usersearchforselectapi": {
+      "getname": "查询用户_下拉",
+      "input": {
+        "param": {
+          "desc": {
+            "needteam": "是否需要组信息"
+          }
+        }
+      }
     }
   },
   "ocommn": {

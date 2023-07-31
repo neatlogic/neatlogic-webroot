@@ -90,6 +90,7 @@
     "focususerlist": "List of followers",
     "focususeruuidlist": "List of followers\u0027 uuids",
     "group": "grouping",
+    "hasmore": "Is there any more content that has not been read yet",
     "hasparent": "Do you have a parent",
     "icon": "icon",
     "id": "id",
@@ -161,6 +162,7 @@
     "request": "demand",
     "reviewerlist": "List of approvers",
     "role": "role",
+    "roleuuid": "Role uuid",
     "roleuuidlist": "Role uuid List",
     "rownum": "Data Entry",
     "scoreinfo": "Rating information",
@@ -190,6 +192,7 @@
     "task": "task",
     "tbodylist": "tbody list",
     "team": "group",
+    "teamuuid": "User group uuid",
     "teamuuidlist": "User group uuid list",
     "tel": "Mobile phone number",
     "templateid": "Template ID",
@@ -1176,6 +1179,12 @@
         }
       }
     },
+    "downloaddeployciauditdetailapi": {
+      "getname": "Download Continuous Integration Callback Interface Call Log"
+    },
+    "getdeployciauditdetailapi": {
+      "getname": "Obtain Continuous Integration Callback Interface Call Log"
+    },
     "savedeployciapi": {
       "getname": "Save Continuous Integration Configuration",
       "input": {
@@ -1715,6 +1724,14 @@
       "getname": "Search for webhook data"
     }
   },
+  "nmtaa": {
+    "apiauditdetaildownloadapi": {
+      "getname": "Download interface call records"
+    },
+    "apiauditdetailgetapi": {
+      "getname": "Obtain interface call records"
+    }
+  },
   "nmtad": {
     "adddocumentonlineconfigapi": {
       "getname": "Add mapping relationship between online help documents and module menus"
@@ -1748,6 +1765,14 @@
       "mydoservice": {
         "error": "Unable to find document with docID {0}"
       }
+    }
+  },
+  "nmtai": {
+    "integrationauditdetaildownloadapi": {
+      "getname": "Download integrated management call records"
+    },
+    "integrationauditdetailgetapi": {
+      "getname": "Obtain integrated management audit content"
     }
   },
   "nmtal": {
@@ -1822,6 +1847,16 @@
     },
     "usersaveapi": {
       "getname": "Save User Interface"
+    },
+    "usersearchforselectapi": {
+      "getname": "Query Users_ drop-down ",
+      "input": {
+        "param": {
+          "desc": {
+            "needteam": "Do you need group information"
+          }
+        }
+      }
     }
   },
   "ocommn": {
