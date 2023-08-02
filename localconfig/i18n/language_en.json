@@ -2086,6 +2086,7 @@
       "childtaskid": "Subtask ID",
       "commonid": "Comment ID",
       "enddate": "Expected end",
+      "gantt": "Gantt chart Chart",
       "groupdesc": "RDM platform",
       "groupname": "RDM",
       "isend": "Is it over",

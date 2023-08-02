@@ -2086,6 +2086,7 @@
       "childtaskid": "子任务id",
       "commonid": "评论id",
       "enddate": "预计结束",
+      "gantt": "甘特图",
       "groupdesc": "研发管理平台",
       "groupname": "研发管理",
       "isend": "是否结束",
