@@ -71,6 +71,7 @@
     "enddate": "结束日期",
     "endtime": "结束时间",
     "enum": "枚举",
+    "errorinfo": "错误信息",
     "event": "事件",
     "example": "范例",
     "excludeid": "排除id",
@@ -94,6 +95,7 @@
     "hasparent": "是否拥有父级",
     "icon": "图标",
     "id": "id",
+    "inittime": "初始化时间",
     "inputfrom": "更新方式",
     "inputfromname": "变更方式名称",
     "int": "整形",
@@ -1122,6 +1124,19 @@
       "getname": "搜索拓扑视图"
     }
   },
+  "nmcarc": {
+    "getresourceentityapi": {
+      "getname": "获取资源视图配置信息"
+    }
+  },
+  "nmcarr": {
+    "resourcetypetreeapi": {
+      "getname": "查询资源类型树列表"
+    },
+    "saveresourcetypeapi": {
+      "getname": "保存资产类型的根模型"
+    }
+  },
   "nmda": {
     "exportdashboardapi": {
       "getname": "导出仪表板"
@@ -1267,6 +1282,9 @@
   "nmiad": {
     "getinspectcollectapi": {
       "getname": "获取模型对应的巡检定义"
+    },
+    "inspectcombopsearchapi": {
+      "getname": "查询巡检组合工具列表"
     }
   },
   "nmiaj": {
@@ -1277,6 +1295,11 @@
   "nmian": {
     "getinspectnewproblemcustomviewapi": {
       "getname": "获取巡检最新问题个人视图分类"
+    }
+  },
+  "nmiar": {
+    "inspectschedulesearchapi": {
+      "getname": "查询巡检定时任务列表"
     }
   },
   "nmkac": {
@@ -1913,6 +1936,7 @@
       "cientityuniquename": "配置项唯一标识",
       "ciid": "模型id",
       "ciidlist": "模型ID列表",
+      "ciinfo": "模型信息",
       "ciname": "模型名称",
       "ciuniquename": "模型唯一标识",
       "envid": "环境id",
@@ -1927,6 +1951,7 @@
       "isshowinmenu": "是否在菜单显示",
       "issimpleattribute": "是否简单属性",
       "isvirtualci": "是否虚拟模型",
+      "joinlist": "连接列表",
       "maintenancewindow": "维护窗口",
       "moduleid": "模块ID",
       "modulename": "模块简称",
@@ -1934,6 +1959,8 @@
       "parentcientityid": "父配置项id",
       "protocolidlist": "协议id列表",
       "relidlist": "模型关系ID列表",
+      "resourceentityinfo": "资源视图信息",
+      "rootciid": "根模型id",
       "ruleid": "规则id",
       "startciid": "起始模型id",
       "stateidlist": "状态id列表",
