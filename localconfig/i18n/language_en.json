@@ -71,6 +71,7 @@
     "enddate": "End date",
     "endtime": "End time",
     "enum": "enumeration",
+    "errorinfo": "error message",
     "event": "event",
     "example": "example",
     "excludeid": "Exclude ID",
@@ -94,6 +95,7 @@
     "hasparent": "Do you have a parent",
     "icon": "icon",
     "id": "id",
+    "inittime": "Initialization time",
     "inputfrom": "Update method",
     "inputfromname": "Change method name",
     "int": "int",
@@ -1122,6 +1124,19 @@
       "getname": "Search Topology View"
     }
   },
+  "nmcarc": {
+    "getresourceentityapi": {
+      "getname": "Obtain resource view configuration information"
+    }
+  },
+  "nmcarr": {
+    "resourcetypetreeapi": {
+      "getname": "Query Resource Type Tree List"
+    },
+    "saveresourcetypeapi": {
+      "getname": "Save the root model of asset types"
+    }
+  },
   "nmda": {
     "exportdashboardapi": {
       "getname": "Export Dashboard"
@@ -1267,6 +1282,9 @@
   "nmiad": {
     "getinspectcollectapi": {
       "getname": "Obtain the inspection definition corresponding to the model"
+    },
+    "inspectcombopsearchapi": {
+      "getname": "Query the list of inspection combination tools"
     }
   },
   "nmiaj": {
@@ -1277,6 +1295,11 @@
   "nmian": {
     "getinspectnewproblemcustomviewapi": {
       "getname": "Obtain personal view classification of the latest inspection issues"
+    }
+  },
+  "nmiar": {
+    "inspectschedulesearchapi": {
+      "getname": "Query the list of scheduled inspection tasks"
     }
   },
   "nmkac": {
@@ -1913,6 +1936,7 @@
       "cientityuniquename": "Unique identification of configuration items",
       "ciid": "Model ID",
       "ciidlist": "Model ID List",
+      "ciinfo": "Model Information",
       "ciname": "Model Name",
       "ciuniquename": "Model Unique Identification",
       "envid": "Environment ID",
@@ -1927,6 +1951,7 @@
       "isshowinmenu": "Is it displayed in the menu",
       "issimpleattribute": "Is it a simple attribute",
       "isvirtualci": "Is it a virtual model",
+      "joinlist": "Connection List",
       "maintenancewindow": "Maintenance Window",
       "moduleid": "Module ID",
       "modulename": "Module abbreviation",
@@ -1934,6 +1959,8 @@
       "parentcientityid": "Parent Configuration Item ID",
       "protocolidlist": "Protocol ID List",
       "relidlist": "Model Relationship ID List",
+      "resourceentityinfo": "Resource View Information",
+      "rootciid": "Root Model ID",
       "ruleid": "Rule ID",
       "startciid": "Starting Model ID",
       "stateidlist": "Status ID List",
