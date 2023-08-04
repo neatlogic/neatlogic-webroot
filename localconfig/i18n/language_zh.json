@@ -498,6 +498,18 @@
     "apptype": {
       "getenumname": "项目对象类型"
     },
+    "issuecostnotauthdeleteexception": {
+      "issuecostnotauthdeleteexception": "您没有删除当前项目花费的权限"
+    },
+    "issuecostnotauthsaveexception": {
+      "issuecostnotauthsaveexception": "您没有保存当前项目花费的权限"
+    },
+    "issuecostnotauthsearchexception": {
+      "issuecostnotauthsearchexception": "您没有搜索当前项目花费的权限"
+    },
+    "issuenotauthsearchexception": {
+      "issuenotauthsearchexception": "您没有搜索当前项目任务权限"
+    },
     "issuenotdeleteauthexception": {
       "issuenotdeleteauthexception": "您没有删除当前任务的权限"
     },
@@ -1584,8 +1596,14 @@
     "deleteissueapi": {
       "getname": "删除任务"
     },
+    "deleteissuecostapi": {
+      "getname": "删除花费"
+    },
     "deleteissuerelapi": {
       "getname": "删除任务关联关系"
+    },
+    "getissuecostapi": {
+      "getname": "获取花费详情"
     },
     "listrelissueidapi": {
       "getname": "获取关系任务id列表"
@@ -1602,6 +1620,9 @@
         }
       }
     },
+    "saveissuecostapi": {
+      "getname": "保存花费"
+    },
     "searchissueapi": {
       "getname": "搜索任务",
       "input": {
@@ -1612,6 +1633,9 @@
           }
         }
       }
+    },
+    "searchissuecostapi": {
+      "getname": "搜索花费"
     },
     "toggleissueisfavoriteapi": {
       "getname": "切换任务关注状态",
@@ -2119,6 +2143,9 @@
       "childrentaskcount": "子任务数量",
       "childtaskid": "子任务id",
       "commonid": "评论id",
+      "costdate": "花费日期",
+      "costlist": "花费列表",
+      "costtime": "花费工时",
       "enddate": "预计结束",
       "gantt": "甘特图",
       "groupdesc": "研发管理平台",
@@ -2132,6 +2159,7 @@
       "iterationname": "迭代名称",
       "name": "研发管理模块",
       "parenttaskid": "父任务id",
+      "plantimecost": "预计耗时",
       "project": {
         "manageridlist": "项目负责人id列表",
         "useridlist": "项目成员用户id列表"

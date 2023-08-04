@@ -498,6 +498,18 @@
     "apptype": {
       "getenumname": "Project Object Type"
     },
+    "issuecostnotauthdeleteexception": {
+      "issuecostnotauthdeleteexception": "You do not have permission to delete project expenses"
+    },
+    "issuecostnotauthsaveexception": {
+      "issuecostnotauthsaveexception": "You do not have permission to save the current project expenses"
+    },
+    "issuecostnotauthsearchexception": {
+      "issuecostnotauthsearchexception": "You do not have permission to search for current project expenses"
+    },
+    "issuenotauthsearchexception": {
+      "issuenotauthsearchexception": "You do not have permission to search for current project tasks"
+    },
     "issuenotdeleteauthexception": {
       "issuenotdeleteauthexception": "You do not have permission to delete the current task"
     },
@@ -1584,8 +1596,14 @@
     "deleteissueapi": {
       "getname": "Delete Task"
     },
+    "deleteissuecostapi": {
+      "getname": "Delete expenses"
+    },
     "deleteissuerelapi": {
       "getname": "Delete task association relationship"
+    },
+    "getissuecostapi": {
+      "getname": "Obtain expense details"
     },
     "listrelissueidapi": {
       "getname": "Obtain a list of relationship task IDs"
@@ -1602,6 +1620,9 @@
         }
       }
     },
+    "saveissuecostapi": {
+      "getname": "Save expenses"
+    },
     "searchissueapi": {
       "getname": "Search Task",
       "input": {
@@ -1612,6 +1633,9 @@
           }
         }
       }
+    },
+    "searchissuecostapi": {
+      "getname": "Search expenses"
     },
     "toggleissueisfavoriteapi": {
       "getname": "Switching task attention status",
@@ -2119,6 +2143,9 @@
       "childrentaskcount": "Number of subtasks",
       "childtaskid": "Subtask ID",
       "commonid": "Comment ID",
+      "costdate": "Spending date",
+      "costlist": "Spend List",
+      "costtime": "Labor hours spent",
       "enddate": "Expected end",
       "gantt": "Gantt chart Chart",
       "groupdesc": "RDM platform",
@@ -2132,6 +2159,7 @@
       "iterationname": "Iteration Name",
       "name": "RDM",
       "parenttaskid": "Parent Task ID",
+      "plantimecost": "Estimated time consumption",
       "project": {
         "manageridlist": "List of project leader IDs",
         "useridlist": "List of project member user IDs"
