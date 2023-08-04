@@ -224,7 +224,7 @@
     "useridlist": "用户id列表",
     "userinfolist": "用户信息列表",
     "userlist": "用户列表",
-    "username": "用户名称",
+    "username": "用户名",
     "usertype": "用户类型",
     "useruuid": "用户uuid",
     "useruuidlist": "用户uuid列表",
@@ -1819,6 +1819,9 @@
         }
       }
     },
+    "mailservertestapi": {
+      "getname": "测试邮件服务器能否正常发送邮件"
+    },
     "matrixexportapi": {
       "getname": "导出矩阵数据"
     },
@@ -2009,12 +2012,16 @@
     },
     "framework": {
       "documentonlineinfo": "在线帮助文档信息",
+      "domain": "域名",
       "groupname": "系统配置",
       "issuetime": "下发时间",
       "matrixuuid": "矩阵uuid",
       "name": "基础框架",
       "notifypolicydefaulttemplateinfo": "通知默认模板信息",
       "policyid": "通知策略id",
+      "smpthost": "smtp主机",
+      "smptport": "smtp端口",
+      "smptsslenable": "是否使用SSL",
       "userotherinfo": "用户其他信息",
       "viplevel": "用户等级"
     },

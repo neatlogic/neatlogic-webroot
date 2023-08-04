@@ -224,7 +224,7 @@
     "useridlist": "User ID List",
     "userinfolist": "User Information List",
     "userlist": "User List",
-    "username": "User Name",
+    "username": "user name",
     "usertype": "customer type",
     "useruuid": "User uuid",
     "useruuidlist": "User uuid list",
@@ -1819,6 +1819,9 @@
         }
       }
     },
+    "mailservertestapi": {
+      "getname": "Test whether the mail server can send mail normally"
+    },
     "matrixexportapi": {
       "getname": "Export matrix data"
     },
@@ -2009,12 +2012,16 @@
     },
     "framework": {
       "documentonlineinfo": "Online Help Document Information",
+      "domain": "domain name",
       "groupname": "Framework",
       "issuetime": "Issuance time",
       "matrixuuid": "Matrix uuid",
       "name": "Framework",
       "notifypolicydefaulttemplateinfo": "Notification default template information",
       "policyid": "Notification Policy ID",
+      "smpthost": "SMTP host",
+      "smptport": "SMTP port",
+      "smptsslenable": "Whether to use SSL",
       "userotherinfo": "Other user information",
       "viplevel": "User level"
     },
