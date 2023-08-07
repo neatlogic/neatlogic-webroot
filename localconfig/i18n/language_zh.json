@@ -1276,6 +1276,9 @@
     }
   },
   "nmfs": {
+    "checkupdatedatabaseviewhandler": {
+      "getname": "检查视图是否存在，不存在则创建，存在则更新"
+    },
     "documentonlineinitializeindexhandler": {
       "executeforalltenant": {
         "error": "有两个文件路径相同，路径为：{0}，请将其中一个文件重命名文件或移动到不同路径中",
