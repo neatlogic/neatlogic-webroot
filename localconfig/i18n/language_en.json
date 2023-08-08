@@ -283,6 +283,10 @@
     "matrix_modify": {
       "getauthdisplayname": "Matrix Management Permissions",
       "getauthintroduction": "Adding, modifying, and deleting matrices"
+    },
+    "notify_config_modify": {
+      "getauthdisplayname": "Notification Configuration Management Permissions",
+      "getauthintroduction": "Modify notification configuration"
     }
   },
   "nfc": {
@@ -368,6 +372,11 @@
     },
     "tenantconfignotfoundexception": {
       "tenantconfignotfoundexception": "Configuration information: {0} does not exist"
+    }
+  },
+  "nfew": {
+    "wechatauthenticationinformationnotfoundexception": {
+      "wechatauthenticationinformationnotfoundexception": "Enterprise WeChat authentication information not found"
     }
   },
   "nfie": {
@@ -1848,6 +1857,12 @@
         }
       }
     },
+    "mailservergetapi": {
+      "getname": "Email server information acquisition interface"
+    },
+    "mailserversaveapi": {
+      "getname": "Save Mail Server Information"
+    },
     "mailservertestapi": {
       "getname": "Test whether the mail server can send mail normally"
     },
@@ -1909,6 +1924,24 @@
         "param": {
           "desc": {
             "needteam": "Do you need group information"
+          }
+        }
+      }
+    }
+  },
+  "nmtaw": {
+    "getwechatapi": {
+      "getname": "Obtaining Enterprise WeChat Data"
+    },
+    "savewechatapi": {
+      "getname": "Saving Enterprise WeChat Data"
+    },
+    "testwechatapi": {
+      "getname": "Testing Enterprise WeChat Sending Messages",
+      "input": {
+        "param": {
+          "desc": {
+            "touser": "Enterprise WeChat account"
           }
         }
       }
@@ -2040,6 +2073,9 @@
       "name": "Event"
     },
     "framework": {
+      "agentid": "Enterprise Application ID",
+      "corpid": "Enterprise ID",
+      "corpsecret": "Applied credential key",
       "documentonlineinfo": "Online Help Document Information",
       "domain": "domain name",
       "groupname": "Framework",
