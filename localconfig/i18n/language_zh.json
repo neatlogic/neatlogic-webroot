@@ -1861,9 +1861,6 @@
     "mailserversaveapi": {
       "getname": "保存邮件服务器信息"
     },
-    "mailserversearchapi": {
-      "getname": "查询邮件服务器信息列表"
-    },
     "mailservertestapi": {
       "getname": "测试邮件服务器能否正常发送邮件"
     },

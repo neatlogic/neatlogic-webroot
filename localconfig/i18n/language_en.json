@@ -1861,9 +1861,6 @@
     "mailserversaveapi": {
       "getname": "Save Mail Server Information"
     },
-    "mailserversearchapi": {
-      "getname": "Query Mail Server Information List"
-    },
     "mailservertestapi": {
       "getname": "Test whether the mail server can send mail normally"
     },
