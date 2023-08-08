@@ -372,6 +372,11 @@
       "tenantconfignotfoundexception": "配置信息：“{0}”不存在"
     }
   },
+  "nfew": {
+    "wechatauthenticationinformationnotfoundexception": {
+      "wechatauthenticationinformationnotfoundexception": "企业微信认证信息找不到"
+    }
+  },
   "nfie": {
     "inspectdefinitionnotfoundedittargetexception": {
       "inspectdefinitionnotfoundedittargetexception": "巡检定义：{0}不存在"
@@ -1849,6 +1854,9 @@
           }
         }
       }
+    },
+    "mailservergetapi": {
+      "getname": "邮件服务器信息获取接口"
     },
     "mailserversaveapi": {
       "getname": "保存邮件服务器信息"

@@ -372,6 +372,11 @@
       "tenantconfignotfoundexception": "Configuration information: {0} does not exist"
     }
   },
+  "nfew": {
+    "wechatauthenticationinformationnotfoundexception": {
+      "wechatauthenticationinformationnotfoundexception": "Enterprise WeChat authentication information not found"
+    }
+  },
   "nfie": {
     "inspectdefinitionnotfoundedittargetexception": {
       "inspectdefinitionnotfoundedittargetexception": "Inspection definition: {0} does not exist"
@@ -1849,6 +1854,9 @@
           }
         }
       }
+    },
+    "mailservergetapi": {
+      "getname": "Email server information acquisition interface"
     },
     "mailserversaveapi": {
       "getname": "Save Mail Server Information"
