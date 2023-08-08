@@ -281,6 +281,10 @@
     "matrix_modify": {
       "getauthdisplayname": "矩阵管理权限",
       "getauthintroduction": "对矩阵进行添加、修改和删除"
+    },
+    "notify_config_modify": {
+      "getauthdisplayname": "通知配置管理权限",
+      "getauthintroduction": "对通知配置进行修改"
     }
   },
   "nfc": {
@@ -1846,6 +1850,12 @@
         }
       }
     },
+    "mailserversaveapi": {
+      "getname": "保存邮件服务器信息"
+    },
+    "mailserversearchapi": {
+      "getname": "查询邮件服务器信息列表"
+    },
     "mailservertestapi": {
       "getname": "测试邮件服务器能否正常发送邮件"
     },
@@ -1907,6 +1917,24 @@
         "param": {
           "desc": {
             "needteam": "是否需要组信息"
+          }
+        }
+      }
+    }
+  },
+  "nmtaw": {
+    "getwechatapi": {
+      "getname": "获取企业微信数据"
+    },
+    "savewechatapi": {
+      "getname": "保存企业微信数据"
+    },
+    "testwechatapi": {
+      "getname": "测试企业微信发送消息",
+      "input": {
+        "param": {
+          "desc": {
+            "touser": "企业微信账号"
           }
         }
       }
@@ -2038,6 +2066,9 @@
       "name": "事件模块"
     },
     "framework": {
+      "agentid": "企业应用ID",
+      "corpid": "企业ID",
+      "corpsecret": "应用的凭证密钥",
       "documentonlineinfo": "在线帮助文档信息",
       "domain": "域名",
       "groupname": "系统配置",
