@@ -1276,6 +1276,9 @@
     }
   },
   "nmfs": {
+    "checkupdatedatabaseviewhandler": {
+      "getname": "Check if the view exists, create if it does not exist, update if it exists"
+    },
     "documentonlineinitializeindexhandler": {
       "executeforalltenant": {
         "error": "There are two files with the same path: {0}. Please rename one of the files or move it to a different path",
