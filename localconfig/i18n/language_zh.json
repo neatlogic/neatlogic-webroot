@@ -199,6 +199,7 @@
     "teamuuidlist": "用户组uuid列表",
     "tel": "手机号",
     "templateid": "模板id",
+    "templatename": "模板名称",
     "testcase": "测试用例",
     "testenv": "测试环境",
     "testplan": "测试计划",
