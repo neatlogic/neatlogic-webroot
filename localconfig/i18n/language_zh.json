@@ -17,6 +17,7 @@
     "attributelist": "属性列表",
     "attrname": "属性名",
     "authlist": "授权列表",
+    "avatar": "头像",
     "basicauth": "Basic认证",
     "bearerauth": "Bearer Token",
     "boolean": "布尔型",
@@ -2162,7 +2163,7 @@
       "iterationname": "迭代名称",
       "name": "研发管理模块",
       "parenttaskid": "父任务id",
-      "plantimecost": "预计耗时",
+      "plantimecost": "预估工时",
       "project": {
         "manageridlist": "项目负责人id列表",
         "useridlist": "项目成员用户id列表"
