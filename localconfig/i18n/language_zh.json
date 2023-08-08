@@ -1,5 +1,6 @@
 {
   "common": {
+    "account": "账号",
     "action": "动作类型",
     "actiontime": "操作时间",
     "actiontype": "操作类型",
@@ -1262,6 +1263,24 @@
     "getdeployversionenvforautoexecapi": {
       "getname": "获取发布版本环境信息"
     },
+    "savedeployversioncommitanalyzeapi": {
+      "description": {
+        "desc": "保存版本分析数据"
+      },
+      "input": {
+        "param": {
+          "desc": {
+            "commitlist": "提交列表",
+            "fileaddcount": "文件增加数",
+            "filedeletecount": "文件删除数",
+            "filemodifycount": "文件修改数",
+            "lineaddcount": "代码行增加数",
+            "linedeletecount": "代码行减少数",
+            "repo": "项目源地址"
+          }
+        }
+      }
+    },
     "savedeployversioncvelistapi": {
       "getname": "保存版本CVE漏洞列表"
     }
@@ -2065,6 +2084,7 @@
       "proxytourl": "代理地址",
       "runnerid": "执行器id",
       "scheduleinfo": "发布定时作业信息",
+      "version": "版本",
       "vulnerabilityids": "脆弱性id"
     },
     "event": {

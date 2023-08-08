@@ -1,5 +1,6 @@
 {
   "common": {
+    "account": "Account",
     "action": "Action type",
     "actiontime": "Operation time",
     "actiontype": "Operation type",
@@ -1262,6 +1263,24 @@
     "getdeployversionenvforautoexecapi": {
       "getname": "Obtain release version environment information"
     },
+    "savedeployversioncommitanalyzeapi": {
+      "description": {
+        "desc": "Save version analysis data"
+      },
+      "input": {
+        "param": {
+          "desc": {
+            "commitlist": "Submit List",
+            "fileaddcount": "Number of file additions",
+            "filedeletecount": "Number of file deletions",
+            "filemodifycount": "Number of file modifications",
+            "lineaddcount": "Number of code line additions",
+            "linedeletecount": "Code line reduction",
+            "repo": "Project Source Address"
+          }
+        }
+      }
+    },
     "savedeployversioncvelistapi": {
       "getname": "Save version CVE vulnerability list"
     }
@@ -2065,6 +2084,7 @@
       "proxytourl": "Proxy address",
       "runnerid": "Executor ID",
       "scheduleinfo": "Publish scheduled job information",
+      "version": "version",
       "vulnerabilityids": "Vulnerability ID"
     },
     "event": {
