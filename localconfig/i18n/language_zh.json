@@ -423,6 +423,9 @@
     "itsmtenantconfig": {
       "displaymodeaftertimeout": "工单时效超时后显示方式，可选值naturalTime|workTime",
       "processtaskstepenablecomment": "是否工单步骤回复功能"
+    },
+    "processtaskgroupsearch": {
+      "processusertype": "工单干系人"
     }
   },
   "nfpec": {
@@ -527,6 +530,9 @@
     },
     "issuecostnotauthsearchexception": {
       "issuecostnotauthsearchexception": "您没有搜索当前项目花费的权限"
+    },
+    "issuegroupsearch": {
+      "projectusertype": "项目干系人"
     },
     "issuenotauthsearchexception": {
       "issuenotauthsearchexception": "您没有搜索当前项目任务权限"

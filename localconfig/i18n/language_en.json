@@ -423,6 +423,9 @@
     "itsmtenantconfig": {
       "displaymodeaftertimeout": "Display method after work order timeout, optional values naturalTime | workTime",
       "processtaskstepenablecomment": "Work order step reply function"
+    },
+    "processtaskgroupsearch": {
+      "processusertype": "Work order stakeholders"
     }
   },
   "nfpec": {
@@ -527,6 +530,9 @@
     },
     "issuecostnotauthsearchexception": {
       "issuecostnotauthsearchexception": "You do not have permission to search for current project expenses"
+    },
+    "issuegroupsearch": {
+      "projectusertype": "Project stakeholders"
     },
     "issuenotauthsearchexception": {
       "issuenotauthsearchexception": "You do not have permission to search for current project tasks"
