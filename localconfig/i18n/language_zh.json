@@ -209,6 +209,7 @@
     "tel": "手机号",
     "templateid": "模板id",
     "templatename": "模板名称",
+    "tenantuuid": "租户uuid",
     "testcase": "测试用例",
     "testenv": "测试环境",
     "testplan": "测试计划",

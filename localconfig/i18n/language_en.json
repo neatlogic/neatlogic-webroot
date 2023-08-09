@@ -209,6 +209,7 @@
     "tel": "Mobile phone number",
     "templateid": "Template ID",
     "templatename": "Template Name",
+    "tenantuuid": "Tenant uuid",
     "testcase": "test case",
     "testenv": "testing environment",
     "testplan": "test plan",
