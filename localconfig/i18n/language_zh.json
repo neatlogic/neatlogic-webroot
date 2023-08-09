@@ -1423,6 +1423,11 @@
       "getname": "发送注册验证码"
     }
   },
+  "nmmat": {
+    "userroleteamsearchapi": {
+      "getname": "用户角色及组织架构查询接口"
+    }
+  },
   "nmme": {
     "activeurlexpiredtimeexception": {
       "activeurlexpiredtimeexception": "激活连接已失效"

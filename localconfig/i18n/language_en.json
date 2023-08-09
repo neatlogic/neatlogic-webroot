@@ -1423,6 +1423,11 @@
       "getname": "Send registration verification code"
     }
   },
+  "nmmat": {
+    "userroleteamsearchapi": {
+      "getname": "User Role and Organizational Structure Query Interface"
+    }
+  },
   "nmme": {
     "activeurlexpiredtimeexception": {
       "activeurlexpiredtimeexception": "The activation connection has expired"
