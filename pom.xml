@@ -48,10 +48,6 @@
                 </dependency>
                 <dependency>
                     <groupId>com.neatlogic</groupId>
-                    <artifactId>neatlogic-document-online</artifactId>
-                </dependency>
-                <dependency>
-                    <groupId>com.neatlogic</groupId>
                     <artifactId>neatlogic-document-online-commercial</artifactId>
                 </dependency>
             </dependencies>
@@ -136,6 +132,10 @@
         <dependency>
             <groupId>com.neatlogic</groupId>
             <artifactId>neatlogic-rdm</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.neatlogic</groupId>
+            <artifactId>neatlogic-document-online</artifactId>
         </dependency>
     </dependencies>
 </project>
