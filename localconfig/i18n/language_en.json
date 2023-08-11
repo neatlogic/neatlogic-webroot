@@ -351,6 +351,70 @@
       "gitlabwebhookcallbackhost": "Gitlab webhook callback host address"
     }
   },
+  "nfddv": {
+    "deployversionissuevo": {
+      "handleuserid": {
+        "name": "Issue handler"
+      },
+      "issuecreatetime": {
+        "name": "Issue creation time"
+      },
+      "issuecreator": {
+        "name": "Issue Creator"
+      },
+      "issuedescription": {
+        "name": "Issue Description"
+      },
+      "issueid": {
+        "name": "Requirement ID"
+      },
+      "issuelastsynctime": {
+        "name": "Issue Last synchronization time"
+      },
+      "issuename": {
+        "name": "Issue Name"
+      },
+      "issuepersonincharge": {
+        "name": "Issue Leader"
+      },
+      "issuestatus": {
+        "name": "Issue Status"
+      },
+      "issuetype": {
+        "name": "Issue Type"
+      },
+      "issueupdatetime": {
+        "name": "Issue update time"
+      },
+      "isvalid": {
+        "name": "Is it a valid requirement? True: valid, false: invalid"
+      },
+      "lcd": {
+        "name": "Last modification time"
+      },
+      "lcu": {
+        "name": "Finally, modify the user"
+      },
+      "no": {
+        "name": "Issue number"
+      },
+      "sortcloumn": {
+        "name": "Column sorting function such as issue.lcd DESC"
+      },
+      "source": {
+        "name": "Sync Source"
+      },
+      "sourceid": {
+        "name": "Sync Source ID"
+      },
+      "syncuser": {
+        "name": "Issue Synchronize Users"
+      }
+    },
+    "deployversionissuevoissueupdateuser": {
+      "name": "Issue updated by"
+    }
+  },
   "nfde": {
     "documentonlinenotfoundexception": {
       "documentonlinenotfoundexception": "Online help document: {0} does not exist"
@@ -1277,6 +1341,11 @@
     },
     "getdeployversionenvforautoexecapi": {
       "getname": "Obtain release version environment information"
+    },
+    "getdeployversionissuelistapi": {
+      "description": {
+        "desc": "Obtain version requirement list"
+      }
     },
     "savedeployversioncommitanalyzeapi": {
       "description": {
