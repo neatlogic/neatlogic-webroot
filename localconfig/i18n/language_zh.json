@@ -351,6 +351,70 @@
       "gitlabwebhookcallbackhost": "gitlab webhook回调主机地址"
     }
   },
+  "nfddv": {
+    "deployversionissuevo": {
+      "handleuserid": {
+        "name": "issue处理人"
+      },
+      "issuecreatetime": {
+        "name": "issue创建时间"
+      },
+      "issuecreator": {
+        "name": "issue创建人"
+      },
+      "issuedescription": {
+        "name": "issue描述"
+      },
+      "issueid": {
+        "name": "需求id"
+      },
+      "issuelastsynctime": {
+        "name": "issue最后同步时间"
+      },
+      "issuename": {
+        "name": "issue名称"
+      },
+      "issuepersonincharge": {
+        "name": "issue负责人"
+      },
+      "issuestatus": {
+        "name": "issue状态"
+      },
+      "issuetype": {
+        "name": "issue类型"
+      },
+      "issueupdatetime": {
+        "name": "issue更新时间"
+      },
+      "isvalid": {
+        "name": "是否为有效需求，true: 有效，false：无效"
+      },
+      "lcd": {
+        "name": "最后修改时间"
+      },
+      "lcu": {
+        "name": "最后修改用户"
+      },
+      "no": {
+        "name": "issue编号"
+      },
+      "sortcloumn": {
+        "name": "列排序功能 如issue.lcd DESC"
+      },
+      "source": {
+        "name": "同步来源"
+      },
+      "sourceid": {
+        "name": "同步来源id"
+      },
+      "syncuser": {
+        "name": "issue同步用户"
+      }
+    },
+    "deployversionissuevoissueupdateuser": {
+      "name": "issue更新人"
+    }
+  },
   "nfde": {
     "documentonlinenotfoundexception": {
       "documentonlinenotfoundexception": "在线帮助文档：“{0}”不存在"
@@ -1277,6 +1341,11 @@
     },
     "getdeployversionenvforautoexecapi": {
       "getname": "获取发布版本环境信息"
+    },
+    "getdeployversionissuelistapi": {
+      "description": {
+        "desc": "获取版本需求列表"
+      }
     },
     "savedeployversioncommitanalyzeapi": {
       "description": {
