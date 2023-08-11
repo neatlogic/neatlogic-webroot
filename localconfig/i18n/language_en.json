@@ -36,6 +36,7 @@
     "color": "colour",
     "comment": "comment",
     "commentcount": "Number of comments",
+    "common": "public",
     "condition": "Condition configuration",
     "config": "allocation",
     "configlist": "Configuration List",
@@ -52,6 +53,7 @@
     "date": "date",
     "datetime": "Date Time",
     "defaultvalue": "Default Value List",
+    "defaultvaluelist": "List of parameters for echo",
     "delaytime": "delay time ",
     "dependency": "rely on",
     "description": "describe",
@@ -77,6 +79,7 @@
     "event": "event",
     "example": "example",
     "excludeid": "Exclude ID",
+    "excludelist": "Used to filter echo parameters",
     "executeauthoritylist": "Execution permission list",
     "expired": "overdue",
     "expireddays": "Number of timeout days",
@@ -93,10 +96,13 @@
     "focususerlist": "List of followers",
     "focususeruuidlist": "List of followers\u0027 uuids",
     "group": "grouping",
+    "grouplist": "Restrict interface return types",
     "hasmore": "Is there any more content that has not been read yet",
     "hasparent": "Do you have a parent",
     "icon": "icon",
     "id": "id",
+    "includelist": "Used to require echo parameters",
+    "index": "subscript",
     "inittime": "Initialization time",
     "inputfrom": "Update method",
     "inputfromname": "Change method name",
@@ -109,6 +115,7 @@
     "isfavoried": "Favorite or not",
     "isfile": "Is it a file",
     "isfocus": "Have you followed",
+    "islimit": "Whether to limit the number of items",
     "ismycreated": "Do I create",
     "isneedpage": "Do you need pagination",
     "isneedpriority": "Display priority",
@@ -159,6 +166,7 @@
     "privatecache": "Private cache",
     "progress": "schedule",
     "publiccache": "Public cache",
+    "rangelist": "Limit the scope of interface options",
     "referencecount": "Number of references",
     "regex": "regular expression ",
     "relname": "Relationship Name",
@@ -201,6 +209,7 @@
     "tel": "Mobile phone number",
     "templateid": "Template ID",
     "templatename": "Template Name",
+    "tenantuuid": "Tenant uuid",
     "testcase": "test case",
     "testenv": "testing environment",
     "testplan": "test plan",
@@ -414,6 +423,9 @@
     "itsmtenantconfig": {
       "displaymodeaftertimeout": "Display method after work order timeout, optional values naturalTime | workTime",
       "processtaskstepenablecomment": "Work order step reply function"
+    },
+    "processtaskgroupsearch": {
+      "processusertype": "Work order stakeholders"
     }
   },
   "nfpec": {
@@ -518,6 +530,9 @@
     },
     "issuecostnotauthsearchexception": {
       "issuecostnotauthsearchexception": "You do not have permission to search for current project expenses"
+    },
+    "issuegroupsearch": {
+      "projectusertype": "Project stakeholders"
     },
     "issuenotauthsearchexception": {
       "issuenotauthsearchexception": "You do not have permission to search for current project tasks"
@@ -1415,6 +1430,11 @@
       "getname": "Send registration verification code"
     }
   },
+  "nmmat": {
+    "userroleteamsearchapi": {
+      "getname": "User Role and Organizational Structure Query Interface"
+    }
+  },
   "nmme": {
     "activeurlexpiredtimeexception": {
       "activeurlexpiredtimeexception": "The activation connection has expired"
@@ -2103,10 +2123,18 @@
       "matrixuuid": "Matrix uuid",
       "name": "Framework",
       "notifypolicydefaulttemplateinfo": "Notification default template information",
+      "pinyin": "Pinyin",
       "policyid": "Notification Policy ID",
       "smpthost": "SMTP host",
       "smptport": "SMTP port",
       "smptsslenable": "Whether to use SSL",
+      "team": {
+        "fullpath": "Grouping full path",
+        "parentpathlist": "Parent Path List"
+      },
+      "user": {
+        "viplevel": "VIP level"
+      },
       "userotherinfo": "Other user information",
       "viplevel": "User level"
     },

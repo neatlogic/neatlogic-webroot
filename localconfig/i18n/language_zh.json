@@ -36,6 +36,7 @@
     "color": "颜色",
     "comment": "评论",
     "commentcount": "评论数量",
+    "common": "公共",
     "condition": "条件配置",
     "config": "配置",
     "configlist": "配置列表",
@@ -52,6 +53,7 @@
     "date": "日期",
     "datetime": "日期时间",
     "defaultvalue": "默认值列表",
+    "defaultvaluelist": "用于回显的参数列表",
     "delaytime": "延迟时间",
     "dependency": "依赖",
     "description": "描述",
@@ -77,6 +79,7 @@
     "event": "事件",
     "example": "范例",
     "excludeid": "排除id",
+    "excludelist": "用于过滤回显参数",
     "executeauthoritylist": "执行权限列表",
     "expired": "过期",
     "expireddays": "超时天数",
@@ -93,10 +96,13 @@
     "focususerlist": "关注人列表",
     "focususeruuidlist": "关注人uuid列表",
     "group": "分组",
+    "grouplist": "限制接口返回类型",
     "hasmore": "是否有更多内容尚未读取",
     "hasparent": "是否拥有父级",
     "icon": "图标",
     "id": "id",
+    "includelist": "用于需要回显参数",
+    "index": "下标",
     "inittime": "初始化时间",
     "inputfrom": "更新方式",
     "inputfromname": "变更方式名称",
@@ -109,6 +115,7 @@
     "isfavoried": "是否收藏",
     "isfile": "是否是文件",
     "isfocus": "是否已关注",
+    "islimit": "是否限制个数",
     "ismycreated": "是否我创建",
     "isneedpage": "是否需要分页",
     "isneedpriority": "是否显示优先级",
@@ -159,6 +166,7 @@
     "privatecache": "私有缓存",
     "progress": "进度",
     "publiccache": "公共缓存",
+    "rangelist": "限制接口option范围",
     "referencecount": "引用数量",
     "regex": "正则表达式",
     "relname": "关系名称",
@@ -201,6 +209,7 @@
     "tel": "手机号",
     "templateid": "模板id",
     "templatename": "模板名称",
+    "tenantuuid": "租户uuid",
     "testcase": "测试用例",
     "testenv": "测试环境",
     "testplan": "测试计划",
@@ -414,6 +423,9 @@
     "itsmtenantconfig": {
       "displaymodeaftertimeout": "工单时效超时后显示方式，可选值naturalTime|workTime",
       "processtaskstepenablecomment": "是否工单步骤回复功能"
+    },
+    "processtaskgroupsearch": {
+      "processusertype": "工单干系人"
     }
   },
   "nfpec": {
@@ -518,6 +530,9 @@
     },
     "issuecostnotauthsearchexception": {
       "issuecostnotauthsearchexception": "您没有搜索当前项目花费的权限"
+    },
+    "issuegroupsearch": {
+      "projectusertype": "项目干系人"
     },
     "issuenotauthsearchexception": {
       "issuenotauthsearchexception": "您没有搜索当前项目任务权限"
@@ -1415,6 +1430,11 @@
       "getname": "发送注册验证码"
     }
   },
+  "nmmat": {
+    "userroleteamsearchapi": {
+      "getname": "用户角色及组织架构查询接口"
+    }
+  },
   "nmme": {
     "activeurlexpiredtimeexception": {
       "activeurlexpiredtimeexception": "激活连接已失效"
@@ -2103,10 +2123,18 @@
       "matrixuuid": "矩阵uuid",
       "name": "基础框架",
       "notifypolicydefaulttemplateinfo": "通知默认模板信息",
+      "pinyin": "拼音",
       "policyid": "通知策略id",
       "smpthost": "smtp主机",
       "smptport": "smtp端口",
       "smptsslenable": "是否使用SSL",
+      "team": {
+        "fullpath": "分组全路径",
+        "parentpathlist": "父级路径列表"
+      },
+      "user": {
+        "viplevel": "VIP级别"
+      },
       "userotherinfo": "用户其他信息",
       "viplevel": "用户等级"
     },
