@@ -251,6 +251,7 @@
     "viewauthoritylist": "查看权限列表",
     "viewcount": "浏览量",
     "wechatnotify": "微信通知",
+    "widgetlist": "组件列表",
     "worker": "处理人",
     "worktimename": "工作时间窗口名称",
     "worktimeuuid": "工作时间窗口uuid"
@@ -350,6 +351,38 @@
   "nfdc": {
     "deploytenantconfig": {
       "gitlabwebhookcallbackhost": "gitlab webhook回调主机地址"
+    }
+  },
+  "nfdd": {
+    "datasourcedatavo": {
+      "entityfield": {
+        "name": {
+          "conditionlist": "条件列表",
+          "datasourceid": "数据源id",
+          "expiremin": "有效时间，单位分钟",
+          "inserttime": "添加日期"
+        }
+      },
+      "inserttime": "insertTime"
+    },
+    "datasourcevo": {
+      "entityfield": {
+        "name": {
+          "connectionid": "数据连接id",
+          "cron": "定时策略",
+          "datacount": "数据量",
+          "dbtype": "数据库类型",
+          "expireunit": "有效时间单位",
+          "fieldlist": "字段列表",
+          "fileid": "配置文件id",
+          "mode": "同步模式",
+          "moduleid": "所属模块",
+          "modulename": "所属模块名称",
+          "paramlist": "参数列表",
+          "querytimeout": "查询超时时间，单位：秒",
+          "xml": "xml配置"
+        }
+      }
     }
   },
   "nfddv": {
@@ -587,6 +620,9 @@
     "apptype": {
       "getenumname": "项目对象类型"
     },
+    "dashboardnotfoundexception": {
+      "dashboardnotfoundexception": "仪表板 {0} 不存在"
+    },
     "issuecostnotauthdeleteexception": {
       "issuecostnotauthdeleteexception": "您没有删除当前项目花费的权限"
     },
@@ -614,11 +650,17 @@
     "projectnotauthcloseexception": {
       "projectnotauthcloseexception": "您没有关闭项目 {0} 的权限"
     },
+    "projectnotauthdashboardexception": {
+      "projectnotauthdashboardexception": "您不是当前项目的成员，没有操作仪表板的权限"
+    },
     "projectnotauthdeleteexception": {
       "projectnotauthdeleteexception": "您没有删除项目 {0} 的权限"
     },
     "projectnotauthexception": {
       "projectnotauthexception": "您没有修改项目“{0}”的权限"
+    },
+    "projectnotauthissueexception": {
+      "projectnotauthissueexception": "您不是当前项目的成员，没有创建任务的权限"
     },
     "projectnotfoundexception": {
       "projectnotfoundexception": "项目“{0}”不存在",
@@ -1701,6 +1743,21 @@
       "getname": "更新应用排序"
     }
   },
+  "nmrad": {
+    "getdashboardapi": {
+      "getname": "获取仪表板"
+    },
+    "savedashboardapi": {
+      "getname": "保存仪表板",
+      "input": {
+        "param": {
+          "desc": {
+            "id": "id，为空代表新增"
+          }
+        }
+      }
+    }
+  },
   "nmrai": {
     "checkissueisfavoriteapi": {
       "getname": "检查任务是否被关注",
@@ -1909,6 +1966,9 @@
     "deletedocumentonlineconfigapi": {
       "getname": "删除在线帮助文档与模块菜单的映射关系"
     },
+    "executedatasourceapi": {
+      "getname": "执行数据仓库数据源数据同步"
+    },
     "exportdocumentonlineconfigapi": {
       "getname": "导出在线帮助文档配置文件"
     },
@@ -1929,6 +1989,9 @@
     },
     "savedocumentonlineconfigapi": {
       "getname": "保存在线帮助文档与模块菜单的映射关系"
+    },
+    "searchdatasourceapi": {
+      "getname": "查询数据仓库数据源"
     },
     "searchdocumentonlineapi": {
       "getname": "关键字搜索在线帮助文档",

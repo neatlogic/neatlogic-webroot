@@ -251,6 +251,7 @@
     "viewauthoritylist": "View permission list",
     "viewcount": "View volume",
     "wechatnotify": "WeChat notification",
+    "widgetlist": "Component List",
     "worker": "Processed by",
     "worktimename": "Working Time Window Name",
     "worktimeuuid": "Working Time Window Uuid"
@@ -350,6 +351,38 @@
   "nfdc": {
     "deploytenantconfig": {
       "gitlabwebhookcallbackhost": "Gitlab webhook callback host address"
+    }
+  },
+  "nfdd": {
+    "datasourcedatavo": {
+      "entityfield": {
+        "name": {
+          "conditionlist": "Condition List",
+          "datasourceid": "Data source ID",
+          "expiremin": "Effective time in minutes",
+          "inserttime": "Add Date"
+        }
+      },
+      "inserttime": "InsertTime"
+    },
+    "datasourcevo": {
+      "entityfield": {
+        "name": {
+          "connectionid": "Data connection ID",
+          "cron": "Timing strategy",
+          "datacount": "Data volume",
+          "dbtype": "Database type",
+          "expireunit": "Effective time unit",
+          "fieldlist": "Field List",
+          "fileid": "Profile ID",
+          "mode": "Synchronous mode",
+          "moduleid": "Module",
+          "modulename": "Module Name",
+          "paramlist": "parameter list",
+          "querytimeout": "Query timeout, in seconds",
+          "xml": "XML configuration"
+        }
+      }
     }
   },
   "nfddv": {
@@ -587,6 +620,9 @@
     "apptype": {
       "getenumname": "Project Object Type"
     },
+    "dashboardnotfoundexception": {
+      "dashboardnotfoundexception": "Dashboard {0} does not exist"
+    },
     "issuecostnotauthdeleteexception": {
       "issuecostnotauthdeleteexception": "You do not have permission to delete project expenses"
     },
@@ -614,11 +650,17 @@
     "projectnotauthcloseexception": {
       "projectnotauthcloseexception": "You do not have permission to close project {0}"
     },
+    "projectnotauthdashboardexception": {
+      "projectnotauthdashboardexception": "You are not a member of the current project and do not have permission to operate dashboards"
+    },
     "projectnotauthdeleteexception": {
       "projectnotauthdeleteexception": "You do not have permission to delete project {0}"
     },
     "projectnotauthexception": {
       "projectnotauthexception": "You do not have permission to modify project \u0027{0}\u0027"
+    },
+    "projectnotauthissueexception": {
+      "projectnotauthissueexception": "You are not a member of the current project and do not have permission to create tasks"
     },
     "projectnotfoundexception": {
       "projectnotfoundexception": "Project \u0027{0}\u0027 does not exist",
@@ -1701,6 +1743,21 @@
       "getname": "Update app sorting"
     }
   },
+  "nmrad": {
+    "getdashboardapi": {
+      "getname": "Get dashboard"
+    },
+    "savedashboardapi": {
+      "getname": "Save Dashboard",
+      "input": {
+        "param": {
+          "desc": {
+            "id": "ID, blank represents adding"
+          }
+        }
+      }
+    }
+  },
   "nmrai": {
     "checkissueisfavoriteapi": {
       "getname": "Check if the task is being followed",
@@ -1909,6 +1966,9 @@
     "deletedocumentonlineconfigapi": {
       "getname": "Delete the mapping relationship between online help documents and module menus"
     },
+    "executedatasourceapi": {
+      "getname": "Perform data warehouse data source data synchronization"
+    },
     "exportdocumentonlineconfigapi": {
       "getname": "Export online help document configuration file"
     },
@@ -1929,6 +1989,9 @@
     },
     "savedocumentonlineconfigapi": {
       "getname": "Save the mapping relationship between online help documents and module menus"
+    },
+    "searchdatasourceapi": {
+      "getname": "Query Data Warehouse Data Source"
     },
     "searchdocumentonlineapi": {
       "getname": "Keyword search for online help documents",
