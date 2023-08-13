@@ -1744,6 +1744,9 @@
     }
   },
   "nmrad": {
+    "deletedashboardapi": {
+      "getname": "删除仪表板"
+    },
     "getdashboardapi": {
       "getname": "获取仪表板"
     },
@@ -2368,6 +2371,7 @@
       "costdate": "花费日期",
       "costlist": "花费列表",
       "costtime": "花费工时",
+      "dashboardid": "仪表板id",
       "enddate": "预计结束",
       "gantt": "甘特图",
       "groupdesc": "研发管理平台",

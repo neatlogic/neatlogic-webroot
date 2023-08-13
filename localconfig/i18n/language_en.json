@@ -1744,6 +1744,9 @@
     }
   },
   "nmrad": {
+    "deletedashboardapi": {
+      "getname": "Delete dashboard"
+    },
     "getdashboardapi": {
       "getname": "Get dashboard"
     },
@@ -2368,6 +2371,7 @@
       "costdate": "Spending date",
       "costlist": "Spend List",
       "costtime": "Labor hours spent",
+      "dashboardid": "Dashboard ID",
       "enddate": "Expected end",
       "gantt": "Gantt chart Chart",
       "groupdesc": "RDM platform",
