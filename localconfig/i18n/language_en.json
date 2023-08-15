@@ -320,6 +320,9 @@
     },
     "appsystemnotfoundedittargetexception": {
       "appsystemnotfoundedittargetexception": "Application: {0} does not exist"
+    },
+    "resourcecenterviewconfigexception": {
+      "resourcecenterviewconfigexception": "Field declared in view {0}: {1}, but definition not found in configuration file"
     }
   },
   "nfd": {
@@ -1273,6 +1276,12 @@
   "nmcarc": {
     "getresourceentityapi": {
       "getname": "Obtain resource view configuration information"
+    },
+    "listresourceentityapi": {
+      "getname": "Obtain a list of resource center configurations"
+    },
+    "saveresourceentityapi": {
+      "getname": "Save resource configuration information"
     }
   },
   "nmcarr": {
