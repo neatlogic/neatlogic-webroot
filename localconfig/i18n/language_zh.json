@@ -320,6 +320,9 @@
     },
     "appsystemnotfoundedittargetexception": {
       "appsystemnotfoundedittargetexception": "应用：{0}不存在"
+    },
+    "resourcecenterviewconfigexception": {
+      "resourcecenterviewconfigexception": "视图{0}中声明字段：{1}，但在配置文件中没有找到定义"
     }
   },
   "nfd": {
@@ -1273,6 +1276,12 @@
   "nmcarc": {
     "getresourceentityapi": {
       "getname": "获取资源视图配置信息"
+    },
+    "listresourceentityapi": {
+      "getname": "获取资源中心配置列表"
+    },
+    "saveresourceentityapi": {
+      "getname": "保存资源配置信息"
     }
   },
   "nmcarr": {
