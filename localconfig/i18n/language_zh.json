@@ -233,6 +233,7 @@
     "uniquename": "唯一标识",
     "upwardnamelist": "上层名称列表",
     "user": "用户",
+    "userenname": "用户英文名",
     "userid": "用户ID",
     "useridlist": "用户id列表",
     "userinfolist": "用户信息列表",
@@ -2409,7 +2410,8 @@
       "relativetasklist": "关联任务列表",
       "reldirection": "关系方向",
       "startdate": "预计开始",
-      "startenddate": "起止日期"
+      "startenddate": "起止日期",
+      "storywall": "故事墙"
     },
     "report": {
       "groupdesc": "智能数据分析平台",

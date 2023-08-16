@@ -233,6 +233,7 @@
     "uniquename": "Unique identification",
     "upwardnamelist": "Upper level name list",
     "user": "user",
+    "userenname": "User English Name",
     "userid": "User ID",
     "useridlist": "User ID List",
     "userinfolist": "User Information List",
@@ -2409,7 +2410,8 @@
       "relativetasklist": "Associated Task List",
       "reldirection": "Relationship direction",
       "startdate": "Expected start",
-      "startenddate": "Starting and ending dates"
+      "startenddate": "Starting and ending dates",
+      "storywall": "Story Wall"
     },
     "report": {
       "groupdesc": "Intelligent data analysis platform",
