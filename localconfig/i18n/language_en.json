@@ -479,6 +479,12 @@
     }
   },
   "nfet": {
+    "paramirregularexception": {
+      "paramirregularexception": {
+        "common": "The parameter \u0027{0}\u0027 does not meet the format requirements",
+        "rule": "The parameter \u0027{0}\u0027 does not meet the format requirements, {1}"
+      }
+    },
     "paramjsonirregularexception": {
       "paramjsonirregularexception": "The parameter is not in a valid JSON format"
     },
@@ -747,7 +753,10 @@
       "getname": "Batch delete built-in tools, delete tools whose importTime does not equal the passed in parameter values"
     },
     "registerautoexectoolapi": {
-      "getname": "Register built-in tools"
+      "getname": "Register built-in tools",
+      "getparamlist": {
+        "array": "Array type required"
+      }
     }
   },
   "nmcaa": {

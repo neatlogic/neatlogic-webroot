@@ -479,6 +479,12 @@
     }
   },
   "nfet": {
+    "paramirregularexception": {
+      "paramirregularexception": {
+        "common": "参数“{0}”不符合格式要求",
+        "rule": "参数“{0}”不符合格式要求，{1}"
+      }
+    },
     "paramjsonirregularexception": {
       "paramjsonirregularexception": "参数不是合法的JSON格式"
     },
@@ -747,7 +753,10 @@
       "getname": "批量删除内置工具，删除importTime不等于传入参数值的工具"
     },
     "registerautoexectoolapi": {
-      "getname": "注册内置工具"
+      "getname": "注册内置工具",
+      "getparamlist": {
+        "array": "需要数组类型"
+      }
     }
   },
   "nmcaa": {
