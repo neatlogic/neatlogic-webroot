@@ -302,6 +302,13 @@
       "getauthintroduction": "对通知配置进行修改"
     }
   },
+  "nfb": {
+    "moduleinitializer": {
+      "initdmlsql": {
+        "tenant": "⚡[%s]初始化 dml..."
+      }
+    }
+  },
   "nfc": {
     "frameworktenantconfig": {
       "apiqps": "每秒向服务器发送的请求数量峰值（不分接口）"
@@ -476,6 +483,11 @@
   "nfeec": {
     "eventsolutionnotfoundedittargetexception": {
       "eventsolutionnotfoundedittargetexception": "解决方案：{0}不存在"
+    }
+  },
+  "nfes": {
+    "dmlsqlexecuteexception": {
+      "dmlsqlexecuteexception": "租户:%s 模块:%s dmlSql:%s 执行失败"
     }
   },
   "nfet": {

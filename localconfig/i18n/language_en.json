@@ -302,6 +302,13 @@
       "getauthintroduction": "Modify notification configuration"
     }
   },
+  "nfb": {
+    "moduleinitializer": {
+      "initdmlsql": {
+        "tenant": "⚡ [% s] Initialize dml..."
+      }
+    }
+  },
   "nfc": {
     "frameworktenantconfig": {
       "apiqps": "Peak number of requests sent to the server per second (regardless of interface)"
@@ -476,6 +483,11 @@
   "nfeec": {
     "eventsolutionnotfoundedittargetexception": {
       "eventsolutionnotfoundedittargetexception": "Solution: {0} does not exist"
+    }
+  },
+  "nfes": {
+    "dmlsqlexecuteexception": {
+      "dmlsqlexecuteexception": "Tenant:% s Module:% s dmlSql:%s execution failed"
     }
   },
   "nfet": {
