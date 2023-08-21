@@ -304,6 +304,9 @@
   },
   "nfb": {
     "moduleinitializer": {
+      "getactivetenantlist": {
+        "neatlogicdb": "neatlogic库连接不上,请核对nacos|config.properties的数据库账号密码配置后重启"
+      },
       "initdmlsql": {
         "tenant": "⚡[%s]初始化 dml..."
       }

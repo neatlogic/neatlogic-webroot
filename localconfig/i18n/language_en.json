@@ -304,6 +304,9 @@
   },
   "nfb": {
     "moduleinitializer": {
+      "getactivetenantlist": {
+        "neatlogicdb": "Unable to connect to the nextlogic library. Check if the database account and password configuration for nacos | config.properties are correct and restart"
+      },
       "initdmlsql": {
         "tenant": "⚡ [% s] Initialize dml..."
       }
