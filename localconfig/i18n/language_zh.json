@@ -2220,6 +2220,7 @@
       "relidlist": "模型关系ID列表",
       "resourceentityinfo": "资源视图信息",
       "rootciid": "根模型id",
+      "rootciname": "根模型名称",
       "ruleid": "规则id",
       "startciid": "起始模型id",
       "stateidlist": "状态id列表",

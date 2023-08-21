@@ -2220,6 +2220,7 @@
       "relidlist": "Model Relationship ID List",
       "resourceentityinfo": "Resource View Information",
       "rootciid": "Root Model ID",
+      "rootciname": "Root Model Name",
       "ruleid": "Rule ID",
       "startciid": "Starting Model ID",
       "stateidlist": "Status ID List",
