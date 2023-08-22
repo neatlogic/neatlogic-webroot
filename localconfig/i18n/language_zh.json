@@ -483,6 +483,11 @@
       "deployversionnotfoundedittargetexception": "发布版本：{0}不存在"
     }
   },
+  "nfe": {
+    "confignotfoundexception": {
+      "confignotfoundexception": "nacos获取不到配置且本地config.properties获取失败,请确认nacos服务是否正常或config.properties文件是否存在,如果存在,文件权限是否正常"
+    }
+  },
   "nfeec": {
     "eventsolutionnotfoundedittargetexception": {
       "eventsolutionnotfoundedittargetexception": "解决方案：{0}不存在"

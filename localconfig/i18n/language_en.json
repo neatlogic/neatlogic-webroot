@@ -483,6 +483,11 @@
       "deployversionnotfoundedittargetexception": "Release version: {0} does not exist"
     }
   },
+  "nfe": {
+    "confignotfoundexception": {
+      "confignotfoundexception": "NACOS cannot obtain the configuration and the local config.properties acquisition failed. Please confirm if the NACOS service is functioning properly or if the config.properties file exists, and if so, if the file permissions are normal"
+    }
+  },
   "nfeec": {
     "eventsolutionnotfoundedittargetexception": {
       "eventsolutionnotfoundedittargetexception": "Solution: {0} does not exist"
