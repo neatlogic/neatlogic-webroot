@@ -745,6 +745,23 @@
     }
   },
   "nmaaja": {
+    "createautoexecjobfromcombopapi": {
+      "getname": "作业创建（来自组合工具）",
+      "input": {
+        "param": {
+          "desc": {
+            "invokeid": "来源id",
+            "name": "作业名",
+            "parentid": "父作业id",
+            "roundcount": "分组数",
+            "scenarioname": "场景名, 如果入参也有scenarioId，则会以scenarioName为准",
+            "source": "来源 itsm|combop   ITSM|组合工具发起的等",
+            "triggertype": "触发方式",
+            "versionid": "组合工具版本ID"
+          }
+        }
+      }
+    },
     "downloadautoexecjoboutputfilebatchapi": {
       "getname": "批量下载作业输出文件"
     }

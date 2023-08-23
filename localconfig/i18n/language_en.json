@@ -745,6 +745,23 @@
     }
   },
   "nmaaja": {
+    "createautoexecjobfromcombopapi": {
+      "getname": "Job creation (from combination tool)",
+      "input": {
+        "param": {
+          "desc": {
+            "invokeid": "Source ID",
+            "name": "Job Name",
+            "parentid": "Parent Job ID",
+            "roundcount": "Number of groups",
+            "scenarioname": "The scene name, if the input parameter also has a scenarioId, the scenarioName will prevail",
+            "source": "Source: itsm | combo ITSM | initiated by combination tools, etc",
+            "triggertype": "Trigger method",
+            "versionid": "Combination tool version ID"
+          }
+        }
+      }
+    },
     "downloadautoexecjoboutputfilebatchapi": {
       "getname": "Batch download of job output files"
     }
