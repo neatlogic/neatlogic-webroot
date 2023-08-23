@@ -185,8 +185,10 @@
     "sourcename": "来源中文名",
     "startdate": "开始日期",
     "startloadconfig": "开始从 {0} 加载配置...",
-    "startloadmodule": "开始初始化模块 {0}...",
+    "startloadmodule": "开始初始化模块...",
+    "startloadcommercialmodule": "成功加载商业版模块 {0}",
     "startloadschedulejob": "开始加载模块 {0} 的定时作业...",
+    "startloadstartupjob": "开始为 {1} 执行启动作业 {0} ...",
     "starttime": "开始时间",
     "startupjob": "启动作业",
     "status": "状态",
@@ -308,7 +310,7 @@
         "neatlogicdb": "neatlogic库连接不上,请核对nacos|config.properties的数据库账号密码配置后重启"
       },
       "initdmlsql": {
-        "tenant": "⚡[%s]初始化 dml..."
+        "tenant": "开始初始化数据库..."
       }
     }
   },

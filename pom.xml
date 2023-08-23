@@ -48,6 +48,10 @@
                 </dependency>
                 <dependency>
                     <groupId>com.neatlogic</groupId>
+                    <artifactId>neatlogic-cmdb-commercial</artifactId>
+                </dependency>
+                <dependency>
+                    <groupId>com.neatlogic</groupId>
                     <artifactId>neatlogic-document-online-commercial</artifactId>
                 </dependency>
             </dependencies>

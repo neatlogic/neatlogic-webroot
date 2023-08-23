@@ -185,8 +185,10 @@
     "sourcename": "Source Chinese Name",
     "startdate": "Start date",
     "startloadconfig": "Start to load config from {0}...",
-    "startloadmodule": "Start to initialize module {0}...",
+    "startloadmodule": "Start to initialize module...",
+    "startloadcommercialmodule": "Success to loaded commercial module {0}",
     "startloadschedulejob": "Start to load schedule job of {0}...",
+    "startloadstartupjob": "Start to run startup job {0} for {1} ...",
     "starttime": "start time",
     "startupjob": "Startup Job",
     "status": "state",
@@ -308,7 +310,7 @@
         "neatlogicdb": "Unable to connect to the nextlogic library. Check if the database account and password configuration for nacos | config.properties are correct and restart"
       },
       "initdmlsql": {
-        "tenant": "⚡ [% s] Initialize dml..."
+        "tenant": "Start to Initialize Database..."
       }
     }
   },
