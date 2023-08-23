@@ -2110,6 +2110,12 @@
     }
   },
   "nmtas": {
+    "getserverlistapi": {
+      "getname": "获取服务器信息列表"
+    },
+    "saveserverapi": {
+      "getname": "保存服务器信息"
+    },
     "systemnoticepullapi": {
       "getname": "拉取系统公告",
       "input": {
@@ -2318,6 +2324,8 @@
       "notifypolicydefaulttemplateinfo": "通知默认模板信息",
       "pinyin": "拼音",
       "policyid": "通知策略id",
+      "serverid": "服务器ID",
+      "serveripport": "服务器地址",
       "smpthost": "smtp主机",
       "smptport": "smtp端口",
       "smptsslenable": "是否使用SSL",
