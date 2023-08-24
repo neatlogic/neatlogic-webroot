@@ -336,6 +336,12 @@
     },
     "resourcecenterviewconfigexception": {
       "resourcecenterviewconfigexception": "Field declared in view {0}: {1}, but definition not found in configuration file"
+    },
+    "resourceviewfieldmappingexception": {
+      "resourceviewfieldmappingexception_a": "The main model in resource view {0} is not set",
+      "resourceviewfieldmappingexception_b": "Field list {1} in resource view {0} has no mapping set",
+      "resourceviewfieldmappingexception_c": "The main model {1} in resource view {0} does not exist",
+      "resourceviewfieldmappingexception_d": "The mapping {2} value of field {1} in resource view {0} is {3}, which is not set correctly"
     }
   },
   "nfd": {

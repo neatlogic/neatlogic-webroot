@@ -336,6 +336,12 @@
     },
     "resourcecenterviewconfigexception": {
       "resourcecenterviewconfigexception": "视图{0}中声明字段：{1}，但在配置文件中没有找到定义"
+    },
+    "resourceviewfieldmappingexception": {
+      "resourceviewfieldmappingexception_a": "资源视图{0}中主模型未设置",
+      "resourceviewfieldmappingexception_b": "资源视图{0}中字段列表{1}未设置映射",
+      "resourceviewfieldmappingexception_c": "资源视图{0}中主模型{1}不存在",
+      "resourceviewfieldmappingexception_d": "资源视图{0}中字段{1}的映射{2}值为{3}，设置不正确"
     }
   },
   "nfd": {
