@@ -2112,6 +2112,12 @@
     }
   },
   "nmtas": {
+    "getserverlistapi": {
+      "getname": "Obtain a list of server information"
+    },
+    "saveserverapi": {
+      "getname": "Save server information"
+    },
     "systemnoticepullapi": {
       "getname": "Pull system announcement",
       "input": {
@@ -2320,6 +2326,8 @@
       "notifypolicydefaulttemplateinfo": "Notification default template information",
       "pinyin": "Pinyin",
       "policyid": "Notification Policy ID",
+      "serverid": "Server ID",
+      "serveripport": "server address",
       "smpthost": "SMTP host",
       "smptport": "SMTP port",
       "smptsslenable": "Whether to use SSL",
