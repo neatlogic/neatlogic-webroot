@@ -184,9 +184,9 @@
     "sourcelist": "Source List",
     "sourcename": "Source Chinese Name",
     "startdate": "Start date",
+    "startloadcommercialmodule": "Success to loaded commercial module {0}",
     "startloadconfig": "Start to load config from {0}...",
     "startloadmodule": "Start to initialize module...",
-    "startloadcommercialmodule": "Success to loaded commercial module {0}",
     "startloadschedulejob": "Start to load schedule job of {0}...",
     "startloadstartupjob": "Start to run startup job {0} for {1} ...",
     "starttime": "start time",
@@ -1039,6 +1039,9 @@
     },
     "importciapi": {
       "getname": "Import Configuration Item Model"
+    },
+    "initcischemaapi": {
+      "getname": "Initialize Model Data Table"
     },
     "listciapi": {
       "getname": "Return model list information (for dropdown boxes)"
