@@ -750,6 +750,18 @@
     "autoexecjobinfogetapi": {
       "getname": "获取自动化作业详情"
     },
+    "getautoexecjobstatusapi": {
+      "description": {
+        "desc": "获取作业状态"
+      },
+      "input": {
+        "param": {
+          "desc": {
+            "idlist": "作业idList"
+          }
+        }
+      }
+    },
     "listautoexecjoblogencodingapi": {
       "getname": "获取自动化作业日志字符编码集合",
       "mydoservice": {

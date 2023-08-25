@@ -750,6 +750,18 @@
     "autoexecjobinfogetapi": {
       "getname": "Obtain automation job details"
     },
+    "getautoexecjobstatusapi": {
+      "description": {
+        "desc": "Get Job Status"
+      },
+      "input": {
+        "param": {
+          "desc": {
+            "idlist": "Job idList"
+          }
+        }
+      }
+    },
     "listautoexecjoblogencodingapi": {
       "getname": "Get automatic job log Character encoding set",
       "mydoservice": {
