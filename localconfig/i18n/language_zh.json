@@ -265,6 +265,11 @@
       "maxnumofcombopversion": "组合工具版本数量上限，例如设置最多10个版本，创建保存第11个版本时，自动删除掉最老的一个，非激活状态的版本。"
     }
   },
+  "nfae": {
+    "autoexecjobnotsupportmultiparentexception": {
+      "autoexecjobnotsupportmultiparentexception": "父作业{0}已经存在父作业,暂时不支持多层父作业"
+    }
+  },
   "nfaec": {
     "autoexeccombopnotfoundedittargetexception": {
       "autoexeccombopnotfoundedittargetexception": "组合工具：{0}不存在"

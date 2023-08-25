@@ -265,6 +265,11 @@
       "maxnumofcombopversion": "The maximum number of versions of the combination tool, such as setting a maximum of 10 versions, will automatically delete the oldest and inactive version when creating and saving the 11th version."
     }
   },
+  "nfae": {
+    "autoexecjobnotsupportmultiparentexception": {
+      "autoexecjobnotsupportmultiparentexception": "Parent job {0} already exists, and currently does not support multi-level parent jobs"
+    }
+  },
   "nfaec": {
     "autoexeccombopnotfoundedittargetexception": {
       "autoexeccombopnotfoundedittargetexception": "Combination tool: {0} does not exist"
