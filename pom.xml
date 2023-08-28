@@ -54,6 +54,14 @@
                     <groupId>com.neatlogic</groupId>
                     <artifactId>neatlogic-document-online-commercial</artifactId>
                 </dependency>
+                <dependency>
+                    <groupId>com.neatlogic</groupId>
+                    <artifactId>neatlogic-dr</artifactId>
+                </dependency>
+                <dependency>
+                    <groupId>com.neatlogic</groupId>
+                    <artifactId>neatlogic-dr-base</artifactId>
+                </dependency>
             </dependencies>
         </profile>
     </profiles>
