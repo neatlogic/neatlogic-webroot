@@ -1474,6 +1474,9 @@
         "desc": "Obtain version requirement list"
       }
     },
+    "getdeployversiontheadapi": {
+      "getname": "Query Release Version Header Configuration"
+    },
     "savedeployversioncommitanalyzeapi": {
       "description": {
         "desc": "Save version analysis data"
@@ -1494,6 +1497,16 @@
     },
     "savedeployversioncvelistapi": {
       "getname": "Save version CVE vulnerability list"
+    },
+    "savedeployversiontheadapi": {
+      "getname": "Save Release Version Header Configuration",
+      "input": {
+        "param": {
+          "desc": {
+            "config": "Meter header configuration"
+          }
+        }
+      }
     }
   },
   "nmeas": {

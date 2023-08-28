@@ -1474,6 +1474,9 @@
         "desc": "获取版本需求列表"
       }
     },
+    "getdeployversiontheadapi": {
+      "getname": "查询发布版本表头配置"
+    },
     "savedeployversioncommitanalyzeapi": {
       "description": {
         "desc": "保存版本分析数据"
@@ -1494,6 +1497,16 @@
     },
     "savedeployversioncvelistapi": {
       "getname": "保存版本CVE漏洞列表"
+    },
+    "savedeployversiontheadapi": {
+      "getname": "保存发布版本表头配置",
+      "input": {
+        "param": {
+          "desc": {
+            "config": "表头配置"
+          }
+        }
+      }
     }
   },
   "nmeas": {
