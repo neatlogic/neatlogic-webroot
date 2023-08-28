@@ -1395,6 +1395,12 @@
           }
         }
       }
+    },
+    "savedeployapppipelineapi": {
+      "getname": "Save application pipeline"
+    },
+    "savedeployapppipelinedraftapi": {
+      "getname": "Save assembly line draft"
     }
   },
   "nmdaas": {
