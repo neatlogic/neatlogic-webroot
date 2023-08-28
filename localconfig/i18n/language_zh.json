@@ -1395,6 +1395,12 @@
           }
         }
       }
+    },
+    "savedeployapppipelineapi": {
+      "getname": "保存应用流水线"
+    },
+    "savedeployapppipelinedraftapi": {
+      "getname": "保存流水线草稿"
     }
   },
   "nmdaas": {
