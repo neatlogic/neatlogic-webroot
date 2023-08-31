@@ -438,8 +438,14 @@
         "sourceid": {
           "name": "迁移源数据中心id2"
         },
+        "sourcename": {
+          "name": "迁移源数据中心"
+        },
         "targetid": {
           "name": "迁移目的数据中心id"
+        },
+        "targetname": {
+          "name": "迁移目的数据中心"
         }
       }
     }
@@ -1532,7 +1538,9 @@
       "getname": "删除数据中心",
       "input": {
         "param": {
-          "desc": "数据中心id"
+          "id": {
+            "desc": "数据中心id"
+          }
         }
       }
     },
@@ -1596,7 +1604,9 @@
       "getname": "保存场景",
       "input": {
         "param": {
-          "desc": "迁移源数据中心id"
+          "sourceid": {
+            "desc": "迁移源数据中心id"
+          }
         }
       }
     }

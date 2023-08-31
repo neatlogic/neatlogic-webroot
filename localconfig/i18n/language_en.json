@@ -438,8 +438,14 @@
         "sourceid": {
           "name": "Migration source data center ID"
         },
+        "sourcename": {
+          "name": "Migration Source Data Center"
+        },
         "targetid": {
           "name": "Migration destination data center ID"
+        },
+        "targetname": {
+          "name": "Migration destination data center"
         }
       }
     }
@@ -1532,7 +1538,9 @@
       "getname": "Delete Data Center",
       "input": {
         "param": {
-          "desc": "Data center ID"
+          "id": {
+            "desc": "Data center ID"
+          }
         }
       }
     },
@@ -1596,7 +1604,9 @@
       "getname": "Save Scene",
       "input": {
         "param": {
-          "desc": "Migration Source Data Center ID"
+          "sourceid": {
+            "desc": "Migration Source Data Center ID"
+          }
         }
       }
     }
