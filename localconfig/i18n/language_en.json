@@ -423,10 +423,20 @@
         }
       }
     },
+    "drcivo": {
+      "entityfield": {
+        "ciidlist": {
+          "name": "List of associated model IDs"
+        }
+      }
+    },
     "drdatacentervo": {
       "entityfield": {
         "name": {
           "name": "Data Center Name"
+        },
+        "referencecount": {
+          "name": "Number of associated scenes"
         }
       }
     },
@@ -434,6 +444,9 @@
       "entityfield": {
         "name": {
           "name": "Scene Name"
+        },
+        "referencecount": {
+          "name": "Number of associated services"
         },
         "sourceid": {
           "name": "Migration source data center ID"
@@ -1468,6 +1481,27 @@
   "nmdaas": {
     "savedeployappconfigappsystemapi": {
       "getname": "Application system for saving and publishing application configurations"
+    }
+  },
+  "nmdab": {
+    "getsettingsapi": {
+      "description": {
+        "desc": "Interface for obtaining basic settings related information"
+      },
+      "getname": "Obtain information related to basic settings",
+      "output": {
+        "param": {
+          "drcilist": {
+            "desc": "Asset allocation"
+          },
+          "drdatacenterlist": {
+            "desc": "Data Center List"
+          },
+          "drscenelist": {
+            "desc": "Scene List"
+          }
+        }
+      }
     }
   },
   "nmdac": {
