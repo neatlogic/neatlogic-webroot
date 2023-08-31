@@ -375,6 +375,11 @@
       "getauthintroduction": "自动发布全局参数管理、场景定义"
     }
   },
+  "nfdal": {
+    "dr_base": {
+      "getauthdisplayname": "灾备切换基础权限"
+    }
+  },
   "nfdc": {
     "deploytenantconfig": {
       "gitlabwebhookcallbackhost": "gitlab webhook回调主机地址"
@@ -408,6 +413,39 @@
           "paramlist": "参数列表",
           "querytimeout": "查询超时时间，单位：秒",
           "xml": "xml配置"
+        }
+      }
+    },
+    "drcilvo": {
+      "entityfield": {
+        "cilist": {
+          "name": "关联模型列表"
+        }
+      }
+    },
+    "drdatacentervo": {
+      "entityfield": {
+        "name": {
+          "name": "数据中心名称"
+        }
+      }
+    },
+    "drscenevo": {
+      "entityfield": {
+        "name": {
+          "name": "场景名称"
+        },
+        "sourceid": {
+          "name": "迁移源数据中心id2"
+        },
+        "sourcename": {
+          "name": "迁移源数据中心"
+        },
+        "targetid": {
+          "name": "迁移目的数据中心id"
+        },
+        "targetname": {
+          "name": "迁移目的数据中心"
         }
       }
     }
@@ -479,6 +517,30 @@
   "nfde": {
     "documentonlinenotfoundexception": {
       "documentonlinenotfoundexception": "在线帮助文档：“{0}”不存在"
+    },
+    "drapptypenotfoundexception": {
+      "drapptypenotfoundexception": "应用类型 {0} 不存在"
+    },
+    "drdatacenterisinusedexception": {
+      "drdatacenterisinusedexception": "数据中心正在使用"
+    },
+    "drdatacenternameisexistsexception": {
+      "drdatacenternameisexistsexception": "数据中心名称 {0} 已存在"
+    },
+    "drdatacenternotfoundexception": {
+      "drdatacenternotfoundexception": "数据中心 {0} 不存在"
+    },
+    "drsceneillegalargumentexception": {
+      "drsceneillegalargumentexception": "场景参数非法"
+    },
+    "drscenenameisexistsexception": {
+      "drscenenameisexistsexception": "场景名称 {0} 已存在"
+    },
+    "drscenenotfoundexception": {
+      "drscenenotfoundexception": "场景 {0} 不存在"
+    },
+    "drscenesamedatacenterexception": {
+      "drscenesamedatacenterexception": "迁移前后数据中心不能相同"
     }
   },
   "nfdej": {
@@ -1436,6 +1498,18 @@
     "getdeployciauditdetailapi": {
       "getname": "获取持续集成回调接口调用日志"
     },
+    "getdrciapi": {
+      "description": {
+        "desc": "获取应用类型关联模型接口"
+      },
+      "getname": "获取应用类型关联模型"
+    },
+    "listdrciapi": {
+      "description": {
+        "desc": "获取资产配置列表接口"
+      },
+      "getname": "获取资产配置列表"
+    },
     "savedeployciapi": {
       "getname": "保存持续集成配置",
       "input": {
@@ -1448,6 +1522,45 @@
           }
         }
       }
+    },
+    "savedrciapi": {
+      "description": {
+        "desc": "保存资产配置接口"
+      },
+      "getname": "保存资产配置"
+    }
+  },
+  "nmdad": {
+    "deletedrdatacenterapi": {
+      "description": {
+        "desc": "删除数据中心接口"
+      },
+      "getname": "删除数据中心",
+      "input": {
+        "param": {
+          "id": {
+            "desc": "数据中心id"
+          }
+        }
+      }
+    },
+    "getdrdatacenterapi": {
+      "description": {
+        "desc": "获取数据中心接口"
+      },
+      "getname": "获取数据中心"
+    },
+    "listdrdatacenterapi": {
+      "description": {
+        "desc": "获取数据中心列表接口"
+      },
+      "getname": "获取数据中心列表"
+    },
+    "savedrdatacenterapi": {
+      "description": {
+        "desc": "保存数据中心接口"
+      },
+      "getname": "保存数据中心"
     }
   },
   "nmdaj": {
@@ -1466,6 +1579,36 @@
   "nmdap": {
     "getpipelineapi": {
       "getname": "获取超级流水线详细信息"
+    }
+  },
+  "nmdas": {
+    "deletesceneapi": {
+      "description": {
+        "desc": "删除场景接口"
+      },
+      "getname": "删除场景"
+    },
+    "getsceneapi": {
+      "description": {
+        "desc": "获取场景接口"
+      },
+      "getname": "获取场景信息"
+    },
+    "listsceneapi": {
+      "description": {
+        "desc": "获取场景列表接口"
+      },
+      "getname": "获取场景列表"
+    },
+    "savesceneapi": {
+      "getname": "保存场景",
+      "input": {
+        "param": {
+          "sourceid": {
+            "desc": "迁移源数据中心id"
+          }
+        }
+      }
     }
   },
   "nmdav": {
@@ -2352,6 +2495,15 @@
       "scheduleinfo": "发布定时作业信息",
       "version": "版本",
       "vulnerabilityids": "脆弱性id"
+    },
+    "dr": {
+      "drapptype": {
+        "getenumname": "应用类型"
+      },
+      "drapptypeappsystem": "业务应用",
+      "drapptypebasicservices": "基础服务",
+      "drapptypenetwork": "网络",
+      "name": "灾备切换模块"
     },
     "event": {
       "eventtypeid": "保存的事件类型ID",

@@ -375,6 +375,11 @@
       "getauthintroduction": "Automatically publish global parameter management and scenario definition"
     }
   },
+  "nfdal": {
+    "dr_base": {
+      "getauthdisplayname": "Basic permissions for disaster recovery switching"
+    }
+  },
   "nfdc": {
     "deploytenantconfig": {
       "gitlabwebhookcallbackhost": "Gitlab webhook callback host address"
@@ -408,6 +413,39 @@
           "paramlist": "parameter list",
           "querytimeout": "Query timeout, in seconds",
           "xml": "XML configuration"
+        }
+      }
+    },
+    "drcilvo": {
+      "entityfield": {
+        "cilist": {
+          "name": "Associated Model List"
+        }
+      }
+    },
+    "drdatacentervo": {
+      "entityfield": {
+        "name": {
+          "name": "Data Center Name"
+        }
+      }
+    },
+    "drscenevo": {
+      "entityfield": {
+        "name": {
+          "name": "Scene Name"
+        },
+        "sourceid": {
+          "name": "Migration source data center ID"
+        },
+        "sourcename": {
+          "name": "Migration Source Data Center"
+        },
+        "targetid": {
+          "name": "Migration destination data center ID"
+        },
+        "targetname": {
+          "name": "Migration destination data center"
         }
       }
     }
@@ -479,6 +517,30 @@
   "nfde": {
     "documentonlinenotfoundexception": {
       "documentonlinenotfoundexception": "Online help document: {0} does not exist"
+    },
+    "drapptypenotfoundexception": {
+      "drapptypenotfoundexception": "Application type {0} does not exist"
+    },
+    "drdatacenterisinusedexception": {
+      "drdatacenterisinusedexception": "The data center is currently in use"
+    },
+    "drdatacenternameisexistsexception": {
+      "drdatacenternameisexistsexception": "The data center name {0} already exists"
+    },
+    "drdatacenternotfoundexception": {
+      "drdatacenternotfoundexception": "The data center {0} does not exist"
+    },
+    "drsceneillegalargumentexception": {
+      "drsceneillegalargumentexception": "Illegal scene parameters"
+    },
+    "drscenenameisexistsexception": {
+      "drscenenameisexistsexception": "Scene name {0} already exists"
+    },
+    "drscenenotfoundexception": {
+      "drscenenotfoundexception": "Scene {0} does not exist"
+    },
+    "drscenesamedatacenterexception": {
+      "drscenesamedatacenterexception": "The data center cannot be the same before and after migration"
     }
   },
   "nfdej": {
@@ -1436,6 +1498,18 @@
     "getdeployciauditdetailapi": {
       "getname": "Obtain Continuous Integration Callback Interface Call Log"
     },
+    "getdrciapi": {
+      "description": {
+        "desc": "Obtain application type association model interface"
+      },
+      "getname": "Obtain application type association model"
+    },
+    "listdrciapi": {
+      "description": {
+        "desc": "Interface for obtaining asset configuration list"
+      },
+      "getname": "Obtain asset allocation list"
+    },
     "savedeployciapi": {
       "getname": "Save Continuous Integration Configuration",
       "input": {
@@ -1448,6 +1522,45 @@
           }
         }
       }
+    },
+    "savedrciapi": {
+      "description": {
+        "desc": "Save Asset Configuration Interface"
+      },
+      "getname": "Save Asset Configuration"
+    }
+  },
+  "nmdad": {
+    "deletedrdatacenterapi": {
+      "description": {
+        "desc": "Delete Data Center Interface"
+      },
+      "getname": "Delete Data Center",
+      "input": {
+        "param": {
+          "id": {
+            "desc": "Data center ID"
+          }
+        }
+      }
+    },
+    "getdrdatacenterapi": {
+      "description": {
+        "desc": "Obtain Data Center Interface"
+      },
+      "getname": "Obtain Data Center"
+    },
+    "listdrdatacenterapi": {
+      "description": {
+        "desc": "Obtain data center list interface"
+      },
+      "getname": "Obtain a list of data centers"
+    },
+    "savedrdatacenterapi": {
+      "description": {
+        "desc": "Save Data Center Interface"
+      },
+      "getname": "Save Data Center"
     }
   },
   "nmdaj": {
@@ -1466,6 +1579,36 @@
   "nmdap": {
     "getpipelineapi": {
       "getname": "Obtain detailed information about the super assembly line"
+    }
+  },
+  "nmdas": {
+    "deletesceneapi": {
+      "description": {
+        "desc": "Delete scene interface"
+      },
+      "getname": "Delete Scene"
+    },
+    "getsceneapi": {
+      "description": {
+        "desc": "Obtain scene interface"
+      },
+      "getname": "Obtain scene information"
+    },
+    "listsceneapi": {
+      "description": {
+        "desc": "Get scene list interface"
+      },
+      "getname": "Obtain scene list"
+    },
+    "savesceneapi": {
+      "getname": "Save Scene",
+      "input": {
+        "param": {
+          "sourceid": {
+            "desc": "Migration Source Data Center ID"
+          }
+        }
+      }
     }
   },
   "nmdav": {
@@ -2352,6 +2495,15 @@
       "scheduleinfo": "Publish scheduled job information",
       "version": "version",
       "vulnerabilityids": "Vulnerability ID"
+    },
+    "dr": {
+      "drapptype": {
+        "getenumname": "Application Type"
+      },
+      "drapptypeappsystem": "Application system",
+      "drapptypebasicservices": "Basic services",
+      "drapptypenetwork": "Network",
+      "name": "Disaster recovery switching module"
     },
     "event": {
       "eventtypeid": "Saved Event Type ID",
