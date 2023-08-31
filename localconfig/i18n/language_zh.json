@@ -423,10 +423,20 @@
         }
       }
     },
+    "drcivo": {
+      "entityfield": {
+        "ciidlist": {
+          "name": "关联模型id列表"
+        }
+      }
+    },
     "drdatacentervo": {
       "entityfield": {
         "name": {
           "name": "数据中心名称"
+        },
+        "referencecount": {
+          "name": "关联的场景数"
         }
       }
     },
@@ -434,6 +444,9 @@
       "entityfield": {
         "name": {
           "name": "场景名称"
+        },
+        "referencecount": {
+          "name": "关联服务数"
         },
         "sourceid": {
           "name": "迁移源数据中心id"
@@ -1468,6 +1481,27 @@
   "nmdaas": {
     "savedeployappconfigappsystemapi": {
       "getname": "保存发布应用配置的应用系统"
+    }
+  },
+  "nmdab": {
+    "getsettingsapi": {
+      "description": {
+        "desc": "获取基础设置相关信息接口"
+      },
+      "getname": "获取基础设置相关信息",
+      "output": {
+        "param": {
+          "drcilist": {
+            "desc": "资产配置"
+          },
+          "drdatacenterlist": {
+            "desc": "数据中心列表"
+          },
+          "drscenelist": {
+            "desc": "场景列表"
+          }
+        }
+      }
     }
   },
   "nmdac": {
