@@ -675,6 +675,11 @@
     }
   },
   "nfrd": {
+    "appattrvo": {
+      "entityfield": {
+        "expressionlist": "支持的搜索表达式列表"
+      }
+    },
     "appstatusvo": {
       "entityfield": {
         "name": {
@@ -1332,7 +1337,7 @@
         "param": {
           "desc": {
             "attr": "需要返回的属性，不定义则返回所有属性，空数组代表不返回任何属性",
-            "dsl": "查询表达式，逻辑运算符支持\u0026\u0026、||，关系运算符支持：\u003d\u003d、\u003e\u003d、\u003c\u003d、\u003e、\u003c、!\u003d、include、exclude。如果需要搜索关系或引用属性字段，可以使用a.b表示，例如env.name \u003d\u003d \\\"STG\\\" \u0026\u0026 (port \u003d\u003d 80 || port \u003d\u003d 443 )",
+            "dsl": "查询表达式，逻辑运算符支持\u0026\u0026、||，关系运算符支持：\u003d\u003d、\u003e\u003d、\u003c\u003d、\u003e、\u003c、!\u003d、like、not like、include、exclude。如果需要搜索关系或引用属性字段，可以使用a.b表示，例如env.name \u003d\u003d \"STG\" \u0026\u0026 (port \u003d\u003d 80 || port \u003d\u003d 443 )",
             "rel": "需要返回的关系，不定义则返回所有关系，空数组代表不返回任何关系"
           }
         }
