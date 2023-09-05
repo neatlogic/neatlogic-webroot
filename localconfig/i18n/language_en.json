@@ -2533,7 +2533,9 @@
       "runnerid": "Executor ID",
       "scheduleinfo": "Publish scheduled job information",
       "version": "version",
-      "vulnerabilityids": "Vulnerability ID"
+      "vulnerabilityid": "Vulnerability ID",
+      "vulnerabilityids": "Vulnerability ID",
+      "vulnerabilityurl": "Vulnerability Details Page Address"
     },
     "dr": {
       "drapptype": {

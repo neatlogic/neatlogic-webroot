@@ -2533,7 +2533,9 @@
       "runnerid": "执行器id",
       "scheduleinfo": "发布定时作业信息",
       "version": "版本",
-      "vulnerabilityids": "脆弱性id"
+      "vulnerabilityid": "漏洞ID",
+      "vulnerabilityids": "脆弱性id",
+      "vulnerabilityurl": "漏洞详情页地址"
     },
     "dr": {
       "drapptype": {
