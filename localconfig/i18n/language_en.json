@@ -465,6 +465,9 @@
   },
   "nfddv": {
     "deployversionissuevo": {
+      "browseurl": {
+        "name": "Browse URL"
+      },
       "handleuserid": {
         "name": "Issue handler"
       },
