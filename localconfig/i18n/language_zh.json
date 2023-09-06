@@ -586,7 +586,7 @@
   },
   "nfes": {
     "dmlsqlexecuteexception": {
-      "dmlsqlexecuteexception": "租户:%s 模块:%s dmlSql:%s 执行失败"
+      "dmlsqlexecuteexception": "租户:{0} 模块:{1} dmlSql:{2} 执行失败"
     }
   },
   "nfet": {

@@ -586,7 +586,7 @@
   },
   "nfes": {
     "dmlsqlexecuteexception": {
-      "dmlsqlexecuteexception": "Tenant:% s Module:% s dmlSql:%s execution failed"
+      "dmlsqlexecuteexception": "Tenant:{0} Module:{1} dmlSql:{2} execution failed"
     }
   },
   "nfet": {
