@@ -535,25 +535,25 @@
       "documentonlinenotfoundexception": "在线帮助文档：“{0}”不存在"
     },
     "drapptypenotfoundexception": {
-      "drapptypenotfoundexception": "应用类型 {0} 不存在"
+      "drapptypenotfoundexception": "应用类型：{0}不存在"
     },
     "drdatacenterisinusedexception": {
       "drdatacenterisinusedexception": "数据中心正在使用"
     },
     "drdatacenternameisexistsexception": {
-      "drdatacenternameisexistsexception": "数据中心名称 {0} 已存在"
+      "drdatacenternameisexistsexception": "数据中心名称：{0}已存在"
     },
     "drdatacenternotfoundexception": {
-      "drdatacenternotfoundexception": "数据中心 {0} 不存在"
+      "drdatacenternotfoundexception": "数据中心：{0}不存在"
     },
     "drsceneillegalargumentexception": {
       "drsceneillegalargumentexception": "场景参数非法"
     },
     "drscenenameisexistsexception": {
-      "drscenenameisexistsexception": "场景名称 {0} 已存在"
+      "drscenenameisexistsexception": "场景名称：{0}已存在"
     },
     "drscenenotfoundexception": {
-      "drscenenotfoundexception": "场景 {0} 不存在"
+      "drscenenotfoundexception": "场景：{0}不存在"
     },
     "drscenesamedatacenterexception": {
       "drscenesamedatacenterexception": "迁移前后数据中心不能相同"

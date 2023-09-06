@@ -535,25 +535,25 @@
       "documentonlinenotfoundexception": "Online help document: {0} does not exist"
     },
     "drapptypenotfoundexception": {
-      "drapptypenotfoundexception": "Application type {0} does not exist"
+      "drapptypenotfoundexception": "Application type: {0} does not exist"
     },
     "drdatacenterisinusedexception": {
       "drdatacenterisinusedexception": "The data center is currently in use"
     },
     "drdatacenternameisexistsexception": {
-      "drdatacenternameisexistsexception": "The data center name {0} already exists"
+      "drdatacenternameisexistsexception": "The data center name: {0} already exists"
     },
     "drdatacenternotfoundexception": {
-      "drdatacenternotfoundexception": "The data center {0} does not exist"
+      "drdatacenternotfoundexception": "The data center: {0} does not exist"
     },
     "drsceneillegalargumentexception": {
       "drsceneillegalargumentexception": "Illegal scene parameters"
     },
     "drscenenameisexistsexception": {
-      "drscenenameisexistsexception": "Scene name {0} already exists"
+      "drscenenameisexistsexception": "Scene name: {0} already exists"
     },
     "drscenenotfoundexception": {
-      "drscenenotfoundexception": "Scene {0} does not exist"
+      "drscenenotfoundexception": "Scene: {0} does not exist"
     },
     "drscenesamedatacenterexception": {
       "drscenesamedatacenterexception": "The data center cannot be the same before and after migration"
