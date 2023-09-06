@@ -130,6 +130,7 @@
     "key": "key",
     "keyword": "keyword",
     "level": "level",
+    "lft": "Left encoding",
     "loglist": "Log List",
     "long": "long integer",
     "mailaddress": "Email address",
@@ -142,6 +143,7 @@
     "modulegroup": "Module group",
     "mustinput": "Required",
     "name": "name",
+    "needpage": "Whether pagination is required, default to true",
     "needscore": "Do you need to score",
     "newvalue": "New value",
     "noauth": "No certification required",
@@ -174,6 +176,7 @@
     "reltype": "Relationship Type",
     "request": "demand",
     "reviewerlist": "List of approvers",
+    "rht": "Right encoding",
     "role": "role",
     "roleuuid": "Role uuid",
     "roleuuidlist": "Role uuid List",
@@ -440,6 +443,20 @@
         }
       }
     },
+    "drorganizationvo": {
+      "entityfield": {
+        "childcount": {
+          "name": "Number of sub levels"
+        },
+        "children": {
+          "name": "Sublevel List"
+        },
+        "usercount": {
+          "name": "Number of associated users"
+        }
+      },
+      "rootname": "Commander in Chief"
+    },
     "drscenevo": {
       "entityfield": {
         "name": {
@@ -545,6 +562,18 @@
     },
     "drdatacenternotfoundexception": {
       "drdatacenternotfoundexception": "The data center: {0} does not exist"
+    },
+    "drorganizationdeleterootnotallowedexception": {
+      "drorganizationdeleterootnotallowedexception": "Deleting organizational structure root node is not allowed"
+    },
+    "drorganizationhasbeenreferredexception": {
+      "drorganizationhasbeenreferredexception": "Organizational structure: {0} or its sub levels still have users and cannot be deleted"
+    },
+    "drorganizationnotfoundexception": {
+      "drorganizationnotfoundexception": "Organizational structure: {0} does not exist"
+    },
+    "drorganizationrepeatexception": {
+      "drorganizationrepeatexception": "Organizational structure: {0} already exists"
     },
     "drsceneillegalargumentexception": {
       "drsceneillegalargumentexception": "Illegal scene parameters"
@@ -1623,6 +1652,35 @@
   "nmdajb": {
     "getbatchdeployjobapi": {
       "getname": "Obtain individual batch job information"
+    }
+  },
+  "nmdao": {
+    "deletedrorganizationapi": {
+      "getname": "Delete organizational structure"
+    },
+    "deletedrorganizationuserapi": {
+      "getname": "Delete users under organizational structure"
+    },
+    "savedrorganizationapi": {
+      "getname": "Save organizational structure"
+    },
+    "savedrorganizationuserapi": {
+      "getname": "Add Organizational Structure User"
+    },
+    "searchdrorganizationuserapi": {
+      "getname": "Query user list under organizational structure",
+      "input": {
+        "param": {
+          "orgid": {
+            "desc": "Organization ID"
+          }
+        }
+      }
+    },
+    "treedrorganizationapi": {
+      "description": {
+        "desc": "Obtain a complete tree of organizational structure"
+      }
     }
   },
   "nmdap": {

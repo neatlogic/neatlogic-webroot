@@ -130,6 +130,7 @@
     "key": "键",
     "keyword": "关键字",
     "level": "级别",
+    "lft": "左编码",
     "loglist": "日志列表",
     "long": "长整数",
     "mailaddress": "邮箱地址",
@@ -142,6 +143,7 @@
     "modulegroup": "模块组",
     "mustinput": "必填",
     "name": "名称",
+    "needpage": "是否需要分页，默认true",
     "needscore": "是否需要评分",
     "newvalue": "新值",
     "noauth": "无需认证",
@@ -174,6 +176,7 @@
     "reltype": "关系类型",
     "request": "需求",
     "reviewerlist": "审批人列表",
+    "rht": "右编码",
     "role": "角色",
     "roleuuid": "角色uuid",
     "roleuuidlist": "角色uuid列表",
@@ -440,6 +443,20 @@
         }
       }
     },
+    "drorganizationvo": {
+      "entityfield": {
+        "childcount": {
+          "name": "子层级数量"
+        },
+        "children": {
+          "name": "子层级列表"
+        },
+        "usercount": {
+          "name": "关联用户数量"
+        }
+      },
+      "rootname": "总指挥"
+    },
     "drscenevo": {
       "entityfield": {
         "name": {
@@ -545,6 +562,18 @@
     },
     "drdatacenternotfoundexception": {
       "drdatacenternotfoundexception": "数据中心：{0}不存在"
+    },
+    "drorganizationdeleterootnotallowedexception": {
+      "drorganizationdeleterootnotallowedexception": "不允许删除组织架构根节点"
+    },
+    "drorganizationhasbeenreferredexception": {
+      "drorganizationhasbeenreferredexception": "组织架构：{0}或其子层级中还有用户，不可删除"
+    },
+    "drorganizationnotfoundexception": {
+      "drorganizationnotfoundexception": "组织架构：{0}不存在"
+    },
+    "drorganizationrepeatexception": {
+      "drorganizationrepeatexception": "组织架构：{0}已存在"
     },
     "drsceneillegalargumentexception": {
       "drsceneillegalargumentexception": "场景参数非法"
@@ -1623,6 +1652,35 @@
   "nmdajb": {
     "getbatchdeployjobapi": {
       "getname": "获取单个批量作业信息"
+    }
+  },
+  "nmdao": {
+    "deletedrorganizationapi": {
+      "getname": "删除组织架构"
+    },
+    "deletedrorganizationuserapi": {
+      "getname": "删除组织架构下的用户"
+    },
+    "savedrorganizationapi": {
+      "getname": "保存组织架构"
+    },
+    "savedrorganizationuserapi": {
+      "getname": "添加组织架构用户"
+    },
+    "searchdrorganizationuserapi": {
+      "getname": "查询组织架构下的用户列表",
+      "input": {
+        "param": {
+          "orgid": {
+            "desc": "组织id"
+          }
+        }
+      }
+    },
+    "treedrorganizationapi": {
+      "description": {
+        "desc": "获取组织架构完整树"
+      }
     }
   },
   "nmdap": {
