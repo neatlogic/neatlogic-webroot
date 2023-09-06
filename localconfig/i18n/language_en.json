@@ -1729,7 +1729,7 @@
   },
   "nmfs": {
     "checkupdatedatabaseviewhandler": {
-      "getname": "Check if the view exists, create if it does not exist, update if it exists"
+      "getname": "Check the resource center view"
     },
     "documentonlineinitializeindexhandler": {
       "executeforalltenant": {
@@ -2539,6 +2539,7 @@
       "groupname": "DevOps",
       "highestseverity": "Maximum Severity",
       "name": "DevOps",
+      "packageurl": "Package Details Address",
       "proxytourl": "Proxy address",
       "runnerid": "Executor ID",
       "scheduleinfo": "Publish scheduled job information",

@@ -1729,7 +1729,7 @@
   },
   "nmfs": {
     "checkupdatedatabaseviewhandler": {
-      "getname": "检查视图是否存在，不存在则创建，存在则更新"
+      "getname": "检查资源中心视图"
     },
     "documentonlineinitializeindexhandler": {
       "executeforalltenant": {
@@ -2539,6 +2539,7 @@
       "groupname": "集成与发布",
       "highestseverity": "最高严重程度",
       "name": "自动发布",
+      "packageurl": "包详情地址",
       "proxytourl": "代理地址",
       "runnerid": "执行器id",
       "scheduleinfo": "发布定时作业信息",
