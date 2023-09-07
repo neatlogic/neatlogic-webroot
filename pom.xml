@@ -24,7 +24,6 @@
     </parent>
     <artifactId>neatlogic-webroot</artifactId>
     <packaging>war</packaging>
-    <name>neatlogic-pack</name>
     <version>3.0.0</version>
     <profiles>
         <profile>
