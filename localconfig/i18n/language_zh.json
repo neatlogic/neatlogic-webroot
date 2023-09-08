@@ -443,6 +443,19 @@
         }
       }
     },
+    "drorganizationuservo": {
+      "entityfield": {
+        "orglist": {
+          "name": "用户所属组织列表"
+        },
+        "orgname": {
+          "name": "组织名称"
+        },
+        "orgnamelist": {
+          "name": "用户所属组织名称列表"
+        }
+      }
+    },
     "drorganizationvo": {
       "entityfield": {
         "childcount": {
