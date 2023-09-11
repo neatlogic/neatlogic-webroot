@@ -443,6 +443,19 @@
         }
       }
     },
+    "drorganizationuservo": {
+      "entityfield": {
+        "orglist": {
+          "name": "User Organization List"
+        },
+        "orgname": {
+          "name": "Organization Name"
+        },
+        "orgnamelist": {
+          "name": "List of organization names to which the user belongs"
+        }
+      }
+    },
     "drorganizationvo": {
       "entityfield": {
         "childcount": {
