@@ -116,6 +116,7 @@
     "isfile": "是否是文件",
     "isfocus": "是否已关注",
     "islimit": "是否限制个数",
+    "ismultiple": "是否多选",
     "ismycreated": "是否我创建",
     "isneedpage": "是否需要分页",
     "isneedpriority": "是否显示优先级",
@@ -327,9 +328,21 @@
       "apiqps": "每秒向服务器发送的请求数量峰值（不分接口）"
     }
   },
+  "nfcdc": {
+    "globalattrentityvo": {
+      "entityfield": {
+        "valuelist": "属性值"
+      }
+    }
+  },
   "nfce": {
     "changetemplatenotfoundedittargetexception": {
       "changetemplatenotfoundedittargetexception": "变更模板：{0}不存在"
+    }
+  },
+  "nfceg": {
+    "globalattrisinusedexception": {
+      "globalattrisinusedexception": "当前属性正在使用中，不能删除"
     }
   },
   "nfcer": {
@@ -1473,8 +1486,28 @@
     }
   },
   "nmcag": {
+    "deleteglobalattrapi": {
+      "getname": "删除全局属性"
+    },
+    "getcientityglobalattrentityapi": {
+      "getname": "获取配置项全局属性"
+    },
+    "getglobalattrapi": {
+      "getname": "获取全局属性"
+    },
     "getuseractivegroupapi": {
       "getname": "获取当前用户激活团体列表"
+    },
+    "saveglobalattrapi": {
+      "getname": "保存全局属性",
+      "input": {
+        "param": {
+          "desc": "选项"
+        }
+      }
+    },
+    "searchglobalattrapi": {
+      "getname": "查询全局属性"
     },
     "searchgraphapi": {
       "getname": "搜索拓扑视图"
@@ -1497,6 +1530,14 @@
     },
     "saveresourcetypeapi": {
       "getname": "保存资产类型的根模型"
+    }
+  },
+  "nmcat": {
+    "recovertransactionapi": {
+      "getname": "恢复事务"
+    },
+    "searchtransactionapi": {
+      "getname": "查询事务"
     }
   },
   "nmda": {
@@ -2540,6 +2581,7 @@
       "appmoduleidlist": "应用模块id列表",
       "appsystemid": "应用系统id",
       "appsystemname": "应用系统名",
+      "attr": "属性",
       "attrconfig": "属性配置",
       "attridlist": "模型属性ID列表",
       "attrtype": "属性类型",
@@ -2554,6 +2596,7 @@
       "envid": "环境id",
       "envidlist": "环境id列表",
       "envname": "环境名称",
+      "globalattr": "全局属性",
       "groupdesc": "配置管理平台",
       "groupname": "配置管理",
       "importauditid": "导入记录ID",
@@ -2570,6 +2613,7 @@
       "name": "配置管理模块",
       "parentcientityid": "父配置项id",
       "protocolidlist": "协议id列表",
+      "rel": "关系",
       "relidlist": "模型关系ID列表",
       "resourceentityinfo": "资源视图信息",
       "rootciid": "根模型id",

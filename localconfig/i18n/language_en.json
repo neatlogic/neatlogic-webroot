@@ -116,6 +116,7 @@
     "isfile": "Is it a file",
     "isfocus": "Have you followed",
     "islimit": "Whether to limit the number of items",
+    "ismultiple": "Do you want to select multiple options",
     "ismycreated": "Do I create",
     "isneedpage": "Do you need pagination",
     "isneedpriority": "Display priority",
@@ -327,9 +328,21 @@
       "apiqps": "Peak number of requests sent to the server per second (regardless of interface)"
     }
   },
+  "nfcdc": {
+    "globalattrentityvo": {
+      "entityfield": {
+        "valuelist": "Attribute value"
+      }
+    }
+  },
   "nfce": {
     "changetemplatenotfoundedittargetexception": {
       "changetemplatenotfoundedittargetexception": "Change template: {0} does not exist"
+    }
+  },
+  "nfceg": {
+    "globalattrisinusedexception": {
+      "globalattrisinusedexception": "The current attribute is in use and cannot be deleted"
     }
   },
   "nfcer": {
@@ -1473,8 +1486,28 @@
     }
   },
   "nmcag": {
+    "deleteglobalattrapi": {
+      "getname": "Delete Global Attribute"
+    },
+    "getcientityglobalattrentityapi": {
+      "getname": "Get Configuration Item Global Properties"
+    },
+    "getglobalattrapi": {
+      "getname": "Get Global Properties"
+    },
     "getuseractivegroupapi": {
       "getname": "Obtain the list of active groups for the current user“"
+    },
+    "saveglobalattrapi": {
+      "getname": "Save Global Properties",
+      "input": {
+        "param": {
+          "desc": "option"
+        }
+      }
+    },
+    "searchglobalattrapi": {
+      "getname": "Query Global Properties"
     },
     "searchgraphapi": {
       "getname": "Search Topology View"
@@ -1497,6 +1530,14 @@
     },
     "saveresourcetypeapi": {
       "getname": "Save the root model of asset types"
+    }
+  },
+  "nmcat": {
+    "recovertransactionapi": {
+      "getname": "Resume transactions"
+    },
+    "searchtransactionapi": {
+      "getname": "inquiry transaction"
     }
   },
   "nmda": {
@@ -2540,6 +2581,7 @@
       "appmoduleidlist": "Application module ID list",
       "appsystemid": "Application system ID",
       "appsystemname": "Application system name",
+      "attr": "attribute",
       "attrconfig": "Attribute Configuration",
       "attridlist": "Model Attribute ID List",
       "attrtype": "Attribute Type",
@@ -2554,6 +2596,7 @@
       "envid": "Environment ID",
       "envidlist": "Environment ID List",
       "envname": "Environment name",
+      "globalattr": "Global Properties",
       "groupdesc": "Configuration Management Platform",
       "groupname": "CMDB",
       "importauditid": "Import Record ID",
@@ -2570,6 +2613,7 @@
       "name": "CMDB",
       "parentcientityid": "Parent Configuration Item ID",
       "protocolidlist": "Protocol ID List",
+      "rel": "relationship",
       "relidlist": "Model Relationship ID List",
       "resourceentityinfo": "Resource View Information",
       "rootciid": "Root Model ID",
