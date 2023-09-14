@@ -1379,6 +1379,7 @@
             "direction": "The position of the current model in the relationship",
             "dsl": "DSL statement",
             "fromcientityid": "Reference configuration item ID (used when querying reference properties through reference configuration items)",
+            "globalattrfilterlist": "Global Attribute Filter Criteria",
             "groupid": "Group ID",
             "idlist": "List of configuration item IDs that need to be queried",
             "isall": "Do you want to return all column data",
@@ -1533,6 +1534,17 @@
     }
   },
   "nmcat": {
+    "getcientitytopoapi": {
+      "getname": "Obtain Configuration Item Topology",
+      "input": {
+        "param": {
+          "desc": {
+            "disablerellist": "Do not display relationship id",
+            "level": "Automatically expand the number of relationship layers, default to 1"
+          }
+        }
+      }
+    },
     "recovertransactionapi": {
       "getname": "Resume transactions"
     },

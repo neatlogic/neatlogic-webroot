@@ -1379,6 +1379,7 @@
             "direction": "当前模型在关系中的位置",
             "dsl": "DSL语句",
             "fromcientityid": "引用配置项id（通过引用配置项查询引用属性时使用）",
+            "globalattrfilterlist": "全局属性过滤条件",
             "groupid": "团体id",
             "idlist": "需要查询的配置项id列表",
             "isall": "是否返回所有列数据",
@@ -1533,6 +1534,17 @@
     }
   },
   "nmcat": {
+    "getcientitytopoapi": {
+      "getname": "获取配置项拓扑",
+      "input": {
+        "param": {
+          "desc": {
+            "disablerellist": "不显示关系id",
+            "level": "自动展开关系层数，默认是1"
+          }
+        }
+      }
+    },
     "recovertransactionapi": {
       "getname": "恢复事务"
     },
