@@ -72,6 +72,7 @@
     "email": "邮箱",
     "emailnotify": "邮件通知",
     "embed": "内置",
+    "encoding": "编码",
     "enddate": "结束日期",
     "endtime": "结束时间",
     "enum": "枚举",
@@ -101,6 +102,7 @@
     "hasparent": "是否拥有父级",
     "icon": "图标",
     "id": "id",
+    "importtargettype": "导入目标类型",
     "includelist": "用于需要回显参数",
     "index": "下标",
     "inittime": "初始化时间",
@@ -123,6 +125,7 @@
     "isoverride": "是否覆盖",
     "isregister": "是否注册",
     "isrequired": "是否必填",
+    "isreviewable": "是否能审批",
     "isshow": "是否显示",
     "isunique": "是否唯一",
     "iteration": "迭代",
@@ -163,6 +166,7 @@
     "phone": "电话号码",
     "planstarttime": "计划时间",
     "prefix": "前缀",
+    "primarykey": "主键",
     "priority": "优先级",
     "prioritycolor": "优先级颜色",
     "priorityname": "优先级名称",
@@ -245,6 +249,7 @@
     "userinfolist": "用户信息列表",
     "userlist": "用户列表",
     "username": "用户名",
+    "userselectionimportoption": "用户选择导入的依赖数据",
     "usertype": "用户类型",
     "useruuid": "用户uuid",
     "useruuidlist": "用户uuid列表",
@@ -622,6 +627,9 @@
   "nfdep": {
     "deploypipelinenotfoundedittargetexception": {
       "deploypipelinenotfoundedittargetexception": "id为{0}的流水线不存在"
+    },
+    "importdeploypipelineappnameinconsistencyexception": {
+      "importdeploypipelineappnameinconsistencyexception": "导入失败，导入包中的应用名称与当前应用名称不一致，不支持将{0}应用的流水线配置导入{1}应用"
     }
   },
   "nfdev": {
@@ -664,6 +672,18 @@
     }
   },
   "nfie": {
+    "exportnoauthexception": {
+      "exportnoauthexception": "没有导出权限"
+    },
+    "importexporthandlernotfoundexception": {
+      "importexporthandlernotfoundexception": "导入导出处理器：{0}找不到"
+    },
+    "importexporttypeinconsistencyexception": {
+      "importexporttypeinconsistencyexception": "导入类型与目标类型不一致，不能将{0}类型的数据导入到{1}类型中"
+    },
+    "importnoauthexception": {
+      "importnoauthexception": "没有导入权限"
+    },
     "inspectdefinitionnotfoundedittargetexception": {
       "inspectdefinitionnotfoundedittargetexception": "巡检定义：{0}不存在"
     },
@@ -872,6 +892,9 @@
     }
   },
   "nmaac": {
+    "autoexeccatalogsaveapi": {
+      "getname": "保存工具目录"
+    },
     "autoexeccombopbasicinfogetapi": {
       "getname": "查询组合工具基本信息"
     },
@@ -889,6 +912,9 @@
     },
     "listautoexeccomboptypeexecutableapi": {
       "getname": "查询当前用户可执行的组合工具所属分类列表"
+    },
+    "savecustomtemplateapi": {
+      "getname": "保存自定义模板"
     }
   },
   "nmaaj": {
@@ -944,12 +970,28 @@
       "getname": "回调更新作业状态"
     }
   },
+  "nmaar": {
+    "autoexecrisksaveapi": {
+      "getname": "保存操作级别"
+    }
+  },
   "nmaas": {
     "autoexecschedulegetapi": {
       "getname": "获取定时作业信息"
     },
     "autoexecscriptgetapi": {
       "getname": "查看脚本"
+    },
+    "autoexecscriptreviewapi": {
+      "getname": "审核脚本",
+      "input": {
+        "param": {
+          "desc": "通过，驳回"
+        }
+      }
+    },
+    "autoexecscriptsaveapi": {
+      "getname": "保存脚本"
     }
   },
   "nmaat": {
@@ -964,6 +1006,9 @@
       "getparamlist": {
         "array": "需要数组类型"
       }
+    },
+    "saveautoexectypeapi": {
+      "getname": "保存自动化工具分类"
     }
   },
   "nmcaa": {
@@ -1514,6 +1559,11 @@
       "getname": "搜索拓扑视图"
     }
   },
+  "nmcara": {
+    "accountprotocolsaveapi": {
+      "getname": "保存账号管理协议"
+    }
+  },
   "nmcarc": {
     "getresourceentityapi": {
       "getname": "获取资源视图配置信息"
@@ -1571,6 +1621,9 @@
         }
       }
     },
+    "exportdeployapppipelineapi": {
+      "getname": "导出应用流水线"
+    },
     "getdeployapppipelineapi": {
       "getname": "获取应用流水线",
       "input": {
@@ -1580,6 +1633,9 @@
           }
         }
       }
+    },
+    "importdeployapppipelineapi": {
+      "getname": "导入应用流水线"
     },
     "savedeployapppipelineapi": {
       "getname": "保存应用流水线"
@@ -2423,6 +2479,12 @@
     }
   },
   "nmtai": {
+    "exportapi": {
+      "getname": "通用导出接口"
+    },
+    "importapi": {
+      "getname": "通用导入接口"
+    },
     "integrationauditdetaildownloadapi": {
       "getname": "下载集成管理调用记录"
     },
@@ -2558,30 +2620,46 @@
     "appsystemidlist": "应用系统id列表",
     "autoexec": {
       "assignexecuser": "指定执行用户",
+      "catalog": "工具目录",
+      "catalogid": "工具目录ID",
       "combopbaseinfo": "组合工具基本信息",
       "combopdetailsinfo": "组合工具详细信息",
       "combopid": "组合工具ID",
+      "customtemplate": "自定义模板",
+      "customtemplateid": "自定义模版ID",
       "execmode": "执行方式",
       "executeconfig": "执行目标",
       "executeparam": "执行参数",
       "freeparam": "自由参数",
+      "globalparam": "全局参数",
       "groupdesc": "自动化平台",
       "groupname": "自动化",
       "inputparamlist": "输入参数列表",
+      "islib": "是否库文件",
       "jobid": "作业id",
       "jobinfo": "自动化作业信息",
+      "linelist": "脚本内容行数据列表",
       "name": "自动化模块",
       "outputparamlist": "输出参数列表",
       "passthroughenv": "返回参数",
       "phase": "作业剧本Name",
+      "profile": "预置参数集",
+      "risk": "操作级别",
+      "riskid": "操作级别ID",
       "riskname": "操作级别名称",
       "roundcount": "分批数量",
+      "scenario": "场景",
       "scenarioid": "场景id",
       "scenarioname": "场景名",
       "scheduleinfo": "自动化定时作业信息",
+      "script": "自定义工具",
       "scriptinfo": "脚本内容",
       "scriptparser": "脚本解析器",
-      "serviceinfo": "自动化服务目录信息"
+      "serviceinfo": "自动化服务目录信息",
+      "tool": "工具",
+      "type": "工具分类",
+      "typeid": "脚本分类ID",
+      "userlib": "依赖工具"
     },
     "change": {
       "name": "变更模块"
@@ -2624,6 +2702,8 @@
       "modulename": "模块简称",
       "name": "配置管理模块",
       "parentcientityid": "父配置项id",
+      "port": "协议端口",
+      "protocol": "协议",
       "protocolidlist": "协议id列表",
       "rel": "关系",
       "relidlist": "模型关系ID列表",
@@ -2656,6 +2736,7 @@
       "name": "仪表板模块"
     },
     "deploy": {
+      "apppipeline": "发布应用流水线",
       "apppipelineinfo": "应用流水线配置信息",
       "ciid": "持续集成配置id",
       "confidence": "信心",
