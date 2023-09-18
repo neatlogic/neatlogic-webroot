@@ -72,6 +72,7 @@
     "email": "mailbox",
     "emailnotify": "Email notification",
     "embed": "built-in",
+    "encoding": "coding",
     "enddate": "End date",
     "endtime": "End time",
     "enum": "enumeration",
@@ -101,6 +102,7 @@
     "hasparent": "Do you have a parent",
     "icon": "icon",
     "id": "id",
+    "importtargettype": "Import Target Type",
     "includelist": "Used to require echo parameters",
     "index": "subscript",
     "inittime": "Initialization time",
@@ -123,6 +125,7 @@
     "isoverride": "Overwrite or not",
     "isregister": "Register or not",
     "isrequired": "Is it mandatory",
+    "isreviewable": "Can approval be granted",
     "isshow": "Display or not",
     "isunique": "Is it unique",
     "iteration": "iteration",
@@ -163,6 +166,7 @@
     "phone": "Telephone number",
     "planstarttime": "Planned time",
     "prefix": "prefix",
+    "primarykey": "Primary key",
     "priority": "priority",
     "prioritycolor": "Priority Color",
     "priorityname": "Priority Name",
@@ -245,6 +249,7 @@
     "userinfolist": "User Information List",
     "userlist": "User List",
     "username": "user name",
+    "userselectionimportoption": "User selected dependent data for import",
     "usertype": "customer type",
     "useruuid": "User uuid",
     "useruuidlist": "User uuid list",
@@ -270,8 +275,14 @@
     }
   },
   "nfae": {
+    "autoexeccatalognotfoundexception": {
+      "autoexeccatalognotfoundexception": "Tool directory: {0} does not exist"
+    },
     "autoexecjobnotsupportmultiparentexception": {
       "autoexecjobnotsupportmultiparentexception": "Parent job {0} already exists, and currently does not support multi-level parent jobs"
+    },
+    "autoexecprofileisnotfoundexception": {
+      "autoexecprofileisnotfoundexception": "The preset parameter set {0} does not exist"
     }
   },
   "nfaec": {
@@ -622,6 +633,9 @@
   "nfdep": {
     "deploypipelinenotfoundedittargetexception": {
       "deploypipelinenotfoundedittargetexception": "The pipeline with id {0} does not exist"
+    },
+    "importdeploypipelineappnameinconsistencyexception": {
+      "importdeploypipelineappnameinconsistencyexception": "Import failed. The application name in the import package is inconsistent with the current application name. Importing the pipeline configuration of {0} application into {1} application is not supported"
     }
   },
   "nfdev": {
@@ -664,6 +678,18 @@
     }
   },
   "nfie": {
+    "exportnoauthexception": {
+      "exportnoauthexception": "No export permission"
+    },
+    "importexporthandlernotfoundexception": {
+      "importexporthandlernotfoundexception": "Import export processor: {0} cannot be found"
+    },
+    "importexporttypeinconsistencyexception": {
+      "importexporttypeinconsistencyexception": "The import type is inconsistent with the target type, and data of type {0} cannot be imported into type {1}"
+    },
+    "importnoauthexception": {
+      "importnoauthexception": "No import permission"
+    },
     "inspectdefinitionnotfoundedittargetexception": {
       "inspectdefinitionnotfoundedittargetexception": "Inspection definition: {0} does not exist"
     },
@@ -872,6 +898,9 @@
     }
   },
   "nmaac": {
+    "autoexeccatalogsaveapi": {
+      "getname": "Save Tool Catalog"
+    },
     "autoexeccombopbasicinfogetapi": {
       "getname": "Basic information of query combination tool"
     },
@@ -889,6 +918,9 @@
     },
     "listautoexeccomboptypeexecutableapi": {
       "getname": "Query the classification list of the combination tools that the current user can execute"
+    },
+    "savecustomtemplateapi": {
+      "getname": "Save Custom Template"
     }
   },
   "nmaaj": {
@@ -944,12 +976,28 @@
       "getname": "Callback update job status"
     }
   },
+  "nmaar": {
+    "autoexecrisksaveapi": {
+      "getname": "Save Operation Level"
+    }
+  },
   "nmaas": {
     "autoexecschedulegetapi": {
       "getname": "Obtain scheduled job information"
     },
     "autoexecscriptgetapi": {
       "getname": "View Script"
+    },
+    "autoexecscriptreviewapi": {
+      "getname": "Audit script",
+      "input": {
+        "param": {
+          "desc": "Pass, reject"
+        }
+      }
+    },
+    "autoexecscriptsaveapi": {
+      "getname": "Save Script"
     }
   },
   "nmaat": {
@@ -964,6 +1012,9 @@
       "getparamlist": {
         "array": "Array type required"
       }
+    },
+    "saveautoexectypeapi": {
+      "getname": "Save Automation Tool Classification"
     }
   },
   "nmcaa": {
@@ -1514,6 +1565,11 @@
       "getname": "Search Topology View"
     }
   },
+  "nmcara": {
+    "accountprotocolsaveapi": {
+      "getname": "Save Account Management Agreement"
+    }
+  },
   "nmcarc": {
     "getresourceentityapi": {
       "getname": "Obtain resource view configuration information"
@@ -1571,6 +1627,9 @@
         }
       }
     },
+    "exportdeployapppipelineapi": {
+      "getname": "Export application pipeline"
+    },
     "getdeployapppipelineapi": {
       "getname": "Obtain application pipeline",
       "input": {
@@ -1580,6 +1639,9 @@
           }
         }
       }
+    },
+    "importdeployapppipelineapi": {
+      "getname": "Import application pipeline"
     },
     "savedeployapppipelineapi": {
       "getname": "Save application pipeline"
@@ -2423,6 +2485,12 @@
     }
   },
   "nmtai": {
+    "exportapi": {
+      "getname": "Universal export interface"
+    },
+    "importapi": {
+      "getname": "Universal import interface"
+    },
     "integrationauditdetaildownloadapi": {
       "getname": "Download integrated management call records"
     },
@@ -2558,30 +2626,46 @@
     "appsystemidlist": "Application System ID List",
     "autoexec": {
       "assignexecuser": "Specify Execution User",
+      "catalog": "Tool Catalog",
+      "catalogid": "Tool Catalog ID",
       "combopbaseinfo": "Basic information of combination tools",
       "combopdetailsinfo": "Combination Tool Details",
       "combopid": "Combination tool ID",
+      "customtemplate": "Custom Template",
+      "customtemplateid": "Custom Template ID",
       "execmode": "Execution method",
       "executeconfig": "Execution Objectives",
       "executeparam": "Execution parameters",
       "freeparam": "Free parameter",
+      "globalparam": "Global parameters",
       "groupdesc": "Automation platform",
       "groupname": "Automation",
       "inputparamlist": "Input parameter list",
+      "islib": "Is it a library file",
       "jobid": "Job ID",
       "jobinfo": "Automated job information",
+      "linelist": "Script Content Line Data List",
       "name": "Autoexec",
       "outputparamlist": "Output parameter list",
       "passthroughenv": "Return parameters",
       "phase": "Assignment Script Name",
+      "profile": "Preset parameter set",
+      "risk": "Operation level",
+      "riskid": "Operation level ID",
       "riskname": "Operation level name",
       "roundcount": "Batch quantity",
+      "scenario": "scene",
       "scenarioid": "Scenario ID",
       "scenarioname": "Scene Name",
       "scheduleinfo": "Automated scheduled job information",
+      "script": "Custom Tools",
       "scriptinfo": "Script Content",
       "scriptparser": "Script Parser",
-      "serviceinfo": "Automation Service Catalog Information"
+      "serviceinfo": "Automation Service Catalog Information",
+      "tool": "tool",
+      "type": "Tool classification",
+      "typeid": "Script classification ID",
+      "userlib": "Dependency tools"
     },
     "change": {
       "name": "Change"
@@ -2624,6 +2708,8 @@
       "modulename": "Module abbreviation",
       "name": "CMDB",
       "parentcientityid": "Parent Configuration Item ID",
+      "port": "Protocol Port",
+      "protocol": "protocol",
       "protocolidlist": "Protocol ID List",
       "rel": "relationship",
       "relidlist": "Model Relationship ID List",
@@ -2656,6 +2742,7 @@
       "name": "Dashboard"
     },
     "deploy": {
+      "apppipeline": "Publishing application pipeline",
       "apppipelineinfo": "Application pipeline configuration information",
       "ciid": "Continuous Integration Configuration ID",
       "confidence": "confidence",
