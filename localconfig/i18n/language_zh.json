@@ -275,8 +275,14 @@
     }
   },
   "nfae": {
+    "autoexeccatalognotfoundexception": {
+      "autoexeccatalognotfoundexception": "工具目录：{0}不存在"
+    },
     "autoexecjobnotsupportmultiparentexception": {
       "autoexecjobnotsupportmultiparentexception": "父作业{0}已经存在父作业,暂时不支持多层父作业"
+    },
+    "autoexecprofileisnotfoundexception": {
+      "autoexecprofileisnotfoundexception": "预置参数集{0}不存在"
     }
   },
   "nfaec": {

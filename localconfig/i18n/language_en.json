@@ -275,8 +275,14 @@
     }
   },
   "nfae": {
+    "autoexeccatalognotfoundexception": {
+      "autoexeccatalognotfoundexception": "Tool directory: {0} does not exist"
+    },
     "autoexecjobnotsupportmultiparentexception": {
       "autoexecjobnotsupportmultiparentexception": "Parent job {0} already exists, and currently does not support multi-level parent jobs"
+    },
+    "autoexecprofileisnotfoundexception": {
+      "autoexecprofileisnotfoundexception": "The preset parameter set {0} does not exist"
     }
   },
   "nfaec": {
