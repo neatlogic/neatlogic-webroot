@@ -369,6 +369,12 @@
     "resourcecenterviewconfigexception": {
       "resourcecenterviewconfigexception": "视图{0}中声明字段：{1}，但在配置文件中没有找到定义"
     },
+    "resourcenotfoundexception": {
+      "resourcenotfoundexception": {
+        "id": "资源{0}不存在",
+        "ip": "通过ip:{0}、port:{1}、nodeName:{2}、nodeType:{3}查找资源不存在"
+      }
+    },
     "resourceviewfieldmappingexception": {
       "resourceviewfieldmappingexception_a": "资源视图{0}中主模型未设置",
       "resourceviewfieldmappingexception_b": "资源视图{0}中字段列表{1}未设置映射",
@@ -651,6 +657,11 @@
   "nfeec": {
     "eventsolutionnotfoundedittargetexception": {
       "eventsolutionnotfoundedittargetexception": "解决方案：{0}不存在"
+    }
+  },
+  "nfer": {
+    "runnernotfoundbytagentrunneridexception": {
+      "runnernotfoundbytagentrunneridexception": "未找到{0}对应的runner,请查看logs/tagentRegisterAndNetty.log,心跳异常"
     }
   },
   "nfes": {

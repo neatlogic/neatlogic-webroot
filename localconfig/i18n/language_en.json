@@ -369,6 +369,12 @@
     "resourcecenterviewconfigexception": {
       "resourcecenterviewconfigexception": "Field declared in view {0}: {1}, but definition not found in configuration file"
     },
+    "resourcenotfoundexception": {
+      "resourcenotfoundexception": {
+        "id": "Resource {0} does not exist",
+        "ip": "Find out if the resource does not exist through ip: {0}, port: {1}, nodeName: {2}, nodeType: {3}"
+      }
+    },
     "resourceviewfieldmappingexception": {
       "resourceviewfieldmappingexception_a": "The main model in resource view {0} is not set",
       "resourceviewfieldmappingexception_b": "Field list {1} in resource view {0} has no mapping set",
@@ -651,6 +657,11 @@
   "nfeec": {
     "eventsolutionnotfoundedittargetexception": {
       "eventsolutionnotfoundedittargetexception": "Solution: {0} does not exist"
+    }
+  },
+  "nfer": {
+    "runnernotfoundbytagentrunneridexception": {
+      "runnernotfoundbytagentrunneridexception": "Could not find the corresponding runner for {0}. Please check logs/tagentRegisterAndNetty.log for abnormal heartbeat"
     }
   },
   "nfes": {
