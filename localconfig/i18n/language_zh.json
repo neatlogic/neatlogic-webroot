@@ -2464,6 +2464,16 @@
     },
     "apiauditdetailgetapi": {
       "getname": "获取接口调用记录"
+    },
+    "apihelpexportapi": {
+      "getname": "导出接口帮助文档",
+      "input": {
+        "param": {
+          "desc": {
+            "funcid": "接口所属功能"
+          }
+        }
+      }
     }
   },
   "nmtad": {

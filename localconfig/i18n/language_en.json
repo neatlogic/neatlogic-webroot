@@ -2464,6 +2464,16 @@
     },
     "apiauditdetailgetapi": {
       "getname": "Obtain interface call records"
+    },
+    "apihelpexportapi": {
+      "getname": "Export Interface Help Document",
+      "input": {
+        "param": {
+          "desc": {
+            "funcid": "Function of the interface"
+          }
+        }
+      }
     }
   },
   "nmtad": {
