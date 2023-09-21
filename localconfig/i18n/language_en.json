@@ -975,6 +975,18 @@
         }
       }
     },
+    "createautoexecjobfromcomboppublicapi": {
+      "description": {
+        "desc": "Create a job for external calls (from the combination tool)"
+      },
+      "getname": "Create a job for external calls",
+      "input": {
+        "param": {
+          "assign": "Specify the execution user ID. If not specified, it defaults to the current authenticated user",
+          "combop": "Combination tool name"
+        }
+      }
+    },
     "downloadautoexecjoboutputfilebatchapi": {
       "getname": "Batch download of job output files"
     }

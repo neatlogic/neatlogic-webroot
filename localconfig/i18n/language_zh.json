@@ -975,6 +975,18 @@
         }
       }
     },
+    "createautoexecjobfromcomboppublicapi": {
+      "description": {
+        "desc": "创建作业供外部调用（来自组合工具）"
+      },
+      "getname": "创建作业供外部调用",
+      "input": {
+        "param": {
+          "assign": "指定执行用户id,如果没有指定则默认是当前认证用户",
+          "combop": "组合工具名"
+        }
+      }
+    },
     "downloadautoexecjoboutputfilebatchapi": {
       "getname": "批量下载作业输出文件"
     }
