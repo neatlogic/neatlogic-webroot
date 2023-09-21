@@ -966,7 +966,7 @@
             "invokeid": "来源id",
             "name": "作业名",
             "parentid": "父作业id",
-            "roundcount": "分组数",
+            "roundcount": "分组数,默认3",
             "scenarioname": "场景名, 如果入参也有scenarioId，则会以scenarioName为准",
             "source": "来源 itsm|combop   ITSM|组合工具发起的等",
             "triggertype": "触发方式",
