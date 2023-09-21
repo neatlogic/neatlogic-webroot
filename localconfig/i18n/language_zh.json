@@ -982,7 +982,7 @@
       "getname": "创建作业供外部调用",
       "input": {
         "param": {
-          "assign": "指定执行用户id,如果没有指定则默认是当前认证用户",
+          "assignuser": "指定执行用户uuid|userId，不合法则默认是当前认证用户",
           "combop": "组合工具名"
         }
       }
