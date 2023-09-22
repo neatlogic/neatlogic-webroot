@@ -654,6 +654,18 @@
       "confignotfoundexception": "nacos获取不到配置且本地config.properties获取失败,请确认nacos服务是否正常或config.properties文件是否存在,如果存在,文件权限是否正常"
     }
   },
+  "nfec": {
+    "changelogversioninvalidexception": {
+      "changelogversioninvalidexception": {
+        "a": "模块: {0} 版本:{1} 文件内容格式不合法"
+      }
+    },
+    "changelogversionnotfoundexception": {
+      "changelogversionnotfoundexception": {
+        "a": "模块: {0} 版本:{1} 不存在"
+      }
+    }
+  },
   "nfeec": {
     "eventsolutionnotfoundedittargetexception": {
       "eventsolutionnotfoundedittargetexception": "解决方案：{0}不存在"
@@ -2472,6 +2484,27 @@
           "desc": {
             "funcid": "接口所属功能"
           }
+        }
+      }
+    }
+  },
+  "nmtac": {
+    "getchangelogversionapi": {
+      "description": {
+        "desc": "查询变更版本日志列表接口"
+      },
+      "getname": "查询变更版本日志详情",
+      "output": {
+        "param": {
+          "version": "版本日志"
+        }
+      }
+    },
+    "searchchangelogversionapi": {
+      "getname": "查询变更版本日志列表",
+      "output": {
+        "param": {
+          "desc": "版本列表"
         }
       }
     }

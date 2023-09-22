@@ -654,6 +654,18 @@
       "confignotfoundexception": "NACOS cannot obtain the configuration and the local config.properties acquisition failed. Please confirm if the NACOS service is functioning properly or if the config.properties file exists, and if so, if the file permissions are normal"
     }
   },
+  "nfec": {
+    "changelogversioninvalidexception": {
+      "changelogversioninvalidexception": {
+        "a": "Module: {0} Version: {1} File content format is illegal"
+      }
+    },
+    "changelogversionnotfoundexception": {
+      "changelogversionnotfoundexception": {
+        "a": "Module: {0} Version: {1} does not exist"
+      }
+    }
+  },
   "nfeec": {
     "eventsolutionnotfoundedittargetexception": {
       "eventsolutionnotfoundedittargetexception": "Solution: {0} does not exist"
@@ -2472,6 +2484,27 @@
           "desc": {
             "funcid": "Function of the interface"
           }
+        }
+      }
+    }
+  },
+  "nmtac": {
+    "getchangelogversionapi": {
+      "description": {
+        "desc": "Interface for querying the change version log list"
+      },
+      "getname": "Query Change Version Log Details",
+      "output": {
+        "param": {
+          "version": "Version Log"
+        }
+      }
+    },
+    "searchchangelogversionapi": {
+      "getname": "Query Change Version Log List",
+      "output": {
+        "param": {
+          "desc": "Version List"
         }
       }
     }
