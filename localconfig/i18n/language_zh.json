@@ -5,6 +5,7 @@
     "actiontime": "操作时间",
     "actiontype": "操作类型",
     "actionuser": "操作人",
+    "activeversionid": "激活版本ID",
     "alertattr": "告警属性",
     "alertdetail": "告警详情",
     "alertlevel": "告警级别",
@@ -55,6 +56,7 @@
     "defaultvalue": "默认值列表",
     "defaultvaluelist": "用于回显的参数列表",
     "delaytime": "延迟时间",
+    "deletable": "是否可删除",
     "dependency": "依赖",
     "description": "描述",
     "displaymode": "显示模式",
@@ -62,6 +64,7 @@
     "double": "双精度浮点数",
     "dropdownlist": "下拉选择",
     "edit": "修改",
+    "editable": "是否可编辑",
     "editauthoritylist": "编辑权限列表",
     "editdate": "修改日期",
     "editmode": "编辑模式",
@@ -81,6 +84,7 @@
     "example": "范例",
     "excludeid": "排除id",
     "excludelist": "用于过滤回显参数",
+    "executable": "是否可执行",
     "executeauthoritylist": "执行权限列表",
     "expired": "过期",
     "expireddays": "超时天数",
@@ -156,6 +160,7 @@
     "number": "数字",
     "object": "任意对象",
     "oldvalue": "旧值",
+    "ownereditable": "是否可编辑维护人",
     "owneruuid": "维护人",
     "packagename": "包名",
     "pagecount": "总页数",
@@ -180,6 +185,8 @@
     "relname": "关系名称",
     "reltype": "关系类型",
     "request": "需求",
+    "reviewable": "是否可审核",
+    "reviewer": "审核人",
     "reviewerlist": "审批人列表",
     "rht": "右编码",
     "role": "角色",
@@ -191,6 +198,7 @@
     "source": "来源",
     "sourcelist": "来源列表",
     "sourcename": "来源中文名",
+    "specifyversionid": "指定版本ID",
     "startdate": "开始日期",
     "startloadcommercialmodule": "成功加载商业版模块 {0}",
     "startloadconfig": "开始从 {0} 加载配置...",
@@ -257,9 +265,12 @@
     "validcode": "注册验证码",
     "validtype": "验证方式",
     "value": "值",
+    "versioncount": "版本数量",
     "versionid": "版本id",
+    "versionlist": "版本列表",
     "versionname": "版本名称",
     "versionnum": "版本号",
+    "viewable": "是否可查看",
     "viewauthoritylist": "查看权限列表",
     "viewcount": "浏览量",
     "wechatnotify": "微信通知",
@@ -278,8 +289,40 @@
     "autoexeccatalognotfoundexception": {
       "autoexeccatalognotfoundexception": "工具目录：{0}不存在"
     },
+    "autoexeccombopoperationnotfoundexception": {
+      "autoexeccombopoperationnotfoundexception": "阶段[{0}] 工具[{1}]已被删除，请在组合工具中清理该工具并保存"
+    },
     "autoexecjobnotsupportmultiparentexception": {
       "autoexecjobnotsupportmultiparentexception": "父作业{0}已经存在父作业,暂时不支持多层父作业"
+    },
+    "autoexecparamcannotbeemptyexception": {
+      "autoexecparamcannotbeemptyexception": "阶段[{0}] 工具[{1}]的参数：{2}不能为空"
+    },
+    "autoexecparammappingargumentcountmismatchexception": {
+      "autoexecparammappingargumentcountmismatchexception": "阶段[{0}] 工具[{1}]的自由参数：{2}映射个数不匹配，设置数量为{3}"
+    },
+    "autoexecparammappingincorrectexception": {
+      "autoexecparammappingincorrectexception": "阶段[{0}] 工具[{1}]的参数：{2}映射不正确"
+    },
+    "autoexecparammappingnotmappedexception": {
+      "autoexecparammappingnotmappedexception": "阶段[{0}] 工具[{1}]的新增必填参数：{2}没有默认值"
+    },
+    "autoexecparammappingtargetnotfoundexception": {
+      "autoexecparammappingtargetnotfoundexception_a": "阶段[{0}] 工具[{1}]的参数：{2}映射目标{3}不存在",
+      "autoexecparammappingtargetnotfoundexception_b": "阶段[{0}]的执行用户映射作业参数{1}不存在",
+      "autoexecparammappingtargetnotfoundexception_c": "阶段组[{0}]的执行用户映射作业参数{1}不存在",
+      "autoexecparammappingtargetnotfoundexception_d": "执行目标的执行用户映射作业参数{0}不存在"
+    },
+    "autoexecparammappingtargettypemismatchexception": {
+      "autoexecparammappingtargettypemismatchexception": "阶段[{0}] 工具[{1}]的参数：{2}映射目标{3}类型不匹配"
+    },
+    "autoexecparamnotfoundexception": {
+      "autoexecparamnotfoundexception": "阶段[{0}] 工具[{1}]的参数：{2}不存在"
+    },
+    "autoexecparamvalueirregularexception": {
+      "autoexecparamvalueirregularexception_a": "阶段[{0}] 工具[{1}]的参数：{2}（{3}）的值：{4}不符合格式要求",
+      "autoexecparamvalueirregularexception_b": "{0}的参数：{1}（{2}）的值：{3}不符合格式要求",
+      "autoexecparamvalueirregularexception_c": "参数{0}（{1}）的值{2}不符合格式要求"
     },
     "autoexecprofileisnotfoundexception": {
       "autoexecprofileisnotfoundexception": "预置参数集{0}不存在"
@@ -935,6 +978,12 @@
     },
     "autoexeccombopexecutablelistapi": {
       "getname": "查询当前用户可执行的组合工具列表"
+    },
+    "autoexeccombopisactiveupdateapi": {
+      "getname": "启用/禁用组合工具"
+    },
+    "autoexeccombopversiongetapi": {
+      "getname": "查询组合工具版本详情"
     },
     "autoexeccombopversionsaveapi": {
       "getname": "保存组合工具版本信息"
@@ -2691,12 +2740,15 @@
   "term": {
     "appsystemidlist": "应用系统id列表",
     "autoexec": {
+      "allphasesarerunnerorsqlexecmode": "所有阶段都是Runner或SQL执行方式",
       "assignexecuser": "指定执行用户",
       "catalog": "工具目录",
       "catalogid": "工具目录ID",
       "combopbaseinfo": "组合工具基本信息",
       "combopdetailsinfo": "组合工具详细信息",
       "combopid": "组合工具ID",
+      "configexpired": "配置已失效",
+      "configexpiredreason": "配置失效原因",
       "customtemplate": "自定义模板",
       "customtemplateid": "自定义模版ID",
       "execmode": "执行方式",
@@ -2710,8 +2762,13 @@
       "islib": "是否库文件",
       "jobid": "作业id",
       "jobinfo": "自动化作业信息",
+      "jobparamlist": "作业参数列表",
       "linelist": "脚本内容行数据列表",
       "name": "自动化模块",
+      "needexecutenode": "执行页面是否需要设置执行目标",
+      "needexecuteuser": "执行页面是否需要设置执行用户",
+      "needprotocol": "执行页面是否需要设置连接协议",
+      "needroundcount": "执行页面是否需要设置分批数量",
       "outputparamlist": "输出参数列表",
       "passthroughenv": "返回参数",
       "phase": "作业剧本Name",
