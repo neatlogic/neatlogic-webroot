@@ -326,6 +326,9 @@
   },
   "nfb": {
     "moduleinitializer": {
+      "checkchangelog": {
+        "invalid": "版本日志:{0} ,changelog下文件夹名需按{1}格式命名"
+      },
       "getactivetenantlist": {
         "neatlogicdb": "neatlogic库连接不上,请核对nacos|config.properties的数据库账号密码配置后重启"
       },
@@ -2604,6 +2607,29 @@
   "nmtan": {
     "getnotifypolicydefaulttemplateapi": {
       "getname": "获取通知策略触发点默认模板"
+    }
+  },
+  "nmtar": {
+    "runnerregisterapi": {
+      "description": {
+        "desc": "runner 注册接口,直接由ip确定一个runner"
+      },
+      "getname": "注册runner",
+      "input": {
+        "param": {
+          "nettyport": "心跳端口",
+          "port": "命令端口"
+        }
+      }
+    },
+    "runnersaveapi": {
+      "getname": "保存runner",
+      "input": {
+        "param": {
+          "authlist": "runner外部认证信息",
+          "isauth": "是否认证"
+        }
+      }
     }
   },
   "nmtas": {

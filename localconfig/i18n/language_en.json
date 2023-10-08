@@ -326,6 +326,9 @@
   },
   "nfb": {
     "moduleinitializer": {
+      "checkchangelog": {
+        "invalid": "Version log: {0}, folder name under changelog needs to be named in {1} format"
+      },
       "getactivetenantlist": {
         "neatlogicdb": "Unable to connect to the nextlogic library. Check if the database account and password configuration for nacos | config.properties are correct and restart"
       },
@@ -2604,6 +2607,29 @@
   "nmtan": {
     "getnotifypolicydefaulttemplateapi": {
       "getname": "Obtain default template for notification policy trigger points"
+    }
+  },
+  "nmtar": {
+    "runnerregisterapi": {
+      "description": {
+        "desc": "Runner registration interface, directly determining a runner by IP"
+      },
+      "getname": "Register Runner",
+      "input": {
+        "param": {
+          "nettyport": "Heartbeat Port",
+          "port": "Command Port"
+        }
+      }
+    },
+    "runnersaveapi": {
+      "getname": "Save runner",
+      "input": {
+        "param": {
+          "authlist": "Runner external authentication information",
+          "isauth": "Is it certified"
+        }
+      }
     }
   },
   "nmtas": {
