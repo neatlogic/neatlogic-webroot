@@ -2669,8 +2669,24 @@
     }
   },
   "nmtau": {
-    "getusertokenapi": {
+    "getcurrentusertokenapi": {
       "getname": "Obtain the user\u0027s own token"
+    },
+    "getusertokenapi": {
+      "getname": "Obtain the user\u0027s token"
+    },
+    "resetcurrentusertokenapi": {
+      "getname": "Reset the user\u0027s own token",
+      "output": {
+        "param": {
+          "return": {
+            "desc": "New token"
+          }
+        }
+      }
+    },
+    "resetusertokenapi": {
+      "getname": "Reset user\u0027s token"
     },
     "userdeleteapi": {
       "getname": "Delete User Interface"
