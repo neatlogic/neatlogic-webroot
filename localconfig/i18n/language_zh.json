@@ -2554,6 +2554,11 @@
       }
     }
   },
+  "nmtaf": {
+    "downloadimageapi": {
+      "getname": "图片下载接口"
+    }
+  },
   "nmtai": {
     "exportapi": {
       "getname": "通用导出接口"

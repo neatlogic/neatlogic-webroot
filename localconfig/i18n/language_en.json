@@ -2554,6 +2554,11 @@
       }
     }
   },
+  "nmtaf": {
+    "downloadimageapi": {
+      "getname": "Image download interface"
+    }
+  },
   "nmtai": {
     "exportapi": {
       "getname": "Universal export interface"
