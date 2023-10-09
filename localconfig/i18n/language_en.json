@@ -5,6 +5,7 @@
     "actiontime": "Operation time",
     "actiontype": "Operation type",
     "actionuser": "Operator",
+    "activeversionid": "Activation version ID",
     "alertattr": "Alarm Properties",
     "alertdetail": "Alarm details",
     "alertlevel": "Alarm level",
@@ -55,6 +56,7 @@
     "defaultvalue": "Default Value List",
     "defaultvaluelist": "List of parameters for echo",
     "delaytime": "delay time ",
+    "deletable": "Can I delete it",
     "dependency": "rely on",
     "description": "describe",
     "displaymode": "display mode",
@@ -62,6 +64,7 @@
     "double": "Double-precision floating-point format",
     "dropdownlist": "Dropdown selection",
     "edit": "modify",
+    "editable": "Editable or not",
     "editauthoritylist": "Edit Permission List",
     "editdate": "modification date",
     "editmode": "Editing mode",
@@ -81,6 +84,7 @@
     "example": "example",
     "excludeid": "Exclude ID",
     "excludelist": "Used to filter echo parameters",
+    "executable": "Executable or not",
     "executeauthoritylist": "Execution permission list",
     "expired": "overdue",
     "expireddays": "Number of timeout days",
@@ -156,6 +160,7 @@
     "number": "number",
     "object": "Any object",
     "oldvalue": "Old value",
+    "ownereditable": "Can the maintainer be edited",
     "owneruuid": "Maintainer",
     "packagename": "Package Name",
     "pagecount": "page count",
@@ -180,6 +185,8 @@
     "relname": "Relationship Name",
     "reltype": "Relationship Type",
     "request": "demand",
+    "reviewable": "Is it auditable",
+    "reviewer": "Reviewed by",
     "reviewerlist": "List of approvers",
     "rht": "Right encoding",
     "role": "role",
@@ -191,6 +198,7 @@
     "source": "source",
     "sourcelist": "Source List",
     "sourcename": "Source Chinese Name",
+    "specifyversionid": "Specify version ID",
     "startdate": "Start date",
     "startloadcommercialmodule": "Success to loaded commercial module {0}",
     "startloadconfig": "Start to load config from {0}...",
@@ -257,9 +265,12 @@
     "validcode": "Registration verification code",
     "validtype": "Verification method",
     "value": "value",
+    "versioncount": "Number of versions",
     "versionid": "Version ID",
+    "versionlist": "List of versions",
     "versionname": "Version name",
     "versionnum": "Version number",
+    "viewable": "Can I view it",
     "viewauthoritylist": "View permission list",
     "viewcount": "View volume",
     "wechatnotify": "WeChat notification",
@@ -278,8 +289,40 @@
     "autoexeccatalognotfoundexception": {
       "autoexeccatalognotfoundexception": "Tool directory: {0} does not exist"
     },
+    "autoexeccombopoperationnotfoundexception": {
+      "autoexeccombopoperationnotfoundexception": "The stage [{0}] tool [{1}] has been deleted. Please clean up the tool in the combination tool and save it"
+    },
     "autoexecjobnotsupportmultiparentexception": {
       "autoexecjobnotsupportmultiparentexception": "Parent job {0} already exists, and currently does not support multi-level parent jobs"
+    },
+    "autoexecparamcannotbeemptyexception": {
+      "autoexecparamcannotbeemptyexception": "Parameter of stage [{0}] tool [{1}]: {2} cannot be empty"
+    },
+    "autoexecparammappingargumentcountmismatchexception": {
+      "autoexecparammappingargumentcountmismatchexception": "The free parameter of stage [{0}] tool [{1}]: {2} does not match the number of mappings, set the number to {3}"
+    },
+    "autoexecparammappingincorrectexception": {
+      "autoexecparammappingincorrectexception": "Parameter of stage [{0}] tool [{1}]: {2} mapping incorrect"
+    },
+    "autoexecparammappingnotmappedexception": {
+      "autoexecparammappingnotmappedexception": "New mandatory parameter for stage [{0}] tool [{1}]: {2} has no default value"
+    },
+    "autoexecparammappingtargetnotfoundexception": {
+      "autoexecparammappingtargetnotfoundexception_a": "Parameter of stage [{0}] tool [{1}]: {2} mapping target {3} does not exist",
+      "autoexecparammappingtargetnotfoundexception_b": "The execution user mapping job parameter {1} for stage [{0}] does not exist",
+      "autoexecparammappingtargetnotfoundexception_c": "The execution user mapping job parameter {1} for stage group [{0}] does not exist",
+      "autoexecparammappingtargetnotfoundexception_d": "The execution user mapping job parameter {0} for the execution target does not exist"
+    },
+    "autoexecparammappingtargettypemismatchexception": {
+      "autoexecparammappingtargettypemismatchexception": "Parameter of stage [{0}] tool [{1}]: {2} mapping target {3} type mismatch"
+    },
+    "autoexecparamnotfoundexception": {
+      "autoexecparamnotfoundexception": "Parameter of stage [{0}] tool [{1}]: {2} does not exist"
+    },
+    "autoexecparamvalueirregularexception": {
+      "autoexecparamvalueirregularexception_a": "The parameter of stage [{0}] tool [{1}]: {2} ({3}) value: {4} does not meet the format requirements",
+      "autoexecparamvalueirregularexception_b": "Parameter of {0}: Value of {1} ({2}): {3} does not meet the format requirements",
+      "autoexecparamvalueirregularexception_c": "The value {2} of parameter {0} ({1}) does not meet the formatting requirements"
     },
     "autoexecprofileisnotfoundexception": {
       "autoexecprofileisnotfoundexception": "The preset parameter set {0} does not exist"
@@ -938,6 +981,12 @@
     },
     "autoexeccombopexecutablelistapi": {
       "getname": "Query the list of combination tools that the current user can execute"
+    },
+    "autoexeccombopisactiveupdateapi": {
+      "getname": "Enable/disable combination tool"
+    },
+    "autoexeccombopversiongetapi": {
+      "getname": "Query the version details of the combination tool"
     },
     "autoexeccombopversionsaveapi": {
       "getname": "Save the version information of the combination tool"
@@ -2733,12 +2782,15 @@
   "term": {
     "appsystemidlist": "Application System ID List",
     "autoexec": {
+      "allphasesarerunnerorsqlexecmode": "All stages are Runner or SQL execution mode",
       "assignexecuser": "Specify Execution User",
       "catalog": "Tool Catalog",
       "catalogid": "Tool Catalog ID",
       "combopbaseinfo": "Basic information of combination tools",
       "combopdetailsinfo": "Combination Tool Details",
       "combopid": "Combination tool ID",
+      "configexpired": "Configuration has expired",
+      "configexpiredreason": "Reason for configuration failure",
       "customtemplate": "Custom Template",
       "customtemplateid": "Custom Template ID",
       "execmode": "Execution method",
@@ -2752,8 +2804,13 @@
       "islib": "Is it a library file",
       "jobid": "Job ID",
       "jobinfo": "Automated job information",
+      "jobparamlist": "Job parameter list",
       "linelist": "Script Content Line Data List",
       "name": "Autoexec",
+      "needexecutenode": "Do you need to set execution targets for the execution page",
+      "needexecuteuser": "Do you need to set the execution user for the execution page",
+      "needprotocol": "Do you need to set a connection protocol for the execution page",
+      "needroundcount": "Do you need to set the batch quantity for the execution page",
       "outputparamlist": "Output parameter list",
       "passthroughenv": "Return parameters",
       "phase": "Assignment Script Name",
