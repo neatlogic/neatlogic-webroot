@@ -100,6 +100,7 @@
     "grouplist": "Restrict interface return types",
     "hasmore": "Is there any more content that has not been read yet",
     "hasparent": "Do you have a parent",
+    "homeurl": "Application server address",
     "icon": "icon",
     "id": "id",
     "importtargettype": "Import Target Type",

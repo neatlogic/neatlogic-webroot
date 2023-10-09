@@ -100,6 +100,7 @@
     "grouplist": "限制接口返回类型",
     "hasmore": "是否有更多内容尚未读取",
     "hasparent": "是否拥有父级",
+    "homeurl": "应用服务器地址",
     "icon": "图标",
     "id": "id",
     "importtargettype": "导入目标类型",
