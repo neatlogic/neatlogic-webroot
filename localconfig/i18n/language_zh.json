@@ -2669,8 +2669,24 @@
     }
   },
   "nmtau": {
-    "getusertokenapi": {
+    "getcurrentusertokenapi": {
       "getname": "获取用户自己的令牌"
+    },
+    "getusertokenapi": {
+      "getname": "获取用户的令牌"
+    },
+    "resetcurrentusertokenapi": {
+      "getname": "重置用户自己的令牌",
+      "output": {
+        "param": {
+          "return": {
+            "desc": "新的令牌"
+          }
+        }
+      }
+    },
+    "resetusertokenapi": {
+      "getname": "重置用户的令牌"
     },
     "userdeleteapi": {
       "getname": "删除用户接口"
