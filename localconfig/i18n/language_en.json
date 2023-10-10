@@ -40,6 +40,8 @@
     "common": "public",
     "condition": "Condition configuration",
     "config": "allocation",
+    "configfilepath": "Configuration file path",
+    "configfilepathlist": "Configuration file path list",
     "configlist": "Configuration List",
     "content": "content",
     "count": "quantity",
@@ -98,6 +100,7 @@
     "fileparamname": "Attachment parameter name",
     "filepath": "File Path",
     "filetype": "Attachment Type",
+    "filter": "Filter conditions",
     "focususerlist": "List of followers",
     "focususeruuidlist": "List of followers\u0027 uuids",
     "group": "grouping",
@@ -168,6 +171,7 @@
     "pagesize": "page size",
     "parentid": "Parent ID",
     "password": "password",
+    "path": "path",
     "pc": "Computer side",
     "phone": "Telephone number",
     "planstarttime": "Planned time",
@@ -194,7 +198,10 @@
     "roleuuid": "Role uuid",
     "roleuuidlist": "Role uuid List",
     "rownum": "Data Entry",
+    "savemode": "Save Mode",
     "scoreinfo": "Rating information",
+    "serviceid": "Service ID",
+    "servicename": "service name",
     "sort": "sort",
     "source": "source",
     "sourcelist": "Source List",
@@ -676,6 +683,27 @@
     },
     "drscenesamedatacenterexception": {
       "drscenesamedatacenterexception": "The data center cannot be the same before and after migration"
+    },
+    "drservicedatacenteratleasttwoexception": {
+      "drservicedatacenteratleasttwoexception": "A service needs to be associated with at least 2 data centers"
+    },
+    "drservicedatacenterrepeatexception": {
+      "drservicedatacenterrepeatexception": "Services cannot be associated with the same data center repeatedly"
+    },
+    "drservicedependencyrelationshipalreadyloopedexception": {
+      "drservicedependencyrelationshipalreadyloopedexception": "The service dependency relationship has become a loop: {0}"
+    },
+    "drservicedependencyrelationshiprepeatexception": {
+      "drservicedependencyrelationshiprepeatexception": "Services cannot rely on the same service repeatedly"
+    },
+    "drservicenotfoundedittargetexception": {
+      "drservicenotfoundedittargetexception": "Disaster recovery service: {0} does not exist"
+    },
+    "drservicesceneatleastoneexception": {
+      "drservicesceneatleastoneexception": "A service requires at least one scenario"
+    },
+    "drservicescenerepeatexception": {
+      "drservicescenerepeatexception": "Services cannot be repeatedly associated with the same scenario"
     }
   },
   "nfdej": {
@@ -1656,6 +1684,12 @@
   "nmcara": {
     "accountprotocolsaveapi": {
       "getname": "Save Account Management Agreement"
+    },
+    "appenvlistapi": {
+      "getname": "Query the list of application module environments"
+    },
+    "listappmodulelistfortreeapi": {
+      "getname": "Query Resource Module List Tree"
     }
   },
   "nmcarc": {
@@ -1876,6 +1910,9 @@
   "nmdajb": {
     "getbatchdeployjobapi": {
       "getname": "Obtain individual batch job information"
+    },
+    "savebatchdeployjobapi": {
+      "getname": "Save Batch Publish Job"
     }
   },
   "nmdao": {
@@ -1913,11 +1950,29 @@
     }
   },
   "nmdas": {
+    "checkdrservicedependencyrelationshipapi": {
+      "getname": "Check if the dependency relationship between services is circular"
+    },
+    "deletedrserviceapi": {
+      "getname": "Delete disaster recovery service"
+    },
+    "deletedrservicedatacenterapi": {
+      "getname": "Delete data centers for disaster recovery services"
+    },
+    "deletedrservicedependencyrelationshipapi": {
+      "getname": "Delete dependent service relationships for disaster recovery services"
+    },
+    "deletedrservicesceneapi": {
+      "getname": "Scenario of deleting disaster recovery services"
+    },
     "deletesceneapi": {
       "description": {
         "desc": "Delete scene interface"
       },
       "getname": "Delete Scene"
+    },
+    "getdrserviceapi": {
+      "getname": "Obtain disaster recovery service information"
     },
     "getsceneapi": {
       "description": {
@@ -1925,11 +1980,29 @@
       },
       "getname": "Obtain scene information"
     },
+    "listdrserviceforselectapi": {
+      "getname": "Search for Disaster Recovery Service List (Dropdown Box)"
+    },
     "listsceneapi": {
       "description": {
         "desc": "Get scene list interface"
       },
       "getname": "Obtain scene list"
+    },
+    "savedrserviceapi": {
+      "getname": "Save disaster recovery services"
+    },
+    "savedrservicebaseinfoapi": {
+      "getname": "Save basic information of disaster recovery services"
+    },
+    "savedrservicedatacenterapi": {
+      "getname": "Data center for saving disaster recovery services"
+    },
+    "savedrservicedependencyrelationshipapi": {
+      "getname": "Save dependency service relationships for disaster recovery services"
+    },
+    "savedrservicesceneapi": {
+      "getname": "Scenario of saving disaster recovery services"
     },
     "savesceneapi": {
       "getname": "Save Scene",
@@ -1940,6 +2013,9 @@
           }
         }
       }
+    },
+    "searchdrserviceapi": {
+      "getname": "Search for Disaster Recovery Service List"
     }
   },
   "nmdav": {
@@ -2850,10 +2926,14 @@
       "name": "Change"
     },
     "cmdb": {
+      "abbrname": "for short",
       "addid": "ID, do not provide a representative to add",
       "allowedit": "Allow editing",
+      "appmoduleabbrname": "Application Module Abbreviation",
       "appmoduleid": "Application module ID",
       "appmoduleidlist": "Application module ID list",
+      "appmodulename": "Application Module Name",
+      "appsystemabbrname": "Application System Abbreviation",
       "appsystemid": "Application system ID",
       "appsystemname": "Application system name",
       "attr": "attribute",
@@ -2866,6 +2946,7 @@
       "ciid": "Model ID",
       "ciidlist": "Model ID List",
       "ciinfo": "Model Information",
+      "cilist": "Model List",
       "ciname": "Model Name",
       "ciuniquename": "Model Unique Identification",
       "envid": "Environment ID",
@@ -2875,8 +2956,10 @@
       "groupdesc": "Configuration Management Platform",
       "groupname": "CMDB",
       "importauditid": "Import Record ID",
+      "ip": "IP address",
       "isabstractci": "Is it an abstract model",
       "iscommit": "Submit or not",
+      "ishasenv": "Does it include the environment",
       "isprivateci": "Private model or not",
       "isshowinmenu": "Is it displayed in the menu",
       "issimpleattribute": "Is it a simple attribute",
@@ -2886,6 +2969,7 @@
       "moduleid": "Module ID",
       "modulename": "Module abbreviation",
       "name": "CMDB",
+      "nodelist": "Node List",
       "parentcientityid": "Parent Configuration Item ID",
       "port": "Protocol Port",
       "protocol": "protocol",
@@ -2893,6 +2977,8 @@
       "rel": "relationship",
       "relidlist": "Model Relationship ID List",
       "resourceentityinfo": "Resource View Information",
+      "resourceid": "Resource ID",
+      "resourcename": "Resource Name",
       "rootciid": "Root Model ID",
       "rootciname": "Root Model Name",
       "ruleid": "Rule ID",
@@ -2931,6 +3017,7 @@
       "groupdesc": "Standardized and fast continuous integration deployment platform",
       "groupname": "DevOps",
       "highestseverity": "Maximum Severity",
+      "lanelist": "Channel List",
       "name": "DevOps",
       "packageurl": "Package Details Address",
       "proxytourl": "Proxy address",
@@ -2945,13 +3032,34 @@
       "isstarttemplate": "Start template or not"
     },
     "dr": {
+      "customparamlist": "Custom Parameter List",
+      "datacenterid": "Disaster Recovery Data Center ID",
+      "datacenterlist": "List of data centers associated with services",
+      "datacentername": "Disaster recovery data center name",
+      "dependencyonmeservicelist": "Rely on my service list",
+      "dependencyonservicelist": "List of services I rely on",
+      "dependencyserviceid": "Dependent Service ID",
+      "dependencyservicename": "Dependent service name",
       "drapptype": {
         "getenumname": "Application Type"
       },
       "drapptypeappsystem": "Application system",
       "drapptypebasicservices": "Basic services",
       "drapptypenetwork": "Network",
-      "name": "Disaster recovery switching module"
+      "highavailabilityscenelist": "High availability scenario list",
+      "name": "Disaster recovery switching module",
+      "orgid": "Disaster recovery organization ID",
+      "publicapplicationidlist": "Public Service ID List",
+      "publicapplicationlist": "Public Service List",
+      "recoverypointobjective": "The duration of the most likely data loss",
+      "recoverytimeobjective": "The maximum time required from the occurrence of a disaster to the restoration of the entire system to normal",
+      "scenelist": "List of scenarios associated with services",
+      "sourcename": "The data center name of the scenario source",
+      "sourcesceneid": "Source Scenario ID",
+      "sourcescenename": "Source Scene Name",
+      "targetname": "The data center name of the scene target",
+      "targetsceneid": "Target Scene ID",
+      "targetscenename": "Target Scene Name"
     },
     "event": {
       "eventtypeid": "Saved Event Type ID",
