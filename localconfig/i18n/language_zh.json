@@ -198,6 +198,7 @@
     "roleuuid": "角色uuid",
     "roleuuidlist": "角色uuid列表",
     "rownum": "数据条目",
+    "savemode": "保存模式",
     "scoreinfo": "评分信息",
     "serviceid": "服务ID",
     "servicename": "服务名",
@@ -1901,6 +1902,9 @@
   "nmdajb": {
     "getbatchdeployjobapi": {
       "getname": "获取单个批量作业信息"
+    },
+    "savebatchdeployjobapi": {
+      "getname": "保存批量发布作业"
     }
   },
   "nmdao": {
@@ -3005,6 +3009,7 @@
       "groupdesc": "规范快捷的持续集成-部署平台",
       "groupname": "集成与发布",
       "highestseverity": "最高严重程度",
+      "lanelist": "通道列表",
       "name": "自动发布",
       "packageurl": "包详情地址",
       "proxytourl": "代理地址",

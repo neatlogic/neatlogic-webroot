@@ -198,6 +198,7 @@
     "roleuuid": "Role uuid",
     "roleuuidlist": "Role uuid List",
     "rownum": "Data Entry",
+    "savemode": "Save Mode",
     "scoreinfo": "Rating information",
     "serviceid": "Service ID",
     "servicename": "service name",
@@ -1901,6 +1902,9 @@
   "nmdajb": {
     "getbatchdeployjobapi": {
       "getname": "Obtain individual batch job information"
+    },
+    "savebatchdeployjobapi": {
+      "getname": "Save Batch Publish Job"
     }
   },
   "nmdao": {
@@ -3005,6 +3009,7 @@
       "groupdesc": "Standardized and fast continuous integration deployment platform",
       "groupname": "DevOps",
       "highestseverity": "Maximum Severity",
+      "lanelist": "Channel List",
       "name": "DevOps",
       "packageurl": "Package Details Address",
       "proxytourl": "Proxy address",
