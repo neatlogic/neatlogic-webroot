@@ -2011,6 +2011,9 @@
     }
   },
   "nmdav": {
+    "getdeployversioncommitdiffapi": {
+      "getname": "获取发布对应版本commit diff内容"
+    },
     "getdeployversioncvelistapi": {
       "getname": "获取版本CVE漏洞列表"
     },
@@ -2117,6 +2120,9 @@
   "nmiar": {
     "inspectschedulesearchapi": {
       "getname": "查询巡检定时任务列表"
+    },
+    "listinspectappenvapi": {
+      "getname": "获取发起应用巡检的环境列表"
     }
   },
   "nmkac": {
@@ -2233,6 +2239,21 @@
     }
   },
   "nmpap": {
+    "batchabortprocesstaskapi": {
+      "getname": "批量取消工单"
+    },
+    "batchdeleteprocesstaskapi": {
+      "getname": "批量删除工单"
+    },
+    "batchhideprocesstaskapi": {
+      "getname": "批量隐藏工单"
+    },
+    "batchpauseprocesstaskapi": {
+      "getname": "批量暂停工单"
+    },
+    "batchurgeprocesstaskapi": {
+      "getname": "批量催办工单"
+    },
     "processgetapi": {
       "getname": "获取单个流程图数据接口"
     },
@@ -3128,6 +3149,7 @@
       "processtaskformattributedata": "工单表单属性值",
       "processtaskformconfig": "工单表单信息",
       "processtaskid": "工单id",
+      "processtaskidlist": "工单Id列表",
       "processtaskinfo": "工单信息",
       "processtaskslalist": "sla列表",
       "processtaskstepid": "工单步骤id",
