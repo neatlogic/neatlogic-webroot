@@ -2019,6 +2019,9 @@
     }
   },
   "nmdav": {
+    "getdeployversioncommitdiffapi": {
+      "getname": "Obtain and publish the corresponding version commit diff content"
+    },
     "getdeployversioncvelistapi": {
       "getname": "Obtain version CVE vulnerability list"
     },
@@ -2125,6 +2128,9 @@
   "nmiar": {
     "inspectschedulesearchapi": {
       "getname": "Query the list of scheduled inspection tasks"
+    },
+    "listinspectappenvapi": {
+      "getname": "Obtain a list of environments that initiate application patrols"
     }
   },
   "nmkac": {
@@ -2241,6 +2247,21 @@
     }
   },
   "nmpap": {
+    "batchabortprocesstaskapi": {
+      "getname": "Batch cancellation of work orders"
+    },
+    "batchdeleteprocesstaskapi": {
+      "getname": "Batch delete work orders"
+    },
+    "batchhideprocesstaskapi": {
+      "getname": "Batch Hide Work Orders"
+    },
+    "batchpauseprocesstaskapi": {
+      "getname": "Batch Suspend Work Orders"
+    },
+    "batchurgeprocesstaskapi": {
+      "getname": "Batch reminder work orders"
+    },
     "processgetapi": {
       "getname": "Obtain a single flowchart data interface"
     },
@@ -3139,6 +3160,7 @@
       "processtaskformattributedata": "Work Order Form Attribute Values",
       "processtaskformconfig": "Work Order Form Information",
       "processtaskid": "Work Order ID",
+      "processtaskidlist": "Work Order Id List",
       "processtaskinfo": "Work Order Information",
       "processtaskslalist": "SLA List",
       "processtaskstepid": "Work Order Step ID",
