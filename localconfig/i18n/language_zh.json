@@ -1735,7 +1735,10 @@
     }
   },
   "nmcps": {
-    "cmdbprocessstephandlertype": "CMDB同步"
+    "cmdbprocessstephandlertype": {
+      "cientitysync": "配置项同步",
+      "cmdbsync": "CMDB同步"
+    }
   },
   "nmda": {
     "exportdashboardapi": {

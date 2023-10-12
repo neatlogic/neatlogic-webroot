@@ -1735,7 +1735,10 @@
     }
   },
   "nmcps": {
-    "cmdbprocessstephandlertype": "CMDB synchronization"
+    "cmdbprocessstephandlertype": {
+      "cientitysync": "Configuration item synchronization",
+      "cmdbsync": "CMDB synchronization"
+    }
   },
   "nmda": {
     "exportdashboardapi": {
