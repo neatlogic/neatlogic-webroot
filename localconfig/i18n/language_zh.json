@@ -199,6 +199,7 @@
     "roleuuidlist": "角色uuid列表",
     "rownum": "数据条目",
     "savemode": "保存模式",
+    "schedule": "定时任务",
     "scoreinfo": "评分信息",
     "serviceid": "服务ID",
     "servicename": "服务名",
@@ -2759,6 +2760,9 @@
   "nmtan": {
     "getnotifypolicydefaulttemplateapi": {
       "getname": "获取通知策略触发点默认模板"
+    },
+    "notifypolicyhandlerlistapi": {
+      "getname": "通知策略分类列表"
     }
   },
   "nmtar": {

@@ -199,6 +199,7 @@
     "roleuuidlist": "Role uuid List",
     "rownum": "Data Entry",
     "savemode": "Save Mode",
+    "schedule": "Scheduled Tasks",
     "scoreinfo": "Rating information",
     "serviceid": "Service ID",
     "servicename": "service name",
@@ -2759,6 +2760,9 @@
   "nmtan": {
     "getnotifypolicydefaulttemplateapi": {
       "getname": "Obtain default template for notification policy trigger points"
+    },
+    "notifypolicyhandlerlistapi": {
+      "getname": "Notification Policy Classification List"
     }
   },
   "nmtar": {
