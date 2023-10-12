@@ -1734,6 +1734,9 @@
       "getname": "查询事务"
     }
   },
+  "nmcps": {
+    "cmdbprocessstephandlertype": "CMDB同步"
+  },
   "nmda": {
     "exportdashboardapi": {
       "getname": "导出仪表板"

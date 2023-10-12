@@ -1734,6 +1734,9 @@
       "getname": "inquiry transaction"
     }
   },
+  "nmcps": {
+    "cmdbprocessstephandlertype": "CMDB synchronization"
+  },
   "nmda": {
     "exportdashboardapi": {
       "getname": "Export Dashboard"
