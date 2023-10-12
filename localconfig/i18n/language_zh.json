@@ -1734,6 +1734,12 @@
       "getname": "查询事务"
     }
   },
+  "nmcps": {
+    "cmdbprocessstephandlertype": {
+      "cientitysync": "配置项同步",
+      "cmdbsync": "CMDB同步"
+    }
+  },
   "nmda": {
     "exportdashboardapi": {
       "getname": "导出仪表板"
