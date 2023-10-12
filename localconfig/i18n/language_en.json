@@ -696,6 +696,9 @@
     "drservicedependencyrelationshiprepeatexception": {
       "drservicedependencyrelationshiprepeatexception": "Services cannot rely on the same service repeatedly"
     },
+    "drservicenameisexistsexception": {
+      "drservicenameisexistsexception": "Service name: {0} already exists"
+    },
     "drservicenotfoundedittargetexception": {
       "drservicenotfoundedittargetexception": "Disaster recovery service: {0} does not exist"
     },
