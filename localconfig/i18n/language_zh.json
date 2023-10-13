@@ -199,6 +199,7 @@
     "roleuuidlist": "角色uuid列表",
     "rownum": "数据条目",
     "savemode": "保存模式",
+    "schedule": "定时任务",
     "scoreinfo": "评分信息",
     "serviceid": "服务ID",
     "servicename": "服务名",
@@ -695,6 +696,9 @@
     },
     "drservicedependencyrelationshiprepeatexception": {
       "drservicedependencyrelationshiprepeatexception": "服务不能重复依赖同一个服务"
+    },
+    "drservicenameisexistsexception": {
+      "drservicenameisexistsexception": "服务名称：{0}已存在"
     },
     "drservicenotfoundedittargetexception": {
       "drservicenotfoundedittargetexception": "容灾服务：{0}不存在"
@@ -1728,6 +1732,12 @@
     },
     "searchtransactionapi": {
       "getname": "查询事务"
+    }
+  },
+  "nmcps": {
+    "cmdbprocessstephandlertype": {
+      "cientitysync": "配置项同步",
+      "cmdbsync": "CMDB同步"
     }
   },
   "nmda": {
@@ -2767,6 +2777,9 @@
   "nmtan": {
     "getnotifypolicydefaulttemplateapi": {
       "getname": "获取通知策略触发点默认模板"
+    },
+    "notifypolicyhandlerlistapi": {
+      "getname": "通知策略分类列表"
     }
   },
   "nmtar": {
