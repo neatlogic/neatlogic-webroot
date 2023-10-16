@@ -2900,11 +2900,6 @@
       }
     }
   },
-  "nmtsp": {
-    "syncldapuserschedule": {
-      "getname": "同步LDAP的用户信息"
-    }
-  },
   "ocommn": {
     "isneedpage": "是否需要分页"
   },

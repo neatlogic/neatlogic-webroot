@@ -2900,11 +2900,6 @@
       }
     }
   },
-  "nmtsp": {
-    "syncldapuserschedule": {
-      "getname": "Synchronize user information for LDAP"
-    }
-  },
   "ocommn": {
     "isneedpage": "Do you need pagination"
   },
