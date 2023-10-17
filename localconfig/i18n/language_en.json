@@ -1761,6 +1761,14 @@
     },
     "searchdashboardapi": {
       "getname": "Query Dashboard"
+    },
+    "searchtemplateapi": {
+      "getname": "Query Template",
+      "input": {
+        "param": {
+          "desc": "Parent template id"
+        }
+      }
     }
   },
   "nmdaa": {
@@ -3074,6 +3082,9 @@
       "vulnerabilityid": "Vulnerability ID",
       "vulnerabilityids": "Vulnerability ID",
       "vulnerabilityurl": "Vulnerability Details Page Address"
+    },
+    "diagram": {
+      "isstarttemplate": "Start template or not"
     },
     "dr": {
       "customparamlist": "Custom Parameter List",
