@@ -55,6 +55,7 @@
     "currentpage": "当前页",
     "customattribute": "自定义属性",
     "datatype": "数据类型",
+    "datasource": "数据库数据源",
     "date": "日期",
     "datetime": "日期时间",
     "defaultvalue": "默认值列表",
@@ -84,6 +85,7 @@
     "endtime": "结束时间",
     "enum": "枚举",
     "errorinfo": "错误信息",
+    "errormsg": "异常信息",
     "event": "事件",
     "example": "范例",
     "excludeid": "排除id",
@@ -156,6 +158,11 @@
     "menu": "菜单",
     "messagenotify": "消息通知",
     "mobile": "手机端",
+    "module": {
+      "group": "模块分组",
+      "groupname": "模块分组名称",
+      "name": "模块名称"
+    },
     "modulegroup": "模块组",
     "mustinput": "必填",
     "name": "名称",
@@ -230,6 +237,7 @@
     "statusuniquename": "状态唯一标识",
     "string": "字符串",
     "successload": "执行完毕",
+    "superadmin": "超级管理员",
     "tablelist": "表格列表",
     "tag": "标签",
     "tagid": "标签id",
@@ -243,6 +251,7 @@
     "tel": "手机号",
     "templateid": "模板id",
     "templatename": "模板名称",
+    "tenantname": "租户名称",
     "tenantuuid": "租户uuid",
     "testcase": "测试用例",
     "testenv": "测试环境",
@@ -457,6 +466,28 @@
           "purchaser": "客户名称"
         }
       }
+    },
+    "tenantauditvo": {
+      "error": "异常内容",
+      "errorhash": "异常内容hash",
+      "result": "日志内容",
+      "resulthash": "日志内容hash",
+      "sqltype": "版本序号",
+      "timecost": "耗时（毫秒）"
+    },
+    "tenantmodulevo": {
+      "ddlstatus": "ddl执行状态,1:成功 0:失败",
+      "dmlstatus": "dml执行状态,1:成功 0:失败"
+    },
+    "tenantvo": {
+      "authmongodb": "认证 mongodb",
+      "expiredate": "有效期限",
+      "islocaldb": "是否本地数据库",
+      "modulegrouplist": "激活模块分组",
+      "modulelist": "激活模块",
+      "mongodb": "新 mongodb",
+      "superadmin": "超级管理员 租户创建时使用",
+      "visittime": "访问时间"
     }
   },
   "nfda": {
@@ -732,6 +763,13 @@
   "nfdev": {
     "deployversionnotfoundedittargetexception": {
       "deployversionnotfoundedittargetexception": "发布版本：{0}不存在"
+    }
+  },
+  "nfdt": {
+    "status": {
+      "building": "构建中",
+      "built": "已完成",
+      "error": "异常"
     }
   },
   "nfe": {
@@ -2210,6 +2248,30 @@
     }
   },
   "nmmat": {
+    "tenantauditgetapi": {
+      "description": {
+        "desc": "租户创建日志获取接口"
+      },
+      "input": {
+        "groupid": "分组id"
+      },
+      "output": {
+        "param": {
+          "audit": "租户审计信息"
+        }
+      }
+    },
+    "tenantgetapi": {
+      "getname": "租户信息获取接口",
+      "output": {
+        "param": {
+          "desc": "租户信息"
+        }
+      }
+    },
+    "tenantsaveapi": {
+      "getname": "租户保存接口"
+    },
     "userroleteamsearchapi": {
       "getname": "用户角色及组织架构查询接口"
     }
@@ -2662,6 +2724,8 @@
       "getname": "查询变更版本日志详情",
       "output": {
         "param": {
+          "neatlogic": "主库",
+          "neatlogictenant": "租户库",
           "version": "版本日志"
         }
       }
@@ -2806,12 +2870,6 @@
   "nmtas": {
     "getserverlistapi": {
       "getname": "获取服务器信息列表"
-    },
-    "jobclassgetapi": {
-      "getname": "获取定时作业组件信息"
-    },
-    "jobgetapi": {
-      "getname": "获取公共定时作业信息"
     },
     "saveserverapi": {
       "getname": "保存服务器信息"
