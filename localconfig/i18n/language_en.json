@@ -31,6 +31,7 @@
     "catalogid": "Directory ID",
     "catalogname": "Directory Name",
     "children": "subset",
+    "classname": "Full class name",
     "cnname": "Chinese name",
     "collectcount": "Collection volume",
     "collector": "Collector",
@@ -53,6 +54,7 @@
     "createusername": "Creator Name",
     "currentpage": "Current Page",
     "customattribute": "Custom Properties",
+    "datatype": "data type",
     "date": "date",
     "datetime": "Date Time",
     "defaultvalue": "Default Value List",
@@ -107,6 +109,7 @@
     "grouplist": "Restrict interface return types",
     "hasmore": "Is there any more content that has not been read yet",
     "hasparent": "Do you have a parent",
+    "help": "help",
     "homeurl": "Application server address",
     "icon": "icon",
     "id": "id",
@@ -137,6 +140,7 @@
     "isshow": "Display or not",
     "isunique": "Is it unique",
     "iteration": "iteration",
+    "jobuuid": "Timed homework UUID",
     "jsonarray": "JSON array",
     "jsonobject": "JSON object",
     "key": "key",
@@ -200,6 +204,8 @@
     "rownum": "Data Entry",
     "savemode": "Save Mode",
     "schedule": "Scheduled Tasks",
+    "schedulejobclassinfo": "Timed Job Component Information",
+    "schedulejobinfo": "Scheduled job information",
     "scoreinfo": "Rating information",
     "serviceid": "Service ID",
     "servicename": "service name",
@@ -2808,6 +2814,12 @@
   "nmtas": {
     "getserverlistapi": {
       "getname": "Obtain a list of server information"
+    },
+    "jobclassgetapi": {
+      "getname": "Obtain timed job component information"
+    },
+    "jobgetapi": {
+      "getname": "Obtain public scheduled job information"
     },
     "saveserverapi": {
       "getname": "Save server information"
