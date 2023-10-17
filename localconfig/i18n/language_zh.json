@@ -31,6 +31,7 @@
     "catalogid": "目录id",
     "catalogname": "目录名称",
     "children": "子集合",
+    "classname": "全类名",
     "cnname": "中文名称",
     "collectcount": "收藏量",
     "collector": "收藏人",
@@ -53,6 +54,7 @@
     "createusername": "创建人名字",
     "currentpage": "当前页",
     "customattribute": "自定义属性",
+    "datatype": "数据类型",
     "date": "日期",
     "datetime": "日期时间",
     "defaultvalue": "默认值列表",
@@ -107,6 +109,7 @@
     "grouplist": "限制接口返回类型",
     "hasmore": "是否有更多内容尚未读取",
     "hasparent": "是否拥有父级",
+    "help": "帮助",
     "homeurl": "应用服务器地址",
     "icon": "图标",
     "id": "id",
@@ -137,6 +140,7 @@
     "isshow": "是否显示",
     "isunique": "是否唯一",
     "iteration": "迭代",
+    "jobuuid": "定时作业UUID",
     "jsonarray": "json数组",
     "jsonobject": "json对象",
     "key": "键",
@@ -200,6 +204,8 @@
     "rownum": "数据条目",
     "savemode": "保存模式",
     "schedule": "定时任务",
+    "schedulejobclassinfo": "定时作业组件信息",
+    "schedulejobinfo": "定时作业信息",
     "scoreinfo": "评分信息",
     "serviceid": "服务ID",
     "servicename": "服务名",
@@ -2800,6 +2806,12 @@
   "nmtas": {
     "getserverlistapi": {
       "getname": "获取服务器信息列表"
+    },
+    "jobclassgetapi": {
+      "getname": "获取定时作业组件信息"
+    },
+    "jobgetapi": {
+      "getname": "获取公共定时作业信息"
     },
     "saveserverapi": {
       "getname": "保存服务器信息"
