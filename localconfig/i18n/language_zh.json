@@ -3075,7 +3075,8 @@
       "vulnerabilityurl": "漏洞详情页地址"
     },
     "diagram": {
-      "isstarttemplate": "是否开始模板"
+      "isstarttemplate": "是否开始模板",
+      "name": "设计图"
     },
     "dr": {
       "customparamlist": "自定义参数列表",
