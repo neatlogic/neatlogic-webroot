@@ -3084,7 +3084,8 @@
       "vulnerabilityurl": "Vulnerability Details Page Address"
     },
     "diagram": {
-      "isstarttemplate": "Start template or not"
+      "isstarttemplate": "Start template or not",
+      "name": "Design drawings"
     },
     "dr": {
       "customparamlist": "Custom Parameter List",
