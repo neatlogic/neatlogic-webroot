@@ -1740,6 +1740,11 @@
       "getname": "inquiry transaction"
     }
   },
+  "nmcdaw": {
+    "savewidgetapi": {
+      "getname": "Saving Elements"
+    }
+  },
   "nmcps": {
     "cmdbprocessstephandlertype": {
       "cientitysync": "Configuration item synchronization",

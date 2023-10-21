@@ -1740,6 +1740,11 @@
       "getname": "查询事务"
     }
   },
+  "nmcdaw": {
+    "savewidgetapi": {
+      "getname": "保存图元"
+    }
+  },
   "nmcps": {
     "cmdbprocessstephandlertype": {
       "cientitysync": "配置项同步",
