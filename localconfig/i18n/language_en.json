@@ -1744,6 +1744,9 @@
   "nmcdaw": {
     "savewidgetapi": {
       "getname": "Saving Elements"
+    },
+    "togglewidgetactiveapi": {
+      "getname": "Activating or disabling elements"
     }
   },
   "nmcps": {

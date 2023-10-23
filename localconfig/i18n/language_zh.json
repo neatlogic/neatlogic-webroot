@@ -1744,6 +1744,9 @@
   "nmcdaw": {
     "savewidgetapi": {
       "getname": "保存图元"
+    },
+    "togglewidgetactiveapi": {
+      "getname": "激活或禁用图元"
     }
   },
   "nmcps": {
