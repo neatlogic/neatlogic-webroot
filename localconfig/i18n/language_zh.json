@@ -172,6 +172,7 @@
     "owneruuid": "维护人",
     "packagename": "包名",
     "pagecount": "总页数",
+    "pageinfo": "分页数据",
     "pagesize": "每页数据条目",
     "parentid": "父id",
     "password": "密码",
@@ -2883,6 +2884,9 @@
     },
     "usersaveapi": {
       "getname": "保存用户接口"
+    },
+    "usersearchapi": {
+      "getname": "查询用户"
     },
     "usersearchforselectapi": {
       "getname": "查询用户_下拉",

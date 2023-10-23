@@ -172,6 +172,7 @@
     "owneruuid": "Maintainer",
     "packagename": "Package Name",
     "pagecount": "page count",
+    "pageinfo": "Paging data",
     "pagesize": "page size",
     "parentid": "Parent ID",
     "password": "password",
@@ -2883,6 +2884,9 @@
     },
     "usersaveapi": {
       "getname": "Save User Interface"
+    },
+    "usersearchapi": {
+      "getname": "Query Users"
     },
     "usersearchforselectapi": {
       "getname": "Query Users_ drop-down ",
