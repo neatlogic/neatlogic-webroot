@@ -1727,10 +1727,7 @@
       "getname": "Obtain Configuration Item Topology",
       "input": {
         "param": {
-          "desc": {
-            "disablerellist": "Do not display relationship id",
-            "level": "Automatically expand the number of relationship layers, default to 1"
-          }
+          "desc": "layout"
         }
       }
     },
@@ -1742,11 +1739,29 @@
     }
   },
   "nmcdaw": {
+    "getwidgetapi": {
+      "getname": "Get Elements"
+    },
+    "listtemplatewidgetapi": {
+      "getname": "Obtain template elements"
+    },
     "savewidgetapi": {
       "getname": "Saving Elements"
     },
     "togglewidgetactiveapi": {
       "getname": "Activating or disabling elements"
+    }
+  },
+  "nmcdd": {
+    "templatewidgetvo": {
+      "entityfield": {
+        "name": "Component ID"
+      }
+    },
+    "widgetvo": {
+      "entityfield": {
+        "name": "shape"
+      }
     }
   },
   "nmcps": {
@@ -3016,6 +3031,7 @@
       "importauditid": "Import Record ID",
       "ip": "IP address",
       "isabstractci": "Is it an abstract model",
+      "isbackbone": "Show only backbone",
       "iscommit": "Submit or not",
       "ishasenv": "Does it include the environment",
       "isprivateci": "Private model or not",

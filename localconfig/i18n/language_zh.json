@@ -1727,10 +1727,7 @@
       "getname": "获取配置项拓扑",
       "input": {
         "param": {
-          "desc": {
-            "disablerellist": "不显示关系id",
-            "level": "自动展开关系层数，默认是1"
-          }
+          "desc": "布局"
         }
       }
     },
@@ -1742,11 +1739,29 @@
     }
   },
   "nmcdaw": {
+    "getwidgetapi": {
+      "getname": "获取图元"
+    },
+    "listtemplatewidgetapi": {
+      "getname": "获取模板图元"
+    },
     "savewidgetapi": {
       "getname": "保存图元"
     },
     "togglewidgetactiveapi": {
       "getname": "激活或禁用图元"
+    }
+  },
+  "nmcdd": {
+    "templatewidgetvo": {
+      "entityfield": {
+        "name": "组件id"
+      }
+    },
+    "widgetvo": {
+      "entityfield": {
+        "name": "形状"
+      }
     }
   },
   "nmcps": {
@@ -3016,6 +3031,7 @@
       "importauditid": "导入记录ID",
       "ip": "ip地址",
       "isabstractci": "是否抽象模型",
+      "isbackbone": "只显示主干",
       "iscommit": "是否提交",
       "ishasenv": "是否包含环境",
       "isprivateci": "是否私有模型",
