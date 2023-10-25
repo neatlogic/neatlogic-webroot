@@ -179,6 +179,7 @@
     "owneruuid": "维护人",
     "packagename": "包名",
     "pagecount": "总页数",
+    "pageinfo": "分页数据",
     "pagesize": "每页数据条目",
     "parentid": "父id",
     "password": "密码",
@@ -1764,10 +1765,7 @@
       "getname": "获取配置项拓扑",
       "input": {
         "param": {
-          "desc": {
-            "disablerellist": "不显示关系id",
-            "level": "自动展开关系层数，默认是1"
-          }
+          "desc": "布局"
         }
       }
     },
@@ -1776,6 +1774,32 @@
     },
     "searchtransactionapi": {
       "getname": "查询事务"
+    }
+  },
+  "nmcdaw": {
+    "getwidgetapi": {
+      "getname": "获取图元"
+    },
+    "listtemplatewidgetapi": {
+      "getname": "获取模板图元"
+    },
+    "savewidgetapi": {
+      "getname": "保存图元"
+    },
+    "togglewidgetactiveapi": {
+      "getname": "激活或禁用图元"
+    }
+  },
+  "nmcdd": {
+    "templatewidgetvo": {
+      "entityfield": {
+        "name": "组件id"
+      }
+    },
+    "widgetvo": {
+      "entityfield": {
+        "name": "形状"
+      }
     }
   },
   "nmcps": {
@@ -2937,6 +2961,9 @@
     "usersaveapi": {
       "getname": "保存用户接口"
     },
+    "usersearchapi": {
+      "getname": "查询用户"
+    },
     "usersearchforselectapi": {
       "getname": "查询用户_下拉",
       "input": {
@@ -3062,6 +3089,7 @@
       "importauditid": "导入记录ID",
       "ip": "ip地址",
       "isabstractci": "是否抽象模型",
+      "isbackbone": "只显示主干",
       "iscommit": "是否提交",
       "ishasenv": "是否包含环境",
       "isprivateci": "是否私有模型",
