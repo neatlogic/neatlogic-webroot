@@ -936,6 +936,9 @@
     "apptype": {
       "getenumname": "Project Object Type"
     },
+    "apptypeisemptyexception": {
+      "apptypeisemptyexception": "At least one application needs to be included in the project template"
+    },
     "dashboardnotfoundexception": {
       "dashboardnotfoundexception": "Dashboard {0} does not exist"
     },
