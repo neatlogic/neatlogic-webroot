@@ -974,6 +974,9 @@
     "apptype": {
       "getenumname": "项目对象类型"
     },
+    "apptypeisemptyexception": {
+      "apptypeisemptyexception": "项目模板中至少需要包含一个应用"
+    },
     "dashboardnotfoundexception": {
       "dashboardnotfoundexception": "仪表板 {0} 不存在"
     },
