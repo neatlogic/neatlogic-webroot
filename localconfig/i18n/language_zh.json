@@ -54,8 +54,8 @@
     "createusername": "创建人名字",
     "currentpage": "当前页",
     "customattribute": "自定义属性",
-    "datasource": "数据库数据源",
     "datatype": "数据类型",
+    "datasource": "数据库数据源",
     "date": "日期",
     "datetime": "日期时间",
     "defaultvalue": "默认值列表",
@@ -1781,6 +1781,9 @@
     }
   },
   "nmcdaw": {
+    "deletewidgetapi": {
+      "getname": "删除图元"
+    },
     "getwidgetapi": {
       "getname": "获取图元"
     },
@@ -1804,6 +1807,11 @@
       "entityfield": {
         "name": "形状"
       }
+    }
+  },
+  "nmcde": {
+    "widgetisinuseexception": {
+      "widgetisinuseexception": "当前组件正在使用中"
     }
   },
   "nmcps": {

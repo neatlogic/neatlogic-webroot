@@ -54,8 +54,8 @@
     "createusername": "Creator Name",
     "currentpage": "Current Page",
     "customattribute": "Custom Properties",
-    "datasource": "Database Data Source",
     "datatype": "data type",
+    "datasource": "Database Data Source",
     "date": "date",
     "datetime": "Date Time",
     "defaultvalue": "Default Value List",
@@ -1752,6 +1752,9 @@
     }
   },
   "nmcdaw": {
+    "deletewidgetapi": {
+      "getname": "Delete Elements"
+    },
     "getwidgetapi": {
       "getname": "Get Elements"
     },
@@ -1775,6 +1778,11 @@
       "entityfield": {
         "name": "shape"
       }
+    }
+  },
+  "nmcde": {
+    "widgetisinuseexception": {
+      "widgetisinuseexception": "The current component is in use"
     }
   },
   "nmcps": {
