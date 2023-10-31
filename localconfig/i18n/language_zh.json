@@ -54,8 +54,8 @@
     "createusername": "创建人名字",
     "currentpage": "当前页",
     "customattribute": "自定义属性",
-    "datatype": "数据类型",
     "datasource": "数据库数据源",
+    "datatype": "数据类型",
     "date": "日期",
     "datetime": "日期时间",
     "defaultvalue": "默认值列表",
@@ -1043,6 +1043,7 @@
   "nfs": {
     "scriptrunnermanager": {
       "runscriptoncewithjdbc": {
+        "failed": " 执行失败，请检查核对最新的数据库表schema",
         "tenantnotconnect": "无法连接租户库 neatlogic_{0}，请到 neatlogic 库中的 datasource 表确认 {0} 租户的username、password、host、port字段是否正确。"
       }
     }

@@ -54,8 +54,8 @@
     "createusername": "Creator Name",
     "currentpage": "Current Page",
     "customattribute": "Custom Properties",
-    "datatype": "data type",
     "datasource": "Database Data Source",
+    "datatype": "data type",
     "date": "date",
     "datetime": "Date Time",
     "defaultvalue": "Default Value List",
@@ -1014,6 +1014,7 @@
   "nfs": {
     "scriptrunnermanager": {
       "runscriptoncewithjdbc": {
+        "failed": "Execution failed, please check and verify the latest database table schema",
         "tenantnotconnect": "Unable to connect to tenant library netlogic_ {0}, please go to the datasource table in the nearlogic library to confirm if the username, password, host, and port fields of the {0} tenant are correct."
       }
     }
