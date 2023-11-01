@@ -1751,7 +1751,18 @@
       "getname": "inquiry transaction"
     }
   },
+  "nmcdat": {
+    "gettemplateapi": {
+      "getname": "Obtain Template"
+    }
+  },
   "nmcdaw": {
+    "deletewidgetapi": {
+      "getname": "Delete Elements"
+    },
+    "getallactivewidgetapi": {
+      "getname": "List all active components"
+    },
     "getwidgetapi": {
       "getname": "Get Elements"
     },
@@ -1775,6 +1786,11 @@
       "entityfield": {
         "name": "shape"
       }
+    }
+  },
+  "nmcde": {
+    "widgetisinuseexception": {
+      "widgetisinuseexception": "The current component is in use"
     }
   },
   "nmcps": {

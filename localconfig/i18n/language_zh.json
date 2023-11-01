@@ -1780,7 +1780,18 @@
       "getname": "查询事务"
     }
   },
+  "nmcdat": {
+    "gettemplateapi": {
+      "getname": "获取模板"
+    }
+  },
   "nmcdaw": {
+    "deletewidgetapi": {
+      "getname": "删除图元"
+    },
+    "getallactivewidgetapi": {
+      "getname": "列出所有激活组件"
+    },
     "getwidgetapi": {
       "getname": "获取图元"
     },
@@ -1804,6 +1815,11 @@
       "entityfield": {
         "name": "形状"
       }
+    }
+  },
+  "nmcde": {
+    "widgetisinuseexception": {
+      "widgetisinuseexception": "当前组件正在使用中"
     }
   },
   "nmcps": {
