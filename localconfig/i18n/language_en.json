@@ -54,8 +54,8 @@
     "createusername": "Creator Name",
     "currentpage": "Current Page",
     "customattribute": "Custom Properties",
-    "datatype": "data type",
     "datasource": "Database Data Source",
+    "datatype": "data type",
     "date": "date",
     "datetime": "Date Time",
     "defaultvalue": "Default Value List",
@@ -1751,9 +1751,17 @@
       "getname": "inquiry transaction"
     }
   },
+  "nmcdat": {
+    "gettemplateapi": {
+      "getname": "Obtain Template"
+    }
+  },
   "nmcdaw": {
     "deletewidgetapi": {
       "getname": "Delete Elements"
+    },
+    "getallactivewidgetapi": {
+      "getname": "List all active components"
     },
     "getwidgetapi": {
       "getname": "Get Elements"

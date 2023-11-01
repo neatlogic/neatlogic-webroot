@@ -54,8 +54,8 @@
     "createusername": "创建人名字",
     "currentpage": "当前页",
     "customattribute": "自定义属性",
-    "datatype": "数据类型",
     "datasource": "数据库数据源",
+    "datatype": "数据类型",
     "date": "日期",
     "datetime": "日期时间",
     "defaultvalue": "默认值列表",
@@ -1780,9 +1780,17 @@
       "getname": "查询事务"
     }
   },
+  "nmcdat": {
+    "gettemplateapi": {
+      "getname": "获取模板"
+    }
+  },
   "nmcdaw": {
     "deletewidgetapi": {
       "getname": "删除图元"
+    },
+    "getallactivewidgetapi": {
+      "getname": "列出所有激活组件"
     },
     "getwidgetapi": {
       "getname": "获取图元"
