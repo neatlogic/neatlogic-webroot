@@ -1754,6 +1754,9 @@
   "nmcdat": {
     "gettemplateapi": {
       "getname": "Obtain Template"
+    },
+    "savetemplateapi": {
+      "getname": "Save Template"
     }
   },
   "nmcdaw": {

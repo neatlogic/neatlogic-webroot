@@ -1783,6 +1783,9 @@
   "nmcdat": {
     "gettemplateapi": {
       "getname": "获取模板"
+    },
+    "savetemplateapi": {
+      "getname": "保存模板"
     }
   },
   "nmcdaw": {
