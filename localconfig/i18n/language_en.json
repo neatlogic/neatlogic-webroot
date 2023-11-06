@@ -77,6 +77,7 @@
     "editorlist": "Modified by List",
     "editorname": "Modifier Name",
     "editorobject": "Modifier Object",
+    "edittime": "Modification time",
     "email": "mailbox",
     "emailnotify": "Email notification",
     "embed": "built-in",
@@ -1705,6 +1706,11 @@
       "getname": "Search Topology View"
     }
   },
+  "nmcar": {
+    "listallcirelapi": {
+      "getname": "Obtain a list of all relationships in the model"
+    }
+  },
   "nmcara": {
     "accountprotocolsaveapi": {
       "getname": "Save Account Management Agreement"
@@ -1751,6 +1757,31 @@
       "getname": "inquiry transaction"
     }
   },
+  "nmcdac": {
+    "getcatalogapi": {
+      "getname": "Get directory"
+    },
+    "savecatalogapi": {
+      "getname": "Save Directory"
+    },
+    "searchcatalogapi": {
+      "getname": "Get directory list"
+    }
+  },
+  "nmcdag": {
+    "getgraphapi": {
+      "getname": "Obtain architecture diagram"
+    },
+    "savegraphapi": {
+      "getname": "Save Architecture Diagram"
+    }
+  },
+  "nmcdal": {
+    "diagram_graph_modify": {
+      "getauthdisplayname": "Architecture diagram editing permissions",
+      "getauthintroduction": "Edit and delete permissions for architecture diagrams"
+    }
+  },
   "nmcdat": {
     "gettemplateapi": {
       "getname": "Obtain Template"
@@ -1764,7 +1795,7 @@
       "getname": "Delete Elements"
     },
     "getallactivewidgetapi": {
-      "getname": "List all active components"
+      "getname": "List all active elements"
     },
     "getwidgetapi": {
       "getname": "Get Elements"
@@ -1775,11 +1806,19 @@
     "savewidgetapi": {
       "getname": "Saving Elements"
     },
+    "searchwidgetapi": {
+      "getname": "Search for Elements"
+    },
     "togglewidgetactiveapi": {
       "getname": "Activating or disabling elements"
     }
   },
   "nmcdd": {
+    "graphversionvo": {
+      "entityfield": {
+        "name": "Editing time"
+      }
+    },
     "templatewidgetvo": {
       "entityfield": {
         "name": "Component ID"
@@ -3135,8 +3174,13 @@
       "vulnerabilityurl": "Vulnerability Details Page Address"
     },
     "diagram": {
+      "activeversion": "Activate version",
+      "catalogitem": "Catalog Entry",
+      "editversion": "Edit version",
       "isstarttemplate": "Start template or not",
-      "name": "Design drawings"
+      "name": "Design drawings",
+      "parentid": "Parent node ID",
+      "parentuuid": "Parent node uuid"
     },
     "dr": {
       "customparamlist": "Custom Parameter List",

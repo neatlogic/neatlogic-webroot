@@ -77,6 +77,7 @@
     "editorlist": "修改人列表",
     "editorname": "修改者名字",
     "editorobject": "修改者对象",
+    "edittime": "修改时间",
     "email": "邮箱",
     "emailnotify": "邮件通知",
     "embed": "内置",
@@ -1734,6 +1735,11 @@
       "getname": "搜索拓扑视图"
     }
   },
+  "nmcar": {
+    "listallcirelapi": {
+      "getname": "获取模型所有关系列表"
+    }
+  },
   "nmcara": {
     "accountprotocolsaveapi": {
       "getname": "保存账号管理协议"
@@ -1780,6 +1786,31 @@
       "getname": "查询事务"
     }
   },
+  "nmcdac": {
+    "getcatalogapi": {
+      "getname": "获取目录"
+    },
+    "savecatalogapi": {
+      "getname": "保存目录"
+    },
+    "searchcatalogapi": {
+      "getname": "获取目录列表"
+    }
+  },
+  "nmcdag": {
+    "getgraphapi": {
+      "getname": "获取架构图"
+    },
+    "savegraphapi": {
+      "getname": "保存架构图"
+    }
+  },
+  "nmcdal": {
+    "diagram_graph_modify": {
+      "getauthdisplayname": "架构图编辑权限",
+      "getauthintroduction": "架构图编辑、删除权限"
+    }
+  },
   "nmcdat": {
     "gettemplateapi": {
       "getname": "获取模板"
@@ -1793,7 +1824,7 @@
       "getname": "删除图元"
     },
     "getallactivewidgetapi": {
-      "getname": "列出所有激活组件"
+      "getname": "列出所有激活图元"
     },
     "getwidgetapi": {
       "getname": "获取图元"
@@ -1804,11 +1835,19 @@
     "savewidgetapi": {
       "getname": "保存图元"
     },
+    "searchwidgetapi": {
+      "getname": "搜索图元"
+    },
     "togglewidgetactiveapi": {
       "getname": "激活或禁用图元"
     }
   },
   "nmcdd": {
+    "graphversionvo": {
+      "entityfield": {
+        "name": "编辑时间"
+      }
+    },
     "templatewidgetvo": {
       "entityfield": {
         "name": "组件id"
@@ -3184,8 +3223,13 @@
       "vulnerabilityurl": "漏洞详情页地址"
     },
     "diagram": {
+      "activeversion": "激活版本",
+      "catalogitem": "目录项",
+      "editversion": "编辑版本",
       "isstarttemplate": "是否开始模板",
-      "name": "设计图"
+      "name": "设计图",
+      "parentid": "父节点id",
+      "parentuuid": "父节点uuid"
     },
     "dr": {
       "customparamlist": "自定义参数列表",
