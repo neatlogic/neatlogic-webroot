@@ -1736,6 +1736,14 @@
     }
   },
   "nmcar": {
+    "getcirellistapi": {
+      "getname": "获取模型关系列表",
+      "input": {
+        "param": {
+          "desc": "是否需要操作列，如果需要则根据用户权限返回合适的操作列"
+        }
+      }
+    },
     "listallcirelapi": {
       "getname": "获取模型所有关系列表"
     }
@@ -1790,6 +1798,12 @@
     "getcatalogapi": {
       "getname": "获取目录"
     },
+    "listcataloggraphapi": {
+      "getname": "获取目录项架构图列表"
+    },
+    "listcatalogtemplateapi": {
+      "getname": "获取目录模板列表"
+    },
     "savecatalogapi": {
       "getname": "保存目录"
     },
@@ -1843,6 +1857,11 @@
     }
   },
   "nmcdd": {
+    "diagramvo": {
+      "entityfield": {
+        "name": "模板"
+      }
+    },
     "graphversionvo": {
       "entityfield": {
         "name": "编辑时间"
@@ -3225,11 +3244,20 @@
     "diagram": {
       "activeversion": "激活版本",
       "catalogitem": "目录项",
+      "catalogitemid": "目录项id",
+      "diagramid": "架构图id",
       "editversion": "编辑版本",
+      "editversiondata": "编辑版本数据",
       "isstarttemplate": "是否开始模板",
-      "name": "设计图",
+      "name": "架构图",
       "parentid": "父节点id",
-      "parentuuid": "父节点uuid"
+      "parentuuid": "父节点uuid",
+      "status": {
+        "checking": "审核中",
+        "editing": "编辑中",
+        "passed": "已通过",
+        "rejected": "未通过"
+      }
     },
     "dr": {
       "customparamlist": "自定义参数列表",

@@ -1707,6 +1707,14 @@
     }
   },
   "nmcar": {
+    "getcirellistapi": {
+      "getname": "Obtain a list of model relationships",
+      "input": {
+        "param": {
+          "desc": "Do you need an action column? If so, return the appropriate action column based on user permissions"
+        }
+      }
+    },
     "listallcirelapi": {
       "getname": "Obtain a list of all relationships in the model"
     }
@@ -1761,6 +1769,12 @@
     "getcatalogapi": {
       "getname": "Get directory"
     },
+    "listcataloggraphapi": {
+      "getname": "Obtain a list of catalog item frame compositions"
+    },
+    "listcatalogtemplateapi": {
+      "getname": "Obtain directory template list"
+    },
     "savecatalogapi": {
       "getname": "Save Directory"
     },
@@ -1814,6 +1828,11 @@
     }
   },
   "nmcdd": {
+    "diagramvo": {
+      "entityfield": {
+        "name": "Template"
+      }
+    },
     "graphversionvo": {
       "entityfield": {
         "name": "Editing time"
@@ -3176,11 +3195,20 @@
     "diagram": {
       "activeversion": "Activate version",
       "catalogitem": "Catalog Entry",
+      "catalogitemid": "Catalog Item ID",
+      "diagramid": "Architecture diagram ID",
       "editversion": "Edit version",
+      "editversiondata": "Edit version data",
       "isstarttemplate": "Start template or not",
-      "name": "Design drawings",
+      "name": "Architecture diagram",
       "parentid": "Parent node ID",
-      "parentuuid": "Parent node uuid"
+      "parentuuid": "Parent node uuid",
+      "status": {
+        "checking": "Under review",
+        "editing": "Editing",
+        "passed": "Passed",
+        "rejected": "Failed"
+      }
     },
     "dr": {
       "customparamlist": "Custom Parameter List",
