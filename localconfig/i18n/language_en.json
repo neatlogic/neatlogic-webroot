@@ -861,6 +861,9 @@
     },
     "processtasknotfoundedittargetexception": {
       "processtasknotfoundedittargetexception": "Work order: {0} does not exist"
+    },
+    "processtaskserialnumberpolicynotfoundexception": {
+      "processtaskserialnumberpolicynotfoundexception": "Service type: '{0}' does not have a configured work order number generation strategy. Please contact the administrator and edit the work order prefix, work order rule, start position, and work order number digits for this service type in \u0027IT Service/Service Type Management\u0027"
     }
   },
   "nfral": {

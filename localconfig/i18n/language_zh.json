@@ -890,6 +890,9 @@
     },
     "processtasknotfoundedittargetexception": {
       "processtasknotfoundedittargetexception": "工单：{0}不存在"
+    },
+    "processtaskserialnumberpolicynotfoundexception": {
+      "processtaskserialnumberpolicynotfoundexception": "服务类型：”{0}“没有配置工单号生成策略，请联系管理员，在“IT服务/服务类型管理”中编辑该服务类型的工单号前缀、工单号规则、起始位、工单号位数"
     }
   },
   "nfral": {
