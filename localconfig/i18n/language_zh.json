@@ -765,6 +765,9 @@
   "nfdev": {
     "deployversionnotfoundedittargetexception": {
       "deployversionnotfoundedittargetexception": "发布版本：{0}不存在"
+    },
+    "deployversionsyncfailedexception": {
+      "deployversionsyncfailedexception": "发布同步版本工程目录失败，错误：{0}"
     }
   },
   "nfdt": {
@@ -2345,6 +2348,12 @@
           }
         }
       }
+    }
+  },
+  "nmmal": {
+    "master_admin": {
+      "getauthdisplayname": "租户管理超级管理员权限",
+      "getauthintroduction": "对租户管理进行任何操作"
     }
   },
   "nmmam": {
