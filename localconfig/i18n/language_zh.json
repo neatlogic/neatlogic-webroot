@@ -165,6 +165,7 @@
       "name": "模块名称"
     },
     "modulegroup": "模块组",
+    "moduleid": "模块IDID",
     "mustinput": "必填",
     "name": "名称",
     "needpage": "是否需要分页，默认true",
@@ -409,6 +410,22 @@
   "nfc": {
     "frameworktenantconfig": {
       "apiqps": "每秒向服务器发送的请求数量峰值（不分接口）"
+    }
+  },
+  "nfcc": {
+    "userprofile": {
+      "rolecreatesuccess": "角色创建成功",
+      "teamcreatesuccess": "分组创建成功",
+      "usercreatesuccess": "用户创建成功"
+    },
+    "userprofileoperate": {
+      "backrolelist": "返回角色列表",
+      "backteamlist": "返回分组列表",
+      "backuserlist": "返回用户列表",
+      "editrole": "编辑角色",
+      "editteam": "编辑分组",
+      "edituser": "编辑用户",
+      "keeponcreate": "继续创建"
     }
   },
   "nfcdc": {
@@ -874,6 +891,14 @@
     },
     "processtaskgroupsearch": {
       "processusertype": "工单干系人"
+    },
+    "userprofile": {
+      "processtasksuccess": "服务上报成功"
+    },
+    "userprofileoperate": {
+      "backcataloglist": "返回服务目录列表",
+      "keeponcreatetask": "继续上报",
+      "viewprocesstaskdetail": "查看工单详情"
     }
   },
   "nfpec": {
@@ -3041,6 +3066,25 @@
     },
     "userdeleteapi": {
       "getname": "删除用户接口"
+    },
+    "userprofilelistapi": {
+      "getname": "用户个性化查询列表接口"
+    },
+    "userprofilesaveapi": {
+      "getname": "保存用户个性化设置",
+      "input": {
+        "param": {
+          "checked": {
+            "desc": "操作个性化选项勾选"
+          },
+          "name": {
+            "desc": "操作个性化选项名"
+          },
+          "operate": {
+            "desc": "具体操作个性化选项"
+          }
+        }
+      }
     },
     "usersaveapi": {
       "getname": "保存用户接口"

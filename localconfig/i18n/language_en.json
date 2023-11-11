@@ -165,6 +165,7 @@
       "name": "Module Name"
     },
     "modulegroup": "Module group",
+    "moduleid": "Module ID",
     "mustinput": "Required",
     "name": "name",
     "needpage": "Whether pagination is required, default to true",
@@ -409,6 +410,22 @@
   "nfc": {
     "frameworktenantconfig": {
       "apiqps": "Peak number of requests sent to the server per second (regardless of interface)"
+    }
+  },
+  "nfcc": {
+    "userprofile": {
+      "rolecreatesuccess": "Role created successfully",
+      "teamcreatesuccess": "Group created successfully",
+      "usercreatesuccess": "User created successfully"
+    },
+    "userprofileoperate": {
+      "backrolelist": "Return to Role List",
+      "backteamlist": "Return to group list",
+      "backuserlist": "Return to user list",
+      "editrole": "Edit Role",
+      "editteam": "Edit Group",
+      "edituser": "Edit User",
+      "keeponcreate": "Continue creating"
     }
   },
   "nfcdc": {
@@ -845,6 +862,14 @@
     },
     "processtaskgroupsearch": {
       "processusertype": "Work order stakeholders"
+    },
+    "userprofile": {
+      "processtasksuccess": "Service reported successfully"
+    },
+    "userprofileoperate": {
+      "backcataloglist": "Return to the list of service directories",
+      "keeponcreatetask": "Continue reporting",
+      "viewprocesstaskdetail": "View job details"
     }
   },
   "nfpec": {
@@ -863,7 +888,7 @@
       "processtasknotfoundedittargetexception": "Work order: {0} does not exist"
     },
     "processtaskserialnumberpolicynotfoundexception": {
-      "processtaskserialnumberpolicynotfoundexception": "Service type: '{0}' does not have a configured work order number generation strategy. Please contact the administrator and edit the work order prefix, work order rule, start position, and work order number digits for this service type in \u0027IT Service/Service Type Management\u0027"
+      "processtaskserialnumberpolicynotfoundexception": "Service type: \u0027{0}\u0027 does not have a configured work order number generation strategy. Please contact the administrator and edit the work order prefix, work order rule, start position, and work order number digits for this service type in \u0027IT Service/Service Type Management\u0027"
     }
   },
   "nfral": {
@@ -2992,6 +3017,25 @@
     },
     "userdeleteapi": {
       "getname": "Delete User Interface"
+    },
+    "userprofilelistapi": {
+      "getname": "User personalized query list interface"
+    },
+    "userprofilesaveapi": {
+      "getname": "Save user personalization settings",
+      "input": {
+        "param": {
+          "checked": {
+            "desc": "Check the personalized options for operation"
+          },
+          "name": {
+            "desc": "Personalized item name for operation"
+          },
+          "operate": {
+            "desc": "Personalized options for specific operations"
+          }
+        }
+      }
     },
     "usersaveapi": {
       "getname": "Save User Interface"
