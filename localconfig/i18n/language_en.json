@@ -761,6 +761,9 @@
   "nfdev": {
     "deployversionnotfoundedittargetexception": {
       "deployversionnotfoundedittargetexception": "Release version: {0} does not exist"
+    },
+    "deployversionsyncfailedexception": {
+      "deployversionsyncfailedexception": "Failed to publish synchronized version project directory, error: {0}"
     }
   },
   "nfe": {
