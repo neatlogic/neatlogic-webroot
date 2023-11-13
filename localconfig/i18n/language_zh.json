@@ -246,6 +246,7 @@
     "tagid": "标签id",
     "tagidlist": "标签id列表",
     "taglist": "标签列表",
+    "tagsdir": "标签目录",
     "task": "任务",
     "tbodylist": "展示的值",
     "team": "组",
@@ -2253,6 +2254,9 @@
           }
         }
       }
+    },
+    "searchdeployversionapi": {
+      "getname": "查询发布版本列表"
     }
   },
   "nmeas": {
@@ -3210,6 +3214,7 @@
       "ciuniquename": "模型唯一标识",
       "envid": "环境id",
       "envidlist": "环境id列表",
+      "envlist": "环境列表",
       "envname": "环境名称",
       "globalattr": "全局属性",
       "groupdesc": "配置管理平台",
@@ -3269,20 +3274,33 @@
     "deploy": {
       "apppipeline": "发布应用流水线",
       "apppipelineinfo": "应用流水线配置信息",
+      "buildnolist": "编译号列表",
       "ciid": "持续集成配置id",
+      "compilecount": "编译次数",
+      "compilefailcount": "编译失败次数",
+      "compilesuccesscount": "编译成功次数",
       "confidence": "信心",
+      "criticalcvecount": "CRITICAL级别漏洞数",
+      "criticalstarcvecount": "CRITICAL*级别漏洞数",
       "cvecount": "CVE计数",
       "cvelist": "CVE漏洞列表",
+      "endrev": "结束Rev号",
       "evidencecount": "证据计数",
       "groupdesc": "规范快捷的持续集成-部署平台",
       "groupname": "集成与发布",
+      "highcvecount": "HIGH级别漏洞数",
       "highestseverity": "最高严重程度",
+      "isfreeze": "是否封版",
+      "issuecount": "需求数",
       "lanelist": "通道列表",
       "name": "自动发布",
       "packageurl": "包详情地址",
       "proxytourl": "代理地址",
+      "repo": "仓库地址",
       "runnerid": "执行器id",
       "scheduleinfo": "发布定时作业信息",
+      "startdev": "开始Rev号",
+      "trunk": "主干",
       "version": "版本",
       "vulnerabilityid": "漏洞ID",
       "vulnerabilityids": "脆弱性id",
