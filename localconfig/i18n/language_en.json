@@ -246,6 +246,7 @@
     "tagid": "Tag ID",
     "tagidlist": "Tag ID List",
     "taglist": "Label List",
+    "tagsdir": "Label Catalog",
     "task": "task",
     "tbodylist": "tbody list",
     "team": "group",
@@ -2224,6 +2225,9 @@
           }
         }
       }
+    },
+    "searchdeployversionapi": {
+      "getname": "Query Release Version List"
     }
   },
   "nmeas": {
@@ -3161,6 +3165,7 @@
       "ciuniquename": "Model Unique Identification",
       "envid": "Environment ID",
       "envidlist": "Environment ID List",
+      "envlist": "Environment List",
       "envname": "Environment name",
       "globalattr": "Global Properties",
       "groupdesc": "Configuration Management Platform",
@@ -3220,20 +3225,33 @@
     "deploy": {
       "apppipeline": "Publishing application pipeline",
       "apppipelineinfo": "Application pipeline configuration information",
+      "buildnolist": "Compilation number list",
       "ciid": "Continuous Integration Configuration ID",
+      "compilecount": "Compilation Times",
+      "compilefailcount": "Compilation failure count",
+      "compilesuccesscount": "Compilation Success Times",
       "confidence": "confidence",
+      "criticalcvecount": "CRITICAL level vulnerabilities",
+      "criticalstarcvecount": "CRITICAL * level vulnerability count",
       "cvecount": "CVE Count",
       "cvelist": "CVE vulnerability list",
+      "endrev": "End Rev Number",
       "evidencecount": "Evidence count",
       "groupdesc": "Standardized and fast continuous integration deployment platform",
       "groupname": "DevOps",
+      "highcvecount": "Number of High level vulnerabilities",
       "highestseverity": "Maximum Severity",
+      "isfreeze": "Whether to seal the version",
+      "issuecount": "Number of requirements",
       "lanelist": "Channel List",
       "name": "DevOps",
       "packageurl": "Package Details Address",
       "proxytourl": "Proxy address",
+      "repo": "Warehouse address",
       "runnerid": "Executor ID",
       "scheduleinfo": "Publish scheduled job information",
+      "startdev": "Start Rev Number",
+      "trunk": "trunk",
       "version": "version",
       "vulnerabilityid": "Vulnerability ID",
       "vulnerabilityids": "Vulnerability ID",
