@@ -148,7 +148,7 @@
     "jsonobject": "json对象",
     "key": "键",
     "keyword": "关键字",
-    "level": "级别",
+    "level": "层次",
     "lft": "左编码",
     "loglist": "日志列表",
     "long": "长整数",
@@ -1911,6 +1911,18 @@
     }
   },
   "nmcde": {
+    "catalognotfoundexception": {
+      "catalognotfoundexception": "目录“{0}”不存在"
+    },
+    "catalogtypeirregularexception": {
+      "catalogtypeirregularexception": "目录不是“{0}”类型"
+    },
+    "diagramnotfoundexception": {
+      "diagramnotfoundexception": "架构图“{0}”不存在"
+    },
+    "diagramstatusirregularexception": {
+      "diagramstatusirregularexception": "当前架构图状态已发生变化，请刷新页面重新编辑"
+    },
     "widgetisinuseexception": {
       "widgetisinuseexception": "当前组件正在使用中"
     }
@@ -3331,7 +3343,8 @@
         "editing": "编辑中",
         "passed": "已通过",
         "rejected": "未通过"
-      }
+      },
+      "templatelist": "模板列表"
     },
     "dr": {
       "customparamlist": "自定义参数列表",

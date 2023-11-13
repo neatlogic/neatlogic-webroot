@@ -148,7 +148,7 @@
     "jsonobject": "JSON object",
     "key": "key",
     "keyword": "keyword",
-    "level": "level",
+    "level": "arrangement",
     "lft": "Left encoding",
     "loglist": "Log List",
     "long": "long integer",
@@ -1882,6 +1882,18 @@
     }
   },
   "nmcde": {
+    "catalognotfoundexception": {
+      "catalognotfoundexception": "Directory \u0027{0}\u0027 does not exist"
+    },
+    "catalogtypeirregularexception": {
+      "catalogtypeirregularexception": "Directory is not of type \u0027{0}\u0027"
+    },
+    "diagramnotfoundexception": {
+      "diagramnotfoundexception": "The architecture diagram \u0027{0}\u0027 does not exist"
+    },
+    "diagramstatusirregularexception": {
+      "diagramstatusirregularexception": "The current architecture diagram state has changed. Please refresh the page and edit again"
+    },
     "widgetisinuseexception": {
       "widgetisinuseexception": "The current component is in use"
     }
@@ -3282,7 +3294,8 @@
         "editing": "Editing",
         "passed": "Passed",
         "rejected": "Failed"
-      }
+      },
+      "templatelist": "Template List"
     },
     "dr": {
       "customparamlist": "Custom Parameter List",
