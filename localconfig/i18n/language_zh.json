@@ -783,6 +783,9 @@
   "nfdev": {
     "deployversionnotfoundedittargetexception": {
       "deployversionnotfoundedittargetexception": "发布版本：{0}不存在"
+    },
+    "deployversionsyncfailedexception": {
+      "deployversionsyncfailedexception": "发布同步版本工程目录失败，错误：{0}"
     }
   },
   "nfdt": {
