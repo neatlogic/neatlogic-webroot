@@ -165,6 +165,7 @@
       "name": "模块名称"
     },
     "modulegroup": "模块组",
+    "moduleid": "模块IDID",
     "mustinput": "必填",
     "name": "名称",
     "needpage": "是否需要分页，默认true",
@@ -245,6 +246,7 @@
     "tagid": "标签id",
     "tagidlist": "标签id列表",
     "taglist": "标签列表",
+    "tagsdir": "标签目录",
     "task": "任务",
     "tbodylist": "展示的值",
     "team": "组",
@@ -409,6 +411,22 @@
   "nfc": {
     "frameworktenantconfig": {
       "apiqps": "每秒向服务器发送的请求数量峰值（不分接口）"
+    }
+  },
+  "nfcc": {
+    "userprofile": {
+      "rolecreatesuccess": "角色创建成功",
+      "teamcreatesuccess": "分组创建成功",
+      "usercreatesuccess": "用户创建成功"
+    },
+    "userprofileoperate": {
+      "backrolelist": "返回角色列表",
+      "backteamlist": "返回分组列表",
+      "backuserlist": "返回用户列表",
+      "editrole": "编辑角色",
+      "editteam": "编辑分组",
+      "edituser": "编辑用户",
+      "keeponcreate": "继续创建"
     }
   },
   "nfcdc": {
@@ -877,6 +895,14 @@
     },
     "processtaskgroupsearch": {
       "processusertype": "工单干系人"
+    },
+    "userprofile": {
+      "processtasksuccess": "服务上报成功"
+    },
+    "userprofileoperate": {
+      "backcataloglist": "返回服务目录列表",
+      "keeponcreatetask": "继续上报",
+      "viewprocesstaskdetail": "查看工单详情"
     }
   },
   "nfpec": {
@@ -2231,6 +2257,9 @@
           }
         }
       }
+    },
+    "searchdeployversionapi": {
+      "getname": "查询发布版本列表"
     }
   },
   "nmeas": {
@@ -3051,6 +3080,25 @@
     "userdeleteapi": {
       "getname": "删除用户接口"
     },
+    "userprofilelistapi": {
+      "getname": "用户个性化查询列表接口"
+    },
+    "userprofilesaveapi": {
+      "getname": "保存用户个性化设置",
+      "input": {
+        "param": {
+          "checked": {
+            "desc": "操作个性化选项勾选"
+          },
+          "name": {
+            "desc": "操作个性化选项名"
+          },
+          "operate": {
+            "desc": "具体操作个性化选项"
+          }
+        }
+      }
+    },
     "usersaveapi": {
       "getname": "保存用户接口"
     },
@@ -3175,6 +3223,7 @@
       "ciuniquename": "模型唯一标识",
       "envid": "环境id",
       "envidlist": "环境id列表",
+      "envlist": "环境列表",
       "envname": "环境名称",
       "globalattr": "全局属性",
       "groupdesc": "配置管理平台",
@@ -3234,20 +3283,33 @@
     "deploy": {
       "apppipeline": "发布应用流水线",
       "apppipelineinfo": "应用流水线配置信息",
+      "buildnolist": "编译号列表",
       "ciid": "持续集成配置id",
+      "compilecount": "编译次数",
+      "compilefailcount": "编译失败次数",
+      "compilesuccesscount": "编译成功次数",
       "confidence": "信心",
+      "criticalcvecount": "CRITICAL级别漏洞数",
+      "criticalstarcvecount": "CRITICAL*级别漏洞数",
       "cvecount": "CVE计数",
       "cvelist": "CVE漏洞列表",
+      "endrev": "结束Rev号",
       "evidencecount": "证据计数",
       "groupdesc": "规范快捷的持续集成-部署平台",
       "groupname": "集成与发布",
+      "highcvecount": "HIGH级别漏洞数",
       "highestseverity": "最高严重程度",
+      "isfreeze": "是否封版",
+      "issuecount": "需求数",
       "lanelist": "通道列表",
       "name": "自动发布",
       "packageurl": "包详情地址",
       "proxytourl": "代理地址",
+      "repo": "仓库地址",
       "runnerid": "执行器id",
       "scheduleinfo": "发布定时作业信息",
+      "startdev": "开始Rev号",
+      "trunk": "主干",
       "version": "版本",
       "vulnerabilityid": "漏洞ID",
       "vulnerabilityids": "脆弱性id",

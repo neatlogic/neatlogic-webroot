@@ -165,6 +165,7 @@
       "name": "Module Name"
     },
     "modulegroup": "Module group",
+    "moduleid": "Module ID",
     "mustinput": "Required",
     "name": "name",
     "needpage": "Whether pagination is required, default to true",
@@ -245,6 +246,7 @@
     "tagid": "Tag ID",
     "tagidlist": "Tag ID List",
     "taglist": "Label List",
+    "tagsdir": "Label Catalog",
     "task": "task",
     "tbodylist": "tbody list",
     "team": "group",
@@ -409,6 +411,22 @@
   "nfc": {
     "frameworktenantconfig": {
       "apiqps": "Peak number of requests sent to the server per second (regardless of interface)"
+    }
+  },
+  "nfcc": {
+    "userprofile": {
+      "rolecreatesuccess": "Role created successfully",
+      "teamcreatesuccess": "Group created successfully",
+      "usercreatesuccess": "User created successfully"
+    },
+    "userprofileoperate": {
+      "backrolelist": "Return to Role List",
+      "backteamlist": "Return to group list",
+      "backuserlist": "Return to user list",
+      "editrole": "Edit Role",
+      "editteam": "Edit Group",
+      "edituser": "Edit User",
+      "keeponcreate": "Continue creating"
     }
   },
   "nfcdc": {
@@ -848,6 +866,14 @@
     },
     "processtaskgroupsearch": {
       "processusertype": "Work order stakeholders"
+    },
+    "userprofile": {
+      "processtasksuccess": "Service reported successfully"
+    },
+    "userprofileoperate": {
+      "backcataloglist": "Return to the list of service directories",
+      "keeponcreatetask": "Continue reporting",
+      "viewprocesstaskdetail": "View job details"
     }
   },
   "nfpec": {
@@ -2202,6 +2228,9 @@
           }
         }
       }
+    },
+    "searchdeployversionapi": {
+      "getname": "Query Release Version List"
     }
   },
   "nmeas": {
@@ -3002,6 +3031,25 @@
     "userdeleteapi": {
       "getname": "Delete User Interface"
     },
+    "userprofilelistapi": {
+      "getname": "User personalized query list interface"
+    },
+    "userprofilesaveapi": {
+      "getname": "Save user personalization settings",
+      "input": {
+        "param": {
+          "checked": {
+            "desc": "Check the personalized options for operation"
+          },
+          "name": {
+            "desc": "Personalized item name for operation"
+          },
+          "operate": {
+            "desc": "Personalized options for specific operations"
+          }
+        }
+      }
+    },
     "usersaveapi": {
       "getname": "Save User Interface"
     },
@@ -3126,6 +3174,7 @@
       "ciuniquename": "Model Unique Identification",
       "envid": "Environment ID",
       "envidlist": "Environment ID List",
+      "envlist": "Environment List",
       "envname": "Environment name",
       "globalattr": "Global Properties",
       "groupdesc": "Configuration Management Platform",
@@ -3185,20 +3234,33 @@
     "deploy": {
       "apppipeline": "Publishing application pipeline",
       "apppipelineinfo": "Application pipeline configuration information",
+      "buildnolist": "Compilation number list",
       "ciid": "Continuous Integration Configuration ID",
+      "compilecount": "Compilation Times",
+      "compilefailcount": "Compilation failure count",
+      "compilesuccesscount": "Compilation Success Times",
       "confidence": "confidence",
+      "criticalcvecount": "CRITICAL level vulnerabilities",
+      "criticalstarcvecount": "CRITICAL * level vulnerability count",
       "cvecount": "CVE Count",
       "cvelist": "CVE vulnerability list",
+      "endrev": "End Rev Number",
       "evidencecount": "Evidence count",
       "groupdesc": "Standardized and fast continuous integration deployment platform",
       "groupname": "DevOps",
+      "highcvecount": "Number of High level vulnerabilities",
       "highestseverity": "Maximum Severity",
+      "isfreeze": "Whether to seal the version",
+      "issuecount": "Number of requirements",
       "lanelist": "Channel List",
       "name": "DevOps",
       "packageurl": "Package Details Address",
       "proxytourl": "Proxy address",
+      "repo": "Warehouse address",
       "runnerid": "Executor ID",
       "scheduleinfo": "Publish scheduled job information",
+      "startdev": "Start Rev Number",
+      "trunk": "trunk",
       "version": "version",
       "vulnerabilityid": "Vulnerability ID",
       "vulnerabilityids": "Vulnerability ID",
