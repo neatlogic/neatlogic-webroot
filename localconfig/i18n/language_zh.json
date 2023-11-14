@@ -18,7 +18,10 @@
     "attachment": "附件",
     "attributelist": "属性列表",
     "attrname": "属性名",
+    "auth": "授权",
     "authlist": "授权列表",
+    "authtype": "授权类型",
+    "authuuid": "授权对象uuid",
     "avatar": "头像",
     "basicauth": "Basic认证",
     "bearerauth": "Bearer Token",
@@ -182,7 +185,7 @@
     "packagename": "包名",
     "pagecount": "总页数",
     "pageinfo": "分页数据",
-    "pagesize": "每页数据条目",
+    "pagesize": "每页大小",
     "parentid": "父id",
     "password": "密码",
     "path": "路径",
@@ -298,6 +301,7 @@
     "versionlist": "版本列表",
     "versionname": "版本名称",
     "versionnum": "版本号",
+    "view": "查看",
     "viewable": "是否可查看",
     "viewauthoritylist": "查看权限列表",
     "viewcount": "浏览量",
@@ -1843,6 +1847,11 @@
       "getname": "获取目录列表"
     }
   },
+  "nmcdad": {
+    "searchdiagramversionapi": {
+      "getname": "查询架构图版本"
+    }
+  },
   "nmcdag": {
     "getgraphapi": {
       "getname": "获取架构图"
@@ -1917,11 +1926,17 @@
     "catalogtypeirregularexception": {
       "catalogtypeirregularexception": "目录不是“{0}”类型"
     },
+    "diagramauthexception": {
+      "diagramauthexception": "您没有{0}当前架构图的权限"
+    },
     "diagramnotfoundexception": {
       "diagramnotfoundexception": "架构图“{0}”不存在"
     },
     "diagramstatusirregularexception": {
       "diagramstatusirregularexception": "当前架构图状态已发生变化，请刷新页面重新编辑"
+    },
+    "diagramversionnotfoundexception": {
+      "diagramversionnotfoundexception": "架构图版本“{0}”不存在"
     },
     "widgetisinuseexception": {
       "widgetisinuseexception": "当前组件正在使用中"
@@ -3331,6 +3346,7 @@
       "activeversion": "激活版本",
       "catalogitem": "目录项",
       "catalogitemid": "目录项id",
+      "checkstatus": "审核状态",
       "diagramid": "架构图id",
       "editversion": "编辑版本",
       "editversiondata": "编辑版本数据",

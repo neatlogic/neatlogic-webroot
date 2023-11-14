@@ -18,7 +18,10 @@
     "attachment": "attachment",
     "attributelist": "Attribute List",
     "attrname": "Attribute Name",
+    "auth": "authorization",
     "authlist": "Authorization List",
+    "authtype": "Authorization Type",
+    "authuuid": "Authorized object uuid",
     "avatar": "Avatar",
     "basicauth": "Basic authentication",
     "bearerauth": "Bearer Token",
@@ -298,6 +301,7 @@
     "versionlist": "List of versions",
     "versionname": "Version name",
     "versionnum": "Version number",
+    "view": "check",
     "viewable": "Can I view it",
     "viewauthoritylist": "View permission list",
     "viewcount": "View volume",
@@ -1814,6 +1818,11 @@
       "getname": "Get directory list"
     }
   },
+  "nmcdad": {
+    "searchdiagramversionapi": {
+      "getname": "Query schema version"
+    }
+  },
   "nmcdag": {
     "getgraphapi": {
       "getname": "Obtain architecture diagram"
@@ -1888,11 +1897,17 @@
     "catalogtypeirregularexception": {
       "catalogtypeirregularexception": "Directory is not of type \u0027{0}\u0027"
     },
+    "diagramauthexception": {
+      "diagramauthexception": "You do not have permission to {0} the current architecture diagram"
+    },
     "diagramnotfoundexception": {
       "diagramnotfoundexception": "The architecture diagram \u0027{0}\u0027 does not exist"
     },
     "diagramstatusirregularexception": {
       "diagramstatusirregularexception": "The current architecture diagram state has changed. Please refresh the page and edit again"
+    },
+    "diagramversionnotfoundexception": {
+      "diagramversionnotfoundexception": "The architecture diagram version \u0027{0}\u0027 does not exist"
     },
     "widgetisinuseexception": {
       "widgetisinuseexception": "The current component is in use"
@@ -3282,6 +3297,7 @@
       "activeversion": "Activate version",
       "catalogitem": "Catalog Entry",
       "catalogitemid": "Catalog Item ID",
+      "checkstatus": "Audit status",
       "diagramid": "Architecture diagram ID",
       "editversion": "Edit version",
       "editversiondata": "Edit version data",
