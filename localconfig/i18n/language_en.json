@@ -401,7 +401,7 @@
         "invalid": "Version log: {0}, folder name under changelog needs to be named in {1} format"
       },
       "getactivetenantlist": {
-        "neatlogicdb": "Unable to connect to the nextlogic library. Check if the database account and password configuration for nacos | config.properties are correct and restart"
+        "neatlogicdb": "Unable to connect to the nextlogic library. Check if the database account and password configuration for {0} are correct and restart"
       },
       "initdmlsql": {
         "tenant": "Start to Initialize Database..."

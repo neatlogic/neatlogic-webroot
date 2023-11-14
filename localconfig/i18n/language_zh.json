@@ -401,7 +401,7 @@
         "invalid": "版本日志:{0} ,changelog下文件夹名需按{1}格式命名"
       },
       "getactivetenantlist": {
-        "neatlogicdb": "neatlogic库连接不上,请核对nacos|config.properties的db.driverClassName、db.url、db.username、db.password配置无误后重启"
+        "neatlogicdb": "neatlogic库连接不上,请核对{0}的db.driverClassName、db.url、db.username、db.password配置无误后重启"
       },
       "initdmlsql": {
         "tenant": "开始初始化数据库..."
