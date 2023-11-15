@@ -1,10 +1,11 @@
 {
   "common": {
     "account": "账号",
-    "action": "动作类型",
+    "action": "动作",
     "actiontime": "操作时间",
     "actiontype": "操作类型",
     "actionuser": "操作人",
+    "active": "激活",
     "activeversionid": "激活版本ID",
     "alertattr": "告警属性",
     "alertdetail": "告警详情",
@@ -33,6 +34,7 @@
     "catalog": "目录",
     "catalogid": "目录id",
     "catalogname": "目录名称",
+    "check": "审核",
     "children": "子集合",
     "classname": "全类名",
     "cnname": "中文名称",
@@ -41,6 +43,7 @@
     "color": "颜色",
     "comment": "评论",
     "commentcount": "评论数量",
+    "commitcheck": "提交审核",
     "common": "公共",
     "condition": "条件配置",
     "config": "配置",
@@ -65,13 +68,14 @@
     "defaultvaluelist": "用于回显的参数列表",
     "delaytime": "延迟时间",
     "deletable": "是否可删除",
+    "delete": "删除",
     "dependency": "依赖",
     "description": "描述",
     "displaymode": "显示模式",
     "displaytype": "显示类型",
     "double": "双精度浮点数",
     "dropdownlist": "下拉选择",
-    "edit": "修改",
+    "edit": "编辑",
     "editable": "是否可编辑",
     "editauthoritylist": "编辑权限列表",
     "editdate": "修改日期",
@@ -128,6 +132,10 @@
     "int": "整形",
     "isactive": "是否激活",
     "isauthenticate": "是否需要鉴权",
+    "iscancheck": "是否能审核",
+    "iscandelete": "是否能删除",
+    "iscanmodify": "是否能修改",
+    "iscanview": "是否能查看",
     "isdeleted": "是否已删除",
     "isend": "是否完结",
     "isexpired": "是否过期",
@@ -187,6 +195,7 @@
     "pageinfo": "分页数据",
     "pagesize": "每页大小",
     "parentid": "父id",
+    "pass": "通过",
     "password": "密码",
     "path": "路径",
     "pc": "电脑端",
@@ -202,11 +211,15 @@
     "progress": "进度",
     "publiccache": "公共缓存",
     "rangelist": "限制接口option范围",
+    "readonly": "只读",
+    "recall": "撤回",
     "referencecount": "引用数量",
     "regex": "正则表达式",
+    "reject": "驳回",
     "relname": "关系名称",
     "reltype": "关系类型",
     "request": "需求",
+    "retreat": "\"撤回\"",
     "reviewable": "是否可审核",
     "reviewer": "审核人",
     "reviewerlist": "审批人列表",
@@ -1848,6 +1861,9 @@
     }
   },
   "nmcdad": {
+    "savediagramstatusapi": {
+      "getname": "修改架构图状态"
+    },
     "searchdiagramversionapi": {
       "getname": "查询架构图版本"
     }
@@ -1929,6 +1945,9 @@
     "diagramauthexception": {
       "diagramauthexception": "您没有{0}当前架构图的权限"
     },
+    "diagramischeckingexception": {
+      "diagramischeckingexception": "架构图正在审核中，无法编辑"
+    },
     "diagramnotfoundexception": {
       "diagramnotfoundexception": "架构图“{0}”不存在"
     },
@@ -1937,6 +1956,9 @@
     },
     "diagramversionnotfoundexception": {
       "diagramversionnotfoundexception": "架构图版本“{0}”不存在"
+    },
+    "versionstatus": {
+      "getenumname": "架构图版本状态"
     },
     "widgetisinuseexception": {
       "widgetisinuseexception": "当前组件正在使用中"
@@ -3346,7 +3368,10 @@
       "activeversion": "激活版本",
       "catalogitem": "目录项",
       "catalogitemid": "目录项id",
+      "checkaction": "审核动作",
       "checkstatus": "审核状态",
+      "checktime": "审核时间",
+      "checkuseruuid": "审核用户uuid",
       "diagramid": "架构图id",
       "editversion": "编辑版本",
       "editversiondata": "编辑版本数据",

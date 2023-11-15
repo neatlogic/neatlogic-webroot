@@ -1,10 +1,11 @@
 {
   "common": {
     "account": "Account",
-    "action": "Action type",
+    "action": "action",
     "actiontime": "Operation time",
     "actiontype": "Operation type",
     "actionuser": "Operator",
+    "active": "activation",
     "activeversionid": "Activation version ID",
     "alertattr": "Alarm Properties",
     "alertdetail": "Alarm details",
@@ -33,6 +34,7 @@
     "catalog": "catalogue",
     "catalogid": "Directory ID",
     "catalogname": "Directory Name",
+    "check": "Auditing",
     "children": "subset",
     "classname": "Full class name",
     "cnname": "Chinese name",
@@ -41,6 +43,7 @@
     "color": "colour",
     "comment": "comment",
     "commentcount": "Number of comments",
+    "commitcheck": "Submit for review",
     "common": "public",
     "condition": "Condition configuration",
     "config": "allocation",
@@ -65,13 +68,14 @@
     "defaultvaluelist": "List of parameters for echo",
     "delaytime": "delay time ",
     "deletable": "Can I delete it",
+    "delete": "delete",
     "dependency": "rely on",
     "description": "describe",
     "displaymode": "display mode",
     "displaytype": "Display Type",
     "double": "Double-precision floating-point format",
     "dropdownlist": "Dropdown selection",
-    "edit": "modify",
+    "edit": "edit",
     "editable": "Editable or not",
     "editauthoritylist": "Edit Permission List",
     "editdate": "modification date",
@@ -128,6 +132,10 @@
     "int": "int",
     "isactive": "Activate or not",
     "isauthenticate": "Do you need authentication",
+    "iscancheck": "Can we review it",
+    "iscandelete": "Can I delete it",
+    "iscanmodify": "Can I modify it",
+    "iscanview": "Can I view it",
     "isdeleted": "Has it been deleted",
     "isend": "Completed or not",
     "isexpired": "Expired or not",
@@ -187,6 +195,7 @@
     "pageinfo": "Paging data",
     "pagesize": "page size",
     "parentid": "Parent ID",
+    "pass": "adopt",
     "password": "password",
     "path": "path",
     "pc": "Computer side",
@@ -202,11 +211,15 @@
     "progress": "schedule",
     "publiccache": "Public cache",
     "rangelist": "Limit the scope of interface options",
+    "readonly": "read-only",
+    "recall": "withdraw",
     "referencecount": "Number of references",
     "regex": "regular expression ",
+    "reject": "Reject",
     "relname": "Relationship Name",
     "reltype": "Relationship Type",
     "request": "demand",
+    "retreat": "Withdrawal",
     "reviewable": "Is it auditable",
     "reviewer": "Reviewed by",
     "reviewerlist": "List of approvers",
@@ -1819,6 +1832,9 @@
     }
   },
   "nmcdad": {
+    "savediagramstatusapi": {
+      "getname": "Modify the status of the architecture diagram"
+    },
     "searchdiagramversionapi": {
       "getname": "Query schema version"
     }
@@ -1900,6 +1916,9 @@
     "diagramauthexception": {
       "diagramauthexception": "You do not have permission to {0} the current architecture diagram"
     },
+    "diagramischeckingexception": {
+      "diagramischeckingexception": "The architecture diagram is currently under review and cannot be edited"
+    },
     "diagramnotfoundexception": {
       "diagramnotfoundexception": "The architecture diagram \u0027{0}\u0027 does not exist"
     },
@@ -1908,6 +1927,9 @@
     },
     "diagramversionnotfoundexception": {
       "diagramversionnotfoundexception": "The architecture diagram version \u0027{0}\u0027 does not exist"
+    },
+    "versionstatus": {
+      "getenumname": "Architecture diagram version status"
     },
     "widgetisinuseexception": {
       "widgetisinuseexception": "The current component is in use"
@@ -3297,7 +3319,10 @@
       "activeversion": "Activate version",
       "catalogitem": "Catalog Entry",
       "catalogitemid": "Catalog Item ID",
+      "checkaction": "Audit Action",
       "checkstatus": "Audit status",
+      "checktime": "Audit time",
+      "checkuseruuid": "Audit user uuid",
       "diagramid": "Architecture diagram ID",
       "editversion": "Edit version",
       "editversiondata": "Edit version data",
