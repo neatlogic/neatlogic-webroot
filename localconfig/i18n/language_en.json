@@ -1783,6 +1783,9 @@
     "getresourceentityapi": {
       "getname": "Obtain resource view configuration information"
     },
+    "getresourceentityviewdatalistapi": {
+      "getname": "Obtain Resource View Data List"
+    },
     "listresourceentityapi": {
       "getname": "Obtain a list of resource center configurations"
     },
