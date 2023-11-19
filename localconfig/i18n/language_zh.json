@@ -1812,6 +1812,9 @@
     "getresourceentityapi": {
       "getname": "获取资源视图配置信息"
     },
+    "getresourceentityviewdatalistapi": {
+      "getname": "获取资源视图数据列表"
+    },
     "listresourceentityapi": {
       "getname": "获取资源中心配置列表"
     },
