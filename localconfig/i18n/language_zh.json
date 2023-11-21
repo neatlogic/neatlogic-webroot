@@ -229,6 +229,7 @@
     "roleuuidlist": "角色uuid列表",
     "rownum": "数据条目",
     "savemode": "保存模式",
+    "sceneuuid": "场景uuid",
     "schedule": "定时任务",
     "schedulejobclassinfo": "定时作业组件信息",
     "schedulejobinfo": "定时作业信息",
@@ -314,6 +315,7 @@
     "versionlist": "版本列表",
     "versionname": "版本名称",
     "versionnum": "版本号",
+    "versionuuid": "版本uuid",
     "view": "查看",
     "viewable": "是否可查看",
     "viewauthoritylist": "查看权限列表",
@@ -861,6 +863,11 @@
   "nfew": {
     "wechatauthenticationinformationnotfoundexception": {
       "wechatauthenticationinformationnotfoundexception": "企业微信认证信息找不到"
+    }
+  },
+  "nffe": {
+    "formversionscenenotfoundexception": {
+      "formversionscenenotfoundexception": "在表单：{0}的版本：{1}中，场景：{2}不存在"
     }
   },
   "nfie": {
@@ -2989,6 +2996,9 @@
   "nmtaf": {
     "downloadimageapi": {
       "getname": "图片下载接口"
+    },
+    "saveformversiondefaultsceneapi": {
+      "getname": "设置表单版本默认场景"
     }
   },
   "nmtai": {
