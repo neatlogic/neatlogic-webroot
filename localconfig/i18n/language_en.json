@@ -229,6 +229,7 @@
     "roleuuidlist": "Role uuid List",
     "rownum": "Data Entry",
     "savemode": "Save Mode",
+    "sceneuuid": "Scenario uuid",
     "schedule": "Scheduled Tasks",
     "schedulejobclassinfo": "Timed Job Component Information",
     "schedulejobinfo": "Scheduled job information",
@@ -314,6 +315,7 @@
     "versionlist": "List of versions",
     "versionname": "Version name",
     "versionnum": "Version number",
+    "versionuuid": "Version uuid",
     "view": "check",
     "viewable": "Can I view it",
     "viewauthoritylist": "View permission list",
@@ -832,6 +834,11 @@
   "nfew": {
     "wechatauthenticationinformationnotfoundexception": {
       "wechatauthenticationinformationnotfoundexception": "Enterprise WeChat authentication information not found"
+    }
+  },
+  "nffe": {
+    "formversionscenenotfoundexception": {
+      "formversionscenenotfoundexception": "In version: {1} of form: {0}, scenario: {2} does not exist"
     }
   },
   "nfie": {
@@ -2934,6 +2941,9 @@
   "nmtaf": {
     "downloadimageapi": {
       "getname": "Image download interface"
+    },
+    "saveformversiondefaultsceneapi": {
+      "getname": "Set the default scenario for form version"
     }
   },
   "nmtai": {
