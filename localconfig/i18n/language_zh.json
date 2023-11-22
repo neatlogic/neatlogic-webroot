@@ -1,10 +1,11 @@
 {
   "common": {
     "account": "账号",
-    "action": "动作类型",
+    "action": "动作",
     "actiontime": "操作时间",
     "actiontype": "操作类型",
     "actionuser": "操作人",
+    "active": "激活",
     "activeversionid": "激活版本ID",
     "alertattr": "告警属性",
     "alertdetail": "告警详情",
@@ -18,7 +19,10 @@
     "attachment": "附件",
     "attributelist": "属性列表",
     "attrname": "属性名",
+    "auth": "授权",
     "authlist": "授权列表",
+    "authtype": "授权类型",
+    "authuuid": "授权对象uuid",
     "avatar": "头像",
     "basicauth": "Basic认证",
     "bearerauth": "Bearer Token",
@@ -30,6 +34,7 @@
     "catalog": "目录",
     "catalogid": "目录id",
     "catalogname": "目录名称",
+    "check": "审核",
     "children": "子集合",
     "classname": "全类名",
     "cnname": "中文名称",
@@ -38,6 +43,7 @@
     "color": "颜色",
     "comment": "评论",
     "commentcount": "评论数量",
+    "commitcheck": "提交审核",
     "common": "公共",
     "condition": "条件配置",
     "config": "配置",
@@ -62,13 +68,14 @@
     "defaultvaluelist": "用于回显的参数列表",
     "delaytime": "延迟时间",
     "deletable": "是否可删除",
+    "delete": "删除",
     "dependency": "依赖",
     "description": "描述",
     "displaymode": "显示模式",
     "displaytype": "显示类型",
     "double": "双精度浮点数",
     "dropdownlist": "下拉选择",
-    "edit": "修改",
+    "edit": "编辑",
     "editable": "是否可编辑",
     "editauthoritylist": "编辑权限列表",
     "editdate": "修改日期",
@@ -125,6 +132,10 @@
     "int": "整形",
     "isactive": "是否激活",
     "isauthenticate": "是否需要鉴权",
+    "iscancheck": "是否能审核",
+    "iscandelete": "是否能删除",
+    "iscanmodify": "是否能修改",
+    "iscanview": "是否能查看",
     "isdeleted": "是否已删除",
     "isend": "是否完结",
     "isexpired": "是否过期",
@@ -148,7 +159,7 @@
     "jsonobject": "json对象",
     "key": "键",
     "keyword": "关键字",
-    "level": "级别",
+    "level": "层次",
     "lft": "左编码",
     "loglist": "日志列表",
     "long": "长整数",
@@ -165,6 +176,7 @@
       "name": "模块名称"
     },
     "modulegroup": "模块组",
+    "moduleid": "模块IDID",
     "mustinput": "必填",
     "name": "名称",
     "needpage": "是否需要分页，默认true",
@@ -181,8 +193,9 @@
     "packagename": "包名",
     "pagecount": "总页数",
     "pageinfo": "分页数据",
-    "pagesize": "每页数据条目",
+    "pagesize": "每页大小",
     "parentid": "父id",
+    "pass": "通过",
     "password": "密码",
     "path": "路径",
     "pc": "电脑端",
@@ -198,11 +211,15 @@
     "progress": "进度",
     "publiccache": "公共缓存",
     "rangelist": "限制接口option范围",
+    "readonly": "只读",
+    "recall": "撤回",
     "referencecount": "引用数量",
     "regex": "正则表达式",
+    "reject": "驳回",
     "relname": "关系名称",
     "reltype": "关系类型",
     "request": "需求",
+    "retreat": "\"撤回\"",
     "reviewable": "是否可审核",
     "reviewer": "审核人",
     "reviewerlist": "审批人列表",
@@ -212,6 +229,7 @@
     "roleuuidlist": "角色uuid列表",
     "rownum": "数据条目",
     "savemode": "保存模式",
+    "sceneuuid": "场景uuid",
     "schedule": "定时任务",
     "schedulejobclassinfo": "定时作业组件信息",
     "schedulejobinfo": "定时作业信息",
@@ -245,6 +263,7 @@
     "tagid": "标签id",
     "tagidlist": "标签id列表",
     "taglist": "标签列表",
+    "tagsdir": "标签目录",
     "task": "任务",
     "tbodylist": "展示的值",
     "team": "组",
@@ -296,6 +315,8 @@
     "versionlist": "版本列表",
     "versionname": "版本名称",
     "versionnum": "版本号",
+    "versionuuid": "版本uuid",
+    "view": "查看",
     "viewable": "是否可查看",
     "viewauthoritylist": "查看权限列表",
     "viewcount": "浏览量",
@@ -399,7 +420,7 @@
         "invalid": "版本日志:{0} ,changelog下文件夹名需按{1}格式命名"
       },
       "getactivetenantlist": {
-        "neatlogicdb": "neatlogic库连接不上,请核对nacos|config.properties的db.driverClassName、db.url、db.username、db.password配置无误后重启"
+        "neatlogicdb": "neatlogic库连接不上,请核对{0}的db.driverClassName、db.url、db.username、db.password配置无误后重启"
       },
       "initdmlsql": {
         "tenant": "开始初始化数据库..."
@@ -409,6 +430,22 @@
   "nfc": {
     "frameworktenantconfig": {
       "apiqps": "每秒向服务器发送的请求数量峰值（不分接口）"
+    }
+  },
+  "nfcc": {
+    "userprofile": {
+      "rolecreatesuccess": "角色创建成功",
+      "teamcreatesuccess": "分组创建成功",
+      "usercreatesuccess": "用户创建成功"
+    },
+    "userprofileoperate": {
+      "backrolelist": "返回角色列表",
+      "backteamlist": "返回分组列表",
+      "backuserlist": "返回用户列表",
+      "editrole": "编辑角色",
+      "editteam": "编辑分组",
+      "edituser": "编辑用户",
+      "keeponcreate": "继续创建"
     }
   },
   "nfcdc": {
@@ -765,6 +802,9 @@
   "nfdev": {
     "deployversionnotfoundedittargetexception": {
       "deployversionnotfoundedittargetexception": "发布版本：{0}不存在"
+    },
+    "deployversionsyncfailedexception": {
+      "deployversionsyncfailedexception": "发布同步版本工程目录失败，错误：{0}"
     }
   },
   "nfdt": {
@@ -825,6 +865,11 @@
       "wechatauthenticationinformationnotfoundexception": "企业微信认证信息找不到"
     }
   },
+  "nffe": {
+    "formversionscenenotfoundexception": {
+      "formversionscenenotfoundexception": "在表单：{0}的版本：{1}中，场景：{2}不存在"
+    }
+  },
   "nfie": {
     "exportnoauthexception": {
       "exportnoauthexception": "没有导出权限"
@@ -874,6 +919,14 @@
     },
     "processtaskgroupsearch": {
       "processusertype": "工单干系人"
+    },
+    "userprofile": {
+      "processtasksuccess": "服务上报成功"
+    },
+    "userprofileoperate": {
+      "backcataloglist": "返回服务目录列表",
+      "keeponcreatetask": "继续上报",
+      "viewprocesstaskdetail": "查看工单详情"
     }
   },
   "nfpec": {
@@ -890,6 +943,9 @@
     },
     "processtasknotfoundedittargetexception": {
       "processtasknotfoundedittargetexception": "工单：{0}不存在"
+    },
+    "processtaskserialnumberpolicynotfoundexception": {
+      "processtaskserialnumberpolicynotfoundexception": "服务类型：”{0}“没有配置工单号生成策略，请联系管理员，在“IT服务/服务类型管理”中编辑该服务类型的工单号前缀、工单号规则、起始位、工单号位数"
     }
   },
   "nfral": {
@@ -1736,6 +1792,14 @@
     }
   },
   "nmcar": {
+    "getcirellistapi": {
+      "getname": "获取模型关系列表",
+      "input": {
+        "param": {
+          "desc": "是否需要操作列，如果需要则根据用户权限返回合适的操作列"
+        }
+      }
+    },
     "listallcirelapi": {
       "getname": "获取模型所有关系列表"
     }
@@ -1754,6 +1818,9 @@
   "nmcarc": {
     "getresourceentityapi": {
       "getname": "获取资源视图配置信息"
+    },
+    "getresourceentityviewdatalistapi": {
+      "getname": "获取资源视图数据列表"
     },
     "listresourceentityapi": {
       "getname": "获取资源中心配置列表"
@@ -1790,11 +1857,25 @@
     "getcatalogapi": {
       "getname": "获取目录"
     },
+    "listcataloggraphapi": {
+      "getname": "获取目录项架构图列表"
+    },
+    "listcatalogtemplateapi": {
+      "getname": "获取目录模板列表"
+    },
     "savecatalogapi": {
       "getname": "保存目录"
     },
     "searchcatalogapi": {
       "getname": "获取目录列表"
+    }
+  },
+  "nmcdad": {
+    "savediagramstatusapi": {
+      "getname": "修改架构图状态"
+    },
+    "searchdiagramversionapi": {
+      "getname": "查询架构图版本"
     }
   },
   "nmcdag": {
@@ -1843,6 +1924,11 @@
     }
   },
   "nmcdd": {
+    "diagramvo": {
+      "entityfield": {
+        "name": "模板"
+      }
+    },
     "graphversionvo": {
       "entityfield": {
         "name": "编辑时间"
@@ -1860,6 +1946,30 @@
     }
   },
   "nmcde": {
+    "catalognotfoundexception": {
+      "catalognotfoundexception": "目录“{0}”不存在"
+    },
+    "catalogtypeirregularexception": {
+      "catalogtypeirregularexception": "目录不是“{0}”类型"
+    },
+    "diagramauthexception": {
+      "diagramauthexception": "您没有{0}当前架构图的权限"
+    },
+    "diagramischeckingexception": {
+      "diagramischeckingexception": "架构图正在审核中，无法编辑"
+    },
+    "diagramnotfoundexception": {
+      "diagramnotfoundexception": "架构图“{0}”不存在"
+    },
+    "diagramstatusirregularexception": {
+      "diagramstatusirregularexception": "当前架构图状态已发生变化，请刷新页面重新编辑"
+    },
+    "diagramversionnotfoundexception": {
+      "diagramversionnotfoundexception": "架构图版本“{0}”不存在"
+    },
+    "versionstatus": {
+      "getenumname": "架构图版本状态"
+    },
     "widgetisinuseexception": {
       "widgetisinuseexception": "当前组件正在使用中"
     }
@@ -2211,6 +2321,9 @@
           }
         }
       }
+    },
+    "searchdeployversionapi": {
+      "getname": "查询发布版本列表"
     }
   },
   "nmeas": {
@@ -2328,6 +2441,12 @@
           }
         }
       }
+    }
+  },
+  "nmmal": {
+    "master_admin": {
+      "getauthdisplayname": "租户管理超级管理员权限",
+      "getauthintroduction": "对租户管理进行任何操作"
     }
   },
   "nmmam": {
@@ -2888,6 +3007,9 @@
   "nmtaf": {
     "downloadimageapi": {
       "getname": "图片下载接口"
+    },
+    "saveformversiondefaultsceneapi": {
+      "getname": "设置表单版本默认场景"
     }
   },
   "nmtai": {
@@ -3031,6 +3153,25 @@
     "userdeleteapi": {
       "getname": "删除用户接口"
     },
+    "userprofilelistapi": {
+      "getname": "用户个性化查询列表接口"
+    },
+    "userprofilesaveapi": {
+      "getname": "保存用户个性化设置",
+      "input": {
+        "param": {
+          "checked": {
+            "desc": "操作个性化选项勾选"
+          },
+          "name": {
+            "desc": "操作个性化选项名"
+          },
+          "operate": {
+            "desc": "具体操作个性化选项"
+          }
+        }
+      }
+    },
     "usersaveapi": {
       "getname": "保存用户接口"
     },
@@ -3155,6 +3296,7 @@
       "ciuniquename": "模型唯一标识",
       "envid": "环境id",
       "envidlist": "环境id列表",
+      "envlist": "环境列表",
       "envname": "环境名称",
       "globalattr": "全局属性",
       "groupdesc": "配置管理平台",
@@ -3214,20 +3356,33 @@
     "deploy": {
       "apppipeline": "发布应用流水线",
       "apppipelineinfo": "应用流水线配置信息",
+      "buildnolist": "编译号列表",
       "ciid": "持续集成配置id",
+      "compilecount": "编译次数",
+      "compilefailcount": "编译失败次数",
+      "compilesuccesscount": "编译成功次数",
       "confidence": "信心",
+      "criticalcvecount": "CRITICAL级别漏洞数",
+      "criticalstarcvecount": "CRITICAL*级别漏洞数",
       "cvecount": "CVE计数",
       "cvelist": "CVE漏洞列表",
+      "endrev": "结束Rev号",
       "evidencecount": "证据计数",
       "groupdesc": "规范快捷的持续集成-部署平台",
       "groupname": "集成与发布",
+      "highcvecount": "HIGH级别漏洞数",
       "highestseverity": "最高严重程度",
+      "isfreeze": "是否封版",
+      "issuecount": "需求数",
       "lanelist": "通道列表",
       "name": "自动发布",
       "packageurl": "包详情地址",
       "proxytourl": "代理地址",
+      "repo": "仓库地址",
       "runnerid": "执行器id",
       "scheduleinfo": "发布定时作业信息",
+      "startdev": "开始Rev号",
+      "trunk": "主干",
       "version": "版本",
       "vulnerabilityid": "漏洞ID",
       "vulnerabilityids": "脆弱性id",
@@ -3236,11 +3391,27 @@
     "diagram": {
       "activeversion": "激活版本",
       "catalogitem": "目录项",
+      "catalogitemid": "目录项id",
+      "catalogtype": "目录类型",
+      "checkaction": "审核动作",
+      "checkstatus": "审核状态",
+      "checktime": "审核时间",
+      "checkuseruuid": "审核用户uuid",
+      "currentversion": "当前版本",
+      "diagramid": "架构图id",
       "editversion": "编辑版本",
+      "editversiondata": "编辑版本数据",
       "isstarttemplate": "是否开始模板",
-      "name": "设计图",
+      "name": "架构图",
       "parentid": "父节点id",
-      "parentuuid": "父节点uuid"
+      "parentuuid": "父节点uuid",
+      "status": {
+        "checking": "审核中",
+        "editing": "编辑中",
+        "passed": "已通过",
+        "rejected": "未通过"
+      },
+      "templatelist": "模板列表"
     },
     "dr": {
       "customparamlist": "自定义参数列表",

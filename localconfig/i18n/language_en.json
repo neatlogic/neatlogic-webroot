@@ -1,10 +1,11 @@
 {
   "common": {
     "account": "Account",
-    "action": "Action type",
+    "action": "action",
     "actiontime": "Operation time",
     "actiontype": "Operation type",
     "actionuser": "Operator",
+    "active": "activation",
     "activeversionid": "Activation version ID",
     "alertattr": "Alarm Properties",
     "alertdetail": "Alarm details",
@@ -18,7 +19,10 @@
     "attachment": "attachment",
     "attributelist": "Attribute List",
     "attrname": "Attribute Name",
+    "auth": "authorization",
     "authlist": "Authorization List",
+    "authtype": "Authorization Type",
+    "authuuid": "Authorized object uuid",
     "avatar": "Avatar",
     "basicauth": "Basic authentication",
     "bearerauth": "Bearer Token",
@@ -30,6 +34,7 @@
     "catalog": "catalogue",
     "catalogid": "Directory ID",
     "catalogname": "Directory Name",
+    "check": "Auditing",
     "children": "subset",
     "classname": "Full class name",
     "cnname": "Chinese name",
@@ -38,6 +43,7 @@
     "color": "colour",
     "comment": "comment",
     "commentcount": "Number of comments",
+    "commitcheck": "Submit for review",
     "common": "public",
     "condition": "Condition configuration",
     "config": "allocation",
@@ -62,13 +68,14 @@
     "defaultvaluelist": "List of parameters for echo",
     "delaytime": "delay time ",
     "deletable": "Can I delete it",
+    "delete": "delete",
     "dependency": "rely on",
     "description": "describe",
     "displaymode": "display mode",
     "displaytype": "Display Type",
     "double": "Double-precision floating-point format",
     "dropdownlist": "Dropdown selection",
-    "edit": "modify",
+    "edit": "edit",
     "editable": "Editable or not",
     "editauthoritylist": "Edit Permission List",
     "editdate": "modification date",
@@ -125,6 +132,10 @@
     "int": "int",
     "isactive": "Activate or not",
     "isauthenticate": "Do you need authentication",
+    "iscancheck": "Can we review it",
+    "iscandelete": "Can I delete it",
+    "iscanmodify": "Can I modify it",
+    "iscanview": "Can I view it",
     "isdeleted": "Has it been deleted",
     "isend": "Completed or not",
     "isexpired": "Expired or not",
@@ -148,7 +159,7 @@
     "jsonobject": "JSON object",
     "key": "key",
     "keyword": "keyword",
-    "level": "level",
+    "level": "arrangement",
     "lft": "Left encoding",
     "loglist": "Log List",
     "long": "long integer",
@@ -165,6 +176,7 @@
       "name": "Module Name"
     },
     "modulegroup": "Module group",
+    "moduleid": "Module ID",
     "mustinput": "Required",
     "name": "name",
     "needpage": "Whether pagination is required, default to true",
@@ -183,6 +195,7 @@
     "pageinfo": "Paging data",
     "pagesize": "page size",
     "parentid": "Parent ID",
+    "pass": "adopt",
     "password": "password",
     "path": "path",
     "pc": "Computer side",
@@ -198,11 +211,15 @@
     "progress": "schedule",
     "publiccache": "Public cache",
     "rangelist": "Limit the scope of interface options",
+    "readonly": "read-only",
+    "recall": "withdraw",
     "referencecount": "Number of references",
     "regex": "regular expression ",
+    "reject": "Reject",
     "relname": "Relationship Name",
     "reltype": "Relationship Type",
     "request": "demand",
+    "retreat": "Withdrawal",
     "reviewable": "Is it auditable",
     "reviewer": "Reviewed by",
     "reviewerlist": "List of approvers",
@@ -212,6 +229,7 @@
     "roleuuidlist": "Role uuid List",
     "rownum": "Data Entry",
     "savemode": "Save Mode",
+    "sceneuuid": "Scenario uuid",
     "schedule": "Scheduled Tasks",
     "schedulejobclassinfo": "Timed Job Component Information",
     "schedulejobinfo": "Scheduled job information",
@@ -245,6 +263,7 @@
     "tagid": "Tag ID",
     "tagidlist": "Tag ID List",
     "taglist": "Label List",
+    "tagsdir": "Label Catalog",
     "task": "task",
     "tbodylist": "tbody list",
     "team": "group",
@@ -296,6 +315,8 @@
     "versionlist": "List of versions",
     "versionname": "Version name",
     "versionnum": "Version number",
+    "versionuuid": "Version uuid",
+    "view": "check",
     "viewable": "Can I view it",
     "viewauthoritylist": "View permission list",
     "viewcount": "View volume",
@@ -399,7 +420,7 @@
         "invalid": "Version log: {0}, folder name under changelog needs to be named in {1} format"
       },
       "getactivetenantlist": {
-        "neatlogicdb": "Unable to connect to the nextlogic library. Check if the database account and password configuration for nacos | config.properties are correct and restart"
+        "neatlogicdb": "Unable to connect to the nextlogic library. Check if the database account and password configuration for {0} are correct and restart"
       },
       "initdmlsql": {
         "tenant": "Start to Initialize Database..."
@@ -409,6 +430,22 @@
   "nfc": {
     "frameworktenantconfig": {
       "apiqps": "Peak number of requests sent to the server per second (regardless of interface)"
+    }
+  },
+  "nfcc": {
+    "userprofile": {
+      "rolecreatesuccess": "Role created successfully",
+      "teamcreatesuccess": "Group created successfully",
+      "usercreatesuccess": "User created successfully"
+    },
+    "userprofileoperate": {
+      "backrolelist": "Return to Role List",
+      "backteamlist": "Return to group list",
+      "backuserlist": "Return to user list",
+      "editrole": "Edit Role",
+      "editteam": "Edit Group",
+      "edituser": "Edit User",
+      "keeponcreate": "Continue creating"
     }
   },
   "nfcdc": {
@@ -743,6 +780,9 @@
   "nfdev": {
     "deployversionnotfoundedittargetexception": {
       "deployversionnotfoundedittargetexception": "Release version: {0} does not exist"
+    },
+    "deployversionsyncfailedexception": {
+      "deployversionsyncfailedexception": "Failed to publish synchronized version project directory, error: {0}"
     }
   },
   "nfe": {
@@ -796,6 +836,11 @@
       "wechatauthenticationinformationnotfoundexception": "Enterprise WeChat authentication information not found"
     }
   },
+  "nffe": {
+    "formversionscenenotfoundexception": {
+      "formversionscenenotfoundexception": "In version: {1} of form: {0}, scenario: {2} does not exist"
+    }
+  },
   "nfie": {
     "exportnoauthexception": {
       "exportnoauthexception": "No export permission"
@@ -845,6 +890,14 @@
     },
     "processtaskgroupsearch": {
       "processusertype": "Work order stakeholders"
+    },
+    "userprofile": {
+      "processtasksuccess": "Service reported successfully"
+    },
+    "userprofileoperate": {
+      "backcataloglist": "Return to the list of service directories",
+      "keeponcreatetask": "Continue reporting",
+      "viewprocesstaskdetail": "View job details"
     }
   },
   "nfpec": {
@@ -861,6 +914,9 @@
     },
     "processtasknotfoundedittargetexception": {
       "processtasknotfoundedittargetexception": "Work order: {0} does not exist"
+    },
+    "processtaskserialnumberpolicynotfoundexception": {
+      "processtaskserialnumberpolicynotfoundexception": "Service type: \u0027{0}\u0027 does not have a configured work order number generation strategy. Please contact the administrator and edit the work order prefix, work order rule, start position, and work order number digits for this service type in \u0027IT Service/Service Type Management\u0027"
     }
   },
   "nfral": {
@@ -1707,6 +1763,14 @@
     }
   },
   "nmcar": {
+    "getcirellistapi": {
+      "getname": "Obtain a list of model relationships",
+      "input": {
+        "param": {
+          "desc": "Do you need an action column? If so, return the appropriate action column based on user permissions"
+        }
+      }
+    },
     "listallcirelapi": {
       "getname": "Obtain a list of all relationships in the model"
     }
@@ -1725,6 +1789,9 @@
   "nmcarc": {
     "getresourceentityapi": {
       "getname": "Obtain resource view configuration information"
+    },
+    "getresourceentityviewdatalistapi": {
+      "getname": "Obtain Resource View Data List"
     },
     "listresourceentityapi": {
       "getname": "Obtain a list of resource center configurations"
@@ -1761,11 +1828,25 @@
     "getcatalogapi": {
       "getname": "Get directory"
     },
+    "listcataloggraphapi": {
+      "getname": "Obtain a list of catalog item frame compositions"
+    },
+    "listcatalogtemplateapi": {
+      "getname": "Obtain directory template list"
+    },
     "savecatalogapi": {
       "getname": "Save Directory"
     },
     "searchcatalogapi": {
       "getname": "Get directory list"
+    }
+  },
+  "nmcdad": {
+    "savediagramstatusapi": {
+      "getname": "Modify the status of the architecture diagram"
+    },
+    "searchdiagramversionapi": {
+      "getname": "Query schema version"
     }
   },
   "nmcdag": {
@@ -1814,6 +1895,11 @@
     }
   },
   "nmcdd": {
+    "diagramvo": {
+      "entityfield": {
+        "name": "Template"
+      }
+    },
     "graphversionvo": {
       "entityfield": {
         "name": "Editing time"
@@ -1831,6 +1917,30 @@
     }
   },
   "nmcde": {
+    "catalognotfoundexception": {
+      "catalognotfoundexception": "Directory \u0027{0}\u0027 does not exist"
+    },
+    "catalogtypeirregularexception": {
+      "catalogtypeirregularexception": "Directory is not of type \u0027{0}\u0027"
+    },
+    "diagramauthexception": {
+      "diagramauthexception": "You do not have permission to {0} the current architecture diagram"
+    },
+    "diagramischeckingexception": {
+      "diagramischeckingexception": "The architecture diagram is currently under review and cannot be edited"
+    },
+    "diagramnotfoundexception": {
+      "diagramnotfoundexception": "The architecture diagram \u0027{0}\u0027 does not exist"
+    },
+    "diagramstatusirregularexception": {
+      "diagramstatusirregularexception": "The current architecture diagram state has changed. Please refresh the page and edit again"
+    },
+    "diagramversionnotfoundexception": {
+      "diagramversionnotfoundexception": "The architecture diagram version \u0027{0}\u0027 does not exist"
+    },
+    "versionstatus": {
+      "getenumname": "Architecture diagram version status"
+    },
     "widgetisinuseexception": {
       "widgetisinuseexception": "The current component is in use"
     }
@@ -2182,6 +2292,9 @@
           }
         }
       }
+    },
+    "searchdeployversionapi": {
+      "getname": "Query Release Version List"
     }
   },
   "nmeas": {
@@ -2299,6 +2412,12 @@
           }
         }
       }
+    }
+  },
+  "nmmal": {
+    "master_admin": {
+      "getauthdisplayname": "Tenant Management Super Administrator Permissions",
+      "getauthintroduction": "Perform any actions on tenant management"
     }
   },
   "nmmam": {
@@ -2833,6 +2952,9 @@
   "nmtaf": {
     "downloadimageapi": {
       "getname": "Image download interface"
+    },
+    "saveformversiondefaultsceneapi": {
+      "getname": "Set the default scenario for form version"
     }
   },
   "nmtai": {
@@ -2982,6 +3104,25 @@
     "userdeleteapi": {
       "getname": "Delete User Interface"
     },
+    "userprofilelistapi": {
+      "getname": "User personalized query list interface"
+    },
+    "userprofilesaveapi": {
+      "getname": "Save user personalization settings",
+      "input": {
+        "param": {
+          "checked": {
+            "desc": "Check the personalized options for operation"
+          },
+          "name": {
+            "desc": "Personalized item name for operation"
+          },
+          "operate": {
+            "desc": "Personalized options for specific operations"
+          }
+        }
+      }
+    },
     "usersaveapi": {
       "getname": "Save User Interface"
     },
@@ -3106,6 +3247,7 @@
       "ciuniquename": "Model Unique Identification",
       "envid": "Environment ID",
       "envidlist": "Environment ID List",
+      "envlist": "Environment List",
       "envname": "Environment name",
       "globalattr": "Global Properties",
       "groupdesc": "Configuration Management Platform",
@@ -3165,20 +3307,33 @@
     "deploy": {
       "apppipeline": "Publishing application pipeline",
       "apppipelineinfo": "Application pipeline configuration information",
+      "buildnolist": "Compilation number list",
       "ciid": "Continuous Integration Configuration ID",
+      "compilecount": "Compilation Times",
+      "compilefailcount": "Compilation failure count",
+      "compilesuccesscount": "Compilation Success Times",
       "confidence": "confidence",
+      "criticalcvecount": "CRITICAL level vulnerabilities",
+      "criticalstarcvecount": "CRITICAL * level vulnerability count",
       "cvecount": "CVE Count",
       "cvelist": "CVE vulnerability list",
+      "endrev": "End Rev Number",
       "evidencecount": "Evidence count",
       "groupdesc": "Standardized and fast continuous integration deployment platform",
       "groupname": "DevOps",
+      "highcvecount": "Number of High level vulnerabilities",
       "highestseverity": "Maximum Severity",
+      "isfreeze": "Whether to seal the version",
+      "issuecount": "Number of requirements",
       "lanelist": "Channel List",
       "name": "DevOps",
       "packageurl": "Package Details Address",
       "proxytourl": "Proxy address",
+      "repo": "Warehouse address",
       "runnerid": "Executor ID",
       "scheduleinfo": "Publish scheduled job information",
+      "startdev": "Start Rev Number",
+      "trunk": "trunk",
       "version": "version",
       "vulnerabilityid": "Vulnerability ID",
       "vulnerabilityids": "Vulnerability ID",
@@ -3187,11 +3342,27 @@
     "diagram": {
       "activeversion": "Activate version",
       "catalogitem": "Catalog Entry",
+      "catalogitemid": "Catalog Item ID",
+      "catalogtype": "Catalog Type",
+      "checkaction": "Audit Action",
+      "checkstatus": "Audit status",
+      "checktime": "Audit time",
+      "checkuseruuid": "Audit user uuid",
+      "currentversion": "current version",
+      "diagramid": "Architecture diagram ID",
       "editversion": "Edit version",
+      "editversiondata": "Edit version data",
       "isstarttemplate": "Start template or not",
-      "name": "Design drawings",
+      "name": "Architecture diagram",
       "parentid": "Parent node ID",
-      "parentuuid": "Parent node uuid"
+      "parentuuid": "Parent node uuid",
+      "status": {
+        "checking": "Under review",
+        "editing": "Editing",
+        "passed": "Passed",
+        "rejected": "Failed"
+      },
+      "templatelist": "Template List"
     },
     "dr": {
       "customparamlist": "Custom Parameter List",
