@@ -1945,6 +1945,11 @@
       "widgetisinuseexception": "The current component is in use"
     }
   },
+  "nmcpe": {
+    "cientityconfigillegalexception": {
+      "cientityconfigillegalexception": "The CMDB node model mapping information is illegal: {0}"
+    }
+  },
   "nmcps": {
     "cmdbprocessstephandlertype": {
       "cientitysync": "Configuration item synchronization",
@@ -2491,6 +2496,12 @@
     },
     "batchurgeprocesstaskapi": {
       "getname": "Batch reminder work orders"
+    },
+    "processdraftgetapi": {
+      "getname": "Obtain process draft information"
+    },
+    "processdraftsaveapi": {
+      "getname": "Save Process Draft"
     },
     "processgetapi": {
       "getname": "Obtain a single flowchart data interface"
