@@ -1979,6 +1979,11 @@
       "widgetisinuseexception": "当前组件正在使用中"
     }
   },
+  "nmcpe": {
+    "cientityconfigillegalexception": {
+      "cientityconfigillegalexception": "CMDB节点模型映射信息不合法：{0}"
+    }
+  },
   "nmcps": {
     "cmdbprocessstephandlertype": {
       "cientitysync": "配置项同步",
@@ -2549,6 +2554,12 @@
     },
     "batchurgeprocesstaskapi": {
       "getname": "批量催办工单"
+    },
+    "processdraftgetapi": {
+      "getname": "获取流程草稿信息"
+    },
+    "processdraftsaveapi": {
+      "getname": "保存流程草稿"
     },
     "processgetapi": {
       "getname": "获取单个流程图数据接口"
