@@ -425,6 +425,11 @@
       "initdmlsql": {
         "tenant": "开始初始化数据库..."
       }
+    },
+    "neatlogicdispatcherservlet": {
+      "init": {
+        "error": " 模块加载异常"
+      }
     }
   },
   "nfc": {

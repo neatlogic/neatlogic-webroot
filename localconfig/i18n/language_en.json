@@ -425,6 +425,11 @@
       "initdmlsql": {
         "tenant": "Start to Initialize Database..."
       }
+    },
+    "neatlogicdispatcherservlet": {
+      "init": {
+        "error": " Module loading exception"
+      }
     }
   },
   "nfc": {
