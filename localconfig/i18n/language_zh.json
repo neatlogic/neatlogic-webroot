@@ -3015,6 +3015,9 @@
     },
     "saveformversiondefaultsceneapi": {
       "getname": "设置表单版本默认场景"
+    },
+    "saveformversionscenereadonlyapi": {
+      "getname": "设置表单版本场景只读"
     }
   },
   "nmtai": {
