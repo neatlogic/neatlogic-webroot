@@ -2960,6 +2960,9 @@
     },
     "saveformversiondefaultsceneapi": {
       "getname": "Set the default scenario for form version"
+    },
+    "saveformversionscenereadonlyapi": {
+      "getname": "Set form version scenario read-only"
     }
   },
   "nmtai": {
