@@ -326,6 +326,13 @@
     "worktimename": "Working Time Window Name",
     "worktimeuuid": "Working Time Window Uuid"
   },
+  "enum": {
+    "rdm": {
+      "fullindextype": {
+        "issue": "R\u0026D management tasks"
+      }
+    }
+  },
   "nfac": {
     "autoexectenantconfig": {
       "autoexecjoblogencoding": "Automation job log Character encoding set",
@@ -1777,7 +1784,10 @@
       }
     },
     "listallcirelapi": {
-      "getname": "Obtain a list of all relationships in the model"
+      "ciidlist": "Model ID included in the path",
+      "endciid": "Endpoint Model ID",
+      "getname": "Obtain a list of all relationships in the model",
+      "startciid": "Starting point model ID"
     }
   },
   "nmcara": {
@@ -1916,6 +1926,7 @@
       }
     },
     "widgetvo": {
+      "ciicon": "Model icon",
       "entityfield": {
         "name": "shape"
       }
@@ -1935,13 +1946,17 @@
       "diagramischeckingexception": "The architecture diagram is currently under review and cannot be edited"
     },
     "diagramnotfoundexception": {
-      "diagramnotfoundexception": "The architecture diagram \u0027{0}\u0027 does not exist"
+      "diagramnotfoundexception": "The architecture diagram \u0027{0}\u0027 does not exist",
+      "diagramversionnotfoundexception": "Version \u0027{1}\u0027 of architecture diagram \u0027{0}\u0027 does not exist"
     },
     "diagramstatusirregularexception": {
       "diagramstatusirregularexception": "The current architecture diagram state has changed. Please refresh the page and edit again"
     },
     "diagramversionnotfoundexception": {
       "diagramversionnotfoundexception": "The architecture diagram version \u0027{0}\u0027 does not exist"
+    },
+    "templatenotfoundexception": {
+      "templatenotfoundexception": "Template \u0027{0}\u0027 does not exist"
     },
     "versionstatus": {
       "getenumname": "Architecture diagram version status"
@@ -3282,6 +3297,7 @@
       "protocolidlist": "Protocol ID List",
       "rel": "relationship",
       "relidlist": "Model Relationship ID List",
+      "relpath": "Relationship Path",
       "resourceentityinfo": "Resource View Information",
       "resourceid": "Resource ID",
       "resourcename": "Resource Name",
@@ -3360,6 +3376,7 @@
       "diagramid": "Architecture diagram ID",
       "editversion": "Edit version",
       "editversiondata": "Edit version data",
+      "issnapshot": "Is it a snapshot",
       "isstarttemplate": "Start template or not",
       "name": "Architecture diagram",
       "parentid": "Parent node ID",

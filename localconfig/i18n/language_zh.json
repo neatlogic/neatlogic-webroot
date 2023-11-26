@@ -326,6 +326,13 @@
     "worktimename": "工作时间窗口名称",
     "worktimeuuid": "工作时间窗口uuid"
   },
+  "enum": {
+    "rdm": {
+      "fullindextype": {
+        "issue": "研发管理任务"
+      }
+    }
+  },
   "nfac": {
     "autoexectenantconfig": {
       "autoexecjoblogencoding": "自动化作业日志字符编码集合",
@@ -1806,7 +1813,10 @@
       }
     },
     "listallcirelapi": {
-      "getname": "获取模型所有关系列表"
+      "ciidlist": "路径包含的模型id",
+      "endciid": "终点模型id",
+      "getname": "获取模型所有关系列表",
+      "startciid": "起点模型id"
     }
   },
   "nmcara": {
@@ -1945,6 +1955,7 @@
       }
     },
     "widgetvo": {
+      "ciicon": "模型图标",
       "entityfield": {
         "name": "形状"
       }
@@ -1964,13 +1975,17 @@
       "diagramischeckingexception": "架构图正在审核中，无法编辑"
     },
     "diagramnotfoundexception": {
-      "diagramnotfoundexception": "架构图“{0}”不存在"
+      "diagramnotfoundexception": "架构图“{0}”不存在",
+      "diagramversionnotfoundexception": "架构图“{0}”的版本“{1}”不存在"
     },
     "diagramstatusirregularexception": {
       "diagramstatusirregularexception": "当前架构图状态已发生变化，请刷新页面重新编辑"
     },
     "diagramversionnotfoundexception": {
       "diagramversionnotfoundexception": "架构图版本“{0}”不存在"
+    },
+    "templatenotfoundexception": {
+      "templatenotfoundexception": "模板“{0}”不存在"
     },
     "versionstatus": {
       "getenumname": "架构图版本状态"
@@ -3331,6 +3346,7 @@
       "protocolidlist": "协议id列表",
       "rel": "关系",
       "relidlist": "模型关系ID列表",
+      "relpath": "关系路径",
       "resourceentityinfo": "资源视图信息",
       "resourceid": "资源ID",
       "resourcename": "资源名称",
@@ -3409,6 +3425,7 @@
       "diagramid": "架构图id",
       "editversion": "编辑版本",
       "editversiondata": "编辑版本数据",
+      "issnapshot": "是否快照",
       "isstarttemplate": "是否开始模板",
       "name": "架构图",
       "parentid": "父节点id",
