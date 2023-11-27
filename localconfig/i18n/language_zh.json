@@ -1668,7 +1668,7 @@
           "desc": {
             "attrid": "关系id（通过引用配置项查询引用属性时使用）",
             "cientitylist": "配置项结果集，如果提供则不会进行搜索，补充头部信息后直接返回",
-            "condition": "需要显示的字段列表，包括属性关系和常量，范例：[\\\"attr_xxx\\\":\\\"keyword\\\",\\\"relfrom_xxx\\\":\\\"keyword\\\",\\\"relto_xxx\\\":\\\"keyword\\\",\\\"const_ciid\\\":\\\"keyword\\\"]，xxx代表对应属性或关系id",
+            "condition": "需要显示的字段列表，包括属性关系和常量，范例：[\\\"attr_xxx\\\",\\\"relfrom_xxx\\\",\\\"relto_xxx\\\",\\\"const_ciid\\\"]，xxx代表对应属性或关系id",
             "direction": "当前模型在关系中的位置",
             "dsl": "DSL语句",
             "fromcientityid": "引用配置项id（通过引用配置项查询引用属性时使用）",
@@ -1931,6 +1931,9 @@
     },
     "getwidgetapi": {
       "getname": "获取图元"
+    },
+    "listautofillcientityapi": {
+      "attrlist": "属性列表，范例：[id1,id2]，idx为配置项的属性id"
     },
     "listtemplatewidgetapi": {
       "getname": "获取模板图元"

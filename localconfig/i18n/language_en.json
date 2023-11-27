@@ -1639,7 +1639,7 @@
           "desc": {
             "attrid": "Relationship ID (used when querying reference properties through reference configuration items)",
             "cientitylist": "The configuration item result set, if provided, will not be searched, and will be returned directly after supplementing the header information",
-            "condition": "A list of fields that need to be displayed, including attribute relationships and constants. For example, [ \"attr_xxx \":  \"keyword \",  \"relfrom_xxx \":  \"keyword \",  \"relto_xxx \":  \"keyword \",  \"const_ciid \":  \"keyword \"], where xxx represents the corresponding attribute or relationship ID",
+            "condition": "A list of fields that need to be displayed, including attribute relationships and constants. For example, [ \"attr_xxx \", \"relfrom_xxx \",  \"relto_xxx \",  \"const_ciid \"], where xxx represents the corresponding attribute or relationship ID",
             "direction": "The position of the current model in the relationship",
             "dsl": "DSL statement",
             "fromcientityid": "Reference configuration item ID (used when querying reference properties through reference configuration items)",
@@ -1902,6 +1902,9 @@
     },
     "getwidgetapi": {
       "getname": "Get Elements"
+    },
+    "listautofillcientityapi": {
+      "attrlist": "Attribute list, example: [id1, id2], where idx is the attribute id of the configuration item"
     },
     "listtemplatewidgetapi": {
       "getname": "Obtain template elements"
