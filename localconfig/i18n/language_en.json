@@ -132,6 +132,7 @@
     "int": "int",
     "isactive": "Activate or not",
     "isauthenticate": "Do you need authentication",
+    "isautofill": "Auto Fill",
     "iscancheck": "Can we review it",
     "iscandelete": "Can I delete it",
     "iscanmodify": "Can I modify it",
@@ -1860,6 +1861,9 @@
     }
   },
   "nmcdad": {
+    "deletediagramversionapi": {
+      "getname": "Delete schema version"
+    },
     "savediagramstatusapi": {
       "getname": "Modify the status of the architecture diagram"
     },
@@ -1954,6 +1958,9 @@
     },
     "diagramstatusirregularexception": {
       "diagramstatusirregularexception": "The current architecture diagram state has changed. Please refresh the page and edit again"
+    },
+    "diagramversiondeleteexception": {
+      "diagramversiondeleteexception": "The current architecture diagram version has been approved and cannot be deleted"
     },
     "diagramversionnotfoundexception": {
       "diagramversionnotfoundexception": "The architecture diagram version \u0027{0}\u0027 does not exist"

@@ -132,6 +132,7 @@
     "int": "整形",
     "isactive": "是否激活",
     "isauthenticate": "是否需要鉴权",
+    "isautofill": "是否自动填充",
     "iscancheck": "是否能审核",
     "iscandelete": "是否能删除",
     "iscanmodify": "是否能修改",
@@ -1889,6 +1890,9 @@
     }
   },
   "nmcdad": {
+    "deletediagramversionapi": {
+      "getname": "删除架构图版本"
+    },
     "savediagramstatusapi": {
       "getname": "修改架构图状态"
     },
@@ -1983,6 +1987,9 @@
     },
     "diagramstatusirregularexception": {
       "diagramstatusirregularexception": "当前架构图状态已发生变化，请刷新页面重新编辑"
+    },
+    "diagramversiondeleteexception": {
+      "diagramversiondeleteexception": "当前架构图版本已经审核通过，不能删除"
     },
     "diagramversionnotfoundexception": {
       "diagramversionnotfoundexception": "架构图版本“{0}”不存在"
