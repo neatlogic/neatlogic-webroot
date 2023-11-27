@@ -820,6 +820,9 @@
     }
   },
   "nfer": {
+    "runnerconnectrefusedexception": {
+      "runnerconnectrefusedexceptiona": "Runner link failed: {0}"
+    },
     "runnernotfoundbytagentrunneridexception": {
       "runnernotfoundbytagentrunneridexception": "Could not find the corresponding runner for {0}. Please check logs/tagentRegisterAndNetty.log for abnormal heartbeat"
     }

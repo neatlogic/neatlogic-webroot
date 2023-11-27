@@ -849,6 +849,9 @@
     }
   },
   "nfer": {
+    "runnerconnectrefusedexception": {
+      "runnerconnectrefusedexceptiona": "Runner 链接失败： {0}"
+    },
     "runnernotfoundbytagentrunneridexception": {
       "runnernotfoundbytagentrunneridexception": "未找到{0}对应的runner,请查看logs/tagentRegisterAndNetty.log,心跳异常"
     }
