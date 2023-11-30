@@ -75,6 +75,7 @@
     "displaytype": "Display Type",
     "double": "Double-precision floating-point format",
     "dropdownlist": "Dropdown selection",
+    "dslexpression": "DSL expression",
     "edit": "edit",
     "editable": "Editable or not",
     "editauthoritylist": "Edit Permission List",
@@ -1844,6 +1845,9 @@
     }
   },
   "nmcdac": {
+    "deletecatalogapi": {
+      "getname": "Delete directory"
+    },
     "getcatalogapi": {
       "getname": "Get directory"
     },
@@ -1858,6 +1862,9 @@
     },
     "searchcatalogapi": {
       "getname": "Get directory list"
+    },
+    "updatecatalogsortapi": {
+      "getname": "Save directory sorting"
     }
   },
   "nmcdad": {
@@ -1886,8 +1893,14 @@
     }
   },
   "nmcdat": {
+    "deletetemplateapi": {
+      "getname": "Delete template"
+    },
     "gettemplateapi": {
       "getname": "Obtain Template"
+    },
+    "listautofilltemplateapi": {
+      "getname": "Get auto fill template"
     },
     "savetemplateapi": {
       "getname": "Save Template"
@@ -1904,7 +1917,8 @@
       "getname": "Get Elements"
     },
     "listautofillcientityapi": {
-      "attrlist": "Attribute list, example: [id1, id2], where idx is the attribute id of the configuration item"
+      "attrlist": "Attribute list, example: [id1, id2], where idx is the attribute id of the configuration item",
+      "getname": "Get the list of automatically filled configuration items"
     },
     "listtemplatewidgetapi": {
       "getname": "Obtain template elements"
@@ -1928,6 +1942,11 @@
     "graphversionvo": {
       "entityfield": {
         "name": "Editing time"
+      }
+    },
+    "templatevo": {
+      "entityfield": {
+        "name": "Is there an architecture diagram available"
       }
     },
     "templatewidgetvo": {
@@ -1967,6 +1986,11 @@
     },
     "diagramversionnotfoundexception": {
       "diagramversionnotfoundexception": "The architecture diagram version \u0027{0}\u0027 does not exist"
+    },
+    "templateisusingexception": {
+      "getmessage": "The current template is already in use by the directory. Please delete the relevant directory first",
+      "getmessageall": "The current template has been used",
+      "getmessagediagram": "The current template has been used by the architecture diagram. Please delete the relevant architecture diagram first"
     },
     "templatenotfoundexception": {
       "templatenotfoundexception": "Template \u0027{0}\u0027 does not exist"

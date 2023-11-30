@@ -75,6 +75,7 @@
     "displaytype": "显示类型",
     "double": "双精度浮点数",
     "dropdownlist": "下拉选择",
+    "dslexpression": "dsl表达式",
     "edit": "编辑",
     "editable": "是否可编辑",
     "editauthoritylist": "编辑权限列表",
@@ -1873,6 +1874,9 @@
     }
   },
   "nmcdac": {
+    "deletecatalogapi": {
+      "getname": "删除目录"
+    },
     "getcatalogapi": {
       "getname": "获取目录"
     },
@@ -1887,6 +1891,9 @@
     },
     "searchcatalogapi": {
       "getname": "获取目录列表"
+    },
+    "updatecatalogsortapi": {
+      "getname": "保存目录排序"
     }
   },
   "nmcdad": {
@@ -1915,8 +1922,14 @@
     }
   },
   "nmcdat": {
+    "deletetemplateapi": {
+      "getname": "删除模板"
+    },
     "gettemplateapi": {
       "getname": "获取模板"
+    },
+    "listautofilltemplateapi": {
+      "getname": "获取自动填充模板"
     },
     "savetemplateapi": {
       "getname": "保存模板"
@@ -1933,7 +1946,8 @@
       "getname": "获取图元"
     },
     "listautofillcientityapi": {
-      "attrlist": "属性列表，范例：[id1,id2]，idx为配置项的属性id"
+      "attrlist": "属性列表，范例：[id1,id2]，idx为配置项的属性id",
+      "getname": "获取自动填充配置项列表"
     },
     "listtemplatewidgetapi": {
       "getname": "获取模板图元"
@@ -1957,6 +1971,11 @@
     "graphversionvo": {
       "entityfield": {
         "name": "编辑时间"
+      }
+    },
+    "templatevo": {
+      "entityfield": {
+        "name": "是否有架构图"
       }
     },
     "templatewidgetvo": {
@@ -1996,6 +2015,11 @@
     },
     "diagramversionnotfoundexception": {
       "diagramversionnotfoundexception": "架构图版本“{0}”不存在"
+    },
+    "templateisusingexception": {
+      "getmessage": "当前模板已被目录使用，请先删除相关目录",
+      "getmessageall": "当前模板已被使用",
+      "getmessagediagram": "当前模板已被架构图使用，请先删除相关架构图"
     },
     "templatenotfoundexception": {
       "templatenotfoundexception": "模板“{0}”不存在"
