@@ -3505,6 +3505,9 @@
       "targetsceneid": "目标场景ID",
       "targetscenename": "目标场景名"
     },
+    "eoa": {
+      "name": "审批"
+    },
     "event": {
       "eventtypeid": "保存的事件类型ID",
       "eventtypelist": "关联的事件类型",
