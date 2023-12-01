@@ -3456,6 +3456,9 @@
       "targetsceneid": "Target Scene ID",
       "targetscenename": "Target Scene Name"
     },
+    "eoa": {
+      "name": "Approval"
+    },
     "event": {
       "eventtypeid": "Saved Event Type ID",
       "eventtypelist": "Associated event types",

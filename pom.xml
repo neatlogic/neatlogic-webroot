@@ -69,6 +69,14 @@
                     <groupId>com.neatlogic</groupId>
                     <artifactId>neatlogic-diagram-base</artifactId>
                 </dependency>
+                <dependency>
+                    <groupId>com.neatlogic</groupId>
+                    <artifactId>neatlogic-eoa</artifactId>
+                </dependency>
+                <dependency>
+                    <groupId>com.neatlogic</groupId>
+                    <artifactId>neatlogic-eoa-base</artifactId>
+                </dependency>
             </dependencies>
         </profile>
     </profiles>
