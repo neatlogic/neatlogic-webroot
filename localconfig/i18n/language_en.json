@@ -163,6 +163,7 @@
     "keyword": "keyword",
     "level": "arrangement",
     "lft": "Left encoding",
+    "locktime": "Lock time",
     "loglist": "Log List",
     "long": "long integer",
     "mailaddress": "Email address",
@@ -1422,6 +1423,9 @@
         }
       }
     },
+    "getcientitybaseinfoapi": {
+      "getname": "Obtain basic information of configuration items"
+    },
     "getcientitybaseinfolistapi": {
       "description": {
         "desc": "Obtain basic information of multiple configuration items based on the ID list"
@@ -1890,6 +1894,9 @@
     "diagram_graph_modify": {
       "getauthdisplayname": "Architecture diagram editing permissions",
       "getauthintroduction": "Edit and delete permissions for architecture diagrams"
+    },
+    "getdiagramlockapi": {
+      "getname": "Obtain Architecture Diagram Editing Lock"
     }
   },
   "nmcdat": {

@@ -163,6 +163,7 @@
     "keyword": "关键字",
     "level": "层次",
     "lft": "左编码",
+    "locktime": "锁定时间",
     "loglist": "日志列表",
     "long": "长整数",
     "mailaddress": "邮箱地址",
@@ -1451,6 +1452,9 @@
         }
       }
     },
+    "getcientitybaseinfoapi": {
+      "getname": "获取配置项基础信息"
+    },
     "getcientitybaseinfolistapi": {
       "description": {
         "desc": "根据id列表获取多个配置项基础信息"
@@ -1919,6 +1923,9 @@
     "diagram_graph_modify": {
       "getauthdisplayname": "架构图编辑权限",
       "getauthintroduction": "架构图编辑、删除权限"
+    },
+    "getdiagramlockapi": {
+      "getname": "获取架构图编辑锁"
     }
   },
   "nmcdat": {
