@@ -478,6 +478,9 @@
   "nfceg": {
     "globalattrisinusedexception": {
       "globalattrisinusedexception": "The current attribute is in use and cannot be deleted"
+    },
+    "globalattrvalueirregularexception": {
+      "globalattrvalueirregularexception": "The value \u0027{2}\u0027 of global attribute \u0027{0} ({1})\u0027 is illegal"
     }
   },
   "nfcer": {

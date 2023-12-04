@@ -478,6 +478,9 @@
   "nfceg": {
     "globalattrisinusedexception": {
       "globalattrisinusedexception": "当前属性正在使用中，不能删除"
+    },
+    "globalattrvalueirregularexception": {
+      "globalattrvalueirregularexception": "全局属性“{0}({1})”的值“{2}”是不合法的"
     }
   },
   "nfcer": {
