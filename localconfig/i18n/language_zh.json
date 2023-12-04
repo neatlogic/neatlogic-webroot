@@ -132,6 +132,7 @@
     "inputfromname": "变更方式名称",
     "int": "整形",
     "isactive": "是否激活",
+    "isactived": "已激活",
     "isauthenticate": "是否需要鉴权",
     "isautofill": "是否自动填充",
     "iscancheck": "是否能审核",
@@ -1878,6 +1879,23 @@
     },
     "searchtransactionapi": {
       "getname": "查询事务"
+    }
+  },
+  "nmccdad": {
+    "canceldiagrameditapi": {
+      "getname": "取消编辑架构图"
+    },
+    "checkdiagrameditapi": {
+      "getname": "编辑校验"
+    }
+  },
+  "nmccde": {
+    "diagramlockirregularexception": {
+      "diagramlockirregularexception": "当前架构图已被{0}锁定编辑",
+      "diagramlockirregularexceptionyou": "您没有锁定当前架构图"
+    },
+    "diagramversionnotfoundexception": {
+      "diagramversionnotfoundexception": "当前架构图不存在{0}的版本"
     }
   },
   "nmcdac": {
