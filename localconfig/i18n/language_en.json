@@ -336,6 +336,12 @@
       }
     }
   },
+  "nfaa": {
+    "autoexec": {
+      "getauthdisplayname": "Automated data consumption permissions",
+      "getauthintroduction": "Query tool library and custom tool library related data"
+    }
+  },
   "nfac": {
     "autoexectenantconfig": {
       "autoexecjoblogencoding": "Automation job log Character encoding set",
@@ -447,6 +453,16 @@
       "apiqps": "Peak number of requests sent to the server per second (regardless of interface)"
     }
   },
+  "nfcal": {
+    "cmdb": {
+      "getauthdisplayname": "Basic permissions for configuration management (interface)",
+      "getauthintroduction": "Having this permission allows access to configuration and management of some underlying functions through interfaces, such as the Consumer Resource Center"
+    },
+    "cmdb_base": {
+      "getauthdisplayname": "Basic permissions for configuration management",
+      "getauthintroduction": "Only with this permission can you view the configuration management module on the page and use the basic functions of configuration management"
+    }
+  },
   "nfcc": {
     "userprofile": {
       "rolecreatesuccess": "Role created successfully",
@@ -529,6 +545,14 @@
     "app_config_modify": {
       "getauthdisplayname": "Application Configuration Maintenance Permissions",
       "getauthintroduction": "View application configuration, add applications, modify application configurations with data permission and edit configuration permission"
+    },
+    "app_config_modify_share": {
+      "getauthdisplayname": "Application configuration maintenance permissions (dedicated to the background)",
+      "getauthintroduction": "View application configurations, add applications, and modify application configurations with data permissions and edit configuration permissions (used for cross module sharing permissions)"
+    },
+    "deploy": {
+      "getauthdisplayname": "Publish Basic Permissions (Interface)",
+      "getauthintroduction": "View publishing modules"
     },
     "deploy_modify": {
       "getauthdisplayname": "Auto Release management Permissions",

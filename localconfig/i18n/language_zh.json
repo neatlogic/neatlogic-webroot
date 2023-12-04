@@ -336,6 +336,12 @@
       }
     }
   },
+  "nfaa": {
+    "autoexec": {
+      "getauthdisplayname": "自动化数据消费权限",
+      "getauthintroduction": "查询工具库、自定义工具库相关数据"
+    }
+  },
   "nfac": {
     "autoexectenantconfig": {
       "autoexecjoblogencoding": "自动化作业日志字符编码集合",
@@ -447,6 +453,16 @@
       "apiqps": "每秒向服务器发送的请求数量峰值（不分接口）"
     }
   },
+  "nfcal": {
+    "cmdb": {
+      "getauthdisplayname": "配置管理基础权限（接口）",
+      "getauthintroduction": "拥有此权限可以通过接口访问配置管理一些底层功能，例如消费资源中心等"
+    },
+    "cmdb_base": {
+      "getauthdisplayname": "配置管理基础权限",
+      "getauthintroduction": "拥有此权限才能在页面上查看配置管理模块，使用配置管理基本功能"
+    }
+  },
   "nfcc": {
     "userprofile": {
       "rolecreatesuccess": "角色创建成功",
@@ -551,6 +567,14 @@
     "app_config_modify": {
       "getauthdisplayname": "应用配置维护权限",
       "getauthintroduction": "查看应用配置、添加应用、修改有数据权限中编辑配置权限的应用配置"
+    },
+    "app_config_modify_share": {
+      "getauthdisplayname": "应用配置维护权限(后台专用)",
+      "getauthintroduction": "查看应用配置、添加应用、修改有数据权限中编辑配置权限的应用配置(用于跨模块共享权限使用)"
+    },
+    "deploy": {
+      "getauthdisplayname": "发布基础权限(接口)",
+      "getauthintroduction": "查看发布模块"
     },
     "deploy_modify": {
       "getauthdisplayname": "自动发布管理权限",
