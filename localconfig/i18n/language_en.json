@@ -132,6 +132,7 @@
     "inputfromname": "Change method name",
     "int": "int",
     "isactive": "Activate or not",
+    "isactived": "Activated",
     "isauthenticate": "Do you need authentication",
     "isautofill": "Auto Fill",
     "iscancheck": "Can we review it",
@@ -1873,6 +1874,23 @@
     },
     "searchtransactionapi": {
       "getname": "inquiry transaction"
+    }
+  },
+  "nmccdad": {
+    "canceldiagrameditapi": {
+      "getname": "Cancel editing of schema diagram"
+    },
+    "checkdiagrameditapi": {
+      "getname": "Edit verification"
+    }
+  },
+  "nmccde": {
+    "diagramlockirregularexception": {
+      "diagramlockirregularexception": "The current architecture diagram has been locked for editing by {0}",
+      "diagramlockirregularexceptionyou": "You have not locked the current architecture diagram"
+    },
+    "diagramversionnotfoundexception": {
+      "diagramversionnotfoundexception": "The current architecture diagram does not have a version of {0}"
     }
   },
   "nmcdac": {
