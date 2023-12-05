@@ -1876,15 +1876,26 @@
       "getname": "inquiry transaction"
     }
   },
+  "nmccdac": {
+    "listcientitydiagramapi": {
+      "getname": "Obtain the configuration item architecture diagram"
+    }
+  },
   "nmccdad": {
     "canceldiagrameditapi": {
       "getname": "Cancel editing of schema diagram"
     },
     "checkdiagrameditapi": {
       "getname": "Edit verification"
+    },
+    "creatediagramapi": {
+      "getname": "Create an architecture diagram"
     }
   },
   "nmccde": {
+    "diagramisexistsexception": {
+      "diagramisexistsexception": "Architecture diagram created"
+    },
     "diagramlockirregularexception": {
       "diagramlockirregularexception": "The current architecture diagram has been locked for editing by {0}",
       "diagramlockirregularexceptionyou": "You have not locked the current architecture diagram"

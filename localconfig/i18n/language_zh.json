@@ -1905,15 +1905,26 @@
       "getname": "查询事务"
     }
   },
+  "nmccdac": {
+    "listcientitydiagramapi": {
+      "getname": "获取配置项架构图"
+    }
+  },
   "nmccdad": {
     "canceldiagrameditapi": {
       "getname": "取消编辑架构图"
     },
     "checkdiagrameditapi": {
       "getname": "编辑校验"
+    },
+    "creatediagramapi": {
+      "getname": "创建架构图"
     }
   },
   "nmccde": {
+    "diagramisexistsexception": {
+      "diagramisexistsexception": "架构图已创建"
+    },
     "diagramlockirregularexception": {
       "diagramlockirregularexception": "当前架构图已被{0}锁定编辑",
       "diagramlockirregularexceptionyou": "您没有锁定当前架构图"
