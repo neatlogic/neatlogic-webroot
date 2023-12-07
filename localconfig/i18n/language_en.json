@@ -2127,8 +2127,29 @@
     }
   },
   "nmdaas": {
+    "listdeployappconfigauthorityapi": {
+      "getname": "Query the application system permission list",
+      "input": {
+        "param": {
+          "desc": {
+            "appid": "Application asset ID"
+          }
+        }
+      }
+    },
     "savedeployappconfigappsystemapi": {
       "getname": "Application system for saving and publishing application configurations"
+    },
+    "searchdeployappconfigauthorityapi": {
+      "getname": "Query application configuration permissions",
+      "input": {
+        "param": {
+          "desc": {
+            "actionlist": "Action List",
+            "includeactionlist": "The required return permission action is used to restrict the return of unnecessary permissions. For example: [\u0027view \u0027,\u0027 edit \u0027,\u0027 scenario \u0027,\u0027 env \u0027]"
+          }
+        }
+      }
     }
   },
   "nmdab": {

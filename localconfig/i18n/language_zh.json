@@ -2156,8 +2156,29 @@
     }
   },
   "nmdaas": {
+    "listdeployappconfigauthorityapi": {
+      "getname": "查询应用系统权限列表",
+      "input": {
+        "param": {
+          "desc": {
+            "appid": "应用资产id"
+          }
+        }
+      }
+    },
     "savedeployappconfigappsystemapi": {
       "getname": "保存发布应用配置的应用系统"
+    },
+    "searchdeployappconfigauthorityapi": {
+      "getname": "查询应用配置权限",
+      "input": {
+        "param": {
+          "desc": {
+            "actionlist": "动作列表",
+            "includeactionlist": "需要的返回的权限action，用于限制返回没必要的权限。如：[\u0027view\u0027,\u0027edit\u0027,\u0027scenario\u0027,\u0027env\u0027]"
+          }
+        }
+      }
     }
   },
   "nmdab": {
