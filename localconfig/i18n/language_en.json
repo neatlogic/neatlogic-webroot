@@ -1890,6 +1890,9 @@
     },
     "creatediagramapi": {
       "getname": "Create an architecture diagram"
+    },
+    "deletediagramlockapi": {
+      "getname": "Release architecture diagram editing lock"
     }
   },
   "nmccde": {

@@ -1919,6 +1919,9 @@
     },
     "creatediagramapi": {
       "getname": "创建架构图"
+    },
+    "deletediagramlockapi": {
+      "getname": "释放架构图编辑锁"
     }
   },
   "nmccde": {
