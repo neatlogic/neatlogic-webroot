@@ -1296,6 +1296,9 @@
     "getciattrlistapi": {
       "getname": "Obtain a list of model properties"
     },
+    "getciglobalattrlistapi": {
+      "getname": "Get the global attribute list of the model"
+    },
     "listattrtypeapi": {
       "getname": "Get Property Type"
     },
@@ -1887,8 +1890,14 @@
     }
   },
   "nmccdac": {
+    "listcatalogapi": {
+      "getname": "Get my directory list"
+    },
     "listcientitydiagramapi": {
       "getname": "Obtain the configuration item architecture diagram"
+    },
+    "listpubliccatalogapi": {
+      "getname": "Get public directory list"
     }
   },
   "nmccdad": {
@@ -1900,6 +1909,9 @@
     },
     "creatediagramapi": {
       "getname": "Create an architecture diagram"
+    },
+    "deletediagramapi": {
+      "getname": "Delete schema diagram"
     },
     "deletediagramlockapi": {
       "getname": "Release architecture diagram editing lock"
@@ -3532,9 +3544,12 @@
       "diagramid": "Architecture diagram ID",
       "editversion": "Edit version",
       "editversiondata": "Edit version data",
+      "isprivate": "Private or not",
       "issnapshot": "Is it a snapshot",
       "isstarttemplate": "Start template or not",
       "name": "Architecture diagram",
+      "needcheck": "Do you need to review",
+      "owner": "Owner",
       "parentid": "Parent node ID",
       "parentuuid": "Parent node uuid",
       "status": {
