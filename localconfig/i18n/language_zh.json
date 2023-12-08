@@ -421,6 +421,11 @@
       "autoexectoolnotfoundedittargetexception": "工具：{0}不存在"
     }
   },
+  "nfai": {
+    "maintenancemode": {
+      "getmaintenanceuser": "厂商维护人员"
+    }
+  },
   "nfal": {
     "matrix_modify": {
       "getauthdisplayname": "矩阵管理权限",
@@ -860,6 +865,11 @@
   "nfe": {
     "confignotfoundexception": {
       "confignotfoundexception": "nacos获取不到配置且本地config.properties获取失败,请确认nacos服务是否正常或config.properties文件是否存在,如果存在,文件权限是否正常"
+    }
+  },
+  "nfea": {
+    "authencryptexception": {
+      "authencryptexception": "前端加密方式异常，请在后端服务配置文件配置login.auth.password.encrypt\u003d{0}后，重启后端服务后，刷新前端页面重新登录"
     }
   },
   "nfec": {
@@ -2490,6 +2500,15 @@
       "getname": "检索事件类型架构"
     }
   },
+  "nmffh": {
+    "ldapauthhandler": {
+      "mylogin": {
+        "failed": "[Ldap认证失败]user dn:",
+        "faileda": "[Ldap认证失败]",
+        "succeed": "[Ldap认证成功]user dn:"
+      }
+    }
+  },
   "nmfs": {
     "checkupdatedatabaseviewhandler": {
       "getname": "检查资源中心视图"
@@ -3299,6 +3318,19 @@
     },
     "userdeleteapi": {
       "getname": "删除用户接口"
+    },
+    "usergetapi": {
+      "description": {
+        "desc": "根据用户Id查询用户详情"
+      },
+      "getname": "根据用户id查询用户详情接口",
+      "output": {
+        "param": {
+          "desc": {
+            "user": "用户详情"
+          }
+        }
+      }
     },
     "userprofilelistapi": {
       "getname": "用户个性化查询列表接口"

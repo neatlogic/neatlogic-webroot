@@ -421,6 +421,11 @@
       "autoexectoolnotfoundedittargetexception": "Tool: {0} does not exist"
     }
   },
+  "nfai": {
+    "maintenancemode": {
+      "getmaintenanceuser": "\"Manufacturer maintenance personnel\""
+    }
+  },
   "nfal": {
     "matrix_modify": {
       "getauthdisplayname": "Matrix Management Permissions",
@@ -831,6 +836,11 @@
   "nfe": {
     "confignotfoundexception": {
       "confignotfoundexception": "NACOS cannot obtain the configuration and the local config.properties acquisition failed. Please confirm if the NACOS service is functioning properly or if the config.properties file exists, and if so, if the file permissions are normal"
+    }
+  },
+  "nfea": {
+    "authencryptexception": {
+      "authencryptexception": "The front-end encryption method is abnormal. Please configure login. auth. password. encryption\u003d{0} in the back-end service configuration file, restart the back-end service, refresh the front-end page, and log in again"
     }
   },
   "nfec": {
@@ -2461,6 +2471,15 @@
       "getname": "Retrieve event type schema"
     }
   },
+  "nmffh": {
+    "ldapauthhandler": {
+      "mylogin": {
+        "failed": "[Ldap authentication failed] user dn:",
+        "faileda": "[Ldap authentication failed]",
+        "succeed": "[Ldap authentication successful] user dn:"
+      }
+    }
+  },
   "nmfs": {
     "checkupdatedatabaseviewhandler": {
       "getname": "Check the resource center view"
@@ -3250,6 +3269,19 @@
     },
     "userdeleteapi": {
       "getname": "Delete User Interface"
+    },
+    "usergetapi": {
+      "description": {
+        "desc": "Query user details based on user ID"
+      },
+      "getname": "Interface for querying user details based on user ID",
+      "output": {
+        "param": {
+          "desc": {
+            "user": "User details"
+          }
+        }
+      }
     },
     "userprofilelistapi": {
       "getname": "User personalized query list interface"
