@@ -3490,6 +3490,7 @@
       "envlist": "环境列表",
       "envname": "环境名称",
       "globalattr": "全局属性",
+      "globalattridlist": "公共属性id列表",
       "groupdesc": "配置管理平台",
       "groupname": "配置管理",
       "importauditid": "导入记录ID",

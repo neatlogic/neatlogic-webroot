@@ -3441,6 +3441,7 @@
       "envlist": "Environment List",
       "envname": "Environment name",
       "globalattr": "Global Properties",
+      "globalattridlist": "List of public attribute IDs",
       "groupdesc": "Configuration Management Platform",
       "groupname": "CMDB",
       "importauditid": "Import Record ID",
