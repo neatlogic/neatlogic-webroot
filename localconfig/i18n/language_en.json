@@ -220,6 +220,7 @@
     "referencecount": "Number of references",
     "regex": "regular expression ",
     "reject": "Reject",
+    "release": "release",
     "relname": "Relationship Name",
     "reltype": "Relationship Type",
     "request": "demand",
