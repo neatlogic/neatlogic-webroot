@@ -1315,6 +1315,9 @@
     "getciattrlistapi": {
       "getname": "获取模型属性列表"
     },
+    "getciglobalattrlistapi": {
+      "getname": "获取模型全局属性列表"
+    },
     "listattrtypeapi": {
       "getname": "获取属性类型"
     },
@@ -1906,8 +1909,14 @@
     }
   },
   "nmccdac": {
+    "listcatalogapi": {
+      "getname": "获取我的目录列表"
+    },
     "listcientitydiagramapi": {
       "getname": "获取配置项架构图"
+    },
+    "listpubliccatalogapi": {
+      "getname": "获取公共目录列表"
     }
   },
   "nmccdad": {
@@ -1919,6 +1928,9 @@
     },
     "creatediagramapi": {
       "getname": "创建架构图"
+    },
+    "deletediagramapi": {
+      "getname": "删除架构图"
     },
     "deletediagramlockapi": {
       "getname": "释放架构图编辑锁"
@@ -3549,9 +3561,12 @@
       "diagramid": "架构图id",
       "editversion": "编辑版本",
       "editversiondata": "编辑版本数据",
+      "isprivate": "是否私有",
       "issnapshot": "是否快照",
       "isstarttemplate": "是否开始模板",
       "name": "架构图",
+      "needcheck": "是否需要审核",
+      "owner": "拥有人",
       "parentid": "父节点id",
       "parentuuid": "父节点uuid",
       "status": {
