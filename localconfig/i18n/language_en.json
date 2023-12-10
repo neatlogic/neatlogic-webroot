@@ -3544,6 +3544,7 @@
       "checkuseruuid": "Audit user uuid",
       "currentversion": "current version",
       "diagramid": "Architecture diagram ID",
+      "editlock": "Edit lock",
       "editversion": "Edit version",
       "editversiondata": "Edit version data",
       "isprivate": "Private or not",

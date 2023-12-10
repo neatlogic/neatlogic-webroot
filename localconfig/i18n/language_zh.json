@@ -3593,6 +3593,7 @@
       "checkuseruuid": "审核用户uuid",
       "currentversion": "当前版本",
       "diagramid": "架构图id",
+      "editlock": "编辑锁",
       "editversion": "编辑版本",
       "editversiondata": "编辑版本数据",
       "isprivate": "是否私有",
