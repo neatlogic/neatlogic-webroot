@@ -1925,6 +1925,9 @@
     }
   },
   "nmcat": {
+    "deletetransactionapi": {
+      "getname": "删除事务"
+    },
     "getcientitytopoapi": {
       "getname": "获取配置项拓扑",
       "input": {

@@ -1896,6 +1896,9 @@
     }
   },
   "nmcat": {
+    "deletetransactionapi": {
+      "getname": "Delete transaction"
+    },
     "getcientitytopoapi": {
       "getname": "Obtain Configuration Item Topology",
       "input": {
