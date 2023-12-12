@@ -498,6 +498,11 @@
       "changetemplatenotfoundedittargetexception": "Change template: {0} does not exist"
     }
   },
+  "nfcec": {
+    "citypenotfoundexception": {
+      "citypenotfoundexception": "Model type: {0} does not exist"
+    }
+  },
   "nfceg": {
     "globalattrisinusedexception": {
       "globalattrisinusedexception": "The current attribute is in use and cannot be deleted"
@@ -516,6 +521,9 @@
     "appsystemnotfoundedittargetexception": {
       "appsystemnotfoundedittargetexception": "Application: {0} does not exist"
     },
+    "reltypenotfoundexception": {
+      "reltypenotfoundexception": "Relationship type: {0} does not exist"
+    },
     "resourcecenterviewconfigexception": {
       "resourcecenterviewconfigexception": "Field declared in view {0}: {1}, but definition not found in configuration file"
     },
@@ -530,6 +538,11 @@
       "resourceviewfieldmappingexception_b": "Field list {1} in resource view {0} has no mapping set",
       "resourceviewfieldmappingexception_c": "The main model {1} in resource view {0} does not exist",
       "resourceviewfieldmappingexception_d": "The mapping {2} value of field {1} in resource view {0} is {3}, which is not set correctly"
+    }
+  },
+  "nfcev": {
+    "validatornotfoundexception": {
+      "validatornotfoundexception": "Validation rule \u0027{0}\u0027 does not exist"
     }
   },
   "nfd": {
@@ -963,6 +976,9 @@
     },
     "channelnotfoundedittargetexception": {
       "channelnotfoundedittargetexception": "Service: {0} does not exist"
+    },
+    "processcommenttemplatenotfoundexception": {
+      "processcommenttemplatenotfoundexception": "Reply template: {0} does not exist"
     }
   },
   "nfpep": {
@@ -974,6 +990,11 @@
     },
     "processtaskserialnumberpolicynotfoundexception": {
       "processtaskserialnumberpolicynotfoundexception": "Service type: \u0027{0}\u0027 does not have a configured work order number generation strategy. Please contact the administrator and edit the work order prefix, work order rule, start position, and work order number digits for this service type in \u0027IT Service/Service Type Management\u0027"
+    }
+  },
+  "nfpes": {
+    "scoretemplatenotfoundexception": {
+      "scoretemplatenotfoundexception": "Rating template: {0} does not exist"
     }
   },
   "nfral": {
@@ -2644,6 +2665,12 @@
           }
         }
       }
+    },
+    "processcommenttemplategetapi": {
+      "getname": "Get reply template"
+    },
+    "processcommenttemplatesaveapi": {
+      "getname": "Save reply template"
     }
   },
   "nmpacr": {
@@ -2706,6 +2733,11 @@
         "desc": "Interface for obtaining basic information of work order steps, including current step name, activation time, status, handler, assistance handler, processing time, form attribute display control, etc"
       },
       "getname": "Interface for obtaining basic information of work order steps"
+    }
+  },
+  "nmpas": {
+    "scoretemplatesaveapi": {
+      "getname": "Save rating template"
     }
   },
   "nmpaw": {
@@ -3682,6 +3714,7 @@
       "redosteplist": "Redo Step List",
       "repeatprocesstaskidlist": "List of duplicate job IDs",
       "scoretemplate": "Scoring template",
+      "scoretemplatedimensionlist": "Rating dimension list",
       "serialnumber": "Work order number",
       "sourcechanneltypeuuid": "Source Service Type uuid",
       "sourcechanneluuid": "Source service uuid",

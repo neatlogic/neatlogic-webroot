@@ -498,6 +498,11 @@
       "changetemplatenotfoundedittargetexception": "变更模板：{0}不存在"
     }
   },
+  "nfcec": {
+    "citypenotfoundexception": {
+      "citypenotfoundexception": "模型类型：{0}不存在"
+    }
+  },
   "nfceg": {
     "globalattrisinusedexception": {
       "globalattrisinusedexception": "当前属性正在使用中，不能删除"
@@ -516,6 +521,9 @@
     "appsystemnotfoundedittargetexception": {
       "appsystemnotfoundedittargetexception": "应用：{0}不存在"
     },
+    "reltypenotfoundexception": {
+      "reltypenotfoundexception": "关系类型：{0} 不存在"
+    },
     "resourcecenterviewconfigexception": {
       "resourcecenterviewconfigexception": "视图{0}中声明字段：{1}，但在配置文件中没有找到定义"
     },
@@ -530,6 +538,11 @@
       "resourceviewfieldmappingexception_b": "资源视图{0}中字段列表{1}未设置映射",
       "resourceviewfieldmappingexception_c": "资源视图{0}中主模型{1}不存在",
       "resourceviewfieldmappingexception_d": "资源视图{0}中字段{1}的映射{2}值为{3}，设置不正确"
+    }
+  },
+  "nfcev": {
+    "validatornotfoundexception": {
+      "validatornotfoundexception": "验证规则“{0}”不存在"
     }
   },
   "nfd": {
@@ -992,6 +1005,9 @@
     },
     "channelnotfoundedittargetexception": {
       "channelnotfoundedittargetexception": "服务：{0}不存在"
+    },
+    "processcommenttemplatenotfoundexception": {
+      "processcommenttemplatenotfoundexception": "回复模版：{0} 不存在"
     }
   },
   "nfpep": {
@@ -1003,6 +1019,11 @@
     },
     "processtaskserialnumberpolicynotfoundexception": {
       "processtaskserialnumberpolicynotfoundexception": "服务类型：”{0}“没有配置工单号生成策略，请联系管理员，在“IT服务/服务类型管理”中编辑该服务类型的工单号前缀、工单号规则、起始位、工单号位数"
+    }
+  },
+  "nfpes": {
+    "scoretemplatenotfoundexception": {
+      "scoretemplatenotfoundexception": "评分模版 :{0} 不存在"
     }
   },
   "nfral": {
@@ -2697,6 +2718,12 @@
           }
         }
       }
+    },
+    "processcommenttemplategetapi": {
+      "getname": "获取回复模版"
+    },
+    "processcommenttemplatesaveapi": {
+      "getname": "保存回复模版"
     }
   },
   "nmpacr": {
@@ -2759,6 +2786,11 @@
         "desc": "工单步骤基本信息获取接口，当前步骤名称、激活时间、状态、处理人、协助处理人、处理时效、表单属性显示控制等"
       },
       "getname": "工单步骤基本信息获取接口"
+    }
+  },
+  "nmpas": {
+    "scoretemplatesaveapi": {
+      "getname": "保存评分模版"
     }
   },
   "nmpaw": {
@@ -3731,6 +3763,7 @@
       "redosteplist": "重做步骤列表",
       "repeatprocesstaskidlist": "重复工单id列表",
       "scoretemplate": "评分模板",
+      "scoretemplatedimensionlist": "评分维度列表",
       "serialnumber": "工单号",
       "sourcechanneltypeuuid": "来源服务类型uuid",
       "sourcechanneluuid": "来源服务uuid",
