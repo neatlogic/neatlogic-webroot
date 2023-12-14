@@ -1876,6 +1876,9 @@
     }
   },
   "nmcar": {
+    "deletereltypeapi": {
+      "getname": "删除模型关系类型"
+    },
     "getcirellistapi": {
       "getname": "获取模型关系列表",
       "input": {

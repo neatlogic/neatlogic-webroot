@@ -1847,6 +1847,9 @@
     }
   },
   "nmcar": {
+    "deletereltypeapi": {
+      "getname": "Delete model relationship type"
+    },
     "getcirellistapi": {
       "getname": "Obtain a list of model relationships",
       "input": {
