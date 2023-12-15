@@ -36,6 +36,7 @@
     "catalogname": "目录名称",
     "check": "审核",
     "children": "子集合",
+    "childrencount": "子集合个数",
     "classname": "全类名",
     "cnname": "中文名称",
     "collectcount": "收藏量",
@@ -269,6 +270,7 @@
     "tagidlist": "标签id列表",
     "taglist": "标签列表",
     "tagsdir": "标签目录",
+    "targetid": "目标id",
     "task": "任务",
     "tbodylist": "展示的值",
     "team": "组",
@@ -502,6 +504,15 @@
     }
   },
   "nfcec": {
+    "cicatalogisinusedexception": {
+      "cicatalogisinusedexception": "当前目录节点：{0} 已被引用，请解除引用后再删除"
+    },
+    "cicatalognamerepeatexception": {
+      "cicatalognamerepeatexception": "模型目录：{0} 已存在"
+    },
+    "cicatalognotfoundexception": {
+      "cicatalognotfoundexception": "模型目录：{0} 不存在"
+    },
     "citypenotfoundexception": {
       "citypenotfoundexception": "模型类型：{0}不存在"
     }
@@ -1449,6 +1460,9 @@
     "deleteciapi": {
       "getname": "删除模型"
     },
+    "deletecicatalogapi": {
+      "getname": "删除模型目录"
+    },
     "deletecientityapi": {
       "getname": "删除配置项"
     },
@@ -1494,6 +1508,9 @@
     },
     "getciauthapi": {
       "getname": "获取模型授权信息"
+    },
+    "getcicatalogapi": {
+      "getname": "获取模型目录"
     },
     "getcientityapi": {
       "getname": "获取配置项详细信息",
@@ -1572,6 +1589,12 @@
     "listciapi": {
       "getname": "返回模型列表信息（下拉框用）"
     },
+    "listcicatalogandcifortreeapi": {
+      "getname": "获取模型目录和模型树形列表"
+    },
+    "listcicatalogfortreeapi": {
+      "getname": "获取模型目录树形列表"
+    },
     "listcientityforselectapi": {
       "description": {
         "desc": "查询资源中心状态列表"
@@ -1604,6 +1627,9 @@
     },
     "listexpressionattrrelapi": {
       "getname": "返回模型表达式属性和关系列表"
+    },
+    "movecicatalogapi": {
+      "getname": "移动模型目录"
     },
     "resetattrentityindexapi": {
       "description": {
@@ -1649,6 +1675,9 @@
           }
         }
       }
+    },
+    "savecicatalogapi": {
+      "getname": "保存模型目录"
     },
     "savecientityalertapi": {
       "getname": "保存配置项告警",
