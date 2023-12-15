@@ -36,6 +36,7 @@
     "catalogname": "Directory Name",
     "check": "Auditing",
     "children": "subset",
+    "childrencount": "Number of Subsets",
     "classname": "Full class name",
     "cnname": "Chinese name",
     "collectcount": "Collection volume",
@@ -269,6 +270,7 @@
     "tagidlist": "Tag ID List",
     "taglist": "Label List",
     "tagsdir": "Label Catalog",
+    "targetid": "Target ID",
     "task": "task",
     "tbodylist": "tbody list",
     "team": "group",
@@ -502,6 +504,15 @@
     }
   },
   "nfcec": {
+    "cicatalogisinusedexception": {
+      "cicatalogisinusedexception": "The current directory node: {0} has been referenced. Please remove the reference before deleting it"
+    },
+    "cicatalognamerepeatexception": {
+      "cicatalognamerepeatexception": "Model directory: {0} already exists"
+    },
+    "cicatalognotfoundexception": {
+      "cicatalognotfoundexception": "Model directory: {0} does not exist"
+    },
     "citypenotfoundexception": {
       "citypenotfoundexception": "Model type: {0} does not exist"
     }
@@ -1420,6 +1431,9 @@
     "deleteciapi": {
       "getname": "Delete Model"
     },
+    "deletecicatalogapi": {
+      "getname": "Delete model directory"
+    },
     "deletecientityapi": {
       "getname": "Delete Configuration Item"
     },
@@ -1465,6 +1479,9 @@
     },
     "getciauthapi": {
       "getname": "Obtain model authorization information"
+    },
+    "getcicatalogapi": {
+      "getname": "Get model directory"
     },
     "getcientityapi": {
       "getname": "Obtain configuration item details",
@@ -1543,6 +1560,12 @@
     "listciapi": {
       "getname": "Return model list information (for dropdown boxes)"
     },
+    "listcicatalogandcifortreeapi": {
+      "getname": "Obtain model directory and model tree list"
+    },
+    "listcicatalogfortreeapi": {
+      "getname": "Get the model directory tree list"
+    },
     "listcientityforselectapi": {
       "description": {
         "desc": "Query Content Center Status List"
@@ -1575,6 +1598,9 @@
     },
     "listexpressionattrrelapi": {
       "getname": "Returns a list of model expression properties and relationships"
+    },
+    "movecicatalogapi": {
+      "getname": "Mobile Model Catalog"
     },
     "resetattrentityindexapi": {
       "description": {
@@ -1620,6 +1646,9 @@
           }
         }
       }
+    },
+    "savecicatalogapi": {
+      "getname": "Save Model Catalog"
     },
     "savecientityalertapi": {
       "getname": "Save Configuration Item Alert",
