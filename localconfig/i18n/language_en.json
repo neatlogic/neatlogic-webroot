@@ -496,6 +496,9 @@
   "nfce": {
     "changetemplatenotfoundedittargetexception": {
       "changetemplatenotfoundedittargetexception": "Change template: {0} does not exist"
+    },
+    "cmdbtenantconfig": {
+      "isresourcecenterauth": "Is the asset list controlled by model permissions and group permissions"
     }
   },
   "nfcec": {

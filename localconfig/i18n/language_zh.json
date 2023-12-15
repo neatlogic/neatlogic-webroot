@@ -496,6 +496,9 @@
   "nfce": {
     "changetemplatenotfoundedittargetexception": {
       "changetemplatenotfoundedittargetexception": "变更模板：{0}不存在"
+    },
+    "cmdbtenantconfig": {
+      "isresourcecenterauth": "资产清单是否受模型权限和团体权限控制"
     }
   },
   "nfcec": {
