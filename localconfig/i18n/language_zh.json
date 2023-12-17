@@ -3305,6 +3305,16 @@
     "mailservertestapi": {
       "getname": "测试邮件服务器能否正常发送邮件"
     },
+    "matrixcolumndatasearchforbatchapi": {
+      "getname": "批量矩阵属性数据查询-下拉接口",
+      "input": {
+        "param": {
+          "desc": {
+            "searchparamlist": "查询参数列表"
+          }
+        }
+      }
+    },
     "matrixexportapi": {
       "getname": "导出矩阵数据"
     },
