@@ -3250,6 +3250,16 @@
     "mailservertestapi": {
       "getname": "Test whether the mail server can send mail normally"
     },
+    "matrixcolumndatasearchforbatchapi": {
+      "getname": "Batch Matrix Attribute Data Query - Dropdown Interface",
+      "input": {
+        "param": {
+          "desc": {
+            "searchparamlist": "Query parameter list"
+          }
+        }
+      }
+    },
     "matrixexportapi": {
       "getname": "Export matrix data"
     },
