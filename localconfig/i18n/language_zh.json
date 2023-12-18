@@ -1,4 +1,8 @@
 {
+  "cmdb": {
+    "ci": "模型",
+    "cimodify": "模型修改"
+  },
   "common": {
     "account": "账号",
     "action": "动作",
@@ -184,7 +188,7 @@
     "moduleid": "模块IDID",
     "mustinput": "必填",
     "name": "名称",
-    "needpage": "是否需要分页，默认true",
+    "needpage": "是否分页",
     "needscore": "是否需要评分",
     "newvalue": "新值",
     "noauth": "无需认证",
@@ -2179,6 +2183,29 @@
       "widgetisinuseexception": "当前组件正在使用中"
     }
   },
+  "nmcnh": {
+    "cmdbnotifytriggertype": {
+      "cidelete": {
+        "desc": "模型被删除时触发通知",
+        "text": "模型删除"
+      },
+      "cientitydelete": {
+        "desc": "配置项删除并生效时触发通知",
+        "text": "配置项删除"
+      },
+      "cientityinsert": {
+        "desc": "配置项添加并且生效时触发通知",
+        "text": "配置项添加"
+      },
+      "cientitymodify": {
+        "desc": "配置项发生变化并且生效时触发通知",
+        "text": "配置项修改"
+      },
+      "cimodify": {
+        "desc": "模型基础配置、属性、关系和授权相关发生变化时触发通知"
+      }
+    }
+  },
   "nmcpe": {
     "cientityconfigillegalexception": {
       "cientityconfigillegalexception": "CMDB节点模型映射信息不合法：{0}"
@@ -3328,6 +3355,9 @@
     },
     "notifypolicyhandlerlistapi": {
       "getname": "通知策略分类列表"
+    },
+    "notifypolicysearchapi": {
+      "getname": "搜索通知策略"
     }
   },
   "nmtar": {
@@ -3840,6 +3870,10 @@
     "master": {
       "groupname": "超级管理模块",
       "name": "管理员模块"
+    },
+    "notify": {
+      "handler": "通知策略处理器",
+      "policylist": "通知策略列表"
     },
     "pbc": {
       "groupdesc": "金融信息基础设施管理平台报送模块"

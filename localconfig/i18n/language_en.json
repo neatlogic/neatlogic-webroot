@@ -1,4 +1,8 @@
 {
+  "cmdb": {
+    "ci": "model",
+    "cimodify": "Model modification"
+  },
   "common": {
     "account": "Account",
     "action": "action",
@@ -184,7 +188,7 @@
     "moduleid": "Module ID",
     "mustinput": "Required",
     "name": "name",
-    "needpage": "Whether pagination is required, default to true",
+    "needpage": "Is it paginated",
     "needscore": "Do you need to score",
     "newvalue": "New value",
     "noauth": "No certification required",
@@ -2150,6 +2154,29 @@
       "widgetisinuseexception": "The current component is in use"
     }
   },
+  "nmcnh": {
+    "cmdbnotifytriggertype": {
+      "cidelete": {
+        "desc": "Trigger notification when model is deleted",
+        "text": "Model deletion"
+      },
+      "cientitydelete": {
+        "desc": "Trigger notification when configuration item is deleted and takes effect",
+        "text": "Configuration item deletion"
+      },
+      "cientityinsert": {
+        "desc": "Trigger notification when configuration items are added and take effect",
+        "text": "Add configuration items"
+      },
+      "cientitymodify": {
+        "desc": "Trigger notification when configuration items change and take effect",
+        "text": "Configuration item modification"
+      },
+      "cimodify": {
+        "desc": "Trigger notifications when changes occur in the basic configuration, attributes, relationships, and authorization related to the model"
+      }
+    }
+  },
   "nmcpe": {
     "cientityconfigillegalexception": {
       "cientityconfigillegalexception": "The CMDB node model mapping information is illegal: {0}"
@@ -3273,6 +3300,9 @@
     },
     "notifypolicyhandlerlistapi": {
       "getname": "Notification Policy Classification List"
+    },
+    "notifypolicysearchapi": {
+      "getname": "Search notification policy"
     }
   },
   "nmtar": {
@@ -3791,6 +3821,10 @@
     "master": {
       "groupname": "Master",
       "name": "Master"
+    },
+    "notify": {
+      "handler": "Notification Policy Processor",
+      "policylist": "Notification Policy List"
     },
     "pbc": {
       "groupdesc": "Submission module of financial Information infrastructure management platform"
