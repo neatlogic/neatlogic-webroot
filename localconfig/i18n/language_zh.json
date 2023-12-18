@@ -1453,6 +1453,7 @@
           "desc": {
             "attrentitydata": "需要修改的属性",
             "cientityidlist": "被修改配置项id",
+            "globalattrentitydata": "需要修改的全局属性",
             "relentitydata": "需要修改的关系"
           }
         }
