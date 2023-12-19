@@ -434,6 +434,10 @@
     }
   },
   "nfal": {
+    "extra_menu_modify": {
+      "getauthdisplayname": "附加菜单管理权限",
+      "getauthintroduction": "对附加菜单进行配置"
+    },
     "matrix_modify": {
       "getauthdisplayname": "矩阵管理权限",
       "getauthintroduction": "对矩阵进行添加、修改和删除"
@@ -916,6 +920,29 @@
       }
     }
   },
+  "nfee": {
+    "extramenuexistchildrenexception": {
+      "extramenuexistchildrenexception": "当前目录：{0}存在子节点，无法删除"
+    },
+    "extramenunamerepeatexception": {
+      "extramenunamerepeatexception": "名称：{0}重复"
+    },
+    "extramenunotallowedaddexception": {
+      "extramenunotallowedaddexception": "菜单节点不允许新增子节点"
+    },
+    "extramenunotfoundexception": {
+      "extramenunotfoundexception": "菜单配置：{0}不存在"
+    },
+    "extramenuparamexception": {
+      "extramenuparamexception": "参数：{0}不能为空"
+    },
+    "extramenurootexception": {
+      "extramenurootexception": "只允许存在一个根节点"
+    },
+    "extramenurootnotallowedexception": {
+      "extramenurootnotallowedexception": "根节点不允许删除"
+    }
+  },
   "nfeec": {
     "eventsolutionnotfoundedittargetexception": {
       "eventsolutionnotfoundedittargetexception": "解决方案：{0}不存在"
@@ -958,13 +985,9 @@
       "dofilterinternal": {
         "authfailed": "认证失败(‘{0}’)，请重新登录",
         "authfailederrorlog": "认证失败",
-        "authfailedlog": "\u003d\u003d\u003d\u003d\u003d\u003d\u003d login error: 通过‘{0}’认证失败，请重新登录",
         "authtypeinvalid": "找不到认证方式 ‘{0}’",
-        "authtypeinvalidlog": "\u003d\u003d\u003d\u003d\u003d\u003d\u003d login error: 找不到认证方式 ‘{0}’",
         "lacktenant": "租户 ‘{0}’ 不存在或已被禁用",
-        "lacktenantlog": "\u003d\u003d\u003d\u003d\u003d\u003d\u003d login error: 租户 ‘{0}’ 不存在或已被禁用",
-        "unexpired": "会话已超时或已被终止，请重新登录",
-        "unexpiredlog": "\u003d\u003d\u003d\u003d\u003d\u003d\u003d login error: 会话已超时或已被终止，请重新登录"
+        "unexpired": "会话已超时或已被终止，请重新登录"
       }
     }
   },
@@ -1694,7 +1717,7 @@
       "input": {
         "param": {
           "desc": {
-            "authlist": "授权列表，为空代表清空所有授权，范例：{authType:\u0027user\u0027,authUuid:\u0027xxxx\u0027,action:\u0027cimaange\u0027}"
+            "authlist": "授权列表，为空代表清空所有授权，范例：{authType:'user',authUuid:'xxxx',action:'cimaange'}"
           }
         }
       }
@@ -2306,7 +2329,7 @@
         "param": {
           "desc": {
             "actionlist": "动作列表",
-            "includeactionlist": "需要的返回的权限action，用于限制返回没必要的权限。如：[\u0027view\u0027,\u0027edit\u0027,\u0027scenario\u0027,\u0027env\u0027]"
+            "includeactionlist": "需要的返回的权限action，用于限制返回没必要的权限。如：['view','edit','scenario','env']"
           }
         }
       }
@@ -3296,6 +3319,46 @@
       }
     }
   },
+  "nmtae": {
+    "extramenuapi": {
+      "getname": "获取拥有权限的附加菜单列表接口"
+    },
+    "extramenudeleteapi": {
+      "getname": "删除指定附加菜单/目录接口"
+    },
+    "extramenugetapi": {
+      "getname": "获取指定ID附加菜单/目录信息接口"
+    },
+    "extramenumoveapi": {
+      "getname": "附加菜单移动位置接口",
+      "input": {
+        "param": {
+          "id": {
+            "desc": "被移动的服务通道id"
+          },
+          "movetype": {
+            "desc": "移动类型"
+          },
+          "targetid": {
+            "desc": "目标节点id"
+          }
+        }
+      }
+    },
+    "extramenusaveapi": {
+      "getname": "保存附加菜单/目录信息接口",
+      "input": {
+        "param": {
+          "type": {
+            "desc": "0：目录，1：菜单"
+          }
+        }
+      }
+    },
+    "extramenutreeapi": {
+      "getname": "获取附加菜单目录树接口"
+    }
+  },
   "nmtaf": {
     "downloadimageapi": {
       "getname": "图片下载接口"
@@ -3472,6 +3535,13 @@
         "desc": "根据用户Id查询用户详情"
       },
       "getname": "根据用户id查询用户详情接口",
+      "input": {
+        "param": {
+          "desc": {
+            "isauthenv": "默认为true,滤掉没有生效的环境"
+          }
+        }
+      },
       "output": {
         "param": {
           "desc": {

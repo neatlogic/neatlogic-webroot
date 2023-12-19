@@ -120,7 +120,7 @@
     "filetype": "Attachment Type",
     "filter": "Filter conditions",
     "focususerlist": "List of followers",
-    "focususeruuidlist": "List of followers\u0027 uuids",
+    "focususeruuidlist": "List of followers' uuids",
     "group": "grouping",
     "grouplist": "Restrict interface return types",
     "hasmore": "Is there any more content that has not been read yet",
@@ -434,6 +434,10 @@
     }
   },
   "nfal": {
+    "extra_menu_modify": {
+      "getauthdisplayname": "Extra menu management permissions",
+      "getauthintroduction": "Configure extra menus"
+    },
     "matrix_modify": {
       "getauthdisplayname": "Matrix Management Permissions",
       "getauthintroduction": "Adding, modifying, and deleting matrices"
@@ -526,7 +530,7 @@
       "globalattrisinusedexception": "The current attribute is in use and cannot be deleted"
     },
     "globalattrvalueirregularexception": {
-      "globalattrvalueirregularexception": "The value \u0027{2}\u0027 of global attribute \u0027{0} ({1})\u0027 is illegal"
+      "globalattrvalueirregularexception": "The value '{2}' of global attribute '{0} ({1})' is illegal"
     }
   },
   "nfcer": {
@@ -560,7 +564,7 @@
   },
   "nfcev": {
     "validatornotfoundexception": {
-      "validatornotfoundexception": "Validation rule \u0027{0}\u0027 does not exist"
+      "validatornotfoundexception": "Validation rule  {0}  does not exist"
     }
   },
   "nfd": {
@@ -872,7 +876,7 @@
   },
   "nfea": {
     "authencryptexception": {
-      "authencryptexception": "The front-end encryption method is abnormal. Please configure login. auth. password. encryption\u003d{0} in the back-end service configuration file, restart the back-end service, refresh the front-end page, and log in again"
+      "authencryptexception": "The front-end encryption method is abnormal. Please configure login. auth. password. encryption={0} in the back-end service configuration file, restart the back-end service, refresh the front-end page, and log in again"
     }
   },
   "nfec": {
@@ -885,6 +889,29 @@
       "changelogversionnotfoundexception": {
         "a": "Module: {0} Version: {1} does not exist"
       }
+    }
+  },
+  "nfee": {
+    "extramenuexistchildrenexception": {
+      "extramenuexistchildrenexception": "Current directory: {0} has child nodes, cannot be deleted"
+    },
+    "extramenunamerepeatexception": {
+      "extramenunamerepeatexception": "Name: {0} duplicate"
+    },
+    "extramenunotallowedaddexception": {
+      "extramenunotallowedaddexception": "Menu nodes do not allow adding child nodes"
+    },
+    "extramenunotfoundexception": {
+      "extramenunotfoundexception": "Menu configuration: {0} does not exist"
+    },
+    "extramenuparamexception": {
+      "extramenuparamexception": "Parameter: {0} cannot be empty"
+    },
+    "extramenurootexception": {
+      "extramenurootexception": "Only one root node is allowed to exist"
+    },
+    "extramenurootnotallowedexception": {
+      "extramenurootnotallowedexception": "Root node not allowed to be deleted"
     }
   },
   "nfeec": {
@@ -908,8 +935,8 @@
   "nfet": {
     "paramirregularexception": {
       "paramirregularexception": {
-        "common": "The parameter \u0027{0}\u0027 does not meet the format requirements",
-        "rule": "The parameter \u0027{0}\u0027 does not meet the format requirements, {1}"
+        "common": "The parameter  {0}  does not meet the format requirements",
+        "rule": "The parameter  {0}  does not meet the format requirements, {1}"
       }
     },
     "paramjsonirregularexception": {
@@ -922,6 +949,18 @@
   "nfew": {
     "wechatauthenticationinformationnotfoundexception": {
       "wechatauthenticationinformationnotfoundexception": "Enterprise WeChat authentication information not found"
+    }
+  },
+  "nff": {
+    "jsonwebtokenvalidfilter": {
+      "dofilterinternal": {
+        "authfailed": "Authentication failed ( {0} ), please login again",
+        "authfailederrorlog": "Authentication failed",
+        "authfailedlog": "=======Login error: Failed to authenticate through  {0} , please login again",
+        "authtypeinvalid": "Unable to find authType:  {0} ",
+        "lacktenant": "Tenant  {0}  does not exist or has been disabled",
+        "unexpired": "The session has timed out or been terminated. Please login again"
+      }
     }
   },
   "nffe": {
@@ -1007,7 +1046,7 @@
       "processtasknotfoundedittargetexception": "Work order: {0} does not exist"
     },
     "processtaskserialnumberpolicynotfoundexception": {
-      "processtaskserialnumberpolicynotfoundexception": "Service type: \u0027{0}\u0027 does not have a configured work order number generation strategy. Please contact the administrator and edit the work order prefix, work order rule, start position, and work order number digits for this service type in \u0027IT Service/Service Type Management\u0027"
+      "processtaskserialnumberpolicynotfoundexception": "Service type:  {0}  does not have a configured work order number generation strategy. Please contact the administrator and edit the work order prefix, work order rule, start position, and work order number digits for this service type in 'IT Service/Service Type Management'"
     }
   },
   "nfpes": {
@@ -1138,13 +1177,13 @@
       "projectnotauthdeleteexception": "You do not have permission to delete project {0}"
     },
     "projectnotauthexception": {
-      "projectnotauthexception": "You do not have permission to modify project \u0027{0}\u0027"
+      "projectnotauthexception": "You do not have permission to modify project  {0} "
     },
     "projectnotauthissueexception": {
       "projectnotauthissueexception": "You are not a member of the current project and do not have permission to create tasks"
     },
     "projectnotfoundexception": {
-      "projectnotfoundexception": "Project \u0027{0}\u0027 does not exist",
+      "projectnotfoundexception": "Project  {0}  does not exist",
       "theprojectnotfoundexception": "Project does not exist"
     },
     "projectusertype": {
@@ -1650,7 +1689,7 @@
       "input": {
         "param": {
           "desc": {
-            "authlist": "Authorization list, empty means clearing all authorizations. Example: {authType: \u0027user\u0027, authUuid: \u0027xxxx\u0027, action: \u0027cimaange\u0027}"
+            "authlist": "Authorization list, empty means clearing all authorizations. Example: {authType: 'user', authUuid: 'xxxx', action: 'cimaange'}"
           }
         }
       }
@@ -1775,7 +1814,7 @@
         "param": {
           "desc": {
             "attr": "The attributes that need to be returned. If not defined, all attributes will be returned. An empty array represents that no attributes will be returned",
-            "dsl": "Query expression, Logical connective supports\u0026\u0026, | |, and relational operator supports:\u003d\u003d,\u003e\u003d,\u003c\u003d,\u003e,\u003c,!\u003d,like,not like, include, exclude. If you need to search for relationship or reference attribute fields, you can use a.b representation, such as env. name\u003d\u003d STG \u0026\u0026(port\u003d\u003d80 | | port\u003d\u003d443)",
+            "dsl": "Query expression, Logical connective supports\u0026\u0026, | |, and relational operator supports:==,\u003e=,\u003c=,\u003e,\u003c,!=,like,not like, include, exclude. If you need to search for relationship or reference attribute fields, you can use a.b representation, such as env. name== STG \u0026\u0026(port==80 | | port==443)",
             "rel": "The relationships that need to be returned. If not defined, all relationships will be returned. An empty array represents that no relationships will be returned"
           }
         }
@@ -2119,10 +2158,10 @@
   },
   "nmcde": {
     "catalognotfoundexception": {
-      "catalognotfoundexception": "Directory \u0027{0}\u0027 does not exist"
+      "catalognotfoundexception": "Directory  {0}  does not exist"
     },
     "catalogtypeirregularexception": {
-      "catalogtypeirregularexception": "Directory is not of type \u0027{0}\u0027"
+      "catalogtypeirregularexception": "Directory is not of type  {0} "
     },
     "diagramauthexception": {
       "diagramauthexception": "You do not have permission to {0} the current architecture diagram"
@@ -2131,8 +2170,8 @@
       "diagramischeckingexception": "The architecture diagram is currently under review and cannot be edited"
     },
     "diagramnotfoundexception": {
-      "diagramnotfoundexception": "The architecture diagram \u0027{0}\u0027 does not exist",
-      "diagramversionnotfoundexception": "Version \u0027{1}\u0027 of architecture diagram \u0027{0}\u0027 does not exist"
+      "diagramnotfoundexception": "The architecture diagram  {0}  does not exist",
+      "diagramversionnotfoundexception": "Version '{1}' of architecture diagram  {0}  does not exist"
     },
     "diagramstatusirregularexception": {
       "diagramstatusirregularexception": "The current architecture diagram state has changed. Please refresh the page and edit again"
@@ -2141,7 +2180,7 @@
       "diagramversiondeleteexception": "The current architecture diagram version has been approved and cannot be deleted"
     },
     "diagramversionnotfoundexception": {
-      "diagramversionnotfoundexception": "The architecture diagram version \u0027{0}\u0027 does not exist"
+      "diagramversionnotfoundexception": "The architecture diagram version  {0}  does not exist"
     },
     "templateisusingexception": {
       "getmessage": "The current template is already in use by the directory. Please delete the relevant directory first",
@@ -2149,7 +2188,7 @@
       "getmessagediagram": "The current template has been used by the architecture diagram. Please delete the relevant architecture diagram first"
     },
     "templatenotfoundexception": {
-      "templatenotfoundexception": "Template \u0027{0}\u0027 does not exist"
+      "templatenotfoundexception": "Template  {0}  does not exist"
     },
     "versionstatus": {
       "getenumname": "Architecture diagram version status"
@@ -2262,7 +2301,7 @@
         "param": {
           "desc": {
             "actionlist": "Action List",
-            "includeactionlist": "The required return permission action is used to restrict the return of unnecessary permissions. For example: [\u0027view \u0027,\u0027 edit \u0027,\u0027 scenario \u0027,\u0027 env \u0027]"
+            "includeactionlist": "The required return permission action is used to restrict the return of unnecessary permissions. For example: ['view ',' edit ',' scenario ',' env ']"
           }
         }
       }
@@ -2898,7 +2937,7 @@
       "input": {
         "param": {
           "desc": {
-            "ismine": "Do you want to only query the application list containing the current user\u0027s tasks",
+            "ismine": "Do you want to only query the application list containing the current user's tasks",
             "ismyreported": "Whether to only query the application list reported by the current user",
             "needissuecount": "Do you need to return the number of tasks"
           }
@@ -3226,6 +3265,46 @@
       }
     }
   },
+  "nmtae": {
+    "extramenuapi": {
+      "getname": "Obtain the interface for adding menu lists with permissions"
+    },
+    "extramenudeleteapi": {
+      "getname": "Delete specified extra menu/directory interface"
+    },
+    "extramenugetapi": {
+      "getname": "Interface for obtaining specified ID extra menu/directory information"
+    },
+    "extramenumoveapi": {
+      "getname": "Extra menu move position interface",
+      "input": {
+        "param": {
+          "id": {
+            "desc": "The ID of the service channel being moved"
+          },
+          "movetype": {
+            "desc": "Mobile type"
+          },
+          "targetid": {
+            "desc": "Target node ID"
+          }
+        }
+      }
+    },
+    "extramenusaveapi": {
+      "getname": "Save extra menu/directory information interface",
+      "input": {
+        "param": {
+          "type": {
+            "desc": "0: Directory, 1: Menu"
+          }
+        }
+      }
+    },
+    "extramenutreeapi": {
+      "getname": "Get Extra Menu Tree Interface"
+    }
+  },
   "nmtaf": {
     "downloadimageapi": {
       "getname": "Image download interface"
@@ -3337,10 +3416,10 @@
       "getname": "Obtain a list of server information"
     },
     "jobclassgetapi": {
-      "getname": "Obtain information on timed homework components"
+      "getname": "Obtain timed job component information"
     },
     "jobgetapi": {
-      "getname": "Obtain public scheduled homework information"
+      "getname": "Obtain public scheduled job information"
     },
     "saveserverapi": {
       "getname": "Save server information"
@@ -3376,13 +3455,13 @@
   },
   "nmtau": {
     "getcurrentusertokenapi": {
-      "getname": "Obtain the user\u0027s own token"
+      "getname": "Obtain the user's own token"
     },
     "getusertokenapi": {
-      "getname": "Obtain the user\u0027s token"
+      "getname": "Obtain the user's token"
     },
     "resetcurrentusertokenapi": {
-      "getname": "Reset the user\u0027s own token",
+      "getname": "Reset the user's own token",
       "output": {
         "param": {
           "return": {
@@ -3392,7 +3471,7 @@
       }
     },
     "resetusertokenapi": {
-      "getname": "Reset user\u0027s token"
+      "getname": "Reset user's token"
     },
     "userdeleteapi": {
       "getname": "Delete User Interface"
@@ -3402,6 +3481,13 @@
         "desc": "Query user details based on user ID"
       },
       "getname": "Interface for querying user details based on user ID",
+      "input": {
+        "param": {
+          "desc": {
+            "isauthenv": "Default to true, filter out ineffective environments"
+          }
+        }
+      },
       "output": {
         "param": {
           "desc": {
