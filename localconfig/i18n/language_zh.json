@@ -3406,6 +3406,12 @@
     "getserverlistapi": {
       "getname": "获取服务器信息列表"
     },
+    "jobclassgetapi": {
+      "getname": "获取定时作业组件信息"
+    },
+    "jobgetapi": {
+      "getname": "获取公共定时作业信息"
+    },
     "saveserverapi": {
       "getname": "保存服务器信息"
     },
@@ -3819,6 +3825,7 @@
       "thresholds": "阈值规则列表"
     },
     "itsm": {
+      "automatic": "自动处理",
       "caneditfocususer": "是否有权限修改工单关注人",
       "cataloginfo": "服务目录信息",
       "catalogname": "服务所在目录名称",
@@ -3833,9 +3840,12 @@
       "channeltypeuuid": "服务类型uuid",
       "channeluuid": "服务uuid",
       "commentlist": "评论附件列表",
+      "condition": "条件",
       "copyprocesstaskid": "复制工单id",
       "currentprocesstaskid": "当前工单id",
       "currentprocesstaskstep": "工单当前步骤信息",
+      "distributary": "分流",
+      "end": "结束",
       "formattributehidelist": "表单配置授权隐藏属性uuid列表",
       "formconfigauthoritylist": "工单表单信息授权列表",
       "fromprocesstaskid": "来源工单id",
@@ -3846,11 +3856,13 @@
       "isshowprocesstaskstepcommenteditortoolbar": "是否显示工单步骤回复富文本编辑器工具栏",
       "mobileformuitype": "移动端表单交互类型，1：下探页面；0：当前页",
       "name": "工作流引擎模块",
+      "omnipotent": "通用节点",
       "ownercompanylist": "工单所有人的公司列表",
       "ownerdepartmentlist": "工单所有人的部门列表",
       "ownerinfo": "工单所有人信息",
       "ownername": "工单所有人名称",
       "owneruuid": "工单所有人uuid",
+      "processtask": "工单",
       "processtaskformattributedata": "工单表单属性值",
       "processtaskformconfig": "工单表单信息",
       "processtaskid": "工单id",
@@ -3866,10 +3878,12 @@
       "serialnumber": "工单号",
       "sourcechanneltypeuuid": "来源服务类型uuid",
       "sourcechanneluuid": "来源服务uuid",
+      "start": "开始",
       "startprocesstaskstep": "工单开始步骤信息",
       "submitterinfo": "工单提交人信息",
       "submittername": "工单提交人名称",
       "submitteruuid": "工单提交人Uuid",
+      "timer": "定时节点",
       "tranferreportdirection": "转报/关联方向",
       "tranferreportprocesstasklist": "转报工单信息列表",
       "workcenterprocesstasksortindex": "工单中心工单排序下标"
