@@ -1336,6 +1336,9 @@
     "getciattrlistapi": {
       "getname": "Obtain a list of model properties"
     },
+    "getciattrlistforviewapi": {
+      "getname": "Get model property list - view settings specific"
+    },
     "getciglobalattrlistapi": {
       "getname": "Get the global attribute list of the model"
     },
