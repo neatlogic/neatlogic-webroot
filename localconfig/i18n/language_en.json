@@ -927,12 +927,12 @@
   "nff": {
     "jsonwebtokenvalidfilter": {
       "dofilterinternal": {
-        "authfailed": "Authentication failed ( {0} ), please log in again",
+        "authfailed": "Authentication failed ( {0} ), please login again",
         "authfailederrorlog": "Authentication failed",
-        "authfailedlog": "=======Login error: Failed to authenticate through  {0} , please log in again",
+        "authfailedlog": "=======Login error: Failed to authenticate through  {0} , please login again",
         "authtypeinvalid": "Unable to find authType:  {0} ",
         "lacktenant": "Tenant  {0}  does not exist or has been disabled",
-        "unexpired": "The session has timed out or been terminated. Please login again",
+        "unexpired": "The session has timed out or been terminated. Please login again"
       }
     }
   },
@@ -3414,6 +3414,13 @@
         "desc": "Query user details based on user ID"
       },
       "getname": "Interface for querying user details based on user ID",
+      "input": {
+        "param": {
+          "desc": {
+            "isauthenv": "Default to true, filter out ineffective environments"
+          }
+        }
+      },
       "output": {
         "param": {
           "desc": {

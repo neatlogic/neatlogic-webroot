@@ -958,13 +958,9 @@
       "dofilterinternal": {
         "authfailed": "认证失败(‘{0}’)，请重新登录",
         "authfailederrorlog": "认证失败",
-        "authfailedlog": "======= login error: 通过‘{0}’认证失败，请重新登录",
         "authtypeinvalid": "找不到认证方式 ‘{0}’",
-        "authtypeinvalidlog": "======= login error: 找不到认证方式 ‘{0}’",
         "lacktenant": "租户 ‘{0}’ 不存在或已被禁用",
-        "lacktenantlog": "======= login error: 租户 ‘{0}’ 不存在或已被禁用",
-        "unexpired": "会话已超时或已被终止，请重新登录",
-        "unexpiredlog": "======= login error: 会话已超时或已被终止，请重新登录"
+        "unexpired": "会话已超时或已被终止，请重新登录"
       }
     }
   },
@@ -3472,6 +3468,13 @@
         "desc": "根据用户Id查询用户详情"
       },
       "getname": "根据用户id查询用户详情接口",
+      "input": {
+        "param": {
+          "desc": {
+            "isauthenv": "默认为true,滤掉没有生效的环境"
+          }
+        }
+      },
       "output": {
         "param": {
           "desc": {
