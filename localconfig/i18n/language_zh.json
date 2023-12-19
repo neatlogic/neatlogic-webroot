@@ -958,13 +958,13 @@
       "dofilterinternal": {
         "authfailed": "认证失败(‘{0}’)，请重新登录",
         "authfailederrorlog": "认证失败",
-        "authfailedlog": "======= login error: 通过‘{0}’认证失败，请重新登录",
+        "authfailedlog": "\u003d\u003d\u003d\u003d\u003d\u003d\u003d login error: 通过‘{0}’认证失败，请重新登录",
         "authtypeinvalid": "找不到认证方式 ‘{0}’",
-        "authtypeinvalidlog": "======= login error: 找不到认证方式 ‘{0}’",
+        "authtypeinvalidlog": "\u003d\u003d\u003d\u003d\u003d\u003d\u003d login error: 找不到认证方式 ‘{0}’",
         "lacktenant": "租户 ‘{0}’ 不存在或已被禁用",
-        "lacktenantlog": "======= login error: 租户 ‘{0}’ 不存在或已被禁用",
+        "lacktenantlog": "\u003d\u003d\u003d\u003d\u003d\u003d\u003d login error: 租户 ‘{0}’ 不存在或已被禁用",
         "unexpired": "会话已超时或已被终止，请重新登录",
-        "unexpiredlog": "======= login error: 会话已超时或已被终止，请重新登录"
+        "unexpiredlog": "\u003d\u003d\u003d\u003d\u003d\u003d\u003d login error: 会话已超时或已被终止，请重新登录"
       }
     }
   },
@@ -1694,7 +1694,7 @@
       "input": {
         "param": {
           "desc": {
-            "authlist": "授权列表，为空代表清空所有授权，范例：{authType:'user',authUuid:'xxxx',action:'cimaange'}"
+            "authlist": "授权列表，为空代表清空所有授权，范例：{authType:\u0027user\u0027,authUuid:\u0027xxxx\u0027,action:\u0027cimaange\u0027}"
           }
         }
       }
@@ -2306,7 +2306,7 @@
         "param": {
           "desc": {
             "actionlist": "动作列表",
-            "includeactionlist": "需要的返回的权限action，用于限制返回没必要的权限。如：['view','edit','scenario','env']"
+            "includeactionlist": "需要的返回的权限action，用于限制返回没必要的权限。如：[\u0027view\u0027,\u0027edit\u0027,\u0027scenario\u0027,\u0027env\u0027]"
           }
         }
       }
@@ -3548,6 +3548,7 @@
       "assignexecuser": "指定执行用户",
       "catalog": "工具目录",
       "catalogid": "工具目录ID",
+      "combop": "组合工具",
       "combopbaseinfo": "组合工具基本信息",
       "combopdetailsinfo": "组合工具详细信息",
       "combopid": "组合工具ID",
@@ -3595,6 +3596,8 @@
       "userlib": "依赖工具"
     },
     "change": {
+      "changecreate": "变更创建",
+      "changehandle": "变更处理",
       "name": "变更模块"
     },
     "cmdb": {
@@ -3697,6 +3700,7 @@
       "criticalstarcvecount": "CRITICAL*级别漏洞数",
       "cvecount": "CVE计数",
       "cvelist": "CVE漏洞列表",
+      "deployjob": "发布作业",
       "endrev": "结束Rev号",
       "evidencecount": "证据计数",
       "groupdesc": "规范快捷的持续集成-部署平台",
@@ -3793,6 +3797,7 @@
       "corpsecret": "应用的凭证密钥",
       "documentonlineinfo": "在线帮助文档信息",
       "domain": "域名",
+      "exceptionnotify": "通知异常",
       "groupname": "系统配置",
       "issuetime": "下发时间",
       "matrixuuid": "矩阵uuid",
