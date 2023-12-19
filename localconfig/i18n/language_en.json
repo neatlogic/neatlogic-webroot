@@ -1348,6 +1348,9 @@
     "getciattrlistapi": {
       "getname": "Obtain a list of model properties"
     },
+    "getciattrlistforviewapi": {
+      "getname": "Get model property list - view settings specific"
+    },
     "getciglobalattrlistapi": {
       "getname": "Get the global attribute list of the model"
     },
@@ -1436,6 +1439,7 @@
           "desc": {
             "attrentitydata": "Properties that need to be modified",
             "cientityidlist": "Modified configuration item ID",
+            "globalattrentitydata": "Global attributes that need to be modified",
             "relentitydata": "Relationships that need to be modified"
           }
         }

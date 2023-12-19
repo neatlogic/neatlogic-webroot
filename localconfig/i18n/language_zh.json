@@ -1380,6 +1380,9 @@
     "getciattrlistapi": {
       "getname": "获取模型属性列表"
     },
+    "getciattrlistforviewapi": {
+      "getname": "获取模型属性列表-视图设置专用"
+    },
     "getciglobalattrlistapi": {
       "getname": "获取模型全局属性列表"
     },
@@ -1468,6 +1471,7 @@
           "desc": {
             "attrentitydata": "需要修改的属性",
             "cientityidlist": "被修改配置项id",
+            "globalattrentitydata": "需要修改的全局属性",
             "relentitydata": "需要修改的关系"
           }
         }
