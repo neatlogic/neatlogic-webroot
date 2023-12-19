@@ -434,6 +434,10 @@
     }
   },
   "nfal": {
+    "extra_menu_modify": {
+      "getauthdisplayname": "Extra menu management permissions",
+      "getauthintroduction": "Configure extra menus"
+    },
     "matrix_modify": {
       "getauthdisplayname": "Matrix Management Permissions",
       "getauthintroduction": "Adding, modifying, and deleting matrices"
@@ -885,6 +889,29 @@
       "changelogversionnotfoundexception": {
         "a": "Module: {0} Version: {1} does not exist"
       }
+    }
+  },
+  "nfee": {
+    "extramenuexistchildrenexception": {
+      "extramenuexistchildrenexception": "Current directory: {0} has child nodes, cannot be deleted"
+    },
+    "extramenunamerepeatexception": {
+      "extramenunamerepeatexception": "Name: {0} duplicate"
+    },
+    "extramenunotallowedaddexception": {
+      "extramenunotallowedaddexception": "Menu nodes do not allow adding child nodes"
+    },
+    "extramenunotfoundexception": {
+      "extramenunotfoundexception": "Menu configuration: {0} does not exist"
+    },
+    "extramenuparamexception": {
+      "extramenuparamexception": "Parameter: {0} cannot be empty"
+    },
+    "extramenurootexception": {
+      "extramenurootexception": "Only one root node is allowed to exist"
+    },
+    "extramenurootnotallowedexception": {
+      "extramenurootnotallowedexception": "Root node not allowed to be deleted"
     }
   },
   "nfeec": {
@@ -3236,6 +3263,46 @@
       "mydoservice": {
         "error": "Unable to find document with docID {0}"
       }
+    }
+  },
+  "nmtae": {
+    "extramenuapi": {
+      "getname": "Obtain the interface for adding menu lists with permissions"
+    },
+    "extramenudeleteapi": {
+      "getname": "Delete specified extra menu/directory interface"
+    },
+    "extramenugetapi": {
+      "getname": "Interface for obtaining specified ID extra menu/directory information"
+    },
+    "extramenumoveapi": {
+      "getname": "Extra menu move position interface",
+      "input": {
+        "param": {
+          "id": {
+            "desc": "The ID of the service channel being moved"
+          },
+          "movetype": {
+            "desc": "Mobile type"
+          },
+          "targetid": {
+            "desc": "Target node ID"
+          }
+        }
+      }
+    },
+    "extramenusaveapi": {
+      "getname": "Save extra menu/directory information interface",
+      "input": {
+        "param": {
+          "type": {
+            "desc": "0: Directory, 1: Menu"
+          }
+        }
+      }
+    },
+    "extramenutreeapi": {
+      "getname": "Get Extra Menu Tree Interface"
     }
   },
   "nmtaf": {

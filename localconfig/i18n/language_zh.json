@@ -434,6 +434,10 @@
     }
   },
   "nfal": {
+    "extra_menu_modify": {
+      "getauthdisplayname": "附加菜单管理权限",
+      "getauthintroduction": "对附加菜单进行配置"
+    },
     "matrix_modify": {
       "getauthdisplayname": "矩阵管理权限",
       "getauthintroduction": "对矩阵进行添加、修改和删除"
@@ -914,6 +918,29 @@
       "changelogversionnotfoundexception": {
         "a": "模块: {0} 版本:{1} 不存在"
       }
+    }
+  },
+  "nfee": {
+    "extramenuexistchildrenexception": {
+      "extramenuexistchildrenexception": "当前目录：{0}存在子节点，无法删除"
+    },
+    "extramenunamerepeatexception": {
+      "extramenunamerepeatexception": "名称：{0}重复"
+    },
+    "extramenunotallowedaddexception": {
+      "extramenunotallowedaddexception": "菜单节点不允许新增子节点"
+    },
+    "extramenunotfoundexception": {
+      "extramenunotfoundexception": "菜单配置：{0}不存在"
+    },
+    "extramenuparamexception": {
+      "extramenuparamexception": "参数：{0}不能为空"
+    },
+    "extramenurootexception": {
+      "extramenurootexception": "只允许存在一个根节点"
+    },
+    "extramenurootnotallowedexception": {
+      "extramenurootnotallowedexception": "根节点不允许删除"
     }
   },
   "nfeec": {
@@ -3294,6 +3321,46 @@
       "mydoservice": {
         "error": "找不到docID为{0}的文档"
       }
+    }
+  },
+  "nmtae": {
+    "extramenuapi": {
+      "getname": "获取拥有权限的附加菜单列表接口"
+    },
+    "extramenudeleteapi": {
+      "getname": "删除指定附加菜单/目录接口"
+    },
+    "extramenugetapi": {
+      "getname": "获取指定ID附加菜单/目录信息接口"
+    },
+    "extramenumoveapi": {
+      "getname": "附加菜单移动位置接口",
+      "input": {
+        "param": {
+          "id": {
+            "desc": "被移动的服务通道id"
+          },
+          "movetype": {
+            "desc": "移动类型"
+          },
+          "targetid": {
+            "desc": "目标节点id"
+          }
+        }
+      }
+    },
+    "extramenusaveapi": {
+      "getname": "保存附加菜单/目录信息接口",
+      "input": {
+        "param": {
+          "type": {
+            "desc": "0：目录，1：菜单"
+          }
+        }
+      }
+    },
+    "extramenutreeapi": {
+      "getname": "获取附加菜单目录树接口"
     }
   },
   "nmtaf": {
