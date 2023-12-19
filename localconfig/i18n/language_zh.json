@@ -953,6 +953,21 @@
       "wechatauthenticationinformationnotfoundexception": "企业微信认证信息找不到"
     }
   },
+  "nff": {
+    "jsonwebtokenvalidfilter": {
+      "dofilterinternal": {
+        "authfailed": "认证失败(‘{0}’)，请重新登录",
+        "authfailederrorlog": "认证失败",
+        "authfailedlog": "======= login error: 通过‘{0}’认证失败，请重新登录",
+        "authtypeinvalid": "找不到认证方式 ‘{0}’",
+        "authtypeinvalidlog": "======= login error: 找不到认证方式 ‘{0}’",
+        "lacktenant": "租户 ‘{0}’ 不存在或已被禁用",
+        "lacktenantlog": "======= login error: 租户 ‘{0}’ 不存在或已被禁用",
+        "unexpired": "会话已超时或已被终止，请重新登录",
+        "unexpiredlog": "======= login error: 会话已超时或已被终止，请重新登录"
+      }
+    }
+  },
   "nffe": {
     "formversionscenenotfoundexception": {
       "formversionscenenotfoundexception": "在表单：{0}的版本：{1}中，场景：{2}不存在"
@@ -1675,7 +1690,7 @@
       "input": {
         "param": {
           "desc": {
-            "authlist": "授权列表，为空代表清空所有授权，范例：{authType:\u0027user\u0027,authUuid:\u0027xxxx\u0027,action:\u0027cimaange\u0027}"
+            "authlist": "授权列表，为空代表清空所有授权，范例：{authType:'user',authUuid:'xxxx',action:'cimaange'}"
           }
         }
       }
@@ -2287,7 +2302,7 @@
         "param": {
           "desc": {
             "actionlist": "动作列表",
-            "includeactionlist": "需要的返回的权限action，用于限制返回没必要的权限。如：[\u0027view\u0027,\u0027edit\u0027,\u0027scenario\u0027,\u0027env\u0027]"
+            "includeactionlist": "需要的返回的权限action，用于限制返回没必要的权限。如：['view','edit','scenario','env']"
           }
         }
       }
