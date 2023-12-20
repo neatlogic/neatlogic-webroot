@@ -909,6 +909,12 @@
     }
   },
   "nfec": {
+    "apifieldvalidexception": {
+      "apifieldvalidexception": "入参数校验异常"
+    },
+    "apiratelimiterexception": {
+      "apiratelimiterexception": "系统繁忙，请稍后重试"
+    },
     "changelogversioninvalidexception": {
       "changelogversioninvalidexception": {
         "a": "模块: {0} 版本:{1} 文件内容格式不合法"

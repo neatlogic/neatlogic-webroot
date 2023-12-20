@@ -880,6 +880,12 @@
     }
   },
   "nfec": {
+    "apifieldvalidexception": {
+      "apifieldvalidexception": "Abnormal input parameter verification"
+    },
+    "apiratelimiterexception": {
+      "apiratelimiterexception": "The system is busy, please try again later"
+    },
     "changelogversioninvalidexception": {
       "changelogversioninvalidexception": {
         "a": "Module: {0} Version: {1} File content format is illegal"
@@ -1814,7 +1820,7 @@
         "param": {
           "desc": {
             "attr": "The attributes that need to be returned. If not defined, all attributes will be returned. An empty array represents that no attributes will be returned",
-            "dsl": "Query expression, Logical connective supports\u0026\u0026, | |, and relational operator supports:==,\u003e=,\u003c=,\u003e,\u003c,!=,like,not like, include, exclude. If you need to search for relationship or reference attribute fields, you can use a.b representation, such as env. name== STG \u0026\u0026(port==80 | | port==443)",
+            "dsl": "Query expression, Logical connective supports\u0026\u0026, | |, and relational operator supports:\u003d\u003d,\u003e\u003d,\u003c\u003d,\u003e,\u003c,!\u003d,like,not like, include, exclude. If you need to search for relationship or reference attribute fields, you can use a.b representation, such as env. name\u003d\u003d STG \u0026\u0026(port\u003d\u003d80 | | port\u003d\u003d443)",
             "rel": "The relationships that need to be returned. If not defined, all relationships will be returned. An empty array represents that no relationships will be returned"
           }
         }
