@@ -3570,6 +3570,7 @@
       "assignexecuser": "Specify Execution User",
       "catalog": "Tool Catalog",
       "catalogid": "Tool Catalog ID",
+      "combop": "Combination tools",
       "combopbaseinfo": "Basic information of combination tools",
       "combopdetailsinfo": "Combination Tool Details",
       "combopid": "Combination tool ID",
@@ -3617,6 +3618,8 @@
       "userlib": "Dependency tools"
     },
     "change": {
+      "changecreate": "Change creation",
+      "changehandle": "Change handling",
       "name": "Change"
     },
     "cmdb": {
@@ -3719,6 +3722,7 @@
       "criticalstarcvecount": "CRITICAL * level vulnerability count",
       "cvecount": "CVE Count",
       "cvelist": "CVE vulnerability list",
+      "deployjob": "Publish homework",
       "endrev": "End Rev Number",
       "evidencecount": "Evidence count",
       "groupdesc": "Standardized and fast continuous integration deployment platform",
@@ -3815,6 +3819,7 @@
       "corpsecret": "Applied credential key",
       "documentonlineinfo": "Online Help Document Information",
       "domain": "domain name",
+      "exceptionnotify": "Notification exception",
       "groupname": "Framework",
       "issuetime": "Issuance time",
       "matrixuuid": "Matrix uuid",
