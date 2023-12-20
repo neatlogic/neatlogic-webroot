@@ -3618,6 +3618,7 @@
       "assignexecuser": "指定执行用户",
       "catalog": "工具目录",
       "catalogid": "工具目录ID",
+      "combop": "组合工具",
       "combopbaseinfo": "组合工具基本信息",
       "combopdetailsinfo": "组合工具详细信息",
       "combopid": "组合工具ID",
@@ -3665,6 +3666,8 @@
       "userlib": "依赖工具"
     },
     "change": {
+      "changecreate": "变更创建",
+      "changehandle": "变更处理",
       "name": "变更模块"
     },
     "cmdb": {
@@ -3767,6 +3770,7 @@
       "criticalstarcvecount": "CRITICAL*级别漏洞数",
       "cvecount": "CVE计数",
       "cvelist": "CVE漏洞列表",
+      "deployjob": "发布作业",
       "endrev": "结束Rev号",
       "evidencecount": "证据计数",
       "groupdesc": "规范快捷的持续集成-部署平台",
@@ -3863,6 +3867,7 @@
       "corpsecret": "应用的凭证密钥",
       "documentonlineinfo": "在线帮助文档信息",
       "domain": "域名",
+      "exceptionnotify": "通知异常",
       "groupname": "系统配置",
       "issuetime": "下发时间",
       "matrixuuid": "矩阵uuid",
