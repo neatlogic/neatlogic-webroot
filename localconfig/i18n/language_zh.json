@@ -3369,6 +3369,21 @@
     "downloadimageapi": {
       "getname": "图片下载接口"
     },
+    "formcopyapi": {
+      "getname": "复制表单"
+    },
+    "formdeleteapi": {
+      "getname": "删除表单"
+    },
+    "formdependencytabledataupdateapi": {
+      "getname": "更新表单依赖矩阵的数据"
+    },
+    "formsaveapi": {
+      "getname": "保存表单"
+    },
+    "formversiondeleteapi": {
+      "getname": "删除表单版本"
+    },
     "saveformversiondefaultsceneapi": {
       "getname": "设置表单版本默认场景"
     },

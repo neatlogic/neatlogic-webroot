@@ -3315,6 +3315,21 @@
     "downloadimageapi": {
       "getname": "Image download interface"
     },
+    "formcopyapi": {
+      "getname": "Copy Form"
+    },
+    "formdeleteapi": {
+      "getname": "delete form"
+    },
+    "formdependencytabledataupdateapi": {
+      "getname": "Update the data of the form dependency matrix"
+    },
+    "formsaveapi": {
+      "getname": "Save Form"
+    },
+    "formversiondeleteapi": {
+      "getname": "Delete form version"
+    },
     "saveformversiondefaultsceneapi": {
       "getname": "Set the default scenario for form version"
     },
