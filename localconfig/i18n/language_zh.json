@@ -1723,7 +1723,7 @@
       "input": {
         "param": {
           "desc": {
-            "authlist": "授权列表，为空代表清空所有授权，范例：{authType:'user',authUuid:'xxxx',action:'cimaange'}"
+            "authlist": "授权列表，为空代表清空所有授权，范例：{authType:\u0027user\u0027,authUuid:\u0027xxxx\u0027,action:\u0027cimaange\u0027}"
           }
         }
       }
@@ -2335,7 +2335,7 @@
         "param": {
           "desc": {
             "actionlist": "动作列表",
-            "includeactionlist": "需要的返回的权限action，用于限制返回没必要的权限。如：['view','edit','scenario','env']"
+            "includeactionlist": "需要的返回的权限action，用于限制返回没必要的权限。如：[\u0027view\u0027,\u0027edit\u0027,\u0027scenario\u0027,\u0027env\u0027]"
           }
         }
       }
@@ -3709,6 +3709,7 @@
       "autoexec": "自动化操作",
       "cientitydata": "配置项数据",
       "cientityid": "配置项id",
+      "cientityname": "配置项名称",
       "cientityuniquename": "配置项唯一标识",
       "ciid": "模型id",
       "ciidlist": "模型ID列表",
@@ -3818,6 +3819,7 @@
       "activeversion": "激活版本",
       "catalogitem": "目录项",
       "catalogitemid": "目录项id",
+      "catalogitemname": "目录项名称",
       "catalogtype": "目录类型",
       "checkaction": "审核动作",
       "checkstatus": "审核状态",

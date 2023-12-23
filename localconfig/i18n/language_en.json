@@ -120,7 +120,7 @@
     "filetype": "Attachment Type",
     "filter": "Filter conditions",
     "focususerlist": "List of followers",
-    "focususeruuidlist": "List of followers' uuids",
+    "focususeruuidlist": "List of followers\u0027 uuids",
     "group": "grouping",
     "grouplist": "Restrict interface return types",
     "hasmore": "Is there any more content that has not been read yet",
@@ -530,7 +530,7 @@
       "globalattrisinusedexception": "The current attribute is in use and cannot be deleted"
     },
     "globalattrvalueirregularexception": {
-      "globalattrvalueirregularexception": "The value '{2}' of global attribute '{0} ({1})' is illegal"
+      "globalattrvalueirregularexception": "The value \u0027{2}\u0027 of global attribute \u0027{0} ({1})\u0027 is illegal"
     }
   },
   "nfcer": {
@@ -876,7 +876,7 @@
   },
   "nfea": {
     "authencryptexception": {
-      "authencryptexception": "The front-end encryption method is abnormal. Please configure login. auth. password. encryption={0} in the back-end service configuration file, restart the back-end service, refresh the front-end page, and log in again"
+      "authencryptexception": "The front-end encryption method is abnormal. Please configure login. auth. password. encryption\u003d{0} in the back-end service configuration file, restart the back-end service, refresh the front-end page, and log in again"
     }
   },
   "nfec": {
@@ -962,7 +962,7 @@
       "dofilterinternal": {
         "authfailed": "Authentication failed ( {0} ), please login again",
         "authfailederrorlog": "Authentication failed",
-        "authfailedlog": "=======Login error: Failed to authenticate through  {0} , please login again",
+        "authfailedlog": "\u003d\u003d\u003d\u003d\u003d\u003d\u003dLogin error: Failed to authenticate through  {0} , please login again",
         "authtypeinvalid": "Unable to find authType:  {0} ",
         "lacktenant": "Tenant  {0}  does not exist or has been disabled",
         "unexpired": "The session has timed out or been terminated. Please login again"
@@ -1052,7 +1052,7 @@
       "processtasknotfoundedittargetexception": "Work order: {0} does not exist"
     },
     "processtaskserialnumberpolicynotfoundexception": {
-      "processtaskserialnumberpolicynotfoundexception": "Service type:  {0}  does not have a configured work order number generation strategy. Please contact the administrator and edit the work order prefix, work order rule, start position, and work order number digits for this service type in 'IT Service/Service Type Management'"
+      "processtaskserialnumberpolicynotfoundexception": "Service type:  {0}  does not have a configured work order number generation strategy. Please contact the administrator and edit the work order prefix, work order rule, start position, and work order number digits for this service type in \u0027IT Service/Service Type Management\u0027"
     }
   },
   "nfpes": {
@@ -1695,7 +1695,7 @@
       "input": {
         "param": {
           "desc": {
-            "authlist": "Authorization list, empty means clearing all authorizations. Example: {authType: 'user', authUuid: 'xxxx', action: 'cimaange'}"
+            "authlist": "Authorization list, empty means clearing all authorizations. Example: {authType: \u0027user\u0027, authUuid: \u0027xxxx\u0027, action: \u0027cimaange\u0027}"
           }
         }
       }
@@ -2177,7 +2177,7 @@
     },
     "diagramnotfoundexception": {
       "diagramnotfoundexception": "The architecture diagram  {0}  does not exist",
-      "diagramversionnotfoundexception": "Version '{1}' of architecture diagram  {0}  does not exist"
+      "diagramversionnotfoundexception": "Version \u0027{1}\u0027 of architecture diagram  {0}  does not exist"
     },
     "diagramstatusirregularexception": {
       "diagramstatusirregularexception": "The current architecture diagram state has changed. Please refresh the page and edit again"
@@ -2307,7 +2307,7 @@
         "param": {
           "desc": {
             "actionlist": "Action List",
-            "includeactionlist": "The required return permission action is used to restrict the return of unnecessary permissions. For example: ['view ',' edit ',' scenario ',' env ']"
+            "includeactionlist": "The required return permission action is used to restrict the return of unnecessary permissions. For example: [\u0027view \u0027,\u0027 edit \u0027,\u0027 scenario \u0027,\u0027 env \u0027]"
           }
         }
       }
@@ -2943,7 +2943,7 @@
       "input": {
         "param": {
           "desc": {
-            "ismine": "Do you want to only query the application list containing the current user's tasks",
+            "ismine": "Do you want to only query the application list containing the current user\u0027s tasks",
             "ismyreported": "Whether to only query the application list reported by the current user",
             "needissuecount": "Do you need to return the number of tasks"
           }
@@ -3476,13 +3476,13 @@
   },
   "nmtau": {
     "getcurrentusertokenapi": {
-      "getname": "Obtain the user's own token"
+      "getname": "Obtain the user\u0027s own token"
     },
     "getusertokenapi": {
-      "getname": "Obtain the user's token"
+      "getname": "Obtain the user\u0027s token"
     },
     "resetcurrentusertokenapi": {
-      "getname": "Reset the user's own token",
+      "getname": "Reset the user\u0027s own token",
       "output": {
         "param": {
           "return": {
@@ -3492,7 +3492,7 @@
       }
     },
     "resetusertokenapi": {
-      "getname": "Reset user's token"
+      "getname": "Reset user\u0027s token"
     },
     "userdeleteapi": {
       "getname": "Delete User Interface"
@@ -3655,6 +3655,7 @@
       "autoexec": "Automated operations",
       "cientitydata": "Configuration Item Data",
       "cientityid": "Configuration Item ID",
+      "cientityname": "Configuration Item Name",
       "cientityuniquename": "Unique identification of configuration items",
       "ciid": "Model ID",
       "ciidlist": "Model ID List",
@@ -3764,6 +3765,7 @@
       "activeversion": "Activate version",
       "catalogitem": "Catalog Entry",
       "catalogitemid": "Catalog Item ID",
+      "catalogitemname": "Catalog Item Name",
       "catalogtype": "Catalog Type",
       "checkaction": "Audit Action",
       "checkstatus": "Audit status",
