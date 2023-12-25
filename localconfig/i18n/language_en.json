@@ -879,6 +879,11 @@
       "authencryptexception": "The front-end encryption method is abnormal. Please configure login. auth. password. encryption\u003d{0} in the back-end service configuration file, restart the back-end service, refresh the front-end page, and log in again"
     }
   },
+  "nfeal": {
+    "eoa_base": {
+      "getauthdisplayname": "EOA Basic Permissions"
+    }
+  },
   "nfec": {
     "apifieldvalidexception": {
       "apifieldvalidexception": "Abnormal input parameter verification"
@@ -898,6 +903,40 @@
     }
   },
   "nfee": {
+    "approvalpolicy": {
+      "description": {
+        "and": "Set up multiple approvers, and approve after everyone agrees",
+        "oneperson": "Set a unique approver and approve after approval",
+        "or": "Set up multiple approvers, with approval from any one person",
+        "read": "The approver circulates the approval process, does not participate in rejection, only views",
+        "vote": "Set up multiple approvers and approve after more than half of them agree"
+      },
+      "text": {
+        "and": "Countersignature",
+        "oneperson": "Single person",
+        "or": "Or sign",
+        "read": "Circulation",
+        "vote": "vote"
+      }
+    },
+    "eoaapprovalpolicynotfoundexception": {
+      "eoaapprovalpolicynotfoundexception": "EOA approval strategy: {0} does not exist"
+    },
+    "eoaonepersonapprovalpolicyonlyoneuserexception": {
+      "eoaonepersonapprovalpolicyonlyoneuserexception": "EOA single person approval strategy, can only have one handler"
+    },
+    "eoatemplateatleastonestepexception": {
+      "eoatemplateatleastonestepexception": "The EOA template must have at least one step"
+    },
+    "eoatemplatenameisexistsexception": {
+      "eoatemplatenameisexistsexception": "EOA template name: {0} already exists"
+    },
+    "eoatemplatenotfoundedittargetexception": {
+      "eoatemplatenotfoundedittargetexception": "EOA template: {0} does not exist"
+    },
+    "eoatemplatestepnameisrequiredexception": {
+      "eoatemplatestepnameisrequiredexception": "EOA template step name is mandatory"
+    },
     "extramenuexistchildrenexception": {
       "extramenuexistchildrenexception": "Current directory: {0} has child nodes, cannot be deleted"
     },
@@ -2605,6 +2644,9 @@
     }
   },
   "nmeat": {
+    "deleteeoatemplateapi": {
+      "getname": "Delete EOA template"
+    },
     "eventtypesaveapi": {
       "getname": "Save event type information",
       "input": {
@@ -2617,6 +2659,15 @@
     },
     "eventtypetreesearchapi": {
       "getname": "Retrieve event type schema"
+    },
+    "geteoatemplateapi": {
+      "getname": "Obtain EOA template"
+    },
+    "saveeoatemplateapi": {
+      "getname": "Save EOA template"
+    },
+    "searcheoatemplateapi": {
+      "getname": "Query EOA template list"
     }
   },
   "nmffh": {
