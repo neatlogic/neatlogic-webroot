@@ -908,6 +908,11 @@
       "authencryptexception": "前端加密方式异常，请在后端服务配置文件配置login.auth.password.encrypt\u003d{0}后，重启后端服务后，刷新前端页面重新登录"
     }
   },
+  "nfeal": {
+    "eoa_base": {
+      "getauthdisplayname": "EOA基础权限"
+    }
+  },
   "nfec": {
     "apifieldvalidexception": {
       "apifieldvalidexception": "入参数校验异常"
@@ -927,6 +932,40 @@
     }
   },
   "nfee": {
+    "approvalpolicy": {
+      "description": {
+        "and": "设置多位审批人，所有人同意后审批通过",
+        "oneperson": "设置唯一审批人，同意后通过",
+        "or": "设置多位审批人，任意一人同意后审批通过",
+        "read": "审批人传阅审批流程，不参与否决，仅查看",
+        "vote": "设置多位审批人，超过半数同意后审批通过"
+      },
+      "text": {
+        "and": "会签",
+        "oneperson": "单人",
+        "or": "或签",
+        "read": "传阅",
+        "vote": "投票"
+      }
+    },
+    "eoaapprovalpolicynotfoundexception": {
+      "eoaapprovalpolicynotfoundexception": "EOA审批策略：{0} 不存在"
+    },
+    "eoaonepersonapprovalpolicyonlyoneuserexception": {
+      "eoaonepersonapprovalpolicyonlyoneuserexception": "EOA单人审批策略，只能有一个处理人"
+    },
+    "eoatemplateatleastonestepexception": {
+      "eoatemplateatleastonestepexception": "EOA模板至少要有一个步骤"
+    },
+    "eoatemplatenameisexistsexception": {
+      "eoatemplatenameisexistsexception": "EOA模板名称：{0} 已存在"
+    },
+    "eoatemplatenotfoundedittargetexception": {
+      "eoatemplatenotfoundedittargetexception": "EOA模板：{0} 不存在"
+    },
+    "eoatemplatestepnameisrequiredexception": {
+      "eoatemplatestepnameisrequiredexception": "EOA模板步骤名称是必填的"
+    },
     "extramenuexistchildrenexception": {
       "extramenuexistchildrenexception": "当前目录：{0}存在子节点，无法删除"
     },
@@ -2633,6 +2672,9 @@
     }
   },
   "nmeat": {
+    "deleteeoatemplateapi": {
+      "getname": "删除EOA模板"
+    },
     "eventtypesaveapi": {
       "getname": "保存事件类型信息",
       "input": {
@@ -2645,6 +2687,15 @@
     },
     "eventtypetreesearchapi": {
       "getname": "检索事件类型架构"
+    },
+    "geteoatemplateapi": {
+      "getname": "获取EOA模板"
+    },
+    "saveeoatemplateapi": {
+      "getname": "保存EOA模板"
+    },
+    "searcheoatemplateapi": {
+      "getname": "查询EOA模板列表"
     }
   },
   "nmffh": {
