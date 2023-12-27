@@ -1055,6 +1055,16 @@
       "emailsendexception": "Email sending failed, please try again"
     }
   },
+  "nfpa": {
+    "process": {
+      "getauthdisplayname": "IT Service Basic Permissions (Interface)",
+      "getauthintroduction": "Having this permission allows access to IT services and query data interfaces through interfaces"
+    },
+    "process_base": {
+      "getauthdisplayname": "Basic permissions for IT services",
+      "getauthintroduction": "View IT service related basic functions"
+    }
+  },
   "nfpc": {
     "itsmtenantconfig": {
       "displaymodeaftertimeout": "Display method after work order timeout, optional values naturalTime | workTime",
