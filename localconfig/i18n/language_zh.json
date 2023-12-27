@@ -1083,6 +1083,16 @@
       "emailsendexception": "邮件发送失败,请重试"
     }
   },
+  "nfpa": {
+    "process": {
+      "getauthdisplayname": "IT服务基础权限（接口）",
+      "getauthintroduction": "拥有此权限可以通过接口访问IT服务一些查询数据接口"
+    },
+    "process_base": {
+      "getauthdisplayname": "IT服务基础权限",
+      "getauthintroduction": "查看IT服务相关基础功能"
+    }
+  },
   "nfpc": {
     "itsmtenantconfig": {
       "displaymodeaftertimeout": "工单时效超时后显示方式，可选值naturalTime|workTime",
