@@ -2079,6 +2079,11 @@
       "getname": "Release architecture diagram editing lock"
     }
   },
+  "nmccdat": {
+    "exporttemplateapi": {
+      "getname": "Export Template"
+    }
+  },
   "nmccde": {
     "diagramisexistsexception": {
       "diagramisexistsexception": "Architecture diagram created"
@@ -2089,6 +2094,9 @@
     },
     "diagramversionnotfoundexception": {
       "diagramversionnotfoundexception": "The current architecture diagram does not have a version of {0}"
+    },
+    "widgetnameisexistsexception": {
+      "widgetnameisexistsexception": "Element \u0027{0}\u0027 already exists"
     }
   },
   "nmcdac": {

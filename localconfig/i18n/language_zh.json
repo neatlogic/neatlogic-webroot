@@ -2107,6 +2107,11 @@
       "getname": "释放架构图编辑锁"
     }
   },
+  "nmccdat": {
+    "exporttemplateapi": {
+      "getname": "导出模板"
+    }
+  },
   "nmccde": {
     "diagramisexistsexception": {
       "diagramisexistsexception": "架构图已创建"
@@ -2117,6 +2122,9 @@
     },
     "diagramversionnotfoundexception": {
       "diagramversionnotfoundexception": "当前架构图不存在{0}的版本"
+    },
+    "widgetnameisexistsexception": {
+      "widgetnameisexistsexception": "图元“{0}”已存在"
     }
   },
   "nmcdac": {
