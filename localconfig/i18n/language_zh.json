@@ -521,6 +521,11 @@
     "cicatalognotfoundexception": {
       "cicatalognotfoundexception": "模型目录：{0} 不存在"
     },
+    "ciisabstractedexception": {
+      "data": "配置项模型“{0}”是抽象模型，不允许直接添加数据",
+      "updateabstract": "配置项模型“{0}”已被继承或已存在数据，不能变更是否抽象模型",
+      "updateparent": "配置项模型“{0}”已存在数据，不能变更父模型"
+    },
     "citypenotfoundexception": {
       "citypenotfoundexception": "模型类型：{0}不存在"
     }
@@ -3790,6 +3795,7 @@
       "envidlist": "环境id列表",
       "envlist": "环境列表",
       "envname": "环境名称",
+      "excludeciid": "排除模型id",
       "globalattr": "全局属性",
       "globalattridlist": "公共属性id列表",
       "groupdesc": "配置管理平台",
@@ -3812,6 +3818,8 @@
       "name": "配置管理模块",
       "nodelist": "节点列表",
       "parentcientityid": "父配置项id",
+      "parentciicon": "父模型图标",
+      "parentciid": "父模型id",
       "port": "协议端口",
       "protocol": "协议",
       "protocolidlist": "协议id列表",
@@ -3824,6 +3832,7 @@
       "rootciid": "根模型id",
       "rootciname": "根模型名称",
       "ruleid": "规则id",
+      "sourcerelid": "来源关系id",
       "startciid": "起始模型id",
       "stateidlist": "状态id列表",
       "sysname": "系统简称",

@@ -521,6 +521,11 @@
     "cicatalognotfoundexception": {
       "cicatalognotfoundexception": "Model directory: {0} does not exist"
     },
+    "ciisabstractedexception": {
+      "data": "The configuration item model \u0027{0}\u0027 is an abstract model and direct addition of data is not allowed",
+      "updateabstract": "Configuration item model \u0027{0}\u0027 has already been inherited or data already exists, cannot change whether it is an abstract model",
+      "updateparent": "The configuration item model \u0027{0}\u0027 already has data and cannot change the parent model"
+    },
     "citypenotfoundexception": {
       "citypenotfoundexception": "Model type: {0} does not exist"
     }
@@ -3736,6 +3741,7 @@
       "envidlist": "Environment ID List",
       "envlist": "Environment List",
       "envname": "Environment name",
+      "excludeciid": "Exclude model ID",
       "globalattr": "Global Properties",
       "globalattridlist": "List of public attribute IDs",
       "groupdesc": "Configuration Management Platform",
@@ -3758,6 +3764,8 @@
       "name": "CMDB",
       "nodelist": "Node List",
       "parentcientityid": "Parent Configuration Item ID",
+      "parentciicon": "Parent model icon",
+      "parentciid": "Parent model ID",
       "port": "Protocol Port",
       "protocol": "protocol",
       "protocolidlist": "Protocol ID List",
@@ -3770,6 +3778,7 @@
       "rootciid": "Root Model ID",
       "rootciname": "Root Model Name",
       "ruleid": "Rule ID",
+      "sourcerelid": "Source Relationship ID",
       "startciid": "Starting Model ID",
       "stateidlist": "Status ID List",
       "sysname": "System abbreviation",
