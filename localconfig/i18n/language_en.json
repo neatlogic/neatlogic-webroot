@@ -528,6 +528,20 @@
     },
     "citypenotfoundexception": {
       "citypenotfoundexception": "Model type: {0} does not exist"
+    },
+    "ciuniqueattrnotfoundexception": {
+      "ciuniqueattrnotfoundexception_a": "Configuration item model \u0027{0}\u0027 is missing a unique attribute, please set it",
+      "ciuniqueattrnotfoundexception_b": "The unique rule property \u0027{2} ({3})\u0027 of model \u0027{0} ({1})\u0027 does not have a matching field configured. Please configure it first",
+      "ciuniqueattrnotfoundexception_c": "The value of the unique rule attribute \u0027{2} ({3})\u0027 of model \u0027{0} ({1})\u0027 is empty",
+      "ciuniqueattrnotfoundexception_d": "Failed to obtain transaction hash for configuration item of model \u0027{0}\u0027, unique attribute \u0027{1}\u0027 has no value",
+      "ciuniqueattrnotfoundexception_e": "Configuration“ {0}- \u003e{1} The value of the unique key mapping attribute \u0027{3}\u0027 for ({2}) does not exist, original data: {4}"
+    },
+    "ciuniqueruleattrtypeirregularexception": {
+      "ciuniqueruleattrtypeirregularexception_a": "The unique rule property \u0027{2} ({3})\u0027 of model \u0027{0} ({1})\u0027 cannot be an expression property or a reference property",
+      "ciuniqueruleattrtypeirregularexception_b": "The unique rule attribute \u0027{2} ({3})\u0027 of model \u0027{0} ({1})\u0027 cannot be an expression attribute"
+    },
+    "downwardcinotfoundexception": {
+      "downwardcinotfoundexception": "Unable to find configuration item model \u0027{2}\u0027 in the downstream model of configuration item model \u0027{0} ({1})\u0027"
     }
   },
   "nfceg": {
@@ -1957,6 +1971,11 @@
       }
     }
   },
+  "nmcacp": {
+    "getciforprocessmappingapi": {
+      "getname": "Obtain model information (dedicated to CMDB node relationship mapping in the flowchart)"
+    }
+  },
   "nmcag": {
     "deleteglobalattrapi": {
       "getname": "Delete Global Attribute"
@@ -2289,6 +2308,9 @@
     }
   },
   "nmcpe": {
+    "abstractcitargetciidattrnotfoundexception": {
+      "abstractcitargetciidattrnotfoundexception": "The value of the \"targetCiId (write model)\" field in the abstract model \"{0} ({1})\" is empty"
+    },
     "cientityconfigillegalexception": {
       "cientityconfigillegalexception": "The CMDB node model mapping information is illegal: {0}"
     }
