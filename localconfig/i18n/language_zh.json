@@ -528,6 +528,20 @@
     },
     "citypenotfoundexception": {
       "citypenotfoundexception": "模型类型：{0}不存在"
+    },
+    "ciuniqueattrnotfoundexception": {
+      "ciuniqueattrnotfoundexception_a": "配置项模型“{0}”缺少唯一属性，请设置",
+      "ciuniqueattrnotfoundexception_b": "模型“{0}({1})”的唯一规则属性“{2}({3})”没有配置匹配字段，请先配置",
+      "ciuniqueattrnotfoundexception_c": "模型“{0}({1})”的唯一规则属性“{2}({3})”的值为空",
+      "ciuniqueattrnotfoundexception_d": "获取模型“{0}”的配置项事务hash失败，唯一属性“{1}”没有值",
+      "ciuniqueattrnotfoundexception_e": "配置“{0}-\u003e{1}({2})”的唯一键映射属性“{3}”的值不存在，原始数据：{4}"
+    },
+    "ciuniqueruleattrtypeirregularexception": {
+      "ciuniqueruleattrtypeirregularexception_a": "模型“{0}({1})”的唯一规则属性“{2}({3})”不能是一个表达式属性或引用型属性",
+      "ciuniqueruleattrtypeirregularexception_b": "模型“{0}({1})”的唯一规则属性“{2}({3})”不能是一个表达式属性"
+    },
+    "downwardcinotfoundexception": {
+      "downwardcinotfoundexception": "在配置项模型“{0}({1})”的下游模型中找不到配置项模型“{2}”"
     }
   },
   "nfceg": {
@@ -1985,6 +1999,11 @@
       }
     }
   },
+  "nmcacp": {
+    "getciforprocessmappingapi": {
+      "getname": "获取模型信息（流程图cmdb节点关系映射专用）"
+    }
+  },
   "nmcag": {
     "deleteglobalattrapi": {
       "getname": "删除全局属性"
@@ -2317,6 +2336,9 @@
     }
   },
   "nmcpe": {
+    "abstractcitargetciidattrnotfoundexception": {
+      "abstractcitargetciidattrnotfoundexception": "抽象模型“{0}({1})”的“targetCiId(写入模型)”字段的值为空"
+    },
     "cientityconfigillegalexception": {
       "cientityconfigillegalexception": "CMDB节点模型映射信息不合法：{0}"
     }
