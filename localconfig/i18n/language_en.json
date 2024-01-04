@@ -3579,7 +3579,7 @@
       "input": {
         "param": {
           "desc": {
-            "isauthenv": "Default to true, filter out ineffective environments"
+            "isrulerole": "Default to true, filter out roles that do not comply with the rules"
           }
         }
       },
