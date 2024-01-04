@@ -521,6 +521,12 @@
     "cicatalognotfoundexception": {
       "cicatalognotfoundexception": "Model directory: {0} does not exist"
     },
+    "cientityauthexception": {
+      "action": "You do not have permission for the {0} configuration item",
+      "ciaction": "You do not have permission to configure the item for {0} \"{1} ({2})\"",
+      "cientityidnameaction": "You do not have permission to configure item \u0027{1} ({2})\u0027 for {0}",
+      "cilabelaction": "You do not have permission to configure the item for {0} \u0027{1}\u0027"
+    },
     "ciisabstractedexception": {
       "data": "The configuration item model \u0027{0}\u0027 is an abstract model and direct addition of data is not allowed",
       "updateabstract": "Configuration item model \u0027{0}\u0027 has already been inherited or data already exists, cannot change whether it is an abstract model",

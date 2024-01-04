@@ -521,6 +521,12 @@
     "cicatalognotfoundexception": {
       "cicatalognotfoundexception": "模型目录：{0} 不存在"
     },
+    "cientityauthexception": {
+      "action": "您没有权限{0}配置项",
+      "ciaction": "您没有权限{0}“{1}({2})”的配置项",
+      "cientityidnameaction": "您没有权限{0}配置项“{1}({2})”",
+      "cilabelaction": "您没有权限{0}“{1}”的配置项"
+    },
     "ciisabstractedexception": {
       "data": "配置项模型“{0}”是抽象模型，不允许直接添加数据",
       "updateabstract": "配置项模型“{0}”已被继承或已存在数据，不能变更是否抽象模型",
