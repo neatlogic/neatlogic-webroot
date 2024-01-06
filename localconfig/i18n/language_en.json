@@ -1661,6 +1661,12 @@
     "getciuniqueapi": {
       "getname": "Returns a list of unique attribute IDs"
     },
+    "getcustomviewcientityapi": {
+      "getname": "Obtain custom view ID data based on configuration item ID"
+    },
+    "getcustomviewtemplateapi": {
+      "getname": "Get custom view templates"
+    },
     "getdownwardcilistapi": {
       "getname": "Obtain downstream model list"
     },
@@ -1815,6 +1821,9 @@
     },
     "saveciuniqueruleapi": {
       "getname": "Save Model Unique Rules"
+    },
+    "savecustomviewapi": {
+      "getname": "Save Custom View"
     },
     "searchalertlevelapi": {
       "getname": "Search alarm level"
@@ -3765,6 +3774,10 @@
       "cilist": "Model List",
       "ciname": "Model Name",
       "ciuniquename": "Model Unique Identification",
+      "customview": {
+        "authhelp": "Only effective for public views",
+        "ciid": "Model ID needs to be provided when saving the scene view"
+      },
       "envid": "Environment ID",
       "envidlist": "Environment ID List",
       "envlist": "Environment List",

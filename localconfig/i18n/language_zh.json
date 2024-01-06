@@ -1689,6 +1689,12 @@
     "getciuniqueapi": {
       "getname": "返回唯一属性id列表"
     },
+    "getcustomviewcientityapi": {
+      "getname": "根据配置项id获取自定义视图id数据"
+    },
+    "getcustomviewtemplateapi": {
+      "getname": "获取自定义视图模板"
+    },
     "getdownwardcilistapi": {
       "getname": "获取下游模型列表"
     },
@@ -1843,6 +1849,9 @@
     },
     "saveciuniqueruleapi": {
       "getname": "保存模型唯一规则"
+    },
+    "savecustomviewapi": {
+      "getname": "保存自定义视图"
     },
     "searchalertlevelapi": {
       "getname": "搜索告警级别"
@@ -3819,6 +3828,10 @@
       "cilist": "模型列表",
       "ciname": "模型名称",
       "ciuniquename": "模型唯一标识",
+      "customview": {
+        "authhelp": "仅对公共视图生效",
+        "ciid": "模型id，保存场景视图时需要提供"
+      },
       "envid": "环境id",
       "envidlist": "环境id列表",
       "envlist": "环境列表",
