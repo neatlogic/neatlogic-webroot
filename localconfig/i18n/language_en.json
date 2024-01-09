@@ -144,6 +144,7 @@
     "iscandelete": "Can I delete it",
     "iscanmodify": "Can I modify it",
     "iscanview": "Can I view it",
+    "isdefault": "Is it default",
     "isdeleted": "Has it been deleted",
     "isend": "Completed or not",
     "isexpired": "Expired or not",
@@ -531,6 +532,9 @@
       "data": "The configuration item model \u0027{0}\u0027 is an abstract model and direct addition of data is not allowed",
       "updateabstract": "Configuration item model \u0027{0}\u0027 has already been inherited or data already exists, cannot change whether it is an abstract model",
       "updateparent": "The configuration item model \u0027{0}\u0027 already has data and cannot change the parent model"
+    },
+    "citopotemplatenotfoundexception": {
+      "citopotemplatenotfoundexception": "Topology template \u0027{0}\u0027 does not exist"
     },
     "citypenotfoundexception": {
       "citypenotfoundexception": "Model type: {0} does not exist"
@@ -1564,6 +1568,9 @@
     "deletecientityapi": {
       "getname": "Delete Configuration Item"
     },
+    "deletecitopotemplateapi": {
+      "getname": "Delete topology scene"
+    },
     "exportciapi": {
       "getname": "Export Configuration Item Model"
     },
@@ -1655,6 +1662,9 @@
       },
       "getname": "Obtain detailed information of multiple configuration items"
     },
+    "getcitopotemplateapi": {
+      "getname": "Obtain topology scene"
+    },
     "getcitypeapi": {
       "getname": "Obtain model type information"
     },
@@ -1725,6 +1735,9 @@
         "desc": "Return the model tree list"
       },
       "getname": "Obtain a model tree list"
+    },
+    "listcitopotemplateapi": {
+      "getname": "Get a list of topology scenes"
     },
     "listcitypeapi": {
       "getname": "Obtain a list of model types"
@@ -3803,6 +3816,7 @@
       "moduleid": "Module ID",
       "modulename": "Module abbreviation",
       "name": "CMDB",
+      "needcirel": "Do we need to return the relationship path",
       "nodelist": "Node List",
       "parentcientityid": "Parent Configuration Item ID",
       "parentciicon": "Parent model icon",
