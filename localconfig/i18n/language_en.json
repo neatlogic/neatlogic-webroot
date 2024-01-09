@@ -151,6 +151,7 @@
     "isfavoried": "Favorite or not",
     "isfile": "Is it a file",
     "isfocus": "Have you followed",
+    "ishidden": "Whether to hide",
     "islimit": "Whether to limit the number of items",
     "ismultiple": "Do you want to select multiple options",
     "ismycreated": "Do I create",
@@ -1671,6 +1672,9 @@
     "getciuniqueapi": {
       "getname": "Returns a list of unique attribute IDs"
     },
+    "getcustomviewattrapi": {
+      "getname": "Get a list of custom view properties"
+    },
     "getcustomviewcientityapi": {
       "getname": "Obtain custom view ID data based on configuration item ID"
     },
@@ -2349,6 +2353,21 @@
       "cmdbsync": "CMDB synchronization"
     }
   },
+  "nmcwe": {
+    "cmdbdispatcherdispatchfailedexception": {
+      "cmdbdispatcherdispatchfailedexception_a": "The configuration item model or view \u0027{0}\u0027 does not exist",
+      "cmdbdispatcherdispatchfailedexception_b": "Unable to find handler in matching result: {0}",
+      "cmdbdispatcherdispatchfailedexception_c": "In the {0} ({1}) model, configuration item data cannot be found based on the matching condition: {2}",
+      "cmdbdispatcherdispatchfailedexception_d": "In the {0} ({1}) model, find {3} configuration item data based on matching criteria: {2}",
+      "cmdbdispatcherdispatchfailedexception_e": "In the {0} view, configuration item data cannot be found based on the matching criteria: {1}",
+      "cmdbdispatcherdispatchfailedexception_f": "In the {0} view, find multiple configuration item data for {2} based on the matching criteria: {1}"
+    }
+  },
+  "nmcwh": {
+    "cmdbdispatcher": {
+      "getname": "CMDB Dispatcher"
+    }
+  },
   "nmda": {
     "exportdashboardapi": {
       "getname": "Export Dashboard"
@@ -2992,6 +3011,20 @@
           }
         }
       }
+    }
+  },
+  "nmpwh": {
+    "handlerleaderdispatcher": {
+      "getname": "Processor Leader Dispatcher"
+    },
+    "leaderdispatcher": {
+      "getname": "Group Leader Dispatcher"
+    },
+    "ownerleaderdispatcher": {
+      "getname": "Reported by Leader Dispatcher"
+    },
+    "workloaddispatcher": {
+      "getname": "Assign processors based on workload"
     }
   },
   "nmra": {

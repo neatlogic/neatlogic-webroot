@@ -151,6 +151,7 @@
     "isfavoried": "是否收藏",
     "isfile": "是否是文件",
     "isfocus": "是否已关注",
+    "ishidden": "是否隐藏",
     "islimit": "是否限制个数",
     "ismultiple": "是否多选",
     "ismycreated": "是否我创建",
@@ -1699,6 +1700,9 @@
     "getciuniqueapi": {
       "getname": "返回唯一属性id列表"
     },
+    "getcustomviewattrapi": {
+      "getname": "获取自定义视图属性列表"
+    },
     "getcustomviewcientityapi": {
       "getname": "根据配置项id获取自定义视图id数据"
     },
@@ -2377,6 +2381,21 @@
       "cmdbsync": "CMDB同步"
     }
   },
+  "nmcwe": {
+    "cmdbdispatcherdispatchfailedexception": {
+      "cmdbdispatcherdispatchfailedexception_a": "配置项模型或视图“{0}”不存在",
+      "cmdbdispatcherdispatchfailedexception_b": "在匹配结果：”{0}“中找不到处理人",
+      "cmdbdispatcherdispatchfailedexception_c": "在”{0}({1})“模型中，根据匹配条件：”{2}“找不到配置项数据",
+      "cmdbdispatcherdispatchfailedexception_d": "在”{0}({1})“模型中，根据匹配条件：”{2}“找到”{3}“条配置项数据",
+      "cmdbdispatcherdispatchfailedexception_e": "在”{0}“视图中，根据匹配条件：”{1}“找不到配置项数据",
+      "cmdbdispatcherdispatchfailedexception_f": "在”{0}“视图中，根据匹配条件：”{1}“找到”{2}“多条配置项数据"
+    }
+  },
+  "nmcwh": {
+    "cmdbdispatcher": {
+      "getname": "CMDB分派器"
+    }
+  },
   "nmda": {
     "exportdashboardapi": {
       "getname": "导出仪表板"
@@ -3044,6 +3063,20 @@
           }
         }
       }
+    }
+  },
+  "nmpwh": {
+    "handlerleaderdispatcher": {
+      "getname": "处理人领导分派器"
+    },
+    "leaderdispatcher": {
+      "getname": "分组领导分派器"
+    },
+    "ownerleaderdispatcher": {
+      "getname": "上报人领导分派器"
+    },
+    "workloaddispatcher": {
+      "getname": "根据工作量分配处理人"
     }
   },
   "nmra": {
