@@ -2179,6 +2179,9 @@
     "diagramversionnotfoundexception": {
       "diagramversionnotfoundexception": "当前架构图不存在{0}的版本"
     },
+    "templatenameisexistsexception": {
+      "templatenameisexistsexception": "模板“{0}”已存在"
+    },
     "widgetnameisexistsexception": {
       "widgetnameisexistsexception": "图元“{0}”已存在"
     }

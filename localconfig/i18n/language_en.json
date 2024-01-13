@@ -2151,6 +2151,9 @@
     "diagramversionnotfoundexception": {
       "diagramversionnotfoundexception": "The current architecture diagram does not have a version of {0}"
     },
+    "templatenameisexistsexception": {
+      "templatenameisexistsexception": "Template \u0027{0}\u0027 already exists"
+    },
     "widgetnameisexistsexception": {
       "widgetnameisexistsexception": "Element \u0027{0}\u0027 already exists"
     }
