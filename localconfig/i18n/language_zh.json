@@ -2139,6 +2139,9 @@
     "listcatalogapi": {
       "getname": "获取我的目录列表"
     },
+    "listcatalogcientityapi": {
+      "getname": "获取目录配置项列表"
+    },
     "listcientitydiagramapi": {
       "getname": "获取配置项架构图"
     },

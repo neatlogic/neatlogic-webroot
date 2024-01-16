@@ -2111,6 +2111,9 @@
     "listcatalogapi": {
       "getname": "Get my directory list"
     },
+    "listcatalogcientityapi": {
+      "getname": "Get a list of directory configuration items"
+    },
     "listcientitydiagramapi": {
       "getname": "Obtain the configuration item architecture diagram"
     },
