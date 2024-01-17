@@ -1672,6 +1672,9 @@
     "getciuniqueapi": {
       "getname": "Returns a list of unique attribute IDs"
     },
+    "getciviewapi": {
+      "getname": "Get model display settings"
+    },
     "getcustomviewattrapi": {
       "getname": "Get a list of custom view properties"
     },
@@ -3800,6 +3803,16 @@
       "changehandle": "Change handling",
       "name": "Change"
     },
+    "ciview": {
+      "alias": "alias",
+      "alleditdesc": "Is editing allowed? 0 is not allowed, 1 is allowed",
+      "itemid": "Attribute or relationship ID",
+      "label": "Attribute or relationship name",
+      "name": "Unique identification of attributes or relationships",
+      "showtypedesc": "Display method, none: do not display, all: display all, list: only display list, detail: only display details",
+      "showtypetext": "Display Method Name",
+      "type": "Type, attr or rel"
+    },
     "cmdb": {
       "abbrname": "for short",
       "addid": "ID, do not provide a representative to add",
@@ -3855,6 +3868,7 @@
       "moduleid": "Module ID",
       "modulename": "Module abbreviation",
       "name": "CMDB",
+      "needalias": "Do you need an alias",
       "needcirel": "Do we need to return the relationship path",
       "nodelist": "Node List",
       "parentcientityid": "Parent Configuration Item ID",

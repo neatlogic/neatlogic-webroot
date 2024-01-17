@@ -1700,6 +1700,9 @@
     "getciuniqueapi": {
       "getname": "返回唯一属性id列表"
     },
+    "getciviewapi": {
+      "getname": "获取模型显示设置"
+    },
     "getcustomviewattrapi": {
       "getname": "获取自定义视图属性列表"
     },
@@ -3854,6 +3857,16 @@
       "changehandle": "变更处理",
       "name": "变更模块"
     },
+    "ciview": {
+      "alias": "别名",
+      "alleditdesc": "是否允许编辑，0不允许，1允许",
+      "itemid": "属性或关系id",
+      "label": "属性或关系名称",
+      "name": "属性或关系唯一标识",
+      "showtypedesc": "显示方式，none:不显示，all:全部显示，list:仅列表显示，detail:仅明细显示",
+      "showtypetext": "显示方式名称",
+      "type": "类型，attr或rel"
+    },
     "cmdb": {
       "abbrname": "简称",
       "addid": "id，不提供代表添加",
@@ -3909,6 +3922,7 @@
       "moduleid": "模块ID",
       "modulename": "模块简称",
       "name": "配置管理模块",
+      "needalias": "是否需要别名",
       "needcirel": "是否需要返回关系路径",
       "nodelist": "节点列表",
       "parentcientityid": "父配置项id",
