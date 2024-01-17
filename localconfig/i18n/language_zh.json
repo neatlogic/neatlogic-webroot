@@ -169,6 +169,7 @@
     "jsonobject": "json对象",
     "key": "键",
     "keyword": "关键字",
+    "layout": "布局",
     "level": "层次",
     "lft": "左编码",
     "locktime": "锁定时间",
@@ -2124,12 +2125,7 @@
       "getname": "删除事务"
     },
     "getcientitytopoapi": {
-      "getname": "获取配置项拓扑",
-      "input": {
-        "param": {
-          "desc": "布局"
-        }
-      }
+      "getname": "获取配置项拓扑"
     },
     "recovertransactionapi": {
       "getname": "恢复事务"
@@ -3945,6 +3941,7 @@
       "stateidlist": "状态id列表",
       "sysname": "系统简称",
       "targetciid": "目标模型id",
+      "templateconfig": "模板配置",
       "transactiongroupid": "事务组id",
       "transactionid": "事务id",
       "typeidlist": "资源类型id列表",

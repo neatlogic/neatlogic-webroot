@@ -169,6 +169,7 @@
     "jsonobject": "JSON object",
     "key": "key",
     "keyword": "keyword",
+    "layout": "layout",
     "level": "arrangement",
     "lft": "Left encoding",
     "locktime": "Lock time",
@@ -2096,12 +2097,7 @@
       "getname": "Delete transaction"
     },
     "getcientitytopoapi": {
-      "getname": "Obtain Configuration Item Topology",
-      "input": {
-        "param": {
-          "desc": "layout"
-        }
-      }
+      "getname": "Obtain Configuration Item Topology"
     },
     "recovertransactionapi": {
       "getname": "Resume transactions"
@@ -3891,6 +3887,7 @@
       "stateidlist": "Status ID List",
       "sysname": "System abbreviation",
       "targetciid": "Target Model ID",
+      "templateconfig": "Template configuration",
       "transactiongroupid": "Transaction group ID",
       "transactionid": "Transaction ID",
       "typeidlist": "Resource Type ID List",
