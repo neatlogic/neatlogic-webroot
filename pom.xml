@@ -160,5 +160,10 @@
             <groupId>com.neatlogic</groupId>
             <artifactId>neatlogic-document-online</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.neatlogic</groupId>
+            <artifactId>neatlogic-tlcbbank</artifactId>
+            <version>0.3.0.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 </project>
