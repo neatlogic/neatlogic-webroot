@@ -2140,6 +2140,9 @@
   "nmccdat": {
     "exporttemplateapi": {
       "getname": "Export Template"
+    },
+    "validatetemplateapi": {
+      "getname": "Verify template files"
     }
   },
   "nmccde": {

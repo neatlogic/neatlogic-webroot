@@ -2168,6 +2168,9 @@
   "nmccdat": {
     "exporttemplateapi": {
       "getname": "导出模板"
+    },
+    "validatetemplateapi": {
+      "getname": "验证模板文件"
     }
   },
   "nmccde": {
