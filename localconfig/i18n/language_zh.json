@@ -122,6 +122,7 @@
     "focususerlist": "关注人列表",
     "focususeruuidlist": "关注人uuid列表",
     "group": "分组",
+    "groupid": "组id",
     "grouplist": "限制接口返回类型",
     "hasmore": "是否有更多内容尚未读取",
     "hasparent": "是否拥有父级",
@@ -268,6 +269,7 @@
     "statuslist": "状态列表",
     "statusname": "状态名称",
     "statusuniquename": "状态唯一标识",
+    "steplist": "步骤列表",
     "string": "字符串",
     "successload": "执行完毕",
     "superadmin": "超级管理员",
@@ -976,14 +978,57 @@
         "oneperson": "单人",
         "or": "或签",
         "read": "传阅",
+        "start": "发起",
         "vote": "投票"
       }
     },
     "eoaapprovalpolicynotfoundexception": {
       "eoaapprovalpolicynotfoundexception": "EOA审批策略：{0} 不存在"
     },
+    "eoaendexception": {
+      "eoaendexception": "审批已结束"
+    },
+    "eoanotfoundexception": {
+      "eoanotfoundexception": "EOA：{0} 不存在"
+    },
+    "eoanotifytriggertype": {
+      "description": {
+        "eoafailed": "审批失败时触发通知",
+        "eoasucceed": "审批成功时触发通知",
+        "passeoastep": "审批步骤处理人同意时触发通知",
+        "rejecteoastep": "审批步骤处理人驳回时触发通知",
+        "starteoa": "步骤处理人发起审批任务时触发通知"
+      },
+      "text": {
+        "eoafailed": "审批失败",
+        "eoasucceed": "审批成功",
+        "passeoastep": "同意审批步骤",
+        "rejecteoastep": "驳回审批步骤",
+        "starteoa": "发起审批"
+      }
+    },
     "eoaonepersonapprovalpolicyonlyoneuserexception": {
       "eoaonepersonapprovalpolicyonlyoneuserexception": "EOA单人审批策略，只能有一个处理人"
+    },
+    "eoaoperationtype": {
+      "eoasteppass": "同意",
+      "eoasteprunning": "处理中",
+      "eoastepunactivated": "未激活"
+    },
+    "eoarunningexception": {
+      "eoarunningexception": "审批进行中"
+    },
+    "eoastependexception": {
+      "eoastependexception": "EOA步骤：{0} 已结束"
+    },
+    "eoastepnoauthexception": {
+      "eoastepnoauthexception": "没有权限处理EOA步骤：{0}"
+    },
+    "eoastepnotfoundexception": {
+      "eoastepnotfoundexception": "EOA步骤：{0} 不存在"
+    },
+    "eoasteppendingexception": {
+      "eoasteppendingexception": "EOA步骤：{0} 未激活"
     },
     "eoatemplateatleastonestepexception": {
       "eoatemplateatleastonestepexception": "EOA模板至少要有一个步骤"
@@ -2766,6 +2811,17 @@
       "getname": "查询发布版本列表"
     }
   },
+  "nmeae": {
+    "completeeoastepapi": {
+      "getname": "完成EOA步骤"
+    },
+    "geteoaapi": {
+      "getname": "获取EOA信息"
+    },
+    "saveeoaapi": {
+      "getname": "提交EOA"
+    }
+  },
   "nmeas": {
     "eventsolutiongetapi": {
       "getname": "获取单个解决方案"
@@ -4110,6 +4166,7 @@
       "thresholds": "阈值规则列表"
     },
     "itsm": {
+      "actionlist": "操作列表",
       "automatic": "自动处理",
       "caneditfocususer": "是否有权限修改工单关注人",
       "cataloginfo": "服务目录信息",
