@@ -981,7 +981,11 @@
     "eoaonepersonapprovalpolicyonlyoneuserexception": {
       "eoaonepersonapprovalpolicyonlyoneuserexception": "EOA single person approval strategy, can only have one handler"
     },
-    "eoaoperationtype": "Processing",
+    "eoaoperationtype": {
+      "eoasteppass": "agree with",
+      "eoasteprunning": "Processing",
+      "eoastepunactivated": "not active"
+    },
     "eoarunningexception": {
       "eoarunningexception": "Approval in progress"
     },

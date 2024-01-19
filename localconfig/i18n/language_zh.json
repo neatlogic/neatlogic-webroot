@@ -1010,7 +1010,11 @@
     "eoaonepersonapprovalpolicyonlyoneuserexception": {
       "eoaonepersonapprovalpolicyonlyoneuserexception": "EOA单人审批策略，只能有一个处理人"
     },
-    "eoaoperationtype": "处理中",
+    "eoaoperationtype": {
+      "eoasteppass": "同意",
+      "eoasteprunning": "处理中",
+      "eoastepunactivated": "未激活"
+    },
     "eoarunningexception": {
       "eoarunningexception": "审批进行中"
     },
