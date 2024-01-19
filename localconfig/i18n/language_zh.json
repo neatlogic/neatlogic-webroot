@@ -122,6 +122,7 @@
     "focususerlist": "关注人列表",
     "focususeruuidlist": "关注人uuid列表",
     "group": "分组",
+    "groupid": "组id",
     "grouplist": "限制接口返回类型",
     "hasmore": "是否有更多内容尚未读取",
     "hasparent": "是否拥有父级",
@@ -1009,6 +1010,7 @@
     "eoaonepersonapprovalpolicyonlyoneuserexception": {
       "eoaonepersonapprovalpolicyonlyoneuserexception": "EOA单人审批策略，只能有一个处理人"
     },
+    "eoaoperationtype": "处理中",
     "eoarunningexception": {
       "eoarunningexception": "审批进行中"
     },
@@ -4159,6 +4161,7 @@
       "thresholds": "阈值规则列表"
     },
     "itsm": {
+      "actionlist": "操作列表",
       "automatic": "自动处理",
       "caneditfocususer": "是否有权限修改工单关注人",
       "cataloginfo": "服务目录信息",
