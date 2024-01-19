@@ -3868,6 +3868,7 @@
       "modulename": "Module abbreviation",
       "name": "CMDB",
       "needalias": "Do you need an alias",
+      "needchildren": "Do you want to return the sub model",
       "needcirel": "Do we need to return the relationship path",
       "nodelist": "Node List",
       "parentcientityid": "Parent Configuration Item ID",

@@ -3922,6 +3922,7 @@
       "modulename": "模块简称",
       "name": "配置管理模块",
       "needalias": "是否需要别名",
+      "needchildren": "是否返回子模型",
       "needcirel": "是否需要返回关系路径",
       "nodelist": "节点列表",
       "parentcientityid": "父配置项id",
