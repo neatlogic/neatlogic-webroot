@@ -268,6 +268,7 @@
     "statuslist": "Status List",
     "statusname": "Status Name",
     "statusuniquename": "State Unique Identification",
+    "steplist": "Step List",
     "string": "character string",
     "successload": "is loaded",
     "superadmin": "Super administrator",
@@ -947,14 +948,52 @@
         "oneperson": "Single person",
         "or": "Or sign",
         "read": "Circulation",
+        "start": "launch",
         "vote": "vote"
       }
     },
     "eoaapprovalpolicynotfoundexception": {
       "eoaapprovalpolicynotfoundexception": "EOA approval strategy: {0} does not exist"
     },
+    "eoaendexception": {
+      "eoaendexception": "Approval has ended"
+    },
+    "eoanotfoundexception": {
+      "eoanotfoundexception": "EOA: {0} does not exist"
+    },
+    "eoanotifytriggertype": {
+      "description": {
+        "eoafailed": "Trigger notification when approval fails",
+        "eoasucceed": "Trigger notification when approval is successful",
+        "passeoastep": "Trigger notification when the approval step handler agrees",
+        "rejecteoastep": "Trigger notification when approval step handler rejects",
+        "starteoa": "Trigger notification when the step handler initiates an approval task"
+      },
+      "text": {
+        "eoafailed": "Approval failed",
+        "eoasucceed": "Approval successful",
+        "passeoastep": "Agree on approval steps",
+        "rejecteoastep": "Reject Approval Steps",
+        "starteoa": "Initiate approval"
+      }
+    },
     "eoaonepersonapprovalpolicyonlyoneuserexception": {
       "eoaonepersonapprovalpolicyonlyoneuserexception": "EOA single person approval strategy, can only have one handler"
+    },
+    "eoarunningexception": {
+      "eoarunningexception": "Approval in progress"
+    },
+    "eoastependexception": {
+      "eoastependexception": "EOA step: {0} has ended"
+    },
+    "eoastepnoauthexception": {
+      "eoastepnoauthexception": "No permission to process EOA step: {0}"
+    },
+    "eoastepnotfoundexception": {
+      "eoastepnotfoundexception": "EOA step: {0} does not exist"
+    },
+    "eoasteppendingexception": {
+      "eoasteppendingexception": "EOA step: {0} is not activated"
     },
     "eoatemplateatleastonestepexception": {
       "eoatemplateatleastonestepexception": "The EOA template must have at least one step"
@@ -2736,6 +2775,17 @@
     },
     "searchdeployversionapi": {
       "getname": "Query Release Version List"
+    }
+  },
+  "nmeae": {
+    "completeeoastepapi": {
+      "getname": "Complete EOA steps"
+    },
+    "geteoaapi": {
+      "getname": "Obtain EOA information"
+    },
+    "saveeoaapi": {
+      "getname": "Submit EOA"
     }
   },
   "nmeas": {

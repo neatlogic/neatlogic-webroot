@@ -268,6 +268,7 @@
     "statuslist": "状态列表",
     "statusname": "状态名称",
     "statusuniquename": "状态唯一标识",
+    "steplist": "步骤列表",
     "string": "字符串",
     "successload": "执行完毕",
     "superadmin": "超级管理员",
@@ -976,14 +977,52 @@
         "oneperson": "单人",
         "or": "或签",
         "read": "传阅",
+        "start": "发起",
         "vote": "投票"
       }
     },
     "eoaapprovalpolicynotfoundexception": {
       "eoaapprovalpolicynotfoundexception": "EOA审批策略：{0} 不存在"
     },
+    "eoaendexception": {
+      "eoaendexception": "审批已结束"
+    },
+    "eoanotfoundexception": {
+      "eoanotfoundexception": "EOA：{0} 不存在"
+    },
+    "eoanotifytriggertype": {
+      "description": {
+        "eoafailed": "审批失败时触发通知",
+        "eoasucceed": "审批成功时触发通知",
+        "passeoastep": "审批步骤处理人同意时触发通知",
+        "rejecteoastep": "审批步骤处理人驳回时触发通知",
+        "starteoa": "步骤处理人发起审批任务时触发通知"
+      },
+      "text": {
+        "eoafailed": "审批失败",
+        "eoasucceed": "审批成功",
+        "passeoastep": "同意审批步骤",
+        "rejecteoastep": "驳回审批步骤",
+        "starteoa": "发起审批"
+      }
+    },
     "eoaonepersonapprovalpolicyonlyoneuserexception": {
       "eoaonepersonapprovalpolicyonlyoneuserexception": "EOA单人审批策略，只能有一个处理人"
+    },
+    "eoarunningexception": {
+      "eoarunningexception": "审批进行中"
+    },
+    "eoastependexception": {
+      "eoastependexception": "EOA步骤：{0} 已结束"
+    },
+    "eoastepnoauthexception": {
+      "eoastepnoauthexception": "没有权限处理EOA步骤：{0}"
+    },
+    "eoastepnotfoundexception": {
+      "eoastepnotfoundexception": "EOA步骤：{0} 不存在"
+    },
+    "eoasteppendingexception": {
+      "eoasteppendingexception": "EOA步骤：{0} 未激活"
     },
     "eoatemplateatleastonestepexception": {
       "eoatemplateatleastonestepexception": "EOA模板至少要有一个步骤"
@@ -2764,6 +2803,17 @@
     },
     "searchdeployversionapi": {
       "getname": "查询发布版本列表"
+    }
+  },
+  "nmeae": {
+    "completeeoastepapi": {
+      "getname": "完成EOA步骤"
+    },
+    "geteoaapi": {
+      "getname": "获取EOA信息"
+    },
+    "saveeoaapi": {
+      "getname": "提交EOA"
     }
   },
   "nmeas": {
