@@ -1703,6 +1703,9 @@
         }
       }
     },
+    "getcientitydataapi": {
+      "getname": "Get configuration item details (external call)"
+    },
     "getcientitylistapi": {
       "description": {
         "desc": "Obtain detailed information of multiple configuration items based on the ID list interface"

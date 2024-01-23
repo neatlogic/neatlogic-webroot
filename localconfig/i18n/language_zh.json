@@ -1731,6 +1731,9 @@
         }
       }
     },
+    "getcientitydataapi": {
+      "getname": "获取配置项详细信息（外部调用）"
+    },
     "getcientitylistapi": {
       "description": {
         "desc": "根据id列表获取多个配置项详细信息接口"
