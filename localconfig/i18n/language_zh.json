@@ -134,6 +134,7 @@
     "includelist": "用于需要回显参数",
     "index": "下标",
     "inittime": "初始化时间",
+    "inittype": "前端初始化类型，取值范围[user,team,role]",
     "inputfrom": "更新方式",
     "inputfromname": "变更方式名称",
     "int": "整形",
@@ -239,9 +240,11 @@
     "reviewerlist": "审批人列表",
     "rht": "右编码",
     "role": "角色",
+    "roleauthlist": "角色权限列表",
     "roleuuid": "角色uuid",
     "roleuuidlist": "角色uuid列表",
     "rownum": "数据条目",
+    "rule": "规则",
     "savemode": "保存模式",
     "sceneuuid": "场景uuid",
     "schedule": "定时任务",
@@ -283,6 +286,8 @@
     "task": "任务",
     "tbodylist": "展示的值",
     "team": "组",
+    "teamlist": "分组列表",
+    "teamusertitlelist": "分组领导集合",
     "teamuuid": "用户组uuid",
     "teamuuidlist": "用户组uuid列表",
     "tel": "手机号",
@@ -1070,6 +1075,9 @@
     }
   },
   "nfer": {
+    "rolenamerepeatexception": {
+      "rolenamerepeatexception": "角色：“{0}”已存在"
+    },
     "runnerconnectrefusedexception": {
       "runnerconnectrefusedexceptiona": "Runner 链接失败： {0}"
     },
@@ -1097,6 +1105,9 @@
     },
     "paramjsonirregularexception": {
       "paramjsonirregularexception": "参数不是合法的JSON格式"
+    },
+    "teamnamerepeatexception": {
+      "teamnamerepeatexception": "分组：“{0}”已存在"
     },
     "tenantconfignotfoundexception": {
       "tenantconfignotfoundexception": "配置信息：“{0}”不存在"
@@ -3686,14 +3697,29 @@
     "getnotifypolicydefaulttemplateapi": {
       "getname": "获取通知策略触发点默认模板"
     },
+    "importnotifypolicyapi": {
+      "getname": "导入通知策略"
+    },
+    "notifypolicycopyapi": {
+      "getname": "复制通知策略"
+    },
     "notifypolicyhandlerlistapi": {
       "getname": "通知策略分类列表"
+    },
+    "notifypolicysaveapi": {
+      "getname": "保存通知策略信息"
     },
     "notifypolicysearchapi": {
       "getname": "搜索通知策略"
     }
   },
   "nmtar": {
+    "roledeleteapi": {
+      "getname": "删除角色"
+    },
+    "rolesaveapi": {
+      "getname": "保存角色信息"
+    },
     "runnerregisterapi": {
       "description": {
         "desc": "runner 注册接口,直接由ip确定一个runner"
@@ -3779,6 +3805,12 @@
     },
     "savetenantconfigapi": {
       "getname": "保存当前租户配置信息"
+    },
+    "teamdeleteapi": {
+      "getname": "删除分组"
+    },
+    "teamsaveapi": {
+      "getname": "保存组信息"
     }
   },
   "nmtau": {
