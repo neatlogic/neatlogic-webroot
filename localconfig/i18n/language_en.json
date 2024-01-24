@@ -1046,6 +1046,12 @@
     },
     "runnernotfoundbytagentrunneridexception": {
       "runnernotfoundbytagentrunneridexception": "Could not find the corresponding runner for {0}. Please check logs/tagentRegisterAndNetty.log for abnormal heartbeat"
+    },
+    "runnernotmatchexception": {
+      "runnernotmatchexception": {
+        "ipresourceid": "IP: {0}({1}) Unable to find a matching runner, please verify the runner group configuration",
+        "noparam": "Unable to find a matching runner. Please verify the runner group configuration or if there is no runner map configured"
+      }
     }
   },
   "nfes": {
@@ -3663,8 +3669,31 @@
     "jobclassgetapi": {
       "getname": "Obtain timed job component information"
     },
+    "jobclasssearchapi": {
+      "getname": "Query the list of scheduled homework components",
+      "output": {
+        "param": {
+          "desc": "Assignment components"
+        }
+      }
+    },
     "jobgetapi": {
       "getname": "Obtain public scheduled job information"
+    },
+    "jobsearchapi": {
+      "getname": "Query scheduled homework list",
+      "input": {
+        "param": {
+          "desc": {
+            "handler": "Timed homework component className"
+          }
+        }
+      },
+      "output": {
+        "param": {
+          "desc": "Timed homework"
+        }
+      }
     },
     "saveserverapi": {
       "getname": "Save server information"

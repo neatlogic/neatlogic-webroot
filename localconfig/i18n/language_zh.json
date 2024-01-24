@@ -1075,6 +1075,12 @@
     },
     "runnernotfoundbytagentrunneridexception": {
       "runnernotfoundbytagentrunneridexception": "未找到{0}对应的runner,请查看logs/tagentRegisterAndNetty.log,心跳异常"
+    },
+    "runnernotmatchexception": {
+      "runnernotmatchexception": {
+        "ipresourceid": "ip: {0}({1})找不到匹配的runner，请核对runner组配置",
+        "noparam": "找不到匹配的runner，请核对runner组配置 或者 没有配置runner map"
+      }
     }
   },
   "nfes": {
@@ -3717,8 +3723,31 @@
     "jobclassgetapi": {
       "getname": "获取定时作业组件信息"
     },
+    "jobclasssearchapi": {
+      "getname": "查询定时作业组件列表",
+      "output": {
+        "param": {
+          "desc": "作业组件"
+        }
+      }
+    },
     "jobgetapi": {
       "getname": "获取公共定时作业信息"
+    },
+    "jobsearchapi": {
+      "getname": "查询定时作业列表",
+      "input": {
+        "param": {
+          "desc": {
+            "handler": "定时作业组件className"
+          }
+        }
+      },
+      "output": {
+        "param": {
+          "desc": "定时作业"
+        }
+      }
     },
     "saveserverapi": {
       "getname": "保存服务器信息"
