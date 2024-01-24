@@ -134,6 +134,7 @@
     "includelist": "Used to require echo parameters",
     "index": "subscript",
     "inittime": "Initialization time",
+    "inittype": "Front end initialization type, value range [user, team, role]",
     "inputfrom": "Update method",
     "inputfromname": "Change method name",
     "int": "int",
@@ -239,9 +240,11 @@
     "reviewerlist": "List of approvers",
     "rht": "Right encoding",
     "role": "role",
+    "roleauthlist": "Role permission list",
     "roleuuid": "Role uuid",
     "roleuuidlist": "Role uuid List",
     "rownum": "Data Entry",
+    "rule": "rule",
     "savemode": "Save Mode",
     "sceneuuid": "Scenario uuid",
     "schedule": "Scheduled Tasks",
@@ -283,6 +286,8 @@
     "task": "task",
     "tbodylist": "tbody list",
     "team": "group",
+    "teamlist": "Group List",
+    "teamusertitlelist": "Group Leader Collection",
     "teamuuid": "User group uuid",
     "teamuuidlist": "User group uuid list",
     "tel": "Mobile phone number",
@@ -1041,6 +1046,9 @@
     }
   },
   "nfer": {
+    "rolenamerepeatexception": {
+      "rolenamerepeatexception": "Role: \u0027{0}\u0027 already exists"
+    },
     "runnerconnectrefusedexception": {
       "runnerconnectrefusedexceptiona": "Runner link failed: {0}"
     },
@@ -1068,6 +1076,9 @@
     },
     "paramjsonirregularexception": {
       "paramjsonirregularexception": "The parameter is not in a valid JSON format"
+    },
+    "teamnamerepeatexception": {
+      "teamnamerepeatexception": "Grouping: \"{0}\" already exists"
     },
     "tenantconfignotfoundexception": {
       "tenantconfignotfoundexception": "Configuration information: {0} does not exist"
@@ -3632,14 +3643,29 @@
     "getnotifypolicydefaulttemplateapi": {
       "getname": "Obtain default template for notification policy trigger points"
     },
+    "importnotifypolicyapi": {
+      "getname": "Import notification policy"
+    },
+    "notifypolicycopyapi": {
+      "getname": "Copy notification policy"
+    },
     "notifypolicyhandlerlistapi": {
       "getname": "Notification Policy Classification List"
+    },
+    "notifypolicysaveapi": {
+      "getname": "Save notification policy information"
     },
     "notifypolicysearchapi": {
       "getname": "Search notification policy"
     }
   },
   "nmtar": {
+    "roledeleteapi": {
+      "getname": "Delete Role"
+    },
+    "rolesaveapi": {
+      "getname": "Save role information"
+    },
     "runnerregisterapi": {
       "description": {
         "desc": "Runner registration interface, directly determining a runner by IP"
@@ -3725,6 +3751,12 @@
     },
     "savetenantconfigapi": {
       "getname": "Save current tenant configuration information"
+    },
+    "teamdeleteapi": {
+      "getname": "Delete Group"
+    },
+    "teamsaveapi": {
+      "getname": "Save group information"
     }
   },
   "nmtau": {
