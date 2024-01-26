@@ -2975,6 +2975,15 @@
     }
   },
   "nmmat": {
+    "tenantsaveapi": {
+      "input": {
+        "param": {
+          "desc": {
+            "isedit": "\"Whether to edit\""
+          }
+        }
+      }
+    },
     "userroleteamsearchapi": {
       "getname": "User Role and Organizational Structure Query Interface"
     }

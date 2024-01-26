@@ -3025,7 +3025,14 @@
       }
     },
     "tenantsaveapi": {
-      "getname": "租户保存接口"
+      "getname": "租户保存接口",
+      "input": {
+        "param": {
+          "desc": {
+            "isedit": "\"是否编辑\""
+          }
+        }
+      }
     },
     "userroleteamsearchapi": {
       "getname": "用户角色及组织架构查询接口"
