@@ -4032,12 +4032,15 @@
       "iscommit": "是否提交",
       "ishasenv": "是否包含环境",
       "isprivateci": "是否私有模型",
+      "ispushmq": "是否推送MQ",
+      "issearchable": "是否允许搜索",
       "isshowinmenu": "是否在菜单显示",
       "issimpleattribute": "是否简单属性",
       "isvirtualci": "是否虚拟模型",
       "joinlist": "连接列表",
       "maintain": "维护",
       "maintenancewindow": "维护窗口",
+      "mergealias": "是否合并别名",
       "moduleid": "模块ID",
       "modulename": "模块简称",
       "name": "配置管理模块",
@@ -4205,6 +4208,7 @@
       "notifypolicydefaulttemplateinfo": "通知默认模板信息",
       "pinyin": "拼音",
       "policyid": "通知策略id",
+      "savetopic": "保存消息队列主题",
       "serverid": "服务器ID",
       "serveripport": "服务器地址",
       "smpthost": "smtp主机",
@@ -4214,6 +4218,7 @@
         "fullpath": "分组全路径",
         "parentpathlist": "父级路径列表"
       },
+      "togglemqtopicisactive": "更新消息队列主题激活状态",
       "user": {
         "viplevel": "VIP级别"
       },

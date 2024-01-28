@@ -3978,12 +3978,15 @@
       "iscommit": "Submit or not",
       "ishasenv": "Does it include the environment",
       "isprivateci": "Private model or not",
+      "ispushmq": "Whether to push MQ",
+      "issearchable": "Allow search",
       "isshowinmenu": "Is it displayed in the menu",
       "issimpleattribute": "Is it a simple attribute",
       "isvirtualci": "Is it a virtual model",
       "joinlist": "Connection List",
       "maintain": "maintenance",
       "maintenancewindow": "Maintenance Window",
+      "mergealias": "Whether to merge aliases",
       "moduleid": "Module ID",
       "modulename": "Module abbreviation",
       "name": "CMDB",
@@ -4151,6 +4154,7 @@
       "notifypolicydefaulttemplateinfo": "Notification default template information",
       "pinyin": "Pinyin",
       "policyid": "Notification Policy ID",
+      "savetopic": "Save Message Queue Theme",
       "serverid": "Server ID",
       "serveripport": "server address",
       "smpthost": "SMTP host",
@@ -4160,6 +4164,7 @@
         "fullpath": "Grouping full path",
         "parentpathlist": "Parent Path List"
       },
+      "togglemqtopicisactive": "Update message queue topic activation status",
       "user": {
         "viplevel": "VIP level"
       },
