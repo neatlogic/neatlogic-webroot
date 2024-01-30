@@ -521,6 +521,12 @@
       "isresourcecenterauth": "Is the asset list controlled by model permissions and group permissions"
     }
   },
+  "nfcea": {
+    "attrvalueirregularexception": {
+      "attrvalueirregularexception_a": "The value \u0027{4}\u0027 of property \u0027{2} ({3})\u0027 in model \u0027{0} ({1})\u0027 is not a valid {5} type",
+      "attrvalueirregularexception_b": "The value \"{4}\" of property \"{2} ({3})\" in model \"{0} ({1})\" is not a valid {5} type. Configuration path: {6}, actual path: {7}"
+    }
+  },
   "nfcec": {
     "cicatalogisinusedexception": {
       "cicatalogisinusedexception": "The current directory node: {0} has been referenced. Please remove the reference before deleting it"
@@ -538,9 +544,14 @@
       "cilabelaction": "You do not have permission to configure the item for {0} \u0027{1}\u0027"
     },
     "ciisabstractedexception": {
+      "ciisabstractedexception_a": "Configuration item model: \"{0} ({1})\" is an abstract model and cannot directly add data. Configuration path: {2}, actual path: {3}",
       "data": "The configuration item model \u0027{0}\u0027 is an abstract model and direct addition of data is not allowed",
       "updateabstract": "Configuration item model \u0027{0}\u0027 has already been inherited or data already exists, cannot change whether it is an abstract model",
       "updateparent": "The configuration item model \u0027{0}\u0027 already has data and cannot change the parent model"
+    },
+    "cinotfoundexception": {
+      "cinotfoundexception_a": "The configuration item model \u0027{0}\u0027 does not exist",
+      "cinotfoundexception_b": "Configuration item model \u0027{0}\u0027 does not exist, configuration path: {1}, actual path: {2}"
     },
     "citopotemplatenotfoundexception": {
       "citopotemplatenotfoundexception": "Topology template \u0027{0}\u0027 does not exist"
@@ -553,14 +564,17 @@
       "ciuniqueattrnotfoundexception_b": "The unique rule property \u0027{2} ({3})\u0027 of model \u0027{0} ({1})\u0027 does not have a matching field configured. Please configure it first",
       "ciuniqueattrnotfoundexception_c": "The value of the unique rule attribute \u0027{2} ({3})\u0027 of model \u0027{0} ({1})\u0027 is empty",
       "ciuniqueattrnotfoundexception_d": "Failed to obtain transaction hash for configuration item of model \u0027{0}\u0027, unique attribute \u0027{1}\u0027 has no value",
-      "ciuniqueattrnotfoundexception_e": "Configuration“ {0}- \u003e{1} The value of the unique key mapping attribute \u0027{3}\u0027 for ({2}) does not exist, original data: {4}"
+      "ciuniqueattrnotfoundexception_e": "Configuration“ {0}- \u003e{1} The value of the unique key mapping attribute \u0027{3}\u0027 for ({2}) does not exist, original data: {4}",
+      "ciuniqueattrnotfoundexception_f": "The value of the unique rule attribute \u0027{2} ({3})\u0027 of model \u0027{0} ({1})\u0027 is empty, configured path: {4}, actual path: {5}"
     },
     "ciuniqueruleattrtypeirregularexception": {
       "ciuniqueruleattrtypeirregularexception_a": "The unique rule property \u0027{2} ({3})\u0027 of model \u0027{0} ({1})\u0027 cannot be an expression property or a reference property",
-      "ciuniqueruleattrtypeirregularexception_b": "The unique rule attribute \u0027{2} ({3})\u0027 of model \u0027{0} ({1})\u0027 cannot be an expression attribute"
+      "ciuniqueruleattrtypeirregularexception_b": "The unique rule attribute \u0027{2} ({3})\u0027 of model \u0027{0} ({1})\u0027 cannot be an expression attribute",
+      "ciuniqueruleattrtypeirregularexception_c": "The unique rule property \u0027{2} ({3})\u0027 of model \u0027{0} ({1})\u0027 cannot be an expression property, configured path: {4}, actual path: {5}"
     },
     "downwardcinotfoundexception": {
-      "downwardcinotfoundexception": "Unable to find configuration item model \u0027{2}\u0027 in the downstream model of configuration item model \u0027{0} ({1})\u0027"
+      "downwardcinotfoundexception": "Unable to find configuration item model \u0027{2}\u0027 in the downstream model of configuration item model \u0027{0} ({1})\u0027",
+      "downwardcinotfoundexception_b": "Configuration item model \u0027{2}\u0027 cannot be found in the downstream model of configuration item model \u0027{0} ({1})\u0027, configuration path: {3}, actual path: {4}"
     }
   },
   "nfceg": {
@@ -2228,6 +2242,17 @@
       "widgetnameisexistsexception": "Element \u0027{0}\u0027 already exists"
     }
   },
+  "nmccpe": {
+    "dataconversionconfigillegalexception": {
+      "dataconversionconfigillegalexception": "The mapping information of the data conversion node model is invalid: {0}"
+    },
+    "dataconversionleftjoinsametablemultipletimesexception": {
+      "dataconversionleftjoinsametablemultipletimesexception": "Configuration path: {0}, actual path: {1}, table component: {2} is repeatedly associated"
+    },
+    "dataconversionleftjointablehasmultiplerowsofdataexception": {
+      "dataconversionleftjointablehasmultiplerowsofdataexception": "Configuration path: {0}, actual path: {1}, associated table component: {2} obtained multiple rows of data, resulting in data of {3}"
+    }
+  },
   "nmcdac": {
     "deletecatalogapi": {
       "getname": "Delete directory"
@@ -2414,10 +2439,14 @@
   },
   "nmcpe": {
     "abstractcitargetciidattrnotfoundexception": {
-      "abstractcitargetciidattrnotfoundexception": "The value of the \"targetCiId (write model)\" field in the abstract model \"{0} ({1})\" is empty"
+      "abstractcitargetciidattrnotfoundexception": "The value of the \"targetCiId (write model)\" field in the abstract model \"{0} ({1})\" is empty",
+      "abstractcitargetciidattrnotfoundexception_b": "The value of the \"targetCiId (write model)\" field in the abstract model \"{0} ({1})\" is empty, configuration path: {2}, actual path: {3}"
     },
     "cientityconfigillegalexception": {
       "cientityconfigillegalexception": "The CMDB node model mapping information is illegal: {0}"
+    },
+    "dataconversionappendpathexception": {
+      "dataconversionappendpathexception": "Configuration path: {0}, actual path: {1}, exception message: {2}"
     }
   },
   "nmcps": {
