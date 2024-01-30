@@ -528,6 +528,10 @@
     }
   },
   "nfcec": {
+    "attrentityvalueemptyexception": {
+      "attrentityvalueemptyexception_a": "The value of attribute \u0027{0}\u0027 cannot be empty",
+      "attrentityvalueemptyexception_b": "The value of property \u0027{2} ({3})\u0027 in model \u0027{0} ({1})\u0027 cannot be empty"
+    },
     "cicatalogisinusedexception": {
       "cicatalogisinusedexception": "The current directory node: {0} has been referenced. Please remove the reference before deleting it"
     },

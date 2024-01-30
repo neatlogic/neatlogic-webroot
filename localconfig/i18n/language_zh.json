@@ -528,6 +528,10 @@
     }
   },
   "nfcec": {
+    "attrentityvalueemptyexception": {
+      "attrentityvalueemptyexception_a": "属性“{0}”值不能为空",
+      "attrentityvalueemptyexception_b": "模型“{0}({1})”的属性“{2}({3})”值不能为空"
+    },
     "cicatalogisinusedexception": {
       "cicatalogisinusedexception": "当前目录节点：{0} 已被引用，请解除引用后再删除"
     },
