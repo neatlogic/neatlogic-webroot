@@ -2175,6 +2175,44 @@
       "getname": "Save the root model of asset types"
     }
   },
+  "nmcas": {
+    "checkcihassynccollectionapi": {
+      "getname": "Check if the configuration item model has a configuration set mapping"
+    },
+    "deletesyncauditapi": {
+      "getname": "Delete automatic collection execution logs"
+    },
+    "deletesynccicollectionapi": {
+      "getname": "Delete configuration item set mapping information"
+    },
+    "deletesyncpolicyapi": {
+      "getname": "Delete automatic collection policy"
+    },
+    "deleteunknowncollectiondataapi": {
+      "getname": "Delete unknown device data"
+    },
+    "getconditionfieldapi": {
+      "getname": "Get collection search criteria"
+    },
+    "getsynccicollectionapi": {
+      "getname": "Get configuration item collection mapping information"
+    },
+    "getsyncpolicyapi": {
+      "getname": "Obtain automatic collection strategy information"
+    },
+    "launchsynccollectionapi": {
+      "getname": "Execute automatic collection"
+    },
+    "searchcollectiondataapi": {
+      "getname": "Search for automatic collection of collection data"
+    },
+    "searchsynccicollectionapi": {
+      "getname": "Search model set mapping"
+    },
+    "searchsyncpolicyapi": {
+      "getname": "Search for automatic collection strategy"
+    }
+  },
   "nmcat": {
     "deletetransactionapi": {
       "getname": "Delete transaction"
@@ -3990,6 +4028,7 @@
       "attridlist": "Model Attribute ID List",
       "attrtype": "Attribute Type",
       "autoexec": "Automated operations",
+      "branchtag": "Batch labels",
       "cientitydata": "Configuration Item Data",
       "cientityid": "Configuration Item ID",
       "cientityname": "Configuration Item Name",
@@ -4000,6 +4039,10 @@
       "cilist": "Model List",
       "ciname": "Model Name",
       "ciuniquename": "Model Unique Identification",
+      "collectionlist": "Collection List",
+      "collectionname": "Collection Name",
+      "collectiontype": "Collection type",
+      "collectmode": "Collection method",
       "customview": {
         "authhelp": "Only effective for public views",
         "ciid": "Model ID needs to be provided when saving the scene view"
@@ -4023,6 +4066,7 @@
       "ispushmq": "Whether to push MQ",
       "issearchable": "Allow search",
       "isshowinmenu": "Is it displayed in the menu",
+      "isshowpsycollectioni": "Is physical set data displayed",
       "issimpleattribute": "Is it a simple attribute",
       "isvirtualci": "Is it a virtual model",
       "joinlist": "Connection List",
@@ -4054,6 +4098,10 @@
       "sourcerelid": "Source Relationship ID",
       "startciid": "Starting Model ID",
       "stateidlist": "Status ID List",
+      "syncid": "Collection ID",
+      "syncidlist": "Collect ID list",
+      "syncisall": "Whether to execute all active collection",
+      "syncmappingid": "Set mapping ID",
       "sysname": "System abbreviation",
       "targetciid": "Target Model ID",
       "templateconfig": "Template configuration",

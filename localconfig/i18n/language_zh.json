@@ -2203,6 +2203,44 @@
       "getname": "保存资产类型的根模型"
     }
   },
+  "nmcas": {
+    "checkcihassynccollectionapi": {
+      "getname": "检查配置项模型是否有配置集合映射"
+    },
+    "deletesyncauditapi": {
+      "getname": "删除自动采集执行日志"
+    },
+    "deletesynccicollectionapi": {
+      "getname": "删除配置项集合映射信息"
+    },
+    "deletesyncpolicyapi": {
+      "getname": "删除自动采集策略"
+    },
+    "deleteunknowncollectiondataapi": {
+      "getname": "删除未知设备数据"
+    },
+    "getconditionfieldapi": {
+      "getname": "获取集合搜索条件"
+    },
+    "getsynccicollectionapi": {
+      "getname": "获取配置项集合映射信息"
+    },
+    "getsyncpolicyapi": {
+      "getname": "获取自动采集策略信息"
+    },
+    "launchsynccollectionapi": {
+      "getname": "执行自动采集"
+    },
+    "searchcollectiondataapi": {
+      "getname": "搜索自动采集集合数据"
+    },
+    "searchsynccicollectionapi": {
+      "getname": "搜索模型集合映射"
+    },
+    "searchsyncpolicyapi": {
+      "getname": "搜索自动采集策略"
+    }
+  },
   "nmcat": {
     "deletetransactionapi": {
       "getname": "删除事务"
@@ -4042,6 +4080,7 @@
       "attridlist": "模型属性ID列表",
       "attrtype": "属性类型",
       "autoexec": "自动化操作",
+      "branchtag": "批量标签",
       "cientitydata": "配置项数据",
       "cientityid": "配置项id",
       "cientityname": "配置项名称",
@@ -4052,6 +4091,10 @@
       "cilist": "模型列表",
       "ciname": "模型名称",
       "ciuniquename": "模型唯一标识",
+      "collectionlist": "集合列表",
+      "collectionname": "集合名称",
+      "collectiontype": "集合类型",
+      "collectmode": "采集方式",
       "customview": {
         "authhelp": "仅对公共视图生效",
         "ciid": "模型id，保存场景视图时需要提供"
@@ -4075,6 +4118,7 @@
       "ispushmq": "是否推送MQ",
       "issearchable": "是否允许搜索",
       "isshowinmenu": "是否在菜单显示",
+      "isshowpsycollectioni": "是否显示物理集合数据",
       "issimpleattribute": "是否简单属性",
       "isvirtualci": "是否虚拟模型",
       "joinlist": "连接列表",
@@ -4106,6 +4150,10 @@
       "sourcerelid": "来源关系id",
       "startciid": "起始模型id",
       "stateidlist": "状态id列表",
+      "syncid": "采集id",
+      "syncidlist": "采集id列表",
+      "syncisall": "是否执行所有主动采集",
+      "syncmappingid": "集合映射id",
       "sysname": "系统简称",
       "targetciid": "目标模型id",
       "templateconfig": "模板配置",
