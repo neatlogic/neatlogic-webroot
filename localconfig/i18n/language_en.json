@@ -4028,7 +4028,7 @@
       "attridlist": "Model Attribute ID List",
       "attrtype": "Attribute Type",
       "autoexec": "Automated operations",
-      "branchtag": "Batch labels",
+      "batchtag": "Batch labels",
       "cientitydata": "Configuration Item Data",
       "cientityid": "Configuration Item ID",
       "cientityname": "Configuration Item Name",

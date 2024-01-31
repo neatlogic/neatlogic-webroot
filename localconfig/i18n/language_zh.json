@@ -4080,7 +4080,7 @@
       "attridlist": "模型属性ID列表",
       "attrtype": "属性类型",
       "autoexec": "自动化操作",
-      "branchtag": "批量标签",
+      "batchtag": "批量标签",
       "cientitydata": "配置项数据",
       "cientityid": "配置项id",
       "cientityname": "配置项名称",
