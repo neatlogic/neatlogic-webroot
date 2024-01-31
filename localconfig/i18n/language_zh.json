@@ -521,7 +521,17 @@
       "isresourcecenterauth": "资产清单是否受模型权限和团体权限控制"
     }
   },
+  "nfcea": {
+    "attrvalueirregularexception": {
+      "attrvalueirregularexception_a": "模型“{0}({1})”属性“{2}({3})”的值“{4}”不是合法的{5}类型",
+      "attrvalueirregularexception_b": "模型“{0}({1})”属性“{2}({3})”的值“{4}”不是合法的{5}类型，配置路径：{6}，实际路径：{7}"
+    }
+  },
   "nfcec": {
+    "attrentityvalueemptyexception": {
+      "attrentityvalueemptyexception_a": "属性“{0}”值不能为空",
+      "attrentityvalueemptyexception_b": "模型“{0}({1})”的属性“{2}({3})”值不能为空"
+    },
     "cicatalogisinusedexception": {
       "cicatalogisinusedexception": "当前目录节点：{0} 已被引用，请解除引用后再删除"
     },
@@ -538,9 +548,14 @@
       "cilabelaction": "您没有权限{0}“{1}”的配置项"
     },
     "ciisabstractedexception": {
+      "ciisabstractedexception_a": "配置项模型：“{0}({1})”是抽象模型，不能直接添加数据，配置路径：{2}，实际路径：{3}",
       "data": "配置项模型“{0}”是抽象模型，不允许直接添加数据",
       "updateabstract": "配置项模型“{0}”已被继承或已存在数据，不能变更是否抽象模型",
       "updateparent": "配置项模型“{0}”已存在数据，不能变更父模型"
+    },
+    "cinotfoundexception": {
+      "cinotfoundexception_a": "配置项模型“{0}”不存在",
+      "cinotfoundexception_b": "配置项模型“{0}”不存在，配置路径：{1}，实际路径：{2}"
     },
     "citopotemplatenotfoundexception": {
       "citopotemplatenotfoundexception": "拓扑模板“{0}”不存在"
@@ -553,14 +568,17 @@
       "ciuniqueattrnotfoundexception_b": "模型“{0}({1})”的唯一规则属性“{2}({3})”没有配置匹配字段，请先配置",
       "ciuniqueattrnotfoundexception_c": "模型“{0}({1})”的唯一规则属性“{2}({3})”的值为空",
       "ciuniqueattrnotfoundexception_d": "获取模型“{0}”的配置项事务hash失败，唯一属性“{1}”没有值",
-      "ciuniqueattrnotfoundexception_e": "配置“{0}-\u003e{1}({2})”的唯一键映射属性“{3}”的值不存在，原始数据：{4}"
+      "ciuniqueattrnotfoundexception_e": "配置“{0}-\u003e{1}({2})”的唯一键映射属性“{3}”的值不存在，原始数据：{4}",
+      "ciuniqueattrnotfoundexception_f": "模型“{0}({1})”的唯一规则属性“{2}({3})”的值为空，配置路径：{4}，实际路径：{5}"
     },
     "ciuniqueruleattrtypeirregularexception": {
       "ciuniqueruleattrtypeirregularexception_a": "模型“{0}({1})”的唯一规则属性“{2}({3})”不能是一个表达式属性或引用型属性",
-      "ciuniqueruleattrtypeirregularexception_b": "模型“{0}({1})”的唯一规则属性“{2}({3})”不能是一个表达式属性"
+      "ciuniqueruleattrtypeirregularexception_b": "模型“{0}({1})”的唯一规则属性“{2}({3})”不能是一个表达式属性",
+      "ciuniqueruleattrtypeirregularexception_c": "模型“{0}({1})”的唯一规则属性“{2}({3})”不能是一个表达式属性，配置路径：{4}，实际路径：{5}"
     },
     "downwardcinotfoundexception": {
-      "downwardcinotfoundexception": "在配置项模型“{0}({1})”的下游模型中找不到配置项模型“{2}”"
+      "downwardcinotfoundexception": "在配置项模型“{0}({1})”的下游模型中找不到配置项模型“{2}”",
+      "downwardcinotfoundexception_b": "在配置项模型“{0}({1})”的下游模型中找不到配置项模型“{2}”，配置路径：{3}，实际路径：{4}"
     }
   },
   "nfceg": {
@@ -2256,6 +2274,17 @@
       "widgetnameisexistsexception": "图元“{0}”已存在"
     }
   },
+  "nmccpe": {
+    "dataconversionconfigillegalexception": {
+      "dataconversionconfigillegalexception": "数据转换节点模型映射信息不合法：{0}"
+    },
+    "dataconversionleftjoinsametablemultipletimesexception": {
+      "dataconversionleftjoinsametablemultipletimesexception": "配置路径：{0}，实际路径：{1}，表格组件：{2} 被重复关联"
+    },
+    "dataconversionleftjointablehasmultiplerowsofdataexception": {
+      "dataconversionleftjointablehasmultiplerowsofdataexception": "配置路径：{0}，实际路径：{1}，关联表格组件：{2} 得到多行数据，结果数据为：{3}"
+    }
+  },
   "nmcdac": {
     "deletecatalogapi": {
       "getname": "删除目录"
@@ -2442,10 +2471,14 @@
   },
   "nmcpe": {
     "abstractcitargetciidattrnotfoundexception": {
-      "abstractcitargetciidattrnotfoundexception": "抽象模型“{0}({1})”的“targetCiId(写入模型)”字段的值为空"
+      "abstractcitargetciidattrnotfoundexception": "抽象模型“{0}({1})”的“targetCiId(写入模型)”字段的值为空",
+      "abstractcitargetciidattrnotfoundexception_b": "抽象模型“{0}({1})”的“targetCiId(写入模型)”字段的值为空，配置路径：{2}，实际路径：{3}"
     },
     "cientityconfigillegalexception": {
       "cientityconfigillegalexception": "CMDB节点模型映射信息不合法：{0}"
+    },
+    "dataconversionappendpathexception": {
+      "dataconversionappendpathexception": "配置路径：{0}，实际路径：{1}，异常信息：{2}"
     }
   },
   "nmcps": {
