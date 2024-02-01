@@ -376,6 +376,11 @@
     "autoexecjobnotsupportmultiparentexception": {
       "autoexecjobnotsupportmultiparentexception": "Parent job {0} already exists, and currently does not support multi-level parent jobs"
     },
+    "autoexecjobphasenodenotfoundexception": {
+      "autoexecjobphasenodenotfoundexceptiona": "Assignment stage \u0027{0}\u0027: Missing executable node. Please confirm: 1. Whether the selected execution target meets the range of the combination tool filter; 2. Whether it is on the asset list; retry ",
+      "autoexecjobphasenodenotfoundexceptionb": "Assignment stage: Node {1} does not exist for node {0}",
+      "autoexecjobphasenodenotfoundexceptionc": "Homework script: Node {0} and Asset ID {1} do not exist"
+    },
     "autoexecparamcannotbeemptyexception": {
       "autoexecparamcannotbeemptyexception": "Parameter of stage [{0}] tool [{1}]: {2} cannot be empty"
     },
@@ -608,7 +613,8 @@
     "resourcenotfoundexception": {
       "resourcenotfoundexception": {
         "id": "Resource {0} does not exist",
-        "ip": "Find out if the resource does not exist through ip: {0}, port: {1}, nodeName: {2}, nodeType: {3}"
+        "ip": "Find out if the resource does not exist through ip: {0}, port: {1}, nodeName: {2}, nodeType: {3}",
+        "ipname": "Search for non-existent resources through ip: {0}, port: {1}, nodeName: {2}"
       }
     },
     "resourceviewfieldmappingexception": {
@@ -3525,6 +3531,17 @@
         "param": {
           "desc": {
             "funcid": "Function of the interface"
+          }
+        }
+      }
+    },
+    "authmanagesearchapi": {
+      "getname": "Permission Management List Query Interface",
+      "input": {
+        "param": {
+          "desc": {
+            "defaultvalue": "Default value",
+            "groupname": "Permission group name"
           }
         }
       }

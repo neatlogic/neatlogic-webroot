@@ -376,6 +376,11 @@
     "autoexecjobnotsupportmultiparentexception": {
       "autoexecjobnotsupportmultiparentexception": "父作业{0}已经存在父作业,暂时不支持多层父作业"
     },
+    "autoexecjobphasenodenotfoundexception": {
+      "autoexecjobphasenodenotfoundexceptiona": "作业阶段“{0}”：缺少可执行节点.请确认：1.如果组合工具如果设置过滤器，则所选择的执行目标需满足过滤器范围；2.是否在资产清单；重试",
+      "autoexecjobphasenodenotfoundexceptionb": "作业阶段：“{0}” 节点“{1}”不存在",
+      "autoexecjobphasenodenotfoundexceptionc": "作业剧本：“{0}” 节点“{1}” 资产id不存在"
+    },
     "autoexecparamcannotbeemptyexception": {
       "autoexecparamcannotbeemptyexception": "阶段[{0}] 工具[{1}]的参数：{2}不能为空"
     },
@@ -608,7 +613,8 @@
     "resourcenotfoundexception": {
       "resourcenotfoundexception": {
         "id": "资源{0}不存在",
-        "ip": "通过ip:{0}、port:{1}、nodeName:{2}、nodeType:{3}查找资源不存在"
+        "ip": "通过ip:{0}、port:{1}、nodeName:{2}、nodeType:{3}查找资源不存在",
+        "ipname": "通过ip:{0}、port:{1}、nodeName:{2}查找资源不存在"
       }
     },
     "resourceviewfieldmappingexception": {
@@ -3575,6 +3581,17 @@
         "param": {
           "desc": {
             "funcid": "接口所属功能"
+          }
+        }
+      }
+    },
+    "authmanagesearchapi": {
+      "getname": "权限管理列表查询接口",
+      "input": {
+        "param": {
+          "desc": {
+            "defaultvalue": "默认值",
+            "groupname": "权限组名"
           }
         }
       }
