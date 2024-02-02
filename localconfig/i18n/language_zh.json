@@ -624,6 +624,14 @@
       "resourceviewfieldmappingexception_d": "资源视图{0}中字段{1}的映射{2}值为{3}，设置不正确"
     }
   },
+  "nfces": {
+    "objectciisexistsexception": {
+      "objectciisexistsexception": "模型{0}的对象配置已存在"
+    },
+    "objectisexistsexception": {
+      "objectisexistsexception": "对象{0}-{1}已存在"
+    }
+  },
   "nfcev": {
     "validatornotfoundexception": {
       "validatornotfoundexception": "验证规则“{0}”不存在"
@@ -2213,6 +2221,9 @@
     "checkcihassynccollectionapi": {
       "getname": "检查配置项模型是否有配置集合映射"
     },
+    "deleteobjectapi": {
+      "getname": "删除自动采集对象"
+    },
     "deletesyncauditapi": {
       "getname": "删除自动采集执行日志"
     },
@@ -2228,6 +2239,9 @@
     "getconditionfieldapi": {
       "getname": "获取集合搜索条件"
     },
+    "getobjectapi": {
+      "getname": "获取采集对象信息"
+    },
     "getsynccicollectionapi": {
       "getname": "获取配置项集合映射信息"
     },
@@ -2237,8 +2251,14 @@
     "launchsynccollectionapi": {
       "getname": "执行自动采集"
     },
+    "saveobjectapi": {
+      "getname": "保存自动采集对象"
+    },
     "searchcollectiondataapi": {
       "getname": "搜索自动采集集合数据"
+    },
+    "searchobjectapi": {
+      "getname": "搜索自动采集对象"
     },
     "searchsynccicollectionapi": {
       "getname": "搜索模型集合映射"

@@ -624,6 +624,14 @@
       "resourceviewfieldmappingexception_d": "The mapping {2} value of field {1} in resource view {0} is {3}, which is not set correctly"
     }
   },
+  "nfces": {
+    "objectciisexistsexception": {
+      "objectciisexistsexception": "The object configuration for model {0} already exists"
+    },
+    "objectisexistsexception": {
+      "objectisexistsexception": "object {0}- {1} Existing"
+    }
+  },
   "nfcev": {
     "validatornotfoundexception": {
       "validatornotfoundexception": "Validation rule  {0}  does not exist"
@@ -2185,6 +2193,9 @@
     "checkcihassynccollectionapi": {
       "getname": "Check if the configuration item model has a configuration set mapping"
     },
+    "deleteobjectapi": {
+      "getname": "Delete automatic collection object"
+    },
     "deletesyncauditapi": {
       "getname": "Delete automatic collection execution logs"
     },
@@ -2200,6 +2211,9 @@
     "getconditionfieldapi": {
       "getname": "Get collection search criteria"
     },
+    "getobjectapi": {
+      "getname": "Obtain collection object information"
+    },
     "getsynccicollectionapi": {
       "getname": "Get configuration item collection mapping information"
     },
@@ -2209,8 +2223,14 @@
     "launchsynccollectionapi": {
       "getname": "Execute automatic collection"
     },
+    "saveobjectapi": {
+      "getname": "Save automatic collection objects"
+    },
     "searchcollectiondataapi": {
       "getname": "Search for automatic collection of collection data"
+    },
+    "searchobjectapi": {
+      "getname": "Search for automatic collection objects"
     },
     "searchsynccicollectionapi": {
       "getname": "Search model set mapping"
