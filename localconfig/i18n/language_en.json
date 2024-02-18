@@ -4118,6 +4118,8 @@
       "needchildren": "Do you want to return the sub model",
       "needcirel": "Do we need to return the relationship path",
       "nodelist": "Node List",
+      "objcategory": "Object categories",
+      "objtype": "object type",
       "parentcientityid": "Parent Configuration Item ID",
       "parentciicon": "Parent model icon",
       "parentciid": "Parent model ID",
