@@ -243,23 +243,11 @@
         </layout>
     </appender>
 
-    <!--FOR PRD -->
-
-    <!--<root level="${log4j.priority}">
-        <appender-ref ref="DEBUG"/>
-        <appender-ref ref="INFO"/>
-        <appender-ref ref="WARN"/>
-        <appender-ref ref="ERROR"/>
-    </root>-->
-
-
-    <!--FOR DEV -->
     <root level="${log4j.priority}">
         <appender-ref ref="DEBUG"/>
         <appender-ref ref="INFO"/>
         <appender-ref ref="WARN"/>
         <appender-ref ref="ERROR"/>
-        <appender-ref ref="STDOUT"/>
     </root>
 
     <logger name="org.mybatis" level="INFO" additivity="false"/>
