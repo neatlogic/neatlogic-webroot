@@ -19,7 +19,8 @@
         </filter>
         <filter class="ch.qos.logback.core.filter.EvaluatorFilter">
             <evaluator class="neatlogic.framework.logback.boolex.PathFilterEvaluator">
-                <whitelist>neatlogic</whitelist>
+                <whitelist>neatlogic.**</whitelist>
+                <blacklist>neatlogic.**.dao.mapper.**</blacklist>
             </evaluator>
             <OnMatch>NEUTRAL</OnMatch>
             <OnMismatch>DENY</OnMismatch>
@@ -53,7 +54,8 @@
         </filter>
         <filter class="ch.qos.logback.core.filter.EvaluatorFilter">
             <evaluator class="neatlogic.framework.logback.boolex.PathFilterEvaluator">
-                <whitelist>neatlogic</whitelist>
+                <whitelist>neatlogic.**</whitelist>
+                <blacklist>neatlogic.**.dao.mapper.**</blacklist>
             </evaluator>
             <OnMatch>NEUTRAL</OnMatch>
             <OnMismatch>DENY</OnMismatch>
@@ -138,11 +140,11 @@
         </encoder>
         <filter class="ch.qos.logback.core.filter.EvaluatorFilter">
             <evaluator class="neatlogic.framework.logback.boolex.ConsoleFilterEvaluator">
-                <!--<errorWhitelist></errorWhitelist>-->
-                <!--<warnWhitelist></warnWhitelist>-->
-                <infoWhitelist>neatlogic</infoWhitelist>
-                <debugWhitelist>neatlogic</debugWhitelist>
-                <traceWhitelist>neatlogic</traceWhitelist>
+                <infoWhitelist>neatlogic.**</infoWhitelist>
+                <debugWhitelist>neatlogic.**</debugWhitelist>
+                <debugBlacklist>neatlogic.**.dao.mapper.**</debugBlacklist>
+                <traceWhitelist>neatlogic.**</traceWhitelist>
+                <traceBlacklist>neatlogic.**.dao.mapper.**</traceBlacklist>
             </evaluator>
             <OnMatch>NEUTRAL</OnMatch>
             <OnMismatch>DENY</OnMismatch>
