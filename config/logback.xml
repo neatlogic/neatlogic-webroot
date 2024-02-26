@@ -6,16 +6,24 @@
     <statusListener class="ch.qos.logback.core.status.NopStatusListener"/>
 
     <appender name="debugAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <File>logs/debug.log</File>
+        <File>${log4j.home}/debug.log</File>
         <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
-            <FileNamePattern>logs/debug.log.%i</FileNamePattern>
+            <FileNamePattern>debug.log.%i</FileNamePattern>
             <MinIndex>1</MinIndex>
             <MaxIndex>5</MaxIndex>
         </rollingPolicy>
         <filter class="ch.qos.logback.classic.filter.LevelFilter">
             <level>DEBUG</level>
-            <onMatch>ACCEPT</onMatch>
+            <onMatch>NEUTRAL</onMatch>
             <onMismatch>DENY</onMismatch>
+        </filter>
+        <filter class="ch.qos.logback.core.filter.EvaluatorFilter">
+            <evaluator class="neatlogic.framework.logback.boolex.PathFilterEvaluator">
+                <whitelist>neatlogic.**</whitelist>
+                <blacklist>neatlogic.**.dao.mapper.**</blacklist>
+            </evaluator>
+            <OnMatch>NEUTRAL</OnMatch>
+            <OnMismatch>DENY</OnMismatch>
         </filter>
         <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
             <MaxFileSize>100MB</MaxFileSize>
@@ -33,16 +41,24 @@
     </appender>
 
     <appender name="infoAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <File>logs/info.log</File>
+        <File>${log4j.home}/info.log</File>
         <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
-            <FileNamePattern>logs/info.log.%i</FileNamePattern>
+            <FileNamePattern>info.log.%i</FileNamePattern>
             <MinIndex>1</MinIndex>
             <MaxIndex>5</MaxIndex>
         </rollingPolicy>
         <filter class="ch.qos.logback.classic.filter.LevelFilter">
             <level>INFO</level>
-            <onMatch>ACCEPT</onMatch>
+            <onMatch>NEUTRAL</onMatch>
             <onMismatch>DENY</onMismatch>
+        </filter>
+        <filter class="ch.qos.logback.core.filter.EvaluatorFilter">
+            <evaluator class="neatlogic.framework.logback.boolex.PathFilterEvaluator">
+                <whitelist>neatlogic.**</whitelist>
+                <blacklist>neatlogic.**.dao.mapper.**</blacklist>
+            </evaluator>
+            <OnMatch>NEUTRAL</OnMatch>
+            <OnMismatch>DENY</OnMismatch>
         </filter>
         <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
             <MaxFileSize>100MB</MaxFileSize>
@@ -60,15 +76,15 @@
     </appender>
 
     <appender name="warnAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <File>logs/warn.log</File>
+        <File>${log4j.home}/warn.log</File>
         <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
-            <FileNamePattern>logs/warn.log.%i</FileNamePattern>
+            <FileNamePattern>warn.log.%i</FileNamePattern>
             <MinIndex>1</MinIndex>
             <MaxIndex>5</MaxIndex>
         </rollingPolicy>
         <filter class="ch.qos.logback.classic.filter.LevelFilter">
             <level>WARN</level>
-            <onMatch>ACCEPT</onMatch>
+            <onMatch>NEUTRAL</onMatch>
             <onMismatch>DENY</onMismatch>
         </filter>
         <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
@@ -87,15 +103,15 @@
     </appender>
 
     <appender name="errorAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <File>logs/error.log</File>
+        <File>${log4j.home}/error.log</File>
         <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
-            <FileNamePattern>logs/error.log.%i</FileNamePattern>
+            <FileNamePattern>error.log.%i</FileNamePattern>
             <MinIndex>1</MinIndex>
             <MaxIndex>5</MaxIndex>
         </rollingPolicy>
         <filter class="ch.qos.logback.classic.filter.LevelFilter">
             <level>ERROR</level>
-            <onMatch>ACCEPT</onMatch>
+            <onMatch>NEUTRAL</onMatch>
             <onMismatch>DENY</onMismatch>
         </filter>
         <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
@@ -107,11 +123,39 @@
         </layout>
     </appender>
 
+    <!--异步输出 -->
+    <appender name="ERROR" class="ch.qos.logback.classic.AsyncAppender">
+        <discardingThreshold>0</discardingThreshold>
+        <queueSize>50</queueSize>
+        <appender-ref ref="errorAppender"/>
+        <includeCallerData>true</includeCallerData>
+    </appender>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <Pattern>[%-5level]%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %logger{36}[%line] [%tenant] %requestUrl - %msg%n
+            </Pattern>
+            <charset>UTF-8</charset> <!-- 此处设置字符集 -->
+            <outputPatternAsPresentationHeader>false</outputPatternAsPresentationHeader>
+        </encoder>
+        <filter class="ch.qos.logback.core.filter.EvaluatorFilter">
+            <evaluator class="neatlogic.framework.logback.boolex.ConsoleFilterEvaluator">
+                <infoWhitelist>neatlogic.**</infoWhitelist>
+                <debugWhitelist>neatlogic.**</debugWhitelist>
+                <debugBlacklist>neatlogic.**.dao.mapper.**</debugBlacklist>
+                <traceWhitelist>neatlogic.**</traceWhitelist>
+                <traceBlacklist>neatlogic.**.dao.mapper.**</traceBlacklist>
+            </evaluator>
+            <OnMatch>NEUTRAL</OnMatch>
+            <OnMismatch>DENY</OnMismatch>
+        </filter>
+    </appender>
+
     <!--tagent心跳日志-->
     <appender name="tagentRegisterAndNettyAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <File>logs/tagentRegisterAndNetty.log</File>
+        <File>${log4j.home}/tagentRegisterAndNetty.log</File>
         <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
-            <FileNamePattern>logs/tagentRegisterAndNetty.%i</FileNamePattern>
+            <FileNamePattern>tagentRegisterAndNetty.%i</FileNamePattern>
             <MinIndex>1</MinIndex>
             <MaxIndex>5</MaxIndex>
         </rollingPolicy>
@@ -134,7 +178,7 @@
     </appender>
 
     <appender name="notifyAuditAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <File>logs/notifyAudit.log</File>
+        <File>${log4j.home}/notifyAudit.log</File>
         <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
             <FileNamePattern>notifyAudit.log.%i</FileNamePattern>
             <MinIndex>1</MinIndex>
@@ -156,7 +200,7 @@
     </appender>
 
     <appender name="deadlockAuditAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <File>logs/deadlock.log</File>
+        <File>${log4j.home}/deadlock.log</File>
         <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
             <FileNamePattern>deadlock.log.%i</FileNamePattern>
             <MinIndex>1</MinIndex>
@@ -178,7 +222,7 @@
     </appender>
 
     <appender name="sqlTimeoutAuditAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <File>logs/sqlTimeout.log</File>
+        <File>${log4j.home}/sqlTimeout.log</File>
         <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
             <FileNamePattern>sqlTimeout.log.%i</FileNamePattern>
             <MinIndex>1</MinIndex>
@@ -198,51 +242,11 @@
             </Pattern>
         </layout>
     </appender>
-    <!--异步输出 -->
-    <appender name="ERROR" class="ch.qos.logback.classic.AsyncAppender">
-        <discardingThreshold>0</discardingThreshold>
-        <queueSize>50</queueSize>
-        <appender-ref ref="errorAppender"/>
-        <includeCallerData>true</includeCallerData>
-    </appender>
-
-    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
-        <encoder>
-            <Pattern>[%-5level]%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %logger{36}[%line] [%tenant] %requestUrl - %msg%n
-            </Pattern>
-            <charset>UTF-8</charset> <!-- 此处设置字符集 -->
-            <outputPatternAsPresentationHeader>false</outputPatternAsPresentationHeader>
-        </encoder>
-        <filter class="ch.qos.logback.classic.filter.LevelFilter">
-            <level>ERROR</level>
-            <onMatch>ACCEPT</onMatch>
-            <onMismatch>NEUTRAL</onMismatch>
-        </filter>
-        <filter class="ch.qos.logback.core.filter.EvaluatorFilter">
-            <evaluator class="neatlogic.framework.logback.boolex.CustomFilterEvaluator">
-                <blacklist>neatlogic.framework.filter|neatlogic.module.autoexec.api.TestApi
-                </blacklist>
-            </evaluator>
-            <OnMatch>NEUTRAL</OnMatch>
-            <OnMismatch>DENY</OnMismatch>
-        </filter>
-        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
-            <level>DEBUG</level>
-        </filter>
-    </appender>
-
-    <!--FOR PRD -->
 
     <root level="${log4j.priority}">
         <appender-ref ref="DEBUG"/>
         <appender-ref ref="INFO"/>
         <appender-ref ref="WARN"/>
-        <appender-ref ref="ERROR"/>
-    </root>
-
-
-    <!--FOR DEV -->
-    <root level="${log4j.priority}">
         <appender-ref ref="ERROR"/>
     </root>
 
@@ -252,40 +256,6 @@
     <logger name="java.sql.Statement" level="INFO" additivity="false"/>
     <logger name="java.sql.PreparedStatement" level="WARN" additivity="false"/>
     <logger name="jdbc.connection" level="INFO" additivity="false"/>
-    <logger name="neatlogic" level="INFO" additivity="false"/>
-    <logger name="org.mybatis" level="ERROR" additivity="false">
-        <appender-ref ref="STDOUT"/>
-    </logger>
-    <logger name="ch.qos.logback" level="ERROR" additivity="false">
-        <appender-ref ref="STDOUT"/>
-    </logger>
-    <logger name="java.sql.Connection" level="ERROR" additivity="false">
-        <appender-ref ref="STDOUT"/>
-    </logger>
-    <logger name="java.sql.Statement" level="ERROR" additivity="false">
-        <appender-ref ref="STDOUT"/>
-    </logger>
-    <logger name="java.sql.PreparedStatement" level="ERROR" additivity="false">
-        <appender-ref ref="STDOUT"/>
-    </logger>
-    <logger name="jdbc.connection" level="ERROR" additivity="false">
-        <appender-ref ref="STDOUT"/>
-    </logger>
-    <logger name="neatlogic" level="ERROR" additivity="false">
-        <appender-ref ref="STDOUT"/>
-    </logger>
-
-    <logger name="jdbc.sqlonly" level="DEBUG" additivity="false">
-        <appender-ref ref="STDOUT"/>
-    </logger>
-    <logger name="neatlogic">
-        <level value="${log4j.priority}"/>
-        <appender-ref ref="STDOUT"/>
-    </logger>
-    <!-- <logger name="org.mybatis" additivity="false">
-        <level value="${log4j.priority}" />
-        <appender-ref ref="STDOUT" />
-    </logger> -->
 
     <!-- 通知审计 -->
     <logger name="notifyAudit" level="INFO" additivity="false">
