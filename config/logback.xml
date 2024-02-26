@@ -138,11 +138,11 @@
         </encoder>
         <filter class="ch.qos.logback.core.filter.EvaluatorFilter">
             <evaluator class="neatlogic.framework.logback.boolex.ConsoleFilterEvaluator">
-                <!--<errorPathList></errorPathList>-->
-                <!--<warnPathList></warnPathList>-->
-                <infoPathList>neatlogic</infoPathList>
-                <debugPathList>neatlogic</debugPathList>
-                <tracePathList>neatlogic</tracePathList>
+                <!--<errorWhitelist></errorWhitelist>-->
+                <!--<warnWhitelist></warnWhitelist>-->
+                <infoWhitelist>neatlogic</infoWhitelist>
+                <debugWhitelist>neatlogic</debugWhitelist>
+                <traceWhitelist>neatlogic</traceWhitelist>
             </evaluator>
             <OnMatch>NEUTRAL</OnMatch>
             <OnMismatch>DENY</OnMismatch>
