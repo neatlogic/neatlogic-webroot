@@ -2316,6 +2316,9 @@
     "exporttemplateapi": {
       "getname": "导出模板"
     },
+    "gettemplatestatusapi": {
+      "getname": "获取模板状态列表"
+    },
     "validatetemplateapi": {
       "getname": "验证模板文件"
     }
@@ -2333,6 +2336,9 @@
     },
     "templatenameisexistsexception": {
       "templatenameisexistsexception": "模板“{0}”已存在"
+    },
+    "templatestatusisexistsexception": {
+      "templatestatusisexistsexception": "模板状态{0}已存在"
     },
     "widgetnameisexistsexception": {
       "widgetnameisexistsexception": "图元“{0}”已存在"
@@ -4257,6 +4263,7 @@
     },
     "diagram": {
       "activeversion": "激活版本",
+      "allowedit": "允许编辑",
       "catalogitem": "目录项",
       "catalogitemid": "目录项id",
       "catalogitemname": "目录项名称",
@@ -4270,6 +4277,7 @@
       "editlock": "编辑锁",
       "editversion": "编辑版本",
       "editversiondata": "编辑版本数据",
+      "isediting": "是否编辑中",
       "isprivate": "是否私有",
       "issnapshot": "是否快照",
       "isstarttemplate": "是否开始模板",

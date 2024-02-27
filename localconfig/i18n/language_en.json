@@ -2288,6 +2288,9 @@
     "exporttemplateapi": {
       "getname": "Export Template"
     },
+    "gettemplatestatusapi": {
+      "getname": "Get template status list"
+    },
     "validatetemplateapi": {
       "getname": "Verify template files"
     }
@@ -2305,6 +2308,9 @@
     },
     "templatenameisexistsexception": {
       "templatenameisexistsexception": "Template \u0027{0}\u0027 already exists"
+    },
+    "templatestatusisexistsexception": {
+      "templatestatusisexistsexception": "Template status {0} already exists"
     },
     "widgetnameisexistsexception": {
       "widgetnameisexistsexception": "Element \u0027{0}\u0027 already exists"
@@ -4205,6 +4211,7 @@
     },
     "diagram": {
       "activeversion": "Activate version",
+      "allowedit": "Allow editing",
       "catalogitem": "Catalog Entry",
       "catalogitemid": "Catalog Item ID",
       "catalogitemname": "Catalog Item Name",
@@ -4218,6 +4225,7 @@
       "editlock": "Edit lock",
       "editversion": "Edit version",
       "editversiondata": "Edit version data",
+      "isediting": "Is it currently being edited",
       "isprivate": "Private or not",
       "issnapshot": "Is it a snapshot",
       "isstarttemplate": "Start template or not",
