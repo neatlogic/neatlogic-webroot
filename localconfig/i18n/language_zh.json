@@ -1164,6 +1164,10 @@
   "nffe": {
     "formversionscenenotfoundexception": {
       "formversionscenenotfoundexception": "在表单：{0}的版本：{1}中，场景：{2}不存在"
+    },
+    "status": {
+      "doing": "重建中",
+      "done": "重建完毕"
     }
   },
   "nfie": {
@@ -1555,6 +1559,11 @@
     },
     "saveautoexectypeapi": {
       "getname": "保存自动化工具分类"
+    }
+  },
+  "nmaf": {
+    "autoexecfulltextindextype": {
+      "script_document_version": "自定义工具版本"
     }
   },
   "nmcaa": {
@@ -2514,6 +2523,11 @@
     },
     "widgetisinuseexception": {
       "widgetisinuseexception": "当前组件正在使用中"
+    }
+  },
+  "nmcfe": {
+    "cmdbfulltextindextype": {
+      "cientity": "配置项"
     }
   },
   "nmcnh": {
