@@ -198,6 +198,7 @@
     "newvalue": "New value",
     "noauth": "No certification required",
     "nocache": "No cache",
+    "nostatus": "Stateless",
     "notifytype": "Notification Type",
     "number": "number",
     "object": "Any object",
@@ -2305,6 +2306,9 @@
     }
   },
   "nmccde": {
+    "catalogauthexception": {
+      "catalogauthexception": "You do not have permission to {0} the current directory"
+    },
     "diagramisexistsexception": {
       "diagramisexistsexception": "Architecture diagram created"
     },

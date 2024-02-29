@@ -198,6 +198,7 @@
     "newvalue": "新值",
     "noauth": "无需认证",
     "nocache": "没有缓存",
+    "nostatus": "无状态",
     "notifytype": "通知类型",
     "number": "数字",
     "object": "任意对象",
@@ -2333,6 +2334,9 @@
     }
   },
   "nmccde": {
+    "catalogauthexception": {
+      "catalogauthexception": "您没有{0}当前目录的权限"
+    },
     "diagramisexistsexception": {
       "diagramisexistsexception": "架构图已创建"
     },
