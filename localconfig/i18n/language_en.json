@@ -4245,6 +4245,7 @@
       "editversion": "Edit version",
       "editversiondata": "Edit version data",
       "isediting": "Is it currently being edited",
+      "isendversion": "Whether to terminate the version",
       "isprivate": "Private or not",
       "issnapshot": "Is it a snapshot",
       "isstarttemplate": "Start template or not",

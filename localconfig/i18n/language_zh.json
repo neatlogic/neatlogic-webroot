@@ -4297,6 +4297,7 @@
       "editversion": "编辑版本",
       "editversiondata": "编辑版本数据",
       "isediting": "是否编辑中",
+      "isendversion": "是否终结版本",
       "isprivate": "是否私有",
       "issnapshot": "是否快照",
       "isstarttemplate": "是否开始模板",
