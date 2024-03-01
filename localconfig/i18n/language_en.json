@@ -594,6 +594,21 @@
     },
     "globalattrvalueirregularexception": {
       "globalattrvalueirregularexception": "The value \u0027{2}\u0027 of global attribute \u0027{0} ({1})\u0027 is illegal"
+    },
+    "graphisinvokedexception": {
+      "graphisinvokedexception": "The current view is already referenced by another view, please delete it first"
+    },
+    "graphnotfoundexception": {
+      "graphnotfoundexception": "Topology view \u0027{0}\u0027 does not exist"
+    },
+    "graphprivilegedeleteexception": {
+      "graphprivilegedeleteexception": "You do not have permission to delete the current topology view"
+    },
+    "graphprivilegereadexception": {
+      "graphprivilegereadexception": "You do not have permission to view the current topology view"
+    },
+    "graphprivilegesaveexception": {
+      "graphprivilegesaveexception": "You do not have permission for the current public topology view"
     }
   },
   "nfcer": {
@@ -2123,6 +2138,9 @@
   "nmcag": {
     "deleteglobalattrapi": {
       "getname": "Delete Global Attribute"
+    },
+    "deletegraphapi": {
+      "getname": "Delete topology view"
     },
     "getcientityglobalattrentityapi": {
       "getname": "Get Configuration Item Global Properties"
@@ -4245,6 +4263,7 @@
       "editversion": "Edit version",
       "editversiondata": "Edit version data",
       "isediting": "Is it currently being edited",
+      "isend": "Whether to terminate",
       "isendversion": "Whether to terminate the version",
       "isprivate": "Private or not",
       "issnapshot": "Is it a snapshot",

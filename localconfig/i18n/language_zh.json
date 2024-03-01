@@ -594,6 +594,21 @@
     },
     "globalattrvalueirregularexception": {
       "globalattrvalueirregularexception": "全局属性“{0}({1})”的值“{2}”是不合法的"
+    },
+    "graphisinvokedexception": {
+      "graphisinvokedexception": "当前视图已被其他视图引用，请先删除"
+    },
+    "graphnotfoundexception": {
+      "graphnotfoundexception": "拓扑视图“{0}”不存在"
+    },
+    "graphprivilegedeleteexception": {
+      "graphprivilegedeleteexception": "您没有权限删除当前拓扑视图"
+    },
+    "graphprivilegereadexception": {
+      "graphprivilegereadexception": "您没有权限查看当前拓扑视图"
+    },
+    "graphprivilegesaveexception": {
+      "graphprivilegesaveexception": "您没有权限当前公共拓扑视图"
     }
   },
   "nfcer": {
@@ -2151,6 +2166,9 @@
   "nmcag": {
     "deleteglobalattrapi": {
       "getname": "删除全局属性"
+    },
+    "deletegraphapi": {
+      "getname": "删除拓扑视图"
     },
     "getcientityglobalattrentityapi": {
       "getname": "获取配置项全局属性"
@@ -4297,6 +4315,7 @@
       "editversion": "编辑版本",
       "editversiondata": "编辑版本数据",
       "isediting": "是否编辑中",
+      "isend": "是否终结",
       "isendversion": "是否终结版本",
       "isprivate": "是否私有",
       "issnapshot": "是否快照",
