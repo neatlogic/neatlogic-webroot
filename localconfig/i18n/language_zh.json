@@ -3802,6 +3802,11 @@
     },
     "integrationauditdetailgetapi": {
       "getname": "获取集成管理审计内容"
+    },
+    "integrationtestapi": {
+      "address": "目标地址",
+      "component": "组件",
+      "getname": "集成配置测试"
     }
   },
   "nmtal": {
@@ -4174,6 +4179,7 @@
       "ciuniquename": "模型唯一标识",
       "collectionlist": "集合列表",
       "collectionname": "集合名称",
+      "collectionobjlist": "集合对象列表",
       "collectiontype": "集合类型",
       "collectmode": "采集方式",
       "customview": {

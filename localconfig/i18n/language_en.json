@@ -3750,6 +3750,11 @@
     },
     "integrationauditdetailgetapi": {
       "getname": "Obtain integrated management audit content"
+    },
+    "integrationtestapi": {
+      "address": "Target address",
+      "component": "assembly",
+      "getname": "Integrated configuration testing"
     }
   },
   "nmtal": {
@@ -4122,6 +4127,7 @@
       "ciuniquename": "Model Unique Identification",
       "collectionlist": "Collection List",
       "collectionname": "Collection Name",
+      "collectionobjlist": "Collection Object List",
       "collectiontype": "Collection type",
       "collectmode": "Collection method",
       "customview": {
