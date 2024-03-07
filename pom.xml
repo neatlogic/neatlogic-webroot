@@ -73,6 +73,10 @@
                     <groupId>com.neatlogic</groupId>
                     <artifactId>neatlogic-eoa-base</artifactId>
                 </dependency>
+                <dependency>
+                    <groupId>com.neatlogic</groupId>
+                    <artifactId>neatlogic-pbc</artifactId>
+                </dependency>
             </dependencies>
         </profile>
     </profiles>
@@ -149,10 +153,6 @@
         <dependency>
             <groupId>com.neatlogic</groupId>
             <artifactId>neatlogic-inspect</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.neatlogic</groupId>
-            <artifactId>neatlogic-pbc</artifactId>
         </dependency>
         <dependency>
             <groupId>com.neatlogic</groupId>
