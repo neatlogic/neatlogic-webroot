@@ -4192,6 +4192,7 @@
       "envname": "环境名称",
       "excludeciid": "排除模型id",
       "globalattr": "全局属性",
+      "globalattrid": "全局属性id",
       "globalattridlist": "公共属性id列表",
       "groupdesc": "配置管理平台",
       "groupname": "配置管理",

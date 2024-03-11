@@ -4140,6 +4140,7 @@
       "envname": "Environment name",
       "excludeciid": "Exclude model ID",
       "globalattr": "Global Properties",
+      "globalattrid": "Global attribute ID",
       "globalattridlist": "List of public attribute IDs",
       "groupdesc": "Configuration Management Platform",
       "groupname": "CMDB",
