@@ -372,6 +372,9 @@
     "autoexeccatalognotfoundexception": {
       "autoexeccatalognotfoundexception": "工具目录：{0}不存在"
     },
+    "autoexeccombophassubmittedversionexception": {
+      "autoexeccombophassubmittedversionexception": "组合工具：{0}已经有其他待审核版本"
+    },
     "autoexeccombopoperationnotfoundexception": {
       "autoexeccombopoperationnotfoundexception": "阶段[{0}] 工具[{1}]已被删除，请在组合工具中清理该工具并保存"
     },
@@ -414,6 +417,9 @@
     },
     "autoexecprofileisnotfoundexception": {
       "autoexecprofileisnotfoundexception": "预置参数集{0}不存在"
+    },
+    "autoexecserviceisnotcatalogexception": {
+      "autoexecserviceisnotcatalogexception": "服务：{0}不是目录"
     }
   },
   "nfaec": {
