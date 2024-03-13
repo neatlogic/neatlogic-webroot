@@ -372,6 +372,9 @@
     "autoexeccatalognotfoundexception": {
       "autoexeccatalognotfoundexception": "Tool directory: {0} does not exist"
     },
+    "autoexeccombophassubmittedversionexception": {
+      "autoexeccombophassubmittedversionexception": "Combination tool: {0} already has other pending versions for review"
+    },
     "autoexeccombopoperationnotfoundexception": {
       "autoexeccombopoperationnotfoundexception": "The stage [{0}] tool [{1}] has been deleted. Please clean up the tool in the combination tool and save it"
     },
@@ -414,6 +417,9 @@
     },
     "autoexecprofileisnotfoundexception": {
       "autoexecprofileisnotfoundexception": "The preset parameter set {0} does not exist"
+    },
+    "autoexecserviceisnotcatalogexception": {
+      "autoexecserviceisnotcatalogexception": "Service: {0} is not a directory"
     }
   },
   "nfaec": {
