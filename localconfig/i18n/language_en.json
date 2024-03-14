@@ -114,6 +114,7 @@
     "favorcount": "Likes",
     "file": "file",
     "fileid": "File ID",
+    "fileidlist": "Attachment ID List",
     "filelist": "Attachment List",
     "filename": "file name",
     "fileparamname": "Attachment parameter name",
@@ -3215,6 +3216,9 @@
         }
       }
     },
+    "processtaskcreateapi": {
+      "getname": "Submit work order (for third-party use)"
+    },
     "processtaskcurrentusertasklistapi": {
       "getname": "Current User Task List Interface"
     },
@@ -4379,6 +4383,7 @@
       "cataloginfo": "Service Catalog Information",
       "catalogname": "Directory name where the service is located",
       "cataloguuid": "Service directory uuid",
+      "channel": "service",
       "channelinfo": "Service Information",
       "channelname": "Service Name",
       "channelpath": "Service Path",
@@ -4395,17 +4400,21 @@
       "currentprocesstaskstep": "Current step information of the work order",
       "distributary": "shunt",
       "end": "finish",
+      "formattributedatalist": "Form Property Data List",
       "formattributehidelist": "Form Configuration Authorization Hidden Attribute uuid List",
       "formconfigauthoritylist": "Authorization List for Work Order Form Information",
       "fromprocesstaskid": "Source work order ID",
       "groupdesc": "One stop service reporting tracking processing platform",
       "groupname": "ITSM",
+      "handlerstepinfo": "Processor specific step information",
+      "hidecomponentlist": "Hide Form Property List",
       "ishasoldformprop": "Is there any old work order form information",
       "isshowbaseinfo": "Is the basic information expanded by default on the work order details page",
       "isshowprocesstaskstepcommenteditortoolbar": "Show work order step reply rich text editor toolbar",
       "mobileformuitype": "Mobile form interaction type, 1: Exploring pages; 0: Current Page",
       "name": "ITSM",
       "omnipotent": "Universal node",
+      "owner": "ReportPerson ",
       "ownercompanylist": "List of companies owned by the work order",
       "ownerdepartmentlist": "List of departments for the work order owner",
       "ownerinfo": "Work order owner information",
@@ -4420,8 +4429,10 @@
       "processtaskslalist": "SLA List",
       "processtaskstepid": "Work Order Step ID",
       "processuuid": "Process uuid",
+      "readcomponentlist": "Read only form attribute list",
       "redosteplist": "Redo Step List",
       "repeatprocesstaskidlist": "List of duplicate job IDs",
+      "reporter": "Agent",
       "scoretemplate": "Scoring template",
       "scoretemplatedimensionlist": "Rating dimension list",
       "serialnumber": "Work order number",
