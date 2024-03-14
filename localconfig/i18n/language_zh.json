@@ -114,6 +114,7 @@
     "favorcount": "点赞量",
     "file": "文件",
     "fileid": "文件ID",
+    "fileidlist": "附件ID列表",
     "filelist": "附件列表",
     "filename": "文件名",
     "fileparamname": "附件参数名称",
@@ -3265,6 +3266,9 @@
         }
       }
     },
+    "processtaskcreateapi": {
+      "getname": "上报工单(供第三方使用)"
+    },
     "processtaskcurrentusertasklistapi": {
       "getname": "当前用户任务列表接口"
     },
@@ -4431,6 +4435,7 @@
       "cataloginfo": "服务目录信息",
       "catalogname": "服务所在目录名称",
       "cataloguuid": "服务目录uuid",
+      "channel": "服务",
       "channelinfo": "服务信息",
       "channelname": "服务名称",
       "channelpath": "服务路径",
@@ -4447,17 +4452,21 @@
       "currentprocesstaskstep": "工单当前步骤信息",
       "distributary": "分流",
       "end": "结束",
+      "formattributedatalist": "表单属性数据列表",
       "formattributehidelist": "表单配置授权隐藏属性uuid列表",
       "formconfigauthoritylist": "工单表单信息授权列表",
       "fromprocesstaskid": "来源工单id",
       "groupdesc": "一站式服务上报-跟踪-处理平台",
       "groupname": "IT服务",
+      "handlerstepinfo": "处理器特有的步骤信息",
+      "hidecomponentlist": "隐藏表单属性列表",
       "ishasoldformprop": "是否存在旧工单表单信息",
       "isshowbaseinfo": "工单详情页是否默认展开基本信息",
       "isshowprocesstaskstepcommenteditortoolbar": "是否显示工单步骤回复富文本编辑器工具栏",
       "mobileformuitype": "移动端表单交互类型，1：下探页面；0：当前页",
       "name": "工作流引擎模块",
       "omnipotent": "通用节点",
+      "owner": "上报人",
       "ownercompanylist": "工单所有人的公司列表",
       "ownerdepartmentlist": "工单所有人的部门列表",
       "ownerinfo": "工单所有人信息",
@@ -4472,8 +4481,10 @@
       "processtaskslalist": "sla列表",
       "processtaskstepid": "工单步骤id",
       "processuuid": "流程uuid",
+      "readcomponentlist": "只读表单属性列表",
       "redosteplist": "重做步骤列表",
       "repeatprocesstaskidlist": "重复工单id列表",
+      "reporter": "代报人",
       "scoretemplate": "评分模板",
       "scoretemplatedimensionlist": "评分维度列表",
       "serialnumber": "工单号",
