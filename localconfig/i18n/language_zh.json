@@ -119,6 +119,8 @@
     "filename": "文件名",
     "fileparamname": "附件参数名称",
     "filepath": "文件路径",
+    "filepathlist": "附件路径列表",
+    "filepathprefix": "附件路径前缀",
     "filetype": "附件类型",
     "filter": "过滤条件",
     "focususerlist": "关注人列表",

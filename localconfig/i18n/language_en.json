@@ -119,6 +119,8 @@
     "filename": "file name",
     "fileparamname": "Attachment parameter name",
     "filepath": "File Path",
+    "filepathlist": "Attachment path list",
+    "filepathprefix": "Attachment path prefix",
     "filetype": "Attachment Type",
     "filter": "Filter conditions",
     "focususerlist": "List of followers",
