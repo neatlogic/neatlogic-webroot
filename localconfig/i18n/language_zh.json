@@ -4331,6 +4331,7 @@
       "editlock": "编辑锁",
       "editversion": "编辑版本",
       "editversiondata": "编辑版本数据",
+      "isadmin": "是否管理模式",
       "isediting": "是否编辑中",
       "isend": "是否终结",
       "isendversion": "是否终结版本",
@@ -4348,7 +4349,8 @@
         "passed": "已通过",
         "rejected": "未通过"
       },
-      "templatelist": "模板列表"
+      "templatelist": "模板列表",
+      "typelist": "类型列表"
     },
     "dr": {
       "customparamlist": "自定义参数列表",

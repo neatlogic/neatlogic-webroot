@@ -4279,6 +4279,7 @@
       "editlock": "Edit lock",
       "editversion": "Edit version",
       "editversiondata": "Edit version data",
+      "isadmin": "Is it a management mode",
       "isediting": "Is it currently being edited",
       "isend": "Whether to terminate",
       "isendversion": "Whether to terminate the version",
@@ -4296,7 +4297,8 @@
         "passed": "Passed",
         "rejected": "Failed"
       },
-      "templatelist": "Template List"
+      "templatelist": "Template List",
+      "typelist": "Type List"
     },
     "dr": {
       "customparamlist": "Custom Parameter List",
