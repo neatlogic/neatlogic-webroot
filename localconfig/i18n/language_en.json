@@ -119,6 +119,8 @@
     "filename": "file name",
     "fileparamname": "Attachment parameter name",
     "filepath": "File Path",
+    "filepathlist": "Attachment path list",
+    "filepathprefix": "Attachment path prefix",
     "filetype": "Attachment Type",
     "filter": "Filter conditions",
     "focususerlist": "List of followers",
@@ -3223,7 +3225,23 @@
       "getname": "Current User Task List Interface"
     },
     "processtaskdraftgetapi": {
-      "getname": "Work order draft data acquisition interface"
+      "getname": "Work order draft data acquisition interface",
+      "input": {
+        "param": {
+          "desc": {
+            "parentprocesstaskstepid": "Parent work order step ID"
+          }
+        }
+      }
+    },
+    "processtaskdraftsaveapi": {
+      "input": {
+        "param": {
+          "desc": {
+            "invoke": "Association type"
+          }
+        }
+      }
     },
     "processtaskrepeatsaveapi": {
       "getname": "Mark duplicate work order interface"
@@ -3254,6 +3272,24 @@
           }
         }
       }
+    }
+  },
+  "nmpce": {
+    "subprocessnotifytriggertype": {
+      "allcompletedsubprocess": "Complete all sub processes",
+      "allcompletedsubprocessdesc": "Trigger when all sub processes are completed",
+      "completedsubprocess": "Complete sub processes",
+      "completedsubprocessdesc": "Trigger upon completion of sub process execution",
+      "createsubprocess": "Initiation sub process",
+      "createsubprocessdesc": "Trigger when the step handler initiates a sub process",
+      "failedsubprocess": "Subprocess failed",
+      "failedsubprocessdesc": "Trigger when sub process execution fails"
+    },
+    "subprocessstephandlertype": {
+      "subprocess": "\"Sub process\""
+    },
+    "subprocesstasknotcompletedexception": {
+      "subprocesstasknotcompletedexception": "Operation failed: There are sub processes that have not been completed yet. Please confirm and try again"
     }
   },
   "nmpwh": {
