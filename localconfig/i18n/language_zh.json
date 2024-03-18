@@ -3275,7 +3275,23 @@
       "getname": "当前用户任务列表接口"
     },
     "processtaskdraftgetapi": {
-      "getname": "工单草稿数据获取接口"
+      "getname": "工单草稿数据获取接口",
+      "input": {
+        "param": {
+          "desc": {
+            "parentprocesstaskstepid": "父工单步骤id"
+          }
+        }
+      }
+    },
+    "processtaskdraftsaveapi": {
+      "input": {
+        "param": {
+          "desc": {
+            "invoke": "关联类型"
+          }
+        }
+      }
     },
     "processtaskrepeatsaveapi": {
       "getname": "标记重复工单接口"
@@ -3306,6 +3322,24 @@
           }
         }
       }
+    }
+  },
+  "nmpce": {
+    "subprocessnotifytriggertype": {
+      "allcompletedsubprocess": "完成所有子流程",
+      "allcompletedsubprocessdesc": "所有子流程执行完时触发",
+      "completedsubprocess": "完成子流程",
+      "completedsubprocessdesc": "子流程执行完时触发",
+      "createsubprocess": "发起子流程",
+      "createsubprocessdesc": "步骤处理人发起子流程时触发",
+      "failedsubprocess": "子流程失败",
+      "failedsubprocessdesc": "子流程执行失败时触发"
+    },
+    "subprocessstephandlertype": {
+      "subprocess": "子流程"
+    },
+    "subprocesstasknotcompletedexception": {
+      "subprocesstasknotcompletedexception": "操作失败：存在子流程还未完成，请确认后重试"
     }
   },
   "nmpwh": {
