@@ -571,7 +571,8 @@
     },
     "cinotfoundexception": {
       "cinotfoundexception_a": "配置项模型“{0}”不存在",
-      "cinotfoundexception_b": "配置项模型“{0}”不存在，配置路径：{1}，实际路径：{2}"
+      "cinotfoundexception_b": "配置项模型“{0}”不存在，配置路径：{1}，实际路径：{2}",
+      "cinotfoundexception_d": "配置项对应的模型不存在"
     },
     "citopotemplatenotfoundexception": {
       "citopotemplatenotfoundexception": "拓扑模板“{0}”不存在"

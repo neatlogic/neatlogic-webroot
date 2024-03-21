@@ -571,7 +571,8 @@
     },
     "cinotfoundexception": {
       "cinotfoundexception_a": "The configuration item model \u0027{0}\u0027 does not exist",
-      "cinotfoundexception_b": "Configuration item model \u0027{0}\u0027 does not exist, configuration path: {1}, actual path: {2}"
+      "cinotfoundexception_b": "Configuration item model \u0027{0}\u0027 does not exist, configuration path: {1}, actual path: {2}",
+      "cinotfoundexception_d": "The model corresponding to the configuration item does not exist"
     },
     "citopotemplatenotfoundexception": {
       "citopotemplatenotfoundexception": "Topology template \u0027{0}\u0027 does not exist"
