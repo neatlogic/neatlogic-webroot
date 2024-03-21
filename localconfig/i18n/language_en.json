@@ -3013,7 +3013,8 @@
         "error": "There are two files with the same path: {0}. Please rename one of the files or move it to a different path",
         "system_out_println": "The location of the online document index library is {0}",
         "warn_a": "The filePath field in the {1st} element of the {0} file has no value set",
-        "warn_b": "The moduleGroup field in the {1st} element of the {0} file has no value set"
+        "warn_b": "The moduleGroup field in the {1st} element of the {0} file has no value set",
+        "warn_c": "Invalid relationship configurations:"
       },
       "getname": "Initialize online help document index"
     }
