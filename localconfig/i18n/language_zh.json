@@ -2563,6 +2563,11 @@
       "cientity": "配置项"
     }
   },
+  "nmcmc": {
+    "matrixtype": {
+      "cmdbcustomview": "自定义视图"
+    }
+  },
   "nmcnh": {
     "cmdbnotifytriggertype": {
       "cidelete": {
@@ -3887,6 +3892,9 @@
     "mailservertestapi": {
       "getname": "测试邮件服务器能否正常发送邮件"
     },
+    "matrixattributesearchapi": {
+      "getname": "查询矩阵属性"
+    },
     "matrixcolumndatasearchforbatchapi": {
       "getname": "批量矩阵属性数据查询-下拉接口",
       "input": {
@@ -3902,6 +3910,12 @@
     },
     "matriximportapi": {
       "getname": "导入矩阵数据"
+    },
+    "matrixsaveapi": {
+      "getname": "保存矩阵"
+    },
+    "matrixsearchapi": {
+      "getname": "查询矩阵列表"
     }
   },
   "nmtan": {
@@ -4436,6 +4450,7 @@
       "domain": "域名",
       "exceptionnotify": "通知异常",
       "groupname": "系统配置",
+      "integrationuuid": "集成UUID",
       "issuetime": "下发时间",
       "matrixuuid": "矩阵uuid",
       "name": "基础框架",

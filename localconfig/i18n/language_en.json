@@ -2535,6 +2535,11 @@
       "cientity": "Configuration items"
     }
   },
+  "nmcmc": {
+    "matrixtype": {
+      "cmdbcustomview": "Custom View"
+    }
+  },
   "nmcnh": {
     "cmdbnotifytriggertype": {
       "cidelete": {
@@ -3835,6 +3840,9 @@
     "mailservertestapi": {
       "getname": "Test whether the mail server can send mail normally"
     },
+    "matrixattributesearchapi": {
+      "getname": "Query matrix properties"
+    },
     "matrixcolumndatasearchforbatchapi": {
       "getname": "Batch Matrix Attribute Data Query - Dropdown Interface",
       "input": {
@@ -3850,6 +3858,12 @@
     },
     "matriximportapi": {
       "getname": "Import matrix data"
+    },
+    "matrixsaveapi": {
+      "getname": "Save Matrix"
+    },
+    "matrixsearchapi": {
+      "getname": "Query matrix list"
     }
   },
   "nmtan": {
@@ -4384,6 +4398,7 @@
       "domain": "domain name",
       "exceptionnotify": "Notification exception",
       "groupname": "Framework",
+      "integrationuuid": "Integrated UUID",
       "issuetime": "Issuance time",
       "matrixuuid": "Matrix uuid",
       "name": "Framework",
