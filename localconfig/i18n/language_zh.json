@@ -2221,6 +2221,9 @@
       "endciid": "终点模型id",
       "getname": "获取模型所有关系列表",
       "startciid": "起点模型id"
+    },
+    "searchrelapi": {
+      "getname": "搜索模型关系"
     }
   },
   "nmcara": {
@@ -2375,6 +2378,9 @@
     },
     "diagramversionnotfoundexception": {
       "diagramversionnotfoundexception": "当前架构图不存在{0}的版本"
+    },
+    "edgenotfoundexception": {
+      "edgenotfoundexception": "边“{0}”不存在"
     },
     "templatenameisexistsexception": {
       "templatenameisexistsexception": "模板“{0}”已存在"

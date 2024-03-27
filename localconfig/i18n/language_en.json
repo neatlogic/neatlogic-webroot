@@ -2193,6 +2193,9 @@
       "endciid": "Endpoint Model ID",
       "getname": "Obtain a list of all relationships in the model",
       "startciid": "Starting point model ID"
+    },
+    "searchrelapi": {
+      "getname": "Search model relationships"
     }
   },
   "nmcara": {
@@ -2347,6 +2350,9 @@
     },
     "diagramversionnotfoundexception": {
       "diagramversionnotfoundexception": "The current architecture diagram does not have a version of {0}"
+    },
+    "edgenotfoundexception": {
+      "edgenotfoundexception": "Edge \u0027{0}\u0027 does not exist"
     },
     "templatenameisexistsexception": {
       "templatenameisexistsexception": "Template \u0027{0}\u0027 already exists"
