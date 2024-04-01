@@ -382,7 +382,7 @@
       "autoexeccombopoperationnotfoundexception": "阶段[{0}] 工具[{1}]已被删除，请在组合工具中清理该工具并保存"
     },
     "autoexecjobnotsupportmultiparentexception": {
-      "autoexecjobnotsupportmultiparentexception": "父作业{0}已经存在父作业,暂时不支持多层父作业"
+      "autoexecjobnotsupportmultiparentexception": "父作业{0}已经存在父作业,一个作业最多支持2个父作业"
     },
     "autoexecjobphasenodenotfoundexception": {
       "autoexecjobphasenodenotfoundexceptiona": "作业阶段“{0}”：缺少可执行节点.请确认：1.如果组合工具如果设置过滤器，则所选择的执行目标需满足过滤器范围；2.是否在资产清单；重试",

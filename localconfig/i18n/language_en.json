@@ -382,7 +382,7 @@
       "autoexeccombopoperationnotfoundexception": "The stage [{0}] tool [{1}] has been deleted. Please clean up the tool in the combination tool and save it"
     },
     "autoexecjobnotsupportmultiparentexception": {
-      "autoexecjobnotsupportmultiparentexception": "Parent job {0} already exists, and currently does not support multi-level parent jobs"
+      "autoexecjobnotsupportmultiparentexception": "Parent job {0} already exists, and currently does not support 2 parent jobs"
     },
     "autoexecjobphasenodenotfoundexception": {
       "autoexecjobphasenodenotfoundexceptiona": "Assignment stage \u0027{0}\u0027: Missing executable node. Please confirm: 1. Whether the selected execution target meets the range of the combination tool filter; 2. Whether it is on the asset list; retry ",
