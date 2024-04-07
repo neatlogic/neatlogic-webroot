@@ -3287,6 +3287,19 @@
       }
     }
   },
+  "nmpca": {
+    "searchsubprocesstaskapi": {
+      "description": {
+        "desc": "Get sub work order list interface"
+      },
+      "getname": "Get a list of sub work orders",
+      "output": {
+        "param": {
+          "desc": "List of sub work orders"
+        }
+      }
+    }
+  },
   "nmpce": {
     "subprocessnotifytriggertype": {
       "allcompletedsubprocess": "Complete all sub processes",
@@ -3301,8 +3314,30 @@
     "subprocessstephandlertype": {
       "subprocess": "\"Sub process\""
     },
+    "subprocesstaskaudittype": {
+      "subprocesstask": {
+        "text": "Create sub processes"
+      }
+    },
     "subprocesstasknotcompletedexception": {
       "subprocesstasknotcompletedexception": "Operation failed: There are sub processes that have not been completed yet. Please confirm and try again"
+    },
+    "subprocesstasknotifyparam": {
+      "subprocesscontent": {
+        "text": "Subwork order reporting content"
+      },
+      "subprocessid": {
+        "text": "Sub work order ID"
+      },
+      "subprocessownername": {
+        "text": "Subwork order submitter"
+      },
+      "subprocessserialnumber": {
+        "text": "Sub work order number"
+      },
+      "subprocesstitle": {
+        "text": "Sub work order title"
+      }
     }
   },
   "nmpwh": {

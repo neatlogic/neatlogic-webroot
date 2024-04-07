@@ -3337,6 +3337,19 @@
       }
     }
   },
+  "nmpca": {
+    "searchsubprocesstaskapi": {
+      "description": {
+        "desc": "获取子工单列表接口"
+      },
+      "getname": "获取子工单列表",
+      "output": {
+        "param": {
+          "desc": "子工单列表"
+        }
+      }
+    }
+  },
   "nmpce": {
     "subprocessnotifytriggertype": {
       "allcompletedsubprocess": "完成所有子流程",
@@ -3351,8 +3364,30 @@
     "subprocessstephandlertype": {
       "subprocess": "子流程"
     },
+    "subprocesstaskaudittype": {
+      "subprocesstask": {
+        "text": "创建子流程"
+      }
+    },
     "subprocesstasknotcompletedexception": {
       "subprocesstasknotcompletedexception": "操作失败：存在子流程还未完成，请确认后重试"
+    },
+    "subprocesstasknotifyparam": {
+      "subprocesscontent": {
+        "text": "子工单上报内容"
+      },
+      "subprocessid": {
+        "text": "子工单ID"
+      },
+      "subprocessownername": {
+        "text": "子工单上报人"
+      },
+      "subprocessserialnumber": {
+        "text": "子工单号"
+      },
+      "subprocesstitle": {
+        "text": "子工单标题"
+      }
     }
   },
   "nmpwh": {
