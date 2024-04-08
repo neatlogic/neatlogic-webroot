@@ -2680,6 +2680,16 @@
       "getname": "保存流水线草稿"
     }
   },
+  "nmdaae": {
+    "savedeployappconfigenvapi": {
+      "getname": "保存发布应用配置的应用系统环境"
+    }
+  },
+  "nmdaam": {
+    "listdeployappconfigappenvapi": {
+      "getname": "查询发布应用配置的应用系统环境列表(用于应用树的环境下拉、发布作业时通过模块列表查询环境列表)"
+    }
+  },
   "nmdaas": {
     "listdeployappconfigauthorityapi": {
       "getname": "查询应用系统权限列表",
@@ -4304,6 +4314,7 @@
       "isabstractci": "是否抽象模型",
       "isbackbone": "只显示主干",
       "iscommit": "是否提交",
+      "isexistingenv": "是否是已经拥有的环境",
       "ishasenv": "是否包含环境",
       "isprivateci": "是否私有模型",
       "ispushmq": "是否推送MQ",

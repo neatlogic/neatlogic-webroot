@@ -2652,6 +2652,16 @@
       "getname": "Save assembly line draft"
     }
   },
+  "nmdaae": {
+    "savedeployappconfigenvapi": {
+      "getname": "Save the application system environment for publishing application configurations"
+    }
+  },
+  "nmdaam": {
+    "listdeployappconfigappenvapi": {
+      "getname": "Query the application system environment list for publishing application configurations (used for environment drop-down in the application tree, and querying the environment list through the module list when publishing jobs)"
+    }
+  },
   "nmdaas": {
     "listdeployappconfigauthorityapi": {
       "getname": "Query the application system permission list",
@@ -4252,6 +4262,7 @@
       "isabstractci": "Is it an abstract model",
       "isbackbone": "Show only backbone",
       "iscommit": "Submit or not",
+      "isexistingenv": "Is it an existing environment",
       "ishasenv": "Does it include the environment",
       "isprivateci": "Private model or not",
       "ispushmq": "Whether to push MQ",
