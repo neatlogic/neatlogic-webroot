@@ -369,6 +369,34 @@
     "autoexectenantconfig": {
       "autoexecjoblogencoding": "Automation job log Character encoding set",
       "maxnumofcombopversion": "The maximum number of versions of the combination tool, such as setting a maximum of 10 versions, will automatically delete the oldest and inactive version when creating and saving the 11th version."
+    },
+    "paramtype": {
+      "checkbox": "check",
+      "date": "Date Pickers ",
+      "desc": {
+        "checkbox": "Check selector",
+        "date": "date time picker ",
+        "filepath": "Output file path parameters",
+        "json": "Support JSON objects and JSON arrays, input content must be in legal Json format",
+        "multiselect": "Single selection dropdown selector",
+        "node": "Generate script variables based on node related information, but do not assign them to the node for execution",
+        "phase": "Selectable stages",
+        "radio": "Single choice selector",
+        "textarea": "Can input strings and numbers",
+        "time": "Time selector",
+        "userselect": "Used to select system users, groups, and roles"
+      },
+      "multiselect": "Multiple selection dropdown",
+      "node": "Node information",
+      "password": "Can input numbers or strings, displayed as ciphertext on the page",
+      "phase": "stage",
+      "radio": "Single Choice",
+      "runnergroup": "Actuator group",
+      "select": "Single selection dropdown",
+      "switch": "switch",
+      "text": "Text parameters, can input strings, numbers",
+      "textarea": "Text Field",
+      "userselect": "User selector"
     }
   },
   "nfae": {
@@ -4159,6 +4187,7 @@
       "execmode": "Execution method",
       "executeconfig": "Execution Objectives",
       "executeparam": "Execution parameters",
+      "existrunnerorsqlexecmode": "Stage with Runner or SQL execution mode",
       "freeparam": "Free parameter",
       "globalparam": "Global parameters",
       "groupdesc": "Automation platform",

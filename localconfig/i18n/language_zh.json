@@ -369,6 +369,34 @@
     "autoexectenantconfig": {
       "autoexecjoblogencoding": "自动化作业日志字符编码集合",
       "maxnumofcombopversion": "组合工具版本数量上限，例如设置最多10个版本，创建保存第11个版本时，自动删除掉最老的一个，非激活状态的版本。"
+    },
+    "paramtype": {
+      "checkbox": "复选",
+      "date": "日期选择器",
+      "desc": {
+        "checkbox": "复选选择器",
+        "date": "日期时间选择器",
+        "filepath": "可输出文件路径参数",
+        "json": "支持json对象和json数组，输入内容需是合法Json格式",
+        "multiselect": "单选下拉选择器",
+        "node": "将节点的相关信息生成脚本变量，但不会分派到该节点执行",
+        "phase": "可选择阶段",
+        "radio": "单选选择器",
+        "textarea": "可输入字符串、数字",
+        "time": "时间选择器",
+        "userselect": "用于选择系统用户、分组、角色"
+      },
+      "multiselect": "多选下拉",
+      "node": "节点信息",
+      "password": "可输入数字或字符串，页面显示为密文",
+      "phase": "阶段",
+      "radio": "单选",
+      "runnergroup": "执行器组",
+      "select": "单选下拉",
+      "switch": "开关",
+      "text": "文本参数，可输入字符串、数字",
+      "textarea": "文本域",
+      "userselect": "用户选择器"
     }
   },
   "nfae": {
@@ -4211,6 +4239,7 @@
       "execmode": "执行方式",
       "executeconfig": "执行目标",
       "executeparam": "执行参数",
+      "existrunnerorsqlexecmode": "存在Runner或SQL执行方式的阶段",
       "freeparam": "自由参数",
       "globalparam": "全局参数",
       "groupdesc": "自动化平台",
