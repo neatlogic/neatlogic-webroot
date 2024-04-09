@@ -92,20 +92,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.-->
                 <version>3.2.2</version>
             </plugin>
         </plugins>
-        <resources>
-            <resource>
-                <directory>localconfig</directory>
-                <includes>
-                    <include>i18n/**</include>
-                </includes>
-            </resource>
-            <resource>
-                <directory>src/main/resources</directory>
-                <includes>
-                    <include>neatlogic/**</include>
-                </includes>
-            </resource>
-        </resources>
     </build>
     <dependencies>
         <dependency>
@@ -168,6 +154,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.-->
         <dependency>
             <groupId>com.neatlogic</groupId>
             <artifactId>neatlogic-document-online</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.neatlogic</groupId>
+            <artifactId>neatlogic-resources</artifactId>
         </dependency>
     </dependencies>
 </project>
