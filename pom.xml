@@ -80,6 +80,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.-->
                     <groupId>com.neatlogic</groupId>
                     <artifactId>neatlogic-itsm-commercial</artifactId>
                 </dependency>
+                <dependency>
+                    <groupId>com.neatlogic</groupId>
+                    <artifactId>neatlogic-tenant-commercial</artifactId>
+                </dependency>
             </dependencies>
         </profile>
     </profiles>
