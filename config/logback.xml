@@ -177,6 +177,28 @@
         </layout>
     </appender>
 
+    <!--方法执行时间日志-->
+    <appender name="MethodTimingAspectAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>${log4j.home}/methodTimingAspect.log</File>
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <FileNamePattern>methodTimingAspect.%i</FileNamePattern>
+            <MinIndex>1</MinIndex>
+            <MaxIndex>5</MaxIndex>
+        </rollingPolicy>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>ERROR</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <MaxFileSize>100MB</MaxFileSize>
+        </triggeringPolicy>
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %requestUrl - %msg%n
+            </Pattern>
+        </layout>
+    </appender>
+
     <appender name="notifyAuditAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <File>${log4j.home}/notifyAudit.log</File>
         <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
@@ -278,5 +300,8 @@
     </logger>
     <logger name="neatlogic.module.tagent.api.TagentStatusUpdateApi" level="ERROR" additivity="false">
         <appender-ref ref="tagentRegisterAndNettyAppender"/>
+    </logger>
+    <logger name="neatlogic.module.process.aop.MethodTimingAspect" level="ERROR" additivity="false">
+        <appender-ref ref="MethodTimingAspectAppender"/>
     </logger>
 </configuration>
