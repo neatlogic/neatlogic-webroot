@@ -115,7 +115,7 @@
             <onMismatch>DENY</onMismatch>
         </filter>
         <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
-            <MaxFileSize>1MB</MaxFileSize>
+            <MaxFileSize>100MB</MaxFileSize>
         </triggeringPolicy>
         <layout class="ch.qos.logback.classic.PatternLayout">
             <Pattern>[%-5level]%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %logger{36}[%line] [%tenant] %requestUrl - %msg%n
