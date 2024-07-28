@@ -8,7 +8,7 @@
     <appender name="debugAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <File>${log4j.home}/debug.log</File>
         <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
-            <FileNamePattern>debug.log.%i</FileNamePattern>
+            <FileNamePattern>${log4j.home}/debug.log.%i</FileNamePattern>
             <MinIndex>1</MinIndex>
             <MaxIndex>5</MaxIndex>
         </rollingPolicy>
@@ -43,7 +43,7 @@
     <appender name="infoAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <File>${log4j.home}/info.log</File>
         <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
-            <FileNamePattern>info.log.%i</FileNamePattern>
+            <FileNamePattern>${log4j.home}/info.log.%i</FileNamePattern>
             <MinIndex>1</MinIndex>
             <MaxIndex>5</MaxIndex>
         </rollingPolicy>
@@ -78,7 +78,7 @@
     <appender name="warnAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <File>${log4j.home}/warn.log</File>
         <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
-            <FileNamePattern>warn.log.%i</FileNamePattern>
+            <FileNamePattern>${log4j.home}/warn.log.%i</FileNamePattern>
             <MinIndex>1</MinIndex>
             <MaxIndex>5</MaxIndex>
         </rollingPolicy>
@@ -105,7 +105,7 @@
     <appender name="errorAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <File>${log4j.home}/error.log</File>
         <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
-            <FileNamePattern>error.log.%i</FileNamePattern>
+            <FileNamePattern>${log4j.home}/error.log.%i</FileNamePattern>
             <MinIndex>1</MinIndex>
             <MaxIndex>5</MaxIndex>
         </rollingPolicy>
@@ -115,7 +115,7 @@
             <onMismatch>DENY</onMismatch>
         </filter>
         <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
-            <MaxFileSize>100MB</MaxFileSize>
+            <MaxFileSize>1MB</MaxFileSize>
         </triggeringPolicy>
         <layout class="ch.qos.logback.classic.PatternLayout">
             <Pattern>[%-5level]%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %logger{36}[%line] [%tenant] %requestUrl - %msg%n
@@ -155,7 +155,7 @@
     <appender name="tagentRegisterAndNettyAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <File>${log4j.home}/tagentRegisterAndNetty.log</File>
         <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
-            <FileNamePattern>tagentRegisterAndNetty.%i</FileNamePattern>
+            <FileNamePattern>${log4j.home}/tagentRegisterAndNetty.%i</FileNamePattern>
             <MinIndex>1</MinIndex>
             <MaxIndex>5</MaxIndex>
         </rollingPolicy>
@@ -181,7 +181,7 @@
     <appender name="MethodTimingAspectAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <File>${log4j.home}/methodTimingAspect.log</File>
         <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
-            <FileNamePattern>methodTimingAspect.%i</FileNamePattern>
+            <FileNamePattern>${log4j.home}/methodTimingAspect.%i</FileNamePattern>
             <MinIndex>1</MinIndex>
             <MaxIndex>5</MaxIndex>
         </rollingPolicy>
@@ -202,7 +202,7 @@
     <appender name="notifyAuditAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <File>${log4j.home}/notifyAudit.log</File>
         <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
-            <FileNamePattern>notifyAudit.log.%i</FileNamePattern>
+            <FileNamePattern>${log4j.home}/notifyAudit.log.%i</FileNamePattern>
             <MinIndex>1</MinIndex>
             <MaxIndex>5</MaxIndex>
         </rollingPolicy>
@@ -224,7 +224,7 @@
     <appender name="deadlockAuditAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <File>${log4j.home}/deadlock.log</File>
         <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
-            <FileNamePattern>deadlock.log.%i</FileNamePattern>
+            <FileNamePattern>${log4j.home}/deadlock.log.%i</FileNamePattern>
             <MinIndex>1</MinIndex>
             <MaxIndex>5</MaxIndex>
         </rollingPolicy>
@@ -246,7 +246,7 @@
     <appender name="sqlTimeoutAuditAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <File>${log4j.home}/sqlTimeout.log</File>
         <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
-            <FileNamePattern>sqlTimeout.log.%i</FileNamePattern>
+            <FileNamePattern>${log4j.home}/sqlTimeout.log.%i</FileNamePattern>
             <MinIndex>1</MinIndex>
             <MaxIndex>5</MaxIndex>
         </rollingPolicy>
