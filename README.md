@@ -35,3 +35,10 @@ direct.url =
 //sso免登录，url中获取的ticket的参数名
 sso.ticket.key = 
 ```
+
+# 使用minio作为存储介质，否则默认使用本地文件存储
+file.handler = MINIO
+minio.url = http://localhost:8989
+minio.bucket = neatlogic
+minio.accesskey = minioadmin
+minio.secretkey = minioadmin
