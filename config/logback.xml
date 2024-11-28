@@ -265,12 +265,43 @@
         </layout>
     </appender>
 
+    <appender name="springAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>${log4j.home}/spring.log</File>
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <FileNamePattern>${log4j.home}/spring.log.%i</FileNamePattern>
+            <MinIndex>1</MinIndex>
+            <MaxIndex>5</MaxIndex>
+        </rollingPolicy>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>DEBUG</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <triggeringPolicy
+                class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <MaxFileSize>100MB</MaxFileSize>
+        </triggeringPolicy>
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>[%-5level]%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %logger{36}[%line] [%tenant] %requestUrl- %msg%n
+            </Pattern>
+        </layout>
+    </appender>
+
     <root level="${log4j.priority}">
         <appender-ref ref="DEBUG"/>
         <appender-ref ref="INFO"/>
         <appender-ref ref="WARN"/>
         <appender-ref ref="ERROR"/>
+        <appender-ref ref="CONSOLE" />
     </root>
+
+    <logger name="org.springframework" level="DEBUG" >
+        <appender-ref ref="springAppender"/>
+    </logger>
+    <logger name="org.springframework.beans.factory" level="DEBUG" ><appender-ref ref="springAppender"/></logger>
+
+    <logger name="org.springframework.context" level="DEBUG" ><appender-ref ref="springAppender"/></logger>
+    <logger name="org.springframework.web" level="DEBUG" ><appender-ref ref="springAppender"/></logger>
 
     <logger name="org.mybatis" level="INFO" additivity="false"/>
     <logger name="ch.qos.logback" level="OFF" additivity="false"/>

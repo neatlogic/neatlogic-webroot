@@ -119,10 +119,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.-->
             <artifactId>neatlogic-itsm</artifactId>
         </dependency>
 
-        <dependency>
+<!--        <dependency>
             <groupId>com.neatlogic</groupId>
             <artifactId>neatlogic-change</artifactId>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>com.neatlogic</groupId>
             <artifactId>neatlogic-report</artifactId>
