@@ -11,4 +11,3 @@ bin
 logs/
 /config2/config.properties
 /config2/logback.xml
-.flattened-pom.xml
