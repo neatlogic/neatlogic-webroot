@@ -10,6 +10,6 @@ bin
 .idea
 .flattened-pom.xml
 logs/
-.flattened-pom.xml
 /config2/config.properties
 /config2/logback.xml
+.DS_Store
