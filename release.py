@@ -4,18 +4,22 @@ import argparse
 import re
 from packaging.version import Version 
 from datetime import datetime
+from pathlib import Path
 
 parser = argparse.ArgumentParser(description="neatlogic封板脚本.更详细的执行日志在同级目录release.log")
 parser.add_argument("-s","--source",required=True, help="来源分支｜标签，如：A merge B, 这里的值应该填B")
 parser.add_argument("-t","--target",help="目标分支｜标签，如：A merge B, 这里的值应该填A。不填则说明是创建缺陷分支")
-parser.add_argument("-tt","--test",help="是否测试，默认非测试；1:测试")
+parser.add_argument("-tt","--test",help="是否测试，默认非测试；1:测试。如果测试则将release-test.txt里的模块进行测试")
+parser.add_argument("-f","--force",help="用于根据develop3.0.0来重置relase分支")
 args = parser.parse_args()
 logFile = open("release.log", "a")
 versionPattern = r'^\d+\.\d+\.\d+$'  # 版本号格式：x.x.x（数字.数字.数字）
 if args.test == "1":
-    mvnDependencyFile = "release-test.txt"
+    mvnDependencyFile = Path("release-test.txt")
 else:
-    mvnDependencyFile = "release.txt" 
+    mvnDependencyFile = Path("release.txt")
+    if mvnDependencyFile.exists() and mvnDependencyFile.stat().st_size > 0:
+        print(f"{mvnDependencyFile} 文件需存在且不能为空。请在release.py同级目录下至从analyDependecy.py解析依赖生成所需模块，核实需执行的模块后重新执行release.py")
 
 def updatePomVersion(new_version, index,tag):
     print(f"INFO::::::::::::  更新第{index}个<{tag}>为{new_version}")
@@ -277,6 +281,95 @@ def getPomVersion(pom_path, index, tag):
     old_version = indexMatch.group(3) 
     return old_version.strip()
 
+def releaseFromDevelop():
+    """
+    从develop封版到release
+    """
+    result = runShellCommand("git ls-remote origin |grep refs/heads/release")
+    if not bool(result.stdout.strip()):
+        current_version=getReleaseCurrentVersion()
+        newReleaseVersion = getNewVersion(current_version,False)
+        print(f"INFO::::::::::::  即将封板的默认新版本号为：{newReleaseVersion}")
+        userInputVersion = input(f"输入 'y'，使用默认新版本号{newReleaseVersion}封板，或另外指定输入版本号(格式xxx.xxx.xxx)封板，其他输入退出: ").strip()
+        if userInputVersion == 'y':  # 用户直接回车，默认使用 newReleaseVersion
+            print(f"已选择默认新版本号{newReleaseVersion}封板")
+        elif not re.match(versionPattern, userInputVersion):  
+            print("错误：版本号格式不正确，应为 x.x.x（如 1.2.3）")
+            exit()
+        else:
+            print(f"已使用指定版本: {userInputVersion}")
+            newReleaseVersion = userInputVersion
+        with open(mvnDependencyFile, "r") as f:
+            for module in f:
+                module = module.strip()
+                if os.path.isdir(f"../{module}"):
+                    os.chdir(f"../{module}")
+                    print(f"===== {module} 封版本 =====") 
+                    #再执行一次release merge到develop分支,确保release的代码都合并到develop，否则容易冲突
+                    developMergeReleaseSingle(module)
+                    print(f"INFO::::::::::::  develop merge到release")
+                    runCommand(["git", "checkout", "release"])
+                    runCommand(["git", "merge","--no-commit", "develop3.0.0"])
+                    runCommand(["git", "checkout","HEAD","--", "pom.xml"])
+                    if module == "neatlogic-parent":
+                        updatePomVersion(newReleaseVersion,1,"revision")
+                    else:
+                        updatePomVersion(newReleaseVersion,2,"version")
+                    runCommand(["git", "add", "pom.xml"])
+                    runCommand(["git", "commit","-m", f"merge develop & update version thrd add 1:{newReleaseVersion}"])
+                    runCommand(["git", "push"])
+                    print(f"INFO::::::::::::  release打上新封板分支标签{newReleaseVersion}")
+                    runCommand(["git", "tag", "-d", newReleaseVersion],False)
+                    runCommand(["git", "push", "origin", f":refs/tags/{newReleaseVersion}"],False)
+                    runCommand(["git", "tag", newReleaseVersion])
+                    runCommand(["git", "push", "origin", newReleaseVersion])
+                    print(" ") 
+                    os.chdir("../neatlogic-webroot")
+    else:
+        createRelease()
+
+def createRelease():
+    """
+    TODO release不存在创建release分支
+    """
+    print("release不存在创建release分支")
+
+def resetRealse():
+    '''用develop3.0.0来重置relase分支'''
+    with open(mvnDependencyFile, "r") as f:
+            for module in f:
+                module = module.strip()
+                if os.path.isdir(f"../{module}"):
+                    os.chdir(f"../{module}")
+                    print(f"===== {module} 强推develop3.0.0 到release分支 =====") 
+                    # 1. 切换到 develop3.0.0 并创建 release 分支
+                    runCommand(["git", "checkout", "develop3.0.0"])
+                    if module == "neatlogic-parent":
+                        updatePomVersion("3.2.0",1,"revision")
+                    else:
+                        updatePomVersion("3.2.0",2,"version")
+                    # 2. 判断本地是否存在 release 分支
+                    result = runShellCommand(f"git branch --list release")
+                    if result.stdout.strip():
+                        # 存在则删除
+                        runCommand(["git","branch","-D","release"])
+
+                    runCommand(["git","checkout","-b","release"])
+
+                    # 3. 强制推送 release 分支到远端
+                    runCommand(["git", "push", "origin","release", "--force"])
+                    #本地切到远端release
+                    runCommand(["git", "branch", "--set-upstream-to=origin/release","release"])
+
+                    # 4. 修改版本
+                    runCommand(["git","add","pom.xml"])
+                    runCommand(["git","commit","-m","reset release"])
+                    runCommand(["git","push"])
+                    # 5.切回develop3.0.0
+                    runCommand(["git","checkout","develop3.0.0"])
+                    os.chdir("../neatlogic-webroot")
+
+
 def runCommand(cmd,isCheck=True):
     logFile.write("\n")
     timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
@@ -298,6 +391,10 @@ if __name__ == "__main__":
         createFixBugBranch()
     elif args.source == 'develop3.0.0' and not args.target:
         print("---------从develop3.0.0封板到release----------")
+        if args.force == "1":
+            resetRealse()
+        else:
+            releaseFromDevelop()
     else:
         print(f"--------- {args.target} merge {args.source}----------")
 
