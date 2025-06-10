@@ -80,4 +80,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.-->
         <url-pattern>/api/*</url-pattern>
     </filter-mapping>
 
+    <filter>
+        <filter-name>PathTraversalFilter</filter-name>
+        <filter-class>neatlogic.framework.filter.PathTraversalFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>PathTraversalFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
 </web-app>
