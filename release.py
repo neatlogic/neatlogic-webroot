@@ -1,9 +1,10 @@
 import os
-import subprocess
 import argparse
 import re
+import gitUtil
+import pomUtil
+import commandUtil
 from packaging.version import Version 
-from datetime import datetime
 from pathlib import Path
 
 parser = argparse.ArgumentParser(description="neatlogic封板脚本.更详细的执行日志在同级目录release.log")
@@ -12,7 +13,7 @@ parser.add_argument("-t","--target",help="目标分支｜标签，如：A merge 
 parser.add_argument("-tt","--test",help="是否测试，默认非测试；1:测试。如果测试则将release-test.txt里的模块进行测试")
 parser.add_argument("-f","--force",help="用于根据develop3.0.0来重置relase分支")
 args = parser.parse_args()
-logFile = open("release.log", "a")
+
 versionPattern = r'^\d+\.\d+\.\d+$'  # 版本号格式：x.x.x（数字.数字.数字）
 if args.test == "1":
     mvnDependencyFile = Path("release-test.txt")
@@ -21,192 +22,15 @@ else:
     if mvnDependencyFile.exists() and mvnDependencyFile.stat().st_size > 0:
         print(f"{mvnDependencyFile} 文件需存在且不能为空。请在release.py同级目录下至从analyDependecy.py解析依赖生成所需模块，核实需执行的模块后重新执行release.py")
 
-def updatePomVersion(new_version, index,tag):
-    print(f"INFO::::::::::::  更新第{index}个<{tag}>为{new_version}")
-    # 正则表达式：匹配带或不带命名空间的 标签
-    pattern = re.compile(
-        rf'(<(\w+:)?{tag}>)(.*?)(</(\2:)?{tag}>)',  # 使用 \2 确保闭合标签前缀一致
-        flags=re.DOTALL  # 支持多行内容
-    )
-
-    # 读取文件内容
-    with open("pom.xml", 'r', encoding='utf-8') as f:
-        content = f.read()
-
-    # 找到所有匹配项
-    matches = list(pattern.finditer(content))
-    if len(matches) < index:
-        raise Exception(f"错误：文件中至少需要{index}个 <{tag}> 标签")
-
-    # 获取第n个匹配项
-    indexMatch = matches[index-1]  # 关键修复点：正确获取第二个匹配项
-
-    # 提取内容部分的起止位置（第3个捕获组）
-    start_pos = indexMatch.start(3)
-    end_pos = indexMatch.end(3)
-
-    # 替换内容（保留标签结构）
-    new_content = content[:start_pos] + new_version + content[end_pos:]
-
-    # 写回文件
-    with open('pom.xml', 'w', encoding='utf-8') as f:
-        f.write(new_content)
-
-
-def getReleaseCurrentVersion():
-    """
-    返回parent的release分支pom版本
-    """
-    os.chdir("../neatlogic-parent")
-    runCommand(["git", "checkout", "release"])
-    runCommand(["git", "pull"])
-    current_version = getPomVersion("pom.xml", 1,'revision')
-    if not current_version:
-        raise Exception("无法获parent的revision里面获取版本")
-    print(f"parent的release分支pom版本为：{current_version}")
-    os.chdir("../neatlogic-webroot")
-    return current_version
-
-
-def getReleaseMaxVersion():
-    """
-    获取release最新的分支版本
-    """
-    current_version=getReleaseCurrentVersion()
-    os.chdir("../neatlogic-parent")
-    #获取远程仓库中所有 release 相关的分支，返回最大的版本号
-    result = runShellCommand("git ls-remote --heads origin")
-    os.chdir("../neatlogic-webroot")
-    branches = result.stdout.splitlines()
-
-    #print("Git 远程分支列表：")  # 打印远程分支
-    #for b in branches:
-    #    print(b)
-    version_pattern = re.compile(r"refs/heads/(\d+\.\d+\.\d+)")
-
-    versions = []
-    for branch in branches:
-        match = version_pattern.search(branch)
-        if match:
-            #print(f"匹配到版本: {match.group(1)}")  # 打印匹配到的版本
-            versions.append(Version(match.group(1)))
-    if versions:
-        maxVersion = str(max(versions)) 
-        print(f"parent的最大分支号为：{maxVersion}")
-        return maxVersion
-    else:
-        return current_version
-
-
-    if Version(maxVersion) > Version(current_version):
-        return maxVersion
-    else:
-        return current_version
-
-def getMaxVersion():
-    os.chdir("../neatlogic-parent")
-    result = runShellCommand("git ls-remote --heads origin")
-    os.chdir("../neatlogic-webroot")
-
-    branches = result.stdout.splitlines()
-    versionPattern = re.compile(r"refs/heads/(\d+\.\d+\.\d+)")
-
-    versions = []
-    for branch in branches:
-        match = versionPattern.search(branch)
-        if match:
-            versions.append(Version(match.group(1)))
-
-    if not versions:
-        return args.source  # 没有匹配的版本，返回当前版本
-
-    # 解析 args.source 的前两位
-    currentVerObj = Version(args.source)
-    currentPrefix = f"{currentVerObj.major}.{currentVerObj.minor}"
-
-    # 过滤出相同前两位的版本
-    filtered_versions = [v for v in versions if f"{v.major}.{v.minor}" == currentPrefix]
-
-    if filtered_versions:
-        maxVersion = str(max(filtered_versions))  # 获取最大版本
-    else:
-        maxVersion = args.source  # 没有匹配的则返回当前版本
-
-    print(f"parent的最大分支为：{maxVersion}")
-
-    return maxVersion if Version(maxVersion) > currentVerObj else args.source
-
-def getMaxTag():
-    """
-    根据来源tag，获取parent前大版本的最大小版本tag，比如-s 3.1.1 ,远端存在3.1.2、3.1.3、3.2.3，返回3.1.3
-    """
-    os.chdir("../neatlogic-parent")
-    result = runShellCommand("git ls-remote --tags origin")
-    os.chdir("../neatlogic-webroot")
-
-    branches = result.stdout.splitlines()
-    versionPattern = re.compile(r"refs/tags/(\d+\.\d+\.\d+)")
-
-    versions = []
-    for branch in branches:
-        match = versionPattern.search(branch)
-        if match:
-            versions.append(Version(match.group(1)))
-
-    if not versions:
-        return args.source  # 如果不是x.x.x格式，说明是别的分支（如：develop3.0.0）直接返回
-
-    try:
-        currentVerObj = Version(args.source)
-        currentPrefix = f"{currentVerObj.major}.{currentVerObj.minor}"
-    except:
-        return args.source  # 如果解析失败，直接返回当前版本
-
-    # 过滤出相同前两位的版本
-    filtered_versions = [v for v in versions if f"{v.major}.{v.minor}" == currentPrefix]
-
-    if filtered_versions:
-        maxVersion = str(max(filtered_versions))  # 获取最大版本
-    else:
-        print(f"错误：不存在tags为 {currentPrefix}.x 的版本,请先封版")
-        exit()
-
-    print(f"parent的最大tag为：{maxVersion}")
-
-    return maxVersion
-
-def getNewVersion(version,isBug):
-    """
-    生成即将封板的新版本号：
-    - 若 `isBug=True`，则 PATCH 版本号（第三位）+1
-    - 若 `isBug=False`，则 MINOR 版本号（第二位）+1，PATCH 版本号重置为 0
-    """
-    # 解析版本号（假设是 `major.minor.patch` 格式）
-    version_parts = version.split(".")
-    if len(version_parts) < 3:
-        raise Exception(f"错误：版本号 {version} 格式不正确，必须是 `major.minor.patch`")
-
-    major, minor, patch = map(int, version_parts[:3])  # 确保转换为整数
-
-    if isBug:
-        patch += 1  # Bug 修复版本，第三位 +1
-    else:
-        minor += 1  # 正常发布版本，第二位 +1
-        patch = 0   # 第三位重置为 0
-
-    # 生成新的版本号
-    new_version = f"{major}.{minor}.{patch}"
-    return new_version
-
 
 def createFixBugBranch():
     """
     创建缺陷分支，用于修复bug
     """
     if args.source == "release":
-        releaseCurrentMaxVersion = getReleaseMaxVersion()
+        releaseCurrentMaxVersion = pomUtil.getReleaseMaxVersion()
     else:
-        releaseCurrentMaxVersion = getMaxTag()
+        releaseCurrentMaxVersion = pomUtil.getMaxTag()
         maxVersion = getMaxVersion()
         if Version(maxVersion) > Version(releaseCurrentMaxVersion):
             print(f"INFO::::::::::::  存在比parent前大版本的最大版本tag'{releaseCurrentMaxVersion}'还要大的分支'{maxVersion}'，所以parent当前大版本的最大小版本为：{maxVersion}")
@@ -232,158 +56,136 @@ def createFixBugBranch():
                 os.chdir(f"../{module}")
                 print(f"===== {module} 新建缺陷分支{newVersion} =====")
                 # 获取所有的分支和标签
-                runCommand(["git", "fetch", "origin"])
+                commandUtil.runCommand(["git", "fetch", "origin"])
                 if args.source == "release":
-                    runCommand(["git", "branch", "-D", newVersion],False)
-                    runCommand(["git", "checkout", "-b", newVersion, "origin/release"], False)
+                    commandUtil.runCommand(["git", "branch", "-D", newVersion],False)
+                    commandUtil.runCommand(["git", "checkout", "-b", newVersion, "origin/release"], False)
                 else:
-                    tags = runCommand(["git", "ls-remote", "--tags", "origin", args.source])
+                    tags = commandUtil.runCommand(["git", "ls-remote", "--tags", "origin", args.source])
                     if tags:
                         # 如果是 tag，基于 tag 创建分支
-                        runCommand(["git", "checkout", "-b", newVersion, f"tags/{args.source}"])
+                        commandUtil.runCommand(["git", "checkout", "-b", newVersion, f"tags/{args.source}"])
                     else:
                         print("错误：tag{args.source}不存在")
                         exit()
   
                 if module == "neatlogic-parent":
-                    updatePomVersion(newVersion,1,"revision")
+                    pomUtil.updatePomVersion(newVersion,1,"revision")
+                elif module == "neatlogic-alert-plugin-base":
+                    pomUtil.updatePomVersion(newReleaseVersion,1,"version")
                 else:
-                    updatePomVersion(newVersion,2,"version")
-                runCommand(["git", "add", "pom.xml"])
-                runCommand(["git", "commit", "-m", "##@@release_update_pom@@##"])
-                runCommand(["git", "push","--set-upstream","origin",f"{newVersion}"])
+                    pomUtil.updatePomVersion(newVersion,2,"version")
+                commandUtil.runCommand(["git", "add", "pom.xml"])
+                commandUtil.runCommand(["git", "commit", "-m", "##@@release_update_pom@@##"])
+                commandUtil.runCommand(["git", "push","--set-upstream","origin",f"{newVersion}"])
                 print(" ")
             else:
                 print(f"模块{module}不存在")
     os.chdir("../neatlogic-webroot")
 
-def getPomVersion(pom_path, index, tag):
-    # 正则表达式：匹配带或不带命名空间的 标签
-    pattern = re.compile(
-        rf'(<(\w+:)?{tag}>)(.*?)(</(\2:)?{tag}>)',  # 使用 \2 确保闭合标签前缀一致
-        flags=re.DOTALL  # 支持多行内容
-    )
-
-    # 读取文件内容
-    with open(pom_path, 'r', encoding='utf-8') as f:
-        content = f.read()
-
-    # 找到所有匹配项
-    matches = list(pattern.finditer(content))
-    if len(matches) < index:
-        print(f"warn：文件中至少需要{index}个 <{tag}> 标签")
-        return
-
-    # 获取第n个匹配项
-    indexMatch = matches[index-1]  # 关键修复点：正确获取第二个匹配项
-
-    # 提取内容部分的起止位置（第3个捕获组）
-    old_version = indexMatch.group(3) 
-    return old_version.strip()
-
-def releaseFromDevelop():
+def releaseFromDevelop(resetAll = "0"):
     """
     从develop封版到release
     """
-    result = runShellCommand("git ls-remote origin |grep refs/heads/release")
-    if not bool(result.stdout.strip()):
-        current_version=getReleaseCurrentVersion()
-        newReleaseVersion = getNewVersion(current_version,False)
-        print(f"INFO::::::::::::  即将封板的默认新版本号为：{newReleaseVersion}")
-        userInputVersion = input(f"输入 'y'，使用默认新版本号{newReleaseVersion}封板，或另外指定输入版本号(格式xxx.xxx.xxx)封板，其他输入退出: ").strip()
-        if userInputVersion == 'y':  # 用户直接回车，默认使用 newReleaseVersion
-            print(f"已选择默认新版本号{newReleaseVersion}封板")
-        elif not re.match(versionPattern, userInputVersion):  
-            print("错误：版本号格式不正确，应为 x.x.x（如 1.2.3）")
-            exit()
-        else:
-            print(f"已使用指定版本: {userInputVersion}")
-            newReleaseVersion = userInputVersion
-        with open(mvnDependencyFile, "r") as f:
-            for module in f:
-                module = module.strip()
-                if os.path.isdir(f"../{module}"):
-                    os.chdir(f"../{module}")
-                    print(f"===== {module} 封版本 =====") 
+    current_version= gitUtil.getReleaseCurrentVersion()
+    newReleaseVersion = gitUtil.getNewVersion(current_version,False)
+    print(f"INFO::::::::::::  即将封板的版本号为：{newReleaseVersion}")
+    userInputVersion = input(f"输入 'y'，使用版本号{newReleaseVersion}封板，或另外指定输入版本号(格式xxx.xxx.xxx)封板，其他输入退出: ").strip()
+    if userInputVersion == 'y':  # 用户直接回车，默认使用 newReleaseVersion
+        print(f"已选择版本号{newReleaseVersion}封板")
+    elif not re.match(versionPattern, userInputVersion):  
+        print("错误：版本号格式不正确，应为 x.x.x（如 1.2.3）")
+        exit()
+    else:
+        print(f"已使用指定版本: {userInputVersion}")
+        newReleaseVersion = userInputVersion
+    with open(mvnDependencyFile, "r") as f:
+        for module in f:
+            module = module.strip()
+            if os.path.isdir(f"../{module}"):
+                os.chdir(f"../{module}")
+                print(f"===== {module} 封版本 =====") 
+                if gitUtil.hasRemoteReleaseBranch():
                     #再执行一次release merge到develop分支,确保release的代码都合并到develop，否则容易冲突
-                    developMergeReleaseSingle(module)
+                    #moduleDevelopMergeRelease(module, 'develop3.0.0','release')
                     print(f"INFO::::::::::::  develop merge到release")
-                    runCommand(["git", "checkout", "release"])
-                    runCommand(["git", "merge","--no-commit", "develop3.0.0"])
-                    runCommand(["git", "checkout","HEAD","--", "pom.xml"])
+                    commandUtil.runCommand(["git", "fetch", "origin"])
+                    commandUtil.runCommand(["git", "checkout", "release"])
+                    commandUtil.runCommand(["git", "merge","--no-commit", "develop3.0.0"])
+                    commandUtil.runCommand(["git", "checkout","HEAD","--", "pom.xml"])
                     if module == "neatlogic-parent":
-                        updatePomVersion(newReleaseVersion,1,"revision")
+                        pomUtil.updatePomVersion(newReleaseVersion,1,"revision")
+                    elif module == "neatlogic-alert-plugin-base":
+                        pomUtil.updatePomVersion(newReleaseVersion,1,"version")
                     else:
-                        updatePomVersion(newReleaseVersion,2,"version")
-                    runCommand(["git", "add", "pom.xml"])
-                    runCommand(["git", "commit","-m", f"merge develop & update version thrd add 1:{newReleaseVersion}"])
-                    runCommand(["git", "push"])
+                        pomUtil.updatePomVersion(newReleaseVersion,2,"version")
+                    commandUtil.runCommand(["git", "add", "pom.xml"])
+                    commandUtil.runCommand(["git", "commit","-m", f"merge develop & update version second add 1:{newReleaseVersion}"],False)
+                    commandUtil.runCommand(["git", "push"])
                     print(f"INFO::::::::::::  release打上新封板分支标签{newReleaseVersion}")
-                    runCommand(["git", "tag", "-d", newReleaseVersion],False)
-                    runCommand(["git", "push", "origin", f":refs/tags/{newReleaseVersion}"],False)
-                    runCommand(["git", "tag", newReleaseVersion])
-                    runCommand(["git", "push", "origin", newReleaseVersion])
+                    commandUtil.runCommand(["git", "tag", "-d", newReleaseVersion],False)
+                    commandUtil.runCommand(["git", "push", "origin", f":refs/tags/{newReleaseVersion}"],False)
+                    commandUtil.runCommand(["git", "tag", newReleaseVersion])
+                    commandUtil.runCommand(["git", "push", "origin", newReleaseVersion])
                     print(" ") 
                     os.chdir("../neatlogic-webroot")
+                else:
+                    createModuleRelease(newReleaseVersion)
+
+def moduleDevelopMergeRelease(module,source,target):
+    """
+    将 release 分支的代码合并回 develop 分支，防止出现因未合并导致冲突的问题
+    """
+    print(f"INFO::::::::::::  {module} - develop merge release 开始")
+    # 确保在模块目录下
+    commandUtil.runCommand(["git", "checkout", target])
+    commandUtil.runCommand(["git", "pull", "origin", target])
+    commandUtil.runCommand(["git", "merge", "--no-commit", source])
+    commandUtil.runCommand(["git", "checkout","HEAD","--", "pom.xml"])
+    
+    # 如果发生冲突，让用户解决
+    conflict_result = commandUtil.runShellCommand("git ls-files -u", False)
+    if conflict_result.stdout.strip():
+        print(f"WARNING::::::::::::  {module} - 存在合并冲突，请手动解决冲突后提交")
+        exit(1)
+
+    commandUtil.runCommand(["git", "commit", "-m", "merge release into develop"])
+    commandUtil.runCommand(["git", "push", "origin", "develop3.0.0"])
+    print(f"INFO::::::::::::  {module} - develop merge release 完成")
+
+def createModuleRelease(newReleaseVersion):
+    '''模块机遇develop3.0.0创建relase分支'''
+    print(f"{module}模块release分支不存在或重新创建release分支：强推develop3.0.0 到release分支") 
+    # 1. 切换到 develop3.0.0 并创建 release 分支
+    commandUtil.runCommand(["git", "checkout", "develop3.0.0"])
+    commandUtil.runCommand(["git", "pull"])
+    if module == "neatlogic-parent":
+        pomUtil.updatePomVersion(newReleaseVersion,1,"revision")
+    elif module == "neatlogic-alert-plugin-base":
+        pomUtil.updatePomVersion(newReleaseVersion,1,"version")
     else:
-        createRelease()
+        pomUtil.updatePomVersion(newReleaseVersion,2,"version")
+    # 2. 判断本地是否存在 release 分支
+    result = commandUtil.runShellCommand(f"git branch --list release")
+    if result.stdout.strip():
+        # 存在则删除
+        commandUtil.runCommand(["git","branch","-D","release"])
+    commandUtil.runCommand(["git","checkout","-b","release"])
 
-def createRelease():
-    """
-    TODO release不存在创建release分支
-    """
-    print("release不存在创建release分支")
+    # 3. 强制推送 release 分支到远端
+    commandUtil.runCommand(["git", "push", "origin","release", "--force"])
+    #本地切到远端release
+    commandUtil.runCommand(["git", "branch", "--set-upstream-to=origin/release","release"])
 
-def resetRealse():
-    '''用develop3.0.0来重置relase分支'''
-    with open(mvnDependencyFile, "r") as f:
-            for module in f:
-                module = module.strip()
-                if os.path.isdir(f"../{module}"):
-                    os.chdir(f"../{module}")
-                    print(f"===== {module} 强推develop3.0.0 到release分支 =====") 
-                    # 1. 切换到 develop3.0.0 并创建 release 分支
-                    runCommand(["git", "checkout", "develop3.0.0"])
-                    if module == "neatlogic-parent":
-                        updatePomVersion("3.2.0",1,"revision")
-                    else:
-                        updatePomVersion("3.2.0",2,"version")
-                    # 2. 判断本地是否存在 release 分支
-                    result = runShellCommand(f"git branch --list release")
-                    if result.stdout.strip():
-                        # 存在则删除
-                        runCommand(["git","branch","-D","release"])
-
-                    runCommand(["git","checkout","-b","release"])
-
-                    # 3. 强制推送 release 分支到远端
-                    runCommand(["git", "push", "origin","release", "--force"])
-                    #本地切到远端release
-                    runCommand(["git", "branch", "--set-upstream-to=origin/release","release"])
-
-                    # 4. 修改版本
-                    runCommand(["git","add","pom.xml"])
-                    runCommand(["git","commit","-m","reset release"])
-                    runCommand(["git","push"])
-                    # 5.切回develop3.0.0
-                    runCommand(["git","checkout","develop3.0.0"])
-                    os.chdir("../neatlogic-webroot")
+    # 4. 修改版本
+    commandUtil.runCommand(["git","add","pom.xml"])
+    commandUtil.runCommand(["git","commit","-m","create|reset release"])
+    commandUtil.runCommand(["git","push"])
+    # 5.切回develop3.0.0
+    commandUtil.runCommand(["git","checkout","develop3.0.0"])
 
 
-def runCommand(cmd,isCheck=True):
-    logFile.write("\n")
-    timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-    logFile.write(f"[{timestamp}] 执行命令: {' '.join(cmd)}\n")
-    logFile.flush() 
-    return subprocess.run(cmd, check=isCheck, stdout=logFile, stderr=logFile)
 
-
-def runShellCommand(cmd,isCheck=True):
-    logFile.write("\n")
-    timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-    logFile.write(f"[{timestamp}] 执行命令: {cmd}\n")
-    logFile.flush() 
-    return subprocess.run(cmd, check=isCheck, capture_output=True, text=True, shell=True)
 
 if __name__ == "__main__":
     if args.source != 'develop3.0.0' and not args.target:
@@ -392,9 +194,9 @@ if __name__ == "__main__":
     elif args.source == 'develop3.0.0' and not args.target:
         print("---------从develop3.0.0封板到release----------")
         if args.force == "1":
-            resetRealse()
-        else:
             releaseFromDevelop()
+        else:
+            releaseFromDevelop(args.force)
     else:
         print(f"--------- {args.target} merge {args.source}----------")
 

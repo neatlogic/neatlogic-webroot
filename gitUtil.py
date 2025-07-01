@@ -1,0 +1,222 @@
+import subprocess
+import os
+import commandUtil
+import pomUtil
+from packaging.version import Version 
+
+IGNORABLE_GIT_ERRORS = [
+    "nothing to commit", 
+    "working tree clean", 
+    "up to date", 
+    "Already up to date"
+]
+
+def gitCommand(cmd, cwd=None, ignore_warn_patterns=None, fatal=True):
+    """
+    通用 git 命令执行器
+
+    参数：
+    - cmd: list[str]，命令数组
+    - cwd: 可选工作目录
+    - ignore_warn_patterns: 可忽略的错误提示（附加）
+    - fatal: 是否在非忽略错误时抛出异常
+
+    返回：
+    - subprocess.CompletedProcess 对象
+    """
+    print(f"[GIT-CMD] {' '.join(cmd)}")
+    result = subprocess.run(
+        cmd,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True,
+        cwd=cwd
+    )
+
+    # 合并输出方便分析
+    output = result.stdout + result.stderr
+    output_lower = output.lower()
+
+    # 检查可忽略的 git 错误信息
+    ignore_patterns = IGNORABLE_GIT_ERRORS.copy()
+    if ignore_warn_patterns:
+        ignore_patterns.extend(ignore_warn_patterns)
+
+    for pattern in ignore_patterns:
+        if pattern.lower() in output_lower:
+            print(f"[INFO] 可忽略的git提示: “{pattern}”，跳过错误处理")
+            return result
+
+    if result.returncode != 0:
+        print(f"[ERROR] 命令执行失败: {' '.join(cmd)}")
+        print("[STDOUT]", result.stdout.strip())
+        print("[STDERR]", result.stderr.strip())
+        if fatal:
+            raise subprocess.CalledProcessError(result.returncode, cmd, result.stdout, result.stderr)
+
+    return result
+
+def hasRemoteReleaseBranch():
+    """
+    判断远程仓库是否存在 release 分支
+    返回：
+        True - 存在
+        False - 不存在
+    """
+    cmd = ["git", "ls-remote", "--heads", "origin", "release"]
+    result = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+    
+    if result.returncode != 0:
+        print(f"[ERROR] 获取远程分支失败: {result.stderr.strip()}")
+        raise RuntimeError("git ls-remote 执行失败")
+
+    if result.stdout.strip():
+        print("[INFO] 远程存在 release 分支")
+        return True
+    else:
+        print("[INFO] 远程不存在 release 分支")
+        return False
+
+def getReleaseCurrentVersion():
+    """
+    返回parent的release分支pom版本
+    """
+    os.chdir("../neatlogic-parent")
+    commandUtil.runCommand(["git", "checkout", "release"])
+    commandUtil.runCommand(["git", "pull"])
+    current_version = pomUtil.getPomVersion("pom.xml", 1,'revision')
+    if not current_version:
+        raise Exception("无法获parent的revision里面获取版本")
+    print(f"parent的release分支pom版本为：{current_version}")
+    os.chdir("../neatlogic-webroot")
+    return current_version
+
+def getReleaseMaxVersion():
+    """
+    获取release最新的分支版本
+    """
+    current_version=getReleaseCurrentVersion()
+    os.chdir("../neatlogic-parent")
+    #获取远程仓库中所有 release 相关的分支，返回最大的版本号
+    result = runShellCommand("git ls-remote --heads origin")
+    os.chdir("../neatlogic-webroot")
+    branches = result.stdout.splitlines()
+
+    #print("Git 远程分支列表：")  # 打印远程分支
+    #for b in branches:
+    #    print(b)
+    version_pattern = re.compile(r"refs/heads/(\d+\.\d+\.\d+)")
+
+    versions = []
+    for branch in branches:
+        match = version_pattern.search(branch)
+        if match:
+            #print(f"匹配到版本: {match.group(1)}")  # 打印匹配到的版本
+            versions.append(Version(match.group(1)))
+    if versions:
+        maxVersion = str(max(versions)) 
+        print(f"parent的最大分支号为：{maxVersion}")
+        return maxVersion
+    else:
+        return current_version
+
+
+    if Version(maxVersion) > Version(current_version):
+        return maxVersion
+    else:
+        return current_version
+
+def getMaxVersion():
+    os.chdir("../neatlogic-parent")
+    result = runShellCommand("git ls-remote --heads origin")
+    os.chdir("../neatlogic-webroot")
+
+    branches = result.stdout.splitlines()
+    versionPattern = re.compile(r"refs/heads/(\d+\.\d+\.\d+)")
+
+    versions = []
+    for branch in branches:
+        match = versionPattern.search(branch)
+        if match:
+            versions.append(Version(match.group(1)))
+
+    if not versions:
+        return args.source  # 没有匹配的版本，返回当前版本
+
+    # 解析 args.source 的前两位
+    currentVerObj = Version(args.source)
+    currentPrefix = f"{currentVerObj.major}.{currentVerObj.minor}"
+
+    # 过滤出相同前两位的版本
+    filtered_versions = [v for v in versions if f"{v.major}.{v.minor}" == currentPrefix]
+
+    if filtered_versions:
+        maxVersion = str(max(filtered_versions))  # 获取最大版本
+    else:
+        maxVersion = args.source  # 没有匹配的则返回当前版本
+
+    print(f"parent的最大分支为：{maxVersion}")
+
+    return maxVersion if Version(maxVersion) > currentVerObj else args.source
+
+def getMaxTag():
+    """
+    根据来源tag，获取parent前大版本的最大小版本tag，比如-s 3.1.1 ,远端存在3.1.2、3.1.3、3.2.3，返回3.1.3
+    """
+    os.chdir("../neatlogic-parent")
+    result = runShellCommand("git ls-remote --tags origin")
+    os.chdir("../neatlogic-webroot")
+
+    branches = result.stdout.splitlines()
+    versionPattern = re.compile(r"refs/tags/(\d+\.\d+\.\d+)")
+
+    versions = []
+    for branch in branches:
+        match = versionPattern.search(branch)
+        if match:
+            versions.append(Version(match.group(1)))
+
+    if not versions:
+        return args.source  # 如果不是x.x.x格式，说明是别的分支（如：develop3.0.0）直接返回
+
+    try:
+        currentVerObj = Version(args.source)
+        currentPrefix = f"{currentVerObj.major}.{currentVerObj.minor}"
+    except:
+        return args.source  # 如果解析失败，直接返回当前版本
+
+    # 过滤出相同前两位的版本
+    filtered_versions = [v for v in versions if f"{v.major}.{v.minor}" == currentPrefix]
+
+    if filtered_versions:
+        maxVersion = str(max(filtered_versions))  # 获取最大版本
+    else:
+        print(f"错误：不存在tags为 {currentPrefix}.x 的版本,请先封版")
+        exit()
+
+    print(f"parent的最大tag为：{maxVersion}")
+
+    return maxVersion
+
+def getNewVersion(version,isBug):
+    """
+    生成即将封板的新版本号：
+    - 若 `isBug=True`，则 PATCH 版本号（第三位）+1
+    - 若 `isBug=False`，则 MINOR 版本号（第二位）+1，PATCH 版本号重置为 0
+    """
+    # 解析版本号（假设是 `major.minor.patch` 格式）
+    version_parts = version.split(".")
+    if len(version_parts) < 3:
+        raise Exception(f"错误：版本号 {version} 格式不正确，必须是 `major.minor.patch`")
+
+    major, minor, patch = map(int, version_parts[:3])  # 确保转换为整数
+
+    if isBug:
+        patch += 1  # Bug 修复版本，第三位 +1
+    else:
+        minor += 1  # 正常发布版本，第二位 +1
+        patch = 0   # 第三位重置为 0
+
+    # 生成新的版本号
+    new_version = f"{major}.{minor}.{patch}"
+    return new_version
