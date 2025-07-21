@@ -13,6 +13,6 @@ logs/
 /config2/config.properties
 /config2/logback.xml
 .DS_Store
-release-test.txt
-release.log
-release.txt
+release/config/release-test.txt
+release/log/release.log
+release/config/release.txt

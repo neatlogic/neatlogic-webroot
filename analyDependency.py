@@ -83,7 +83,7 @@ def analyzeDependencies():
         for dep in failed_deps:
             print(f" - {dep}")
     converted_deps.append("neatlogic-parent")
-    writeDependenciesToFile(converted_deps, "release.txt")
+    writeDependenciesToFile(converted_deps, "release/config/release.txt")
 
 if __name__ == "__main__":
     analyzeDependencies()

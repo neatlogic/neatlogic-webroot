@@ -1,8 +1,38 @@
+#  Copyright (C) 2025  深圳极向量科技有限公司 All Rights Reserved.
+#
+#  This program is free software: you can redistribute it and/or modify
+#  it under the terms of the GNU Affero General Public License as published by
+#  the Free Software Foundation, either version 3 of the License, or
+#  (at your option) any later version.
+#
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU Affero General Public License for more details.
+#
+#  You should have received a copy of the GNU Affero General Public License
+#  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+#  This program is free software: you can redistribute it and/or modify
+#  it under the terms of the GNU Affero General Public License as published by
+#  the Free Software Foundation, either version 3 of the License, or
+#  (at your option) any later version.
+#
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU Affero General Public License for more details.
+#
+#  You should have received a copy of the GNU Affero General Public License
+#  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
 import subprocess
 import os
-import commandUtil
-import pomUtil
-from packaging.version import Version 
+import re
+from lib import commandUtil
+from lib import pomUtil
+from packaging.version import Version
+from context.globalContext import GlobalContext
 
 IGNORABLE_GIT_ERRORS = [
     "nothing to commit", 
@@ -81,25 +111,27 @@ def getReleaseCurrentVersion():
     """
     返回parent的release分支pom版本
     """
-    os.chdir("../neatlogic-parent")
+    projectPath = GlobalContext.get("projectPath")
+    os.chdir(f"{projectPath}/neatlogic-parent")
     commandUtil.runCommand(["git", "checkout", "release"])
     commandUtil.runCommand(["git", "pull"])
     current_version = pomUtil.getPomVersion("pom.xml", 1,'revision')
     if not current_version:
         raise Exception("无法获parent的revision里面获取版本")
     print(f"parent的release分支pom版本为：{current_version}")
-    os.chdir("../neatlogic-webroot")
+    os.chdir(f"{projectPath}/neatlogic-webroot")
     return current_version
 
 def getReleaseMaxVersion():
     """
     获取release最新的分支版本
     """
+    projectPath = GlobalContext.get("projectPath")
     current_version=getReleaseCurrentVersion()
-    os.chdir("../neatlogic-parent")
+    os.chdir(f"{projectPath}/neatlogic-parent")
     #获取远程仓库中所有 release 相关的分支，返回最大的版本号
-    result = runShellCommand("git ls-remote --heads origin")
-    os.chdir("../neatlogic-webroot")
+    result = commandUtil.runShellCommand("git ls-remote --heads origin")
+    os.chdir(f"{projectPath}/neatlogic-webroot")
     branches = result.stdout.splitlines()
 
     #print("Git 远程分支列表：")  # 打印远程分支
@@ -120,16 +152,17 @@ def getReleaseMaxVersion():
     else:
         return current_version
 
-
     if Version(maxVersion) > Version(current_version):
         return maxVersion
     else:
         return current_version
 
 def getMaxVersion():
-    os.chdir("../neatlogic-parent")
-    result = runShellCommand("git ls-remote --heads origin")
-    os.chdir("../neatlogic-webroot")
+    projectPath = GlobalContext.get("projectPath")
+    source = GlobalContext.get("source")
+    os.chdir(f"{projectPath}/neatlogic-parent")
+    result = commandUtil.runShellCommand("git ls-remote --heads origin")
+    os.chdir(f"{projectPath}/neatlogic-webroot")
 
     branches = result.stdout.splitlines()
     versionPattern = re.compile(r"refs/heads/(\d+\.\d+\.\d+)")
@@ -141,10 +174,10 @@ def getMaxVersion():
             versions.append(Version(match.group(1)))
 
     if not versions:
-        return args.source  # 没有匹配的版本，返回当前版本
+        return source  # 没有匹配的版本，返回当前版本
 
     # 解析 args.source 的前两位
-    currentVerObj = Version(args.source)
+    currentVerObj = Version(source)
     currentPrefix = f"{currentVerObj.major}.{currentVerObj.minor}"
 
     # 过滤出相同前两位的版本
@@ -153,17 +186,19 @@ def getMaxVersion():
     if filtered_versions:
         maxVersion = str(max(filtered_versions))  # 获取最大版本
     else:
-        maxVersion = args.source  # 没有匹配的则返回当前版本
+        maxVersion = source  # 没有匹配的则返回当前版本
 
     print(f"parent的最大分支为：{maxVersion}")
 
-    return maxVersion if Version(maxVersion) > currentVerObj else args.source
+    return maxVersion if Version(maxVersion) > currentVerObj else source
 
 def getMaxTag():
     """
     根据来源tag，获取parent前大版本的最大小版本tag，比如-s 3.1.1 ,远端存在3.1.2、3.1.3、3.2.3，返回3.1.3
     """
-    os.chdir("../neatlogic-parent")
+    projectPath = GlobalContext.get("projectPath")
+    source = GlobalContext.get("source")
+    os.chdir(f"{projectPath}/neatlogic-parent")
     result = runShellCommand("git ls-remote --tags origin")
     os.chdir("../neatlogic-webroot")
 
@@ -177,13 +212,13 @@ def getMaxTag():
             versions.append(Version(match.group(1)))
 
     if not versions:
-        return args.source  # 如果不是x.x.x格式，说明是别的分支（如：develop3.0.0）直接返回
+        return source  # 如果不是x.x.x格式，说明是别的分支（如：develop3.0.0）直接返回
 
     try:
-        currentVerObj = Version(args.source)
+        currentVerObj = Version(source)
         currentPrefix = f"{currentVerObj.major}.{currentVerObj.minor}"
     except:
-        return args.source  # 如果解析失败，直接返回当前版本
+        return source  # 如果解析失败，直接返回当前版本
 
     # 过滤出相同前两位的版本
     filtered_versions = [v for v in versions if f"{v.major}.{v.minor}" == currentPrefix]
@@ -220,3 +255,44 @@ def getNewVersion(version,isBug):
     # 生成新的版本号
     new_version = f"{major}.{minor}.{patch}"
     return new_version
+
+def getMaxTag():
+    """
+    根据来源tag，获取parent前大版本的最大小版本tag，比如-s 3.1.1 ,远端存在3.1.2、3.1.3、3.2.3，返回3.1.3
+    """
+    projectPath = GlobalContext.get("projectPath")
+    source = GlobalContext.get("source")
+    os.chdir(f"{projectPath}/neatlogic-parent")
+    result = commandUtil.runShellCommand("git ls-remote --tags origin")
+    os.chdir(f"{projectPath}/neatlogic-webroot")
+
+    branches = result.stdout.splitlines()
+    versionPattern = re.compile(r"refs/tags/(\d+\.\d+\.\d+)")
+
+    versions = []
+    for branch in branches:
+        match = versionPattern.search(branch)
+        if match:
+            versions.append(Version(match.group(1)))
+
+    if not versions:
+        return source  # 如果不是x.x.x格式，说明是别的分支（如：develop3.0.0）直接返回
+
+    try:
+        currentVerObj = Version(source)
+        currentPrefix = f"{currentVerObj.major}.{currentVerObj.minor}"
+    except:
+        return source  # 如果解析失败，直接返回当前版本
+
+    # 过滤出相同前两位的版本
+    filtered_versions = [v for v in versions if f"{v.major}.{v.minor}" == currentPrefix]
+
+    if filtered_versions:
+        maxVersion = str(max(filtered_versions))  # 获取最大版本
+    else:
+        print(f"错误：不存在tags为 {currentPrefix}.x 的版本,请先封版")
+        exit()
+
+    print(f"parent的最大tag为：{maxVersion}")
+
+    return maxVersion
