@@ -33,7 +33,7 @@ from packaging.version import Version
 from context.globalContext import GlobalContext
 
 def updatePomVersion(new_version, index,tag):
-    print(f"INFO::::::::::::  更新第{index}个<{tag}>为{new_version}")
+    #print(f"INFO::::::::::::  更新第{index}个<{tag}>为{new_version}")
     # 正则表达式：匹配带或不带命名空间的 标签
     pattern = re.compile(
         rf'(<(\w+:)?{tag}>)(.*?)(</(\2:)?{tag}>)',  # 使用 \2 确保闭合标签前缀一致

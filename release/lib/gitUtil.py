@@ -86,14 +86,14 @@ def gitCommand(cmd, cwd=None, ignore_warn_patterns=None, fatal=True):
 
     return result
 
-def hasRemoteReleaseBranch():
+def hasRemoteBranch(branch):
     """
     判断远程仓库是否存在 release 分支
     返回：
         True - 存在
         False - 不存在
     """
-    cmd = ["git", "ls-remote", "--heads", "origin", "release"]
+    cmd = ["git", "ls-remote", "--heads", "origin", branch]
     result = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
     
     if result.returncode != 0:
@@ -101,25 +101,28 @@ def hasRemoteReleaseBranch():
         raise RuntimeError("git ls-remote 执行失败")
 
     if result.stdout.strip():
-        print("[INFO] 远程存在 release 分支")
+        print(f"[INFO] 远程存在 {branch} 分支")
         return True
     else:
-        print("[INFO] 远程不存在 release 分支")
+        print(f"[INFO] 远程不存在 {branch} 分支")
         return False
 
-def getReleaseCurrentVersion():
+def getReleaseCurrentVersion(module = "neatlogic-parent"):
     """
     返回parent的release分支pom版本
     """
     projectPath = GlobalContext.get("projectPath")
-    os.chdir(f"{projectPath}/neatlogic-parent")
+    os.chdir(f"{projectPath}/{module}")
     commandUtil.runCommand(["git", "checkout", "release"])
     commandUtil.runCommand(["git", "pull"])
-    current_version = pomUtil.getPomVersion("pom.xml", 1,'revision')
+    if module == "neatlogic-parent":
+        current_version =pomUtil.getPomVersion("pom.xml", 1, "revision")
+    elif module == "neatlogic-alert-plugin-base":
+        current_version =pomUtil.getPomVersion("pom.xml", 1, "version")
+    else:
+        current_version =pomUtil.getPomVersion("pom.xml", 2, "version")
     if not current_version:
-        raise Exception("无法获parent的revision里面获取版本")
-    print(f"parent的release分支pom版本为：{current_version}")
-    os.chdir(f"{projectPath}/neatlogic-webroot")
+        raise Exception(f"无法获{module}的revision里面获取版本")
     return current_version
 
 def getReleaseMaxVersion():
@@ -296,3 +299,45 @@ def getMaxTag():
     print(f"parent的最大tag为：{maxVersion}")
 
     return maxVersion
+
+def getDiffFiles(branchA, branchB):
+    cmd = ['git', 'diff', '--name-only', f'{branchA}..{branchB}']
+    result = subprocess.run(cmd, capture_output=True, text=True)
+    files = result.stdout.strip().split('\n')
+    return [f for f in files if f]
+
+def getFileDiff(branchA, branchB, filePath):
+    cmd = ['git', 'diff', f'{branchA}..{branchB}', '--', filePath]
+    result = subprocess.run(cmd, capture_output=True, text=True)
+    return result.stdout
+
+def onlyPomVersionChanged(diffText):
+    # 只检查 diff 中是否只有 version 标签被修改
+    lines = diffText.splitlines()
+    added = [line[1:].strip() for line in lines if line.startswith('+') and not line.startswith('+++')]
+    removed = [line[1:].strip() for line in lines if line.startswith('-') and not line.startswith('---')]
+
+    allLines = added + removed
+    if not allLines:
+        return False
+
+    versionPattern = re.compile(r'<version>.*</version>')
+
+    for line in allLines:
+        if not versionPattern.fullmatch(line):
+            return False
+    return True
+
+def isBranchChange(branchA, branchB):
+    diffFiles = getDiffFiles(branchA, branchB)
+    if not diffFiles:
+        return False  # 没有文件变动
+
+    for file in diffFiles:
+        if file != 'pom.xml':
+            return True  # 除了 pom.xml 外还有文件改动
+        else:
+            diffText = getFileDiff(branchA, branchB, 'pom.xml')
+            if not onlyPomVersionChanged(diffText):
+                return True  # pom.xml 改的不只是 version
+    return False  # 只有 pom.xml 中 version 被改了

@@ -1,6 +1,5 @@
 /target
 *.iml
-bin
 .class
 .svn
 .settings

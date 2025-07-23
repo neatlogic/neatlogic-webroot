@@ -51,117 +51,88 @@ else:
     if mvnDependencyFile.exists() and mvnDependencyFile.stat().st_size > 0:
         print(f"{mvnDependencyFile} 文件需存在且不能为空。请在release.py同级目录下至从analyDependecy.py解析依赖生成所需模块，核实需执行的模块后重新执行release.py")
 
-
-def createFixBugBranch():
-    """
-    创建缺陷分支，用于修复bug
-    """
-    if args.source == "release":
-        releaseCurrentMaxVersion = pomUtil.getReleaseMaxVersion()
-    else:
-        releaseCurrentMaxVersion = gitUtil.getMaxTag()
-        maxVersion = gitUtil.getMaxVersion()
-        if Version(maxVersion) > Version(releaseCurrentMaxVersion):
-            print(f"INFO::::::::::::  存在比parent前大版本的最大版本tag'{releaseCurrentMaxVersion}'还要大的分支'{maxVersion}'，所以parent当前大版本的最大小版本为：{maxVersion}")
-            releaseCurrentMaxVersion=maxVersion
+def getModules(targetBranch):
+    targetModules = []
+    with open(mvnDependencyFile, "r") as f: 
+        if not targetBranch:
+            targetModules = [module.strip() for module in f]
         else:
-            print(f"INFO::::::::::::  不存在比该tag还要大的分支，parent当前大版本的最大小版本为：{releaseCurrentMaxVersion}")
-    newVersion = pomUtil.getNewVersion(releaseCurrentMaxVersion,True)
-    print(f"INFO::::::::::::  即将创建新缺陷分支为：{releaseCurrentMaxVersion} {newVersion}")
-    userInputVersion = input(f"输入 'y'，将默认创建新缺陷分支{newVersion}，或另外指定输入缺陷分支(格式xxx.xxx.xxx)，其他输入退出: ").strip()
-    if userInputVersion == 'y':  # 用户直接回车，默认使用 newVersion
-        print(f"创建默认新缺陷分支{newVersion}")
-    elif not re.match(versionPattern, userInputVersion):  
-        print("错误：版本号格式不正确，应为 x.x.x（如 1.2.3）")
-        exit()
-    else:
-        print(f"已使用指定缺陷分支创建: {userInputVersion}")
-        newVersion = userInputVersion
+            for module in f:
+                module = module.strip()
+                if gitUtil.hasRemoteBranch(targetBranch):
+                    targetModules.append(module)
+    return targetModules
 
-    with open(mvnDependencyFile, "r") as f:
-        for module in f:
-            module = module.strip()
-            if os.path.isdir(f"../{module}"):
-                os.chdir(f"../{module}")
-                print(f"===== {module} 新建缺陷分支{newVersion} =====")
-                # 获取所有的分支和标签
+
+def releaseBatchMergeTargetBranch(targetBranch, resetAll = "0"):
+    """
+    从sourceBranch合到release
+    """
+    moduleVersionMap = {}
+    modules = getModules(targetBranch)
+    isNeedRelease = False
+    for module in modules:
+        module = module.strip()
+        if os.path.isdir(f"{projectPath}/{module}"):
+            os.chdir(f"{projectPath}/{module}")
+            if gitUtil.hasRemoteBranch("release"):
+                if gitUtil.isBranchChange("release",targetBranch):
+                    if not isNeedRelease:
+                        print("INFO::::::::::::  存在需求需要封板的模块")
+                    isNeedRelease = True
+                    currentModuleReleaseVersion= gitUtil.getReleaseCurrentVersion(module)
+                    newModuleReleaseVersion = gitUtil.getNewVersion(currentModuleReleaseVersion, False)
+                    moduleVersionMap[module] = newModuleReleaseVersion
+                    print(f"{module}： {currentModuleReleaseVersion} -》{newModuleReleaseVersion}")
+            else:
+                #新模块
+                currentParentReleaseVersion= gitUtil.getReleaseCurrentVersion()
+                moduleVersionMap[module] = currentParentReleaseVersion
+                print(f"{module}： New -》{currentParentReleaseVersion}")
+    if isNeedRelease:
+        userInputVersion = input(f"输入 'y'，请核实以上模块需要封版。其他输入退出: ").strip()
+        if userInputVersion != 'y':  # 用户直接回车，默认使用 newReleaseVersion
+            print("取消封版")
+            exit()
+    else:
+        print("INFO::::::::::::  不存在需求需要封板的模块")
+        exit()
+
+    for module in modules:
+        module = module.strip()
+        if os.path.isdir(f"{projectPath}/{module}"):
+            os.chdir(f"{projectPath}/{module}")
+            print(f"===== {module} 封版本 =====")
+            newReleaseVersion = moduleVersionMap[module] 
+            if gitUtil.hasRemoteBranch("release"):
+                print(f"{targetBranch} merge到release")
                 commandUtil.runCommand(["git", "fetch", "origin"])
-                if args.source == "release":
-                    commandUtil.runCommand(["git", "branch", "-D", newVersion], False)
-                    commandUtil.runCommand(["git", "checkout", "-b", newVersion, "origin/release"], False)
-                else:
-                    tags = commandUtil.runCommand(["git", "ls-remote", "--tags", "origin", args.source])
-                    if tags:
-                        # 如果是 tag，基于 tag 创建分支
-                        commandUtil.runCommand(["git", "checkout", "-b", newVersion, f"tags/{args.source}"])
-                    else:
-                        print("错误：tag{args.source}不存在")
-                        exit()
-  
+                commandUtil.runCommand(["git", "checkout", targetBranch])
+                commandUtil.runCommand(["git", "pull"])
+                
+                commandUtil.runCommand(["git", "checkout", "release"])
+                commandUtil.runCommand(["git", "pull"])
+                commandUtil.runCommand(["git", "merge", "--no-commit", "develop3.0.0"])
+                commandUtil.runCommand(["git", "checkout", "HEAD", "--", "pom.xml"])
                 if module == "neatlogic-parent":
-                    pomUtil.updatePomVersion(newVersion, 1, "revision")
+                    pomUtil.updatePomVersion(newReleaseVersion, 1, "revision")
                 elif module == "neatlogic-alert-plugin-base":
                     pomUtil.updatePomVersion(newReleaseVersion, 1, "version")
                 else:
-                    pomUtil.updatePomVersion(newVersion, 2, "version")
+                    pomUtil.updatePomVersion(newReleaseVersion, 2, "version")
                 commandUtil.runCommand(["git", "add", "pom.xml"])
-                commandUtil.runCommand(["git", "commit", "-m", "##@@createFixBugBranch@@##"])
-                commandUtil.runCommand(["git", "push", "--set-upstream", "origin", f"{newVersion}"])
-                print(" ")
+                commandUtil.runCommand(["git", "commit", "-m", f"merge develop & freeze:{newReleaseVersion}"], False)
+                commandUtil.runCommand(["git", "push"])
+                print(f"release打上新封板分支标签{newReleaseVersion}")
+                commandUtil.runCommand(["git", "tag", "-d", newReleaseVersion], False)
+                commandUtil.runCommand(["git", "push", "origin", f":refs/tags/{newReleaseVersion}"], False)
+                commandUtil.runCommand(["git", "tag", newReleaseVersion])
+                commandUtil.runCommand(["git", "push", "origin", newReleaseVersion])
+                print(" ") 
+                os.chdir(webrootPath)
             else:
-                print(f"模块{module}不存在")
-    os.chdir(webrootPath)
+                createModuleRelease(newReleaseVersion)
 
-def releaseFromDevelop(resetAll = "0"):
-    """
-    从develop封版到release
-    """
-    current_version= gitUtil.getReleaseCurrentVersion()
-    newReleaseVersion = gitUtil.getNewVersion(current_version, False)
-    print(f"INFO::::::::::::  即将封板的版本号为：{newReleaseVersion}")
-    userInputVersion = input(f"输入 'y'，使用版本号{newReleaseVersion}封板，或另外指定输入版本号(格式xxx.xxx.xxx)封板，其他输入退出: ").strip()
-    if userInputVersion == 'y':  # 用户直接回车，默认使用 newReleaseVersion
-        print(f"已选择版本号{newReleaseVersion}封板")
-    elif not re.match(versionPattern, userInputVersion):  
-        print("错误：版本号格式不正确，应为 x.x.x（如 1.2.3）")
-        exit()
-    else:
-        print(f"已使用指定版本: {userInputVersion}")
-        newReleaseVersion = userInputVersion
-    with open(mvnDependencyFile, "r") as f:
-        for module in f:
-            module = module.strip()
-            if os.path.isdir(f"../{module}"):
-                os.chdir(f"../{module}")
-                print(f"===== {module} 封版本 =====") 
-                if gitUtil.hasRemoteReleaseBranch():
-                    #再执行一次release merge到develop分支,确保release的代码都合并到develop，否则容易冲突
-                    #moduleDevelopMergeRelease(module, 'develop3.0.0','release')
-                    print(f"INFO::::::::::::  develop merge到release")
-                    commandUtil.runCommand(["git", "pull"])
-                    commandUtil.runCommand(["git", "fetch", "origin"])
-                    commandUtil.runCommand(["git", "checkout", "release"])
-                    commandUtil.runCommand(["git", "pull"])
-                    commandUtil.runCommand(["git", "merge", "--no-commit", "develop3.0.0"])
-                    commandUtil.runCommand(["git", "checkout", "HEAD", "--", "pom.xml"])
-                    if module == "neatlogic-parent":
-                        pomUtil.updatePomVersion(newReleaseVersion, 1, "revision")
-                    elif module == "neatlogic-alert-plugin-base":
-                        pomUtil.updatePomVersion(newReleaseVersion, 1, "version")
-                    else:
-                        pomUtil.updatePomVersion(newReleaseVersion, 2, "version")
-                    commandUtil.runCommand(["git", "add", "pom.xml"])
-                    commandUtil.runCommand(["git", "commit", "-m", f"merge develop & update version second add 1:{newReleaseVersion}"], False)
-                    commandUtil.runCommand(["git", "push"])
-                    print(f"INFO::::::::::::  release打上新封板分支标签{newReleaseVersion}")
-                    commandUtil.runCommand(["git", "tag", "-d", newReleaseVersion], False)
-                    commandUtil.runCommand(["git", "push", "origin", f":refs/tags/{newReleaseVersion}"], False)
-                    commandUtil.runCommand(["git", "tag", newReleaseVersion])
-                    commandUtil.runCommand(["git", "push", "origin", newReleaseVersion])
-                    print(" ") 
-                    os.chdir(webrootPath)
-                else:
-                    createModuleRelease(newReleaseVersion)
 
 def moduleDevelopMergeRelease(module,source,target):
     """
@@ -216,18 +187,24 @@ def createModuleRelease(newReleaseVersion):
     commandUtil.runCommand(["git", "checkout", "develop3.0.0"])
 
 
-
-
 if __name__ == "__main__":
-    if args.source != 'develop3.0.0' and not args.target:
-        print("---------创建缺陷分支----------")
-        createFixBugBranch()
-    elif args.source == 'develop3.0.0' and not args.target:
+    if args.source == 'develop3.0.0' and not args.target:
         print("---------从develop3.0.0封板到release----------")
-        if args.force == "1":
-            releaseFromDevelop()
-        else:
-            releaseFromDevelop(args.force)
+        releaseBatchMergeSourceBranch(args.force)
     else:
-        print(f"--------- {args.target} merge {args.source}----------")
 
+        if not args.source:
+            print("来源分支 -s 不能为空")
+            exit()
+        if not gitUtil.hasRemoteBranch(args.source):
+            print(f"来源分支 -s {args.source}在远端不存在")
+            exit()  
+        if not args.target:
+            print("目标分支不能为空")
+            exit()
+        if not gitUtil.hasRemoteBranch(args.target):
+            print(f"目标分支 -s {args.target}在远端不存在")
+            exit()
+
+
+        print(f"--------- {args.target} merge {args.source}----------")
