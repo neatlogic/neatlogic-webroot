@@ -5,13 +5,7 @@
 .settings
 .classpath
 .project
-.idea/
 .idea
 .flattened-pom.xml
 logs/
-/config2/config.properties
-/config2/logback.xml
 .DS_Store
-release/config/release-test.txt
-release/log/release.log
-release/config/release.txt
