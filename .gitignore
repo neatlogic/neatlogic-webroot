@@ -9,3 +9,4 @@
 .flattened-pom.xml
 logs/
 .DS_Store
+/config2/
