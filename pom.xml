@@ -87,6 +87,22 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.-->
                 </dependency>
                 <dependency>
                     <groupId>com.neatlogic</groupId>
+                    <artifactId>neatlogic-informant</artifactId>
+                </dependency>
+                <dependency>
+                    <groupId>com.neatlogic</groupId>
+                    <artifactId>neatlogic-informant-base</artifactId>
+                </dependency>
+                <dependency>
+                    <groupId>com.neatlogic</groupId>
+                    <artifactId>neatlogic-ai</artifactId>
+                </dependency>
+                <dependency>
+                    <groupId>com.neatlogic</groupId>
+                    <artifactId>neatlogic-ai-base</artifactId>
+                </dependency>
+                <dependency>
+                    <groupId>com.neatlogic</groupId>
                     <artifactId>neatlogic-master</artifactId>
                 </dependency>
             </dependencies>
@@ -171,6 +187,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.-->
         <dependency>
             <groupId>com.neatlogic</groupId>
             <artifactId>neatlogic-alert</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.neatlogic</groupId>
+            <artifactId>neatlogic-pasc</artifactId>
+            <version>0.3.0.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
 </project>
