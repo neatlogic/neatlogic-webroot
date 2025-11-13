@@ -24,7 +24,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.-->
     </parent>
     <artifactId>neatlogic-webroot</artifactId>
     <packaging>war</packaging>
-    <version>3.0.0</version>
+    <version>4.0.0</version>
     <profiles>
         <profile>
             <id>commercial</id>
