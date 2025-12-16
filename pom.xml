@@ -51,10 +51,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.-->
                 </dependency>
                 <dependency>
                     <groupId>com.neatlogic</groupId>
-                    <artifactId>neatlogic-document-online-commercial</artifactId>
-                </dependency>
-                <dependency>
-                    <groupId>com.neatlogic</groupId>
                     <artifactId>neatlogic-dr</artifactId>
                 </dependency>
                 <dependency>
@@ -183,10 +179,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.-->
         <dependency>
             <groupId>com.neatlogic</groupId>
             <artifactId>neatlogic-rdm</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.neatlogic</groupId>
-            <artifactId>neatlogic-document-online</artifactId>
         </dependency>
         <dependency>
             <groupId>com.neatlogic</groupId>
