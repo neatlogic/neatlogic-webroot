@@ -29,7 +29,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.-->
         <profile>
             <id>commercial</id>
             <dependencies>
-                <dependency>
+                <!--<dependency>
                     <groupId>com.neatlogic</groupId>
                     <artifactId>neatlogic-codehub</artifactId>
                 </dependency>
@@ -108,7 +108,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.-->
                 <dependency>
                     <groupId>com.neatlogic</groupId>
                     <artifactId>neatlogic-informant-base</artifactId>
-                </dependency>
+                </dependency>-->
+               <!-- <dependency>
+                    <groupId>com.neatlogic</groupId>
+                    <artifactId>neatlogic-master</artifactId>
+                </dependency>-->
             </dependencies>
         </profile>
     </profiles>
@@ -140,18 +144,18 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.-->
             <artifactId>neatlogic-itsm</artifactId>
         </dependency>
 
-        <dependency>
+       <!-- <dependency>
             <groupId>com.neatlogic</groupId>
             <artifactId>neatlogic-change</artifactId>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>com.neatlogic</groupId>
             <artifactId>neatlogic-report</artifactId>
         </dependency>
-        <dependency>
+      <!--  <dependency>
             <groupId>com.neatlogic</groupId>
             <artifactId>neatlogic-event</artifactId>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>com.neatlogic</groupId>
             <artifactId>neatlogic-knowledge</artifactId>
@@ -168,25 +172,25 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.-->
             <groupId>com.neatlogic</groupId>
             <artifactId>neatlogic-tagent</artifactId>
         </dependency>
-        <dependency>
+        <!--<dependency>
             <groupId>com.neatlogic</groupId>
             <artifactId>neatlogic-inspect</artifactId>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>com.neatlogic</groupId>
             <artifactId>neatlogic-deploy</artifactId>
         </dependency>
-        <dependency>
+        <!--<dependency>
             <groupId>com.neatlogic</groupId>
             <artifactId>neatlogic-rdm</artifactId>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>com.neatlogic</groupId>
             <artifactId>neatlogic-resources</artifactId>
         </dependency>
-        <dependency>
+        <!--<dependency>
             <groupId>com.neatlogic</groupId>
             <artifactId>neatlogic-alert</artifactId>
-        </dependency>
+        </dependency>-->
     </dependencies>
 </project>
