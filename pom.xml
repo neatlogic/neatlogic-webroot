@@ -25,11 +25,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.-->
     <artifactId>neatlogic-webroot</artifactId>
     <packaging>war</packaging>
     <version>4.0.0</version>
+
+
     <profiles>
         <profile>
             <id>commercial</id>
             <dependencies>
-                <!--<dependency>
+                <dependency>
                     <groupId>com.neatlogic</groupId>
                     <artifactId>neatlogic-codehub</artifactId>
                 </dependency>
@@ -37,82 +39,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.-->
                     <groupId>com.neatlogic</groupId>
                     <artifactId>neatlogic-codehub-base</artifactId>
                 </dependency>
-                <dependency>
-                    <groupId>com.neatlogic</groupId>
-                    <artifactId>neatlogic-rdm-commercial</artifactId>
-                </dependency>
-                <dependency>
-                    <groupId>com.neatlogic</groupId>
-                    <artifactId>neatlogic-cmdb-commercial</artifactId>
-                </dependency>
-                <dependency>
-                    <groupId>com.neatlogic</groupId>
-                    <artifactId>neatlogic-alert-commercial</artifactId>
-                </dependency>
-                <dependency>
-                    <groupId>com.neatlogic</groupId>
-                    <artifactId>neatlogic-dr</artifactId>
-                </dependency>
-                <dependency>
-                    <groupId>com.neatlogic</groupId>
-                    <artifactId>neatlogic-dr-base</artifactId>
-                </dependency>
-                <dependency>
-                    <groupId>com.neatlogic</groupId>
-                    <artifactId>neatlogic-diagram</artifactId>
-                </dependency>
-                <dependency>
-                    <groupId>com.neatlogic</groupId>
-                    <artifactId>neatlogic-pbc</artifactId>
-                </dependency>
-                <dependency>
-                    <groupId>com.neatlogic</groupId>
-                    <artifactId>neatlogic-itsm-commercial</artifactId>
-                </dependency>
-                <dependency>
-                    <groupId>com.neatlogic</groupId>
-                    <artifactId>neatlogic-tenant-commercial</artifactId>
-                </dependency>
-                <dependency>
-                    <groupId>com.neatlogic</groupId>
-                    <artifactId>neatlogic-autoexec-commercial</artifactId>
-                </dependency>
-                <dependency>
-                    <groupId>com.neatlogic</groupId>
-                    <artifactId>neatlogic-database</artifactId>
-                </dependency>
-                <dependency>
-                    <groupId>com.neatlogic</groupId>
-                    <artifactId>neatlogic-informant</artifactId>
-                </dependency>
-                <dependency>
-                    <groupId>com.neatlogic</groupId>
-                    <artifactId>neatlogic-informant-base</artifactId>
-                </dependency>
-                <dependency>
-                    <groupId>com.neatlogic</groupId>
-                    <artifactId>neatlogic-ai</artifactId>
-                </dependency>
-                <dependency>
-                    <groupId>com.neatlogic</groupId>
-                    <artifactId>neatlogic-ai-base</artifactId>
-                </dependency>
-                <dependency>
-                    <groupId>com.neatlogic</groupId>
-                    <artifactId>neatlogic-master</artifactId>
-                </dependency>
-                <dependency>
-                    <groupId>com.neatlogic</groupId>
-                    <artifactId>neatlogic-informant</artifactId>
-                </dependency>
-                <dependency>
-                    <groupId>com.neatlogic</groupId>
-                    <artifactId>neatlogic-informant-base</artifactId>
-                </dependency>-->
-               <!-- <dependency>
-                    <groupId>com.neatlogic</groupId>
-                    <artifactId>neatlogic-master</artifactId>
-                </dependency>-->
+
             </dependencies>
         </profile>
     </profiles>
@@ -144,18 +71,18 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.-->
             <artifactId>neatlogic-itsm</artifactId>
         </dependency>
 
-       <!-- <dependency>
-            <groupId>com.neatlogic</groupId>
-            <artifactId>neatlogic-change</artifactId>
-        </dependency>-->
+        <!-- <dependency>
+             <groupId>com.neatlogic</groupId>
+             <artifactId>neatlogic-change</artifactId>
+         </dependency>-->
         <dependency>
             <groupId>com.neatlogic</groupId>
             <artifactId>neatlogic-report</artifactId>
         </dependency>
-      <!--  <dependency>
-            <groupId>com.neatlogic</groupId>
-            <artifactId>neatlogic-event</artifactId>
-        </dependency>-->
+        <!--  <dependency>
+              <groupId>com.neatlogic</groupId>
+              <artifactId>neatlogic-event</artifactId>
+          </dependency>-->
         <dependency>
             <groupId>com.neatlogic</groupId>
             <artifactId>neatlogic-knowledge</artifactId>
