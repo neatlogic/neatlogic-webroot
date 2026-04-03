@@ -39,6 +39,18 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.-->
                     <groupId>com.neatlogic</groupId>
                     <artifactId>neatlogic-ai-base</artifactId>
                 </dependency>
+                <dependency>
+                    <groupId>com.neatlogic</groupId>
+                    <artifactId>neatlogic-monitor</artifactId>
+                </dependency>
+                <dependency>
+                    <groupId>com.neatlogic</groupId>
+                    <artifactId>neatlogic-monitor-base</artifactId>
+                </dependency>
+                <dependency>
+                    <groupId>com.neatlogic</groupId>
+                    <artifactId>neatlogic-inspect-commercial</artifactId>
+                </dependency>
 <!--                <dependency>
                     <groupId>com.neatlogic</groupId>
                     <artifactId>neatlogic-master</artifactId>
