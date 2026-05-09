@@ -47,6 +47,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.-->
                     <groupId>com.neatlogic</groupId>
                     <artifactId>neatlogic-monitor-base</artifactId>
                 </dependency>
+<!--                <dependency>-->
+<!--                    <groupId>com.neatlogic</groupId>-->
+<!--                    <artifactId>neatlogic-dr</artifactId>-->
+<!--                </dependency>-->
+<!--                <dependency>-->
+<!--                    <groupId>com.neatlogic</groupId>-->
+<!--                    <artifactId>neatlogic-dr-base</artifactId>-->
+<!--                </dependency>-->
                 <dependency>
                     <groupId>com.neatlogic</groupId>
                     <artifactId>neatlogic-inspect-commercial</artifactId>
@@ -126,10 +134,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.-->
             <groupId>com.neatlogic</groupId>
             <artifactId>neatlogic-cmdb</artifactId>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>com.neatlogic</groupId>-->
-<!--            <artifactId>neatlogic-tagent</artifactId>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>com.neatlogic</groupId>
+            <artifactId>neatlogic-tagent</artifactId>
+        </dependency>
         <dependency>
             <groupId>com.neatlogic</groupId>
             <artifactId>neatlogic-inspect</artifactId>
@@ -146,6 +154,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.-->
             <groupId>com.neatlogic</groupId>
             <artifactId>neatlogic-resources</artifactId>
         </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.neatlogic</groupId>-->
+<!--            <artifactId>neatlogic-deploy</artifactId>-->
+<!--        </dependency>-->
 <!--        <dependency>
             <groupId>com.neatlogic</groupId>
             <artifactId>neatlogic-pascbank</artifactId>
