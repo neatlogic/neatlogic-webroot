@@ -133,6 +133,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.-->
                     <groupId>com.neatlogic</groupId>
                     <artifactId>neatlogic-resourcepool</artifactId>
                 </dependency>
+                <dependency>
+                    <groupId>com.neatlogic</groupId>
+                    <artifactId>neatlogic-knowledge-commercial</artifactId>
+                </dependency>
             </dependencies>
         </profile>
     </profiles>
