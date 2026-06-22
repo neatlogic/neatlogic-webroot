@@ -137,6 +137,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.-->
                     <groupId>com.neatlogic</groupId>
                     <artifactId>neatlogic-knowledge-commercial</artifactId>
                 </dependency>
+                <dependency>
+                    <groupId>com.neatlogic</groupId>
+                    <artifactId>neatlogic-document-online-commercial</artifactId>
+                </dependency>
             </dependencies>
         </profile>
     </profiles>
@@ -151,6 +155,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.-->
         </plugins>
     </build>
     <dependencies>
+        <dependency>
+            <groupId>com.neatlogic</groupId>
+            <artifactId>neatlogic-document-online</artifactId>
+        </dependency>
         <dependency>
             <groupId>com.neatlogic</groupId>
             <artifactId>neatlogic-framework</artifactId>
