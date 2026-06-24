@@ -47,14 +47,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.-->
                     <groupId>com.neatlogic</groupId>
                     <artifactId>neatlogic-monitor-base</artifactId>
                 </dependency>
-<!--                <dependency>-->
-<!--                    <groupId>com.neatlogic</groupId>-->
-<!--                    <artifactId>neatlogic-fileservice-base</artifactId>-->
-<!--                </dependency>-->
-<!--                <dependency>-->
-<!--                    <groupId>com.neatlogic</groupId>-->
-<!--                    <artifactId>neatlogic-fileservice</artifactId>-->
-<!--                </dependency>-->
+                <dependency>
+                    <groupId>com.neatlogic</groupId>
+                    <artifactId>neatlogic-fileservice-base</artifactId>
+                </dependency>
+                <dependency>
+                    <groupId>com.neatlogic</groupId>
+                    <artifactId>neatlogic-fileservice</artifactId>
+                </dependency>
 <!--                <dependency>-->
 <!--                    <groupId>com.neatlogic</groupId>-->
 <!--                    <artifactId>neatlogic-dr</artifactId>-->
