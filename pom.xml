@@ -111,14 +111,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.-->
                 </dependency>
                 <dependency>
                     <groupId>com.neatlogic</groupId>
-                    <artifactId>neatlogic-informant</artifactId>
-                </dependency>
-                <dependency>
-                    <groupId>com.neatlogic</groupId>
-                    <artifactId>neatlogic-informant-base</artifactId>
-                </dependency>
-                <dependency>
-                    <groupId>com.neatlogic</groupId>
                     <artifactId>neatlogic-monitor</artifactId>
                 </dependency>
                 <dependency>
