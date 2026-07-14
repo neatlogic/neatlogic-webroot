@@ -79,14 +79,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.-->
                     <groupId>com.neatlogic</groupId>
                     <artifactId>neatlogic-master</artifactId>
                 </dependency>-->
-<!--                <dependency>-->
-<!--                    <groupId>com.neatlogic</groupId>-->
-<!--                    <artifactId>neatlogic-dr-base</artifactId>-->
-<!--                </dependency>-->
-<!--                <dependency>-->
-<!--                    <groupId>com.neatlogic</groupId>-->
-<!--                    <artifactId>neatlogic-dr</artifactId>-->
-<!--                </dependency>-->
+
+                <dependency>
+                    <groupId>com.neatlogic</groupId>
+                    <artifactId>neatlogic-alert-commercial</artifactId>
+                </dependency>
             </dependencies>
         </profile>
     </profiles>
@@ -109,10 +106,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.-->
             <groupId>com.neatlogic</groupId>
             <artifactId>neatlogic-tenant</artifactId>
         </dependency>
-<!--        <dependency>
+        <dependency>
             <groupId>com.neatlogic</groupId>
             <artifactId>neatlogic-alert</artifactId>
-        </dependency>-->
+        </dependency>
 <!--        <dependency>
             <groupId>com.neatlogic</groupId>
             <artifactId>neatlogic-database</artifactId>
