@@ -39,22 +39,22 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.-->
                     <groupId>com.neatlogic</groupId>
                     <artifactId>neatlogic-ai-base</artifactId>
                 </dependency>
-                <dependency>
-                    <groupId>com.neatlogic</groupId>
-                    <artifactId>neatlogic-monitor</artifactId>
-                </dependency>
-                <dependency>
-                    <groupId>com.neatlogic</groupId>
-                    <artifactId>neatlogic-monitor-base</artifactId>
-                </dependency>
-                <dependency>
-                    <groupId>com.neatlogic</groupId>
-                    <artifactId>neatlogic-fileservice-base</artifactId>
-                </dependency>
-                <dependency>
-                    <groupId>com.neatlogic</groupId>
-                    <artifactId>neatlogic-fileservice</artifactId>
-                </dependency>
+<!--                <dependency>-->
+<!--                    <groupId>com.neatlogic</groupId>-->
+<!--                    <artifactId>neatlogic-monitor</artifactId>-->
+<!--                </dependency>-->
+<!--                <dependency>-->
+<!--                    <groupId>com.neatlogic</groupId>-->
+<!--                    <artifactId>neatlogic-monitor-base</artifactId>-->
+<!--                </dependency>-->
+<!--                <dependency>-->
+<!--                    <groupId>com.neatlogic</groupId>-->
+<!--                    <artifactId>neatlogic-fileservice-base</artifactId>-->
+<!--                </dependency>-->
+<!--                <dependency>-->
+<!--                    <groupId>com.neatlogic</groupId>-->
+<!--                    <artifactId>neatlogic-fileservice</artifactId>-->
+<!--                </dependency>-->
 <!--                <dependency>-->
 <!--                    <groupId>com.neatlogic</groupId>-->
 <!--                    <artifactId>neatlogic-dr</artifactId>-->
@@ -71,19 +71,19 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.-->
                     <groupId>com.neatlogic</groupId>
                     <artifactId>neatlogic-autoexec-commercial</artifactId>
                 </dependency>
-                <dependency>
-                    <groupId>com.neatlogic</groupId>
-                    <artifactId>neatlogic-document-online-commercial</artifactId>
-                </dependency>
+<!--                <dependency>-->
+<!--                    <groupId>com.neatlogic</groupId>-->
+<!--                    <artifactId>neatlogic-document-online-commercial</artifactId>-->
+<!--                </dependency>-->
 <!--                <dependency>
                     <groupId>com.neatlogic</groupId>
                     <artifactId>neatlogic-master</artifactId>
                 </dependency>-->
 
-                <dependency>
-                    <groupId>com.neatlogic</groupId>
-                    <artifactId>neatlogic-alert-commercial</artifactId>
-                </dependency>
+<!--                <dependency>-->
+<!--                    <groupId>com.neatlogic</groupId>-->
+<!--                    <artifactId>neatlogic-alert-commercial</artifactId>-->
+<!--                </dependency>-->
             </dependencies>
         </profile>
     </profiles>
@@ -106,10 +106,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.-->
             <groupId>com.neatlogic</groupId>
             <artifactId>neatlogic-tenant</artifactId>
         </dependency>
-        <dependency>
-            <groupId>com.neatlogic</groupId>
-            <artifactId>neatlogic-alert</artifactId>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.neatlogic</groupId>-->
+<!--            <artifactId>neatlogic-alert</artifactId>-->
+<!--        </dependency>-->
 <!--        <dependency>
             <groupId>com.neatlogic</groupId>
             <artifactId>neatlogic-database</artifactId>
@@ -151,10 +151,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.-->
             <groupId>com.neatlogic</groupId>
             <artifactId>neatlogic-tagent</artifactId>
         </dependency>
-<!--        <dependency>
+        <dependency>
             <groupId>com.neatlogic</groupId>
             <artifactId>neatlogic-inspect</artifactId>
-        </dependency>-->
+        </dependency>
 <!--        <dependency>-->
 <!--            <groupId>com.neatlogic</groupId>-->
 <!--            <artifactId>neatlogic-deploy</artifactId>-->
