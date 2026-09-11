@@ -33,11 +33,23 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.-->
             <dependencies>
                 <dependency>
                     <groupId>com.neatlogic</groupId>
+                    <artifactId>neatlogic-apm-base</artifactId>
+                </dependency>
+                <dependency>
+                    <groupId>com.neatlogic</groupId>
+                    <artifactId>neatlogic-apm</artifactId>
+                </dependency>
+                <dependency>
+                    <groupId>com.neatlogic</groupId>
                     <artifactId>neatlogic-ai</artifactId>
                 </dependency>
                 <dependency>
                     <groupId>com.neatlogic</groupId>
                     <artifactId>neatlogic-ai-base</artifactId>
+                </dependency>
+                <dependency>
+                    <groupId>com.neatlogic</groupId>
+                    <artifactId>neatlogic-knowledge-commercial</artifactId>
                 </dependency>
 <!--                <dependency>-->
 <!--                    <groupId>com.neatlogic</groupId>-->
@@ -71,6 +83,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.-->
                     <groupId>com.neatlogic</groupId>
                     <artifactId>neatlogic-autoexec-commercial</artifactId>
                 </dependency>
+                <dependency>
+                    <groupId>com.neatlogic</groupId>
+                    <artifactId>neatlogic-cmdb-commercial</artifactId>
+                </dependency>
+                <dependency>
+                    <groupId>com.neatlogic</groupId>
+                    <artifactId>neatlogic-tenant-commercial</artifactId>
+                </dependency>
 <!--                <dependency>-->
 <!--                    <groupId>com.neatlogic</groupId>-->
 <!--                    <artifactId>neatlogic-document-online-commercial</artifactId>-->
@@ -80,10 +100,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.-->
                     <artifactId>neatlogic-master</artifactId>
                 </dependency>-->
 
-<!--                <dependency>-->
-<!--                    <groupId>com.neatlogic</groupId>-->
-<!--                    <artifactId>neatlogic-alert-commercial</artifactId>-->
-<!--                </dependency>-->
+                <dependency>
+                    <groupId>com.neatlogic</groupId>
+                    <artifactId>neatlogic-alert-commercial</artifactId>
+                </dependency>
             </dependencies>
         </profile>
     </profiles>
@@ -169,6 +189,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.-->
         </dependency>
 <!--        <dependency>-->
 <!--            <groupId>com.neatlogic</groupId>-->
+<!--            <artifactId>neatlogic-lsbank</artifactId>-->
+<!--            <version>0.4.0.0-SNAPSHOT</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.neatlogic</groupId>-->
 <!--            <artifactId>neatlogic-deploy</artifactId>-->
 <!--        </dependency>-->
 <!--        <dependency>
@@ -176,9 +201,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.-->
             <artifactId>neatlogic-pascbank</artifactId>
             <version>0.4.0.0-SNAPSHOT</version>
         </dependency>-->
-        <!--<dependency>
+        <dependency>
             <groupId>com.neatlogic</groupId>
             <artifactId>neatlogic-alert</artifactId>
-        </dependency>-->
+        </dependency>
     </dependencies>
 </project>
