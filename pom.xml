@@ -137,6 +137,30 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.-->
                     <groupId>com.neatlogic</groupId>
                     <artifactId>neatlogic-fileservice</artifactId>
                 </dependency>
+                <dependency>
+                    <groupId>com.neatlogic</groupId>
+                    <artifactId>neatlogic-pascbank</artifactId>
+                    <version>0.4.0.0-SNAPSHOT</version>
+                </dependency>
+                <dependency>
+                    <groupId>com.neatlogic</groupId>
+                    <artifactId>neatlogic-credit</artifactId>
+                    <version>0.4.0.0-SNAPSHOT</version>
+                </dependency>
+                <dependency>
+                    <groupId>com.neatlogic</groupId>
+                    <artifactId>neatlogic-haday</artifactId>
+                </dependency>
+                <dependency>
+                    <groupId>com.neatlogic</groupId>
+                    <artifactId>neatlogic-approval-base</artifactId>
+                    <version>0.4.0.0-SNAPSHOT</version>
+                </dependency>
+                <dependency>
+                    <groupId>com.neatlogic</groupId>
+                    <artifactId>neatlogic-approval</artifactId>
+                    <version>0.4.0.0-SNAPSHOT</version>
+                </dependency>
             </dependencies>
         </profile>
     </profiles>

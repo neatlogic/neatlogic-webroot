@@ -1,4 +1,12 @@
 <!-- Logback configuration. See http://logback.qos.ch/manual/index.html -->
 <configuration scan="true" scanPeriod="10 seconds" debug="false">
     <include resource="neatlogic/framework/logback/logback-base.xml"/>
+    <!-- 将标准输出加入 root 日志 -->
+    <root level="${log4j.priority}">
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="DEBUG"/>
+        <appender-ref ref="INFO"/>
+        <appender-ref ref="WARN"/>
+        <appender-ref ref="ERROR"/>
+    </root>
 </configuration>
