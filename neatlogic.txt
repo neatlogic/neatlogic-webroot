@@ -37,7 +37,6 @@ neatlogic-cmdb-commercial
 neatlogic-dr
 neatlogic-diagram
 neatlogic-eoa
-neatlogic-resources
 neatlogic-tenant-commercial
 neatlogic-itsm-commercial
 neatlogic-master

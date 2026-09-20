@@ -210,10 +210,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.-->
         </dependency>
         <dependency>
             <groupId>com.neatlogic</groupId>
-            <artifactId>neatlogic-resources</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.neatlogic</groupId>
             <artifactId>neatlogic-alert</artifactId>
         </dependency>
     </dependencies>
